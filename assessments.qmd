@@ -1,0 +1,16 @@
+---
+title: "LSE DS105M | Assessments"
+---
+
+<mark></mark> Make sure it meets the requirements set out in the [CAPIS](/regulation.html) form.
+
+## Assessment Scheme
+
+
+|Assignment Type|Description| % | Deadline|
+|---------------|-----------|---|---------|
+|<mark></mark> Team Contract|Description of your goals, expectations, roles and your team's communication strategy. <br/> Here is a link to the relevant submission page. | 20% | Week 05 | 
+| <mark></mark> Group Presentation | You will present the progress of your group project | 20% | [Week 07](https://moodle.lse.ac.uk/mod/page/view.php?id=1072289) |
+| <mark></mark> Group Presentation  | You will present the progress of your group project | 20% | [Week 10](https://moodle.lse.ac.uk/mod/page/view.php?id=1080601) |
+| <mark></mark> Individual Self-Assessment | Here you will be asked to reflect on your individual contribution to the group. | 20% | [Beginning of ST](https://moodle.lse.ac.uk/mod/assign/view.php?id=1083747) |
+| <mark></mark> Final Project | You will have to submit the URL that points to the data product you created (more info [here](https://moodle.lse.ac.uk/mod/assign/view.php?id=1053444)) | 20% | [End of ST](https://moodle.lse.ac.uk/mod/page/view.php?id=1071759) |

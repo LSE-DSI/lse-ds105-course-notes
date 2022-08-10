@@ -1,0 +1,57 @@
+---
+title: "🗓️ Week 3 - The Terminal"
+---
+
+<mark class="idea"></mark> Move "The Cloud" to Week 03 and have "The Terminal" be Week 02 instead.
+
+<mark></mark> Slides from previous year: [DS105/2021MT (Sharepoint)](https://lsecloud.sharepoint.com/:f:/r/sites/TEAM_LSE-LSEDataScienceInitiative-DS105/Shared%20Documents/DS105/MT-2021?csf=1&web=1&e=oMWOCC)
+
+## Lecture (45-50 min)
+
+
+<mark></mark> This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or for those on MacOS: The Terminal. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands. By the end of the week you should we able to explore the CLI and perform basic tasks such as  reading files, creating directories and calling webpages.
+
+<details>
+<summary> 👨‍🏫 Part I - <mark class="remove">Linux</mark> **History of Operating Systems**</summary>
+
+</details>
+
+<details>
+<summary> 👨‍🏫 Part II - <mark class="remove">Windows</mark> **Filesystems**</summary>
+
+</details>
+
+<details>
+<summary> 👨‍🏫 Part III - <mark class="remove">Development</mark> **Linux vs Mac OS vs Windows**</summary>
+
+</details>
+
+
+## Demo (35-40 min)
+
+<details>
+<summary> 🖥️ Demo: Terminal </summary>
+- <mark class="idea"></mark> Show the Windows CMD
+- <mark class="idea"></mark> Show the Windows PowerShell
+- <mark class="idea"></mark> Show the Linux Subystem (generic enough for MacOS users)
+</details>
+
+## Wrap Up (15 min)
+
+<details>
+<summary> 👨‍🏫 Wrap Up</summary>
+<mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
+
+</details>
+
+## Coursework
+
+<details>
+<summary> 📒 Prepare for next weeks' class </summary>
+<mark class="todo"></mark>
+</details>
+
+
+
+## Recommended Reading
+<mark class="todo"></mark>

@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "assessments.html",
+    "href": "assessments.html",
+    "title": "LSE DS105M | Assessments",
+    "section": "",
+    "text": "Make sure it meets the requirements set out in the CAPIS form."
+  },
+  {
+    "objectID": "assessments.html#assessment-scheme",
+    "href": "assessments.html#assessment-scheme",
+    "title": "LSE DS105M | Assessments",
+    "section": "Assessment Scheme",
+    "text": "Assessment Scheme\n\n\n\nAssignment Type\nDescription\n%\nDeadline\n\n\n\n\n Team Contract\nDescription of your goals, expectations, roles and your team’s communication strategy.  Here is a link to the relevant submission page.\n20%\nWeek 05\n\n\n Group Presentation\nYou will present the progress of your group project\n20%\nWeek 07\n\n\n Group Presentation\nYou will present the progress of your group project\n20%\nWeek 10\n\n\n Individual Self-Assessment\nHere you will be asked to reflect on your individual contribution to the group.\n20%\nBeginning of ST\n\n\n Final Project\nYou will have to submit the URL that points to the data product you created (more info here)\n20%\nEnd of ST"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "",
+    "text": "This course will cover the fundamentals of data, with an aim to understanding how data is generated, how it is collected, how it must be transformed for use and storage, how it is stored, and the ways it can be retrieved and communicated. The course will also cover workflow management for typical data transformation and cleaning projects, frequently the starting point and most time consuming part of any data science project. This course uses a project-based learning approach towards the study of online publishing and group-based collaboration, essential ingredients of modern data science projects.\nIt introduces the principles and applications of the electronic storage, structuring, manipulation, transformation, extraction, and dissemination of data. This includes data types, how data is stored and recorded electronically, the concept and fundamentals of databases. It also covers how data is formatted and communicated. It presents basic methods for obtaining data from the Internet, including simple methods for web scraping and the use of APIs to submit queries that return structured data. Finally, it covers methods for formatting and publishing data.\nSharing and publishing data will also form a key part of this module and will include key skills in on-line publishing, including the elements of web design, the technical elements of web technologies and web programming, as well as the use of revision-control and group collaboration tools such as GitHub. Each student will build an interactive website based on content relevant to their domain-related interests, and will use GitHub for accessing and submitting course materials and assignments. The final project will involve group work to create a data-based website published on GitHub.\nThis module is not designed to be a hands-on introduction to the use of databases, but does introduce the concepts of databases. For more detailed learning on databases, we will encourage students to take ST207 Databases."
+  },
+  {
+    "objectID": "index.html#teacher-responsible",
+    "href": "index.html#teacher-responsible",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Teacher Responsible",
+    "text": "Teacher Responsible\nDr. Jonathan Cardoso-Silva & Dr. Julio Amador Diaz Lopez."
+  },
+  {
+    "objectID": "index.html#availability",
+    "href": "index.html#availability",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Availability",
+    "text": "Availability\nThis module is designed for students on social science degree programmes who do not have A-level Mathematics (e.g. in Anthropology, Law, and Social Policy)."
+  },
+  {
+    "objectID": "index.html#course-administration",
+    "href": "index.html#course-administration",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Course Administration",
+    "text": "Course Administration\nIf you have any administrative queries about this course please contact us at dsi.admin@lse.ac.uk."
+  },
+  {
+    "objectID": "index.html#lectures",
+    "href": "index.html#lectures",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Lectures",
+    "text": "Lectures"
+  },
+  {
+    "objectID": "index.html#classes",
+    "href": "index.html#classes",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Classes",
+    "text": "Classes\n\nClasses run from Week 01 until Week 11, with the exception of reading week (Week 06)."
+  },
+  {
+    "objectID": "index.html#formative-coursework",
+    "href": "index.html#formative-coursework",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Formative coursework",
+    "text": "Formative coursework\nIn the initial sessions, students will work on weekly, structured problem sets in the staff-led class sessions. Examples of exercises involve: setting up account, repositories and pages on GitHub, accessing terminal and computer servers.\nLater on, students will be expected to work on their group projects in the staff-led class sessions."
+  },
+  {
+    "objectID": "index.html#assessment",
+    "href": "index.html#assessment",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Assessment",
+    "text": "Assessment"
+  },
+  {
+    "objectID": "index.html#feedback",
+    "href": "index.html#feedback",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "Feedback",
+    "text": "Feedback\nWe want to hear from you!\nThe DSI is always seeking to improve the student experience within courses. If you have comments, queries or issues, please let us know. You can send administrative related thoughts to dsi.admin@lse.ac.uk and thoughts on teaching can be raised with your seminar leader.\nIt is important that student concerns are addressed and students have a say in the running of their course, so you also have your course forum that can be used as a place to discuss the course with your fellow students and your home Department will hold SSLCs at least once per term. \nPlease pass on your thoughts about the course to your programme’s Academic Representative so that they can raise these at SSLC meetings. Your Department will then be able to forward these to the DSI, enabling us to improve the course in future."
+  },
+  {
+    "objectID": "regulation.html",
+    "href": "regulation.html",
+    "title": "LSE DS105 | CAPIS",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "weeks/template_week.html",
+    "href": "weeks/template_week.html",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "",
+    "text": "Slides from previous year: DS105/2021MT (Sharepoint)"
+  },
+  {
+    "objectID": "weeks/template_week.html#lecture-45-50-min",
+    "href": "weeks/template_week.html#lecture-45-50-min",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "Lecture (45-50 min)",
+    "text": "Lecture (45-50 min)\n\n\n👨‍🏫 Part I -\n\n\n\n\n👨‍🏫 Part II -\n\n\n\n\n👨‍🏫 Part III -"
+  },
+  {
+    "objectID": "weeks/template_week.html#demo-35-40-min",
+    "href": "weeks/template_week.html#demo-35-40-min",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "Demo (35-40 min)",
+    "text": "Demo (35-40 min)\n\n\n🖥️ Computer Demo:"
+  },
+  {
+    "objectID": "weeks/template_week.html#wrap-up-15-min",
+    "href": "weeks/template_week.html#wrap-up-15-min",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "Wrap Up (15 min)",
+    "text": "Wrap Up (15 min)\n\n\n👨‍🏫 Wrap Up\n\n Connect the demo with what was said at the beginning of the lecture."
+  },
+  {
+    "objectID": "weeks/template_week.html#coursework",
+    "href": "weeks/template_week.html#coursework",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
+  },
+  {
+    "objectID": "weeks/template_week.html#this-weeks-class",
+    "href": "weeks/template_week.html#this-weeks-class",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "This week’s class",
+    "text": "This week’s class\n\n\n🛣️ Roadmap"
+  },
+  {
+    "objectID": "weeks/template_week.html#recommended-reading",
+    "href": "weeks/template_week.html#recommended-reading",
+    "title": "🗓️ Week 01 - Introduction, Context & Key Concepts",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading"
+  },
+  {
+    "objectID": "weeks/week01.html",
+    "href": "weeks/week01.html",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "",
+    "text": "Slides from previous year: DS105/2021MT (Sharepoint)"
+  },
+  {
+    "objectID": "weeks/week01.html#lecture-45-50-min",
+    "href": "weeks/week01.html#lecture-45-50-min",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "Lecture (45-50 min)",
+    "text": "Lecture (45-50 min)\n\n\n👨‍🏫 Part I - Agenda Welcome to DS105\n\n\nIntroduction\nMechanics\nThe module\nPrinciples\nWhy are you here?\n\n\nPart I - Intro\n\nWho is your lecturer\nWhat is this course about?\nStructure of the course\n📋 Summative assignments ()\n💬 Getting Support When/how to use:\n\nOffice Hours\nE-mail\nMoodle\n Slack (?)\n\n\n\n\n\n👨‍🏫 Part II - Why are we here?\n\n\nNew data sources -> New applications -> more data\n Examples in Finance, Healthcare, Transportation, etc.\n\n\n\n\n👨‍🏫 Part III - Why now?\n\n\nLearn how to use this tools Actually name the tools used in data science in practice\nLeverage new data sources Actually name data sources or where data is often found\nDo social science  this is very broad, what do mean by social science in this context exactly?"
+  },
+  {
+    "objectID": "weeks/week01.html#demo-35-40-min",
+    "href": "weeks/week01.html#demo-35-40-min",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "Demo (35-40 min)",
+    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Jupyter Notebooks\n\n\n Explain Jupyter Notebooks.\n Run a simple demo with a clean dataset."
+  },
+  {
+    "objectID": "weeks/week01.html#wrap-up-15-min",
+    "href": "weeks/week01.html#wrap-up-15-min",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "Wrap Up (15 min)",
+    "text": "Wrap Up (15 min)\n\n\n👨‍🏫 Wrap Up\n\n Connect the demo with what was said at the beginning of the lecture."
+  },
+  {
+    "objectID": "weeks/week01.html#coursework",
+    "href": "weeks/week01.html#coursework",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
+  },
+  {
+    "objectID": "weeks/week01.html#recommended-reading",
+    "href": "weeks/week01.html#recommended-reading",
+    "title": "🗓️ Week 1 - Introduction: Tools for Data Scientists",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading"
+  },
+  {
+    "objectID": "weeks/week02.html",
+    "href": "weeks/week02.html",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "",
+    "text": "Move “The Cloud” to Week 03 and have “The Terminal” be Week 02 instead.\nSlides from previous year: DS105/2021MT (Sharepoint)"
+  },
+  {
+    "objectID": "weeks/week02.html#lecture-45-50-min",
+    "href": "weeks/week02.html#lecture-45-50-min",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "Lecture (45-50 min)",
+    "text": "Lecture (45-50 min)\n This week we provide a preview of one important tool for data scientists: The Cloud. The aims for the week will be to provide a definition for the cloud, to understand that the cloud is made of many components, to start to think about the trade-offs of using the cloud, and to acknowledge that your role as a data scientist is to be aware of the tools without being an expert in all of these.\n By the end of the week you should be able to: (1) Have an idea of what the cloud is. (2) Be able to acknowledge the tradeoffs of using the cloud, (3) Be aware of your role as a data scientist, and (4) have an idea of the different models of cloud services.\n\n\n👨‍🏫 Part I - What is the cloud\n\n\nIntro to cloud computing\nBenefits of cloud computing\nServices that use cloud computing\n\n\n\n\n👨‍🏫 Part II - Use cases in Data Science\n\n\nScrapping data\nHosting and querying large databases\nTraining Machine Learning models\nHosting web apps\n\n\n\n\n👨‍🏫 Part III - What is Data Science? Data Science specialisations\n\n\nDevOps\nData Engineer\nML Engineer\nML researcher\nData Scientist"
+  },
+  {
+    "objectID": "weeks/week02.html#demo-35-40-min",
+    "href": "weeks/week02.html#demo-35-40-min",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "Demo (35-40 min)",
+    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Cloud Storage\n\n\n Explain what a bucket is\n Pull data from AWS S3 (or GCloud Storage) using Jupyter Notebooks"
+  },
+  {
+    "objectID": "weeks/week02.html#wrap-up-15-min",
+    "href": "weeks/week02.html#wrap-up-15-min",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "Wrap Up (15 min)",
+    "text": "Wrap Up (15 min)\n\n\n👨‍🏫 Wrap Up\n\n Connect the demo with what was said at the beginning of the lecture."
+  },
+  {
+    "objectID": "weeks/week02.html#coursework",
+    "href": "weeks/week02.html#coursework",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
+  },
+  {
+    "objectID": "weeks/week02.html#recommended-reading",
+    "href": "weeks/week02.html#recommended-reading",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading"
+  },
+  {
+    "objectID": "weeks/week03.html",
+    "href": "weeks/week03.html",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "",
+    "text": "Move “The Cloud” to Week 03 and have “The Terminal” be Week 02 instead.\nSlides from previous year: DS105/2021MT (Sharepoint)"
+  },
+  {
+    "objectID": "weeks/week03.html#lecture-45-50-min",
+    "href": "weeks/week03.html#lecture-45-50-min",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "Lecture (45-50 min)",
+    "text": "Lecture (45-50 min)\n This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or for those on MacOS: The Terminal. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands. By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.\n\n\n👨‍🏫 Part I - Linux  History of Unix"
+  },
+  {
+    "objectID": "weeks/week03.html#demo-35-40-min",
+    "href": "weeks/week03.html#demo-35-40-min",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "Demo (35-40 min)",
+    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Cloud Storage\n\n\n Explain what a bucket is\n Pull data from AWS S3 (or GCloud Storage) using Jupyter Notebooks"
+  },
+  {
+    "objectID": "weeks/week03.html#wrap-up-15-min",
+    "href": "weeks/week03.html#wrap-up-15-min",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "Wrap Up (15 min)",
+    "text": "Wrap Up (15 min)\n\n\n👨‍🏫 Wrap Up\n\n Connect the demo with what was said at the beginning of the lecture."
+  },
+  {
+    "objectID": "weeks/week03.html#coursework",
+    "href": "weeks/week03.html#coursework",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
+  },
+  {
+    "objectID": "weeks/week03.html#recommended-reading",
+    "href": "weeks/week03.html#recommended-reading",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading"
+  }
+]

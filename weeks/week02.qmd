@@ -1,0 +1,69 @@
+---
+title: "🗓️ Week 2 - The Cloud"
+---
+
+<mark class="idea"></mark> Move "The Cloud" to Week 03 and have "The Terminal" be Week 02 instead.
+
+<mark></mark> Slides from previous year: [DS105/2021MT (Sharepoint)](https://lsecloud.sharepoint.com/:f:/r/sites/TEAM_LSE-LSEDataScienceInitiative-DS105/Shared%20Documents/DS105/MT-2021?csf=1&web=1&e=oMWOCC)
+
+## Lecture (45-50 min)
+
+
+<mark></mark> This week we provide a preview of one important tool for data scientists: The Cloud. The aims for the week will be to provide a definition for the cloud, to understand that the cloud is made of many components, to start to think about the trade-offs of using the cloud, and to acknowledge that your role as a data scientist is to be aware of the tools without being an expert in all of these.
+
+<mark></mark> By the end of the week you should be able to: (1) Have an idea of what the cloud is. (2) Be able to acknowledge the tradeoffs of using the cloud, (3) Be aware of your role as a data scientist, and (4) have an idea of the different models of cloud services.
+
+<details>
+<summary> 👨‍🏫 Part I - What is the cloud</summary>
+- Intro to cloud computing
+- Benefits of cloud computing
+- Services that use cloud computing
+</details>
+
+<details>
+<summary> 👨‍🏫 Part II - Use cases in Data Science</summary>
+- Scrapping data
+- Hosting and querying large databases
+- Training Machine Learning models
+- Hosting web apps
+</details>
+
+
+<details>
+<summary> 👨‍🏫 Part III - <mark class="remove">What is Data Science?</mark> **Data Science specialisations**</summary>
+- DevOps
+- Data Engineer
+- ML Engineer
+- ML researcher
+- Data Scientist
+</details>
+
+
+
+## Demo (35-40 min)
+
+<details>
+<summary> 🖥️ Demo: Cloud Storage </summary>
+- <mark class="idea"></mark> Explain what a bucket is
+- <mark class="idea"></mark> Pull data from AWS S3 (or GCloud Storage) using Jupyter Notebooks
+</details>
+
+## Wrap Up (15 min)
+
+<details>
+<summary> 👨‍🏫 Wrap Up</summary>
+<mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
+
+</details>
+
+## Coursework
+
+<details>
+<summary> 📒 Prepare for next weeks' class </summary>
+<mark class="todo"></mark>
+</details>
+
+
+
+## Recommended Reading
+<mark class="todo"></mark>

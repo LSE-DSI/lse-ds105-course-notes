@@ -1,0 +1,82 @@
+project:
+  type: "website"
+  title: "LSE DS105M 2022/23 (summer revision)"
+  author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+  output-dir: _output
+  render:
+    - "*.qmd"
+    - "weeks/*.qmd"
+
+website:
+  title: "LSE DS105M 2022/23 (summer revision)"
+  author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+  toc: true
+  toc-location: left
+  toc-depth: 3
+  collapse-level: 3
+  number-sections: true
+  page-navigation: true
+  reader-mode: true
+  favicon: "/figures/LSE Data Science Institute.png"
+  search:
+    location: navbar
+    type: overlay
+  sidebar:
+    
+    style: "docked"
+    contents:
+      - href: index.qmd
+        text: "🏠 Home"
+      - href: regulation.qmd
+        text: "📜 CAPIS"
+      - href: assessments.qmd
+        text: "✍️ Assessments"
+      - section: "🗓️ Weeks"
+        contents:
+         - href: weeks/week01.qmd
+           text: Week 01
+         - href: weeks/week02.qmd
+           text: Week 02
+         - href: weeks/week03.qmd
+           text: Week 03
+  navbar:
+    background: primary
+  #   left:
+  #     - href: index.qmd
+  #       text: Home
+  #     - href: weeks/week01.qmd
+  #       text:  Week 01
+  page-footer:
+    background: light
+    left: "Copyright 2022, LSE Data Science Institute" 
+    right: 
+      # - icon: mailbox 
+      #   href: mailto:DSI.Admin@lse.ac.uk
+      - icon: twitter 
+        href: https://twitter.com/lsedatascience
+
+# bibliography: references.bib  
+  
+format:
+  html:
+    author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+    theme:
+      light: journal
+      dark:  darkly
+    css: custom_style.css
+    toc: true
+
+margin-header: |
+ ![](/figures/LSE Data Science Institute.png)
+
+body-header: |
+  Experimenting
+# format:
+#   html:
+#     css: styles.css
+#     html-math-method: katex
+#   pdf:
+#     documentclass: report
+#     margin-left: 30mm
+#     margin-right: 30mm
+
