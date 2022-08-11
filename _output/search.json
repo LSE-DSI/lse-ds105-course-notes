@@ -210,6 +210,13 @@
     "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
   },
   {
+    "objectID": "weeks/week02.html#this-weeks-class",
+    "href": "weeks/week02.html#this-weeks-class",
+    "title": "🗓️ Week 2 - The Cloud",
+    "section": "This week’s class",
+    "text": "This week’s class\n\n\n🛣️ Roadmap\n\n\nRun the SSH\n\n\n\n\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
     "objectID": "weeks/week02.html#recommended-reading",
     "href": "weeks/week02.html#recommended-reading",
     "title": "🗓️ Week 2 - The Cloud",
@@ -228,14 +235,14 @@
     "href": "weeks/week03.html#lecture-45-50-min",
     "title": "🗓️ Week 3 - The Terminal",
     "section": "Lecture (45-50 min)",
-    "text": "Lecture (45-50 min)\n This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or for those on MacOS: The Terminal. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands. By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.\n\n\n👨‍🏫 Part I - Linux  History of Unix"
+    "text": "Lecture (45-50 min)\n This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or for those on MacOS: The Terminal. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands. By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.\n\n\n👨‍🏫 Part I - Linux History of Operating Systems\n\n\n\n\n👨‍🏫 Part II - Windows Filesystems\n\n\nFiles\nDirectories\nFile types (binary vs plain text)\nConventions (HTML, JSON)\n\n\n\n\n👨‍🏫 Part III - Development Linux vs Mac OS vs Windows"
   },
   {
     "objectID": "weeks/week03.html#demo-35-40-min",
     "href": "weeks/week03.html#demo-35-40-min",
     "title": "🗓️ Week 3 - The Terminal",
     "section": "Demo (35-40 min)",
-    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Cloud Storage\n\n\n Explain what a bucket is\n Pull data from AWS S3 (or GCloud Storage) using Jupyter Notebooks"
+    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Navigating the terminal\n\n\n Show the Windows CMD\n Show the Windows PowerShell\n Show the Linux Subystem (generic enough for MacOS users)"
   },
   {
     "objectID": "weeks/week03.html#wrap-up-15-min",
@@ -249,7 +256,7 @@
     "href": "weeks/week03.html#coursework",
     "title": "🗓️ Week 3 - The Terminal",
     "section": "Coursework",
-    "text": "Coursework\n\n\n📒 Prepare for next weeks’ class"
+    "text": "Coursework\n\n\n📒 Prepare for this weeks’ class"
   },
   {
     "objectID": "weeks/week03.html#recommended-reading",
@@ -257,5 +264,61 @@
     "title": "🗓️ Week 3 - The Terminal",
     "section": "Recommended Reading",
     "text": "Recommended Reading"
+  },
+  {
+    "objectID": "weeks/week04.html",
+    "href": "weeks/week04.html",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "",
+    "text": "Slides from previous year: DS105/2021MT (Sharepoint)"
+  },
+  {
+    "objectID": "weeks/week04.html#lecture-45-50-min",
+    "href": "weeks/week04.html#lecture-45-50-min",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "Lecture (45-50 min)",
+    "text": "Lecture (45-50 min)\nThis week our aim will be to understand how the internet works and begin to grasp how can we use these knowledge to mine data from the web. The first video goes through a brief explanation of how the internet works. In our live lecture we will see how to understand HTML and how can we use it to scrape data from the web. By the end of the week you should have knowledge of how the internet works, basic instruction of how to obtain data from the web, and the structure of data in the web.\n\n\n👨‍🏫 Part I - How the internet works\n\n\n  how the internet came to existence\nThe protocols\n\n\n\n\n👨‍🏫 Part II -  Protocols  The Web\n\n\n  Tim Berner’s Lee creation of the web\n  Blockchains and the hype around “Web 5.0”\n\n\n\n\n👨‍🏫 Part III - The DOM, HTML & CSS"
+  },
+  {
+    "objectID": "weeks/week04.html#demo-35-40-min",
+    "href": "weeks/week04.html#demo-35-40-min",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "Demo (35-40 min)",
+    "text": "Demo (35-40 min)\n\n\n🖥️ Demo: Pulling data out of a static webpage\n\n\n Navigate the DOM a little bit using the Developer’s console on Chrome/Firefox\n Demo using BeautifulSoup in Python\n Demo using Selenium in Python\n Demo using scrapy"
+  },
+  {
+    "objectID": "weeks/week04.html#wrap-up-15-min",
+    "href": "weeks/week04.html#wrap-up-15-min",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "Wrap Up (15 min)",
+    "text": "Wrap Up (15 min)\n\n\n👨‍🏫 Wrap Up\n\n Connect the demo with what was said at the beginning of the lecture."
+  },
+  {
+    "objectID": "weeks/week04.html#coursework",
+    "href": "weeks/week04.html#coursework",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "Coursework",
+    "text": "Coursework\n\n\n📒 Group Formation\n\n  Following the class, groups have to submit their Team Contract.\n  This is your first assignment of this module, worth 20% of your final marks. Your grade will be either Fail/Pass, based on whether your team contract has considered the following criteria:\n\nGOALS: Has the group listed what are their current team goals are? The group could list datasets, software packages or interests (It is okay if this changes over the coming weeks)\nEXPECTATIONS: What do we expect of one another in regard to attendance at meetings, participation, frequency of communication, the quality of work, etc.?\nPROCEDURES: Has the group decided on the rules they would use to meet your goals and expectations?\nCONSEQUENCES: Has the group listed actions they would take in case a colleague is not cooperative?"
+  },
+  {
+    "objectID": "weeks/week04.html#recommended-reading",
+    "href": "weeks/week04.html#recommended-reading",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading"
+  },
+  {
+    "objectID": "weeks/week03.html#this-weeks-class",
+    "href": "weeks/week03.html#this-weeks-class",
+    "title": "🗓️ Week 3 - The Terminal",
+    "section": "This week’s class",
+    "text": "This week’s class\n\n\n🛣️ Roadmap\n\nOriginal: Setup Github  Have them perform a task in the terminal of their own computer using whatever OS they have."
+  },
+  {
+    "objectID": "weeks/week04.html#this-weeks-class",
+    "href": "weeks/week04.html#this-weeks-class",
+    "title": "🗓️ Week 4 - The Internet and the web",
+    "section": "This week’s class",
+    "text": "This week’s class\n\n\n🛣️ Roadmap\n\nOriginal: Nothing planned\n Group Formation & BeautifulSoup task, to be conducted as follows:\n\n(30 min) students pitch their ideas of datasets and APIs"
   }
 ]

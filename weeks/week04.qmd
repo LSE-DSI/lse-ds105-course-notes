@@ -1,0 +1,79 @@
+---
+title: "🗓️ Week 4 - The Internet **and the web**"
+---
+
+
+<mark></mark> Slides from previous year: [DS105/2021MT (Sharepoint)](https://lsecloud.sharepoint.com/:f:/r/sites/TEAM_LSE-LSEDataScienceInitiative-DS105/Shared%20Documents/DS105/MT-2021?csf=1&web=1&e=oMWOCC)
+
+## Lecture (45-50 min)
+
+
+This week our aim will be to understand how the internet works and begin to grasp how can we use these knowledge to mine data from the web. The first video goes through a brief explanation of how the internet works. In our live lecture we will see how to understand HTML and how can we use it to scrape data from the web. By the end of the week you should have knowledge of how the internet works, basic instruction of how to obtain data from the web, and the structure of data in the web.
+
+
+<details>
+<summary> 👨‍🏫 Part I - How the internet works</summary>
+- <mark class="idea"> </mark> how the internet came to existence
+- The protocols
+</details>
+
+<details>
+<summary> 👨‍🏫 Part II - <mark class="remove"> Protocols </mark> **The Web** </summary>
+- <mark class="idea"> </mark> Tim Berner's Lee creation of the web
+- <mark class="idea"> </mark> Blockchains and the hype around "Web 5.0"
+</details>
+
+<details>
+<summary> 👨‍🏫 Part III - **The DOM, HTML & CSS**</summary>
+
+</details>
+
+
+## Demo (35-40 min)
+
+<details>
+<summary> 🖥️ Demo: Pulling data out of a static webpage</summary>
+- <mark class="idea"></mark> Navigate the DOM a little bit using the Developer's console on Chrome/Firefox
+- <mark class="idea"></mark> Demo using BeautifulSoup in Python
+- <mark class="idea"></mark> Demo using Selenium in Python
+- <mark class="idea"></mark> Demo using scrapy
+</details>
+
+## Wrap Up (15 min)
+
+<details>
+<summary> 👨‍🏫 Wrap Up</summary>
+<mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
+
+</details>
+
+## Recommended Reading
+<mark class="todo"></mark>
+
+
+## This week's class
+
+<details>
+<summary>🛣️ Roadmap</summary>
+
+Original: <mark class="remove">Nothing planned</mark>
+
+<mark class="idea"></mark> Group Formation & BeautifulSoup task, to be conducted as follows:
+
+- (30 min) students pitch their ideas of datasets and APIs
+
+## Coursework
+
+<details>
+<summary> 📒 Group Formation </summary>
+
+<mark> </mark> Following the class, groups have to submit their Team Contract.
+
+<mark> </mark> This is your first assignment of this module, worth 20% of your final marks. Your grade will be either Fail/Pass, based on whether your team contract has considered the following criteria:
+
+- **GOALS**: Has the group listed what are their current team goals are? The group could list datasets, software packages or interests (It is okay if this changes over the coming weeks)
+- **EXPECTATIONS**: What do we expect of one another in regard to attendance at meetings, participation, frequency of communication, the quality of work, etc.?
+- **PROCEDURES**: Has the group decided on the rules they would use to meet your goals and expectations?
+- **CONSEQUENCES**: Has the group listed actions they would take in case a colleague is not cooperative?
+</details>
+

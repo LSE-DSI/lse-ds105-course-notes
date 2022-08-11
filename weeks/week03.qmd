@@ -18,7 +18,10 @@ title: "🗓️ Week 3 - The Terminal"
 
 <details>
 <summary> 👨‍🏫 Part II - <mark class="remove">Windows</mark> **Filesystems**</summary>
-
+- Files
+- Directories
+- File types (binary vs plain text)
+- Conventions (HTML, JSON)
 </details>
 
 <details>
@@ -30,7 +33,7 @@ title: "🗓️ Week 3 - The Terminal"
 ## Demo (35-40 min)
 
 <details>
-<summary> 🖥️ Demo: Terminal </summary>
+<summary> 🖥️ Demo: Navigating the terminal</summary>
 - <mark class="idea"></mark> Show the Windows CMD
 - <mark class="idea"></mark> Show the Windows PowerShell
 - <mark class="idea"></mark> Show the Linux Subystem (generic enough for MacOS users)
@@ -47,11 +50,16 @@ title: "🗓️ Week 3 - The Terminal"
 ## Coursework
 
 <details>
-<summary> 📒 Prepare for next weeks' class </summary>
+<summary> 📒 Prepare for this weeks' class </summary>
 <mark class="todo"></mark>
 </details>
 
+## This week's class
 
+<details>
+<summary>🛣️ Roadmap</summary>
+Original: <mark class="remove">Setup Github</mark>
+<mark class="idea"></mark> Have them perform a task in the **terminal of their own computer** using whatever OS they have.
 
 ## Recommended Reading
 <mark class="todo"></mark>

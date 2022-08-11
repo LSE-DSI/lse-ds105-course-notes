@@ -39,6 +39,8 @@ website:
            text: Week 02
          - href: weeks/week03.qmd
            text: Week 03
+         - href: weeks/week04.qmd
+           text: Week 04
   navbar:
     background: primary
   #   left:

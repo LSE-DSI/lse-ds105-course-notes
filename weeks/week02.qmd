@@ -63,6 +63,19 @@ title: "🗓️ Week 2 - The Cloud"
 <mark class="todo"></mark>
 </details>
 
+## This week's class
+
+<details>
+<summary>🛣️ Roadmap</summary>
+- Run the SSH
+
+<object data="/docs/ssh.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="/docs/ssh.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/docs/ssh.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+</details>
 
 
 ## Recommended Reading
