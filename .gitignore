@@ -16,3 +16,4 @@ _book
 *.pdf
 
 /.quarto/
+/_output/
