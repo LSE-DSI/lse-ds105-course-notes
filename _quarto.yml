@@ -4,8 +4,11 @@ project:
   author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
   output-dir: _output
   render:
-    - "*.qmd"
+    - "index.qmd"
     - "weeks/*.qmd"
+
+bibliography: references/references.bib
+csl: references/chicago-author-date.csl
 
 website:
   title: "LSE DS105M 2022/23 (summer revision)"
@@ -43,21 +46,14 @@ website:
            text: Week 04
   navbar:
     background: primary
-  #   left:
-  #     - href: index.qmd
-  #       text: Home
-  #     - href: weeks/week01.qmd
-  #       text:  Week 01
   page-footer:
     background: light
     left: "Copyright 2022, LSE Data Science Institute" 
     right: 
-      # - icon: mailbox 
-      #   href: mailto:DSI.Admin@lse.ac.uk
+      - icon: mailbox 
+        href: mailto:DSI.Admin@lse.ac.uk
       - icon: twitter 
         href: https://twitter.com/lsedatascience
-
-# bibliography: references.bib  
   
 format:
   html:
@@ -73,12 +69,3 @@ margin-header: |
 
 body-header: |
   Experimenting
-# format:
-#   html:
-#     css: styles.css
-#     html-math-method: katex
-#   pdf:
-#     documentclass: report
-#     margin-left: 30mm
-#     margin-right: 30mm
-

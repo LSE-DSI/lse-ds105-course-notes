@@ -1,0 +1,45 @@
+mark{
+    /* background-color:#FFFF00; */
+    color: #1F2D3D;
+    font-weight: bold;
+
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-right: 0.3em;
+    padding-top: 0.025em;
+    padding-bottom: 0.025em;
+}
+
+mark:before {
+    content: '⚠️ revise '
+}
+
+.todo:before{
+    content: '📝 TODO: '
+}
+
+.todo{
+    background-color: #4682B4;
+    color: #fcfcfc;
+    padding-right: 0.3em;
+}
+
+.idea:before{
+    content: '💡 Idea: '
+
+}
+
+.idea{
+    background-color: #8FBC8F;
+    color: #fcfcfc;
+    padding-right: 0.3em;
+}
+
+.remove:before{
+    content: ''
+}
+
+.remove{
+    text-decoration:line-through;
+    padding-bottom: 0.1em;
+}

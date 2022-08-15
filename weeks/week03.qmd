@@ -42,9 +42,8 @@ title: "🗓️ Week 3 - The Terminal"
 ## Wrap Up (15 min)
 
 <details>
-<summary> 👨‍🏫 Wrap Up</summary>
-<mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
-
+    <summary> 👨‍🏫 Wrap Up</summary>
+    <mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
 </details>
 
 ## Coursework
