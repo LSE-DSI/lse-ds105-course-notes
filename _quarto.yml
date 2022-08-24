@@ -4,8 +4,9 @@ project:
   author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
   output-dir: _output
   render:
-    - "index.qmd"
+    - "*.qmd"
     - "weeks/*.qmd"
+    - "slides/*.qmd"
 
 bibliography: references/references.bib
 csl: references/chicago-author-date.csl

@@ -2,24 +2,26 @@
 title: "🗓️ Week 01 - Introduction, Context & Key Concepts"
 ---
 
-
 ## Lecture (45-50 min)
 
-<details>
-    <summary> 👨‍🏫 Part I - </summary>
- 
-</details>
+
+**🖼️ Slides - Part I**
+
+[(Full Screen)](/slides/week01_slides_part1.html)
+
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week01_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
 
 
-<details>
-<summary> 👨‍🏫 Part II - </summary>
+**🖼️ Slides - Part II**
 
-</details>
+[(Full Screen)](/slides/week01_slides_part2.html)
 
-<details>
-<summary> 👨‍🏫 Part III - </summary>
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week01_slides_part2.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
 
-</details>
 
 ## Demo (35-40 min)
 

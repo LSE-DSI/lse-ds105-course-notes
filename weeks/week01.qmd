@@ -2,32 +2,16 @@
 title: "🗓️ Week 1 - Introduction: Tools for Data Scientists"
 ---
 
-<mark></mark> Slides from previous year: [DS105/2021MT (Sharepoint)](https://lsecloud.sharepoint.com/:f:/r/sites/TEAM_LSE-LSEDataScienceInitiative-DS105/Shared%20Documents/DS105/MT-2021?csf=1&web=1&e=oMWOCC)
 
 ## Lecture (45-50 min)
 
+**🖼️ Slides - Part I**
 
-<details>
-<summary> 👨‍🏫 Part I - <mark class="remove">Agenda</mark> **Welcome to DS105** </summary>
-- <mark class="remove">Introduction</mark>
-- <mark class="remove">Mechanics</mark>
-- <mark class="remove">The module</mark>
-- <mark class="remove">Principles</mark>
-- <mark class="remove">Why are you here?</mark>
+[(Full Screen)](/slides/week01_slides_part1.html)
 
-### Part I - Intro
-- Who is your lecturer
-- What is this course about?
-- Structure of the course
-- 📋 Summative assignments (<mark></mark>)
-
-- 💬 Getting Support
-    When/how to use:
-    - Office Hours
-    - E-mail
-    - Moodle
-    - <mark></mark> **Slack** (?)
-</details>
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week01_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
 
 <details>
 <summary> 👨‍🏫 Part II - Why are we here?</summary>
