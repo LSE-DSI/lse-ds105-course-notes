@@ -20,7 +20,7 @@ git clone git@github.com:LSE-DSI/lse-ds202-course-notes.git
 ## 🗒️ Syllabus
 
 | **Intro**                                                |                  |
-|----------------------------------------------------------|------------------|
+|:----------------------------------------------------------|------------------|
 | &nbsp;&nbsp;&nbsp;&nbsp;Introduction and key tools for data scientists                | Week 01 |
 | **Behind the scenes**                                  |                  |
 | &nbsp;&nbsp;&nbsp;&nbsp;The Terminal: navigating the command line<br/> &nbsp;&nbsp;&nbsp;&nbsp;The Cloud: accessing and getting data in and out<br/> &nbsp;&nbsp;&nbsp;&nbsp;The Internet: protocols + scrapping + APIs| Week 02 <br/> Week 03 <br/> Week 04|
