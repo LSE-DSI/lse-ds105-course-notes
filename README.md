@@ -41,16 +41,19 @@ This module is not designed to be a hands-on introduction to the use of database
 
 ### 📝 Learning Objectives
 
-This course will cover the fundamentals of data, with an aim to understanding:
+(From CAPIS)
 
-- how data is **generated**, 
-- how it is **collected**, 
-- how it must be **transformed** for use and storage
-- how it is **stored**, and 
-- the ways it can be **retrieved** and **communicated**. 
-
-The course will also cover:
-
-- **workflow management** of individual and collaborative data science project 
-- setup and tools for typical **data pre-processing** (data transformation and data cleaning), which is frequently the starting point and most time consuming part of any data science project. 
+By the end of this course students will be able to:
+- Understand the basic structure of data types and common data formats
+- Show familiarity with international standards for common data types
+- Manage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples
+- Clean data, and diagnose common problems involved in data corruption and how to fix them
+- Understand the concept and fundamentals of databases
+- Link data is linked from different sources
+- Manage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples and real database applications.
+- Use the collaboration and version control system GitHub, based on the git version control system.
+- Understand the fundamentals of “markup” languages, including Hypertext Markup Language (HTML), Extensible
+- Markup Language (XML), and the Markdown format for formatting documents and web pages.
+- Create and maintain simple websites using HTML and CSS
+- Use APIs to send and retrieve data from Internet sources
 
