@@ -22,7 +22,7 @@ format:
     footer: 'DS105 - Data for Data Scientists :desktop_computer: :juggling_person:'
 ---
 
-# Who are we
+# Who we are
 
 ## The Data Science Institute
 
@@ -62,6 +62,39 @@ Activities of interest to you:
 
 ::: footer
 Sign up for DSI events at [lse.ac.uk/DSI/Events](https://www.lse.ac.uk/DSI/Events)
+:::
+
+## Our courses {.smaller}
+
+DSI offer accessible introductions to Data Science:
+
+::: columns
+::: {.column style="width: 31%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:0.5%;padding:1%;"}
+### DS101 {style="margin: 0em;"}
+**Fundamentals of <br/> Data Science**
+
+🎯 Focus: <br/> theoretical concepts of data science
+
+📂 How: <br/> reflections through reading and writing
+:::
+
+::: {.column style="width: 31%;background-color:#efefef;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:0%;padding:1%;"}
+### DS105 {style="margin-left: 0em;"}
+**Data for <br/> Data Scientists**
+
+🎯 Focus: <br/>collection and handling of real data
+
+📂 How: <br/>hands-on coding exercises and a group project
+:::
+
+::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+### DS202 {style="margin-left: 0em;"}
+**Data Science for <br/> Social Scientists**
+
+🎯 Focus: <br/>fundamental machine learning algorithms
+
+📂 How: <br/>practical use of ML techniques and metrics
+:::
 :::
 
 ## Your lecturer

@@ -63,3 +63,16 @@ td {
 .reveal > .slides > section > section {
     transform-style: flat;
   }
+
+/* @jonjoncardoso: The following is a trick I created to override mis-alignment of slides with multiple columns 
+Similar to what was reported here: https://github.com/quarto-dev/quarto-cli/issues/892 */
+
+.reveal .columns>.column>:not(ul,ol) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.reveal .columns>.column:last-child>:not(ul,ol) {
+    margin-right: 0;
+    margin-left: 0;
+}
