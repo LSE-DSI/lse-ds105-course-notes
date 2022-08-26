@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Jonathan Cardoso Silva">
+
+<title>LSE DS105M 2022/23 (summer revision) - LSE DS105M - Fundamentals of Data Science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assessments.html" rel="next">
+<link href=".//figures/LSE Data Science Institute.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="custom_style.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">LSE DS105M 2022/23 (summer revision)</span>
+  </a>
+          <div class="quarto-toggle-container ms-auto">
+              <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+          </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">LSE DS105M - Fundamentals of Data Science</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">🏠 Home</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./assessments.html" class="sidebar-item-text sidebar-link">✍️ Assessments</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">🗓️ Weeks</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week01.html" class="sidebar-item-text sidebar-link">Week 01</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="./figures/LSE Data Science Institute.png" class="img-fluid"></p>
+</div></div>
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-brief" id="toc-course-brief" class="nav-link active" data-scroll-target="#course-brief">📑 Course Brief</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">🎯 Learning Objectives</a></li>
+  <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">🧑🏻‍🏫 Teaching Team</a></li>
+  <li><a href="#syllabus" id="toc-syllabus" class="nav-link" data-scroll-target="#syllabus">📓 Syllabus</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">LSE DS105M - Fundamentals of Data Science</h1>
+<p class="subtitle lead">(2022/23 summer revision)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jonathan Cardoso Silva</a> </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="course-brief" class="level1">
+<h1>📑 Course Brief</h1>
+<p><strong>Focus:</strong> learn how to collect and handle so-called “real data”</p>
+<p><strong>How:</strong> hands-on coding exercises and a group project</p>
+</section>
+<section id="learning-objectives" class="level1">
+<h1>🎯 Learning Objectives</h1>
+<ul>
+<li>Understand the basic structure of <strong>data types</strong> and common <strong>data formats</strong></li>
+<li>Show familiarity with international standards for common data types</li>
+<li>Manage a typical data acquisition, cleaning, structuring, and analysis workflow using <strong>practical examples</strong></li>
+<li><strong>Clean data</strong>, and diagnose common problems involved in data corruption and how to fix them</li>
+<li>Understand the concept and fundamentals of <strong>databases</strong></li>
+<li><strong>Link data</strong> from different sources</li>
+<li>Use the collaboration and version control system <strong>GitHub</strong>, based on the git version control system.</li>
+<li>Markup Language (XML), and the Markdown format for <strong>formatting documents and web pages</strong>.</li>
+<li>Create and maintain <strong>simple websites</strong> using HTML and CSS</li>
+<li>Use <strong>APIs</strong> to send and retrieve data from Internet sources</li>
+</ul>
+</section>
+<section id="teaching-team" class="level1">
+<h1>🧑🏻‍🏫 Teaching Team</h1>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Teacher responsible</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Teaching assistants</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Administrative support</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="./figures/JonathanCardosoSilva_2022.jpg" class="img-fluid figure-img" alt="Photo of Dr. Jonathan Cardoso-Silva" style="width:5em"></p>
+</figure>
+</div>
+<p><strong>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jonathan Cardoso-Silva</a></strong> <br> <em>Assistant Professorial Lecturer</em> <br> LSE Data Science Institute</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li><em>(pending confirmation)</em></li>
+<li><em>(pending confirmation)</em></li>
+<li><em>(pending confirmation)</em></li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><mark class="todo"></mark></p>
+</div>
+</div>
+</div>
+</section>
+<section id="syllabus" class="level1">
+<h1>📓 Syllabus</h1>
+<p>A list of what will happen every week.</p>
+<p>Click on each Week link for more information (slides, lab instructions, recommended resources, etc.).</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Intro</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introduction and key tools for data scientists.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No class this week. Use this time to revisit basic R or python programming</td>
+<td>🗓️ <a href="./weeks/week01.html">Week 01</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Theme: Behind the scenes</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Terminal: navigating the command line.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navigating the command line in your own computer</td>
+<td>🗓️ <a href="">Week 02</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Cloud: accessing and getting data in and out.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to the cloud via the command line<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 01 (worth 10%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving the upload of data to the cloud.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class</td>
+<td>🗓️ <a href="">Week 03</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Internet: protocols + scrapping + APIs.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web scraping exercise<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 02 (worth 15%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving web scraping.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>[Group project]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after class, students pitch their ideas of preferred APIs/datasets<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- there will be a designated channel on our Slack for this</td>
+<td>🗓️ <a href="">Week 04</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Theme: Working with data</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The nature and shape of data (including markup language)<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Github &amp; Markdown<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>[Group project]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students form groups of 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students must submit a team contract to Moodle (not graded)</td>
+<td>🗓️ <a href="">Week 05</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tabular data: dataframes and databases<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collaborating as a group on Github</td>
+<td>🗓️ <a href="">Week 07</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unstructured data (text, audio &amp; image)<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 03 (worth 15%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
+<td>🗓️ <a href="">Week 08</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text as data, regex and sentiment analysis<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computational Notebooks and DataFrames</td>
+<td>🗓️ <a href="">Week 09</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Theme: Applications</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Topic modelling &amp; document similarities<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🦸 Super tech-support<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- we will be there to help you sort out any tech problems you’re having with your projects</td>
+<td>🗓️ <a href="">Week 10</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data viz with the grammar of graphics<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 04 (worth 20%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
+<td>🗓️ <a href="">Week 11</a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./assessments.html" class="pagination-link">
+        <span class="nav-page-text">✍️ Assessments</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2022, LSE Data Science Institute</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:DSI.Admin@lse.ac.uk">
+      <i class="bi bi-mailbox" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/lsedatascience">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

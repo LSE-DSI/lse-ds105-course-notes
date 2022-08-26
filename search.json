@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LSE DS105M - Fundamentals of Data Science",
+    "section": "",
+    "text": "🎯 Learning Objectives\n\nUnderstand the basic structure of data types and common data formats\nShow familiarity with international standards for common data types\nManage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples\nClean data, and diagnose common problems involved in data corruption and how to fix them\nUnderstand the concept and fundamentals of databases\nLink data from different sources\nUse the collaboration and version control system GitHub, based on the git version control system.\nMarkup Language (XML), and the Markdown format for formatting documents and web pages.\nCreate and maintain simple websites using HTML and CSS\nUse APIs to send and retrieve data from Internet sources\n\n\n\n🧑🏻‍🏫 Teaching Team\n\nTeacher responsibleTeaching assistantsAdministrative support\n\n\n\n\n\n\n\nDr. Jonathan Cardoso-Silva  Assistant Professorial Lecturer  LSE Data Science Institute\n\n\n\n(pending confirmation)\n(pending confirmation)\n(pending confirmation)\n\n\n\n\n\n\n\n\n\n📓 Syllabus\nA list of what will happen every week.\nClick on each Week link for more information (slides, lab instructions, recommended resources, etc.).\n\n\n\nIntro\n\n\n\n\n\n    Lecture:         Introduction and key tools for data scientists.    Lab:               No class this week. Use this time to revisit basic R or python programming\n🗓️ Week 01\n\n\nTheme: Behind the scenes\n\n\n\n    Lecture:         The Terminal: navigating the command line.    Lab:               Navigating the command line in your own computer\n🗓️ Week 02\n\n\n    Lecture:         The Cloud: accessing and getting data in and out.    Lab:               Connecting to the cloud via the command line    Summative 01 (worth 10%):     - Problem set involving the upload of data to the cloud.     - Deadline: day before next week’s class\n🗓️ Week 03\n\n\n    Lecture:         The Internet: protocols + scrapping + APIs.    Lab:                Web scraping exercise    Summative 02 (worth 15%):     - Problem set involving web scraping.     - Deadline: day before next week’s class    [Group project]     - after class, students pitch their ideas of preferred APIs/datasets     - there will be a designated channel on our Slack for this\n🗓️ Week 04\n\n\nTheme: Working with data\n\n\n\n    Lecture:         The nature and shape of data (including markup language)    Lab:                Github & Markdown    [Group project]     - students form groups of 3     - students must submit a team contract to Moodle (not graded)\n🗓️ Week 05\n\n\n    Lecture:         Tabular data: dataframes and databases    Lab:                Collaborating as a group on Github\n🗓️ Week 07\n\n\n    Lecture:         Unstructured data (text, audio & image)    Lab:               We will have group presentations instead of a structured class this week.    Summative 03 (worth 15%):     - each group will present about their selected data     - see instructions for marking criteria\n🗓️ Week 08\n\n\n    Lecture:         Text as data, regex and sentiment analysis    Lab:                Computational Notebooks and DataFrames\n🗓️ Week 09\n\n\nTheme: Applications\n\n\n\n    Lecture:         Topic modelling & document similarities    Lab:        🦸 Super tech-support     - we will be there to help you sort out any tech problems you’re having with your projects\n🗓️ Week 10\n\n\n    Lecture:         Data viz with the grammar of graphics    Lab:               We will have group presentations instead of a structured class this week.    Summative 04 (worth 20%):     - each group will present about their selected data     - see instructions for marking criteria\n🗓️ Week 11"
+  },
+  {
+    "objectID": "assessments.html",
+    "href": "assessments.html",
+    "title": "LSE DS105M | Assessments",
+    "section": "",
+    "text": "This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:"
+  },
+  {
+    "objectID": "assessments.html#problem-sets-25",
+    "href": "assessments.html#problem-sets-25",
+    "title": "LSE DS105M | Assessments",
+    "section": "📝 Problem Sets (25%)",
+    "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 03 - worth 10% of final mark\nWeek 04 - worth 15% of final mark"
+  },
+  {
+    "objectID": "assessments.html#group-presentation-35",
+    "href": "assessments.html#group-presentation-35",
+    "title": "LSE DS105M | Assessments",
+    "section": "🗣️ Group Presentation (35%)",
+    "text": "🗣️ Group Presentation (35%)\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark"
+  },
+  {
+    "objectID": "assessments.html#final-project-40",
+    "href": "assessments.html#final-project-40",
+    "title": "LSE DS105M | Assessments",
+    "section": "🎇 Final Project (40%)",
+    "text": "🎇 Final Project (40%)\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
+  },
+  {
+    "objectID": "weeks/week01.html",
+    "href": "weeks/week01.html",
+    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "section": "",
+    "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.\nWe will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?"
+  },
+  {
+    "objectID": "weeks/week01.html#slides---part-i-45-50-min",
+    "href": "weeks/week01.html#slides---part-i-45-50-min",
+    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "section": "🖼️ Slides - Part I (45-50 min)",
+    "text": "🖼️ Slides - Part I (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week01.html#coffee-break-10-min",
+    "href": "weeks/week01.html#coffee-break-10-min",
+    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "section": "Coffee Break ☕ (10 min)",
+    "text": "Coffee Break ☕ (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week01.html#slides---part-ii-45-50-min",
+    "href": "weeks/week01.html#slides---part-ii-45-50-min",
+    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "section": "🖼️ Slides - Part II (45-50 min)",
+    "text": "🖼️ Slides - Part II (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
+    "href": "slides/week01_slides_part1.html#the-data-science-institute",
+    "title": "DS105 Data for Data Scientists",
+    "section": "The Data Science Institute",
+    "text": "The Data Science Institute\n\n\n\n\n\nThis course is offered by the LSE Data Science Institute (DSI).\nDSI is the hub for LSE’s interdisciplinary collaboration in data science\n\n\n\n\nSign up for DSI events at lse.ac.uk/DSI/Events"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#the-data-science-institute-1",
+    "href": "slides/week01_slides_part1.html#the-data-science-institute-1",
+    "title": "DS105 Data for Data Scientists",
+    "section": "The Data Science Institute",
+    "text": "The Data Science Institute\n\n\n\n\nActivities of interest to you:\n\nCIVICA Seminar Series\nCareers in Data Science\nSocial events\nIndustry “field trips”\nSummer projects\n\n\n\n\nSign up for DSI events at lse.ac.uk/DSI/Events"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#our-courses",
+    "href": "slides/week01_slides_part1.html#our-courses",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Our courses",
+    "text": "Our courses\nDSI offer accessible introductions to Data Science:\n\n\nDS101\nFundamentals of  Data Science\n🎯 Focus:  theoretical concepts of data science\n📂 How:  reflections through reading and writing\n\nDS105\nData for  Data Scientists\n🎯 Focus: collection and handling of real data\n📂 How: hands-on coding exercises and a group project\n\nDS202\nData Science for  Social Scientists\n🎯 Focus: fundamental machine learning algorithms\n📂 How: practical use of ML techniques and metrics"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#your-lecturer",
+    "href": "slides/week01_slides_part1.html#your-lecturer",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Your lecturer",
+    "text": "Your lecturer\n\n \n Also present the teaching assistants"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#learning-objectives-cont.",
+    "href": "slides/week01_slides_part1.html#learning-objectives-cont.",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Learning Objectives (cont.)",
+    "text": "Learning Objectives (cont.)\nThe course will also cover:\n\n\nworkflow management of individual and collaborative data science project\nsetup and tools for typical data pre-processing (data transformation and data cleaning)\n\nfrequently the starting point and most time-consuming part of any data science project.\n\n\n\n\n\n\nCheck  this link  for a more comprehensive set of learning objectives."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#syllabus",
+    "href": "slides/week01_slides_part1.html#syllabus",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Syllabus",
+    "text": "Syllabus\n\n\n\n\n\n\n\nIntro\n\n\n\n\n\n    Introduction and key tools for data scientists\nWeek 01\n\n\nBehind the scenes\n\n\n\n    The Terminal: navigating the command line     The Cloud: accessing and getting data in and out     The Internet: protocols + scrapping + APIs\nWeek 02  Week 03  Week 04\n\n\nWorking with data\n\n\n\n    The nature and shape of data    Tabular data: dataframes and databases    Unstructured data (text, audio & image)    Text as data, regex and sentiment analysis\nWeek 05  Week 07  Week 08 Week 09\n\n\nApplications\n\n\n\n    Topic modelling & document similarities    Data viz with the grammar of graphics\nWeek 10  Week 11"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#structure-of-lectures",
+    "href": "slides/week01_slides_part1.html#structure-of-lectures",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Structure of lectures 👨🏻‍🏫",
+    "text": "Structure of lectures 👨🏻‍🏫\nOur lectures will be split in two parts:\n\n\nPart I (~ 50 min): Traditional exposition of theoretical content\nbreak (~ 10 min): Grab coffee ☕ or relax 🧘\nPart II (~ 50 min): Live demo\n\nTypically, demonstration of terminal usage or Jupyter notebooks\nFeel free to follow along in your own laptops."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#structure-of-classes",
+    "href": "slides/week01_slides_part1.html#structure-of-classes",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Structure of classes 👩‍💻",
+    "text": "Structure of classes 👩‍💻\n\n\nStudents will work on weekly, structured problem sets in the staff-led class sessions.\nTips to get the most of classes:\n\nBring your own laptops 💻 (most tablets are not suitable for programming)\nRead the recommended reading prior to the class\nAttempt to replicate the examples demonstrated in the live demo during the lecture"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#class-groups",
+    "href": "slides/week01_slides_part1.html#class-groups",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Class groups",
+    "text": "Class groups\n Update the groups here once we hear back from LSE Timetables"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#assessments",
+    "href": "slides/week01_slides_part1.html#assessments",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Assessments 📔",
+    "text": "Assessments 📔\nThe breakdown of assessment for this course will be as follows:"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#assessments---problem-sets-25",
+    "href": "slides/week01_slides_part1.html#assessments---problem-sets-25",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Assessments - Problem sets (25%)",
+    "text": "Assessments - Problem sets (25%)\n\n\nThese will involve a mix of coding tasks and elements of self-assessment (similar to problem sets we will solve in the labs)\nYou will have until the day before the following class to submit your response\nSummative problem sets will be released on:\n\nWeek 03 - worth 10% of final mark\nWeek 04 - worth 15% of final mark"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#assessments---group-presentations-35",
+    "href": "slides/week01_slides_part1.html#assessments---group-presentations-35",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Assessments - Group presentations (35%)",
+    "text": "Assessments - Group presentations (35%)\n\n\nYou will form groups prior to Reading Week\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#assessments---final-project-40",
+    "href": "slides/week01_slides_part1.html#assessments---final-project-40",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Assessments - Final project (40%)",
+    "text": "Assessments - Final project (40%)\n\n\nEach group will produce a webpage of their project\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#office-hours",
+    "href": "slides/week01_slides_part1.html#office-hours",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Office hours",
+    "text": "Office hours\n\n\nIt is probably a good idea to book office hours if:\n\nyou struggled with a technical or theoretical aspect of a problem set in the previous week,\nyou have queries about careers in data science,\nyou want guidance in how to apply data science to other things you are studying outside this course.\n\nCome prepared. You only have 15 minutes.\nAsk for help sooner rather than later.\nBook slots via StudentHub up to 12 hours in advance."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#communication",
+    "href": "slides/week01_slides_part1.html#communication",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Communication",
+    "text": "Communication\n\n\nJoin our Slack group:  add link to slack\nUse the public Slack channels to talk to share links, content (or memes) with your colleagues.\nOur teaching team will dedicate some time during the week to answer questions or other interactions on Slack.\nReserve 📧 e-mail for formal requests: extensions, deferrals, etc.\n\nNo need to e-mail to inform you will skip a class, for example."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#any-questions",
+    "href": "slides/week01_slides_part1.html#any-questions",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Any questions?",
+    "text": "Any questions?\n\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘35mm macro photography of a robot holding a question mark card, white background’"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#we-changed-how-we-consume-music",
+    "href": "slides/week01_slides_part1.html#we-changed-how-we-consume-music",
+    "title": "DS105 Data for Data Scientists",
+    "section": "We changed how we consume music 🎧",
+    "text": "We changed how we consume music 🎧\n\n\n\n\n\n\nTo interact with this plot, check reference (Fischer-Baum 2017) at the end of this presentation."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#we-changed-how-we-consume-video",
+    "href": "slides/week01_slides_part1.html#we-changed-how-we-consume-video",
+    "title": "DS105 Data for Data Scientists",
+    "section": "We changed how we consume video 🎞️",
+    "text": "We changed how we consume video 🎞️\n\n\n\n\n\n\nTo interact with this plot, check reference (Fischer-Baum 2017) at the end of this presentation."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#smartphones-are-a-very-recent-thing",
+    "href": "slides/week01_slides_part1.html#smartphones-are-a-very-recent-thing",
+    "title": "DS105 Data for Data Scientists",
+    "section": "Smartphones 📱 are a very recent thing",
+    "text": "Smartphones 📱 are a very recent thing\n\n\n\n\n\n\nTo interact with this plot, check reference (Fischer-Baum 2017) at the end of this presentation."
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#we-spend-a-lot-more-time-connected",
+    "href": "slides/week01_slides_part1.html#we-spend-a-lot-more-time-connected",
+    "title": "DS105 Data for Data Scientists",
+    "section": "We spend a lot more time connected",
+    "text": "We spend a lot more time connected"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#references",
+    "href": "slides/week01_slides_part1.html#references",
+    "title": "DS105 Data for Data Scientists",
+    "section": "References",
+    "text": "References\n\n\nFischer-Baum, Reuben. 2017. “What ‘Tech World’ Did You Grow up In?” Washington Post. https://www.washingtonpost.com/graphics/2017/entertainment/tech-generations/.\n\n\nKolawole, Emi. 2013. “About Those 2005 and 2013 Photos of the Crowds in St. Peter’s Square.” Washington Post. http://wapo.st/WKKTMh.\n\n\n\n\n\nDS105 - Data for Data Scientists 🖥️ 🤹"
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#data-science-is",
+    "href": "slides/week01_slides_part2.html#data-science-is",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "Data science is…",
+    "text": "Data science is…\n\n\n“[…] a field of study and practice that involves the collection, storage, and processing of data in order to derive important 💡 insights into a problem or a phenomenon.\n\n\n\n\nSuch data may be generated by humans (surveys, logs, etc.) or machines (weather data, road vision, etc.),\n\n\n\n\nand could be in different formats (text, audio, video, augmented or virtual reality, etc.).”\n\n\n\n\n(Shah 2020, chap. 1) - Emphasis and emojis are of my own making."
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#the-mythical-unicorn",
+    "href": "slides/week01_slides_part2.html#the-mythical-unicorn",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "The mythical unicorn 🦄",
+    "text": "The mythical unicorn 🦄\n\n\n\n\nSee (davenport_beyond_2020?) for an in-depth discussion about this.\n  Re-do unicorn illustration"
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#the-reality-we-are-all-jugglers",
+    "href": "slides/week01_slides_part2.html#the-reality-we-are-all-jugglers",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "The reality: we are all jugglers 🤹",
+    "text": "The reality: we are all jugglers 🤹\n\n Data Scientists do not need know everything, only a bit of everything 🤹"
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#data-science-and-social-science",
+    "href": "slides/week01_slides_part2.html#data-science-and-social-science",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "Data Science and Social Science",
+    "text": "Data Science and Social Science\n\nContent borrowed from ME314 Day 1\n\n\n\nSocial science: The goal is typically explanation\nData science: The goal is frequently prediction, or data exploration\nMany of the same methods are used for both objectives\n\n\n\n\n Illustrate"
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#practical-examples",
+    "href": "slides/week01_slides_part2.html#practical-examples",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "Practical examples",
+    "text": "Practical examples\n\n\n\n\nDS105 - Data for Data Scientists 🖥️ 🤹\n\n\n\nShah, Chirag. 2020. A Hands-on Introduction to Data Science. Cambridge, United Kingdom ; New York, NY, USA: Cambridge University Press. https://librarysearch.lse.ac.uk/permalink/f/1n2k4al/TN_cdi_askewsholts_vlebooks_9781108673907.\n\n\n\n Give a pratical example of how one would approach the same dataset differently under these two modelling views."
+  }
+]
