@@ -2,6 +2,8 @@
 
 [Quarto project](https://quarto.org/docs/projects/quarto-projects.html) containing Course Notes for DS105, updated on the Summer of 2022.
 
+Webpage: https://lse-dsi.github.io/lse-ds105-course-notes/
+
 ## 🔧 How to build the course website
 
 1. Install [VSCode](https://code.visualstudio.com/download)
