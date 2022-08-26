@@ -1,5 +1,5 @@
 ---
-subtitle: "DS105 Data for Data Scientists :desktop_computer: :juggling_person:"
+subtitle: "DS105 Data for Data Science :desktop_computer: :juggling_person:"
 title: "🗓️ Week 01 - Part II <br/> Data Science toolbox"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
@@ -19,7 +19,7 @@ format:
     preview-links: auto
     logo: /figures/LSE Data Science Institute.png
     css: /css/styles_slides.css
-    footer: 'DS105 - Data for Data Scientists :desktop_computer: :juggling_person:'
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---
 
 # What do we mean by data science?

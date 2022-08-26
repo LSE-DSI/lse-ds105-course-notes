@@ -1,5 +1,5 @@
 ---
-title: "DS105 Data for Data Scientists"
+title: "DS105 Data for Data Science"
 subtitle: "🗓️ Week 01 - Part I: Structure of the course"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
@@ -19,7 +19,7 @@ format:
     preview-links: true
     logo: /figures/LSE Data Science Institute.png
     css: /css/styles_slides.css
-    footer: 'DS105 - Data for Data Scientists :desktop_computer: :juggling_person:'
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---
 
 # Who we are
