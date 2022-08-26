@@ -16,7 +16,7 @@ format:
     mouse-wheel: false
     chalkboard: 
       buttons: true
-    preview-links: auto
+    preview-links: true
     logo: /figures/LSE Data Science Institute.png
     css: /css/styles_slides.css
     footer: 'DS105 - Data for Data Scientists :desktop_computer: :juggling_person:'
@@ -213,6 +213,17 @@ The breakdown of assessment for this course will be as follows:
 -   Group presentations: 
     - **Week 08** - worth 15% of final mark
     - **Week 11** - worth 20% of final mark
+:::
+
+## Assessments - Final project (40%)
+
+::: incremental
+- Each group will produce a webpage of their project
+- Description of data, research questions, challenges, statistics and simple plots
+- Think of it as a portfolio project!
+- Submission deadline: Lent Term
+    - Exact date to be confirmed
+    - (end of Jan/2023 - beginning of Feb/2023)
 :::
 
 ## Office hours
@@ -413,7 +424,7 @@ After our 10-min break ☕:
 
 ## References {style="word-break:break-all;"}
 
-::: {#refs}
+::: {#refs .r-fit-text}
 ::: 
 
 

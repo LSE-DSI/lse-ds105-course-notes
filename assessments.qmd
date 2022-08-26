@@ -2,15 +2,30 @@
 title: "LSE DS105M | Assessments"
 ---
 
-<mark></mark> Make sure it meets the requirements set out in the [CAPIS](/regulation.html) form.
+This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:
 
-## Assessment Scheme
+## 📝 Problem Sets (25%)
 
+-   A mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs
+-   Students have until the day before the following class to submit their response to problem sets
+-   Summative problem sets will be released on: 
+    - **Week 03** - worth 10% of final mark
+    - **Week 04** - worth 15% of final mark
 
-|Assignment Type|Description| % | Deadline|
-|---------------|-----------|---|---------|
-|<mark></mark> Team Contract|Description of your goals, expectations, roles and your team's communication strategy. <br/> Here is a link to the relevant submission page. | 20% | Week 05 | 
-| <mark></mark> Group Presentation | You will present the progress of your group project | 20% | [Week 07](https://moodle.lse.ac.uk/mod/page/view.php?id=1072289) |
-| <mark></mark> Group Presentation  | You will present the progress of your group project | 20% | [Week 10](https://moodle.lse.ac.uk/mod/page/view.php?id=1080601) |
-| <mark></mark> Individual Self-Assessment | Here you will be asked to reflect on your individual contribution to the group. | 20% | [Beginning of ST](https://moodle.lse.ac.uk/mod/assign/view.php?id=1083747) |
-| <mark></mark> Final Project | You will have to submit the URL that points to the data product you created (more info [here](https://moodle.lse.ac.uk/mod/assign/view.php?id=1053444)) | 20% | [End of ST](https://moodle.lse.ac.uk/mod/page/view.php?id=1071759) |
+## 🗣️ Group Presentation (35%)
+
+-  Students will form groups prior to Reading Week (Week 06)
+    - Pitch your ideas of API/datasets on Week 04
+    - Form the groups on Week 05
+-   Group presentations: 
+    - **Week 08** - worth 15% of final mark
+    - **Week 11** - worth 20% of final mark
+
+## 🎇 Final Project (40%)
+
+- Each group will have to produce a **webpage** of their project, using Github Markdown
+- Description of data, research questions, challenges, statistics and simple plots
+- Think of it as a portfolio project!
+- Submission deadline: Lent Term
+    - Exact date to be confirmed
+    - (end of Jan/2023 - beginning of Feb/2023)

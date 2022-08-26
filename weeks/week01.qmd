@@ -1,19 +1,40 @@
 ---
-title: "🗓️ Week 1 - Introduction: Tools for Data Scientists"
+title: "🗓️ Week 1 - Introduction and the Data Science Toolbox"
 ---
 
+In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course. 
 
-## Lecture (45-50 min)
+We will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?
 
-**🖼️ Slides - Part I**
+# Communication
 
-[(Full Screen)](/slides/week01_slides_part1.html)
+![](/figures/slack_logo.svg){height="1.5em" fig-align="left" fig-alt="Slack logo"}
+
+Importantly, you will receive an invitation to join our Slack group via e-mail. 
+
+Send an [e-mail to Jon](mailto:J.Cardoso-Silva@lse.ac.uk) if you have not received an invite by the time of the first lecture. 
+
+Slack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project. 
+Most of our "informal" communication and interactions will happen through Slack. There will be channels dedicated to discussing each week's content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.
+
+Check out the following links to understand more about this software:
+
+- [Slack tutorials](https://slack.com/intl/en-gb/help/categories/360000049063-Slack-tutorials)
+- [Collaborate effectively in channels](https://slack.com/intl/en-gb/help/articles/360058495654-Collaborate-effectively-in-channels?from=channels)
+
+# Lecture
+
+## **🖼️ Slides - Part I** (45-50 min)
+
+Either click on the slide area below or click [here](/slides/week01_slides_part1.html) to view it in fullscreen.
+Use your keypad to navigate the slides.
+
 
 <div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
 <iframe src="/slides/week01_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
 </div>
 
-<details>
+<!-- <details>
 <summary> 👨‍🏫 Part II - Why are we here?</summary>
 - New data sources -> New applications -> more data
 - <mark></mark> Examples in Finance, Healthcare, Transportation, etc. 
@@ -25,34 +46,24 @@ title: "🗓️ Week 1 - Introduction: Tools for Data Scientists"
 - <mark class="remove">Learn how to use this tools</mark> <mark class="todo">Actually name the tools used in data science in practice</mark>
 - <mark class="remove">Leverage new data sources</mark> <mark class="todo">Actually name data sources or where data is often found</mark>
 - <mark class="remove">Do social science</mark> <mark class="todo"> this is very broad, what do mean by social science in this context exactly?</mark>
-</details>
+</details> -->
 
+## Coffee Break ☕ (10 min)
 
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
 
-## Demo (35-40 min)
+## **🖼️ Slides - Part II** (45-50 min)
 
-<details>
-<summary> 🖥️ Demo: Jupyter Notebooks </summary>
-- <mark class="idea"></mark> Explain Jupyter Notebooks.
-- <mark class="idea"></mark> Run a simple demo with a clean dataset.
-</details>
+Either click on the slide area below or click [here](/slides/week01_slides_part2.html) to view it in fullscreen.
+Use your keypad to navigate the slides.
 
-## Wrap Up (15 min)
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week01_slides_part2.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
 
-<details>
-<summary> 👨‍🏫 Wrap Up</summary>
-<mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture. 
+# 📒 Preparing for the next week
 
-</details>
-
-## Coursework
-
-<details>
-<summary> 📒 Prepare for next weeks' class </summary>
 <mark class="todo"></mark>
-</details>
 
-
-
-## Recommended Reading
+# Recommended Reading
 <mark class="todo"></mark>

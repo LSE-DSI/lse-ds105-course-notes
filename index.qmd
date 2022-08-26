@@ -3,51 +3,65 @@ title: "LSE DS105M - Fundamentals of Data Science"
 subtitle: "(2022/23 summer revision)"
 ---
 
-# 📑 Course Content
+# 📑 Course Brief
 
-This course will cover the fundamentals of data, with an aim to understanding how data is generated, how it is collected, how it must be transformed for use and storage, how it is stored, and the ways it can be retrieved and communicated. The course will also cover workflow management for typical data transformation and cleaning projects, frequently the starting point and most time consuming part of any data science project. This course uses a project-based learning approach towards the study of online publishing and group-based collaboration, essential ingredients of modern data science projects.
+**Focus:** learn how to collect and handle so-called "real data"
 
-It introduces the principles and applications of the electronic storage, structuring, manipulation, transformation, extraction, and dissemination of data. This includes data types, how data is stored and recorded electronically, the concept and fundamentals of databases. It also covers how data is formatted and communicated. It presents basic methods for obtaining data from the Internet, including simple methods for web scraping and the use of APIs to submit queries that return structured data. Finally, it covers methods for formatting and publishing data.
+**How:** hands-on coding exercises and a group project
 
-Sharing and publishing data will also form a key part of this module and will include key skills in on-line publishing, including the elements of web design, the technical elements of web technologies and web programming, as well as the use of revision-control and group collaboration tools such as GitHub. Each student will build an interactive website based on content relevant to their domain-related interests, and will use GitHub for accessing and submitting course materials and assignments. The final project will involve group work to create a data-based website published on GitHub.
+# 🎯 Learning Objectives
 
-This module is not designed to be a hands-on introduction to the use of databases, but does introduce the concepts of databases. For more detailed learning on databases, we will encourage students to take ST207 Databases.
+- Understand the basic structure of **data types** and common **data formats**
+- Show familiarity with international standards for common data types
+- Manage a typical data acquisition, cleaning, structuring, and analysis workflow using **practical examples**
+- **Clean data**, and diagnose common problems involved in data corruption and how to fix them
+- Understand the concept and fundamentals of **databases**
+- **Link data** from different sources
+- Use the collaboration and version control system **GitHub**, based on the git version control system.
+- Markup Language (XML), and the Markdown format for **formatting documents and web pages**.
+- Create and maintain **simple websites** using HTML and CSS
+- Use **APIs** to send and retrieve data from Internet sources 
 
-# ℹ️ Course Information
+# 🧑🏻‍🏫 Teaching Team
 
-## Teacher Responsible
+::: {.panel-tabset}
+## Teacher responsible
 
-Dr. [Jonathan Cardoso-Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva) & Dr. [Julio Amador Diaz Lopez](https://www.lse.ac.uk/DSI/People/Julio-Amador-Diaz-Lopez).
+![](/figures/JonathanCardosoSilva_2022.jpg){fig-align="left" fig-alt="Photo of Dr. Jonathan Cardoso-Silva" width="5em"}  
 
-## Availability
-This module is designed for students on social science degree programmes who do not have A-level Mathematics (e.g. in Anthropology, Law, and Social Policy).
+**Dr. [Jonathan Cardoso-Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)** <br/>
+_Assistant Professorial Lecturer_ <br/>
+LSE Data Science Institute
 
-## Course Administration
-If you have any administrative queries about this course please contact us at [dsi.admin@lse.ac.uk](http://dsi.admin@lse.ac.uk/).
+## Teaching assistants
 
-## Lectures
+- _(pending confirmation)_
+- _(pending confirmation)_
+- _(pending confirmation)_ 
+
+## Administrative support
 
 <mark class="todo"></mark>
+:::
 
-## Classes
+# 📓 Syllabus
 
--   Classes run from Week 01 until Week 11, with the exception of reading week (Week 06).
+A list of what will happen every week. 
 
-## Formative coursework
+Click on each Week link for more information (slides, lab instructions, recommended resources, etc.).
 
-<mark></mark>In the initial sessions, students will work on weekly, structured problem sets in the staff-led class sessions. Examples of exercises involve: setting up account, repositories and pages on GitHub, accessing terminal and computer servers.
-
-Later on, students will be expected to work on their group projects in the staff-led class sessions.
-
-## Assessment
-
-<mark class="todo"></mark>
-
-## Feedback
-We want to hear from you!
-
-The DSI is always seeking to improve the student experience within courses. If you have comments, queries or issues, please let us know. You can send administrative related thoughts to [dsi.admin@lse.ac.uk](http://dsi.admin@lse.ac.uk/) and thoughts on teaching can be raised with your seminar leader.
-
-It is important that student concerns are addressed and students have a say in the running of their course, so you also have your course forum that can be used as a place to discuss the course with your fellow students and your home Department will hold [SSLCs](https://info.lse.ac.uk/current-students/Assets/Articles/student-voice) at least once per term. 
-
-Please pass on your thoughts about the course to your programme's Academic Representative so that they can raise these at SSLC meetings. Your Department will then be able to forward these to the DSI, enabling us to improve the course in future.
+| **Intro**                                                |                  |
+|:----------------------------------------------------------|------------------|
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introduction and key tools for data scientists.<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No class this week. Use this time to revisit basic R or python programming | 🗓️ [Week 01](/weeks/week01.html) |
+| **Theme: Behind the scenes**                                  |                  |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Terminal: navigating the command line.<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navigating the command line in your own computer| 🗓️ [Week 02]() |
+|&nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Cloud: accessing and getting data in and out.<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to the cloud via the command line<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**Summative 01 (worth 10%):**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving the upload of data to the cloud.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week's class| 🗓️ [Week 03]() |
+|&nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Internet: protocols + scrapping + APIs.<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web scraping exercise<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**Summative 02 (worth 15%):**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving web scraping.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week's class<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**[Group project]**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after class, students pitch their ideas of preferred APIs/datasets<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- there will be a designated channel on our Slack for this|🗓️ [Week 04]()|
+| **Theme: Working with data**                                |                  |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The nature and shape of data (including markup language)<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Github & Markdown<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**[Group project]**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students form groups of 3<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students must submit a team contract to Moodle (not graded) | 🗓️ [Week 05]() |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tabular data: dataframes and databases<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collaborating as a group on Github | 🗓️ [Week 07]() |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unstructured data (text, audio & image)<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**Summative 03 (worth 15%):**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria | 🗓️ [Week 08]() |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text as data, regex and sentiment analysis<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computational Notebooks and DataFrames| 🗓️ [Week 09]()|
+| **Theme: Applications**                                         |                  |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Topic modelling & document similarities<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🦸 Super tech-support<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- we will be there to help you sort out any tech problems you're having with your projects | 🗓️ [Week 10]() |
+| &nbsp;&nbsp;&nbsp;&nbsp;**Lecture:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data viz with the grammar of graphics<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Lab:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**Summative 04 (worth 20%):**<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria | 🗓️ [Week 11]()  |

@@ -4,7 +4,8 @@ project:
   author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
   output-dir: _output
   render:
-    - "*.qmd"
+    - "index.qmd"
+    - "assessments.qmd"
     - "weeks/*.qmd"
     - "slides/*.qmd"
 
@@ -31,20 +32,18 @@ website:
     contents:
       - href: index.qmd
         text: "🏠 Home"
-      - href: regulation.qmd
-        text: "📜 CAPIS"
       - href: assessments.qmd
         text: "✍️ Assessments"
       - section: "🗓️ Weeks"
         contents:
          - href: weeks/week01.qmd
            text: Week 01
-         - href: weeks/week02.qmd
-           text: Week 02
-         - href: weeks/week03.qmd
-           text: Week 03
-         - href: weeks/week04.qmd
-           text: Week 04
+        #  - href: weeks/week02.qmd
+        #    text: Week 02
+        #  - href: weeks/week03.qmd
+        #    text: Week 03
+        #  - href: weeks/week04.qmd
+        #    text: Week 04
   navbar:
     background: primary
   page-footer:
