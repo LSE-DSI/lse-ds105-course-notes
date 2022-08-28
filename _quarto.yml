@@ -1,7 +1,6 @@
 project:
   type: "website"
-  title: "LSE DS105M 2022/23 (summer revision)"
-  author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+  title: "LSE DS105M 2022/23"
   output-dir: _output
   render:
     - "index.qmd"
@@ -13,8 +12,7 @@ bibliography: references/references.bib
 csl: references/chicago-author-date.csl
 
 website:
-  title: "LSE DS105M 2022/23 (summer revision)"
-  author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+  title: "LSE DS105M 2022/23"
   toc: true
   toc-location: left
   toc-depth: 3

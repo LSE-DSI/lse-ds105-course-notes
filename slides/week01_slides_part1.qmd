@@ -416,9 +416,9 @@ After our 10-min break ☕:
 
 - Given all this, what do we mean by data science?
 - A tale of unicorns
-- Approaching the ocean of data: the concept of data wrangling 
+- Approaching the ocean of data: the concept of data wrangling
+- The data science toolkit  
 - What to expect of the rest of this course
-- The tools you will need 
 
 ------------------------------------------------------------------------
 
