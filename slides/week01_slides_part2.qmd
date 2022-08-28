@@ -108,10 +108,60 @@ We are all jugglers 🤹
 See [@schutt_doing_2013, chapter 1] for more on this.
 :::
 
+::: notes
+<mark class="todo">Find a good way to transition between these slides.</mark>
+:::
 
-# How is that different to what I have learned in my previous stats courses?
+# The Data Science workflow {auto-animate=true}
+```{mermaid}
+%%| data-id: 1
+%%| fig-width: 100%
+flowchart LR
+  nodeData("fa:fa-file-import Gather\ndata")
+  nodeStorage("fa:fa-database Store it\nsomewhere")
+  nodeClean("fa:fa-broom Clean &\nPre-process")
+  nodeDataset("fa:fa-table Build a \ndataset")
+  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
+  nodeML("fa:fa-robot Machine\nLearning")
+  nodeComm("fa:fa-podium-star Gather\ninsight &\ncommunicate")
 
-## Data Science and Social Science
+  nodeData -->  nodeStorage
+  nodeStorage --> nodeClean
+  nodeClean --> nodeDataset
+  nodeDataset --> nodeEDA
+  nodeEDA --> nodeML
+  nodeML --> nodeComm
+```
+
+# The Data Science workflow {auto-animate=true auto-animate-easing="ease-out"}
+```{mermaid}
+%%| data-id: 1
+%%| fig-width: 100%
+flowchart LR
+  nodeData("fa:fa-file-import Gather\ndata")
+  nodeStorage("fa:fa-database Store it\nsomewhere")
+  nodeClean("fa:fa-broom Clean &\nPre-process")
+  nodeDataset("fa:fa-table Build a \ndataset")
+  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
+  nodeML("fa:fa-robot Machine\nLearning")
+  nodeComm("fa:fa-podium-star Gather\ninsight &\ncommunicate")
+
+  subgraph 80% of your time
+    nodeData -->  nodeStorage
+    nodeStorage --> nodeClean
+    nodeClean --> nodeDataset
+  end
+  subgraph 20% of your time
+    direction TB
+    nodeDataset --> nodeEDA
+    nodeEDA --> nodeML
+    nodeML --> nodeComm
+  end
+```
+
+# The toolbox
+
+# Data Science and Social Science
 
 ::: notes
 In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.

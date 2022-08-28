@@ -31,7 +31,8 @@ subtitle: "Data for Data Science"
 
 **Dr. [Jonathan Cardoso-Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)** <br/>
 _Assistant Professorial Lecturer_ <br/>
-LSE Data Science Institute
+LSE Data Science Institute<br/>
+Office Hours: book via StudentHub
 
 ## Teaching assistants
 
