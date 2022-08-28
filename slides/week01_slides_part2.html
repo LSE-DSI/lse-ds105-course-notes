@@ -341,6 +341,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -357,7 +360,10 @@
 <h2 id="toc-title">What we will cover today</h2>
 <ul>
 <li><a href="#/what-do-we-mean-by-data-science" id="/toc-what-do-we-mean-by-data-science">What do we mean by data science?</a></li>
-<li><a href="#/how-is-that-different-to-what-i-have-learned-in-my-previous-stats-courses" id="/toc-how-is-that-different-to-what-i-have-learned-in-my-previous-stats-courses">How is that different to what I have learned in my previous stats courses?</a></li>
+<li><a href="#/the-data-science-workflow" id="/toc-the-data-science-workflow">The Data Science workflow</a></li>
+<li><a href="#/the-data-science-workflow-1" id="/toc-the-data-science-workflow-1">The Data Science workflow</a></li>
+<li><a href="#/the-toolbox" id="/toc-the-toolbox">The toolbox</a></li>
+<li><a href="#/data-science-and-social-science" id="/toc-data-science-and-social-science">Data Science and Social Science</a></li>
 </ul>
 </nav>
 </section>
@@ -442,16 +448,99 @@
 </div>
 </div>
 
+<aside class="notes">
+<p><mark class="todo">Find a good way to transition between these slides.</mark></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <aside><div>
 <p>See <span class="citation" data-cites="schutt_doing_2013">(<a href="#/references" role="doc-biblioref" onclick="">Schutt and O’Neil 2013, chap. 1</a>)</span> for more on this.</p>
 </div></aside></section></section>
-<section>
-<section id="how-is-that-different-to-what-i-have-learned-in-my-previous-stats-courses" class="title-slide slide level1">
-<h1>How is that different to what I have learned in my previous stats courses?</h1>
+<section id="the-data-science-workflow" class="title-slide slide level1" data-auto-animate="true">
+<h1 data-id="quarto-animate-title">The Data Science workflow</h1>
+<div class="cell" data-reveal="true" data-id="1" data-fig-width="100%">
+<div class="cell-output-display">
+<div>
+<p>
+
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  nodeData("fa:fa-file-import Gather\ndata")
+  nodeStorage("fa:fa-database Store it\nsomewhere")
+  nodeClean("fa:fa-broom Clean &amp;\nPre-process")
+  nodeDataset("fa:fa-table Build a \ndataset")
+  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
+  nodeML("fa:fa-robot Machine\nLearning")
+  nodeComm("fa:fa-podium-star Gather\ninsight &amp;\ncommunicate")
+
+  nodeData --&gt;  nodeStorage
+  nodeStorage --&gt; nodeClean
+  nodeClean --&gt; nodeDataset
+  nodeDataset --&gt; nodeEDA
+  nodeEDA --&gt; nodeML
+  nodeML --&gt; nodeComm
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="the-data-science-workflow-1" class="title-slide slide level1" data-auto-animate="true" data-auto-animate-easing="ease-out">
+<h1 data-id="quarto-animate-title">The Data Science workflow</h1>
+<div class="cell" data-reveal="true" data-id="1" data-fig-width="100%">
+<div class="cell-output-display">
+<div>
+<p>
+
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
+  nodeData("fa:fa-file-import Gather\ndata")
+  nodeStorage("fa:fa-database Store it\nsomewhere")
+  nodeClean("fa:fa-broom Clean &amp;\nPre-process")
+  nodeDataset("fa:fa-table Build a \ndataset")
+  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
+  nodeML("fa:fa-robot Machine\nLearning")
+  nodeComm("fa:fa-podium-star Gather\ninsight &amp;\ncommunicate")
+
+  subgraph 80% of your time
+    nodeData --&gt;  nodeStorage
+    nodeStorage --&gt; nodeClean
+    nodeClean --&gt; nodeDataset
+  end
+  subgraph 20% of your time
+    direction TB
+    nodeDataset --&gt; nodeEDA
+    nodeEDA --&gt; nodeML
+    nodeML --&gt; nodeComm
+  end
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="the-toolbox" class="title-slide slide level1">
+<h1>The toolbox</h1>
 
 </section>
-<section id="data-science-and-social-science" class="slide level2">
-<h2>Data Science and Social Science</h2>
+
+<section>
+<section id="data-science-and-social-science" class="title-slide slide level1">
+<h1>Data Science and Social Science</h1>
 <aside class="notes">
 <p>In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.</p>
 <p>Content borrowed from <a href="https://github.com/lse-me314/lectures">ME314 Day 1</a></p>
