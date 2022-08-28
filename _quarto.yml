@@ -13,9 +13,6 @@ csl: references/chicago-author-date.csl
 
 website:
   title: "LSE DS105M 2022/23"
-  toc: true
-  toc-location: left
-  toc-depth: 3
   collapse-level: 3
   number-sections: true
   page-navigation: true
