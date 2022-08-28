@@ -1,1 +1,1 @@
-Sitemap: https://LSE-DSI.github.io/lse-ds105-course-notes/sitemap.xml
+Sitemap: https://github.com/LSE-DSI/lse-ds105-course-notes/sitemap.xml

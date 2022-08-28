@@ -8,10 +8,10 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.38">
+  <meta name="generator" content="quarto-1.1.149">
 
   <meta name="author" content="Dr.&nbsp;Jon Cardoso Silva">
-  <title>LSE DS105M 2022/23 (summer revision) - DS105 Data for Data Science</title>
+  <title>LSE DS105M 2022/23 - DS105 Data for Data Science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -20,10 +20,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -682,8 +687,8 @@ By the end of this course students will be able to:
 <div class="columns">
 <div class="column" style="width:80%;">
 <div class="r-stack">
-<p><img data-src="../figures/week01/st_peters_square_2005.jpg" class="fragment img-fluid" data-fragment-index="2" style="width:80.0%"></p>
-<p><img data-src="../figures/week01/st_peters_square_2013.jpg" class="fragment img-fluid" data-fragment-index="3" style="width:80.0%"></p>
+<p><img data-src="../figures/week01/st_peters_square_2005.jpg" class="fragment img-fluid" style="width:80.0%" data-fragment-index="2"></p>
+<p><img data-src="../figures/week01/st_peters_square_2013.jpg" class="fragment img-fluid" style="width:80.0%" data-fragment-index="3"></p>
 </div>
 </div><div class="column" style="width:20%;margin-left:-15%;margin=right:0;padding:0;">
 <div class="r-stack">
@@ -697,7 +702,7 @@ By the end of this course students will be able to:
 </div>
 </div>
 <div class="footer">
-<p>Source: <span class="citation" data-cites="kolawole_about_2013">(<a href="#/ref-kolawole_about_2013" role="doc-biblioref" onclick="return false;">Kolawole 2013</a>)</span></p>
+<p>Source: <span class="citation" data-cites="kolawole_about_2013">(<a href="#/references" role="doc-biblioref" onclick="">Kolawole 2013</a>)</span></p>
 </div>
 </section>
 <section id="we-changed-how-we-consume-music" class="slide level2">
@@ -708,7 +713,7 @@ By the end of this course students will be able to:
 </div>
 </div>
 <div class="footer">
-<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/ref-fischer-baum_what_2017" role="doc-biblioref" onclick="return false;">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
+<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/references" role="doc-biblioref" onclick="">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
 </div>
 </section>
 <section id="we-changed-how-we-consume-video" class="slide level2">
@@ -719,7 +724,7 @@ By the end of this course students will be able to:
 </div>
 </div>
 <div class="footer">
-<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/ref-fischer-baum_what_2017" role="doc-biblioref" onclick="return false;">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
+<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/references" role="doc-biblioref" onclick="">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
 </div>
 </section>
 <section id="smartphones-are-a-very-recent-thing" class="slide level2">
@@ -730,7 +735,7 @@ By the end of this course students will be able to:
 </div>
 </div>
 <div class="footer">
-<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/ref-fischer-baum_what_2017" role="doc-biblioref" onclick="return false;">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
+<p>To interact with this plot, check reference <span class="citation" data-cites="fischer-baum_what_2017">(<a href="#/references" role="doc-biblioref" onclick="">Fischer-Baum 2017</a>)</span> at the end of this presentation.</p>
 </div>
 </section>
 <section id="we-spend-a-lot-more-time-connected" class="slide level2">
@@ -791,8 +796,9 @@ By the end of this course students will be able to:
 <li>Given all this, what do we mean by data science?</li>
 <li>A tale of unicorns</li>
 <li>Approaching the ocean of data: the concept of data wrangling</li>
+<li>The data science toolkit<br>
+</li>
 <li>What to expect of the rest of this course</li>
-<li>The tools you will need</li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable" style="word-break:break-all;">
@@ -1092,7 +1098,8 @@ Kolawole, Emi. 2013. <span>“About Those 2005 and 2013 Photos of the Crowds in 
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);

@@ -2,20 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.149">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Jonathan Cardoso Silva">
 
-<title>LSE DS105M 2022/23 (summer revision) - LSE DS105M - Data for Data Science</title>
+<title>LSE DS105M 2022/23 - LSE DS105M</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -69,9 +74,11 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">LSE DS105M 2022/23 (summer revision)</span>
-  </a>
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">LSE DS105M 2022/23</span>
+    </a>
+  </div>
           <div class="quarto-toggle-container ms-auto">
               <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
               <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -85,7 +92,7 @@ ul.task-list{list-style: none;}
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">LSE DS105M - Data for Data Science</h1>
+      <h1 class="quarto-secondary-nav-title">LSE DS105M</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -130,7 +137,7 @@ ul.task-list{list-style: none;}
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="./figures/LSE Data Science Institute.png" class="img-fluid"></p>
 </div></div>
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -146,8 +153,8 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">LSE DS105M - Data for Data Science</h1>
-<p class="subtitle lead">(2022/23 summer revision)</p>
+<h1 class="title d-none d-lg-block">LSE DS105M</h1>
+<p class="subtitle lead">Data for Data Science</p>
 </div>
 
 
@@ -195,7 +202,7 @@ ul.task-list{list-style: none;}
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="./figures/JonathanCardosoSilva_2022.jpg" class="img-fluid figure-img" alt="Photo of Dr. Jonathan Cardoso-Silva" style="width:5em"></p>
+<p><img src="./figures/JonathanCardosoSilva_2022.jpg" class="img-fluid figure-img" style="width:5em" alt="Photo of Dr. Jonathan Cardoso-Silva"></p>
 </figure>
 </div>
 <p><strong>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jonathan Cardoso-Silva</a></strong> <br> <em>Assistant Professorial Lecturer</em> <br> LSE Data Science Institute</p>
@@ -220,61 +227,61 @@ ul.task-list{list-style: none;}
 <table class="table">
 <thead>
 <tr class="header">
-<th style="text-align: left;"><strong>Intro</strong></th>
+<th style="text-align: left;"><font color="#5E3168"><strong>Intro</strong></font></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introduction and key tools for data scientists.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No class this week. Use this time to revisit basic R or python programming</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introduction and key tools for data scientists.<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No class this week. Use this time to revisit basic R or python programming</td>
 <td>🗓️ <a href="./weeks/week01.html">Week 01</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Theme: Behind the scenes</strong></td>
+<td style="text-align: left;"><font color="#5E3168"><strong>Theme: Behind the scenes</strong></font></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Terminal: navigating the command line.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navigating the command line in your own computer</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Terminal: navigating the command line.<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Navigating the command line in your own computer</td>
 <td>🗓️ <a href="">Week 02</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Cloud: accessing and getting data in and out.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to the cloud via the command line<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 01 (worth 10%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving the upload of data to the cloud.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Cloud: accessing and getting data in and out.<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting to the cloud via the command line<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Summative 01 (worth 10%):</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving the upload of data to the cloud.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class</td>
 <td>🗓️ <a href="">Week 03</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Internet: protocols + scrapping + APIs.<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web scraping exercise<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 02 (worth 15%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving web scraping.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>[Group project]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after class, students pitch their ideas of preferred APIs/datasets<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- there will be a designated channel on our Slack for this</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Internet: protocols + scrapping + APIs.<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web scraping exercise<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Summative 02 (worth 15%):</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem set involving web scraping.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deadline: day before next week’s class<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>[Group project]</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after class, students pitch their ideas of preferred APIs/datasets<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- there will be a designated channel on our Slack for this</td>
 <td>🗓️ <a href="">Week 04</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Theme: Working with data</strong></td>
+<td style="text-align: left;"><font color="#5E3168"><strong>Theme: Working with data</strong></font></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The nature and shape of data (including markup language)<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Github &amp; Markdown<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>[Group project]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students form groups of 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students must submit a team contract to Moodle (not graded)</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Re)shaping data<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Github &amp; Markdown<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>[Group project]</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students form groups of 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- students must submit a team contract to Moodle (not graded)</td>
 <td>🗓️ <a href="">Week 05</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tabular data: dataframes and databases<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collaborating as a group on Github</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dataframes, databases &amp; data normalisation<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computational Notebooks and DataFrames</td>
 <td>🗓️ <a href="">Week 07</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unstructured data (text, audio &amp; image)<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 03 (worth 15%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unstructured data (text, audio &amp; image)<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Summative 03 (worth 15%):</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
 <td>🗓️ <a href="">Week 08</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text as data, regex and sentiment analysis<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computational Notebooks and DataFrames</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Managing your data science workflow<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting up Github for your group project &amp; GitFlow</td>
 <td>🗓️ <a href="">Week 09</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Theme: Applications</strong></td>
+<td style="text-align: left;"><font color="#5E3168"><strong>Theme: Applications</strong></font></td>
 <td></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Topic modelling &amp; document similarities<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🦸 Super tech-support<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - we will be there to help you sort out any technical problems<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you might be having in your projects</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text as data, sentiment analysis and topic modelling<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🦸 Super tech-support<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - we will be there to help you sort out any technical problems<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you might be having in your projects</td>
 <td>🗓️ <a href="">Week 10</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lecture:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data viz with the grammar of graphics<br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Lab:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Summative 04 (worth 20%):</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
+<td style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lecture:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data viz with the grammar of graphics<br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Lab:</strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will have group presentations instead of a structured class this week.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<font><strong>Summative 04 (worth 20%):</strong></font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- each group will present about their selected data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- see instructions for marking criteria</td>
 <td>🗓️ <a href="">Week 11</a></td>
 </tr>
 </tbody>
@@ -354,6 +361,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           toggle.classList.remove("alternate");
         }
       }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
     }
   }
   const isFileUrl = () => { 
@@ -456,7 +473,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

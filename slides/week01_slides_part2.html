@@ -8,10 +8,10 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.38">
+  <meta name="generator" content="quarto-1.1.149">
 
   <meta name="author" content="Dr.&nbsp;Jon Cardoso Silva">
-  <title>LSE DS105M 2022/23 (summer revision) - 🗓️ Week 01 - Part II  Data Science toolbox</title>
+  <title>LSE DS105M 2022/23 - 🗓️ Week 01 - Part II  Data Science toolbox</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -20,10 +20,15 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -381,24 +386,65 @@
 </div>
 
 <aside><div>
-<p><span class="citation" data-cites="shah_hands-introduction_2020">(<a href="#/ref-shah_hands-introduction_2020" role="doc-biblioref" onclick="return false;">Shah 2020, chap. 1</a>)</span> - <em>Emphasis and emojis are of my own making.</em></p>
+<p><span class="citation" data-cites="shah_hands-introduction_2020">(<a href="#/references" role="doc-biblioref" onclick="">Shah 2020, chap. 1</a>)</span> - <em>Emphasis and emojis are of my own making.</em></p>
 </div></aside></section>
 <section id="the-mythical-unicorn" class="slide level2">
 <h2>The mythical unicorn <span class="emoji" data-emoji="unicorn">🦄</span></h2>
-<p><img data-src="../figures/unicorn.png" class="absolute" style="height: 65%; "></p>
+<p><img data-src="../figures/week01/unicorn.svg" class="absolute" style="left: 10%; height: 65%; "></p>
+<div class="fragment absolute" style="font-size: 0.6em; color: #f2f2f2; background-color: #1F497D; max-width:7em; padding-left:0.8em; padding-right:0.5em; margin-top:0em; margin-bottom:0em;top: 20%; left: 0%; ">
+<p>knows <strong>everything</strong> about statistics</p>
+</div>
+<div class="fragment absolute" style="font-size: 0.6em; color: #f2f2f2; background-color: #F4112C; max-width:8em; padding-left:0.8em; padding-right:0.6em; margin-top:0em; margin-bottom:0em;left: 0%; bottom: 23%; ">
+<p>able to communicate <strong>insights</strong> perfectly</p>
+</div>
+<div class="fragment absolute" style="font-size: 0.6em; color: #f2f2f2; background-color: #7030A0; max-width:7.7em; padding-left:0.8em; padding-right:0.8em; margin-top:0em; margin-bottom:0em;top: 20%; right: 30%; ">
+<p><strong>fully</strong> understands businesses like no one</p>
+</div>
+<div class="fragment absolute" style="font-size: 0.6em; color: #f2f2f2; background-color: #D99838; max-width:6em; padding-left:0.8em; padding-right:0.8em; margin-top:0em; margin-bottom:0em;bottom: 25%; right: 17%; ">
+<p>is a <strong>fluent</strong> computer programmer</p>
+</div>
+
+<aside class="notes">
+<p>Of course, such a person does not exist!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><div>
+<p>See <span class="citation" data-cites="davenport_beyond_2020">(<a href="#/references" role="doc-biblioref" onclick="">Davenport 2020</a>)</span> for a more in-depth discussion about this</p>
+</div></aside></section>
+<section id="in-reality" class="slide level2">
+<h2>In reality…</h2>
+<div class="columns">
+<div class="column" style="width:50%; font-size:0.75em;">
+<p>We are all jugglers 🤹</p>
+<div>
+<ul>
+<li class="fragment">Everyone brings a different skill set.</li>
+<li class="fragment">We need multi-disciplinary teams.</li>
+<li class="fragment">Good data scientists know <strong>a bit</strong> of everything.
+<ul>
+<li class="fragment">Not fluent in <em>all</em> things</li>
+<li class="fragment">Understands their strenghts and weaknessess</li>
+<li class="fragment">They know when and where to interface with others</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../figures/week01/we_need_teams.png" class="absolute" style="height: 72%; "></p>
+</div>
+</div>
 
 <aside><div>
-<ul>
-<li>See <span class="citation" data-cites="davenport_beyond_2020">(<a href="#/ref-davenport_beyond_2020" role="doc-biblioref" onclick="return false;"><strong>davenport_beyond_2020?</strong></a>)</span> for an in-depth discussion about this.</li>
-<li><mark class="todo"> </mark> Re-do unicorn illustration</li>
-</ul>
-</div></aside></section>
-<section id="the-reality-we-are-all-jugglers" class="slide level2">
-<h2>The reality: we are all jugglers <span class="emoji" data-emoji="juggling_person">🤹</span></h2>
-<ul>
-<li><mark class="todo"> Data Scientists do not need know <strong>everything</strong>, only a <strong>bit</strong> of everything</mark> <span class="emoji" data-emoji="juggling_person">🤹</span></li>
-</ul>
-</section></section>
+<p>See <span class="citation" data-cites="schutt_doing_2013">(<a href="#/references" role="doc-biblioref" onclick="">Schutt and O’Neil 2013, chap. 1</a>)</span> for more on this.</p>
+</div></aside></section></section>
 <section>
 <section id="how-is-that-different-to-what-i-have-learned-in-my-previous-stats-courses" class="title-slide slide level1">
 <h1>How is that different to what I have learned in my previous stats courses?</h1>
@@ -407,6 +453,7 @@
 <section id="data-science-and-social-science" class="slide level2">
 <h2>Data Science and Social Science</h2>
 <aside class="notes">
+<p>In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.</p>
 <p>Content borrowed from <a href="https://github.com/lse-me314/lectures">ME314 Day 1</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -426,26 +473,32 @@
 <li class="fragment">Many of the same methods are used for both objectives</li>
 </ul>
 </div>
-
-<aside><div>
-<p><mark class="todo"> Illustrate </mark></p>
-</div></aside></section>
-<section id="practical-examples" class="slide level2 smaller scrollable">
+</section>
+<section id="practical-examples" class="slide level2">
 <h2>Practical examples</h2>
 
-
-<p><img src="../figures/LSE Data Science Institute.png" class="slide-logo"></p>
-<div class="footer footer-default">
-<p>DS105 - Data for Data Science <span class="emoji" data-emoji="desktop_computer">🖥️</span> <span class="emoji" data-emoji="juggling_person">🤹</span></p>
+<aside><div>
+<p><mark class="todo"> Give a pratical example of how one would approach the same dataset differently under these two modelling views. </mark></p>
+</div></aside></section>
+<section id="references" class="slide level2 smaller scrollable" style="word-break:break-all;">
+<h2>References</h2>
+<div id="refs" class="r-fit-text references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-davenport_beyond_2020" class="csl-entry" role="doc-biblioentry">
+Davenport, Thomas. 2020. <span>“Beyond <span>Unicorns</span>: <span>Educating</span>, <span>Classifying</span>, and <span>Certifying</span> <span>Business</span> <span>Data</span> <span>Scientists</span>.”</span> <em>Harvard Data Science Review</em> 2 (2). <a href="https://doi.org/10.1162/99608f92.55546b4a">https://doi.org/10.1162/99608f92.55546b4a</a>.
 </div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-schutt_doing_2013" class="csl-entry" role="doc-biblioentry">
+Schutt, Rachel, and Cathy O’Neil. 2013. <em>Doing Data Science</em>. First edition. Beijing ; Sebastopol: O’Reilly Media. <a href="https://ebookcentral.proquest.com/lib/londonschoolecons/detail.action?docID=1465965">https://ebookcentral.proquest.com/lib/londonschoolecons/detail.action?docID=1465965</a>.
+</div>
 <div id="ref-shah_hands-introduction_2020" class="csl-entry" role="doc-biblioentry">
 Shah, Chirag. 2020. <em>A Hands-on Introduction to Data Science</em>. Cambridge, United Kingdom ; New York, NY, USA: Cambridge University Press. <a href="https://librarysearch.lse.ac.uk/permalink/f/1n2k4al/TN_cdi_askewsholts_vlebooks_9781108673907">https://librarysearch.lse.ac.uk/permalink/f/1n2k4al/TN_cdi_askewsholts_vlebooks_9781108673907</a>.
 </div>
 </div>
-<aside><div>
-<p><mark class="todo"> Give a pratical example of how one would approach the same dataset differently under these two modelling views. </mark></p>
-</div></aside></section></section>
+
+
+<img src="../figures/LSE Data Science Institute.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p>DS105 - Data for Data Science <span class="emoji" data-emoji="desktop_computer">🖥️</span> <span class="emoji" data-emoji="juggling_person">🤹</span></p>
+</div>
+</section></section>
     </div>
   </div>
 
@@ -727,7 +780,8 @@ Shah, Chirag. 2020. <em>A Hands-on Introduction to Data Science</em>. Cambridge,
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
