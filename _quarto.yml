@@ -13,8 +13,7 @@ csl: references/chicago-author-date.csl
 
 website:
   title: "LSE DS105M 2022/23"
-  collapse-level: 3
-  number-sections: true
+  repo-url: https://github.com/LSE-DSI/lse-ds105-course-notes
   page-navigation: true
   reader-mode: true
   favicon: "/figures/LSE Data Science Institute.png"
