@@ -44,24 +44,78 @@ format:
 
 ## The mythical unicorn :unicorn:
 
-![](/figures/unicorn.png){.absolute height="65%"}
+![](/figures/week01/unicorn.svg){.absolute left="10%" height="65%"}
+
+::: {.fragment .absolute left=0% top=20% style="font-size: 0.6em; color: #f2f2f2; background-color: #1F497D; max-width:7em; padding-left:0.8em; padding-right:0.5em; margin-top:0em; margin-bottom:0em;"}
+knows 
+**everything** 
+about statistics
+:::
+
+::: {.fragment .absolute left=0% bottom=23% style="font-size: 0.6em; color: #f2f2f2; background-color: #F4112C; max-width:8em; padding-left:0.8em; padding-right:0.6em; margin-top:0em; margin-bottom:0em;"}
+able to
+communicate 
+**insights** perfectly
+:::
+
+::: {.fragment .absolute top=20% right=30% style="font-size: 0.6em; color: #f2f2f2; background-color: #7030A0; max-width:7.7em; padding-left:0.8em; padding-right:0.8em; margin-top:0em; margin-bottom:0em;"}
+**fully** understands
+businesses like
+no one
+:::
+
+::: {.fragment .absolute bottom=25% right=17% style="font-size: 0.6em; color: #f2f2f2; background-color: #D99838; max-width:6em; padding-left:0.8em; padding-right:0.8em; margin-top:0em; margin-bottom:0em;"}
+is a **fluent**
+computer
+programmer
+:::
 
 ::: aside
--   See [@davenport_beyond_2020] for an in-depth discussion about this.
--   <mark class="todo"> </mark> Re-do unicorn illustration
+See [@davenport_beyond_2020] for a more in-depth discussion about this
+:::
+
+::: notes
+Of course, such a person does not exist!
 :::
 
 ------------------------------------------------------------------------
 
-## The reality: we are all jugglers :juggling_person:
+## In reality...
 
--   <mark class="todo"> Data Scientists do not need know **everything**, only a **bit** of everything</mark> :juggling_person:
+::: columns
+
+::: {.column style="width:50%; font-size:0.75em;"}
+We are all jugglers 🤹
+
+::: incremental
+- Everyone brings a different skill set.
+- We need multi-disciplinary teams.
+- Good data scientists know **a bit** of everything.
+  - Not fluent in _all_ things
+  - Understands their strenghts and weaknessess
+  - They know when and where to interface with others
+:::
+
+:::
+
+::: {.column width="50%"}
+![](/figures/week01/we_need_teams.png){.absolute height="72%"}
+:::
+
+:::
+
+::: aside
+See [@schutt_doing_2013, chapter 1] for more on this.
+:::
+
 
 # How is that different to what I have learned in my previous stats courses?
 
 ## Data Science and Social Science
 
 ::: notes
+In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.
+
 Content borrowed from [ME314 Day 1](https://github.com/lse-me314/lectures)
 :::
 
@@ -71,12 +125,14 @@ Content borrowed from [ME314 Day 1](https://github.com/lse-me314/lectures)
 -   Many of the same methods are used for both objectives
 :::
 
-::: aside
-<mark class="todo"> Illustrate </mark>
-:::
 
 ## Practical examples
 
 ::: aside
 <mark class="todo"> Give a pratical example of how one would approach the same dataset differently under these two modelling views. </mark>
 :::
+
+## References {style="word-break:break-all;"}
+
+::: {#refs .r-fit-text}
+::: 
