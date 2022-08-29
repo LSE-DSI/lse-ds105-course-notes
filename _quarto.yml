@@ -5,6 +5,8 @@ project:
   render:
     - "index.qmd"
     - "assessments.qmd"
+    - "syllabus.qmd"
+    - "communication.qmd"
     - "weeks/*.qmd"
     - "slides/*.qmd"
 
@@ -26,6 +28,10 @@ website:
     contents:
       - href: index.qmd
         text: "🏠 Home"
+      - href: syllabus.qmd
+        text: "📓 Syllabus"
+      - href: communication.qmd
+        text: "📟 Communication"
       - href: assessments.qmd
         text: "✍️ Assessments"
       - section: "🗓️ Weeks"

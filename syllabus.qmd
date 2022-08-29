@@ -1,0 +1,256 @@
+---
+title: "LSE DS105M"
+subtitle: "Data for Data Science"
+---
+
+# 📓 Syllabus
+
+A list of what will happen every week. 
+
+Click on each Week's link for more information (slides, lab instructions, recommended resources, etc.).
+
+Note about **formative assessment**: besides the in-person lab exercises, we might give take-home assignments on certain weeks.
+Even though we do not grade these problem sets, you will get written feedback on these formative assignments.
+
+This course will help you become familiarised with the most fundamental practical tools needed to gather (Weeks 02-04) and pre-process data (Weeks 05-09) and will give you some inspiration for some fundamental analysis (Weeks 10-11) to perform in your selected datasets. 
+
+These skills are **cumulative**, so practice what you learned each week and make the most of lectures, labs and our Slack group. We believe these points of contact and integration will create a fertile environment of ideas for your project. 
+
+💡 Remember: collaboration is key to the success of a data science project!
+
+<table>
+    <thead>
+        
+    </thead>
+    
+    <tr class="odd">
+        <th colspan=4>Intro</th>
+    </tr>
+
+    <!-- WEEK 01 -->
+    <tbody>
+        <tr class="even">
+            <td rowspan=2></td>
+            <td rowspan=2>🗓️ <a href="/weeks/week01.html">Week 01</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>Introduction and key tools for data scientists.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>No class this week. <br/>_(Use this time to revisit basic R or python programming)_</td>
+        </tr>
+    </tbody>
+
+    <tr class="odd">
+        <th colspan=4>Theme: Behind the scenes</th>
+    </tr>
+
+    <!-- WEEK 02 -->
+    <tbody>
+        
+         <tr class="even">
+            <td rowspan=2></td>
+            <td rowspan=2>🗓️ <a href="">Week 02</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>The Terminal: navigating the command line.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>Navigating the command line in your own computer</td>
+        </tr>
+    </tbody>
+
+    <!-- WEEK 03 -->
+    <tbody>
+        
+        <tr class="even">
+            <td rowspan=3></td>
+            <td rowspan=3>🗓️ <a href="">Week 03</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>The Cloud: accessing and getting data in and out.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>Connecting to the cloud via the command line</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Summative</td>
+            <td>
+                <ul>
+                    <li>Worth: 10% of final marks</li>
+                    <li>Problem set involving the upload of data to the cloud.</li>
+                    <li>Deadline: day before next week's lab</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+
+    <!-- WEEK 04 -->
+    <tbody>
+        <tr class="even">
+            <td rowspan=4></td>
+            <td rowspan=4>🗓️ <a href="">Week 04</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>The Internet: protocols + scrapping + APIs.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>Web scraping exercise</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Summative</td>
+            <td>
+                <ul>
+                    <li>Worth: 15% of final marks</li>
+                    <li>Problem set involving web scraping.</li>
+                    <li>Deadline: day before next week's lab</li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Group project</td>
+            <td>
+                <ul>
+                    <li>after class, students pitch their ideas of preferred APIs/datasets</li>
+                    <li>there will be a designated channel on our Slack for this</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+
+    <tr class="odd">
+        <th colspan=4>Theme: Working with data</th>
+    </tr>
+
+    <!-- WEEK 05 -->
+    <tbody>
+        
+         <tr class="even">
+            <td rowspan=3></td>
+            <td rowspan=3>🗓️ <a href="">Week 05</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>(Re)shaping data.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>Github & Markdown</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Group project</td>
+            <td>
+                <ul>
+                    <li>students form groups of 3</li>
+                    <li>students must submit a team contract to Moodle (not graded)</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+
+    <!-- WEEK 06 -->
+    <tbody>
+        <tr class="even">
+            <td></td>
+            <td >🗓️ <a href="">Week 06</a></td>
+            <td colspan=2 style="font-weight:bold;">Reading Week</td>
+        </tr>
+    </tbody>
+
+    <!-- WEEK 07 -->
+    <tbody>
+        
+        <tr class="even">
+           <td rowspan=2></td>
+           <td rowspan=2>🗓️ <a href="">Week 07</a></td>
+           <td style="font-weight:bold;">Lecture</td>
+           <td>Dataframes, databases & data normalisation.</td>
+       </tr>
+       <tr class="even">
+           <td style="font-weight:bold;">Lab</td>
+           <td>Computational Notebooks and DataFrames</td>
+       </tr>
+   </tbody>
+
+    <!-- WEEK 08 -->
+    <tbody>
+        
+        <tr class="even">
+            <td rowspan=3></td>
+            <td rowspan=3>🗓️ <a href="">Week 08</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>Unstructured data (text, audio & image).</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>We will have group presentations instead of a structured class this week.</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Summative</td>
+            <td>
+                <ul>
+                    <li>Worth: 15% of final marks</li>
+                    <li>each group will present about their selected data.</li>
+                    <li>see instructions for marking criteria</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+
+    <!-- WEEK 09 -->
+    <tbody>
+        
+        <tr class="even">
+           <td rowspan=2></td>
+           <td rowspan=2>🗓️ <a href="">Week 09</a></td>
+           <td style="font-weight:bold;">Lecture</td>
+           <td>Managing your data science workflow.</td>
+       </tr>
+       <tr class="even">
+           <td style="font-weight:bold;">Lab</td>
+           <td>Setting up Github for your group project & GitFlow</td>
+       </tr>
+   </tbody>
+
+   <tr class="odd">
+    <th colspan=4>Theme: Applications</th>
+    </tr>
+
+    <!-- WEEK 10 -->
+    <tbody>
+        
+        <tr class="even">
+           <td rowspan=3></td>
+           <td rowspan=3>🗓️ <a href="">Week 10</a></td>
+           <td style="font-weight:bold;">Lecture</td>
+           <td>Data viz with the grammar of graphics</td>
+       </tr>
+       <tr class="even">
+           <td style="font-weight:bold;">Lab</td>
+           <td>🦸 Super tech-support (get help with your project)</td>
+       </tr>
+   </tbody>
+
+    <!-- WEEK 11 -->
+    <tbody>
+        
+        <tr class="even">
+            <td rowspan=3></td>
+            <td rowspan=3>🗓️ <a href="">Week 11</a></td>
+            <td style="font-weight:bold;">Lecture</td>
+            <td>Sentiment analysis, topic modelling and social networks</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Lab</td>
+            <td>We will have group presentations instead of a structured class this week</td>
+        </tr>
+        <tr class="even">
+            <td style="font-weight:bold;">Summative</td>
+            <td>
+                <ul>
+                    <li>Worth: 20% of final marks</li>
+                    <li>each group will present about their selected data</li>
+                    <li>see instructions for marking criteria</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -6,22 +6,6 @@ In this first week, we will cover what you can expect to learn from this course 
 
 We will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?
 
-# Communication
-
-![](/figures/slack_logo.svg){height="1.5em" fig-align="left" fig-alt="Slack logo"}
-
-Importantly, you will receive an invitation to join our Slack group via e-mail. 
-
-Send an [e-mail to Jon](mailto:J.Cardoso-Silva@lse.ac.uk) if you have not received an invite by the time of the first lecture. 
-
-Slack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project. 
-Most of our "informal" communication and interactions will happen through Slack. There will be channels dedicated to discussing each week's content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.
-
-Check out the following links to understand more about this software:
-
-- [Slack tutorials](https://slack.com/intl/en-gb/help/categories/360000049063-Slack-tutorials)
-- [Collaborate effectively in channels](https://slack.com/intl/en-gb/help/articles/360058495654-Collaborate-effectively-in-channels?from=channels)
-
 # Lecture
 
 ## **🖼️ Slides - Part I** (45-50 min)
