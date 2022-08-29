@@ -39,7 +39,7 @@
     "href": "syllabus.html",
     "title": "LSE DS105M",
     "section": "",
-    "text": "A list of what will happen every week.\nClick on each Week’s link for more information (slides, lab instructions, recommended resources, etc.).\nNote about formative assessment: besides the in-person lab exercises, we might give take-home assignments on certain weeks. Even though we do not grade these problem sets, you will get written feedback on these formative assignments.\nThis course will help you become familiarised with the most fundamental practical tools needed to gather (Weeks 02-04) and pre-process data (Weeks 05-09) and will give you some inspiration for some fundamental analysis (Weeks 10-11) to perform in your selected datasets.\nThese skills are cumulative, so practice what you learned each week and make the most of lectures, labs and our Slack group. We believe these points of contact and integration will create a fertile environment of ideas for your project.\n💡 Remember: collaboration is key to the success of a data science project!\n\n\n\n\n\n\nIntro\n\n\n\n\n\n\n\n\n🗓️ Week 01\n\n\nLecture\n\n\nIntroduction and key tools for data scientists.\n\n\n\n\nLab\n\n\nNo class this week. (Use this time to revisit basic R or python programming)\n\n\n\n\n\nTheme: Behind the scenes\n\n\n\n\n\n\n\n\n🗓️ Week 02\n\n\nLecture\n\n\nThe Terminal: navigating the command line.\n\n\n\n\nLab\n\n\nNavigating the command line in your own computer\n\n\n\n\n\n\n\n\n\n🗓️ Week 03\n\n\nLecture\n\n\nThe Cloud: accessing and getting data in and out.\n\n\n\n\nLab\n\n\nConnecting to the cloud via the command line\n\n\n\n\nSummative\n\n\n\n\nWorth: 10% of final marks\n\n\nProblem set involving the upload of data to the cloud.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 04\n\n\nLecture\n\n\nThe Internet: protocols + scrapping + APIs.\n\n\n\n\nLab\n\n\nWeb scraping exercise\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\nProblem set involving web scraping.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\nGroup project\n\n\n\n\nafter class, students pitch their ideas of preferred APIs/datasets\n\n\nthere will be a designated channel on our Slack for this\n\n\n\n\n\n\n\nTheme: Working with data\n\n\n\n\n\n\n\n\n🗓️ Week 05\n\n\nLecture\n\n\n(Re)shaping data.\n\n\n\n\nLab\n\n\nGithub & Markdown\n\n\n\n\nGroup project\n\n\n\n\nstudents form groups of 3\n\n\nstudents must submit a team contract to Moodle (not graded)\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 06\n\n\nReading Week\n\n\n\n\n\n\n\n\n\n🗓️ Week 07\n\n\nLecture\n\n\nDataframes, databases & data normalisation.\n\n\n\n\nLab\n\n\nComputational Notebooks and DataFrames\n\n\n\n\n\n\n\n\n\n🗓️ Week 08\n\n\nLecture\n\n\nUnstructured data (text, audio & image).\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week.\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\neach group will present about their selected data.\n\n\nsee instructions for marking criteria\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 09\n\n\nLecture\n\n\nManaging your data science workflow.\n\n\n\n\nLab\n\n\nSetting up Github for your group project & GitFlow\n\n\n\n\n\nTheme: Applications\n\n\n\n\n\n\n\n\n🗓️ Week 10\n\n\nLecture\n\n\nData viz with the grammar of graphics\n\n\n\n\nLab\n\n\n🦸 Super tech-support (get help with your project)\n\n\n\n\n\n\n\n\n\n🗓️ Week 11\n\n\nLecture\n\n\nSentiment analysis, topic modelling and social networks\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week\n\n\n\n\nSummative\n\n\n\n\nWorth: 20% of final marks\n\n\neach group will present about their selected data\n\n\nsee instructions for marking criteria"
+    "text": "A list of what will happen every week.\nClick on each Week’s link for more information (slides, lab instructions, recommended resources, etc.).\nNote about formative assessment: besides the in-person lab exercises, we might give take-home assignments on certain weeks. Even though we do not grade these problem sets, you will get written feedback on these formative assignments.\nThis course will help you become familiarised with the most fundamental practical tools needed to gather (Weeks 02-04) and pre-process data (Weeks 05-09) and will give you some inspiration for some fundamental analysis (Weeks 10-11) to perform in your selected datasets.\nThese skills are cumulative, so practice what you learned each week and make the most of lectures, labs and our Slack group. We believe these points of contact and integration will create a fertile environment of ideas for your project.\n💡 Remember: collaboration is key to the success of a data science project!\n\n\n\n\n\n\nIntro\n\n\n\n\n\n\n\n\n🗓️ Week 01\n\n\nLecture\n\n\nIntroduction and the Data Science Toolbox 🧰\n\n\n\n\nLab\n\n\nNo class this week. (Use this time to revisit basic R or python programming)\n\n\n\n\n\nTheme: Behind the scenes\n\n\n\n\n\n\n\n\n🗓️ Week 02\n\n\nLecture\n\n\nOperating Systems, Files & The Terminal\n\n\n\n\nLab\n\n\nNavigating the command line in your own computer\n\n\n\n\n\n\n\n\n\n🗓️ Week 03\n\n\nLecture\n\n\nThe Cloud: accessing and getting data in and out.\n\n\n\n\nLab\n\n\nConnecting to the cloud via the command line\n\n\n\n\nSummative\n\n\n\n\nWorth: 10% of final marks\n\n\nProblem set involving the upload of data to the cloud.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 04\n\n\nLecture\n\n\nThe Internet: protocols + scrapping + APIs.\n\n\n\n\nLab\n\n\nWeb scraping exercise\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\nProblem set involving web scraping.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\nGroup project\n\n\n\n\nafter class, students pitch their ideas of preferred APIs/datasets\n\n\nthere will be a designated channel on our Slack for this\n\n\n\n\n\n\n\nTheme: Working with data\n\n\n\n\n\n\n\n\n🗓️ Week 05\n\n\nLecture\n\n\n(Re)shaping data.\n\n\n\n\nLab\n\n\nGithub & Markdown\n\n\n\n\nGroup project\n\n\n\n\nstudents form groups of 3\n\n\nstudents must submit a team contract to Moodle (not graded)\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 06\n\n\nReading Week\n\n\n\n\n\n\n\n\n\n🗓️ Week 07\n\n\nLecture\n\n\nDataframes, databases & data normalisation.\n\n\n\n\nLab\n\n\nComputational Notebooks and DataFrames\n\n\n\n\n\n\n\n\n\n🗓️ Week 08\n\n\nLecture\n\n\nUnstructured data (text, audio & image).\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week.\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\neach group will present about their selected data.\n\n\nsee instructions for marking criteria\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 09\n\n\nLecture\n\n\nManaging your data science workflow.\n\n\n\n\nLab\n\n\nSetting up Github for your group project & GitFlow\n\n\n\n\n\nTheme: Applications\n\n\n\n\n\n\n\n\n🗓️ Week 10\n\n\nLecture\n\n\nData viz with the grammar of graphics\n\n\n\n\nLab\n\n\n🦸 Super tech-support (get help with your project)\n\n\n\n\n\n\n\n\n\n🗓️ Week 11\n\n\nLecture\n\n\nSentiment analysis, topic modelling and social networks\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week\n\n\n\n\nSummative\n\n\n\n\nWorth: 20% of final marks\n\n\neach group will present about their selected data\n\n\nsee instructions for marking criteria"
   },
   {
     "objectID": "communication.html",
@@ -56,11 +56,11 @@
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.\nWe will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?"
   },
   {
-    "objectID": "weeks/week01.html#slides---part-i-45-50-min",
-    "href": "weeks/week01.html#slides---part-i-45-50-min",
+    "objectID": "weeks/week01.html#part-i---introduction-45-50-min",
+    "href": "weeks/week01.html#part-i---introduction-45-50-min",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
-    "section": "🖼️ Slides - Part I (45-50 min)",
-    "text": "🖼️ Slides - Part I (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "section": "👨‍🏫 Part I - Introduction (45-50 min)",
+    "text": "👨‍🏫 Part I - Introduction (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
   },
   {
     "objectID": "weeks/week01.html#coffee-break-10-min",
@@ -70,11 +70,53 @@
     "text": "Coffee Break ☕ (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
   },
   {
-    "objectID": "weeks/week01.html#slides---part-ii-45-50-min",
-    "href": "weeks/week01.html#slides---part-ii-45-50-min",
+    "objectID": "weeks/week01.html#part-ii---the-data-science-toolbox-45-50-min",
+    "href": "weeks/week01.html#part-ii---the-data-science-toolbox-45-50-min",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
-    "section": "🖼️ Slides - Part II (45-50 min)",
-    "text": "🖼️ Slides - Part II (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "section": "🧰 Part II - The Data Science Toolbox (45-50 min)",
+    "text": "🧰 Part II - The Data Science Toolbox (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week02.html",
+    "href": "weeks/week02.html",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "",
+    "text": "This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal.\nWe will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands.\nBy the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages."
+  },
+  {
+    "objectID": "weeks/week02.html#part-i---operating-systems-files-the-terminal-45-50-min",
+    "href": "weeks/week02.html#part-i---operating-systems-files-the-terminal-45-50-min",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)",
+    "text": "👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week02.html#coffee-break-10-min",
+    "href": "weeks/week02.html#coffee-break-10-min",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "Coffee Break ☕ (10 min)",
+    "text": "Coffee Break ☕ (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week02.html#part-ii---demo-navigating-the-terminal-45-50-min",
+    "href": "weeks/week02.html#part-ii---demo-navigating-the-terminal-45-50-min",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)",
+    "text": "👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)"
+  },
+  {
+    "objectID": "weeks/week02.html#command-line-the-terminal",
+    "href": "weeks/week02.html#command-line-the-terminal",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "Command line (the Terminal)",
+    "text": "Command line (the Terminal)\n\nLearn enough command line to be dangerous"
+  },
+  {
+    "objectID": "weeks/week02.html#text-editors",
+    "href": "weeks/week02.html#text-editors",
+    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "section": "📃 Text editors",
+    "text": "📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
@@ -257,5 +299,145 @@
     "title": "🗓️ Week 01 - Part II  Data Science toolbox",
     "section": "References",
     "text": "References\n\n\nDavenport, Thomas. 2020. “Beyond Unicorns: Educating, Classifying, and Certifying Business Data Scientists.” Harvard Data Science Review 2 (2). https://doi.org/10.1162/99608f92.55546b4a.\n\n\nSchutt, Rachel, and Cathy O’Neil. 2013. Doing Data Science. First edition. Beijing ; Sebastopol: O’Reilly Media. https://ebookcentral.proquest.com/lib/londonschoolecons/detail.action?docID=1465965.\n\n\nShah, Chirag. 2020. A Hands-on Introduction to Data Science. Cambridge, United Kingdom ; New York, NY, USA: Cambridge University Press. https://librarysearch.lse.ac.uk/permalink/f/1n2k4al/TN_cdi_askewsholts_vlebooks_9781108673907.\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#unix",
+    "href": "slides/week02_slides_part1.html#unix",
+    "title": "DS105 Data for Data Science",
+    "section": "UNIX",
+    "text": "UNIX"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#linux",
+    "href": "slides/week02_slides_part1.html#linux",
+    "title": "DS105 Data for Data Science",
+    "section": "Linux",
+    "text": "Linux"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#windows",
+    "href": "slides/week02_slides_part1.html#windows",
+    "title": "DS105 Data for Data Science",
+    "section": "Windows",
+    "text": "Windows\nLinux subsystem"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#macos",
+    "href": "slides/week02_slides_part1.html#macos",
+    "title": "DS105 Data for Data Science",
+    "section": "MacOS",
+    "text": "MacOS"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#emulators-virtual-machines",
+    "href": "slides/week02_slides_part1.html#emulators-virtual-machines",
+    "title": "DS105 Data for Data Science",
+    "section": "Emulators & Virtual Machines",
+    "text": "Emulators & Virtual Machines"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#shell-bash",
+    "href": "slides/week02_slides_part1.html#shell-bash",
+    "title": "DS105 Data for Data Science",
+    "section": "Shell / Bash",
+    "text": "Shell / Bash"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#windows-cmd-vs-powershell",
+    "href": "slides/week02_slides_part1.html#windows-cmd-vs-powershell",
+    "title": "DS105 Data for Data Science",
+    "section": "Windows CMD vs PowerShell",
+    "text": "Windows CMD vs PowerShell"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#what-are-files",
+    "href": "slides/week02_slides_part1.html#what-are-files",
+    "title": "DS105 Data for Data Science",
+    "section": "What are files?",
+    "text": "What are files?"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#the-hierarchical-structure-of-directories",
+    "href": "slides/week02_slides_part1.html#the-hierarchical-structure-of-directories",
+    "title": "DS105 Data for Data Science",
+    "section": "The hierarchical structure of directories",
+    "text": "The hierarchical structure of directories"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#unix-file-structure",
+    "href": "slides/week02_slides_part1.html#unix-file-structure",
+    "title": "DS105 Data for Data Science",
+    "section": "UNIX file structure",
+    "text": "UNIX file structure"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#windows-file-structure",
+    "href": "slides/week02_slides_part1.html#windows-file-structure",
+    "title": "DS105 Data for Data Science",
+    "section": "Windows file structure",
+    "text": "Windows file structure"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#binary-vs-plain-text",
+    "href": "slides/week02_slides_part1.html#binary-vs-plain-text",
+    "title": "DS105 Data for Data Science",
+    "section": "Binary vs plain text",
+    "text": "Binary vs plain text"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#file-editors-in-the-command-line",
+    "href": "slides/week02_slides_part1.html#file-editors-in-the-command-line",
+    "title": "DS105 Data for Data Science",
+    "section": "File editors in the command line",
+    "text": "File editors in the command line"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#html",
+    "href": "slides/week02_slides_part1.html#html",
+    "title": "DS105 Data for Data Science",
+    "section": "HTML",
+    "text": "HTML"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#json",
+    "href": "slides/week02_slides_part1.html#json",
+    "title": "DS105 Data for Data Science",
+    "section": "JSON",
+    "text": "JSON"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#txt",
+    "href": "slides/week02_slides_part1.html#txt",
+    "title": "DS105 Data for Data Science",
+    "section": "TXT",
+    "text": "TXT"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#csv",
+    "href": "slides/week02_slides_part1.html#csv",
+    "title": "DS105 Data for Data Science",
+    "section": "CSV",
+    "text": "CSV"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#scripts",
+    "href": "slides/week02_slides_part1.html#scripts",
+    "title": "DS105 Data for Data Science",
+    "section": "Scripts",
+    "text": "Scripts"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#obfuscated-binary-files",
+    "href": "slides/week02_slides_part1.html#obfuscated-binary-files",
+    "title": "DS105 Data for Data Science",
+    "section": "Obfuscated Binary files",
+    "text": "Obfuscated Binary files"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#references",
+    "href": "slides/week02_slides_part1.html#references",
+    "title": "DS105 Data for Data Science",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
   }
 ]

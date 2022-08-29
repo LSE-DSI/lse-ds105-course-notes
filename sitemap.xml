@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/index.html</loc>
-    <lastmod>2022-08-29T12:36:55.397Z</lastmod>
+    <lastmod>2022-08-29T15:08:02.000Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/assessments.html</loc>
-    <lastmod>2022-08-29T12:36:56.657Z</lastmod>
+    <lastmod>2022-08-29T15:08:03.160Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/syllabus.html</loc>
-    <lastmod>2022-08-29T12:36:57.373Z</lastmod>
+    <lastmod>2022-08-29T15:08:03.720Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/communication.html</loc>
-    <lastmod>2022-08-29T12:36:57.797Z</lastmod>
+    <lastmod>2022-08-29T15:08:04.076Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week01.html</loc>
-    <lastmod>2022-08-29T12:36:58.241Z</lastmod>
+    <lastmod>2022-08-29T15:08:04.440Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02.html</loc>
+    <lastmod>2022-08-29T15:08:04.836Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week01_slides_part1.html</loc>
-    <lastmod>2022-08-29T12:36:59.057Z</lastmod>
+    <lastmod>2022-08-29T15:08:05.500Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week01_slides_part2.html</loc>
-    <lastmod>2022-08-29T12:36:59.589Z</lastmod>
+    <lastmod>2022-08-29T15:08:05.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week02_slides_part1.html</loc>
+    <lastmod>2022-08-29T15:08:06.304Z</lastmod>
   </url>
 </urlset>

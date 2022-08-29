@@ -2,20 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.149">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Jonathan Cardoso Silva">
 
-<title>LSE DS105M 2022/23 (summer revision) - 🗓️ Week 2 - The Cloud</title>
+<title>LSE DS105M 2022/23 - 🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -26,7 +31,6 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../weeks/week03.html" rel="next">
 <link href="../weeks/week01.html" rel="prev">
 <link href="..//figures/LSE Data Science Institute.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -70,9 +74,11 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">LSE DS105M 2022/23 (summer revision)</span>
-  </a>
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">LSE DS105M 2022/23</span>
+    </a>
+  </div>
           <div class="quarto-toggle-container ms-auto">
               <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
               <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -86,7 +92,7 @@ ul.task-list{list-style: none;}
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">🗓️ Week 2 - The Cloud</h1>
+      <h1 class="quarto-secondary-nav-title">🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -106,7 +112,12 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../regulation.html" class="sidebar-item-text sidebar-link">📜 CAPIS</a>
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">📓 Syllabus</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../communication.html" class="sidebar-item-text sidebar-link">📟 Communication</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -132,16 +143,6 @@ ul.task-list{list-style: none;}
   <a href="../weeks/week02.html" class="sidebar-item-text sidebar-link active">Week 02</a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week03.html" class="sidebar-item-text sidebar-link">Week 03</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week04.html" class="sidebar-item-text sidebar-link">Week 04</a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -151,16 +152,26 @@ ul.task-list{list-style: none;}
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../figures/LSE Data Science Institute.png" class="img-fluid"></p>
 </div></div>
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture-45-50-min" id="toc-lecture-45-50-min" class="nav-link active" data-scroll-target="#lecture-45-50-min">Lecture (45-50 min)</a></li>
-  <li><a href="#demo-35-40-min" id="toc-demo-35-40-min" class="nav-link" data-scroll-target="#demo-35-40-min">Demo (35-40 min)</a></li>
-  <li><a href="#wrap-up-15-min" id="toc-wrap-up-15-min" class="nav-link" data-scroll-target="#wrap-up-15-min">Wrap Up (15 min)</a></li>
-  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">Coursework</a></li>
-  <li><a href="#this-weeks-class" id="toc-this-weeks-class" class="nav-link" data-scroll-target="#this-weeks-class">This week’s class</a></li>
-  <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">Recommended Reading</a></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link active" data-scroll-target="#lecture">Lecture</a>
+  <ul class="collapse">
+  <li><a href="#part-i---operating-systems-files-the-terminal-45-50-min" id="toc-part-i---operating-systems-files-the-terminal-45-50-min" class="nav-link" data-scroll-target="#part-i---operating-systems-files-the-terminal-45-50-min">👨‍🏫 Part I - Operating Systems, Files &amp; The Terminal (45-50 min)</a></li>
+  <li><a href="#coffee-break-10-min" id="toc-coffee-break-10-min" class="nav-link" data-scroll-target="#coffee-break-10-min">Coffee Break ☕ (10 min)</a></li>
+  <li><a href="#part-ii---demo-navigating-the-terminal-45-50-min" id="toc-part-ii---demo-navigating-the-terminal-45-50-min" class="nav-link" data-scroll-target="#part-ii---demo-navigating-the-terminal-45-50-min">👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)</a></li>
+  </ul></li>
+  <li><a href="#preparing-for-the-next-week" id="toc-preparing-for-the-next-week" class="nav-link" data-scroll-target="#preparing-for-the-next-week">📒 Preparing for the next week</a></li>
+  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources">🔖 Recommended Resources</a>
+  <ul class="collapse">
+  <li><a href="#command-line-the-terminal" id="toc-command-line-the-terminal" class="nav-link" data-scroll-target="#command-line-the-terminal">Command line (the Terminal)</a></li>
+  <li><a href="#text-editors" id="toc-text-editors" class="nav-link" data-scroll-target="#text-editors">📃 Text editors</a>
+  <ul class="collapse">
+  <li><a href="#vim" id="toc-vim" class="nav-link" data-scroll-target="#vim">vim</a></li>
+  <li><a href="#emacs" id="toc-emacs" class="nav-link" data-scroll-target="#emacs">Emacs</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -169,7 +180,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">🗓️ Week 2 - The Cloud</h1>
+<h1 class="title d-none d-lg-block">🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</h1>
 </div>
 
 
@@ -189,99 +200,63 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p><mark class="idea"></mark> Move “The Cloud” to Week 03 and have “The Terminal” be Week 02 instead.</p>
-<p><mark></mark> Slides from previous year: <a href="https://lsecloud.sharepoint.com/:f:/r/sites/TEAM_LSE-LSEDataScienceInitiative-DS105/Shared%20Documents/DS105/MT-2021?csf=1&amp;web=1&amp;e=oMWOCC">DS105/2021MT (Sharepoint)</a></p>
-<section id="lecture-45-50-min" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-45-50-min">Lecture (45-50 min)</h2>
-<p><mark></mark> This week we provide a preview of one important tool for data scientists: The Cloud. The aims for the week will be to provide a definition for the cloud, to understand that the cloud is made of many components, to start to think about the trade-offs of using the cloud, and to acknowledge that your role as a data scientist is to be aware of the tools without being an expert in all of these.</p>
-<p><mark></mark> By the end of the week you should be able to: (1) Have an idea of what the cloud is. (2) Be able to acknowledge the tradeoffs of using the cloud, (3) Be aware of your role as a data scientist, and (4) have an idea of the different models of cloud services.</p>
-<details>
-<summary>
-👨‍🏫 Part I - What is the cloud
-</summary>
-<ul>
-<li>Intro to cloud computing</li>
-<li>Benefits of cloud computing</li>
-<li>Services that use cloud computing</li>
-</ul>
-</details>
-<details>
-<summary>
-👨‍🏫 Part II - Use cases in Data Science
-</summary>
-<ul>
-<li>Scrapping data</li>
-<li>Hosting and querying large databases</li>
-<li>Training Machine Learning models</li>
-<li>Hosting web apps</li>
-</ul>
-</details>
-<details>
-<summary>
-👨‍🏫 Part III - <mark class="remove">What is Data Science?</mark> <strong>Data Science specialisations</strong>
-</summary>
-<ul>
-<li>DevOps</li>
-<li>Data Engineer</li>
-<li>ML Engineer</li>
-<li>ML researcher</li>
-<li>Data Scientist</li>
-</ul>
-</details>
+<p>This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal.</p>
+<p>We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands.</p>
+<p>By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.</p>
+<section id="lecture" class="level1">
+<h1>Lecture</h1>
+<section id="part-i---operating-systems-files-the-terminal-45-50-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-i---operating-systems-files-the-terminal-45-50-min">👨‍🏫 Part I - Operating Systems, Files &amp; The Terminal (45-50 min)</h2>
+<p>Either click on the slide area below or click <a href="../slides/week02_slides_part1.html">here</a> to view it in fullscreen. Use your keypad to navigate the slides.</p>
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="../slides/week02_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;">
+</iframe>
+</div>
 </section>
-<section id="demo-35-40-min" class="level2">
-<h2 class="anchored" data-anchor-id="demo-35-40-min">Demo (35-40 min)</h2>
-<details>
-<summary>
-🖥️ Demo: Cloud Storage
-</summary>
-<ul>
-<li><mark class="idea"></mark> Explain what a bucket is</li>
-<li><mark class="idea"></mark> Pull data from AWS S3 (or GCloud Storage) using Jupyter Notebooks</li>
-</ul>
-</details>
+<section id="coffee-break-10-min" class="level2">
+<h2 class="anchored" data-anchor-id="coffee-break-10-min">Coffee Break ☕ (10 min)</h2>
+<p>Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.</p>
 </section>
-<section id="wrap-up-15-min" class="level2">
-<h2 class="anchored" data-anchor-id="wrap-up-15-min">Wrap Up (15 min)</h2>
-<details>
-<summary>
-👨‍🏫 Wrap Up
-</summary>
-<p><mark class="todo"></mark> Connect the demo with what was said at the beginning of the lecture.</p>
-</details>
+<section id="part-ii---demo-navigating-the-terminal-45-50-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-ii---demo-navigating-the-terminal-45-50-min">👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)</h2>
 </section>
-<section id="coursework" class="level2">
-<h2 class="anchored" data-anchor-id="coursework">Coursework</h2>
-<details>
-<summary>
-📒 Prepare for next weeks’ class
-</summary>
-<mark class="todo"></mark>
-</details>
 </section>
-<section id="this-weeks-class" class="level2">
-<h2 class="anchored" data-anchor-id="this-weeks-class">This week’s class</h2>
-<details>
-<summary>
-🛣️ Roadmap
-</summary>
-<ul>
-<li>Run the SSH</li>
-</ul>
-<object data="/docs/ssh.pdf" type="application/pdf" width="700px" height="700px">
-<embed src="../docs/ssh.pdf">
-<p>
-This browser does not support PDFs. Please download the PDF to view it: <a href="../docs/ssh.pdf">Download PDF</a>.
-</p>
-
-</object>
-</details>
-</section>
-<section id="recommended-reading" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-reading">Recommended Reading</h2>
+<section id="preparing-for-the-next-week" class="level1">
+<h1>📒 Preparing for the next week</h1>
 <p><mark class="todo"></mark></p>
+</section>
+<section id="recommended-resources" class="level1">
+<h1>🔖 Recommended Resources</h1>
+<section id="command-line-the-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="command-line-the-terminal">Command line (the Terminal)</h2>
+<ul>
+<li><a href="https://www.learnenough.com/command-line-tutorial">Learn enough command line to be dangerous</a></li>
+<li><a href=""></a></li>
+</ul>
+</section>
+<section id="text-editors" class="level2">
+<h2 class="anchored" data-anchor-id="text-editors">📃 Text editors</h2>
+<ul>
+<li><a href="https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/">vim and Emacs jokes :)</a></li>
+</ul>
+<section id="vim" class="level3">
+<h3 class="anchored" data-anchor-id="vim">vim</h3>
+<ul>
+<li><a href="https://www.vim4us.com/2020/11/how-to-get-started-with-vim.html">Getting started with Vim</a></li>
+<li><a href="https://www.vim4us.com/2020/11/vimtutor-your-first-vim-tutorial.html">The <code>vimtutor</code></a></li>
+<li><a href="https://levelup.gitconnected.com/a-day-with-vim-tutor-vimtutor-25aa2e6ce52c">A day with <code>vimtutor</code></a></li>
+</ul>
+</section>
+<section id="emacs" class="level3">
+<h3 class="anchored" data-anchor-id="emacs">Emacs</h3>
+<ul>
+<li><a href="https://www.redhat.com/sysadmin/beginners-guide-emacs">A beginner’s guide to text editing with Emacs</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html">Emacs complete documentation</a></li>
+</ul>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -355,6 +330,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           toggle.classList.remove("alternate");
         }
       }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
     }
   }
   const isFileUrl = () => { 
@@ -457,7 +442,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
@@ -492,9 +478,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../weeks/week03.html" class="pagination-link">
-        <span class="nav-page-text">Week 03</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
