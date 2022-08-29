@@ -1,21 +1,23 @@
 ---
-title: "**DS105 </br> Data for Data Scientists**"
-subtitle: "🗓️ Week XX: "
+title: "DS105 Data for Data Science"
+subtitle: "🗓️ Week XX - Part X: "
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
 toc: true
-toc-depth: 2
+toc-depth: 1
 toc-title: "What we will cover today"
 center-title-slide: false
 from: markdown+emoji
 format:
   revealjs: 
+    fig-responsive: true
+    theme: simple
     slide-number: true
-    mouse-wheel: true
+    mouse-wheel: false
     chalkboard: 
       buttons: true
-    preview-links: auto
+    preview-links: true
     logo: /figures/LSE Data Science Institute.png
     css: /css/styles_slides.css
-    footer: 'DS105 - Data for Data Scientists :unicorn: :juggling_person:'
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---

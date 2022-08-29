@@ -33,7 +33,7 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td rowspan=2></td>
             <td rowspan=2>🗓️ <a href="/weeks/week01.html">Week 01</a></td>
             <td style="font-weight:bold;">Lecture</td>
-            <td>Introduction and key tools for data scientists.</td>
+            <td>Introduction and the Data Science Toolbox 🧰</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Lab</td>
@@ -50,9 +50,9 @@ These skills are **cumulative**, so practice what you learned each week and make
         
          <tr class="even">
             <td rowspan=2></td>
-            <td rowspan=2>🗓️ <a href="">Week 02</a></td>
+            <td rowspan=2>🗓️ <a href="/weeks/week02.html">Week 02</a></td>
             <td style="font-weight:bold;">Lecture</td>
-            <td>The Terminal: navigating the command line.</td>
+            <td>Operating Systems, Files & The Terminal</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Lab</td>

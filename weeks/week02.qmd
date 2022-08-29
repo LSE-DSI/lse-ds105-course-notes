@@ -1,0 +1,55 @@
+---
+title: "🗓️ Week 2 - Operating Systems, Files & The Terminal"
+---
+
+This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal. 
+
+We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands. 
+
+By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.
+
+
+# Lecture
+
+## 👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)
+
+Either click on the slide area below or click [here](/slides/week02_slides_part1.html) to view it in fullscreen.
+Use your keypad to navigate the slides.
+
+
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week02_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
+
+## Coffee Break ☕ (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)
+
+
+# 📒 Preparing for the next week
+
+<mark class="todo"></mark>
+
+# 🔖 Recommended Resources
+
+## Command line (the Terminal)
+
+- [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
+- []()
+
+## 📃 Text editors
+
+- [vim and Emacs jokes :)](https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/)
+
+### vim
+
+- [Getting started with Vim](https://www.vim4us.com/2020/11/how-to-get-started-with-vim.html)
+- [The `vimtutor`](https://www.vim4us.com/2020/11/vimtutor-your-first-vim-tutorial.html)
+- [A day with `vimtutor`](https://levelup.gitconnected.com/a-day-with-vim-tutor-vimtutor-25aa2e6ce52c)
+
+### Emacs
+
+- [A beginner's guide to text editing with Emacs](https://www.redhat.com/sysadmin/beginners-guide-emacs)
+- [Emacs complete documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)

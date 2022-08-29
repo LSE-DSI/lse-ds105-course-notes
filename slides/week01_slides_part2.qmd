@@ -159,7 +159,7 @@ flowchart LR
   end
 ```
 
-# The toolbox
+# The toolbox 🧰
 
 # Data Science and Social Science
 

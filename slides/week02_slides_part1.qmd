@@ -1,0 +1,89 @@
+---
+title: "DS105 Data for Data Science"
+subtitle: "🗓️ Week 02 - Part I: Operating Systems, Files & The Terminal"
+author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+toc: true
+toc-depth: 1
+toc-title: "What we will cover today"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs: 
+    fig-responsive: true
+    theme: simple
+    slide-number: true
+    mouse-wheel: false
+    chalkboard: 
+      buttons: true
+    preview-links: true
+    logo: /figures/LSE Data Science Institute.png
+    css: /css/styles_slides.css
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
+---
+
+# Brief history of Operating Systems
+
+## UNIX
+
+## Linux
+
+## Windows
+
+### Linux subsystem
+
+## MacOS
+
+## Emulators & Virtual Machines
+
+# The Terminal
+
+## Shell / Bash
+
+## Windows CMD vs PowerShell
+
+# Files & Filesystems
+
+## What are files?
+
+## The hierarchical structure of directories
+
+## UNIX file structure
+
+## Windows file structure
+
+# File types 
+
+## Binary vs plain text
+
+## File editors in the command line
+
+# Example of file formats
+
+## HTML
+
+## JSON
+
+## TXT
+
+## CSV
+
+## Scripts
+
+## Obfuscated Binary files
+
+# What's after the ☕ break:
+
+- Let's open the Terminal!
+- Basic commands
+  - Understand where we are
+  - Create, move and delete files
+- A tour around `vim`
+- How to prepare for the lab this week
+
+------------------------------------------------------------------------
+
+## References {style="word-break:break-all;"}
+
+::: {#refs .r-fit-text}
+::: 
