@@ -28,7 +28,7 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 ## 👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)
 
 
-# 📒 Preparing for the next week
+# 📒 Preparing for this week's lab
 
 <mark class="todo"></mark>
 
