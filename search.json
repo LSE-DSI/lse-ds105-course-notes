@@ -56,25 +56,32 @@
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.\nWe will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?"
   },
   {
-    "objectID": "weeks/week01.html#part-i---introduction-45-50-min",
-    "href": "weeks/week01.html#part-i---introduction-45-50-min",
+    "objectID": "weeks/week01.html#lecture",
+    "href": "weeks/week01.html#lecture",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
-    "section": "👨‍🏫 Part I - Introduction (45-50 min)",
-    "text": "👨‍🏫 Part I - Introduction (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "section": "👨‍🏫 Lecture",
+    "text": "👨‍🏫 Lecture\n\n👨‍🏫 Part I - Introduction (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n\n\n☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself.\n\n\n🧰 Part II - The Data Science Toolbox (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
   },
   {
-    "objectID": "weeks/week01.html#coffee-break-10-min",
-    "href": "weeks/week01.html#coffee-break-10-min",
+    "objectID": "weeks/week01.html#labs",
+    "href": "weeks/week01.html#labs",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
-    "section": "Coffee Break ☕ (10 min)",
-    "text": "Coffee Break ☕ (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+    "section": "💻 Labs",
+    "text": "💻 Labs\nWe do not have classes this week. Instead, use this time to learn or revisit the basics of a programming language (either R or Python).\nSee the What’s Next section below for more advice on that."
   },
   {
-    "objectID": "weeks/week01.html#part-ii---the-data-science-toolbox-45-50-min",
-    "href": "weeks/week01.html#part-ii---the-data-science-toolbox-45-50-min",
+    "objectID": "weeks/week01.html#preparing-for-the-next-week",
+    "href": "weeks/week01.html#preparing-for-the-next-week",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
-    "section": "🧰 Part II - The Data Science Toolbox (45-50 min)",
-    "text": "🧰 Part II - The Data Science Toolbox (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "section": "📒 Preparing for the next week",
+    "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
+  },
+  {
+    "objectID": "weeks/week01.html#recommended-resources",
+    "href": "weeks/week01.html#recommended-resources",
+    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "section": "🔖 Recommended Resources",
+    "text": "🔖 Recommended Resources\n\nDigital Skills Lab offer workshops on R and Python skills.\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain available until the end of the year."
   },
   {
     "objectID": "weeks/week02.html",
@@ -84,39 +91,25 @@
     "text": "This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal.\nWe will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands.\nBy the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages."
   },
   {
-    "objectID": "weeks/week02.html#part-i---operating-systems-files-the-terminal-45-50-min",
-    "href": "weeks/week02.html#part-i---operating-systems-files-the-terminal-45-50-min",
+    "objectID": "weeks/week02.html#lecture",
+    "href": "weeks/week02.html#lecture",
     "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)",
-    "text": "👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "section": "👨‍🏫 Lecture",
+    "text": "👨‍🏫 Lecture\n\n🖥️ Part I - Operating Systems, Files & The Terminal (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n\n\n☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself.\n\n\n🖥️ Part II - Demo: Navigating the Terminal (45-50 min)"
   },
   {
-    "objectID": "weeks/week02.html#coffee-break-10-min",
-    "href": "weeks/week02.html#coffee-break-10-min",
+    "objectID": "weeks/week02.html#labs",
+    "href": "weeks/week02.html#labs",
     "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "Coffee Break ☕ (10 min)",
-    "text": "Coffee Break ☕ (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+    "section": "💻 Labs",
+    "text": "💻 Labs\n\n📒 Preparing for this week’s lab\n\nBring your laptops\nBrowse the Recommended Resources below:\n\nskim through the blogposts and articles to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future.\n\nTry to replicate the lecture demo before the lab. Bring your notes and questions!\n\n\n\n🛣️ Lab Roadmap"
   },
   {
-    "objectID": "weeks/week02.html#part-ii---demo-navigating-the-terminal-45-50-min",
-    "href": "weeks/week02.html#part-ii---demo-navigating-the-terminal-45-50-min",
+    "objectID": "weeks/week02.html#recommended-resources",
+    "href": "weeks/week02.html#recommended-resources",
     "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)",
-    "text": "👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)"
-  },
-  {
-    "objectID": "weeks/week02.html#command-line-the-terminal",
-    "href": "weeks/week02.html#command-line-the-terminal",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "Command line (the Terminal)",
-    "text": "Command line (the Terminal)\n\nLearn enough command line to be dangerous"
-  },
-  {
-    "objectID": "weeks/week02.html#text-editors",
-    "href": "weeks/week02.html#text-editors",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "📃 Text editors",
-    "text": "📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
+    "section": "🔖 Recommended Resources",
+    "text": "🔖 Recommended Resources\n\nLinux Filesystem\n\nThe Linux Filesystem Explained\n\n\n\nCommand line (the Terminal)\n\nLearn enough command line to be dangerous\n\n\n\n📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
