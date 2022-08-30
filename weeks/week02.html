@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Jonathan Cardoso Silva">
+<meta name="author" content="Dr.&nbsp;Jon Cardoso-Silva">
 
 <title>LSE DS105M 2022/23 - 🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</title>
 <style>
@@ -167,12 +167,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#preparing-for-this-weeks-lab" id="toc-preparing-for-this-weeks-lab" class="nav-link" data-scroll-target="#preparing-for-this-weeks-lab">📒 Preparing for this week’s lab</a></li>
   <li><a href="#lab-roadmap" id="toc-lab-roadmap" class="nav-link" data-scroll-target="#lab-roadmap">🛣️ Lab Roadmap</a></li>
   </ul></li>
-  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources">🔖 Recommended Resources</a>
-  <ul class="collapse">
-  <li><a href="#linux-filesystem" id="toc-linux-filesystem" class="nav-link" data-scroll-target="#linux-filesystem">Linux Filesystem</a></li>
-  <li><a href="#command-line-the-terminal" id="toc-command-line-the-terminal" class="nav-link" data-scroll-target="#command-line-the-terminal">Command line (the Terminal)</a></li>
-  <li><a href="#text-editors" id="toc-text-editors" class="nav-link" data-scroll-target="#text-editors">📃 Text editors</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -182,6 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</h1>
+<p class="subtitle lead">DS105 - Data for Data Science</p>
 </div>
 
 
@@ -191,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jonathan Cardoso Silva</a> </p>
+             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jon Cardoso-Silva</a> </p>
           </div>
   </div>
     
@@ -201,9 +196,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal.</p>
-<p>We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands.</p>
-<p>By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.</p>
+<p>This week we will look at what happens under the hoods when you give instructions to a computer.</p>
+<p>You will see a brief history of <strong>Operating Systems (OS)</strong>, <strong>filesystems</strong> and the <strong>Command-Line Interface (CLI)</strong> — or the Terminal for those on macOS — and how any of this relates to the data analysis process. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it.</p>
+<p>We will dedicate a special time to <strong>Linux</strong> and how to interact with Linux machines. This will be particularly important for next week’s topic when we learn how to access and navigate computers living in the Cloud.</p>
+<p>By the end of the week, you should be able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.</p>
 <details>
 <summary>
 👨‍🏫 Lecture
@@ -239,59 +235,19 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="preparing-for-this-weeks-lab">📒 Preparing for this week’s lab</h3>
 <ul>
 <li>Bring your laptops</li>
-<li>Browse the <a href="#recommended-resources">Recommended Resources</a> below:
+<li>Browse the <a href="../weeks/week02_appendix.html">🔖 Week 02 Appendix</a> page:
 <ul>
-<li>skim through the blogposts and articles to reinforce concepts covered in the lecture,</li>
-<li>bookmark whatever you feel could be relevant to you in the future.</li>
+<li>skim through the blog posts and articles therein to reinforce concepts covered in the lecture,</li>
+<li>bookmark whatever you feel could be relevant to you in the future</li>
 </ul></li>
-<li>Try to replicate the lecture demo before the lab. Bring your notes and questions!</li>
+<li>Try to replicate the lecture demo before the lab.</li>
 </ul>
 </section>
 <section id="lab-roadmap" class="level3">
 <h3 class="anchored" data-anchor-id="lab-roadmap">🛣️ Lab Roadmap</h3>
 <p><mark class="todo"></mark></p>
 </section></section></details>
-<details>
-<summary>
-🔖 Recommended Resources
-</summary>
-
-
-<section id="recommended-resources" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-resources">🔖 Recommended Resources</h2>
-<section id="linux-filesystem" class="level3">
-<h3 class="anchored" data-anchor-id="linux-filesystem">Linux Filesystem</h3>
-<ul>
-<li><a href="https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/">The Linux Filesystem Explained</a></li>
-</ul>
-</section>
-<section id="command-line-the-terminal" class="level3">
-<h3 class="anchored" data-anchor-id="command-line-the-terminal">Command line (the Terminal)</h3>
-<ul>
-<li><a href="https://www.learnenough.com/command-line-tutorial">Learn enough command line to be dangerous</a></li>
-</ul>
-</section>
-<section id="text-editors" class="level3">
-<h3 class="anchored" data-anchor-id="text-editors">📃 Text editors</h3>
-<ul>
-<li><a href="https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/">vim and Emacs jokes :)</a></li>
-</ul>
-<section id="vim" class="level4">
-<h4 class="anchored" data-anchor-id="vim">vim</h4>
-<ul>
-<li><a href="https://www.vim4us.com/2020/11/how-to-get-started-with-vim.html">Getting started with Vim</a></li>
-<li><a href="https://www.vim4us.com/2020/11/vimtutor-your-first-vim-tutorial.html">The <code>vimtutor</code></a></li>
-<li><a href="https://levelup.gitconnected.com/a-day-with-vim-tutor-vimtutor-25aa2e6ce52c">A day with <code>vimtutor</code></a></li>
-</ul>
-</section>
-<section id="emacs" class="level4">
-<h4 class="anchored" data-anchor-id="emacs">Emacs</h4>
-<ul>
-<li><a href="https://www.redhat.com/sysadmin/beginners-guide-emacs">A beginner’s guide to text editing with Emacs</a></li>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html">Emacs complete documentation</a></li>
-</ul>
-</section></section></section></details>
-
+<p>Go to the <a href="../weeks/week02_appendix.html">🔖 Week 02 Appendix</a> page for a list of references, guides, glossaries and resources related to this week’s topic.</p>
 
 
 
@@ -507,6 +463,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/github\.com\/LSE-DSI\/lse-ds105-course-notes/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">

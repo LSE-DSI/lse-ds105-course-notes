@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "LSE DS105M",
+    "title": "LSE DS105M (2022/23)",
     "section": "",
     "text": "🎯 Learning Objectives\n\nUnderstand the basic structure of data types and common data formats\nShow familiarity with international standards for common data types\nManage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples\nClean data, and diagnose common problems involved in data corruption and how to fix them\nUnderstand the concept and fundamentals of databases\nLink data from different sources\nUse the collaboration and version control system GitHub, based on the git version control system.\nMarkup Language (XML), and the Markdown format for formatting documents and web pages.\nCreate and maintain simple websites using HTML and CSS\nUse APIs to send and retrieve data from Internet sources\n\n\n\n🧑🏻‍🏫 Teaching Team\n\nTeacher responsibleTeaching assistantsAdministrative support\n\n\n\n\n\n\n\nDr. Jonathan Cardoso-Silva  Assistant Professorial Lecturer  LSE Data Science Institute Office Hours: book via StudentHub\n\n\n\n(pending confirmation)\n(pending confirmation)\n(pending confirmation)"
   },
@@ -46,7 +46,7 @@
     "href": "communication.html",
     "title": "LSE DS105M",
     "section": "",
-    "text": "Find out how to talk to your peers, teaching and administrative staff during this course.\n\n\n\nMost of our “informal” communication and interactions will happen through Slack.\nSlack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project.\nThere will be channels dedicated to discussing each week’s content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.\n\nYou will receive an invitation to join our Slack group via e-mail. Send an e-mail to Jon if you have not received an invite by the time of the first lecture.\nCheck out the following links to understand more about this tool:\n\nSlack tutorials\nCollaborate effectively in channels"
+    "text": "Find out how to talk to your peers, teaching and administrative staff during this course.\n\n\n\nMost of our “informal” communication and interactions will happen through Slack.\nSlack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project.\nThere will be channels dedicated to discussing each week’s content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.\n\nYou will receive an invitation to join our Slack group via e-mail. Send an e-mail to Jon (J.Cardoso-Silva at lse dot ac dot uk) if you have not received an invite by the time of the first lecture.\nCheck out the following links to understand more about this tool:\n\nSlack tutorials\nCollaborate effectively in channels"
   },
   {
     "objectID": "weeks/week01.html",
@@ -67,7 +67,7 @@
     "href": "weeks/week01.html#labs",
     "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
     "section": "💻 Labs",
-    "text": "💻 Labs\nWe do not have classes this week. Instead, use this time to learn or revisit the basics of a programming language (either R or Python).\nSee the What’s Next section below for more advice on that."
+    "text": "💻 Labs\nWe do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
   },
   {
     "objectID": "weeks/week01.html#preparing-for-the-next-week",
@@ -88,7 +88,7 @@
     "href": "weeks/week02.html",
     "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
     "section": "",
-    "text": "This week we will begin exploring Linux and our main way of interacting with Linux machines: the Command-Line Interface (CLI) or, for those on MacOS, The Terminal.\nWe will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it. Moreover, we will begin seeing the basic organisation of Linux and go through some basic commands.\nBy the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages."
+    "text": "This week we will look at what happens under the hoods when you give instructions to a computer.\nYou will see a brief history of Operating Systems (OS), filesystems and the Command-Line Interface (CLI) — or the Terminal for those on macOS — and how any of this relates to the data analysis process. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it.\nWe will dedicate a special time to Linux and how to interact with Linux machines. This will be particularly important for next week’s topic when we learn how to access and navigate computers living in the Cloud.\nBy the end of the week, you should be able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.\nGo to the 🔖 Week 02 Appendix page for a list of references, guides, glossaries and resources related to this week’s topic."
   },
   {
     "objectID": "weeks/week02.html#lecture",
@@ -102,14 +102,28 @@
     "href": "weeks/week02.html#labs",
     "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
     "section": "💻 Labs",
-    "text": "💻 Labs\n\n📒 Preparing for this week’s lab\n\nBring your laptops\nBrowse the Recommended Resources below:\n\nskim through the blogposts and articles to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future.\n\nTry to replicate the lecture demo before the lab. Bring your notes and questions!\n\n\n\n🛣️ Lab Roadmap"
+    "text": "💻 Labs\n\n📒 Preparing for this week’s lab\n\nBring your laptops\nBrowse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\nTry to replicate the lecture demo before the lab.\n\n\n\n🛣️ Lab Roadmap"
   },
   {
-    "objectID": "weeks/week02.html#recommended-resources",
-    "href": "weeks/week02.html#recommended-resources",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "🔖 Recommended Resources",
-    "text": "🔖 Recommended Resources\n\nLinux Filesystem\n\nThe Linux Filesystem Explained\n\n\n\nCommand line (the Terminal)\n\nLearn enough command line to be dangerous\n\n\n\n📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
+    "objectID": "weeks/week02_appendix.html",
+    "href": "weeks/week02_appendix.html",
+    "title": "🔖 Week 02 - Appendix",
+    "section": "",
+    "text": "📖 Some simple definitions of common computer terms\n\n\n\nA handy glossary of terms that you might encounter when learning/studying computer programming.\nSource: (Brandies and Hogg 2021)\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nAlgorithm\nThe set of rules or calculations that are performed by a computer program. Certain algorithms may be more suitable for particular datasets and may have differences in performance (e.g., in speed or accuracy).\n\n\nCentral processing unit (CPU)\nThe chip that performs the actual computation on a compute node or VM.\n\n\nCompute node\nAn individual computer that contains a number of CPUs and associated RAM.\n\n\nCore\nPart of a CPU. Single-core processors contain 1 core per CPU, meaning CPUs and cores are often interchangeable terms.\n\n\nCPU time\nThe time CPUs have spent actually processing data (often \\(\\operatorname{CPU time} \\approx \\operatorname{Walltime} \\times \\operatorname{Number of CPUs}\\)).\n\n\nDependency\nSoftware that is required by another tool or pipeline for successful execution.\n\n\nExecutable\nThe file that contains a tool/program. Some software has a single executable, while others have multiple executables for different commands/steps.\n\n\nHigh performance computer (HPC)\nA collection of connected compute nodes.\n\n\nOperating system(OS)\nThe base software that supports a computer’s basic functions. Some of the most common linux-based operating systems include those of the Debian distribution (Ubuntu) and those of the RedHat distribution (Fedora and CentOS).\n\n\nPipeline\nA pipeline is a workflow consisting of a variety of steps (commands) and/or tools that process a given set of inputs to create the desired output files.\n\n\nProgramming languages\nSpecific syntax and rules for instructing a computer to perform specific tasks. Common programming language used in bioinformatics include Bash, Python, Perl, R, C, and C++.\n\n\nRandom access memory (RAM)\nTemporarily stores all the information the CPUs require (can be accessed by all of the CPUs on the associated node or VM).\n\n\nScheduler\nManages jobs (scripts) running on shared HPC environments. Some common schedulers include SLURM, PBS, Torque, and SGE.\n\n\nScript\nA file which contains code to be executed in a single programming language.\n\n\nThread\nNumber of computations that a program can perform concurrently—depends on the number of cores (usually 1 core = 1 thread).\n\n\nTool\nA software program that performs an analysis on an input dataset to extract meaningful outputs/information—Tool, software, and program are often used interchangeably but refer to the core components of bioinformatics pipelines.\n\n\nVM\nVirtual machine—Similar to a compute node as it behaves as a single computer and contains a desired number of CPUs and associated RAM (usually associated with cloud computing).\n\n\nWalltime\nThe time a program takes to run in our clock-on-the-wall time."
+  },
+  {
+    "objectID": "weeks/week02_appendix.html#linux-the-terminal",
+    "href": "weeks/week02_appendix.html#linux-the-terminal",
+    "title": "🔖 Week 02 - Appendix",
+    "section": "🐧 Linux & the Terminal",
+    "text": "🐧 Linux & the Terminal\n\nThe Linux Filesystem Explained\nLearn enough command line to be dangerous"
+  },
+  {
+    "objectID": "weeks/week02_appendix.html#text-editors",
+    "href": "weeks/week02_appendix.html#text-editors",
+    "title": "🔖 Week 02 - Appendix",
+    "section": "📃 Text editors",
+    "text": "📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",

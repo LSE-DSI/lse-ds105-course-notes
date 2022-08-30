@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Jonathan Cardoso Silva">
+<meta name="author" content="Dr.&nbsp;Jon Cardoso-Silva">
 
 <title>LSE DS105M 2022/23 - LSE DS105M</title>
 <style>
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jonathan Cardoso Silva</a> </p>
+             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jon Cardoso-Silva</a> </p>
           </div>
   </div>
     
@@ -200,7 +200,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Slack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project.</li>
 <li>There will be channels dedicated to discussing each week’s content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.</li>
 </ul>
-<p>You will receive an invitation to join our Slack group via e-mail. Send an <a href="mailto:J.Cardoso-Silva@lse.ac.uk">e-mail to Jon</a> if you have not received an invite by the time of the first lecture.</p>
+<p>You will receive an invitation to join our Slack group via e-mail. Send an <script type="text/javascript">
+<!--
+h='&#108;&#x73;&#x65;&#46;&#x61;&#x63;&#46;&#x75;&#x6b;';a='&#64;';n='&#74;&#46;&#x43;&#x61;&#114;&#100;&#x6f;&#x73;&#x6f;&#x2d;&#x53;&#x69;&#108;&#118;&#x61;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x65;&#x2d;&#x6d;&#x61;&#x69;&#108;&#32;&#116;&#x6f;&#32;&#74;&#x6f;&#110;'+'<\/'+'a'+'>');
+// -->
+</script><noscript>e-mail to Jon (J.Cardoso-Silva at lse dot ac dot uk)</noscript> if you have not received an invite by the time of the first lecture.</p>
 <p>Check out the following links to understand more about this tool:</p>
 <ul>
 <li><a href="https://slack.com/intl/en-gb/help/categories/360000049063-Slack-tutorials">Slack tutorials</a></li>
@@ -421,6 +426,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/github\.com\/LSE-DSI\/lse-ds105-course-notes/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
