@@ -1,0 +1,64 @@
+---
+title: "🔖 Week 02 - Appendix"
+subtitle: "Operating Systems, Files & The Terminal"
+---
+
+<details><summary>📖 Some simple definitions of common computer terms</summary>
+
+## 📖 Some simple definitions of common computer terms
+
+A handy glossary of terms that you might encounter when learning/studying computer programming.
+
+Source: [@brandies_ten_2021]
+
+| Term          | Definition                                                |
+|:--------------|:----------------------------------------------------------|
+| **Algorithm**          | The set of rules or calculations that are performed by a computer program. Certain algorithms may be more suitable for particular datasets and may have differences in performance (e.g., in speed or accuracy).
+| **Central processing<br/> unit (CPU)** | The chip that performs the actual computation on a compute node or VM.
+| **Compute node**       | An individual computer that contains a number of CPUs and associated RAM.
+| **Core**               | Part of a CPU. Single-core processors contain 1 core per CPU, meaning CPUs and cores are often interchangeable terms.
+| **CPU time**           | The time CPUs have spent actually processing data <br/>(often $\operatorname{CPU time} \approx \operatorname{Walltime} \times \operatorname{Number of CPUs}$).
+| **Dependency**         | Software that is required by another tool or pipeline for successful execution.
+| **Executable**         | The file that contains a tool/program. Some software has a single executable, while others have multiple executables for different commands/steps.
+| **High performance<br/> computer (HPC)** | A collection of connected compute nodes.
+| **Operating system<br/>(OS)** | The base software that supports a computer's basic functions. Some of the most common linux-based operating systems include those of the Debian distribution (Ubuntu) and those of the RedHat distribution (Fedora and CentOS).
+| **Pipeline**           | A pipeline is a workflow consisting of a variety of steps (commands) and/or tools that process a given set of inputs to create the desired output files.
+| **Programming<br/> languages** | Specific syntax and rules for instructing a computer to perform specific tasks. Common programming language used in bioinformatics include Bash, Python, Perl, R, C, and C++.
+| **Random access <br/>memory (RAM)** | Temporarily stores all the information the CPUs require <br/>(can be accessed by all of the CPUs on the associated node or VM).
+| **Scheduler**          | Manages jobs (scripts) running on shared HPC environments. Some common schedulers include SLURM, PBS, Torque, and SGE.
+| **Script**             | A file which contains code to be executed in a single programming language.
+| **Thread**             | Number of computations that a program can perform concurrently—depends on the number of cores (usually 1 core = 1 thread).
+| **Tool**               | A software program that performs an analysis on an input dataset to extract meaningful outputs/information—Tool, software, and program are often used interchangeably but refer to the core components of bioinformatics pipelines.
+| **VM**                 | Virtual machine—Similar to a compute node as it behaves as a single computer and contains a desired number of CPUs and associated RAM (usually associated with cloud computing).
+| **Walltime**           | The time a program takes to run in our clock-on-the-wall time.
+
+</details>
+
+<details>
+<summary>🐧 Linux & the Terminal</summary>
+
+## 🐧 Linux & the Terminal
+
+- [The Linux Filesystem Explained](https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/)
+- [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
+
+</details>
+
+<details><summary>📃 Text editors</summary>
+
+## 📃 Text editors
+
+- [vim and Emacs jokes :)](https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/)
+
+### vim
+
+- [Getting started with Vim](https://www.vim4us.com/2020/11/how-to-get-started-with-vim.html)
+- [The `vimtutor`](https://www.vim4us.com/2020/11/vimtutor-your-first-vim-tutorial.html)
+- [A day with `vimtutor`](https://levelup.gitconnected.com/a-day-with-vim-tutor-vimtutor-25aa2e6ce52c)
+
+### Emacs
+
+- [A beginner's guide to text editing with Emacs](https://www.redhat.com/sysadmin/beginners-guide-emacs)
+- [Emacs complete documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+
+</details>
