@@ -57,7 +57,13 @@ website:
   
 format:
   html:
-    author: Dr. [Jonathan Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+    subtitle: "DS105 - Data for Data Science"
+    email-obfuscation: javascript
+    link-external-newwindow: true
+    link-external-icon: true
+    author: Dr. [Jon Cardoso-Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+    author-meta: Dr. Jon Cardoso-Silva
+    date-format: "DD MMMM YYYY"
     theme:
       light: journal
       dark:  darkly

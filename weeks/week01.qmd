@@ -14,7 +14,7 @@ We will also cover some of the basics: what do we mean by data science and what 
 
 <mark class="todo"></mark>
 
-Either click on the slide area below or click [here](/slides/week01_slides_part1.html) to view it in fullscreen.
+Either click on the slide area below or click [here](/slides/week01_slides_part1.qmd) to view it in fullscreen.
 Use your keypad to navigate the slides.
 
 
@@ -30,7 +30,7 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 
 <mark class="todo"></mark>
 
-Either click on the slide area below or click [here](/slides/week01_slides_part2.html) to view it in fullscreen.
+Either click on the slide area below or click [here](/slides/week01_slides_part2.qmd) to view it in fullscreen.
 Use your keypad to navigate the slides.
 
 <div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
@@ -43,9 +43,9 @@ Use your keypad to navigate the slides.
 
 ## 💻 Labs
 
-We do not have classes this week. Instead, use this time to learn or revisit the basics of a programming language (either R or Python).
+We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).
 
-See the [What's Next](#whats-next) section below for more advice on that.
+See sections below for advice on how to do that.
 
 </details>
 
@@ -53,8 +53,8 @@ See the [What's Next](#whats-next) section below for more advice on that.
 
 ## 📒 Preparing for the next week
 
-- Join the Slack group of this course [(more info)](/communication.html)
-- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/syllabus.html), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
+- Join the Slack group of this course [(more info)](/communication.qmd)
+- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/syllabus.qmd), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
 </details>
 
 <details> <summary>🔖 Recommended Resources</summary> 

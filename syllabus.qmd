@@ -18,7 +18,7 @@ These skills are **cumulative**, so practice what you learned each week and make
 
 💡 Remember: collaboration is key to the success of a data science project!
 
-<table>
+<table class="syllabus">
     <thead>
         
     </thead>
@@ -31,7 +31,7 @@ These skills are **cumulative**, so practice what you learned each week and make
     <tbody>
         <tr class="even">
             <td rowspan=2></td>
-            <td rowspan=2>🗓️ <a href="/weeks/week01.html">Week 01</a></td>
+            <td rowspan=2>🗓️ <a href="/weeks/week01.qmd">Week 01</a></td>
             <td style="font-weight:bold;">Lecture</td>
             <td>Introduction and the Data Science Toolbox 🧰</td>
         </tr>
@@ -50,7 +50,7 @@ These skills are **cumulative**, so practice what you learned each week and make
         
          <tr class="even">
             <td rowspan=2></td>
-            <td rowspan=2>🗓️ <a href="/weeks/week02.html">Week 02</a></td>
+            <td rowspan=2>🗓️ <a href="/weeks/week02.qmd">Week 02</a></td>
             <td style="font-weight:bold;">Lecture</td>
             <td>Operating Systems, Files & The Terminal</td>
         </tr>

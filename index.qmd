@@ -1,6 +1,8 @@
 ---
-title: "LSE DS105M"
+title: "LSE DS105M (2022/23)"
 subtitle: "Data for Data Science"
+date: 30 August 2022
+date-meta: 30 August 2022
 ---
 
 # 📑 Course Brief

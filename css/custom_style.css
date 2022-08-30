@@ -43,3 +43,7 @@ mark:before {
     text-decoration:line-through;
     padding-bottom: 0.1em;
 }
+
+div.csl-entry {
+    margin-bottom: 0.35em;
+}
