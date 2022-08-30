@@ -444,7 +444,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/github\.com\/LSE-DSI\/lse-ds105-course-notes/);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/(?:lse-dsi\.github\.io\/|localhost)/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
