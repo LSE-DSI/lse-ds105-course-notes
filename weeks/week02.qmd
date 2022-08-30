@@ -8,10 +8,12 @@ We will see why this way of interacting with our computer is the most suitable f
 
 By the end of the week you should we able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.
 
+<details> <summary>👨‍🏫 Lecture</summary> 
+## 👨‍🏫 Lecture
 
-# Lecture
+### 🖥️ Part I - Operating Systems, Files & The Terminal (45-50 min)
 
-## 👨‍🏫 Part I - Operating Systems, Files & The Terminal (45-50 min)
+<mark class="todo"></mark>
 
 Either click on the slide area below or click [here](/slides/week02_slides_part1.html) to view it in fullscreen.
 Use your keypad to navigate the slides.
@@ -21,35 +23,58 @@ Use your keypad to navigate the slides.
 <iframe src="/slides/week02_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
 </div>
 
-## Coffee Break ☕ (10 min)
+### ☕ Coffee Break (10 min)
 
 Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
 
-## 👨‍💻 Part II - Demo: Navigating the Terminal (45-50 min)
-
-
-# 📒 Preparing for this week's lab
+### 🖥️ Part II - Demo: Navigating the Terminal (45-50 min)
 
 <mark class="todo"></mark>
 
-# 🔖 Recommended Resources
+</details>
 
-## Command line (the Terminal)
+<details> <summary>💻 Labs</summary>
+## 💻 Labs
+
+### 📒 Preparing for this week's lab
+
+- Bring your laptops
+- Browse the [Recommended Resources](#recommended-resources) below:
+    - skim through the blogposts and articles to reinforce concepts covered in the lecture,
+    - bookmark whatever you feel could be relevant to you in the future.
+- Try to replicate the lecture demo before the lab. Bring your notes and questions!
+
+### 🛣️ Lab Roadmap
+
+<mark class="todo"></mark>
+
+</details>
+
+<details> <summary>🔖 Recommended Resources</summary> 
+
+## 🔖 Recommended Resources
+
+### Linux Filesystem
+
+- [The Linux Filesystem Explained](https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/)
+
+### Command line (the Terminal)
 
 - [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
-- []()
 
-## 📃 Text editors
+### 📃 Text editors
 
 - [vim and Emacs jokes :)](https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/)
 
-### vim
+#### vim
 
 - [Getting started with Vim](https://www.vim4us.com/2020/11/how-to-get-started-with-vim.html)
 - [The `vimtutor`](https://www.vim4us.com/2020/11/vimtutor-your-first-vim-tutorial.html)
 - [A day with `vimtutor`](https://levelup.gitconnected.com/a-day-with-vim-tutor-vimtutor-25aa2e6ce52c)
 
-### Emacs
+#### Emacs
 
 - [A beginner's guide to text editing with Emacs](https://www.redhat.com/sysadmin/beginners-guide-emacs)
 - [Emacs complete documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+
+</details>
