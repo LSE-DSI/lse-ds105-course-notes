@@ -35,22 +35,85 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 
 </details>
 
-<details> <summary>💻 Labs</summary>
-## 💻 Labs
+<details><summary>📒 Preparing for this week's lab</summary>
+## 📒 Preparing for this week's lab
 
-### 📒 Preparing for this week's lab
+Next week we will learn about the command line (also called the terminal). Follow the tips below to ensure you will get the most out of next week's lab:
 
-- Bring your laptops
+- Bring your laptops (tablets are not suitable for this class).
+- Students who use ![](/figures/logos/windows_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Windows logo"} Windows will have to install additional software on their laptops. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of the [@canonical_install_2022] tutorial before coming to class. 
+    - Don't worry about what all of this means for now!
 - Browse the [🔖 Week 02 Appendix](/weeks/week02_appendix.qmd) page:
     - skim through the blog posts and articles therein to reinforce concepts covered in the lecture,
     - bookmark whatever you feel could be relevant to you in the future
-- Try to replicate the lecture demo before the lab. 
+- Try to replicate the lecture demo before coming to the lab. 
+</details>
 
-### 🛣️ Lab Roadmap
+<details> <summary>💻 Labs</summary>
 
-<mark class="todo"></mark>
+## 🛣️ Lab Roadmap
+
+This week, we will learn to access and navigate your computer in a shell called bash, the most common way to access computers in the cloud (the topic of next week's lecture and lab). By default, bash is available on Unix-based operating systems (Linux and macOS). Those using Windows will have to install some additional software first. 
+
+### Step 1: Setting up
+<p></p>
+<details class="special"> <summary> ![](/figures/logos/windows_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Windows logo"} Windows users </summary>
+<p></p>
+
+Sadly, Windows command line interfaces differ from those used in Unix-based operating systems (Linux and macOS). Therefore, the commands we will learn today do not apply to Windows. 
+
+But fear not! Recent versions of Windows have a feature called Windows Subsystem for Linux, or WSL, [@microsoft_what_2022], which you can use to install Linux distributions. You just have to enable it first.
+
+🎯 **ACTION POINT:** Follow Steps 1-4 of the tutorial ["Install Ubuntu on Wsl2 on Windows 11 with GUI Support."](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support)
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/apple_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Apple logo"} macOS users </summary>
+<p></p>
+
+🎯 **ACTION POINT:** 
+
+1. Open [the terminal](https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#:~:text=Open%20Terminal&text=Click%20the%20Launchpad%20icon%20in,%2C%20then%20double%2Dclick%20Terminal) 
+2. Now, to ensure you are using the bash shell, type the following and hit ENTER:
+```bash
+echo $SHELL
+```
+If you see the following message printed on the terminal screen, you are all good to move to the next step.
+```console
+/bin/bash
+```
+
+3. If instead, you saw the message below:
+```console
+/bin/zsh
+```
+This means your computer came pre-packed with a different terminal called Z Shell. Read and follow the instructions in [this tutorial](https://news.learnenough.com/macos-bash-zshell#aside-changing_shells) to change your shell to bash.
+
+_🤓 Curious about the different mac shells? Checkout the full article on [@hartl_using_2020]_
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/linux_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Linux logo"} Linux users </summary>
+<p></p>
+
+You probably already know how to get to the terminal — typically the shortcut Ctrl+T will get you there. 
+
+Just ensure you are running the bash shell. If not, follow the same instructions given to macOS users above.
+</details>
+
+### Step 2: Locate yourself
+
+The command `pwd` stands for 'print working directory' and returns the full path to your current directory inside the terminal.
+
+1. Open the bash shell (using instructions from Step 1 above)
+2. Type 'pwd' and hit ENTER. You should get a string of text indicating the full path of where you are inside the terminal.
+3. Compare your output to the colleagues around you. What differs?
+4. See what is up with `ls ..`
+5. See what is down with `ls .`
+6. What do the dots `.` and `..` mean?
 
 </details>
 
 
+<p style="text-align: center;">...</p>
 Go to the [🔖 Week 02 Appendix](/weeks/week02_appendix.qmd) page for a list of references, guides, glossaries and resources related to this week's topic.
