@@ -56,32 +56,11 @@
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.\nWe will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?"
   },
   {
-    "objectID": "weeks/week01.html#lecture",
-    "href": "weeks/week01.html#lecture",
+    "objectID": "weeks/week01.html#links",
+    "href": "weeks/week01.html#links",
     "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
-    "section": "👨‍🏫 Lecture",
-    "text": "👨‍🏫 Lecture\n\n👨‍🏫 Part I - Introduction (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n\n\n☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself.\n\n\n🧰 Part II - The Data Science Toolbox (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
-  },
-  {
-    "objectID": "weeks/week01.html#labs",
-    "href": "weeks/week01.html#labs",
-    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
-    "section": "💻 Labs",
-    "text": "💻 Labs\nWe do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
-  },
-  {
-    "objectID": "weeks/week01.html#preparing-for-the-next-week",
-    "href": "weeks/week01.html#preparing-for-the-next-week",
-    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
-    "section": "📒 Preparing for the next week",
-    "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
-  },
-  {
-    "objectID": "weeks/week01.html#recommended-resources",
-    "href": "weeks/week01.html#recommended-resources",
-    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
-    "section": "🔖 Recommended Resources",
-    "text": "🔖 Recommended Resources\n\nDigital Skills Lab offer workshops on R and Python skills.\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain available until the end of the year."
+    "section": "Links",
+    "text": "Links\n\n👨‍🏫 Lecture slides\n📒 Preparing for next week’s lab"
   },
   {
     "objectID": "weeks/week02.html",
@@ -95,7 +74,49 @@
     "href": "weeks/week02.html#links",
     "title": "🗓️ Week 02 - Operating Systems, Files & The Terminal",
     "section": "Links",
-    "text": "Links\n👨‍🏫 Lecture slides\n📒 Preparing for this week’s lab\n💻 Lab roadmap\n🔖 Appendix"
+    "text": "Links\n\n👨‍🏫 Lecture slides\n📒 Preparing for this week’s lab\n💻 Lab roadmap\n🔖 Appendix"
+  },
+  {
+    "objectID": "weeks/week01/lecture.html",
+    "href": "weeks/week01/lecture.html",
+    "title": "👨‍🏫 Week 01 - Slides",
+    "section": "",
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week01/lecture.html#coffee-break-10-min",
+    "href": "weeks/week01/lecture.html#coffee-break-10-min",
+    "title": "👨‍🏫 Week 01 - Slides",
+    "section": "☕ Coffee Break (10 min)",
+    "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week01/lecture.html#part-ii---the-data-science-toolbox-45-50-min",
+    "href": "weeks/week01/lecture.html#part-ii---the-data-science-toolbox-45-50-min",
+    "title": "👨‍🏫 Week 01 - Slides",
+    "section": "🧰 Part II - The Data Science Toolbox (45-50 min)",
+    "text": "🧰 Part II - The Data Science Toolbox (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week01/prep.html",
+    "href": "weeks/week01/prep.html",
+    "title": "📒 Week 01 - Preparing for next week’s lab",
+    "section": "",
+    "text": "We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
+  },
+  {
+    "objectID": "weeks/week01/prep.html#preparing-for-the-next-week",
+    "href": "weeks/week01/prep.html#preparing-for-the-next-week",
+    "title": "📒 Week 01 - Preparing for next week’s lab",
+    "section": "📒 Preparing for the next week",
+    "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
+  },
+  {
+    "objectID": "weeks/week01/prep.html#recommended-resources",
+    "href": "weeks/week01/prep.html#recommended-resources",
+    "title": "📒 Week 01 - Preparing for next week’s lab",
+    "section": "🔖 Recommended Resources",
+    "text": "🔖 Recommended Resources\n\nDigital Skills Lab offer workshops on R and Python skills.\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain available until the end of the year."
   },
   {
     "objectID": "weeks/week02/appendix.html",
@@ -198,7 +219,7 @@
   {
     "objectID": "weeks/week02/prep.html",
     "href": "weeks/week02/prep.html",
-    "title": "📒 Week 02 - Prepare",
+    "title": "📒 Week 02 - Preparing for the lab",
     "section": "",
     "text": "Bring your laptops. Tablets are not suitable for this class.\nStudents who use Windows will have to install additional software on their laptops. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of the Canonical tutorial 1 before coming to class.\nIn the lab we will practice the concepts introduced in this week’s lecture. If a concept introduced in the lecture was not clear to you, revisit the slides and bring your questions to the lab.\nBrowse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\nTry to replicate the lecture demo before coming to the lab.\n\n\n\n\n\nFootnotes\n\n\nTutorial: “Install Ubuntu on Wsl2 on Windows 11 with GUI Support”↩︎"
   },
