@@ -1,5 +1,5 @@
 ---
-title: "📒 Week 02 - Prepare"
+title: "📒 Week 02 - Preparing for the lab"
 date: 1 September 2022
 date-meta: 1 September 2022
 ---
