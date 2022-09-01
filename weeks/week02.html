@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.163">
+<meta name="generator" content="quarto-1.1.168">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Jon Cardoso-Silva">
+<meta name="dcterms.date" content="1 September 2022">
 
-<title>LSE DS105M 2022/23 - 🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</title>
+<title>LSE DS105M 2022/23 - 🗓️ Week 02 - Operating Systems, Files &amp; The Terminal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../weeks/week02/lecture.html" rel="next">
 <link href="../weeks/week01.html" rel="prev">
 <link href="..//figures/LSE Data Science Institute.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -92,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</h1>
+      <h1 class="quarto-secondary-nav-title">🗓️ Week 02 - Operating Systems, Files &amp; The Terminal</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -138,11 +140,36 @@ ul.task-list li input[type="checkbox"] {
   <a href="../weeks/week01.html" class="sidebar-item-text sidebar-link">Week 01</a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../weeks/week02.html" class="sidebar-item-text sidebar-link active">Week 02</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week02.html" class="sidebar-item-text sidebar-link active">Week 02</a>
+  <a href="../weeks/week02/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week02/prep.html" class="sidebar-item-text sidebar-link">📒 Prepare for the lab</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week02/lab.html" class="sidebar-item-text sidebar-link">💻 Lab roadmap</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week02/appendix.html" class="sidebar-item-text sidebar-link">🔖 Appendix</a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -156,17 +183,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture" id="toc-lecture" class="nav-link active" data-scroll-target="#lecture">👨‍🏫 Lecture</a>
-  <ul class="collapse">
-  <li><a href="#part-i---operating-systems-files-the-terminal-45-50-min" id="toc-part-i---operating-systems-files-the-terminal-45-50-min" class="nav-link" data-scroll-target="#part-i---operating-systems-files-the-terminal-45-50-min">🖥️ Part I - Operating Systems, Files &amp; The Terminal (45-50 min)</a></li>
-  <li><a href="#coffee-break-10-min" id="toc-coffee-break-10-min" class="nav-link" data-scroll-target="#coffee-break-10-min">☕ Coffee Break (10 min)</a></li>
-  <li><a href="#part-ii---demo-navigating-the-terminal-45-50-min" id="toc-part-ii---demo-navigating-the-terminal-45-50-min" class="nav-link" data-scroll-target="#part-ii---demo-navigating-the-terminal-45-50-min">🖥️ Part II - Demo: Navigating the Terminal (45-50 min)</a></li>
-  </ul></li>
-  <li><a href="#labs" id="toc-labs" class="nav-link" data-scroll-target="#labs">💻 Labs</a>
-  <ul class="collapse">
-  <li><a href="#preparing-for-this-weeks-lab" id="toc-preparing-for-this-weeks-lab" class="nav-link" data-scroll-target="#preparing-for-this-weeks-lab">📒 Preparing for this week’s lab</a></li>
-  <li><a href="#lab-roadmap" id="toc-lab-roadmap" class="nav-link" data-scroll-target="#lab-roadmap">🛣️ Lab Roadmap</a></li>
-  </ul></li>
+  <li><a href="#links" id="toc-links" class="nav-link active" data-scroll-target="#links">Links</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">🗓️ Week 2 - Operating Systems, Files &amp; The Terminal</h1>
+<h1 class="title d-none d-lg-block">🗓️ Week 02 - Operating Systems, Files &amp; The Terminal</h1>
 <p class="subtitle lead">DS105 - Data for Data Science</p>
 </div>
 
@@ -190,6 +207,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">01 September 2022</p>
+    </div>
+  </div>
     
   </div>
   
@@ -200,58 +223,15 @@ ul.task-list li input[type="checkbox"] {
 <p>You will see a brief history of <strong>Operating Systems (OS)</strong>, <strong>filesystems</strong> and the <strong>Command-Line Interface (CLI)</strong> — or the Terminal for those on macOS — and how any of this relates to the data analysis process. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it.</p>
 <p>We will dedicate a special time to <strong>Linux</strong> and how to interact with Linux machines. This will be particularly important for next week’s topic when we learn how to access and navigate computers living in the Cloud.</p>
 <p>By the end of the week, you should be able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.</p>
-<details>
-<summary>
-👨‍🏫 Lecture
-</summary>
-<section id="lecture" class="level2">
-<h2 class="anchored" data-anchor-id="lecture">👨‍🏫 Lecture</h2>
-<section id="part-i---operating-systems-files-the-terminal-45-50-min" class="level3">
-<h3 class="anchored" data-anchor-id="part-i---operating-systems-files-the-terminal-45-50-min">🖥️ Part I - Operating Systems, Files &amp; The Terminal (45-50 min)</h3>
-<p><mark class="todo"></mark></p>
-<p>Either click on the slide area below or click <a href="../slides/week02_slides_part1.html">here</a> to view it in fullscreen. Use your keypad to navigate the slides.</p>
-<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
-<iframe src="../slides/week02_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;">
-</iframe>
-</div>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p>👨‍🏫 <a href="../weeks/week02/lecture.html">Lecture slides</a></p>
+<p>📒 <a href="../weeks/week02/prep.html">Preparing for this week’s lab</a></p>
+<p>💻 <a href="../weeks/week02/lab.html">Lab roadmap</a></p>
+<p>🔖 <a href="../weeks/week02/appendix.html">Appendix</a></p>
+
+
 </section>
-<section id="coffee-break-10-min" class="level3">
-<h3 class="anchored" data-anchor-id="coffee-break-10-min">☕ Coffee Break (10 min)</h3>
-<p>Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.</p>
-</section>
-<section id="part-ii---demo-navigating-the-terminal-45-50-min" class="level3">
-<h3 class="anchored" data-anchor-id="part-ii---demo-navigating-the-terminal-45-50-min">🖥️ Part II - Demo: Navigating the Terminal (45-50 min)</h3>
-<p><mark class="todo"></mark></p>
-</section></section></details>
-<details>
-<summary>
-💻 Labs
-</summary>
-
-
-<section id="labs" class="level2">
-<h2 class="anchored" data-anchor-id="labs">💻 Labs</h2>
-<section id="preparing-for-this-weeks-lab" class="level3">
-<h3 class="anchored" data-anchor-id="preparing-for-this-weeks-lab">📒 Preparing for this week’s lab</h3>
-<ul>
-<li>Bring your laptops</li>
-<li>Browse the <a href="../weeks/week02_appendix.html">🔖 Week 02 Appendix</a> page:
-<ul>
-<li>skim through the blog posts and articles therein to reinforce concepts covered in the lecture,</li>
-<li>bookmark whatever you feel could be relevant to you in the future</li>
-</ul></li>
-<li>Try to replicate the lecture demo before the lab.</li>
-</ul>
-</section>
-<section id="lab-roadmap" class="level3">
-<h3 class="anchored" data-anchor-id="lab-roadmap">🛣️ Lab Roadmap</h3>
-<p><mark class="todo"></mark></p>
-</section></section></details>
-<p>Go to the <a href="../weeks/week02_appendix.html">🔖 Week 02 Appendix</a> page for a list of references, guides, glossaries and resources related to this week’s topic.</p>
-
-
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -488,6 +468,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../weeks/week02/lecture.html" class="pagination-link">
+        <span class="nav-page-text">👨‍🏫 Lecture Slides</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

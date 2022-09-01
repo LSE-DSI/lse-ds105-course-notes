@@ -51,79 +51,156 @@
   {
     "objectID": "weeks/week01.html",
     "href": "weeks/week01.html",
-    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "",
     "text": "In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.\nWe will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?"
   },
   {
     "objectID": "weeks/week01.html#lecture",
     "href": "weeks/week01.html#lecture",
-    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "👨‍🏫 Lecture",
     "text": "👨‍🏫 Lecture\n\n👨‍🏫 Part I - Introduction (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n\n\n☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself.\n\n\n🧰 Part II - The Data Science Toolbox (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
   },
   {
     "objectID": "weeks/week01.html#labs",
     "href": "weeks/week01.html#labs",
-    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "💻 Labs",
     "text": "💻 Labs\nWe do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
   },
   {
     "objectID": "weeks/week01.html#preparing-for-the-next-week",
     "href": "weeks/week01.html#preparing-for-the-next-week",
-    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "📒 Preparing for the next week",
     "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
   },
   {
     "objectID": "weeks/week01.html#recommended-resources",
     "href": "weeks/week01.html#recommended-resources",
-    "title": "🗓️ Week 1 - Introduction and the Data Science Toolbox",
+    "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "🔖 Recommended Resources",
     "text": "🔖 Recommended Resources\n\nDigital Skills Lab offer workshops on R and Python skills.\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain available until the end of the year."
   },
   {
     "objectID": "weeks/week02.html",
     "href": "weeks/week02.html",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
+    "title": "🗓️ Week 02 - Operating Systems, Files & The Terminal",
     "section": "",
-    "text": "This week we will look at what happens under the hoods when you give instructions to a computer.\nYou will see a brief history of Operating Systems (OS), filesystems and the Command-Line Interface (CLI) — or the Terminal for those on macOS — and how any of this relates to the data analysis process. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it.\nWe will dedicate a special time to Linux and how to interact with Linux machines. This will be particularly important for next week’s topic when we learn how to access and navigate computers living in the Cloud.\nBy the end of the week, you should be able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages.\nGo to the 🔖 Week 02 Appendix page for a list of references, guides, glossaries and resources related to this week’s topic."
+    "text": "This week we will look at what happens under the hoods when you give instructions to a computer.\nYou will see a brief history of Operating Systems (OS), filesystems and the Command-Line Interface (CLI) — or the Terminal for those on macOS — and how any of this relates to the data analysis process. We will see why this way of interacting with our computer is the most suitable for developers and how we can interact with it.\nWe will dedicate a special time to Linux and how to interact with Linux machines. This will be particularly important for next week’s topic when we learn how to access and navigate computers living in the Cloud.\nBy the end of the week, you should be able to explore the CLI and perform basic tasks such as reading files, creating directories and calling webpages."
   },
   {
-    "objectID": "weeks/week02.html#lecture",
-    "href": "weeks/week02.html#lecture",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "👨‍🏫 Lecture",
-    "text": "👨‍🏫 Lecture\n\n🖥️ Part I - Operating Systems, Files & The Terminal (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\n\n\n\n\n\n\n☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself.\n\n\n🖥️ Part II - Demo: Navigating the Terminal (45-50 min)"
+    "objectID": "weeks/week02.html#links",
+    "href": "weeks/week02.html#links",
+    "title": "🗓️ Week 02 - Operating Systems, Files & The Terminal",
+    "section": "Links",
+    "text": "Links\n👨‍🏫 Lecture slides\n📒 Preparing for this week’s lab\n💻 Lab roadmap\n🔖 Appendix"
   },
   {
-    "objectID": "weeks/week02.html#labs",
-    "href": "weeks/week02.html#labs",
-    "title": "🗓️ Week 2 - Operating Systems, Files & The Terminal",
-    "section": "💻 Labs",
-    "text": "💻 Labs\n\n📒 Preparing for this week’s lab\n\nBring your laptops\nBrowse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\nTry to replicate the lecture demo before the lab.\n\n\n\n🛣️ Lab Roadmap"
-  },
-  {
-    "objectID": "weeks/week02_appendix.html",
-    "href": "weeks/week02_appendix.html",
+    "objectID": "weeks/week02/appendix.html",
+    "href": "weeks/week02/appendix.html",
     "title": "🔖 Week 02 - Appendix",
     "section": "",
     "text": "📖 Some simple definitions of common computer terms\n\n\n\nA handy glossary of terms that you might encounter when learning/studying computer programming.\nSource: (Brandies and Hogg 2021)\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nAlgorithm\nThe set of rules or calculations that are performed by a computer program. Certain algorithms may be more suitable for particular datasets and may have differences in performance (e.g., in speed or accuracy).\n\n\nCentral processing unit (CPU)\nThe chip that performs the actual computation on a compute node or VM.\n\n\nCompute node\nAn individual computer that contains a number of CPUs and associated RAM.\n\n\nCore\nPart of a CPU. Single-core processors contain 1 core per CPU, meaning CPUs and cores are often interchangeable terms.\n\n\nCPU time\nThe time CPUs have spent actually processing data (often \\(\\operatorname{CPU time} \\approx \\operatorname{Walltime} \\times \\operatorname{Number of CPUs}\\)).\n\n\nDependency\nSoftware that is required by another tool or pipeline for successful execution.\n\n\nExecutable\nThe file that contains a tool/program. Some software has a single executable, while others have multiple executables for different commands/steps.\n\n\nHigh performance computer (HPC)\nA collection of connected compute nodes.\n\n\nOperating system(OS)\nThe base software that supports a computer’s basic functions. Some of the most common linux-based operating systems include those of the Debian distribution (Ubuntu) and those of the RedHat distribution (Fedora and CentOS).\n\n\nPipeline\nA pipeline is a workflow consisting of a variety of steps (commands) and/or tools that process a given set of inputs to create the desired output files.\n\n\nProgramming languages\nSpecific syntax and rules for instructing a computer to perform specific tasks. Common programming language used in bioinformatics include Bash, Python, Perl, R, C, and C++.\n\n\nRandom access memory (RAM)\nTemporarily stores all the information the CPUs require (can be accessed by all of the CPUs on the associated node or VM).\n\n\nScheduler\nManages jobs (scripts) running on shared HPC environments. Some common schedulers include SLURM, PBS, Torque, and SGE.\n\n\nScript\nA file which contains code to be executed in a single programming language.\n\n\nThread\nNumber of computations that a program can perform concurrently—depends on the number of cores (usually 1 core = 1 thread).\n\n\nTool\nA software program that performs an analysis on an input dataset to extract meaningful outputs/information—Tool, software, and program are often used interchangeably but refer to the core components of bioinformatics pipelines.\n\n\nVM\nVirtual machine—Similar to a compute node as it behaves as a single computer and contains a desired number of CPUs and associated RAM (usually associated with cloud computing).\n\n\nWalltime\nThe time a program takes to run in our clock-on-the-wall time."
   },
   {
-    "objectID": "weeks/week02_appendix.html#linux-the-terminal",
-    "href": "weeks/week02_appendix.html#linux-the-terminal",
+    "objectID": "weeks/week02/appendix.html#linux-the-terminal",
+    "href": "weeks/week02/appendix.html#linux-the-terminal",
     "title": "🔖 Week 02 - Appendix",
     "section": "🐧 Linux & the Terminal",
-    "text": "🐧 Linux & the Terminal\n\nThe Linux Filesystem Explained\nLearn enough command line to be dangerous"
+    "text": "🐧 Linux & the Terminal\n\nThe Linux Directory Structure Explained\nThe Linux Filesystem Explained\nLearn enough command line to be dangerous"
   },
   {
-    "objectID": "weeks/week02_appendix.html#text-editors",
-    "href": "weeks/week02_appendix.html#text-editors",
+    "objectID": "weeks/week02/appendix.html#text-editors",
+    "href": "weeks/week02/appendix.html#text-editors",
     "title": "🔖 Week 02 - Appendix",
     "section": "📃 Text editors",
     "text": "📃 Text editors\n\nvim and Emacs jokes :)\n\n\nvim\n\nGetting started with Vim\nThe vimtutor\nA day with vimtutor\n\n\n\nEmacs\n\nA beginner’s guide to text editing with Emacs\nEmacs complete documentation"
+  },
+  {
+    "objectID": "weeks/week02/lab.html",
+    "href": "weeks/week02/lab.html",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "",
+    "text": "This week, we will learn to access and navigate your computer in a shell called bash, the most common way to access computers in the cloud (the topic of next week’s lecture and lab).\nBy default, bash is available on Unix-based operating systems (Linux and macOS) but not on Windows. Those using Windows will have to install some additional software first."
+  },
+  {
+    "objectID": "weeks/week02/lab.html#step-1-setting-up",
+    "href": "weeks/week02/lab.html#step-1-setting-up",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Step 1: Setting up",
+    "text": "Step 1: Setting up\n\n\n\n\n Windows users\n\n\n\nSadly, Windows command line interfaces differ from those used in Unix-based operating systems (Linux and macOS). Therefore, the commands we will learn today do not apply to Windows.\nBut fear not! Recent versions of Windows have a feature called Windows Subsystem for Linux, or WSL 1, which you can use to install Linux distributions. You just have to enable it first.\n🎯 ACTION POINTS Follow Steps 1-4 of the tutorial “Install Ubuntu on Wsl2 on Windows 11 with GUI Support.”\n\n\n\n macOS users\n\n\n\n🎯 ACTION POINTS\n\nOpen the terminal\nNow, to ensure you are using the bash shell, type the following and hit ENTER:\necho $SHELL\nIf you see the following message printed on the terminal screen, you are all good to move to the next step.\n/bin/bash\nIf instead, you saw the message below:\n/bin/zsh\nThis means your computer came pre-packed with a different terminal called Z Shell. Read and follow the instructions in this tutorial to change your shell to bash 2.\n\n\n\n\n Linux users\n\n\n\nYou probably already know how to get to the terminal — typically the shortcut Ctrl+T will get you there.\nJust ensure you are running the bash shell. If not, follow the same instructions given to macOS users above."
+  },
+  {
+    "objectID": "weeks/week02/lab.html#step-2-locating-yourself",
+    "href": "weeks/week02/lab.html#step-2-locating-yourself",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Step 2: Locating yourself",
+    "text": "Step 2: Locating yourself\nWe will follow the instructions below step by step together while answering whatever questions you might encounter along the way.\n\nOpen the bash shell using the instructions from Step 1 above\nType pwd and hit ENTER:\n$ pwd\nYou should get a string of text indicating the full path of where you are inside the terminal.\nAre you currently in your $HOME directory? To find out where your home directory is, use the following command:\n$ echo $HOME\nAre there any files/sub-directories inside the directory you are currently in? Use ls to investigate:\n$ ls\nor\n$ ls .\nAre there any hidden files?\n$  ls -a\nNow, let’s explore what is above your current directory:\n$ ls ..\nDo you get what the different dots . and .. mean 3?\nNow, more than just look at the parent directory, let’s move there:\n$ cd ..\nthen use the same ls commands you explored above. Did you notice anything different now?\nLet’s force ls to print the same information in a different format. Try the following command:\n$ ls . -lth\nWhat does the -l, -t and -h arguments mean? You can find out by looking at the ls manual:\n$ man ls\nUse the arrow keys in your keyboard to scroll up and down the manual. Type the character q when you are done browsing.\nNow, try to go back to the directory you were at the start of this tutorial. Hint: if you get stuck, try pwd again and compare the output you get now to the one you got the first time you used this command."
+  },
+  {
+    "objectID": "weeks/week02/lab.html#step-3-wandering-away-from-home",
+    "href": "weeks/week02/lab.html#step-3-wandering-away-from-home",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Step 3: Wandering away from $HOME",
+    "text": "Step 3: Wandering away from $HOME\nNow, given what we practiced, try to follow the steps below (help from colleagues is fine) and take note of your answers to the questions.\nWe will go over the solutions once everyone has finished this step.\n🎯 ACTION POINTS\n\nGo to the root of the filesystem:\n$ cd /\nWhat do you see with ls? What does it mean?\nWalk around freely up and down the directories and sub-directories you encounter along the way. Check the links on 🔖 Week 02 Appendix - Linux and the Terminal page to understand where you are navigating.\nWhich directory(ies) under / were you not allowed to enter? Why?\nWhat is the difference between the /root directory and the root filesystem /?\nGo back $HOME"
+  },
+  {
+    "objectID": "weeks/week02/lab.html#step-4-installing-software",
+    "href": "weeks/week02/lab.html#step-4-installing-software",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Step 4: Installing software",
+    "text": "Step 4: Installing software\n\n💭 How do you install apps in your computer or smart phone?\n\nIt is very likely that you just head to a software store (Play Store, Apple Store or Microsoft Store) and download apps from there. Linux has something similar, you can access and download software using the apt command. Let’s use it to download the text editor vim.\n🎯 ACTION POINTS\n\nWhenever you want to download software with apt, you have to ensure you have the most up-to-date information from the central “store”. You can do this via the following command:\n$ sudo apt update\nThis command requires you to have admin rights (as root), which is why we run it with sudo 4. You might be asked to type your password.\nInstall vim:\n$ sudo apt install vim\nNow you can open vim:\n$ vim\nTo quit, press Esc, then type :q and hit ENTER. Still stuck and cannot quit vim? You are not alone."
+  },
+  {
+    "objectID": "weeks/week02/lab.html#step-5-creating-and-editing-files-and-directories",
+    "href": "weeks/week02/lab.html#step-5-creating-and-editing-files-and-directories",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Step 5: Creating and editing files and directories",
+    "text": "Step 5: Creating and editing files and directories\n🎯 ACTION POINTS\n\nGo to your $HOME directory or a folder of your choice. Then, create and enter a directory, let’s call it DS105:\n$ cd $HOME\n$ mkdir DS105\n$ cd DS105\nCreate a text file and call it README.txt:\n$ touch README.txt\nOpen this file with vim:\n$ vim README.txt\nInside vim, write something to the file (your name, a verse, a sentence, whatever comes to mind)\nNow save your changes to the file. To save a file when inside vim, press Esc then type :w and hit ENTER.\nQuit vim: press Esc, then type :q and hit ENTER 5.\nPrint the content of your file with the cat command:\n$ cat README.txt"
+  },
+  {
+    "objectID": "weeks/week02/lab.html#formative-assignment",
+    "href": "weeks/week02/lab.html#formative-assignment",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Formative assignment",
+    "text": "Formative assignment\nThis problem set is not graded but you will get written feedback if you submit.\nFollow the steps below and, when asked, copy your responses to the Moodle page of this assignment.\n\nP1: Identify yourself\n\nOn the terminal, type the two commands below:\n$ whoami\n$ uname -a\nTake a screenshot (how?) of your terminal and submit to Moodle, under the field identified as P1.\n\n\n\nP2: Edit a file\n\nGo to the DS105 folder you created earlier:\n$ cd ~/DS105\nRename the README.txt to README.md (a markdown file):\n$ mv README.txt README.md\nEdit the README.md file following the template below, replacing all occurrences of <> with your responses:\n# DS105\n\nName: <>\nDate: <>\nCandidate Number: <>\nDegree Program: <>\n\n## Notes\n\n- I want to learn data science because <>\nSave and quit vim.\nPrint some metadata about your file to prove you were the one editing it:\n$ stat README.md\nPrint the contents of your file to the terminal:\n$ cat README.md\nTake a screenshot (how?) of your terminal and submit to Moodle, under the field identified as P2. Make sure that both the output of stat and cat commands are visible."
+  },
+  {
+    "objectID": "weeks/week02/lab.html#practice-at-home-vimtutor",
+    "href": "weeks/week02/lab.html#practice-at-home-vimtutor",
+    "title": "💻 Week 02 - Lab Roadmap (90 min)",
+    "section": "Practice at home: vimtutor",
+    "text": "Practice at home: vimtutor\n🎯 ACTION POINTS\n\nOpen the terminal and type:\n$ vimtutor\nFollow the instructions on the screen and complete the tutorial (a total of 7 short lessons).\n\nCheck out the 🔖 Week 02 Appendix - 📃 Text editors section for more info on vim."
+  },
+  {
+    "objectID": "weeks/week02/lecture.html",
+    "href": "weeks/week02/lecture.html",
+    "title": "👨‍🏫 Week 02 - Slides",
+    "section": "",
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week02/lecture.html#coffee-break-10-min",
+    "href": "weeks/week02/lecture.html#coffee-break-10-min",
+    "title": "👨‍🏫 Week 02 - Slides",
+    "section": "☕ Coffee Break (10 min)",
+    "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week02/lecture.html#part-ii---demo-navigating-the-terminal-45-50-min",
+    "href": "weeks/week02/lecture.html#part-ii---demo-navigating-the-terminal-45-50-min",
+    "title": "👨‍🏫 Week 02 - Slides",
+    "section": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)",
+    "text": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)"
+  },
+  {
+    "objectID": "weeks/week02/prep.html",
+    "href": "weeks/week02/prep.html",
+    "title": "📒 Week 02 - Prepare",
+    "section": "",
+    "text": "Bring your laptops. Tablets are not suitable for this class.\nStudents who use Windows will have to install additional software on their laptops. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of the Canonical tutorial 1 before coming to class.\nIn the lab we will practice the concepts introduced in this week’s lecture. If a concept introduced in the lecture was not clear to you, revisit the slides and bring your questions to the lab.\nBrowse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\nTry to replicate the lecture demo before coming to the lab.\n\n\n\n\n\nFootnotes\n\n\nTutorial: “Install Ubuntu on Wsl2 on Windows 11 with GUI Support”↩︎"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
