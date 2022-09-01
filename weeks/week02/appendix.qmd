@@ -1,6 +1,8 @@
 ---
 title: "🔖 Week 02 - Appendix"
 subtitle: "Operating Systems, Files & The Terminal"
+date: 1 September 2022
+date-meta: 1 September 2022
 ---
 
 <details><summary>📖 Some simple definitions of common computer terms</summary>
@@ -39,6 +41,7 @@ Source: [@brandies_ten_2021]
 
 ## 🐧 Linux & the Terminal
 
+- [The Linux Directory Structure Explained](https://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/)
 - [The Linux Filesystem Explained](https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/)
 - [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
 

@@ -9,6 +9,8 @@ project:
     - "export_syllabus.qmd"
     - "communication.qmd"
     - "weeks/*.qmd"
+    - "weeks/week01/*.qmd"
+    - "weeks/week02/*.qmd"
     - "slides/*.qmd"
 
 bibliography: references/references.bib
@@ -20,12 +22,9 @@ website:
   page-navigation: true
   reader-mode: true
   favicon: "/figures/LSE Data Science Institute.png"
-  search:
-    location: navbar
-    type: overlay
   sidebar:
-    
     style: "docked"
+    collapse-level: 1
     contents:
       - href: index.qmd
         text: "🏠 Home"
@@ -41,12 +40,17 @@ website:
            text: Week 01
          - href: weeks/week02.qmd
            text: Week 02
-        #  - href: weeks/week03.qmd
-        #    text: Week 03
-        #  - href: weeks/week04.qmd
-        #    text: Week 04
-  navbar:
-    background: primary
+           contents:
+             - href: weeks/week02/lecture.qmd
+               text: 👨‍🏫 Lecture Slides
+             - href: weeks/week02/prep.qmd
+               text: 📒 Prepare for the lab
+             - href: weeks/week02/lab.qmd
+               text: 💻 Lab roadmap
+             - href: weeks/week02/appendix.html
+               text: 🔖 Appendix
+  # navbar:
+  #   background: primary
   page-footer:
     background: light
     left: "Copyright 2022, LSE Data Science Institute" 

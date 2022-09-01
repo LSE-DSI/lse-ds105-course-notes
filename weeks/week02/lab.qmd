@@ -1,0 +1,151 @@
+---
+title: "💻 Week 02 - Lab Roadmap"
+date: 1 September 2022
+date-meta: 1 September 2022
+---
+
+This week, we will learn to access and navigate your computer in a shell called bash, the most common way to access computers in the cloud (the topic of next week's lecture and lab). By default, bash is available on Unix-based operating systems (Linux and macOS). Those using ![](/figures/logos/windows_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Windows logo"} Windows will have to install some additional software first. 
+
+<details><summary>Step 1: Setting up</summary>
+
+## Step 1: Setting up
+<p></p>
+<details class="special"> <summary> ![](/figures/logos/windows_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Windows logo"} Windows users </summary>
+<p></p>
+
+Sadly, Windows command line interfaces differ from those used in Unix-based operating systems (Linux and macOS). Therefore, the commands we will learn today do not apply to Windows. 
+
+But fear not! Recent versions of Windows have a feature called Windows Subsystem for Linux, or WSL [^microsoft_what_2022], which you can use to install Linux distributions. You just have to enable it first.
+
+🎯 **ACTION POINTS** Follow Steps 1-4 of the tutorial ["Install Ubuntu on Wsl2 on Windows 11 with GUI Support."](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support)
+
+[^microsoft_what_2022]: Microsoft Tutorial: ["What Is Windows Subsystem for Linux"](https://docs.microsoft.com/en-us/windows/wsl/about)
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/apple_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Apple logo"} macOS users </summary>
+<p></p>
+
+🎯 **ACTION POINTS** 
+
+1. Open [the terminal](https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#:~:text=Open%20Terminal&text=Click%20the%20Launchpad%20icon%20in,%2C%20then%20double%2Dclick%20Terminal) 
+2. Now, to ensure you are using the bash shell, type the following and hit ENTER:
+
+    ```bash
+    echo $SHELL
+    ```
+If you see the following message printed on the terminal screen, you are all good to move to the next step.
+
+    ```console
+    /bin/bash
+```
+
+3. If instead, you saw the message below:
+
+    ```console
+    /bin/zsh
+    ```
+This means your computer came pre-packed with a different terminal called Z Shell. Read and follow the instructions in [this tutorial](https://news.learnenough.com/macos-bash-zshell#aside-changing_shells) to change your shell to bash [^zshell].
+
+[^zshell]: Curious about the different shells on Mac 🤓 ? Checkout the full article on ["Learn Enough Tutorials: Using Z Shell on Macs](https://news.learnenough.com/macos-bash-zshell) 
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/linux_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Linux logo"} Linux users </summary>
+<p></p>
+
+You probably already know how to get to the terminal — typically the shortcut Ctrl+T will get you there. 
+
+Just ensure you are running the bash shell. If not, follow the same instructions given to macOS users above.
+</details>
+
+</details>
+
+
+<details><summary>Step 2: Locate yourself</summary>
+
+## Step 2: Locate yourself
+
+
+We will follow the instructions below step by step together while answering whatever questions you might encounter along the way.
+
+1. Open the bash shell using the instructions from Step 1 above
+2. Type `pwd` and hit ENTER:
+
+    ```bash
+    $ pwd
+    ```
+
+    You should get a string of text indicating the full path of where you are inside the terminal.
+
+3. Are you currently in your `$HOME` directory? To find out where your home directory is, use the following command:
+
+    ```bash
+    $ echo $HOME
+    ```
+
+4. Are there any files/sub-directories inside the directory you are currently in? Use `ls` to investigate:
+
+    ```bash
+    $ ls
+    ```
+
+    or
+
+    ```bash
+    $ ls .
+    ```
+
+5. Now, give `ls` a few extra commands. Use the command below to explore what is above your current directory:
+
+    ```bash
+    $ ls ..
+    ```
+
+6. Do you get what the different dots `.` and `..` mean [^1]? Ask your class teacher in case it is not clear to you.
+
+7. Now, move to the parent directory:
+
+    ```bash
+    $ cd ..
+    ```
+
+    then, use the same `ls` commands you explored above. What is different now? 
+
+9. Let's force `ls` to print the same information in a different format. Try the following command:
+
+    ```bash
+    $ ls . -lth
+    ```
+
+    What does the `-l`, `-t` and `-h` arguments mean? You can find out by looking at the `ls` manual:
+
+    ```bash
+    $ man ls
+    ```
+
+    Use the arrow keys in your keyboard to scroll up and down the manual. Type the character `q` when you are done browsing.
+
+8. Now, try to go back to the directory you were at the start of this tutorial. Hint: if you get stuck, try `pwd` again and compare the output you get now to the one you got the first time you used this command.
+</details>
+
+<details><summary> Step 3: Wandering away from `$HOME`</summary>
+## Step 3: Wandering away from `$HOME`
+
+Now, try to follow the steps below by yourself (help from colleagues is fine). Take note of your answer to the questions. We will go over the solutions once everyone has finished this step. 
+
+🎯 **ACTION POINTS** 
+
+1. Go to the root of the filesystem:
+
+    ```bash
+    $ cd /
+    ```
+2. What do you see with `ls`? What does it mean?
+3. Walk around freely up and down the directories and sub-directories you encounter along the way. Check the links on [🔖 Week 02 Appendix - Linux and the Terminal](week02_appendix.html#linux-the-terminal) page to understand where you are navigating.
+4. Which directory(ies) under `/` were you not allowed to enter? Why?
+5. What is the difference between the `/root` directory and the root filesystem `/`?
+4. Go back `$HOME`
+</details>
+
+[^1]: See the answer to this question on Stackoverflow: ["What is double dot(..) and single dot(.) in Linux?"](https://stackoverflow.com/a/23242061/843365)
