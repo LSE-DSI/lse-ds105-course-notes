@@ -38,6 +38,12 @@ website:
         contents:
          - href: weeks/week01.qmd
            text: Week 01
+           contents:
+             - href: weeks/week01/lecture.qmd
+               text: 👨‍🏫 Lecture Slides
+             - href: weeks/week01/prep.qmd
+               text: 📒 Prepare for the lab
+             - href: weeks/week01/lab.qmd   
          - href: weeks/week02.qmd
            text: Week 02
            contents:

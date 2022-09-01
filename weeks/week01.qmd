@@ -9,60 +9,8 @@ In this first week, we will cover what you can expect to learn from this course 
 We will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?
 
 
-<details> <summary>👨‍🏫 Lecture</summary> 
-## 👨‍🏫 Lecture
+## Links
 
-### 👨‍🏫 Part I - Introduction (45-50 min)
+- 👨‍🏫 [Lecture slides](/weeks/week01/lecture.qmd)
 
-<mark class="todo"></mark>
-
-Either click on the slide area below or click [here](/slides/week01_slides_part1.qmd) to view it in fullscreen.
-Use your keypad to navigate the slides.
-
-
-<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
-<iframe src="/slides/week01_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
-</div>
-
-### ☕ Coffee Break  (10 min)
-Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
-
-
-### 🧰 Part II - The Data Science Toolbox (45-50 min)
-
-<mark class="todo"></mark>
-
-Either click on the slide area below or click [here](/slides/week01_slides_part2.qmd) to view it in fullscreen.
-Use your keypad to navigate the slides.
-
-<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
-<iframe src="/slides/week01_slides_part2.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
-</div>
-
-</details>
-
-<details> <summary>💻 Labs</summary>
-
-## 💻 Labs
-
-We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).
-
-See sections below for advice on how to do that.
-
-</details>
-
-<details> <summary>📒 Preparing for the next week</summary> 
-
-## 📒 Preparing for the next week
-
-- Join the Slack group of this course [(more info)](/communication.qmd)
-- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/syllabus.qmd), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
-</details>
-
-<details> <summary>🔖 Recommended Resources</summary> 
-## 🔖 Recommended Resources
-
-- [Digital Skills Lab](https://info.lse.ac.uk/current-students/digital-skills-lab) offer workshops on R and Python skills.
-- Checkout this summer's [LSE Careers Skill Accelerator programme](https://twitter.com/LSECareers/status/1534868470495596545). Some of the self-paced courses will remain available until the end of the year.
-
-</details>
+- 📒 [Preparing for next week's lab](/weeks/week01/prep.qmd)
