@@ -49,8 +49,8 @@ website:
                text: 💻 Lab roadmap
              - href: weeks/week02/appendix.html
                text: 🔖 Appendix
-  # navbar:
-  #   background: primary
+  navbar:
+    background: primary
   page-footer:
     background: light
     left: "Copyright 2022, LSE Data Science Institute" 

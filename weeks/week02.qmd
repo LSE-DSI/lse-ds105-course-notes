@@ -15,10 +15,10 @@ By the end of the week, you should be able to explore the CLI and perform basic 
 
 ## Links
 
-👨‍🏫 [Lecture Slides](/weeks/week02/lecture.qmd)
+👨‍🏫 [Lecture slides](/weeks/week02/lecture.qmd)
 
 📒 [Preparing for this week's lab](/weeks/week02/prep.qmd)
 
-💻 [Lab](/weeks/week02/lab.qmd)
+💻 [Lab roadmap](/weeks/week02/lab.qmd)
 
 🔖 [Appendix](/weeks/week02/appendix.qmd)
