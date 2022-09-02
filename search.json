@@ -392,6 +392,27 @@
     "text": "In reality…\n\n\nWe are all jugglers 🤹\n\n\nEveryone brings a different skill set.\nWe need multi-disciplinary teams.\nGood data scientists know a bit of everything.\n\nNot fluent in all things\nUnderstands their strenghts and weaknessess\nThey know when and where to interface with others\n\n\n\n\n\n\n\n\n\nFind a good way to transition between these slides.\n\n\nSee (Schutt and O’Neil 2013, chap. 1) for more on this."
   },
   {
+    "objectID": "slides/week01_slides_part2.html#the-data-science-workflow-1",
+    "href": "slides/week01_slides_part2.html#the-data-science-workflow-1",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "The Data Science Workflow",
+    "text": "The Data Science Workflow\n\n\n\n\n\n   \n\nstart\n\n Start   \n\ngather\n\nGather data     \n\nstart->gather\n\n    \n\nstore\n\nStore it          somewhere   \n\ngather->store\n\n           \n\nclean\n\nClean &         pre-process   \n\nstore->clean\n\n           \n\nbuild\n\nBuild a  dataset   \n\nclean->build\n\n           \n\neda\n\nExploratory     data analysis   \n\nbuild->eda\n\n    \n\nml\n\nMachine learning   \n\neda->ml\n\n           \n\ninsight\n\nObtain    insights   \n\nml->insight\n\n           \n\ncommunicate\n\nCommunicate results            \n\ninsight->communicate\n\n           \n\nend\n\n End   \n\ncommunicate->end\n\n   \n\n\n\n\n\n\n\n⚠️ Note that this is a simplified version of what happens in a data science project.  In practice, the process is not linear and there are many feedback loops."
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#the-data-science-workflow-2",
+    "href": "slides/week01_slides_part2.html#the-data-science-workflow-2",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "The Data Science Workflow",
+    "text": "The Data Science Workflow\n\n\n\n\n\n   \n\nstart\n\n Start   \n\ngather\n\n Gather data     \n\nstart->gather\n\n    \n\nend\n\n End   \n\nstore\n\n Store it          somewhere   \n\ngather->store\n\n           \n\nclean\n\n Clean &         pre-process   \n\nstore->clean\n\n           \n\nbuild\n\n Build a  dataset   \n\nclean->build\n\n           \n\neda\n\n Exploratory     data analysis   \n\nbuild->eda\n\n    \n\nml\n\n Machine learning   \n\neda->ml\n\n           \n\ninsight\n\n Obtain    insights   \n\nml->insight\n\n           \n\ncommunicate\n\n Communicate results            \n\ninsight->communicate\n\n           \n\ncommunicate->end\n\n   \n\n\n\n\n\nIt is often said that 80% of the time and effort spent on a data science project goes to the tasks highlighted above."
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#the-data-science-workflow-3",
+    "href": "slides/week01_slides_part2.html#the-data-science-workflow-3",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "The Data Science Workflow",
+    "text": "The Data Science Workflow\n\n\n\n\n\n   \n\nstart\n\n Start   \n\ngather\n\n Gather data     \n\nstart->gather\n\n    \n\nend\n\n End   \n\nstore\n\n Store it          somewhere   \n\ngather->store\n\n           \n\nclean\n\n Clean &         pre-process   \n\nstore->clean\n\n           \n\nbuild\n\n Build a  dataset   \n\nclean->build\n\n           \n\neda\n\n Exploratory     data analysis   \n\nbuild->eda\n\n    \n\neda->end\n\n    \n\nml\n\n Machine learning   \n\neda->ml\n\n           \n\ninsight\n\n Obtain    insights   \n\nml->insight\n\n           \n\ncommunicate\n\n Communicate results            \n\ninsight->communicate\n\n          \n\n\n\n\n\nAnd this is what this course is about! You will learn some of the most common tools used during this process."
+  },
+  {
     "objectID": "slides/week01_slides_part2.html#practical-examples",
     "href": "slides/week01_slides_part2.html#practical-examples",
     "title": "🗓️ Week 01 - Part II  Data Science toolbox",

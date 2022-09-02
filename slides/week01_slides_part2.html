@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<link href="..//figures/LSE Data Science Institute.png" rel="icon" type="image/png">
+<link href="..//figures/logos/LSE Data Science Institute.png" rel="icon" type="image/png">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.168">
+  <meta name="generator" content="quarto-1.1.179">
 
   <meta name="author" content="Dr.&nbsp;Jon Cardoso Silva">
   <title>LSE DS105M 2022/23 - 🗓️ Week 01 - Part II  Data Science toolbox</title>
@@ -341,9 +341,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -360,8 +357,7 @@
 <h2 id="toc-title">What we will cover today</h2>
 <ul>
 <li><a href="#/what-do-we-mean-by-data-science" id="/toc-what-do-we-mean-by-data-science">What do we mean by data science?</a></li>
-<li><a href="#/the-data-science-workflow" id="/toc-the-data-science-workflow">The Data Science workflow</a></li>
-<li><a href="#/the-data-science-workflow-1" id="/toc-the-data-science-workflow-1">The Data Science workflow</a></li>
+<li><a href="#/the-data-science-workflow" id="/toc-the-data-science-workflow">The <br> Data <br> Science <br> Workflow</a></li>
 <li><a href="#/the-toolbox" id="/toc-the-toolbox">The toolbox 🧰</a></li>
 <li><a href="#/data-science-and-social-science" id="/toc-data-science-and-social-science">Data Science and Social Science</a></li>
 </ul>
@@ -464,75 +460,286 @@
 <aside><div>
 <p>See <span class="citation" data-cites="schutt_doing_2013">(<a href="#/references" role="doc-biblioref" onclick="">Schutt and O’Neil 2013, chap. 1</a>)</span> for more on this.</p>
 </div></aside></section></section>
-<section id="the-data-science-workflow" class="title-slide slide level1" data-auto-animate="true">
-<h1 data-id="quarto-animate-title">The Data Science workflow</h1>
-<div class="cell" data-reveal="true" data-id="1" data-fig-width="100%">
+<section>
+<section id="the-data-science-workflow" class="title-slide slide level1">
+<h1>The <br> Data <br> Science <br> Workflow</h1>
+
+</section>
+<section id="the-data-science-workflow-1" class="slide level2">
+<h2>The Data Science Workflow</h2>
+<div class="cell" data-id="1" data-fig-width="100%">
 <div class="cell-output-display">
 <div>
 <p>
-
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-  nodeData("fa:fa-file-import Gather\ndata")
-  nodeStorage("fa:fa-database Store it\nsomewhere")
-  nodeClean("fa:fa-broom Clean &amp;\nPre-process")
-  nodeDataset("fa:fa-table Build a \ndataset")
-  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
-  nodeML("fa:fa-robot Machine\nLearning")
-  nodeComm("fa:fa-podium-star Gather\ninsight &amp;\ncommunicate")
-
-  nodeData --&gt;  nodeStorage
-  nodeStorage --&gt; nodeClean
-  nodeClean --&gt; nodeDataset
-  nodeDataset --&gt; nodeEDA
-  nodeEDA --&gt; nodeML
-  nodeML --&gt; nodeComm
-</pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
+<svg width="NaN" height="480" viewbox="0.00 0.00 1104.31 425.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 389)"> <polygon fill="white" stroke="transparent" points="-36,36 -36,-389 1068.31,-389 1068.31,36 -36,36"></polygon> <!-- start --> <g id="node1" class="node">
+<title>
+start
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="73.98,-353 8.43,-353 8.43,-301 73.98,-301 73.98,-353"></polygon> <text text-anchor="middle" x="41.21" y="-321" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Start</text> </g> <!-- gather --> <g id="node2" class="node">
+<title>
+gather
+</title>
+<text text-anchor="start" x="14" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Gather</text> <text text-anchor="middle" x="41.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">data &nbsp;</text> </g> <!-- start&#45;&gt;gather --> <g id="edge8" class="edge">
+<title>
+start-&gt;gather
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M41.21,-300.76C41.21,-292.69 41.21,-283.47 41.21,-274.35"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="44.71,-274.16 41.21,-264.16 37.71,-274.16 44.71,-274.16"></polygon> </g> <!-- store --> <g id="node3" class="node">
+<title>
+store
+</title>
+<text text-anchor="start" x="134.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Store it &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="186.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">somewhere</text> </g> <!-- gather&#45;&gt;store --> <g id="edge1" class="edge">
+<title>
+gather-&gt;store
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M82.76,-226C91.36,-226 100.68,-226 110.08,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="110.29,-229.5 120.29,-226 110.29,-222.5 110.29,-229.5"></polygon> <text text-anchor="middle" x="101.48" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- clean --> <g id="node4" class="node">
+<title>
+clean
+</title>
+<text text-anchor="start" x="304.6" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Clean &amp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="358.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">pre-process</text> </g> <!-- store&#45;&gt;clean --> <g id="edge2" class="edge">
+<title>
+store-&gt;clean
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M252.21,-226C261.4,-226 270.9,-226 280.28,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="280.38,-229.5 290.38,-226 280.38,-222.5 280.38,-229.5"></polygon> <text text-anchor="middle" x="271.24" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- build --> <g id="node5" class="node">
+<title>
+build
+</title>
+<text text-anchor="start" x="478.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Build a </text> <text text-anchor="middle" x="510.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">dataset</text> </g> <!-- clean&#45;&gt;build --> <g id="edge3" class="edge">
+<title>
+clean-&gt;build
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M426.2,-226C435.62,-226 445.21,-226 454.37,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="454.51,-229.5 464.51,-226 454.51,-222.5 454.51,-229.5"></polygon> <text text-anchor="middle" x="445.18" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- eda --> <g id="node6" class="node">
+<title>
+eda
+</title>
+<text text-anchor="start" x="452.44" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Exploratory &nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="510.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">data analysis</text> </g> <!-- build&#45;&gt;eda --> <g id="edge4" class="edge">
+<title>
+build-&gt;eda
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M510.21,-187.73C510.21,-179.31 510.21,-170.26 510.21,-161.48"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="513.71,-161.36 510.21,-151.36 506.71,-161.36 513.71,-161.36"></polygon> </g> <!-- ml --> <g id="node7" class="node">
+<title>
+ml
+</title>
+<text text-anchor="start" x="634.22" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Machine</text> <text text-anchor="middle" x="669.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">learning</text> </g> <!-- eda&#45;&gt;ml --> <g id="edge5" class="edge">
+<title>
+eda-&gt;ml
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M581.8,-113C591.14,-113 600.63,-113 609.75,-113"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="609.85,-116.5 619.85,-113 609.85,-109.5 609.85,-116.5"></polygon> <text text-anchor="middle" x="601.1" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight --> <g id="node8" class="node">
+<title>
+insight
+</title>
+<text text-anchor="start" x="770.49" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Obtain &nbsp;&nbsp;</text> <text text-anchor="middle" x="805.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">insights</text> </g> <!-- ml&#45;&gt;insight --> <g id="edge6" class="edge">
+<title>
+ml-&gt;insight
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M718.31,-113C727.26,-113 736.69,-113 745.91,-113"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="746.18,-116.5 756.18,-113 746.18,-109.5 746.18,-116.5"></polygon> <text text-anchor="middle" x="737.34" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- communicate --> <g id="node9" class="node">
+<title>
+communicate
+</title>
+<text text-anchor="start" x="906.11" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Communicate</text> <text text-anchor="middle" x="962.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">results &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight&#45;&gt;communicate --> <g id="edge7" class="edge">
+<title>
+insight-&gt;communicate
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M854.02,-113C862.88,-113 872.33,-113 881.82,-113"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="882.1,-116.5 892.1,-113 882.1,-109.5 882.1,-116.5"></polygon> <text text-anchor="middle" x="873.02" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- end --> <g id="node10" class="node">
+<title>
+end
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="989.21,-38 935.21,-38 935.21,0 989.21,0 989.21,-38"></polygon> <text text-anchor="middle" x="962.21" y="-13" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">End</text> </g> <!-- communicate&#45;&gt;end --> <g id="edge9" class="edge">
+<title>
+communicate-&gt;end
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M962.21,-74.85C962.21,-65.94 962.21,-56.57 962.21,-48.15"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="965.71,-48.09 962.21,-38.09 958.71,-48.09 965.71,-48.09"></polygon> </g> </g>
+</svg>
+</p>
 </div>
-<p></p>
 </div>
 </div>
-</div>
-</section>
 
-<section id="the-data-science-workflow-1" class="title-slide slide level1" data-auto-animate="true" data-auto-animate-easing="ease-out">
-<h1 data-id="quarto-animate-title">The Data Science workflow</h1>
-<div class="cell" data-reveal="true" data-id="1" data-fig-width="100%">
+<aside><div>
+<p>⚠️ Note that this is a simplified version of what happens in a data science project. <br> In practice, the process is not linear and there are many feedback loops.</p>
+</div></aside></section>
+<section id="the-data-science-workflow-2" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title">The Data Science Workflow</h2>
+<div class="cell" data-id="1" data-fig-width="100%">
 <div class="cell-output-display">
 <div>
 <p>
-
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
-  nodeData("fa:fa-file-import Gather\ndata")
-  nodeStorage("fa:fa-database Store it\nsomewhere")
-  nodeClean("fa:fa-broom Clean &amp;\nPre-process")
-  nodeDataset("fa:fa-table Build a \ndataset")
-  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
-  nodeML("fa:fa-robot Machine\nLearning")
-  nodeComm("fa:fa-podium-star Gather\ninsight &amp;\ncommunicate")
-
-  subgraph 80% of your time
-    nodeData --&gt;  nodeStorage
-    nodeStorage --&gt; nodeClean
-    nodeClean --&gt; nodeDataset
-  end
-  subgraph 20% of your time
-    direction TB
-    nodeDataset --&gt; nodeEDA
-    nodeEDA --&gt; nodeML
-    nodeML --&gt; nodeComm
-  end
-</pre>
-<div id="mermaid-tooltip-2" class="mermaidTooltip">
-
+<svg width="NaN" height="480" viewbox="0.00 0.00 1104.31 425.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 389)"> <polygon fill="white" stroke="transparent" points="-36,36 -36,-389 1068.31,-389 1068.31,36 -36,36"></polygon> <!-- start --> <g id="node1" class="node">
+<title>
+start
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="73.98,-353 8.43,-353 8.43,-301 73.98,-301 73.98,-353"></polygon> <text text-anchor="middle" x="41.21" y="-321" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Start</text> </g> <!-- gather --> <g id="node3" class="node">
+<title>
+gather
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="82.62,-264 -0.21,-264 -0.21,-188 82.62,-188 82.62,-264"></polygon> <text text-anchor="start" x="14" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Gather</text> <text text-anchor="middle" x="41.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">data &nbsp;</text> </g> <!-- start&#45;&gt;gather --> <g id="edge1" class="edge">
+<title>
+start-&gt;gather
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M41.21,-300.76C41.21,-292.69 41.21,-283.47 41.21,-274.35"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="44.71,-274.16 41.21,-264.16 37.71,-274.16 44.71,-274.16"></polygon> </g> <!-- end --> <g id="node2" class="node">
+<title>
+end
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="989.21,-38 935.21,-38 935.21,0 989.21,0 989.21,-38"></polygon> <text text-anchor="middle" x="962.21" y="-13" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">End</text> </g> <!-- store --> <g id="node4" class="node">
+<title>
+store
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="252.04,-264 120.38,-264 120.38,-188 252.04,-188 252.04,-264"></polygon> <text text-anchor="start" x="134.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Store it &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="186.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">somewhere</text> </g> <!-- gather&#45;&gt;store --> <g id="edge2" class="edge">
+<title>
+gather-&gt;store
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M82.76,-226C91.36,-226 100.68,-226 110.08,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="110.29,-229.5 120.29,-226 110.29,-222.5 110.29,-229.5"></polygon> <text text-anchor="middle" x="101.48" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- clean --> <g id="node5" class="node">
+<title>
+clean
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="425.91,-264 290.5,-264 290.5,-188 425.91,-188 425.91,-264"></polygon> <text text-anchor="start" x="304.6" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Clean &amp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="358.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">pre-process</text> </g> <!-- store&#45;&gt;clean --> <g id="edge3" class="edge">
+<title>
+store-&gt;clean
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M252.21,-226C261.4,-226 270.9,-226 280.28,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="280.38,-229.5 290.38,-226 280.38,-222.5 280.38,-229.5"></polygon> <text text-anchor="middle" x="271.24" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- build --> <g id="node6" class="node">
+<title>
+build
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="556.04,-264 464.38,-264 464.38,-188 556.04,-188 556.04,-264"></polygon> <text text-anchor="start" x="478.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Build a </text> <text text-anchor="middle" x="510.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">dataset</text> </g> <!-- clean&#45;&gt;build --> <g id="edge4" class="edge">
+<title>
+clean-&gt;build
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M426.2,-226C435.62,-226 445.21,-226 454.37,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="454.51,-229.5 464.51,-226 454.51,-222.5 454.51,-229.5"></polygon> <text text-anchor="middle" x="445.18" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- eda --> <g id="node7" class="node">
+<title>
+eda
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="581.74,-151 438.68,-151 438.68,-75 581.74,-75 581.74,-151"></polygon> <text text-anchor="start" x="452.44" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Exploratory &nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="510.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">data analysis</text> </g> <!-- build&#45;&gt;eda --> <g id="edge5" class="edge">
+<title>
+build-&gt;eda
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M510.21,-187.73C510.21,-179.31 510.21,-170.26 510.21,-161.48"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="513.71,-161.36 510.21,-151.36 506.71,-161.36 513.71,-161.36"></polygon> </g> <!-- ml --> <g id="node8" class="node">
+<title>
+ml
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="718.18,-151 620.24,-151 620.24,-75 718.18,-75 718.18,-151"></polygon> <text text-anchor="start" x="634.22" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">Machine</text> <text text-anchor="middle" x="669.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">learning</text> </g> <!-- eda&#45;&gt;ml --> <g id="edge6" class="edge">
+<title>
+eda-&gt;ml
+</title>
+<path fill="none" stroke="#f2eaf6" stroke-width="4" d="M581.8,-113C591.14,-113 600.63,-113 609.75,-113"></path> <polygon fill="#f2eaf6" stroke="#f2eaf6" stroke-width="4" points="609.85,-116.5 619.85,-113 609.85,-109.5 609.85,-116.5"></polygon> <text text-anchor="middle" x="601.1" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight --> <g id="node9" class="node">
+<title>
+insight
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="854.14,-151 756.27,-151 756.27,-75 854.14,-75 854.14,-151"></polygon> <text text-anchor="start" x="770.49" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">Obtain &nbsp;&nbsp;</text> <text text-anchor="middle" x="805.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">insights</text> </g> <!-- ml&#45;&gt;insight --> <g id="edge7" class="edge">
+<title>
+ml-&gt;insight
+</title>
+<path fill="none" stroke="#f2eaf6" stroke-width="4" d="M718.31,-113C727.26,-113 736.69,-113 745.91,-113"></path> <polygon fill="#f2eaf6" stroke="#f2eaf6" stroke-width="4" points="746.18,-116.5 756.18,-113 746.18,-109.5 746.18,-116.5"></polygon> <text text-anchor="middle" x="737.34" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- communicate --> <g id="node10" class="node">
+<title>
+communicate
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="1032.4,-151 892.01,-151 892.01,-75 1032.4,-75 1032.4,-151"></polygon> <text text-anchor="start" x="906.11" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">Communicate</text> <text text-anchor="middle" x="962.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#dac1e4">results &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight&#45;&gt;communicate --> <g id="edge8" class="edge">
+<title>
+insight-&gt;communicate
+</title>
+<path fill="none" stroke="#f2eaf6" stroke-width="4" d="M854.02,-113C862.88,-113 872.33,-113 881.82,-113"></path> <polygon fill="#f2eaf6" stroke="#f2eaf6" stroke-width="4" points="882.1,-116.5 892.1,-113 882.1,-109.5 882.1,-116.5"></polygon> <text text-anchor="middle" x="873.02" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- communicate&#45;&gt;end --> <g id="edge9" class="edge">
+<title>
+communicate-&gt;end
+</title>
+<path fill="none" stroke="#f2eaf6" stroke-width="4" d="M962.21,-74.85C962.21,-65.94 962.21,-56.57 962.21,-48.15"></path> <polygon fill="#f2eaf6" stroke="#f2eaf6" stroke-width="4" points="965.71,-48.09 962.21,-38.09 958.71,-48.09 965.71,-48.09"></polygon> </g> </g>
+</svg>
+</p>
 </div>
-<p></p>
 </div>
 </div>
-</div>
+<p>It is often said that <strong>80%</strong> of the time and effort spent on a data science project goes to the tasks highlighted above.</p>
 </section>
-
+<section id="the-data-science-workflow-3" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title">The Data Science Workflow</h2>
+<div class="cell" data-id="1" data-fig-width="100%">
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="NaN" height="480" viewbox="0.00 0.00 1104.31 425.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 389)"> <polygon fill="white" stroke="transparent" points="-36,36 -36,-389 1068.31,-389 1068.31,36 -36,36"></polygon> <!-- start --> <g id="node1" class="node">
+<title>
+start
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="73.98,-353 8.43,-353 8.43,-301 73.98,-301 73.98,-353"></polygon> <text text-anchor="middle" x="41.21" y="-321" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">Start</text> </g> <!-- gather --> <g id="node3" class="node">
+<title>
+gather
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="82.62,-264 -0.21,-264 -0.21,-188 82.62,-188 82.62,-264"></polygon> <text text-anchor="start" x="14" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Gather</text> <text text-anchor="middle" x="41.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">data &nbsp;</text> </g> <!-- start&#45;&gt;gather --> <g id="edge1" class="edge">
+<title>
+start-&gt;gather
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M41.21,-300.76C41.21,-292.69 41.21,-283.47 41.21,-274.35"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="44.71,-274.16 41.21,-264.16 37.71,-274.16 44.71,-274.16"></polygon> </g> <!-- end --> <g id="node2" class="node">
+<title>
+end
+</title>
+<polygon fill="#f2eaf6" stroke="#f2eaf6" points="537.21,-38 483.21,-38 483.21,0 537.21,0 537.21,-38"></polygon> <text text-anchor="middle" x="510.21" y="-13" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#8431a6">End</text> </g> <!-- store --> <g id="node4" class="node">
+<title>
+store
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="252.04,-264 120.38,-264 120.38,-188 252.04,-188 252.04,-264"></polygon> <text text-anchor="start" x="134.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Store it &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="186.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">somewhere</text> </g> <!-- gather&#45;&gt;store --> <g id="edge2" class="edge">
+<title>
+gather-&gt;store
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M82.76,-226C91.36,-226 100.68,-226 110.08,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="110.29,-229.5 120.29,-226 110.29,-222.5 110.29,-229.5"></polygon> <text text-anchor="middle" x="101.48" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- clean --> <g id="node5" class="node">
+<title>
+clean
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="425.91,-264 290.5,-264 290.5,-188 425.91,-188 425.91,-264"></polygon> <text text-anchor="start" x="304.6" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Clean &amp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="358.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">pre-process</text> </g> <!-- store&#45;&gt;clean --> <g id="edge3" class="edge">
+<title>
+store-&gt;clean
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M252.21,-226C261.4,-226 270.9,-226 280.28,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="280.38,-229.5 290.38,-226 280.38,-222.5 280.38,-229.5"></polygon> <text text-anchor="middle" x="271.24" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- build --> <g id="node6" class="node">
+<title>
+build
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="556.04,-264 464.38,-264 464.38,-188 556.04,-188 556.04,-264"></polygon> <text text-anchor="start" x="478.54" y="-232" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Build a </text> <text text-anchor="middle" x="510.21" y="-208" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">dataset</text> </g> <!-- clean&#45;&gt;build --> <g id="edge4" class="edge">
+<title>
+clean-&gt;build
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M426.2,-226C435.62,-226 445.21,-226 454.37,-226"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="454.51,-229.5 464.51,-226 454.51,-222.5 454.51,-229.5"></polygon> <text text-anchor="middle" x="445.18" y="-233.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- eda --> <g id="node7" class="node">
+<title>
+eda
+</title>
+<polygon fill="#8431a6" stroke="#8431a6" points="581.74,-151 438.68,-151 438.68,-75 581.74,-75 581.74,-151"></polygon> <text text-anchor="start" x="452.44" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">Exploratory &nbsp;&nbsp;&nbsp;</text> <text text-anchor="middle" x="510.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#fcfcfc">data analysis</text> </g> <!-- build&#45;&gt;eda --> <g id="edge5" class="edge">
+<title>
+build-&gt;eda
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M510.21,-187.73C510.21,-179.31 510.21,-170.26 510.21,-161.48"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="513.71,-161.36 510.21,-151.36 506.71,-161.36 513.71,-161.36"></polygon> </g> <!-- eda&#45;&gt;end --> <g id="edge6" class="edge">
+<title>
+eda-&gt;end
+</title>
+<path fill="none" stroke="#8431a6" stroke-width="4" d="M510.21,-74.85C510.21,-65.94 510.21,-56.57 510.21,-48.15"></path> <polygon fill="#8431a6" stroke="#8431a6" stroke-width="4" points="513.71,-48.09 510.21,-38.09 506.71,-48.09 513.71,-48.09"></polygon> </g> <!-- ml --> <g id="node8" class="node">
+<title>
+ml
+</title>
+<polygon fill="white" stroke="white" points="718.18,-151 620.24,-151 620.24,-75 718.18,-75 718.18,-151"></polygon> <text text-anchor="start" x="634.22" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">Machine</text> <text text-anchor="middle" x="669.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">learning</text> </g> <!-- eda&#45;&gt;ml --> <g id="edge7" class="edge">
+<title>
+eda-&gt;ml
+</title>
+<path fill="none" stroke="white" stroke-width="4" d="M581.8,-113C591.14,-113 600.63,-113 609.75,-113"></path> <polygon fill="white" stroke="white" stroke-width="4" points="609.85,-116.5 619.85,-113 609.85,-109.5 609.85,-116.5"></polygon> <text text-anchor="middle" x="601.1" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight --> <g id="node9" class="node">
+<title>
+insight
+</title>
+<polygon fill="white" stroke="white" points="854.14,-151 756.27,-151 756.27,-75 854.14,-75 854.14,-151"></polygon> <text text-anchor="start" x="770.49" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">Obtain &nbsp;&nbsp;</text> <text text-anchor="middle" x="805.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">insights</text> </g> <!-- ml&#45;&gt;insight --> <g id="edge8" class="edge">
+<title>
+ml-&gt;insight
+</title>
+<path fill="none" stroke="white" stroke-width="4" d="M718.31,-113C727.26,-113 736.69,-113 745.91,-113"></path> <polygon fill="white" stroke="white" stroke-width="4" points="746.18,-116.5 756.18,-113 746.18,-109.5 746.18,-116.5"></polygon> <text text-anchor="middle" x="737.34" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- communicate --> <g id="node10" class="node">
+<title>
+communicate
+</title>
+<polygon fill="white" stroke="white" points="1032.4,-151 892.01,-151 892.01,-75 1032.4,-75 1032.4,-151"></polygon> <text text-anchor="start" x="906.11" y="-119" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">Communicate</text> <text text-anchor="middle" x="962.21" y="-95" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="white">results &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> <!-- insight&#45;&gt;communicate --> <g id="edge9" class="edge">
+<title>
+insight-&gt;communicate
+</title>
+<path fill="none" stroke="white" stroke-width="4" d="M854.02,-113C862.88,-113 872.33,-113 881.82,-113"></path> <polygon fill="white" stroke="white" stroke-width="4" points="882.1,-116.5 892.1,-113 882.1,-109.5 882.1,-116.5"></polygon> <text text-anchor="middle" x="873.02" y="-120.2" font-family="Helvetica,Arial,sans-serif" font-size="14.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+<p>And this is what this course is about! You will learn some of the most common tools used during this process.</p>
+</section></section>
 <section id="the-toolbox" class="title-slide slide level1">
 <h1>The toolbox 🧰</h1>
 
