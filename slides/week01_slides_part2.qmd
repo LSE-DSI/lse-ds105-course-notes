@@ -8,6 +8,7 @@ toc-depth: 1
 toc-title: "What we will cover today"
 center-title-slide: false
 from: markdown+emoji
+mermaid-format: svg
 format:
   revealjs: 
     fig-responsive: true
@@ -112,52 +113,180 @@ See [@schutt_doing_2013, chapter 1] for more on this.
 <mark class="todo">Find a good way to transition between these slides.</mark>
 :::
 
-# The Data Science workflow {auto-animate=true}
-```{mermaid}
-%%| data-id: 1
-%%| fig-width: 100%
-flowchart LR
-  nodeData("fa:fa-file-import Gather\ndata")
-  nodeStorage("fa:fa-database Store it\nsomewhere")
-  nodeClean("fa:fa-broom Clean &\nPre-process")
-  nodeDataset("fa:fa-table Build a \ndataset")
-  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
-  nodeML("fa:fa-robot Machine\nLearning")
-  nodeComm("fa:fa-podium-star Gather\ninsight &\ncommunicate")
+# The <br/> Data <br/> Science <br/> Workflow
 
-  nodeData -->  nodeStorage
-  nodeStorage --> nodeClean
-  nodeClean --> nodeDataset
-  nodeDataset --> nodeEDA
-  nodeEDA --> nodeML
-  nodeML --> nodeComm
+## The Data Science Workflow
+```{dot}
+//| data-id: 1
+//| fig-width: 100%
+
+digraph {
+  pad=0.5;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontsize="20", fontcolor="#8431A6", shape=plaintext, margin=0.2]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=4, color="#8431A6";]
+	
+	rankdir=TB;
+	
+	
+	start       [shape=box, margin=0.2, fontcolor="#8431A6", style=filled, color="#f2eaf6", label="Start"];
+	gather      [label="Gather\ldata  ", imagepos="tc"];
+	store       [label="Store it         \lsomewhere"];
+	clean       [label="Clean &        \lpre-process"];
+	build       [label="Build a \ldataset"];
+	eda         [label="Exploratory    \ldata analysis"];
+  ml          [label="Machine\llearning"];
+	insight     [label="Obtain   \linsights"];
+	communicate [label="Communicate\lresults         "];
+	end         [shape=box, margin=0.1, fontcolor="#8431A6", color="#f2eaf6", style=filled, label="End"];
+	
+	subgraph cluster_80_percent {
+	  color=blue;
+		gather -> store  [label="      "];
+	  store  -> clean  [label="      "];
+	  clean  -> build  [label="      "];
+	}
+
+  build -> eda;
+
+  subgraph cluster_20_percent{
+    color=blue;
+	  eda     -> ml           [label="      "];
+    ml      -> insight      [label="      "];
+	  insight -> communicate  [label="      "];
+  }
+    
+  {rank = same; gather; store; clean; build;}
+  {rank = same; eda; ml; insight; communicate;}
+  
+  start -> gather;
+  communicate -> end;
+}
 ```
 
-# The Data Science workflow {auto-animate=true auto-animate-easing="ease-out"}
-```{mermaid}
-%%| data-id: 1
-%%| fig-width: 100%
-flowchart LR
-  nodeData("fa:fa-file-import Gather\ndata")
-  nodeStorage("fa:fa-database Store it\nsomewhere")
-  nodeClean("fa:fa-broom Clean &\nPre-process")
-  nodeDataset("fa:fa-table Build a \ndataset")
-  nodeEDA("fa:fa-area-chart Exploratory \nData Analysis\n(EDA)")
-  nodeML("fa:fa-robot Machine\nLearning")
-  nodeComm("fa:fa-podium-star Gather\ninsight &\ncommunicate")
+::: aside
+⚠️ Note that this is a simplified version of what happens in a data science project. <br/>
+In practice, the process is not linear and there are many feedback loops.
+:::
 
-  subgraph 80% of your time
-    nodeData -->  nodeStorage
-    nodeStorage --> nodeClean
-    nodeClean --> nodeDataset
-  end
-  subgraph 20% of your time
-    direction TB
-    nodeDataset --> nodeEDA
-    nodeEDA --> nodeML
-    nodeML --> nodeComm
-  end
+## The Data Science Workflow {auto-animate=true auto-animate-easing="ease-in-out"}
+```{dot}
+//| data-id: 1
+//| fig-width: 100%
+
+digraph {
+  pad=0.5;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontsize="20", margin=0.2]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=4, color="#8431A6";]
+	
+	rankdir=TB;
+	
+  node [shape=box, margin=0.2, fontcolor="#8431A6", style=filled, color="#f2eaf6"];
+  	
+	start       [label="Start"];
+  end         [margin=0.1, label="End"];
+  
+  node [fontcolor="#fcfcfc", style=filled, color="#8431A6"];
+	gather      [label="Gather\ldata  ", imagepos="tc"];
+	store       [label="Store it         \lsomewhere"];
+	clean       [label="Clean &        \lpre-process"];
+	build       [label="Build a \ldataset"];
+	eda         [label="Exploratory    \ldata analysis"];
+
+  node [fontcolor="#dac1e4", style=filled, color="#f2eaf6"];
+  ml          [label="Machine\llearning"];
+	insight     [label="Obtain   \linsights"];
+	communicate [label="Communicate\lresults         "];
+
+	start -> gather;
+	subgraph cluster_80_percent {
+	  color=blue;
+		gather -> store  [label="      "];
+	  store  -> clean  [label="      "];
+	  clean  -> build  [label="      "];
+	}
+
+  build -> eda;
+
+  edge [color="#f2eaf6"];
+  subgraph cluster_20_percent{
+    color=blue;
+	  eda     -> ml           [label="      "];
+    ml      -> insight      [label="      "];
+	  insight -> communicate  [label="      "];
+  }
+    
+  {rank = same; gather; store; clean; build;}
+  {rank = same; eda; ml; insight; communicate;}
+
+  communicate -> end;
+}
 ```
+
+It is often said that **80%** of the time and effort spent on a data science project goes to the tasks highlighted above.
+
+## The Data Science Workflow {auto-animate=true auto-animate-easing="ease-in-out"}
+```{dot}
+//| data-id: 1
+//| fig-width: 100%
+
+digraph {
+  pad=0.5;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontsize="20", margin=0.2]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=4, color="#8431A6";]
+	
+	rankdir=TB;
+	
+  node [shape=box, margin=0.2, fontcolor="#8431A6", style=filled, color="#f2eaf6"];
+  	
+	start       [label="Start"];
+  end         [margin=0.1, label="End"];
+  
+  node [fontcolor="#fcfcfc", style=filled, color="#8431A6"];
+	gather      [label="Gather\ldata  ", imagepos="tc"];
+	store       [label="Store it         \lsomewhere"];
+	clean       [label="Clean &        \lpre-process"];
+	build       [label="Build a \ldataset"];
+	eda         [label="Exploratory    \ldata analysis"];
+
+  node [fontcolor="white", style=filled, color="white"];
+  ml          [label="Machine\llearning"];
+	insight     [label="Obtain   \linsights"];
+	communicate [label="Communicate\lresults         "];
+
+	start -> gather;
+	subgraph cluster_80_percent {
+	  color=blue;
+		gather -> store  [label="      "];
+	  store  -> clean  [label="      "];
+	  clean  -> build  [label="      "];
+	}
+
+  build -> eda;
+  eda -> end;
+
+  edge [color="white"];
+  subgraph cluster_20_percent{
+    color=blue;
+	  eda     -> ml           [label="      "];
+    ml      -> insight      [label="      "];
+	  insight -> communicate  [label="      "];
+  }
+    
+  {rank = same; gather; store; clean; build;}
+  {rank = same; eda; ml; insight; communicate;}
+
+
+}
+```
+
+And this is what this course is about! You will learn some of the most common tools used during this process.
+
 
 # The toolbox 🧰
 
