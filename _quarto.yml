@@ -4,9 +4,7 @@ project:
   output-dir: _output
   render:
     - "index.qmd"
-    - "assessments.qmd"
-    - "syllabus.qmd"
-    - "communication.qmd"
+    - "main/*.qmd"
     - "weeks/*.qmd"
     - "weeks/week01/*.qmd"
     - "weeks/week02/*.qmd"
@@ -27,11 +25,11 @@ website:
     contents:
       - href: index.qmd
         text: "🏠 Home"
-      - href: syllabus.qmd
+      - href:  main/syllabus.qmd
         text: "📓 Syllabus"
-      - href: communication.qmd
+      - href: main/communication.qmd
         text: "📟 Communication"
-      - href: assessments.qmd
+      - href: main/assessments.qmd
         text: "✍️ Assessments"
       - section: "🗓️ Weeks"
         contents:
@@ -83,5 +81,3 @@ format:
 margin-header: |
  ![](/figures/logos/LSE Data Science Institute.png)
 
-body-header: |
-  Experimenting

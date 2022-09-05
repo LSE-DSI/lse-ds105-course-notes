@@ -17,7 +17,7 @@ format:
     chalkboard: 
       buttons: true
     preview-links: true
-    logo: /figures/LSE Data Science Institute.png
+    logo: /figures/logos/LSE Data Science Institute.png
     css: /css/styles_slides.css
     footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---

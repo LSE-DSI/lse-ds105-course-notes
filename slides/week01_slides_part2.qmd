@@ -18,7 +18,7 @@ format:
     chalkboard: 
       buttons: true
     preview-links: auto
-    logo: /figures/LSE Data Science Institute.png
+    logo: /figures/logos/LSE Data Science Institute.png
     css: /css/styles_slides.css
     footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---
@@ -228,6 +228,7 @@ digraph {
 
 It is often said that **80%** of the time and effort spent on a data science project goes to the tasks highlighted above.
 
+
 ## The Data Science Workflow {auto-animate=true auto-animate-easing="ease-in-out"}
 ```{dot}
 //| data-id: 1
@@ -287,8 +288,34 @@ digraph {
 
 And this is what this course is about! You will learn some of the most common tools used during this process.
 
-
 # The toolbox 🧰
+
+::: {.incremental}
+- Programming languages: `Python` and `R`
+:::
+
+
+## Packages
+
+::: columns
+
+::: {.column style="width:50%; font-size:0.75em;"}
+
+**Python**
+
+- Gather data: [requests](https://requests.readthedocs.io/en/latest/)
+
+:::
+
+::: {.column style="width:50%; font-size:0.75em;"}
+
+**R**
+
+- 
+
+:::
+
+:::
 
 # Data Science and Social Science
 

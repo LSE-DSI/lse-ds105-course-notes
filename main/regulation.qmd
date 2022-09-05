@@ -1,5 +1,8 @@
 ---
 title: "LSE DS105 | CAPIS"
+subtitle: "Data for Data Science"
+date: 05 September 2022
+date-meta: 05 September 2022
 ---
 
 
