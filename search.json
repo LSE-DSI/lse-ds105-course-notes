@@ -4,49 +4,56 @@
     "href": "index.html",
     "title": "LSE DS105M (2022/23)",
     "section": "",
-    "text": "🎯 Learning Objectives\n\nUnderstand the basic structure of data types and common data formats\nShow familiarity with international standards for common data types\nManage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples\nClean data, and diagnose common problems involved in data corruption and how to fix them\nUnderstand the concept and fundamentals of databases\nLink data from different sources\nUse the collaboration and version control system GitHub, based on the git version control system.\nMarkup Language (XML), and the Markdown format for formatting documents and web pages.\nCreate and maintain simple websites using HTML and CSS\nUse APIs to send and retrieve data from Internet sources\n\n\n\n🧑🏻‍🏫 Teaching Team\n\nTeacher responsibleTeaching assistantsAdministrative support\n\n\n\n\n\n\n\nDr. Jonathan Cardoso-Silva  Assistant Professorial Lecturer  LSE Data Science Institute Office Hours: book via StudentHub\n\n\n\n(pending confirmation)\n(pending confirmation)\n(pending confirmation)"
+    "text": "🎯 Learning Objectives\n\nUnderstand the basic structure of data types and common data formats\nShow familiarity with international standards for common data types\nManage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples\nClean data, and diagnose common problems involved in data corruption and how to fix them\nUnderstand the concept and fundamentals of databases\nLink data from different sources\nUse the collaboration and version control system GitHub, based on the git version control system.\nMarkup Language (XML), and the Markdown format for formatting documents and web pages.\nCreate and maintain simple websites using HTML and CSS\nUse APIs to send and retrieve data from Internet sources\n\n\n\n🧑🏻‍🏫 Our Team\n\nTeacher responsibleTeaching assistantsAdministrative support\n\n\n\nDr. Jonathan Cardoso-Silva  Assistant Professorial Lecturer  LSE Data Science Institute Office Hours: book via StudentHub\n\n\n\nAnton Boichenko  Guest Teacher Office Hours: book via StudentHub\n\nXiaowei Gao  Guest Teacher Office Hours: book via StudentHub\n\nYijun Wang  Guest Teacher Office Hours: book via StudentHub\n\n\n\nNathaniel Ocquaye  Teaching Support and Events Officer Office: PEL 9.01 Email: DSI.UG at lse dot ac dot uk\n\nJill Beattie  Institute Coordinator Office: PEL 9.01E Tel: +44 (0) 20 7955 7759 Email: DSI.Admin at lse dot ac dot uk"
   },
   {
-    "objectID": "assessments.html",
-    "href": "assessments.html",
-    "title": "LSE DS105M | Assessments",
+    "objectID": "main/assessments.html",
+    "href": "main/assessments.html",
+    "title": "Assessments",
     "section": "",
     "text": "This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:"
   },
   {
-    "objectID": "assessments.html#problem-sets-25",
-    "href": "assessments.html#problem-sets-25",
-    "title": "LSE DS105M | Assessments",
+    "objectID": "main/assessments.html#problem-sets-25",
+    "href": "main/assessments.html#problem-sets-25",
+    "title": "Assessments",
     "section": "📝 Problem Sets (25%)",
     "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 03 - worth 10% of final mark\nWeek 04 - worth 15% of final mark"
   },
   {
-    "objectID": "assessments.html#group-presentation-35",
-    "href": "assessments.html#group-presentation-35",
-    "title": "LSE DS105M | Assessments",
+    "objectID": "main/assessments.html#group-presentation-35",
+    "href": "main/assessments.html#group-presentation-35",
+    "title": "Assessments",
     "section": "🗣️ Group Presentation (35%)",
     "text": "🗣️ Group Presentation (35%)\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark"
   },
   {
-    "objectID": "assessments.html#final-project-40",
-    "href": "assessments.html#final-project-40",
-    "title": "LSE DS105M | Assessments",
+    "objectID": "main/assessments.html#final-project-40",
+    "href": "main/assessments.html#final-project-40",
+    "title": "Assessments",
     "section": "🎇 Final Project (40%)",
     "text": "🎇 Final Project (40%)\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
   },
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
+    "objectID": "main/communication.html",
+    "href": "main/communication.html",
+    "title": "Communication",
+    "section": "",
+    "text": "Find out how to talk to your peers, teaching and administrative staff during this course.\n\n\n\nMost of our “informal” communication and interactions will happen through Slack.\nSlack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project.\nThere will be channels dedicated to discussing each week’s content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.\n\nYou will receive an invitation to join our Slack group via e-mail. Send an e-mail to Jon (J.Cardoso-Silva at lse dot ac dot uk) if you have not received an invite by the time of the first lecture.\nCheck out the following links to understand more about this tool:\n\nSlack tutorials\nCollaborate effectively in channels"
+  },
+  {
+    "objectID": "main/regulation.html",
+    "href": "main/regulation.html",
+    "title": "LSE DS105 | CAPIS",
+    "section": "",
+    "text": "This browser does not support PDFs. Please download the PDF to view it: Download PDF."
+  },
+  {
+    "objectID": "main/syllabus.html",
+    "href": "main/syllabus.html",
     "title": "LSE DS105M",
     "section": "",
     "text": "A list of what will happen every week.\nClick on each Week’s link for more information (slides, lab instructions, recommended resources, etc.).\nNote about formative assessment: besides the in-person lab exercises, we might give take-home assignments on certain weeks. Even though we do not grade these problem sets, you will get written feedback on these formative assignments.\nThis course will help you become familiarised with the most fundamental practical tools needed to gather (Weeks 02-04) and pre-process data (Weeks 05-09) and will give you some inspiration for some fundamental analysis (Weeks 10-11) to perform in your selected datasets.\nThese skills are cumulative, so practice what you learned each week and make the most of lectures, labs and our Slack group. We believe these points of contact and integration will create a fertile environment of ideas for your project.\n💡 Remember: collaboration is key to the success of a data science project!\n\n\n\n\n\n\nIntro\n\n\n\n\n\n\n\n\n🗓️ Week 01\n\n\nLecture\n\n\nIntroduction and the Data Science Toolbox 🧰\n\n\n\n\nLab\n\n\nNo class this week. (Use this time to revisit basic R or python programming)\n\n\n\n\n\nTheme: Behind the scenes\n\n\n\n\n\n\n\n\n🗓️ Week 02\n\n\nLecture\n\n\nOperating Systems, Files & The Terminal\n\n\n\n\nLab\n\n\nNavigating the command line in your own computer\n\n\n\n\n\n\n\n\n\n🗓️ Week 03\n\n\nLecture\n\n\nThe Cloud: accessing and getting data in and out.\n\n\n\n\nLab\n\n\nConnecting to the cloud via the command line\n\n\n\n\nSummative\n\n\n\n\nWorth: 10% of final marks\n\n\nProblem set involving the upload of data to the cloud.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 04\n\n\nLecture\n\n\nThe Internet: protocols + scrapping + APIs.\n\n\n\n\nLab\n\n\nWeb scraping exercise\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\nProblem set involving web scraping.\n\n\nDeadline: day before next week’s lab\n\n\n\n\n\n\nGroup project\n\n\n\n\nafter class, students pitch their ideas of preferred APIs/datasets\n\n\nthere will be a designated channel on our Slack for this\n\n\n\n\n\n\n\nTheme: Working with data\n\n\n\n\n\n\n\n\n🗓️ Week 05\n\n\nLecture\n\n\n(Re)shaping data.\n\n\n\n\nLab\n\n\nGithub & Markdown\n\n\n\n\nGroup project\n\n\n\n\nstudents form groups of 3\n\n\nstudents must submit a team contract to Moodle (not graded)\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 06\n\n\nReading Week\n\n\n\n\n\n\n\n\n\n🗓️ Week 07\n\n\nLecture\n\n\nDataframes, databases & data normalisation.\n\n\n\n\nLab\n\n\nComputational Notebooks and DataFrames\n\n\n\n\n\n\n\n\n\n🗓️ Week 08\n\n\nLecture\n\n\nUnstructured data (text, audio & image).\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week.\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\neach group will present about their selected data.\n\n\nsee instructions for marking criteria\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 09\n\n\nLecture\n\n\nManaging your data science workflow.\n\n\n\n\nLab\n\n\nSetting up Github for your group project & GitFlow\n\n\n\n\n\nTheme: Applications\n\n\n\n\n\n\n\n\n🗓️ Week 10\n\n\nLecture\n\n\nData viz with the grammar of graphics\n\n\n\n\nLab\n\n\n🦸 Super tech-support (get help with your project)\n\n\n\n\n\n\n\n\n\n🗓️ Week 11\n\n\nLecture\n\n\nSentiment analysis, topic modelling and social networks\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week\n\n\n\n\nSummative\n\n\n\n\nWorth: 20% of final marks\n\n\neach group will present about their selected data\n\n\nsee instructions for marking criteria"
-  },
-  {
-    "objectID": "communication.html",
-    "href": "communication.html",
-    "title": "LSE DS105M",
-    "section": "",
-    "text": "Find out how to talk to your peers, teaching and administrative staff during this course.\n\n\n\nMost of our “informal” communication and interactions will happen through Slack.\nSlack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project.\nThere will be channels dedicated to discussing each week’s content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.\n\nYou will receive an invitation to join our Slack group via e-mail. Send an e-mail to Jon (J.Cardoso-Silva at lse dot ac dot uk) if you have not received an invite by the time of the first lecture.\nCheck out the following links to understand more about this tool:\n\nSlack tutorials\nCollaborate effectively in channels"
   },
   {
     "objectID": "weeks/week01.html",
@@ -411,6 +418,13 @@
     "title": "🗓️ Week 01 - Part II  Data Science toolbox",
     "section": "The Data Science Workflow",
     "text": "The Data Science Workflow\n\n\n\n\n\n   \n\nstart\n\n Start   \n\ngather\n\n Gather data     \n\nstart->gather\n\n    \n\nend\n\n End   \n\nstore\n\n Store it          somewhere   \n\ngather->store\n\n           \n\nclean\n\n Clean &         pre-process   \n\nstore->clean\n\n           \n\nbuild\n\n Build a  dataset   \n\nclean->build\n\n           \n\neda\n\n Exploratory     data analysis   \n\nbuild->eda\n\n    \n\neda->end\n\n    \n\nml\n\n Machine learning   \n\neda->ml\n\n           \n\ninsight\n\n Obtain    insights   \n\nml->insight\n\n           \n\ncommunicate\n\n Communicate results            \n\ninsight->communicate\n\n          \n\n\n\n\n\nAnd this is what this course is about! You will learn some of the most common tools used during this process."
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#packages",
+    "href": "slides/week01_slides_part2.html#packages",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "Packages",
+    "text": "Packages\n\n\nPython\n\nGather data: requests\n\n\nR"
   },
   {
     "objectID": "slides/week01_slides_part2.html#practical-examples",
