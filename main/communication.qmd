@@ -1,6 +1,8 @@
 ---
-title: "LSE DS105M"
+title: "Communication"
 subtitle: "Data for Data Science"
+date: 05 September 2022
+date-meta: 05 September 2022
 ---
 
 # 📟 Communication

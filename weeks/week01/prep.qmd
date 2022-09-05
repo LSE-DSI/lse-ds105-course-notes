@@ -12,8 +12,8 @@ See sections below for advice on how to do that.
 
 ## 📒 Preparing for the next week
 
-- Join the Slack group of this course [(more info)](/communication.qmd)
-- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/syllabus.qmd), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
+- Join the Slack group of this course [(more info)](/main/communication.qmd)
+- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/main/syllabus.qmd), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
 
 ## 🔖 Recommended Resources
 

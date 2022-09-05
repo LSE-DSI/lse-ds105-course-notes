@@ -4,10 +4,7 @@ project:
   output-dir: _output
   render:
     - "index.qmd"
-    - "assessments.qmd"
-    - "syllabus.qmd"
-    - "export_syllabus.qmd"
-    - "communication.qmd"
+    - "main/*.qmd"
     - "weeks/*.qmd"
     - "weeks/week01/*.qmd"
     - "weeks/week02/*.qmd"
@@ -21,18 +18,18 @@ website:
   repo-url: https://github.com/LSE-DSI/lse-ds105-course-notes
   page-navigation: true
   reader-mode: true
-  favicon: "/figures/LSE Data Science Institute.png"
+  favicon: "/figures/logos/LSE Data Science Institute.png"
   sidebar:
     style: "docked"
     collapse-level: 1
     contents:
       - href: index.qmd
         text: "🏠 Home"
-      - href: syllabus.qmd
+      - href:  main/syllabus.qmd
         text: "📓 Syllabus"
-      - href: communication.qmd
+      - href: main/communication.qmd
         text: "📟 Communication"
-      - href: assessments.qmd
+      - href: main/assessments.qmd
         text: "✍️ Assessments"
       - section: "🗓️ Weeks"
         contents:
@@ -43,7 +40,6 @@ website:
                text: 👨‍🏫 Lecture Slides
              - href: weeks/week01/prep.qmd
                text: 📒 Prepare for the lab
-             - href: weeks/week01/lab.qmd   
          - href: weeks/week02.qmd
            text: Week 02
            contents:
@@ -83,7 +79,5 @@ format:
     toc: true
 
 margin-header: |
- ![](/figures/LSE Data Science Institute.png)
+ ![](/figures/logos/LSE Data Science Institute.png)
 
-body-header: |
-  Experimenting

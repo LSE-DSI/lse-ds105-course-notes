@@ -1,5 +1,8 @@
 ---
-title: "LSE DS105M | Assessments"
+title: "Assessments"
+subtitle: "Data for Data Science"
+date: 05 September 2022
+date-meta: 05 September 2022
 ---
 
 This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:
