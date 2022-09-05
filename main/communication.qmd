@@ -22,3 +22,15 @@ Check out the following links to understand more about this tool:
 
 - [Slack tutorials](https://slack.com/intl/en-gb/help/categories/360000049063-Slack-tutorials)
 - [Collaborate effectively in channels](https://slack.com/intl/en-gb/help/articles/360058495654-Collaborate-effectively-in-channels?from=channels)
+
+## 🗨️ Office Hours
+
+-   It is probably a good idea to book office hours if:
+    -   you struggled with a technical or theoretical aspect of a problem set in the previous week,
+    -   you have queries about careers in data science,
+    -   you want guidance in how to apply data science to other things you are studying outside this course.
+-   Come prepared. You only have 15 minutes.
+-   Ask for help sooner rather than later.
+-   Book slots via StudentHub up to 12 hours in advance.
+
+⚠️ Reserve 📧 e-mail for **formal requests**: extensions, deferrals, etc. No need to e-mail to inform you will skip a class, for example.
