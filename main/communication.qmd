@@ -9,7 +9,7 @@ date-meta: 05 September 2022
 
 Find out how to talk to your peers, teaching and administrative staff during this course.
 
-## ![](/figures/slack_logo_simple.svg){height="1em" fig-align="left" fig-alt="Slack logo"} Slack
+## ![](/figures/logos/slack_logo_simple.svg){height="1em" fig-align="left" fig-alt="Slack logo"} Slack
 
 - Most of our "informal" communication and interactions will happen through Slack. 
 - Slack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project. 
