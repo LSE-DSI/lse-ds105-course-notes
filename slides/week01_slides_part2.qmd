@@ -290,53 +290,134 @@ And this is what this course is about! You will learn some of the most common to
 
 # The toolbox 🧰
 
-::: {.incremental}
-- Programming languages: `Python` and `R`
+::: incremental
+- Python or R ??
+	- Use the programming language you feel more comfortable with. 
+	- When you form groups, discuss whether you will adopt a single language or use a mix
+	- It is okay to mix languages if your group is well coordinated
 :::
 
-
-## Packages
+## Python vs R
 
 ::: columns
 
-::: {.column style="width:50%; font-size:0.75em;"}
+::: {.column style="width:45%; border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:0.5%;padding:1%;font-size:0.65em;"}
 
-**Python**
+![](/figures/logos/python-logo-notext.svg){style="height:1em;vertical-align:text-bottom;"} **Python**
 
-- Gather data: [requests](https://requests.readthedocs.io/en/latest/)
-
-:::
-
-::: {.column style="width:50%; font-size:0.75em;"}
-
-**R**
-
-- 
-
-:::
+- Pull data from webpages & APIs: 
+	- [selenium](https://selenium-python.readthedocs.io/)\*, [scrapy](https://scrapy.org/), [requests](https://requests.readthedocs.io/en/latest/)\*
+- Reshape data
+	- [pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide)\*, [numpy](https://numpy.org/doc/stable/user/index.html#user), [scipy](https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide)
+- Plotting data
+	- [matplotlib](https://matplotlib.org/), [plotnine](https://plotnine.readthedocs.io/en/stable/)\*, [altair](https://altair-viz.github.io/)
+- Share & Report
+	- [Github Markdown](https://docs.github.com/en/get-started/writing-on-github)\*
+	- [Jupyter](https://jupyter.org/)\*
 
 :::
 
-# Data Science and Social Science
+::: {.column style="width:45%; border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:0.5%;padding:1%;font-size:0.65em;"}
 
-::: notes
-In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.
+![](/figures/logos/Rlogo.svg){style="height:1em;vertical-align:text-bottom;"}
 
-Content borrowed from [ME314 Day 1](https://github.com/lse-me314/lectures)
+- Pull data from webpages & APIs:
+	- [RSelenium](https://cran.r-project.org/web/packages/RSelenium/vignettes/basics.html), [httr](https://github.com/r-lib/httr), [rvest](https://rvest.tidyverse.org/)
+- Reshape data
+	- [tidyverse](https://www.tidyverse.org/learn/) (all packages)
+- Plotting data
+	- [ggplot](https://ggplot2.tidyverse.org/)\* 
+- Share & Report
+	- [Github Markdown](https://docs.github.com/en/get-started/writing-on-github)\*
+	- [RMarkdown](https://rmarkdown.rstudio.com/), [knitr](https://yihui.org/knitr/), [Quarto](https://quarto.org/)\*
+
 :::
 
-::: incremental
--   Social science: The goal is typically **explanation**
--   Data science: The goal is frequently **prediction**, or data exploration
--   Many of the same methods are used for both objectives
 :::
-
-
-## Practical examples
 
 ::: aside
-<mark class="todo"> Give a pratical example of how one would approach the same dataset differently under these two modelling views. </mark>
+
+::: {style="font-size:0.55em;"}
+\* In this course I will focus on these packages, but the principles shouldn't change much if you decide to use other libraries or programming language.
 :::
+
+:::
+
+## How should we share code?
+
+
+:::{.callout-tip}
+## Github!
+
+Use ![](/figures/logos/Octicons-mark-github.svg){style="height:1em;vertical-align:text-bottom;"} [Github](https://github.com/) for everything related to your project!
+
+- You will learn to setup Github for your own code on 🗓️ Week 05's lab.
+- You will learn how to work effectively as a team on Github on 🗓️ Week 09's lab.
+:::
+
+:::{.callout-important}
+
+Don't share code via e-mail, Dropbox, Google Drive or anything like that!
+
+It is a bad practice as things get messy very quickly.
+:::
+
+::: notes
+- Remember that you have some time to develop your projects.
+
+:::
+
+## Where do I get data?
+
+::: columns
+
+::: {.column style="width:45%;"}
+
+- ![](/figures/logos/Twitter-logo.svg){style="height:1em;vertical-align:text-bottom;"} [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
+- ![](/figures/logos/Reddit-logo.svg){style="height:1em;vertical-align:text-bottom;"} [Reddit API](https://www.reddit.com/dev/api)
+- ![](/figures/logos/logo-tiktok-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Tiktok API](https://developers.tiktok.com/)
+- ![](/figures/logos/instagram-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Instagram API](https://developers.tiktok.com/)
+
+:::
+
+::: {.column style="width:45%;"}
+- ![](/figures/logos/spotify-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Spotify API](https://developer.spotify.com/documentation/web-api/)
+- ![](/figures/logos/New_York_Times_T_icon.svg){style="height:1em;vertical-align:text-bottom;"} [New York Times API](https://developer.nytimes.com/)
+- ![](/figures/logos/the-guardian.svg){style="height:1em;vertical-align:text-bottom;"} [The Guardian API](https://open-platform.theguardian.com/)
+- ![](/figures/logos/New_York_Times_T_icon.svg){style="height:1em;vertical-align:text-bottom;"} [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+:::
+
+:::
+
+:::{.callout-tip}
+## Tip: Data is Plural
+
+Data is Plural run by Buzzfeed's data editor 🧑 [Jeremy Singer-Vine](https://www.jsvine.com/). People send him interesting/funny/odd datasets and he shares them in a weekly newsletter. [Here's the link](https://www.data-is-plural.com/) to the website (the google doc list of datasets is linked [here](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0))
+:::
+
+# Final project requirements
+
+::: incremental
+- Your main data source _must_ be collected:
+	- using an API or,
+	- by webscrapping
+- That is, you cannot use static datasets.
+	- _**the point of this course is for you to get past the technical barrier of collecting and handling data**_
+- We will give you more detais during the Term.
+:::
+
+# What's Next?
+
+::: {.incremental .r-fit-text}
+- Next week we will introduce you to **The Terminal**
+- Join our ![](/figures/logos/slack_logo_simple.svg){height="1em"} [Slack group](/main/communication.qmd) if you haven't done so yet.
+- Use the time before our first lab to revisit basic programming skills.
+- Head over to the 🔖 [Week 01 - Appendix](/weeks/week01/appendix.qmd) page for:
+	- Indicative & recommended reading
+	- Programming Resources
+:::
+
+# Thank you
 
 ## References {style="word-break:break-all;"}
 

@@ -13,4 +13,4 @@ We will also cover some of the basics: what do we mean by data science and what 
 
 - 👨‍🏫 [Lecture slides](/weeks/week01/lecture.qmd)
 
-- 📒 [Preparing for next week's lab](/weeks/week01/prep.qmd)
+- 🔖 [Appendix](/weeks/week01/appendix.qmd)
