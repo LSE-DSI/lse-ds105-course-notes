@@ -67,7 +67,7 @@
     "href": "weeks/week01.html#links",
     "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
     "section": "Links",
-    "text": "Links\n\n👨‍🏫 Lecture slides\n📒 Preparing for next week’s lab"
+    "text": "Links\n\n👨‍🏫 Lecture slides\n🔖 Appendix"
   },
   {
     "objectID": "weeks/week02.html",
@@ -82,6 +82,27 @@
     "title": "🗓️ Week 02 - Operating Systems, Files & The Terminal",
     "section": "Links",
     "text": "Links\n\n👨‍🏫 Lecture slides\n📒 Preparing for this week’s lab\n💻 Lab roadmap\n🔖 Appendix"
+  },
+  {
+    "objectID": "weeks/week01/appendix.html",
+    "href": "weeks/week01/appendix.html",
+    "title": "🔖 Week 01 - Appendix",
+    "section": "",
+    "text": "We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
+  },
+  {
+    "objectID": "weeks/week01/appendix.html#preparing-for-the-next-week",
+    "href": "weeks/week01/appendix.html#preparing-for-the-next-week",
+    "title": "🔖 Week 01 - Appendix",
+    "section": "📒 Preparing for the next week",
+    "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
+  },
+  {
+    "objectID": "weeks/week01/appendix.html#recommended-resources",
+    "href": "weeks/week01/appendix.html#recommended-resources",
+    "title": "🔖 Week 01 - Appendix",
+    "section": "🔖 Recommended Resources",
+    "text": "🔖 Recommended Resources\n\nLSE Digital Skills Lab\nLSE Digital Skills Lab offers R and python workshops during Term time and they will also give DSI students access to self-paced programming courses via Dataquest.\nIf you want to take the self-paced course to revise basic R programming, sign up via this link.\nKeep an eye on the following pages for news of the in-person workshops:\n\nR workshops\nPython workshops\n\n\n\nOther resources\n\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain open to LSE students until the end of the year.\n\n\n\nReady to develop the key skills employers are looking for in 2022?Join this summer's LSE Careers Skills Accelerator programme to expand your skillset!⭐Apply on CareerHub by 11.59pm, Wed 15 June for your chance to join the programme⭐https://t.co/J5sI1NRaMA\n\n— LSE Careers ((LSECareers?)) June 9, 2022"
   },
   {
     "objectID": "weeks/week01/lecture.html",
@@ -102,28 +123,7 @@
     "href": "weeks/week01/lecture.html#part-ii---the-data-science-toolbox-45-50-min",
     "title": "👨‍🏫 Week 01 - Slides",
     "section": "🧰 Part II - The Data Science Toolbox (45-50 min)",
-    "text": "🧰 Part II - The Data Science Toolbox (45-50 min)\n\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
-  },
-  {
-    "objectID": "weeks/week01/prep.html",
-    "href": "weeks/week01/prep.html",
-    "title": "📒 Week 01 - Preparing for next week’s lab",
-    "section": "",
-    "text": "We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).\nSee sections below for advice on how to do that."
-  },
-  {
-    "objectID": "weeks/week01/prep.html#preparing-for-the-next-week",
-    "href": "weeks/week01/prep.html#preparing-for-the-next-week",
-    "title": "📒 Week 01 - Preparing for next week’s lab",
-    "section": "📒 Preparing for the next week",
-    "text": "📒 Preparing for the next week\n\nJoin the Slack group of this course (more info)\nUse this time to learn or revisit basic programming skills. Remember: later in this course, you will start working on a group project that will require some element of coding. You are free to use either R or Python."
-  },
-  {
-    "objectID": "weeks/week01/prep.html#recommended-resources",
-    "href": "weeks/week01/prep.html#recommended-resources",
-    "title": "📒 Week 01 - Preparing for next week’s lab",
-    "section": "🔖 Recommended Resources",
-    "text": "🔖 Recommended Resources\n\nDigital Skills Lab offer workshops on R and Python skills.\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain available until the end of the year."
+    "text": "🧰 Part II - The Data Science Toolbox (45-50 min)\nEither click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
   },
   {
     "objectID": "weeks/week02/appendix.html",
@@ -420,18 +420,25 @@
     "text": "The Data Science Workflow\n\n\n\n\n\n   \n\nstart\n\n Start   \n\ngather\n\n Gather data     \n\nstart->gather\n\n    \n\nend\n\n End   \n\nstore\n\n Store it          somewhere   \n\ngather->store\n\n           \n\nclean\n\n Clean &         pre-process   \n\nstore->clean\n\n           \n\nbuild\n\n Build a  dataset   \n\nclean->build\n\n           \n\neda\n\n Exploratory     data analysis   \n\nbuild->eda\n\n    \n\neda->end\n\n    \n\nml\n\n Machine learning   \n\neda->ml\n\n           \n\ninsight\n\n Obtain    insights   \n\nml->insight\n\n           \n\ncommunicate\n\n Communicate results            \n\ninsight->communicate\n\n          \n\n\n\n\n\nAnd this is what this course is about! You will learn some of the most common tools used during this process."
   },
   {
-    "objectID": "slides/week01_slides_part2.html#packages",
-    "href": "slides/week01_slides_part2.html#packages",
+    "objectID": "slides/week01_slides_part2.html#python-vs-r",
+    "href": "slides/week01_slides_part2.html#python-vs-r",
     "title": "🗓️ Week 01 - Part II  Data Science toolbox",
-    "section": "Packages",
-    "text": "Packages\n\n\nPython\n\nGather data: requests\n\n\nR"
+    "section": "Python vs R",
+    "text": "Python vs R\n\n\n Python\n\nPull data from webpages & APIs:\n\nselenium*, scrapy, requests*\n\nReshape data\n\npandas*, numpy, scipy\n\nPlotting data\n\nmatplotlib, plotnine*, altair\n\nShare & Report\n\nGithub Markdown*\nJupyter*\n\n\n\n\n\nPull data from webpages & APIs:\n\nRSelenium, httr, rvest\n\nReshape data\n\ntidyverse (all packages)\n\nPlotting data\n\nggplot*\n\nShare & Report\n\nGithub Markdown*\nRMarkdown, knitr, Quarto*\n\n\n\n\n\n\n\n* In this course I will focus on these packages, but the principles shouldn’t change much if you decide to use other libraries or programming language."
   },
   {
-    "objectID": "slides/week01_slides_part2.html#practical-examples",
-    "href": "slides/week01_slides_part2.html#practical-examples",
+    "objectID": "slides/week01_slides_part2.html#how-should-we-share-code",
+    "href": "slides/week01_slides_part2.html#how-should-we-share-code",
     "title": "🗓️ Week 01 - Part II  Data Science toolbox",
-    "section": "Practical examples",
-    "text": "Practical examples\n\n\n Give a pratical example of how one would approach the same dataset differently under these two modelling views."
+    "section": "How should we share code?",
+    "text": "How should we share code?\n\n\n\n\n\n\nGithub!\n\n\nUse  Github for everything related to your project!\n\nYou will learn to setup Github for your own code on 🗓️ Week 05’s lab.\nYou will learn how to work effectively as a team on Github on 🗓️ Week 09’s lab.\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nDon’t share code via e-mail, Dropbox, Google Drive or anything like that!\nIt is a bad practice as things get messy very quickly.\n\n\n\n\n\nRemember that you have some time to develop your projects."
+  },
+  {
+    "objectID": "slides/week01_slides_part2.html#where-do-i-get-data",
+    "href": "slides/week01_slides_part2.html#where-do-i-get-data",
+    "title": "🗓️ Week 01 - Part II  Data Science toolbox",
+    "section": "Where do I get data?",
+    "text": "Where do I get data?\n\n\n\n Twitter API\n Reddit API\n Tiktok API\n Instagram API\n\n\n\n Spotify API\n New York Times API\n The Guardian API\n Weather.gov API\n\n\n\n\n\n\n\n\n\nTip: Data is Plural\n\n\nData is Plural run by Buzzfeed’s data editor 🧑 Jeremy Singer-Vine. People send him interesting/funny/odd datasets and he shares them in a weekly newsletter. Here’s the link to the website (the google doc list of datasets is linked here)"
   },
   {
     "objectID": "slides/week01_slides_part2.html#references",

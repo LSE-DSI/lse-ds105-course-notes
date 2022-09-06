@@ -1,0 +1,36 @@
+---
+title: "Communication"
+subtitle: "Data for Data Science"
+date: 05 September 2022
+date-meta: 05 September 2022
+---
+
+# 📟 Communication
+
+Find out how to talk to your peers, teaching and administrative staff during this course.
+
+## ![](/figures/logos/slack_logo_simple.svg){height="1em" fig-align="left" fig-alt="Slack logo"} Slack
+
+- Most of our "informal" communication and interactions will happen through Slack. 
+- Slack is a platform used by many companies and institutions where teams can collaborate and communicate about a specific project. 
+- There will be channels dedicated to discussing each week's content, a channel for sharing useful links and events, plus a random channel to share random stuff about data science.
+
+You will receive an invitation to join our Slack group via e-mail. 
+Send an [e-mail to Jon](mailto:J.Cardoso-Silva@lse.ac.uk) if you have not received an invite by the time of the first lecture. 
+
+Check out the following links to understand more about this tool:
+
+- [Slack tutorials](https://slack.com/intl/en-gb/help/categories/360000049063-Slack-tutorials)
+- [Collaborate effectively in channels](https://slack.com/intl/en-gb/help/articles/360058495654-Collaborate-effectively-in-channels?from=channels)
+
+## 🗨️ Office Hours
+
+-   It is probably a good idea to book office hours if:
+    -   you struggled with a technical or theoretical aspect of a problem set in the previous week,
+    -   you have queries about careers in data science,
+    -   you want guidance in how to apply data science to other things you are studying outside this course.
+-   Come prepared. You only have 15 minutes.
+-   Ask for help sooner rather than later.
+-   Book slots via StudentHub up to 12 hours in advance.
+
+⚠️ Reserve 📧 e-mail for **formal requests**: extensions, deferrals, etc. No need to e-mail to inform you will skip a class, for example.

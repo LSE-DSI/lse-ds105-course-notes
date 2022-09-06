@@ -359,7 +359,9 @@
 <li><a href="#/what-do-we-mean-by-data-science" id="/toc-what-do-we-mean-by-data-science">What do we mean by data science?</a></li>
 <li><a href="#/the-data-science-workflow" id="/toc-the-data-science-workflow">The <br> Data <br> Science <br> Workflow</a></li>
 <li><a href="#/the-toolbox" id="/toc-the-toolbox">The toolbox 🧰</a></li>
-<li><a href="#/data-science-and-social-science" id="/toc-data-science-and-social-science">Data Science and Social Science</a></li>
+<li><a href="#/final-project-requirements" id="/toc-final-project-requirements">Final project requirements</a></li>
+<li><a href="#/whats-next" id="/toc-whats-next">What’s Next?</a></li>
+<li><a href="#/thank-you" id="/toc-thank-you">Thank you</a></li>
 </ul>
 </nav>
 </section>
@@ -745,32 +747,105 @@ insight-&gt;communicate
 <h1>The toolbox 🧰</h1>
 <div>
 <ul>
-<li class="fragment">Programming languages: <code>Python</code> and <code>R</code></li>
+<li class="fragment">Python or R ??
+<ul>
+<li class="fragment">Use the programming language you feel more comfortable with.</li>
+<li class="fragment">When you form groups, discuss whether you will adopt a single language or use a mix</li>
+<li class="fragment">It is okay to mix languages if your group is well coordinated</li>
+</ul></li>
 </ul>
 </div>
 </section>
-<section id="packages" class="slide level2">
-<h2>Packages</h2>
+<section id="python-vs-r" class="slide level2">
+<h2>Python vs R</h2>
 <div class="columns">
-<div class="column" style="width:50%; font-size:0.75em;">
-<p><strong>Python</strong></p>
+<div class="column" style="width:45%; border-style: dotted;border-width: 1px;border-color: &quot;#fefefe&quot;; margin-right:0.5%;padding:1%;font-size:0.65em;">
+<p><img data-src="../figures/logos/python-logo-notext.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <strong>Python</strong></p>
 <ul>
-<li>Gather data: <a href="https://requests.readthedocs.io/en/latest/">requests</a></li>
+<li>Pull data from webpages &amp; APIs:
+<ul>
+<li><a href="https://selenium-python.readthedocs.io/">selenium</a>*, <a href="https://scrapy.org/">scrapy</a>, <a href="https://requests.readthedocs.io/en/latest/">requests</a>*</li>
+</ul></li>
+<li>Reshape data
+<ul>
+<li><a href="https://pandas.pydata.org/docs/user_guide/index.html#user-guide">pandas</a>*, <a href="https://numpy.org/doc/stable/user/index.html#user">numpy</a>, <a href="https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide">scipy</a></li>
+</ul></li>
+<li>Plotting data
+<ul>
+<li><a href="https://matplotlib.org/">matplotlib</a>, <a href="https://plotnine.readthedocs.io/en/stable/">plotnine</a>*, <a href="https://altair-viz.github.io/">altair</a></li>
+</ul></li>
+<li>Share &amp; Report
+<ul>
+<li><a href="https://docs.github.com/en/get-started/writing-on-github">Github Markdown</a>*</li>
+<li><a href="https://jupyter.org/">Jupyter</a>*</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%; font-size:0.75em;">
-<p><strong>R</strong></p>
+</div><div class="column" style="width:45%; border-style: dotted;border-width: 1px;border-color: &quot;#fefefe&quot;; margin-right:0.5%;padding:1%;font-size:0.65em;">
+<p><img data-src="../figures/logos/Rlogo.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"></p>
 <ul>
-<li></li>
+<li>Pull data from webpages &amp; APIs:
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/RSelenium/vignettes/basics.html">RSelenium</a>, <a href="https://github.com/r-lib/httr">httr</a>, <a href="https://rvest.tidyverse.org/">rvest</a></li>
+</ul></li>
+<li>Reshape data
+<ul>
+<li><a href="https://www.tidyverse.org/learn/">tidyverse</a> (all packages)</li>
+</ul></li>
+<li>Plotting data
+<ul>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot</a>*</li>
+</ul></li>
+<li>Share &amp; Report
+<ul>
+<li><a href="https://docs.github.com/en/get-started/writing-on-github">Github Markdown</a>*</li>
+<li><a href="https://rmarkdown.rstudio.com/">RMarkdown</a>, <a href="https://yihui.org/knitr/">knitr</a>, <a href="https://quarto.org/">Quarto</a>*</li>
+</ul></li>
 </ul>
 </div>
 </div>
-</section></section>
-<section>
-<section id="data-science-and-social-science" class="title-slide slide level1">
-<h1>Data Science and Social Science</h1>
+
+<aside><div>
+<div style="font-size:0.55em;">
+<p>* In this course I will focus on these packages, but the principles shouldn’t change much if you decide to use other libraries or programming language.</p>
+</div>
+</div></aside></section>
+<section id="how-should-we-share-code" class="slide level2">
+<h2>How should we share code?</h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Github!</strong></p>
+</div>
+<div class="callout-content">
+<p>Use <img data-src="../figures/logos/Octicons-mark-github.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://github.com/">Github</a> for everything related to your project!</p>
+<ul>
+<li>You will learn to setup Github for your own code on 🗓️ Week 05’s lab.</li>
+<li>You will learn how to work effectively as a team on Github on 🗓️ Week 09’s lab.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Don’t share code via e-mail, Dropbox, Google Drive or anything like that!</p>
+<p>It is a bad practice as things get messy very quickly.</p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>In reality, data scientists work as a multidisciplinary group, collaborating towards a common goal.</p>
-<p>Content borrowed from <a href="https://github.com/lse-me314/lectures">ME314 Day 1</a></p>
+<ul>
+<li>Remember that you have some time to develop your projects.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -782,20 +857,79 @@ insight-&gt;communicate
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="where-do-i-get-data" class="slide level2">
+<h2>Where do I get data?</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><img data-src="../figures/logos/Twitter-logo.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API</a></li>
+<li><img data-src="../figures/logos/Reddit-logo.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://www.reddit.com/dev/api">Reddit API</a></li>
+<li><img data-src="../figures/logos/logo-tiktok-svgrepo-com.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://developers.tiktok.com/">Tiktok API</a></li>
+<li><img data-src="../figures/logos/instagram-svgrepo-com.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://developers.tiktok.com/">Instagram API</a></li>
+</ul>
+</div><div class="column" style="width:45%;">
+<ul>
+<li><img data-src="../figures/logos/spotify-svgrepo-com.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://developer.spotify.com/documentation/web-api/">Spotify API</a></li>
+<li><img data-src="../figures/logos/New_York_Times_T_icon.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://developer.nytimes.com/">New York Times API</a></li>
+<li><img data-src="../figures/logos/the-guardian.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://open-platform.theguardian.com/">The Guardian API</a></li>
+<li><img data-src="../figures/logos/New_York_Times_T_icon.svg" class="img-fluid" style="height:1em;vertical-align:text-bottom;"> <a href="https://www.weather.gov/documentation/services-web-api">Weather.gov API</a></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip: Data is Plural</strong></p>
+</div>
+<div class="callout-content">
+<p>Data is Plural run by Buzzfeed’s data editor 🧑 <a href="https://www.jsvine.com/">Jeremy Singer-Vine</a>. People send him interesting/funny/odd datasets and he shares them in a weekly newsletter. <a href="https://www.data-is-plural.com/">Here’s the link</a> to the website (the google doc list of datasets is linked <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0">here</a>)</p>
+</div>
+</div>
+</div>
+</section></section>
+<section id="final-project-requirements" class="title-slide slide level1">
+<h1>Final project requirements</h1>
 <div>
 <ul>
-<li class="fragment">Social science: The goal is typically <strong>explanation</strong></li>
-<li class="fragment">Data science: The goal is frequently <strong>prediction</strong>, or data exploration</li>
-<li class="fragment">Many of the same methods are used for both objectives</li>
+<li class="fragment">Your main data source <em>must</em> be collected:
+<ul>
+<li class="fragment">using an API or,</li>
+<li class="fragment">by webscrapping</li>
+</ul></li>
+<li class="fragment">That is, you cannot use static datasets.
+<ul>
+<li class="fragment"><em><strong>the point of this course is for you to get past the technical barrier of collecting and handling data</strong></em></li>
+</ul></li>
+<li class="fragment">We will give you more detais during the Term.</li>
 </ul>
 </div>
 </section>
-<section id="practical-examples" class="slide level2">
-<h2>Practical examples</h2>
 
-<aside><div>
-<p><mark class="todo"> Give a pratical example of how one would approach the same dataset differently under these two modelling views. </mark></p>
-</div></aside></section>
+<section id="whats-next" class="title-slide slide level1">
+<h1>What’s Next?</h1>
+<div class="r-fit-text">
+<ul>
+<li class="fragment">Next week we will introduce you to <strong>The Terminal</strong></li>
+<li class="fragment">Join our <img data-src="../figures/logos/slack_logo_simple.svg" style="height:1em"> <a href="../main/communication.qmd">Slack group</a> if you haven’t done so yet.</li>
+<li class="fragment">Use the time before our first lab to revisit basic programming skills.</li>
+<li class="fragment">Head over to the 🔖 <a href="../weeks/week01/appendix.qmd">Week 01 - Appendix</a> page for:
+<ul>
+<li class="fragment">Indicative &amp; recommended reading</li>
+<li class="fragment">Programming Resources</li>
+</ul></li>
+</ul>
+</div>
+</section>
+
+<section>
+<section id="thank-you" class="title-slide slide level1">
+<h1>Thank you</h1>
+
+</section>
 <section id="references" class="slide level2 smaller scrollable" style="word-break:break-all;">
 <h2>References</h2>
 <div id="refs" class="r-fit-text references csl-bib-body hanging-indent" role="doc-bibliography">

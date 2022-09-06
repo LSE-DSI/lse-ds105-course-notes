@@ -1,0 +1,38 @@
+---
+title: "🔖 Week 01 - Appendix"
+date: 6 September 2022
+date-meta: 6 September 2022
+---
+
+## 💻 Labs
+
+We do not have classes this week. Instead, we recommend you use this time to learn or revisit the basics of a programming language (either R or Python).
+
+See sections below for advice on how to do that.
+
+## 📒 Preparing for the next week
+
+- Join the Slack group of this course [(more info)](/main/communication.qmd)
+- Use this time to learn or revisit basic programming skills. Remember: [later in this course](/main/syllabus.qmd), you will start working on a group project that will require some element of coding. You are free to use either R or Python. 
+
+## 🔖 Recommended Resources
+
+
+### LSE Digital Skills Lab
+
+LSE [Digital Skills Lab](https://info.lse.ac.uk/current-students/digital-skills-lab) offers R and python workshops during Term time and they will also give DSI students access to self-paced programming courses via Dataquest.
+
+If you want to take the self-paced course to revise basic R programming, sign up via [this link](https://lse.eu.qualtrics.com/jfe/form/SV_6DbHqit2R8Y324u).
+
+Keep an eye on the following pages for news of the in-person workshops:
+
+- [R workshops](https://info.lse.ac.uk/current-students/digital-skills-lab/r)
+- [Python workshops](https://info.lse.ac.uk/current-students/digital-skills-lab/python)
+
+
+### Other resources
+
+- Checkout this summer's LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain open to LSE students until the end of the year.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ready to develop the key skills employers are looking for in 2022?<br><br>Join this summer&#39;s LSE Careers Skills Accelerator programme to expand your skillset!<br><br>⭐Apply on CareerHub by 11.59pm, Wed 15 June for your chance to join the programme⭐<a href="https://t.co/J5sI1NRaMA">https://t.co/J5sI1NRaMA</a></p>&mdash; LSE Careers (@LSECareers) <a href="https://twitter.com/LSECareers/status/1534868470495596545?ref_src=twsrc%5Etfw">June 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
