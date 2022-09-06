@@ -28,7 +28,7 @@ format:
 
 ::: columns
 ::: {.column width="30%"}
-![](/figures/LSE%20Data%20Science%20Institute.png)
+![](/figures/logos/LSE%20Data%20Science%20Institute.png)
 :::
 
 ::: {.column .incremental .smaller width="60%"}
@@ -45,7 +45,7 @@ Sign up for DSI events at [lse.ac.uk/DSI/Events](https://www.lse.ac.uk/DSI/Event
 
 ::: columns
 ::: {.column width="30%"}
-![](/figures/LSE%20Data%20Science%20Institute.png)
+![](/figures/logos/LSE%20Data%20Science%20Institute.png)
 :::
 
 ::: {.column .incremental .smaller width="60%"}
@@ -252,7 +252,7 @@ The breakdown of assessment for this course will be as follows:
 
 ::: columns
 ::: {.column width="70%"}
-![](/figures/dalle_robot_holding_question_mark.png){.absolute height="80%"}
+![](/figures/dalee/dalle_robot_holding_question_mark.png){.absolute height="80%"}
 :::
 
 ::: {.column width="30%"}

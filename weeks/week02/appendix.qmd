@@ -1,6 +1,5 @@
 ---
 title: "🔖 Week 02 - Appendix"
-subtitle: "Operating Systems, Files & The Terminal"
 date: 1 September 2022
 date-meta: 1 September 2022
 ---
