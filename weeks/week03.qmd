@@ -15,7 +15,7 @@ Make sure you know your username that you will use to connect to the cloud. You 
 **INSTRUCTIONS FOR USERNAMES**
 </details>
 
-<details><summary>Step 1: Connecting to the cloud (5-20 min)</summary>
+<details><summary>Step 1: Connecting to the cloud (5-15 min)</summary>
 
 ## Step 1: Connecting to the cloud
 <p></p>
@@ -71,7 +71,7 @@ Viola! Now you are connected to the cloud!
 </details></details>
 
 
-<details><summary>Step 2: Exploring the machine (20 min)</summary>
+<details><summary>Step 2: Exploring the machine (7 min)</summary>
 
 ## Step 2: Exploring the machine
 
@@ -93,7 +93,7 @@ If you follow the instructions below you will see that the cloud machine is very
 
 </details>
 
-<details><summary> Step 3: File management in the cloud (20 min)</summary>
+<details><summary> Step 3: File management in the cloud (7 min)</summary>
 ## Step 3: File management in the cloud
 
 Now, you can see that the cloud machine is very similar to your local one. It means that we can also create files and directories there! 
@@ -113,7 +113,7 @@ Perfect! Now we have two (very secret) files in our system. In the next step we 
 
 </details>
 
-<details><summary> Step 4: A bridge between the worlds (10 min)</summary>
+<details><summary> Step 4: A bridge between the worlds (15 min)</summary>
 ## Step 4: A bridge between the worlds 
 
 In the first steps of this lab we have extablished a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and recieve files. In order to do that we will use the `scp` command that stands for "secure copy". Follow the steps below to save the secrets files you created above to your computer. 
@@ -164,7 +164,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
 
 </details>
 
-<details><summary>Step 5: Sending it back (20 min)</summary>
+<details><summary>Step 5: Sending it back (10 min)</summary>
 ## Step 5: Sending it back
 
 We have just learned how to copy files **from** the cloud. The last task for us today is to send files **to** the cloud machine. 
@@ -193,15 +193,65 @@ We have just learned how to copy files **from** the cloud. The last task for us 
 </details>
 
 
-<details><summary>(Bonus) 🏠 Practice at home: Getting closer to software engineering</summary>
-## Practice at home: Getting closer to software engineering
+<details><summary>Step 6: It can wait (10 min)</summary>
+## Step 6: It can wait 
+
+Great job so far! You have managed to connect to the cloud machine, navigate it and even exchange files with it. Now it's time to get to the most exciting part! Running code on the cloud! This is what you would usually use the cloud for. Imagine you need to process millions of rows of data and you computer would take ages to do that. A cloud can help here by executing it for you without taking the resources of your computer.
+
+Let's do it, but before that we will learn how to do a very interesting trick. 
+
+🎯 **ACTION POINTS** 
+
+1. Open a new bash shell window on your local machine. 
+2. Navigate to a directory of your choice or create one. 
+3. Create a new file called `waiting.py` and include the following code inside:
+
+    ```python
+    import time
+    time.sleep(10)
+
+    print('The waiting is complete.')
+    ```
+
+    This file launches a script that waits for 10 seconds and then prints *'The waiting is complete.'*. 
+    You might think that it doesn't make sense. However, let us show you something...
+
+4. Run this Python script in the following way:
+
+    ```bash
+    python waiting.py
+    ```
+
+    What did it do? Hopefully, exactly what was expected. It waited for 10 seconds and then printed one sentence. 
+    You might have noticed that you **could not** execute commands while it was running. But what if we could!
+
+5. Try running the following code:
+
+    ```bash
+    python waiting.py &
+    ```
+
+    Do you see the difference? Can you now run `whoami` or `ls` while we wait for the code to run? 
+
+Well done! Now you have learned how to create and run Python scripts in your terminal and also do things in parallel. Shall we try it in the cloud?
+
+</details>
+
+<details><summary>Step 7: Getting closer to software engineering (15 min)</summary>
+## Step 7: Getting closer to software engineering 
+
+Let's now explore the same operations in the cloud. 
 
 🎯 **ACTION POINTS** 
 
 1. Connect to the virtual machine.
 2. Creat a folder called `test_code`.
 3. Create a file called `test.py` or `test.R` depending on what language you want to use (for Python and R, respectively).
-4. In the file create a variable called `age`, assign it with your age and use the `print()` function to print it. 
+4. In the file 
+    * create a variable called `age`
+    * assign it with your age 
+    * make the machine wait for 5 seconds (`time.sleep(5)` in Python or `Sys.sleep(5)` in R)
+    * use `print()` function to print your age 
 5. Use the following code to execute your script on the cloud:
 
     ```bash
@@ -214,13 +264,8 @@ We have just learned how to copy files **from** the cloud. The last task for us 
     $ Rscript test.R
     ```
 6. Does it print your age?
+7. Go ahead and experiment with using the `&` operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it. 
 
 You can check out the tuttorial on how to run [Python scripts](https://www.freecodecamp.org/news/run-python-script-how-to-execute-python-shell-commands-in-terminal/) ot [R scripts](https://bookdown.org/pdr_higgins/rmrwr/cmd-line.html#what-about-r) to help you. 
 
 </details>
-
-[^1]: 
-
-[^2]: 
-
-[^3]: 
