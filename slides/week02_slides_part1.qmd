@@ -1,8 +1,10 @@
 ---
 title: "DS105 Data for Data Science"
-subtitle: "🗓️ Week 02 - Part I: Operating Systems, Files & The Terminal"
+title: "<font style='font-size:1em;'>🗓️ Week 02<br/> Operating Systems, Files & The Terminal</font>"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+date: 07 October 2022
+date-meta: 07 October 2022
 toc: true
 toc-depth: 1
 toc-title: "What we will cover today"
@@ -22,19 +24,231 @@ format:
     footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
 ---
 
-# Brief history of Operating Systems
+# Operating Systems
 
-## UNIX
+## What Operating Systems (OS) do {.smaller}
 
-## Linux
+::: columns
 
-## Windows
+::: {.column style="width:50%;font-size:0.9em;"}
 
-### Linux subsystem
+<!-- ::: {.incremental} -->
+- A computer can be divided in four parts:
+  - <mark>hardware</mark> — provides the basic computing resources for the system
+  - <mark>application programs</mark> — define the ways in which these resources are used
+  - <mark>operating system</mark> — controls the hardware and coordinates its use among the various application programs for the various users
+  - <mark>user</mark> — a person or a bot (a computer script) that requests actions from the computer.
+
+<!-- ::: -->
+
+:::
+
+::: {.column width=50%}
+
+<!-- ::: {.fragment} -->
+
+```{dot}
+//| data-id: 1
+//| fig-width: 5
+
+digraph {
+  pad=0.5;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontcolor="]212121", fontsize="20", style=filled, fillcolor="#cee8f6", color="#5cb4e4", shape=box, margin=0.4]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=3, color="#212121";]
+	
+	rankdir=TB;
+	
+	
+	user          [label="User"];
+	app           [label="Application Programs\n(compilers, web browsers, development kits, etc.)", fillcolor="#e8e8e8", color="#636363"];
+	os            [label="Operating System"];
+	hardware      [label="Computer Hardware\n(CPU, memory, I/O devices, etc.)", fillcolor="#e8e8e8", color="#636363"];
+	
+  user -> app      [dir="both"];
+  app  -> os       [dir="both"];
+  os   -> hardware [dir="both"];
+
+}
+```
+
+<!-- ::: -->
+:::
+
+:::
+
+
+::: aside
+For more details, check [@silberschatz_operating_2005, chapter 1]
+:::
+
+## Insight into operating systems {.smaller}
+<br/>
+<blockquote> _"An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an _environment_ within which other programs can do userful work."_ </blockquote>
+
+<p style="display:inline-block" align="right">
+
+--  [@silberschatz_operating_2005, chapter 1]
+</p>
+
+<br/>
+
+<!-- ::: {.incremental} -->
+- If this sounds a bit vague to you, it is because it is!
+- It is difficult to specify which programs are part of the OS and which ones are not.
+- Let's try to define what an OS is anyways ⏭️ 
+<!-- ::: -->
+
+## Definition of OS {.smaller}
+
+<!-- ::: incremental -->
+- "_The OS is the one programming running at all times on the computer_"
+  - This is usually also called the <mark>kernel</mark>
+- There are also other type of programs who might be running alongside. 
+  - For example, the ![](/figures/icons/console-svgrepo-com.svg){style="height: 1em;vertical-align:center;"} `Terminal` (more on that in a minute)
+- 📱 Mobile computers usually has a lot more "additional" software running alongside the kernel. We call it the <mark>middleware</mark>.
+  - These applications support things like: multimedia, graphics, internal app databases.
+<!-- ::: -->
+
+## Why bother with this? {.smaller background-color="#F9F9F9"}
+
+::: columns
+
+::: {.column width="70%"}
+<!-- ::: {.incremental} -->
+- It is improbable you will ever need to interact with the kernel directly.
+- But, we often need to install custom software to perform some data analysis
+	- This software might not come from Apple or Microsoft Store.
+	- Those are things you have to install "manually"
+<!-- ::: -->
+
+<!-- ::: {.fragment} -->
+::: callout-tip
+When that happens, you might encounter error messages that make no sense if you don't understand a little of how everything is tied together.
+<!-- ::: -->
+:::
+
+:::
+
+::: {.column width="30%"}
+![](/figures/dalee/dalee_question_doubt_concerns_digital_art_render_white_background.png)
+:::
+
+:::
+
+::: footer
+Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'question, doubt, concerns, digital art render, white background'* 🤓
+:::
+
+
+# History of Operating Systems
+
+![](/figures/icons/Tux.svg){.absolute width="5%" bottom="10%" left="70%"}
+
+![](/figures/icons/Unofficial_fan_made_Windows_XP_logo_variant.svg){.absolute width="10%" bottom="10%" left="77.5%"}
+
+![](/figures/icons/MacOS_original_logo.svg){.absolute width="9%" bottom="9%" left="90%"}
+
+## History {.smaller}
+
+::: columns
+
+::: {.column style="width=60%;"}
+
+<!-- ::: incremental -->
+- In the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the <mark>open source code</mark>.
+- You could read precisely which instructions the computer would follow when running the software.
+- As the industry grew, most software companies released only the <mark>binaries</mark> — a type of file you can only execute, not read as if it was a text.
+  - This includes Operating Systems! ⏭️
+
+<!-- ::: -->
+:::
+
+::: {.column style="width=40%;"}
+[![A computer from the 1950s.<br/>[@computer_history_museum_1950_nodate]](/figures/week02/timeline_computers_1950.era1101.jpg){style="width:65%;margin=0;"}](https://www.computerhistory.org/timeline/)
+
+:::
+
+::: 
+
+## UNIX {.smaller}
+
+::: columns
+
+::: {.column style="width=60%;"}
+
+<!-- ::: incremental -->
+- UNIX was the first big Operating System, developed at Bell Labs and AT&T
+- It aimed to be simple* and easy to port to any hardware architecture
+- But it required a license
+- In the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.
+<!-- ::: -->
+:::
+
+::: {.column style="width=40%;"}
+[![How the UNIX System III looks like.](/figures/week02/Simh-pdp11-unix-sysiii.png){style="width:100%;margin=0;"}](https://www.wikiwand.com/en/Unix)
+
+:::
+
+::: 
+
+::: aside
+
+::: {style="font-size:0.65em;"}
+\* As simple as these things get.
+:::
+
+:::
+
+::: footer
+Source: [Wikimedia Commons - Rwoodsmall](https://commons.wikimedia.org/wiki/File:Simh-pdp11-unix-sysiii.png)
+:::
+
+## GNU/Linux {.smaller}
+
+::: columns
+
+::: {.column style="width=60%;"}
+<!-- ::: incremental -->
+- This led to the birth of one of the most influential operating systems: <mark>GNU/Linux</mark>, or simply Linux.
+- ![](/figures/icons/Android_robot.svg){style="height:1em;"} Android, the most popular OS for phones worldwide, is based on Linux.   
+- Two people were instrumental to the development of Linux
+  - Richard Stallman
+  - Linu**s** Torvalds
+
+<!-- :::
+
+::: {.fragment} -->
+
+::: callout-note
+GNU stands for "GNU is not Unix". Yes, it is recursive.
+:::
+
+<!-- ::: -->
+
+
+:::
+
+::: {.column style="width=40%;"}
+<!-- Ghost column -->
+:::
+
+:::
+
+![A picture of Richard Stallman](/figures/week02/Richard_Stallman_-_F%C3%AAte_de_l'Humanit%C3%A9_2014_-_010.jpg){.absolute width="15%" top="10%" left="65%"}
+![A picture of Linus Torvalds](/figures/week02/1024025.jfif){.absolute width="15%" top="10%" left="85%"}
+
 
 ## MacOS
 
+## Windows
+
+# Virtualization
+
 ## Emulators & Virtual Machines
+
+## Windows' Linux Subsystem (WSL)
 
 # The Terminal
 
