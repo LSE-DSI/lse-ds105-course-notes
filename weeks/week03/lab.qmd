@@ -1,0 +1,272 @@
+---
+title: "💻 Week 03 - Lab Roadmap (90 min)"
+date: 16 September 2022
+date-meta: 16 September 2022
+author: Anton Boichenko
+---
+
+Last week we explored how to navigate your computer using the bash shell. Now, it is time to go beyond your machine and get to the cloud! 
+
+As we have seen in the lectures, accesssing the cloud opens a variety of possibilities for us as data scientists. This week we will explore some of them. Feel free to explore more on your own. We have provided you with some support resources. 
+
+<details><summary>Step 0: Acquire your credentials  (2 min)</summary>
+<p></p>
+Make sure you know your username that you will use to connect to the cloud. You should have been provided with one prior to the lab. You will use it for connecting to the virtual machine.
+
+**INSTRUCTIONS FOR USERNAMES**
+</details>
+
+<details><summary>Step 1: Connecting to the cloud (5-15 min)</summary>
+
+## Step 1: Connecting to the cloud
+<p></p>
+
+The first thing we will do is we will connect to the cloud. This will be done using an SSH connection. There are differences between UNIX systems and others in the way they work with SSH. Choose the OS you are using and follow the steps to connect to the cloud. 
+
+<details class="special"> <summary> ![](/figures/logos/windows_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Windows logo"} Windows users </summary>
+<p></p>
+
+There are various SSH clients that you can use for Windows. Here we explore the one called **PuTTY**. You will need to follow the steps below to establish an SSH connection. 
+
+🎯 **ACTION POINTS**
+
+1. Go to [this website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and download the installation file.
+2. Install PuTTY using the installation file.
+3. Launch PuTTY.
+4. Navigate to the `Host Name (or IP address)` box and enter the host address of our machine which is `ec2-18-130-96-20.eu-west-2.compute.amazonaws.com`
+5. Click **Open**.  
+   If you see a secrutiy alert pop up, simply click **Accept**. 
+6. Enter your username and your password (which is at this point your username).    
+   The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.
+
+Once the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your conection has been successfull, you will see the following screen.
+
+**INSERT IMAGE OF THE SCREEN**
+
+Viola! Now you are connected to the cloud!
+
+> If you wish to close your connection to the cloud simply write `exit` and hit enter. 
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/apple_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Apple logo"} macOS, Linux or WSL (Windows Subsystem for Linux) users </summary>
+<p></p>
+
+Luckily for macOS and Linux users the connection to the SSH is much simpler. You will see that following the steps below. 
+
+🎯 **ACTION POINTS** 
+
+1. Open the terminal.
+2. Type the following command after replacing `<username>` with your actual username.  
+
+    ```bash
+    $ ssh <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com
+    ```
+3. Enter your password (which is at this point your username).    
+   The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.
+
+Viola! Now you are connected to the cloud! 
+
+> If you wish to close your connection to the cloud simply write `exit` and hit enter. 
+
+</details></details>
+
+
+<details><summary>Step 2: Exploring the machine (7 min)</summary>
+
+## Step 2: Exploring the machine
+
+Now when you have connected to the cloud machine, you can explore it! Basically you are now inside a computer but it is running on a cloud server. It means that we can run the same commands as we ran locally last week.
+
+If you follow the instructions below you will see that the cloud machine is very similar to your local one.
+
+🎯 **ACTION POINTS** 
+
+1. Use the `pwd` and `$HOME` commands to understand whether you are in your home directory.
+
+2. Does your cloud machine have any files stored? Maybe any hidden files?  
+    *If you forgot how to answer those questions feel free to use the materials from last week.*
+
+3. Can you access the root directory of the machine? If so, what are the folders inside the root directory?
+
+4. Come back to your home directory to continue the exercises.  
+    *If you experience any difficulties, ask your teacher for help.*
+
+</details>
+
+<details><summary> Step 3: File management in the cloud (7 min)</summary>
+## Step 3: File management in the cloud
+
+Now, you can see that the cloud machine is very similar to your local one. It means that we can also create files and directories there! 
+
+Let's try doing it together!
+
+🎯 **ACTION POINTS** 
+
+1. Make sure you are in you home directory using `cd` and `pwd`.
+2. Create a folder called `<username>_files`. Make sure to replace `username` with your actual username. 
+3. Go to this folder and create a file called `secret_name.txt`.
+4. Save the name of **your favorite place to eat** in the file. It must be kept very secret. We don't need this place to be too crowded, do we?
+5. Create another file called `secret_address.txt`.
+4. Save the address of the same place there.
+
+Perfect! Now we have two (very secret) files in our system. In the next step we will explore how to send these files to your machine. 
+
+</details>
+
+<details><summary> Step 4: A bridge between the worlds (15 min)</summary>
+## Step 4: A bridge between the worlds 
+
+In the first steps of this lab we have extablished a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and recieve files. In order to do that we will use the `scp` command that stands for "secure copy". Follow the steps below to save the secrets files you created above to your computer. 
+
+Generally the `scp` commands work in the following way:
+
+```bash
+$ scp location_1/file location_2/file
+```
+
+It means that we are copying a file from `location_1` to `location_2`. Let's see how it's done with the cloud. 
+
+🎯 **ACTION POINTS** 
+
+
+1. Exit the cloud machine using the following code:
+
+ ```bash
+    $ exit 
+```
+2.  To copy the `secret_name.txt` file from your cloud machine use the following command. Make sure you have replaced all the `<username>`s with your actual username. 
+
+    ```bash
+    $ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .
+    ```
+
+    ❗ **Important**   
+    We would encourage you to pay attention to several things here: 
+    1. There is a **period symbol** at the end of the code. This period stands for you currentl location on your local machine. You remember that the `scp` command takes two locations - the one we copy the file **from** and the one we copy the file **to**. A period here basically says "Copy it right here". 
+    2. You can see that the actual path to the file on your virtual machine is specified after the hostname followed by a colon. First we specify the username, then the hostname and then the path inside of the machine. 
+
+3. Make sure the file is copied to the chosen directory. 
+4. But what if we wanted to copy **all the files** from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:
+
+    ```bash
+    $ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .
+    ```
+
+    This way we copy all the files from the `<username>_files` folder. 
+    
+    Should you wish to copy the **folder itself**, use the path to the folder. You will also add the `-r` (for _recursive_) option in the code as shown below.
+
+    ```bash
+    $ scp -r <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .
+    ```
+
+    **Make sure both commands worked for you.**
+
+</details>
+
+<details><summary>Step 5: Sending it back (10 min)</summary>
+## Step 5: Sending it back
+
+We have just learned how to copy files **from** the cloud. The last task for us today is to send files **to** the cloud machine. 
+
+
+🎯 **ACTION POINTS** 
+
+1. Choose any directory you want on your local machine and `cd` there. 
+2. Create a file called `secret_dish.txt` and save the name of your favorite dish there. 
+3. 🤔 Stop for a second. Do you think you can gues the way to copy this file to your cloud machine using your already acquired knowledge? 
+    We hid the solution for you to experiment. 
+
+<details><summary> Solution </summary>
+
+4. Use the code below to copy your file to the cloud machine. Make sure to replace the `<username>`s with your actual username. 
+
+    ```bash
+    $ scp secret_dish.txt <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files
+    ```
+
+</details>
+
+5. Log in to your virtual machine and check if the file is there. 
+
+</details>
+</details>
+
+
+<details><summary>Step 6: It can wait (10 min)</summary>
+## Step 6: It can wait 
+
+Great job so far! You have managed to connect to the cloud machine, navigate it and even exchange files with it. Now it's time to get to the most exciting part! Running code on the cloud! This is what you would usually use the cloud for. Imagine you need to process millions of rows of data and you computer would take ages to do that. A cloud can help here by executing it for you without taking the resources of your computer.
+
+Let's do it, but before that we will learn how to do a very interesting trick. 
+
+🎯 **ACTION POINTS** 
+
+1. Open a new bash shell window on your local machine. 
+2. Navigate to a directory of your choice or create one. 
+3. Create a new file called `waiting.py` and include the following code inside:
+
+    ```python
+    import time
+    time.sleep(10)
+
+    print('The waiting is complete.')
+    ```
+
+    This file launches a script that waits for 10 seconds and then prints *'The waiting is complete.'*. 
+    You might think that it doesn't make sense. However, let us show you something...
+
+4. Run this Python script in the following way:
+
+    ```bash
+    python waiting.py
+    ```
+
+    What did it do? Hopefully, exactly what was expected. It waited for 10 seconds and then printed one sentence. 
+    You might have noticed that you **could not** execute commands while it was running. But what if we could!
+
+5. Try running the following code:
+
+    ```bash
+    python waiting.py &
+    ```
+
+    Do you see the difference? Can you now run `whoami` or `ls` while we wait for the code to run? 
+
+Well done! Now you have learned how to create and run Python scripts in your terminal and also do things in parallel. Shall we try it in the cloud?
+
+</details>
+
+<details><summary>Step 7: Getting closer to software engineering (15 min)</summary>
+## Step 7: Getting closer to software engineering 
+
+Let's now explore the same operations in the cloud. 
+
+🎯 **ACTION POINTS** 
+
+1. Connect to the virtual machine.
+2. Creat a folder called `test_code`.
+3. Create a file called `test.py` or `test.R` depending on what language you want to use (for Python and R, respectively).
+4. In the file 
+    * create a variable called `age`
+    * assign it with your age 
+    * make the machine wait for 5 seconds (`time.sleep(5)` in Python or `Sys.sleep(5)` in R)
+    * use `print()` function to print your age 
+5. Use the following code to execute your script on the cloud:
+
+    ```bash
+    $ python test.py
+    ```
+
+    *or*
+
+    ```bash
+    $ Rscript test.R
+    ```
+6. Does it print your age?
+7. Go ahead and experiment with using the `&` operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it. 
+
+You can check out the tuttorial on how to run [Python scripts](https://www.freecodecamp.org/news/run-python-script-how-to-execute-python-shell-commands-in-terminal/) ot [R scripts](https://bookdown.org/pdr_higgins/rmrwr/cmd-line.html#what-about-r) to help you. 
+
+</details>

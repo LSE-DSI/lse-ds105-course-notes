@@ -67,7 +67,7 @@ These skills are **cumulative**, so practice what you learned each week and make
         
         <tr class="even">
             <td rowspan=3></td>
-            <td rowspan=3>🗓️ <a href="">Week 03</a></td>
+            <td rowspan=3>🗓️ <a href="/weeks/week03.qmd">Week 03</a></td>
             <td style="font-weight:bold;">Lecture</td>
             <td>The Cloud: accessing and getting data in and out.</td>
         </tr>

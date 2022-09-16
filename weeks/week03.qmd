@@ -1,0 +1,15 @@
+---
+title: "🗓️ Week 03 - The Cloud: accessing and getting data in and out."
+date: 16 September 2022
+date-meta: 16 September 2022
+---
+
+You probably use iCloud, Dropbox, Google Drive or OneDrive to store some of your files but what does it feel like to enter **the cloud**? We will learn how these systems are setup and in our labs, we will access and interact with a computer that lives in the Amazon WebService cloud (AWS).
+
+
+## Links
+
+- 👨‍🏫 [Lecture slides](/weeks/week03/lecture.qmd)
+
+- 💻 [Lab roadmap](/weeks/week03/lab.qmd)
+
