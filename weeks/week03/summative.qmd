@@ -7,12 +7,12 @@ author: Anton Boichenko
 
 Welcome to your first summative assessment for this course! We hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills. 
 
-A couple of things to know before you start: 
-
+### Things to know before you start:  
 1. You will need to upload some parts of this assignment on Moodle.
 2. The **deadline** for this assignment is on Moodle as well.
 3. You will be granted a maximum of 10 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
-3. Read the instructions carefully and make sure you follow them.
+4. You will need to take screenshots, [here is how you can do that](https://www.take-a-screenshot.org/). 
+4. Read the instructions carefully and make sure you follow them.
 
 ## P1: Book worms (2 points)
 
