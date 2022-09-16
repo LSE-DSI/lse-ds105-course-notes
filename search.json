@@ -84,6 +84,20 @@
     "text": "Links\n\n👨‍🏫 Lecture slides\n📒 Preparing for this week’s lab\n💻 Lab roadmap\n🔖 Appendix"
   },
   {
+    "objectID": "weeks/week03.html",
+    "href": "weeks/week03.html",
+    "title": "🗓️ Week 03 - The Cloud: accessing and getting data in and out.",
+    "section": "",
+    "text": "You probably use iCloud, Dropbox, Google Drive or OneDrive to store some of your files but what does it feel like to enter the cloud? We will learn how these systems are setup and in our labs, we will access and interact with a computer that lives in the Amazon WebService cloud (AWS)."
+  },
+  {
+    "objectID": "weeks/week03.html#links",
+    "href": "weeks/week03.html#links",
+    "title": "🗓️ Week 03 - The Cloud: accessing and getting data in and out.",
+    "section": "Links",
+    "text": "Links\n\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
+  },
+  {
     "objectID": "weeks/week01/appendix.html",
     "href": "weeks/week01/appendix.html",
     "title": "🔖 Week 01 - Appendix",
@@ -229,6 +243,62 @@
     "title": "📒 Week 02 - Preparing for the lab",
     "section": "",
     "text": "Bring your laptops. Tablets are not suitable for this class.\nStudents who use Windows will have to install additional software on their laptops. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of the Canonical tutorial 1 before coming to class.\nIn the lab we will practice the concepts introduced in this week’s lecture. If a concept introduced in the lecture was not clear to you, revisit the slides and bring your questions to the lab.\nBrowse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\nTry to replicate the lecture demo before coming to the lab.\n\n\n\n\n\nFootnotes\n\n\nTutorial: “Install Ubuntu on Wsl2 on Windows 11 with GUI Support”↩︎"
+  },
+  {
+    "objectID": "weeks/week03/lab.html",
+    "href": "weeks/week03/lab.html",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "",
+    "text": "Last week we explored how to navigate your computer using the bash shell. Now, it is time to go beyond your machine and get to the cloud!\nAs we have seen in the lectures, accesssing the cloud opens a variety of possibilities for us as data scientists. This week we will explore some of them. Feel free to explore more on your own. We have provided you with some support resources."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-1-connecting-to-the-cloud",
+    "href": "weeks/week03/lab.html#step-1-connecting-to-the-cloud",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 1: Connecting to the cloud",
+    "text": "Step 1: Connecting to the cloud\n\n\nThe first thing we will do is we will connect to the cloud. This will be done using an SSH connection. There are differences between UNIX systems and others in the way they work with SSH. Choose the OS you are using and follow the steps to connect to the cloud.\n\n\n Windows users\n\n\n\nThere are various SSH clients that you can use for Windows. Here we explore the one called PuTTY. You will need to follow the steps below to establish an SSH connection.\n🎯 ACTION POINTS\n\nGo to this website and download the installation file.\nInstall PuTTY using the installation file.\nLaunch PuTTY.\nNavigate to the Host Name (or IP address) box and enter the host address of our machine which is ec2-18-130-96-20.eu-west-2.compute.amazonaws.com\nClick Open.\nIf you see a secrutiy alert pop up, simply click Accept.\nEnter your username and your password (which is at this point your username).\nThe first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.\n\nOnce the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your conection has been successfull, you will see the following screen.\nINSERT IMAGE OF THE SCREEN\nViola! Now you are connected to the cloud!\n\nIf you wish to close your connection to the cloud simply write exit and hit enter.\n\n\n\n\n macOS, Linux or WSL (Windows Subsystem for Linux) users\n\n\n\nLuckily for macOS and Linux users the connection to the SSH is much simpler. You will see that following the steps below.\n🎯 ACTION POINTS\n\nOpen the terminal.\nType the following command after replacing <username> with your actual username.\n$ ssh <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com\nEnter your password (which is at this point your username).\nThe first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.\n\nViola! Now you are connected to the cloud!\n\nIf you wish to close your connection to the cloud simply write exit and hit enter."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-2-exploring-the-machine",
+    "href": "weeks/week03/lab.html#step-2-exploring-the-machine",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 2: Exploring the machine",
+    "text": "Step 2: Exploring the machine\nNow when you have connected to the cloud machine, you can explore it! Basically you are now inside a computer but it is running on a cloud server. It means that we can run the same commands as we ran locally last week.\nIf you follow the instructions below you will see that the cloud machine is very similar to your local one.\n🎯 ACTION POINTS\n\nUse the pwd and $HOME commands to understand whether you are in your home directory.\nDoes your cloud machine have any files stored? Maybe any hidden files?\nIf you forgot how to answer those questions feel free to use the materials from last week.\nCan you access the root directory of the machine? If so, what are the folders inside the root directory?\nCome back to your home directory to continue the exercises.\nIf you experience any difficulties, ask your teacher for help."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-3-file-management-in-the-cloud",
+    "href": "weeks/week03/lab.html#step-3-file-management-in-the-cloud",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 3: File management in the cloud",
+    "text": "Step 3: File management in the cloud\nNow, you can see that the cloud machine is very similar to your local one. It means that we can also create files and directories there!\nLet’s try doing it together!\n🎯 ACTION POINTS\n\nMake sure you are in you home directory using cd and pwd.\nCreate a folder called <username>_files. Make sure to replace username with your actual username.\nGo to this folder and create a file called secret_name.txt.\nSave the name of your favorite place to eat in the file. It must be kept very secret. We don’t need this place to be too crowded, do we?\nCreate another file called secret_address.txt.\nSave the address of the same place there.\n\nPerfect! Now we have two (very secret) files in our system. In the next step we will explore how to send these files to your machine."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-4-a-bridge-between-the-worlds",
+    "href": "weeks/week03/lab.html#step-4-a-bridge-between-the-worlds",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 4: A bridge between the worlds",
+    "text": "Step 4: A bridge between the worlds\nIn the first steps of this lab we have extablished a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and recieve files. In order to do that we will use the scp command that stands for “secure copy”. Follow the steps below to save the secrets files you created above to your computer.\nGenerally the scp commands work in the following way:\n$ scp location_1/file location_2/file\nIt means that we are copying a file from location_1 to location_2. Let’s see how it’s done with the cloud.\n🎯 ACTION POINTS\n\nExit the cloud machine using the following code:\n\n   $ exit \n\nTo copy the secret_name.txt file from your cloud machine use the following command. Make sure you have replaced all the <username>s with your actual username.\n$ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .\n❗ Important\nWe would encourage you to pay attention to several things here:\n\nThere is a period symbol at the end of the code. This period stands for you currentl location on your local machine. You remember that the scp command takes two locations - the one we copy the file from and the one we copy the file to. A period here basically says “Copy it right here”.\nYou can see that the actual path to the file on your virtual machine is specified after the hostname followed by a colon. First we specify the username, then the hostname and then the path inside of the machine.\n\nMake sure the file is copied to the chosen directory.\nBut what if we wanted to copy all the files from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:\n$ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .\nThis way we copy all the files from the <username>_files folder.\nShould you wish to copy the folder itself, use the path to the folder. You will also add the -r (for recursive) option in the code as shown below.\n$ scp -r <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .\nMake sure both commands worked for you."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-5-sending-it-back",
+    "href": "weeks/week03/lab.html#step-5-sending-it-back",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 5: Sending it back",
+    "text": "Step 5: Sending it back\nWe have just learned how to copy files from the cloud. The last task for us today is to send files to the cloud machine.\n🎯 ACTION POINTS\n\nChoose any directory you want on your local machine and cd there.\nCreate a file called secret_dish.txt and save the name of your favorite dish there.\n🤔 Stop for a second. Do you think you can gues the way to copy this file to your cloud machine using your already acquired knowledge? We hid the solution for you to experiment.\n\n\n\nSolution\n\n\nUse the code below to copy your file to the cloud machine. Make sure to replace the <username>s with your actual username.\n$ scp secret_dish.txt <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files\n\n\n\nLog in to your virtual machine and check if the file is there."
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-6-it-can-wait",
+    "href": "weeks/week03/lab.html#step-6-it-can-wait",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 6: It can wait",
+    "text": "Step 6: It can wait\nGreat job so far! You have managed to connect to the cloud machine, navigate it and even exchange files with it. Now it’s time to get to the most exciting part! Running code on the cloud! This is what you would usually use the cloud for. Imagine you need to process millions of rows of data and you computer would take ages to do that. A cloud can help here by executing it for you without taking the resources of your computer.\nLet’s do it, but before that we will learn how to do a very interesting trick.\n🎯 ACTION POINTS\n\nOpen a new bash shell window on your local machine.\nNavigate to a directory of your choice or create one.\nCreate a new file called waiting.py and include the following code inside:\nimport time\ntime.sleep(10)\n\nprint('The waiting is complete.')\nThis file launches a script that waits for 10 seconds and then prints ‘The waiting is complete.’. You might think that it doesn’t make sense. However, let us show you something…\nRun this Python script in the following way:\npython waiting.py\nWhat did it do? Hopefully, exactly what was expected. It waited for 10 seconds and then printed one sentence. You might have noticed that you could not execute commands while it was running. But what if we could!\nTry running the following code:\npython waiting.py &\nDo you see the difference? Can you now run whoami or ls while we wait for the code to run?\n\nWell done! Now you have learned how to create and run Python scripts in your terminal and also do things in parallel. Shall we try it in the cloud?"
+  },
+  {
+    "objectID": "weeks/week03/lab.html#step-7-getting-closer-to-software-engineering",
+    "href": "weeks/week03/lab.html#step-7-getting-closer-to-software-engineering",
+    "title": "💻 Week 03 - Lab Roadmap (90 min)",
+    "section": "Step 7: Getting closer to software engineering",
+    "text": "Step 7: Getting closer to software engineering\nLet’s now explore the same operations in the cloud.\n🎯 ACTION POINTS\n\nConnect to the virtual machine.\nCreat a folder called test_code.\nCreate a file called test.py or test.R depending on what language you want to use (for Python and R, respectively).\nIn the file\n\ncreate a variable called age\nassign it with your age\nmake the machine wait for 5 seconds (time.sleep(5) in Python or Sys.sleep(5) in R)\nuse print() function to print your age\n\nUse the following code to execute your script on the cloud:\n$ python test.py\nor\n$ Rscript test.R\nDoes it print your age?\nGo ahead and experiment with using the & operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it.\n\nYou can check out the tuttorial on how to run Python scripts ot R scripts to help you."
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
