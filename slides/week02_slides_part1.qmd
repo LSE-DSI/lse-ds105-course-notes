@@ -32,20 +32,20 @@ format:
 
 ::: {.column style="width:50%;font-size:0.9em;"}
 
-<!-- ::: {.incremental} -->
+::: {.incremental}
 - A computer can be divided in four parts:
   - <mark>hardware</mark> — provides the basic computing resources for the system
   - <mark>application programs</mark> — define the ways in which these resources are used
   - <mark>operating system</mark> — controls the hardware and coordinates its use among the various application programs for the various users
   - <mark>user</mark> — a person or a bot (a computer script) that requests actions from the computer.
 
-<!-- ::: -->
+:::
 
 :::
 
 ::: {.column width=50%}
 
-<!-- ::: {.fragment} -->
+::: {.fragment}
 
 ```{dot}
 //| data-id: 1
@@ -73,13 +73,13 @@ digraph {
 }
 ```
 
-<!-- ::: -->
+:::
 :::
 
 :::
 
 
-::: aside
+::: footer
 For more details, check [@silberschatz_operating_2005, chapter 1]
 :::
 
@@ -87,58 +87,58 @@ For more details, check [@silberschatz_operating_2005, chapter 1]
 <br/>
 <blockquote> _"An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an _environment_ within which other programs can do userful work."_ </blockquote>
 
-<p style="display:inline-block" align="right">
+<p align="right">
 
 --  [@silberschatz_operating_2005, chapter 1]
 </p>
 
 <br/>
 
-<!-- ::: {.incremental} -->
+::: {.incremental}
 - If this sounds a bit vague to you, it is because it is!
 - It is difficult to specify which programs are part of the OS and which ones are not.
 - Let's try to define what an OS is anyways ⏭️ 
-<!-- ::: -->
+:::
 
 ## Definition of OS {.smaller}
 
-<!-- ::: incremental -->
+::: incremental
 - "_The OS is the one programming running at all times on the computer_"
   - This is usually also called the <mark>kernel</mark>
 - There are also other type of programs who might be running alongside. 
   - For example, the ![](/figures/icons/console-svgrepo-com.svg){style="height: 1em;vertical-align:center;"} `Terminal` (more on that in a minute)
 - 📱 Mobile computers usually has a lot more "additional" software running alongside the kernel. We call it the <mark>middleware</mark>.
   - These applications support things like: multimedia, graphics, internal app databases.
-<!-- ::: -->
+:::
 
-## Why bother with this? {.smaller background-color="#F9F9F9"}
+## Why bother with this? {.smaller background-color="#D8DDE7"}
 
 ::: columns
 
 ::: {.column width="70%"}
-<!-- ::: {.incremental} -->
+::: {.incremental}
 - It is improbable you will ever need to interact with the kernel directly.
 - But, we often need to install custom software to perform some data analysis
 	- This software might not come from Apple or Microsoft Store.
 	- Those are things you have to install "manually"
-<!-- ::: -->
+:::
 
-<!-- ::: {.fragment} -->
+::: {.fragment}
 ::: callout-tip
 When that happens, you might encounter error messages that make no sense if you don't understand a little of how everything is tied together.
-<!-- ::: -->
+:::
 :::
 
 :::
 
 ::: {.column width="30%"}
-![](/figures/dalee/dalee_question_doubt_concerns_digital_art_render_white_background.png)
+![](/figures/dalee/dalee_gigantic_wooden_question_mark_looms_above_the_big_ben_ultra_realistic_awesome_painting.png)
 :::
 
 :::
 
 ::: footer
-Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'question, doubt, concerns, digital art render, white background'* 🤓
+Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'a gigantic wooden question mark looms above the big ben, ultra realistic awesome painting'* 🤓
 :::
 
 
@@ -156,13 +156,13 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 
 ::: {.column style="width=60%;"}
 
-<!-- ::: incremental -->
+::: incremental
 - In the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the <mark>open source code</mark>.
 - You could read precisely which instructions the computer would follow when running the software.
 - As the industry grew, most software companies released only the <mark>binaries</mark> — a type of file you can only execute, not read as if it was a text.
   - This includes Operating Systems! ⏭️
 
-<!-- ::: -->
+:::
 :::
 
 ::: {.column style="width=40%;"}
@@ -178,12 +178,12 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 
 ::: {.column style="width=60%;"}
 
-<!-- ::: incremental -->
+::: incremental
 - UNIX was the first big Operating System, developed at Bell Labs and AT&T
 - It aimed to be simple* and easy to port to any hardware architecture
 - But it required a license
 - In the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.
-<!-- ::: -->
+:::
 :::
 
 ::: {.column style="width=40%;"}
@@ -210,22 +210,25 @@ Source: [Wikimedia Commons - Rwoodsmall](https://commons.wikimedia.org/wiki/File
 ::: columns
 
 ::: {.column style="width=60%;"}
-<!-- ::: incremental -->
+::: {.fragment fragment-index=1}
 - This led to the birth of one of the most influential operating systems: <mark>GNU/Linux</mark>, or simply Linux.
+:::
+::: {.fragment fragment-index=3}
 - ![](/figures/icons/Android_robot.svg){style="height:1em;"} Android, the most popular OS for phones worldwide, is based on Linux.   
+:::
+::: {.fragment fragment-index=4}
 - Two people were instrumental to the development of Linux
   - Richard Stallman
   - Linu**s** Torvalds
+:::
 
-<!-- :::
-
-::: {.fragment} -->
+::: {.fragment fragment-index=2}
 
 ::: callout-note
 GNU stands for "GNU is not Unix". Yes, it is recursive.
 :::
 
-<!-- ::: -->
+:::
 
 
 :::
@@ -236,19 +239,115 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 
 :::
 
+::: {.fragment fragment-index=4}
+
 ![A picture of Richard Stallman](/figures/week02/Richard_Stallman_-_F%C3%AAte_de_l'Humanit%C3%A9_2014_-_010.jpg){.absolute width="15%" top="10%" left="65%"}
 ![A picture of Linus Torvalds](/figures/week02/1024025.jfif){.absolute width="15%" top="10%" left="85%"}
 
+:::
 
-## MacOS
+![](/figures/icons/Tux.svg){.absolute height="10%" bottom="8%" left="95%"}
+
+
+## macOS
+
+::: {.incremental}
+- macOS is the Operating System of Apple computers
+- It is a hybrid system. It has a free open source component called [Darwin](https://github.com/apple/darwin-xnu), but it includes proprietary, closed-source components as well.
+- iOS, Apple's mobile operating system, is also based on Darwin
+- Darwin itself is based on BDS UNIX, a derivative of the original UNIX system.
+:::
+
+![](/figures/icons/MacOS_original_logo.svg){.absolute width="9%" bottom="9%" left="95%"}
+
 
 ## Windows
 
-# Virtualization
+![](/figures/logos/windows_logo.svg){.absolute height="10%" bottom="8%" left="95%"}
 
-## Emulators & Virtual Machines
+# Virtualization {.smaller}
 
-## Windows' Linux Subsystem (WSL)
+::: columns
+
+::: {.column style="width=60%;"}
+::: {.incremental}
+- <mark>Virtualization</mark> is a technology that creates the **illusion** that you are running a separate private computer. 
+- You decide how much of your CPU/RAM/Hard drive to share with the <mark>virtual machine</mark>
+:::
+:::
+
+::: {.column style="width=40%;"}
+![](/figures/week02/svg-virtualization.svg){.absolute width="40%" right="0%" top="17.5%"}
+:::
+
+:::
+
+
+## Emulators & Virtual Machines {.smaller}
+
+::: columns
+
+::: {.column style="width=60%;"}
+
+::: {.fragment fragment-index=1}
+- You can install an <mark>emulator</mark> to run Windows inside Mac (and vice-versa) 
+  - Provided you own a licence to install the other OS
+:::
+::: {.fragment fragment-index=2} 
+- You can share files to and from the <mark>virtual machine</mark> inside the emulator, but the internal machine will "think" it is a separate computer.
+:::
+::: {.fragment fragment-index=4} 
+- In the 🖥️ labs on 🗓️ [Week 03](/weeks/week03), you will access a virtual machine that lives in the cloud
+:::
+:::
+
+::: {.column style="width=40%;"}
+
+::: {.fragment fragment-index=3}
+- Example of commercial virtualization softwares
+
+![](/figures/week02/Virtualbox_logo.png){.absolute width="15%" right="5%" top="27.5%"}
+
+![](/figures/week02/Vmware.svg){.absolute width="17.5%" right="25%" top="35%"}
+:::
+
+:::
+
+:::
+
+## Windows Subsystem for Linux (WSL) {.smaller}
+
+::: {.fragment}
+- In an attempt to entice Linux users (especially developers), Microsoft added a Linux emulator to Windows named "Windows Subsystem for Linux"
+:::
+
+::: {.fragment}
+- You install your preferred Linux distribution
+  - <mark style="color:#DD4713;">Ubuntu</mark> is one of the most popular
+
+![](/figures/week02/ubuntu-logo14.png){.absolute width="17.5%" right="0%" bottom="57.5%"}
+:::
+
+::: columns
+
+::: {.column width="40%"}
+
+::: {.fragment}
+
+::: callout-tip
+- Our 🖥️ labs on Weeks 2 & 3 will focus on Linux/UNIX-like commands. 
+- Windows users will have to install WSL on their computers.
+:::
+
+:::
+
+:::
+
+::: {.column width="60%"}
+
+:::
+
+:::
 
 # The Terminal
 
