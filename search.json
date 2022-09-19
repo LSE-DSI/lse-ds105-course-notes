@@ -235,7 +235,7 @@
     "href": "weeks/week02/lecture.html#part-ii---demo-navigating-the-terminal-45-50-min",
     "title": "👨‍🏫 Week 02 - Slides",
     "section": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)",
-    "text": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)"
+    "text": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)\n\nLet’s open the Terminal!\nI will show you around your PC using some basic shell commands\nA tour around vim, a file editor\nLet’s look at a few file formats\n\nTXT\nHTML\nJSON\nCSV\nScripts\nBinary files\n\n\nTo learn more about the commands shown in the demo, read (Pelz 2018, chaps. 2–3)"
   },
   {
     "objectID": "weeks/week02/prep.html",
@@ -361,14 +361,21 @@
     "href": "slides/week01_slides_part1.html#your-lecturer",
     "title": "DS105 Data for Data Science",
     "section": "Your lecturer",
-    "text": "Your lecturer\n\n \n Also present the teaching assistants"
+    "text": "Your lecturer\n\n\n\n\n\n \nDr. Jonathan Cardoso-Silva\n\nPhD in Computer Science\nBackground: Computer Science,Engineering,Data Science\nResearch:\n\nNetworks\nOptimisation\nMachine Learning applications\nData Science Workflow"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#teaching-assistants",
+    "href": "slides/week01_slides_part1.html#teaching-assistants",
+    "title": "DS105 Data for Data Science",
+    "section": "Teaching Assistants",
+    "text": "Teaching Assistants\n\n\n\nAnton Boichenko  Guest Teacher Developer at Decoded   \n\n\nXiaowei Gao  Guest Teacher PhD Student at KCL in Health Informatics  \n\n\nYijun Wang  Guest Teacher PhD Student at UCL Centre for Advanced Spatial Analysis"
   },
   {
     "objectID": "slides/week01_slides_part1.html#learning-objectives-cont.",
     "href": "slides/week01_slides_part1.html#learning-objectives-cont.",
     "title": "DS105 Data for Data Science",
     "section": "Learning Objectives (cont.)",
-    "text": "Learning Objectives (cont.)\nThe course will also cover:\n\n\nworkflow management of individual and collaborative data science project\nsetup and tools for typical data pre-processing (data transformation and data cleaning)\n\nfrequently the starting point and most time-consuming part of any data science project.\n\n\n\n\n\n\nCheck  this link  for a more comprehensive set of learning objectives."
+    "text": "Learning Objectives (cont.)\nThe course will also cover:\n\n\nworkflow management of individual and collaborative data science project\nsetup and tools for typical data pre-processing (data transformation and data cleaning)\n\nfrequently the starting point and most time-consuming part of any data science project."
   },
   {
     "objectID": "slides/week01_slides_part1.html#syllabus",
@@ -396,7 +403,14 @@
     "href": "slides/week01_slides_part1.html#class-groups",
     "title": "DS105 Data for Data Science",
     "section": "Class groups",
-    "text": "Class groups\n Update the groups here once we hear back from LSE Timetables"
+    "text": "Class groups"
+  },
+  {
+    "objectID": "slides/week01_slides_part1.html#class-groups-1",
+    "href": "slides/week01_slides_part1.html#class-groups-1",
+    "title": "DS105 Data for Data Science",
+    "section": "Class groups",
+    "text": "Class groups\n\n\n\nGroup 01\n\n📆 Fridays\n⌚ 09:00 — 10:30\n📍 32L.G.06\n\n\nGroup 02\n\n📆 Fridays\n⌚ 12:00 — 13:30\n📍 NAB.LG.03\n\n\nGroup 03\n\n📆 Fridays\n⌚ 16:00 — 17:30\n📍 KSW.1.02\n\n\n\n\n🗺️ Check LSE campus map"
   },
   {
     "objectID": "slides/week01_slides_part1.html#assessments",
@@ -438,7 +452,7 @@
     "href": "slides/week01_slides_part1.html#communication",
     "title": "DS105 Data for Data Science",
     "section": "Communication",
-    "text": "Communication\n\n\nJoin our Slack group:  add link to slack\nUse the public Slack channels to talk to share links, content (or memes) with your colleagues.\nOur teaching team will dedicate some time during the week to answer questions or other interactions on Slack.\nReserve 📧 e-mail for formal requests: extensions, deferrals, etc.\n\nNo need to e-mail to inform you will skip a class, for example."
+    "text": "Communication\n\n\nJoin our Slack group (more info here)\nUse the public Slack channels to talk to share links, content (or memes) with your colleagues.\nOur teaching team will dedicate some time during the week to answer questions or other interactions on Slack.\nReserve 📧 e-mail for formal requests: extensions, deferrals, etc.\n\nNo need to e-mail to inform you will skip a class, for example."
   },
   {
     "objectID": "slides/week01_slides_part1.html#any-questions",
