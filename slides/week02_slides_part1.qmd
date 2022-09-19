@@ -123,8 +123,8 @@ For more details, check [@silberschatz_operating_2005, chapter 1]
 	- Those are things you have to install "manually"
 :::
 
-::: {.fragment}
-::: callout-tip
+::: {.fragment style="background-color:white"}
+::: {.callout-tip}
 When that happens, you might encounter error messages that make no sense if you don't understand a little of how everything is tied together.
 :::
 :::
@@ -202,7 +202,7 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 :::
 
 ::: footer
-Source: [Wikimedia Commons - Rwoodsmall](https://commons.wikimedia.org/wiki/File:Simh-pdp11-unix-sysiii.png)
+[Source: [Wikimedia Commons - Rwoodsmall](https://commons.wikimedia.org/wiki/File:Simh-pdp11-unix-sysiii.png)]{style="font-size:0.6em;"}
 :::
 
 ## GNU/Linux {.smaller}
@@ -246,7 +246,7 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 
 :::
 
-![](/figures/icons/Tux.svg){.absolute height="10%" bottom="8%" left="95%"}
+![](/figures/icons/Tux.svg){.absolute height="10%" bottom="8%" right="0%"}
 
 
 ## macOS
@@ -261,9 +261,21 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 ![](/figures/icons/MacOS_original_logo.svg){.absolute width="9%" bottom="9%" left="95%"}
 
 
-## Windows
+## Windows {.smaller}
+
+- Windows has its own history. 
+- Its predecessor, OS/2 operating system was co-developed by Microsoft and IBM.
+- But then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.
+- Windows popularity can be traced to the success of the Office suite 
+
+![](/figures/week02/Microsoft_Office_logos_2013_2019.svg){.absolute height="25%" bottom="8%" left="0%"}
 
 ![](/figures/logos/windows_logo.svg){.absolute height="10%" bottom="8%" left="95%"}
+
+::: footer
+[See [@silberschatz_operating_2005, Appendix B] for more on Windows.]{style="font-size:0.6em;"}
+:::
+
 
 # Virtualization {.smaller}
 
@@ -297,7 +309,9 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 - You can share files to and from the <mark>virtual machine</mark> inside the emulator, but the internal machine will "think" it is a separate computer.
 :::
 ::: {.fragment fragment-index=4} 
+::: {.callout-note}
 - In the 🖥️ labs on 🗓️ [Week 03](/weeks/week03), you will access a virtual machine that lives in the cloud
+:::
 :::
 :::
 
@@ -349,20 +363,235 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 
 :::
 
-# The Terminal
+# The Terminal {.smaller}
 
-## Shell / Bash
+- A <mark>terminal</mark>, or <mark>command prompt</mark>, is a screen or a window that lets you access the Operating System's input and output.
+- There are no graphics (images/video) in the terminal, only text.
 
-## Windows CMD vs PowerShell
+![](/figures/week02/Appleterminal2.png){.absolute width="50%" left="25%" top="40%"}
+
+::: footer
+[Image source: [Gortu](https://en.wikipedia.org/wiki/User:Gortu) at [English Wikipedia](https://commons.wikimedia.org/wiki/File:Appleterminal2.png)]{style="font-size:0.6em;"}
+:::
+
+## Shell {.smaller}
+
+::: incremental
+- Typically, the terminal runs a program (app) called the <mark>shell</mark>.
+- The shell awaits, interprets, processes, executes, and responds to commands typed in by the user.
+- There are many shells, each has its own features.
+- Popular Linux shells:
+  - **`sh`** or the **Bourne shell**: developed at AT&T labs in the 70s by a guy named Stephen Bourne.
+  - **`bash`** or the **Bourne again shell**: very popular, compatible with `sh` shell scripts. 
+    - Our 🖥️ labs will focus on `bash`
+  - **`ksh`** or the **Korn shell**: provides enhancements over the `sh` and it is also compatible with `bash`.
+  - **`csh`** and **`tcsh`**: shells that have a syntax similar to the programming language `C`.
+:::
+
+::: footer
+Want to become a pro at shell scripting? Check out [@ebrahim_mastering_2018].
+:::
+
+## Windows CMD vs PowerShell {.smaller}
+
+- As mentioned before, Windows has its own thing.
+- There are two main terminals/shells on Windows these days
+
+::: columns
+
+::: {.column width="55%"}
+CMD
+:::
+
+::: {.column width="45%"}
+Powershell
+:::
+
+:::
+
+![](/figures/week02/Windows_Command_Prompt_running_on_Windows_8.1.png){.absolute width="45%" left="0%" top="40%"}
+
+![](/figures/week02/Powershell_Intellisense_example_for_the_Get-Process_cmdlet.gif){.absolute width="45%" right="0%" top="40%"}
+
+::: footer
+[Original product: Microsoft. This animation: <a href="https://commons.wikimedia.org/wiki/File:Powershell_Intellisense_example_for_the_Get-Process_cmdlet.gif">Useerup</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons]{style="font-size:0.6em;"}
+:::
+
 
 # Files & Filesystems
 
-## What are files?
+::: footer
+Read more on [@pelz_fundamentals_2018, chapter 3]
+:::
 
-## The hierarchical structure of directories
+## What are files? {.smaller}
 
-## UNIX file structure
+::: columns
+::: {.column width="60%"}
+![](/figures/dalee/dalle_robot_holding_question_mark.png){.absolute height="80%"}
+:::
 
+::: {.column width="40%"}
+
+::: {.incremental}
+- Ultimately, everything in a computer is just a bunch of `0`s and `1`s
+- Files are a set of conventions that allows us to extract information from them.
+- Let's see where these ideas come from ⏭️
+:::
+
+:::
+
+::: footer
+[Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'35mm macro photography of a robot holding a question mark card, white background'*]{style="font-size:0.6em;"}
+:::
+:::
+
+## Structured data: Index cards
+
+* Origins in the 19th century, with botanist [Carl Linnaeus](https://en.wikipedia.org/wiki/Carl_Linnaeus), who needed to record species that he was studying
+
+* This was a form of _database_
+    - each piece of information about a species formed a _field_
+    - each species' entry in the system formed a _record_
+    - the records were _indexed_ using some reference system
+
+---
+
+## Heyday: Use in libraries to catalog books
+
+![card catalog](/figures/week02/cardcatalog.png "Card catalog"){.absolute width="45%" left="0%" top="25%"}
+![card catalog room](/figures/week02/cardcatalog3.png "Card catalog room"){.absolute width="45%" right="0%" top="25%"}
+    
+
+---
+
+## A record looked like this
+
+![](/figures/week02/cardcatalog2.png "Card record"){.absolute width="50%" left="25%" top="25%"}
+
+---
+
+## Dewey decimal system {.smaller}
+
+::: {.incremental}
+- a proprietary library classification system first published in the United States by Melvil Dewey in 1876
+- scheme is made up of ten classes, each divided into ten divisions, each having ten sections
+- the system's notation uses Arabic numbers, with three whole numbers making up the main classes and sub-classes and decimals creating further divisions
+:::
+
+::: {.fragment}
+- Example:
+
+    ```text
+    500 Natural sciences and mathematics
+        510 Mathematics
+            516 Geometry
+                516.3 Analytic geometries
+                    516.37 Metric differential geometries
+                        516.375 Finsler Geometry
+    ```
+:::
+---
+
+
+## Hierarchical directory structure {.smaller}
+
+::: columns
+
+::: {.column width="50%"}
+::: incremental
+- This kind of hierarchical structure is still present in all modern OSes
+- A <mark>directory</mark>, or folder, is a place where many files are stored
+- In theory, it can contain infinite sub-directories and files
+:::
+:::
+
+::: {.column width="40%"}
+:::
+
+:::
+
+
+![](/figures/week02/file_structure.png){.absolute width="40%" right="0%" top="25%"}
+
+## UNIX directory tree 
+
+```{dot}
+//| data-id: 1
+//| fig-width: 10
+
+digraph {
+  pad=0.5;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontcolor="#212121", fontsize="20", style=filled, fillcolor="#cee8f6", color="#5cb4e4", shape=box, margin=0.4]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=3, color="#212121";]
+	
+	rankdir=TB;
+	
+	
+	root          [label="/"];
+	bin           [label="bin"];
+	dev           [label="dev"];
+	etc           [label="etc"];
+	home          [label="home"];
+  jonathan      [label="jonathan"];
+  documents     [label="Documents"];
+  workspace     [label="Workspace"];
+  ds105         [label="lse-ds105-course-notes"];
+  images        [label="Images"];
+  videos        [label="Videos"];
+  downloads     [label="Downloads"];
+  lib           [label="lib"];
+  mnt           [label="mnt"];
+  proc          [label="proc"];
+  namedroot     [label="root"];
+  sbin          [label="sbin"];
+  tmp           [label="tmp"];
+  usr           [label="usr"];
+  var           [label="var"];
+  usr_lib       [label="lib"];
+  usr_bin       [label="bin"];
+  usr_include   [label="include"];
+  var_log       [label="log"];
+  var_mail      [label="mail"];
+  var_spool     [label="spool"];
+  var_tmp       [label="tmp"];
+	
+  
+  root -> bin;
+  root -> dev;
+  root -> etc;
+  root -> home -> jonathan;
+  jonathan -> documents;
+  documents -> workspace -> ds105;
+  jonathan -> images;
+  jonathan -> videos;
+  jonathan -> downloads;
+  root -> lib;
+  root -> mnt;
+  root -> proc;
+  root -> namedroot;
+  root -> sbin;
+  root -> tmp;
+  root -> usr;
+  root -> var;
+  usr -> usr_bin;
+  usr -> usr_lib;
+  usr -> usr_include;
+
+  var -> var_log;
+  var -> var_mail;
+  var -> var_spool;
+  var -> var_tmp;
+}
+```
+
+
+::: footer
+[Check out [this webpage](https://www.geeksforgeeks.org/unix-file-system/) for a description of what each directory represents]{}
+:::
+<!-- 
 ## Windows file structure
 
 # File types 
@@ -383,15 +612,14 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 
 ## Scripts
 
-## Obfuscated Binary files
+## Obfuscated Binary files -->
 
-# What's after the ☕ break:
+# After the ☕ break:
 
 - Let's open the Terminal!
-- Basic commands
-  - Understand where we are
-  - Create, move and delete files
-- A tour around `vim`
+- Basic shell commands
+- A tour around `vim`, a file editor
+- Common file formats
 - How to prepare for the lab this week
 
 ------------------------------------------------------------------------
