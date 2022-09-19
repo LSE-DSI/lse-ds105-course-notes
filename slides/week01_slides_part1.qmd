@@ -3,6 +3,8 @@ title: "DS105 Data for Data Science"
 subtitle: "🗓️ Week 01 - Part I: Structure of the course"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+date: 30 September 2022
+date-meta: 30 September 2022
 toc: true
 toc-depth: 1
 toc-title: "What we will cover today"
@@ -97,12 +99,66 @@ DSI offer accessible introductions to Data Science:
 :::
 :::
 
-## Your lecturer
+## Your lecturer {.smaller}
 
--   <mark class="todo"> </mark>
--   <mark class="todo"> Also present the teaching assistants </mark>
+![](/figures/people/jon.jpeg){.absolute width="20%" left="15%" top="28.5%"}
 
-<!-- ## Who are you {.scrollable} Check students degree programme--> 
+::: columns
+
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+<br/>
+<br/>
+
+**Dr. Jonathan Cardoso-Silva**
+
+- PhD in Computer Science
+- Background: Computer Science,Engineering,Data Science
+- Research: 
+    - Networks
+    - Optimisation
+    - Machine Learning applications
+    - Data Science Workflow
+
+:::
+
+:::
+
+## Teaching Assistants {.smaller}
+
+::: columns
+
+::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+![](/figures/people/Anton.jpg){fig-align="left" fig-alt="Photo of Anton Boichenko" width="5em"}  
+**[Anton Boichenko](http://boychenko.pro/)** <br/>
+_Guest Teacher_<br/>
+Developer at Decoded
+<br/>
+<br/>
+<br/>
+:::
+
+::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+![](/figures/people/Xiaowei.png){fig-align="left" fig-alt="Photo of Xiaowei Gao" width="5em"}  
+**[Xiaowei Gao](https://github.com/UCLWilson)** <br/>
+_Guest Teacher_<br/>
+PhD Student at KCL in Health Informatics
+<br/>
+<br/>
+:::
+
+::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+![](/figures/people/Yijun.jpg){fig-align="left" fig-alt="Photo of Yijun Wang" width="5em"}  
+**[Yijun Wang](https://www.kcl.ac.uk/people/yijun-wang)** <br/>
+_Guest Teacher_<br/>
+PhD Student at UCL Centre for Advanced Spatial Analysis
+:::
+
+:::
+
+
 
 # Learning Objectives
 
@@ -140,13 +196,6 @@ The course will also cover:
 - **workflow management** of individual and collaborative data science project 
 - setup and tools for typical **data pre-processing** (data transformation and data cleaning)
     - frequently the starting point and most time-consuming part of any data science project.
-:::
-
-
-::: aside
-::: {.fragment .fade-in}
-Check <mark class="todo"> this link </mark> for a more comprehensive set of learning objectives.
-:::
 :::
 
 
@@ -188,7 +237,42 @@ Our lectures will be split in two parts:
 
 ## Class groups
 
-<mark class="todo"> Update the groups here once we hear back from LSE Timetables</mark>
+## Class groups
+
+<br/>
+
+::: columns
+
+::: {.column style="width: 29%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:1%;padding:1.5%;font-size:0.8em;"}
+**Group 01**
+
+- 📆 Fridays 
+- ⌚ 09:00 — 10:30
+- 📍 32L.G.06
+:::
+
+::: {.column style="width: 29%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:1%;padding:1.5%;font-size:0.8em;"}
+**Group 02**
+
+- 📆 Fridays 
+- ⌚ 12:00 — 13:30
+- 📍 NAB.LG.03
+:::
+
+::: {.column style="width: 29%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-right:1%;padding:1.5%;font-size:0.8em;"}
+**Group 03**
+
+- 📆 Fridays 
+- ⌚ 16:00 — 17:30
+- 📍 KSW.1.02
+:::
+
+
+:::
+
+::: footer
+🗺️ Check [LSE campus map](https://www.lse.ac.uk/lse-information/campus-map)
+:::
 
 ## Assessments :notebook_with_decorative_cover:
 
@@ -241,7 +325,7 @@ The breakdown of assessment for this course will be as follows:
 ## Communication
 
 ::: incremental
--   Join our Slack group: <mark class="todo"> add link to slack</mark>
+-   Join our Slack group (more info [here](/main/communication.html))
 -   Use the public Slack channels to talk to share links, content (or *memes*) with your colleagues.
 -   Our teaching team will dedicate some time during the week to answer questions or other interactions on Slack.
 -   Reserve :email: e-mail for **formal requests**: extensions, deferrals, etc.
