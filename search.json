@@ -301,6 +301,41 @@
     "text": "Step 7: Getting closer to software engineering\nLet’s now explore the same operations in the cloud.\n🎯 ACTION POINTS\n\nConnect to the virtual machine.\nCreat a folder called test_code.\nCreate a file called test.py or test.R depending on what language you want to use (for Python and R, respectively).\nIn the file\n\ncreate a variable called age\nassign it with your age\nmake the machine wait for 5 seconds (time.sleep(5) in Python or Sys.sleep(5) in R)\nuse print() function to print your age\n\nUse the following code to execute your script on the cloud:\n$ python test.py\nor\n$ Rscript test.R\nDoes it print your age?\nGo ahead and experiment with using the & operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it.\n\nYou can check out the tuttorial on how to run Python scripts ot R scripts to help you."
   },
   {
+    "objectID": "weeks/week03/summative.html",
+    "href": "weeks/week03/summative.html",
+    "title": "💻 Week 03 - Summative assessment",
+    "section": "",
+    "text": "Welcome to your first summative assessment for this course! We hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills."
+  },
+  {
+    "objectID": "weeks/week03/summative.html#p1-book-worms-2-points",
+    "href": "weeks/week03/summative.html#p1-book-worms-2-points",
+    "title": "💻 Week 03 - Summative assessment",
+    "section": "P1: Book worms (2 points)",
+    "text": "P1: Book worms (2 points)\n🎯 ACTION POINTS\n\nOpen the bash shell on your local machine.\nCreate a .txt file called my_fav_book.txt.\nAdd the title and the author of your favourite book to the file in the following way:\nTitle: Aristotle\n\nAuthor: Politics\nCreate a folder on your cloud machine called summative_03 and copy that .txt file to that folder. The folder should be located in the following way: /home/<username>/summative_03.\nMake sure you copy the file from your local machine to the cloud and not create an identical one straight on the cloud machine.\n\nConnect to the cloud machine.\nUsing the cloud bash shell, print the content and the metadata (feel free to look at our last week’s materials) of this file. Then, take a screenshot of the result of those commands running. Please, make sure that your username is visible in the screenshot."
+  },
+  {
+    "objectID": "weeks/week03/summative.html#p2-run-the-code-in-the-cloud-3-points",
+    "href": "weeks/week03/summative.html#p2-run-the-code-in-the-cloud-3-points",
+    "title": "💻 Week 03 - Summative assessment",
+    "section": "P2: Run the code in the cloud (3 points)",
+    "text": "P2: Run the code in the cloud (3 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nCreate a Python or an R script called script.py or script.R, respectively, in the folder called summative_03.\nThe script must do the following:\n\nPrint your AWS username (the one you were provided at the beginning of the course)\nPrint the current time (you can search for ways to do that)\nWait for 10 seconds\nPrint the current time again\n\nRun the script and take a screenshot of the results of running it.\nRun the script again but this time make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an ls command while Python is waiting for 10 seconds in-between printing commands. Take a screenshot of the result of this code running.\nPrint the metadata of your file and take a screenshot of it."
+  },
+  {
+    "objectID": "weeks/week03/summative.html#p3-its-time-to-search-5-points",
+    "href": "weeks/week03/summative.html#p3-its-time-to-search-5-points",
+    "title": "💻 Week 03 - Summative assessment",
+    "section": "P3: It’s time to search (5 points)",
+    "text": "P3: It’s time to search (5 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nNavigate to the /home/admin/week_03 directory. You will see a lot of .md files there. One of them is yours.\nFind the file that was created for you.\nThis part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your LSE ID in it.\nCopy this file to the summative_03 folder on your user within the cloud machine.\nChange the permissions on this file for you to be able to edit it.\nEdit the file and answer the questions in it.\nPrint the content of the file and the file’s metadata. Take a screenshot of both."
+  },
+  {
+    "objectID": "weeks/week03/summative.html#p4-submit-no-points",
+    "href": "weeks/week03/summative.html#p4-submit-no-points",
+    "title": "💻 Week 03 - Summative assessment",
+    "section": "P4: Submit (no points)",
+    "text": "P4: Submit (no points)\nUpload your screenshots to Moodle togther with the infromation required."
+  },
+  {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
     "href": "slides/week01_slides_part1.html#the-data-science-institute",
     "title": "DS105 Data for Data Science",
@@ -518,143 +553,150 @@
     "text": "References\n\n\nDavenport, Thomas. 2020. “Beyond Unicorns: Educating, Classifying, and Certifying Business Data Scientists.” Harvard Data Science Review 2 (2). https://doi.org/10.1162/99608f92.55546b4a.\n\n\nSchutt, Rachel, and Cathy O’Neil. 2013. Doing Data Science. First edition. Beijing ; Sebastopol: O’Reilly Media. https://ebookcentral.proquest.com/lib/londonschoolecons/detail.action?docID=1465965.\n\n\nShah, Chirag. 2020. A Hands-on Introduction to Data Science. Cambridge, United Kingdom ; New York, NY, USA: Cambridge University Press. https://librarysearch.lse.ac.uk/permalink/f/1n2k4al/TN_cdi_askewsholts_vlebooks_9781108673907.\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
   },
   {
+    "objectID": "slides/week02_slides_part1.html#what-operating-systems-os-do",
+    "href": "slides/week02_slides_part1.html#what-operating-systems-os-do",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "What Operating Systems (OS) do",
+    "text": "What Operating Systems (OS) do\n\n\n\n\nA computer can be divided in four parts:\n\nhardware — provides the basic computing resources for the system\napplication programs — define the ways in which these resources are used\noperating system — controls the hardware and coordinates its use among the various application programs for the various users\nuser — a person or a bot (a computer script) that requests actions from the computer.\n\n\n\n\n\n\n\n\n\n\n   \n\nuser\n\n User   \n\napp\n\n Application Programs (compilers, web browsers, development kits, etc.)   \n\nuser->app\n\n     \n\nos\n\n Operating System   \n\napp->os\n\n     \n\nhardware\n\n Computer Hardware (CPU, memory, I/O devices, etc.)   \n\nos->hardware\n\n    \n\n\n\n\n\n\n\n\n\nFor more details, check (Silberschatz, Galvin, and Gagne 2005, chap. 1)"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#insight-into-operating-systems",
+    "href": "slides/week02_slides_part1.html#insight-into-operating-systems",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Insight into operating systems",
+    "text": "Insight into operating systems\n\n\n“An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an environment within which other programs can do userful work.”\n\n\n– (Silberschatz, Galvin, and Gagne 2005, chap. 1)\n\n\n\n\nIf this sounds a bit vague to you, it is because it is!\nIt is difficult to specify which programs are part of the OS and which ones are not.\nLet’s try to define what an OS is anyways ⏭️"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#definition-of-os",
+    "href": "slides/week02_slides_part1.html#definition-of-os",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Definition of OS",
+    "text": "Definition of OS\n\n\n“The OS is the one programming running at all times on the computer”\n\nThis is usually also called the kernel\n\nThere are also other type of programs who might be running alongside.\n\nFor example, the  Terminal (more on that in a minute)\n\n📱 Mobile computers usually has a lot more “additional” software running alongside the kernel. We call it the middleware.\n\nThese applications support things like: multimedia, graphics, internal app databases."
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#why-bother-with-this",
+    "href": "slides/week02_slides_part1.html#why-bother-with-this",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Why bother with this?",
+    "text": "Why bother with this?\n\n\n\n\nIt is improbable you will ever need to interact with the kernel directly.\nBut, we often need to install custom software to perform some data analysis\n\nThis software might not come from Apple or Microsoft Store.\nThose are things you have to install “manually”\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nWhen that happens, you might encounter error messages that make no sense if you don’t understand a little of how everything is tied together.\n\n\n\n\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘a gigantic wooden question mark looms above the big ben, ultra realistic awesome painting’ 🤓"
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#history",
+    "href": "slides/week02_slides_part1.html#history",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "History",
+    "text": "History\n\n\n\n\nIn the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the open source code.\nYou could read precisely which instructions the computer would follow when running the software.\nAs the industry grew, most software companies released only the binaries — a type of file you can only execute, not read as if it was a text.\n\nThis includes Operating Systems! ⏭️\n\n\n\n\n\n\n\nA computer from the 1950s.(Computer History Museum n.d.)"
+  },
+  {
     "objectID": "slides/week02_slides_part1.html#unix",
     "href": "slides/week02_slides_part1.html#unix",
-    "title": "DS105 Data for Data Science",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "UNIX",
-    "text": "UNIX"
+    "text": "UNIX\n\n\n\n\nUNIX was the first big Operating System, developed at Bell Labs and AT&T\nIt aimed to be simple* and easy to port to any hardware architecture\nBut it required a license\nIn the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.\n\n\n\n\n\n\nHow the UNIX System III looks like.\n\n\n\n\n\n\nSource: Wikimedia Commons - Rwoodsmall\n\n\n\n* As simple as these things get."
   },
   {
-    "objectID": "slides/week02_slides_part1.html#linux",
-    "href": "slides/week02_slides_part1.html#linux",
-    "title": "DS105 Data for Data Science",
-    "section": "Linux",
-    "text": "Linux"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#windows",
-    "href": "slides/week02_slides_part1.html#windows",
-    "title": "DS105 Data for Data Science",
-    "section": "Windows",
-    "text": "Windows\nLinux subsystem"
+    "objectID": "slides/week02_slides_part1.html#gnulinux",
+    "href": "slides/week02_slides_part1.html#gnulinux",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "GNU/Linux",
+    "text": "GNU/Linux\n\n\n\n\nThis led to the birth of one of the most influential operating systems: GNU/Linux, or simply Linux.\n\n\n\n\n Android, the most popular OS for phones worldwide, is based on Linux.\n\n\n\n\n\nTwo people were instrumental to the development of Linux\n\nRichard Stallman\nLinus Torvalds\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nGNU stands for “GNU is not Unix”. Yes, it is recursive."
   },
   {
     "objectID": "slides/week02_slides_part1.html#macos",
     "href": "slides/week02_slides_part1.html#macos",
-    "title": "DS105 Data for Data Science",
-    "section": "MacOS",
-    "text": "MacOS"
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "macOS",
+    "text": "macOS\n\n\nmacOS is the Operating System of Apple computers\nIt is a hybrid system. It has a free open source component called Darwin, but it includes proprietary, closed-source components as well.\niOS, Apple’s mobile operating system, is also based on Darwin\nDarwin itself is based on BDS UNIX, a derivative of the original UNIX system."
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#windows",
+    "href": "slides/week02_slides_part1.html#windows",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Windows",
+    "text": "Windows\n\nWindows has its own history.\nIts predecessor, OS/2 operating system was co-developed by Microsoft and IBM.\nBut then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.\nWindows popularity can be traced to the success of the Office suite\n\n\n\n\nSee (Silberschatz, Galvin, and Gagne 2005, Appendix B) for more on Windows."
   },
   {
     "objectID": "slides/week02_slides_part1.html#emulators-virtual-machines",
     "href": "slides/week02_slides_part1.html#emulators-virtual-machines",
-    "title": "DS105 Data for Data Science",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Emulators & Virtual Machines",
-    "text": "Emulators & Virtual Machines"
+    "text": "Emulators & Virtual Machines\n\n\n\n\nYou can install an emulator to run Windows inside Mac (and vice-versa)\n\nProvided you own a licence to install the other OS\n\n\n\n\n\nYou can share files to and from the virtual machine inside the emulator, but the internal machine will “think” it is a separate computer.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIn the 🖥️ labs on 🗓️ Week 03, you will access a virtual machine that lives in the cloud\n\n\n\n\n\n\n\n\nExample of commercial virtualization softwares"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#shell-bash",
-    "href": "slides/week02_slides_part1.html#shell-bash",
-    "title": "DS105 Data for Data Science",
-    "section": "Shell / Bash",
-    "text": "Shell / Bash"
+    "objectID": "slides/week02_slides_part1.html#windows-subsystem-for-linux-wsl",
+    "href": "slides/week02_slides_part1.html#windows-subsystem-for-linux-wsl",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Windows Subsystem for Linux (WSL)",
+    "text": "Windows Subsystem for Linux (WSL)\n\n\nIn an attempt to entice Linux users (especially developers), Microsoft added a Linux emulator to Windows named “Windows Subsystem for Linux”\n\n\n\n\nYou install your preferred Linux distribution\n\nUbuntu is one of the most popular\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nOur 🖥️ labs on Weeks 2 & 3 will focus on Linux/UNIX-like commands.\nWindows users will have to install WSL on their computers."
+  },
+  {
+    "objectID": "slides/week02_slides_part1.html#shell",
+    "href": "slides/week02_slides_part1.html#shell",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Shell",
+    "text": "Shell\n\n\nTypically, the terminal runs a program (app) called the shell.\nThe shell awaits, interprets, processes, executes, and responds to commands typed in by the user.\nThere are many shells, each has its own features.\nPopular Linux shells:\n\nsh or the Bourne shell: developed at AT&T labs in the 70s by a guy named Stephen Bourne.\nbash or the Bourne again shell: very popular, compatible with sh shell scripts.\n\nOur 🖥️ labs will focus on bash\n\nksh or the Korn shell: provides enhancements over the sh and it is also compatible with bash.\ncsh and tcsh: shells that have a syntax similar to the programming language C.\n\n\n\n\nWant to become a pro at shell scripting? Check out (Ebrahim and Mallett 2018)."
   },
   {
     "objectID": "slides/week02_slides_part1.html#windows-cmd-vs-powershell",
     "href": "slides/week02_slides_part1.html#windows-cmd-vs-powershell",
-    "title": "DS105 Data for Data Science",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Windows CMD vs PowerShell",
-    "text": "Windows CMD vs PowerShell"
+    "text": "Windows CMD vs PowerShell\n\nAs mentioned before, Windows has its own thing.\nThere are two main terminals/shells on Windows these days\n\n\n\nCMD\n\nPowershell\n\n\n\n\n\nOriginal product: Microsoft. This animation: Useerup, CC BY-SA 3.0, via Wikimedia Commons"
   },
   {
     "objectID": "slides/week02_slides_part1.html#what-are-files",
     "href": "slides/week02_slides_part1.html#what-are-files",
-    "title": "DS105 Data for Data Science",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "What are files?",
-    "text": "What are files?"
+    "text": "What are files?\n\n\n\n\n\n\nUltimately, everything in a computer is just a bunch of 0s and 1s\nFiles are a set of conventions that allows us to extract information from them.\nLet’s see where these ideas come from ⏭️\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘35mm macro photography of a robot holding a question mark card, white background’"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#the-hierarchical-structure-of-directories",
-    "href": "slides/week02_slides_part1.html#the-hierarchical-structure-of-directories",
-    "title": "DS105 Data for Data Science",
-    "section": "The hierarchical structure of directories",
-    "text": "The hierarchical structure of directories"
+    "objectID": "slides/week02_slides_part1.html#structured-data-index-cards",
+    "href": "slides/week02_slides_part1.html#structured-data-index-cards",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Structured data: Index cards",
+    "text": "Structured data: Index cards\n\nOrigins in the 19th century, with botanist Carl Linnaeus, who needed to record species that he was studying\nThis was a form of database\n\neach piece of information about a species formed a field\neach species’ entry in the system formed a record\nthe records were indexed using some reference system"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#unix-file-structure",
-    "href": "slides/week02_slides_part1.html#unix-file-structure",
-    "title": "DS105 Data for Data Science",
-    "section": "UNIX file structure",
-    "text": "UNIX file structure"
+    "objectID": "slides/week02_slides_part1.html#heyday-use-in-libraries-to-catalog-books",
+    "href": "slides/week02_slides_part1.html#heyday-use-in-libraries-to-catalog-books",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Heyday: Use in libraries to catalog books",
+    "text": "Heyday: Use in libraries to catalog books"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#windows-file-structure",
-    "href": "slides/week02_slides_part1.html#windows-file-structure",
-    "title": "DS105 Data for Data Science",
-    "section": "Windows file structure",
-    "text": "Windows file structure"
+    "objectID": "slides/week02_slides_part1.html#a-record-looked-like-this",
+    "href": "slides/week02_slides_part1.html#a-record-looked-like-this",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "A record looked like this",
+    "text": "A record looked like this"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#binary-vs-plain-text",
-    "href": "slides/week02_slides_part1.html#binary-vs-plain-text",
-    "title": "DS105 Data for Data Science",
-    "section": "Binary vs plain text",
-    "text": "Binary vs plain text"
+    "objectID": "slides/week02_slides_part1.html#dewey-decimal-system",
+    "href": "slides/week02_slides_part1.html#dewey-decimal-system",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Dewey decimal system",
+    "text": "Dewey decimal system\n\n\na proprietary library classification system first published in the United States by Melvil Dewey in 1876\nscheme is made up of ten classes, each divided into ten divisions, each having ten sections\nthe system’s notation uses Arabic numbers, with three whole numbers making up the main classes and sub-classes and decimals creating further divisions\n\n\n\n\nExample:\n500 Natural sciences and mathematics\n    510 Mathematics\n        516 Geometry\n            516.3 Analytic geometries\n                516.37 Metric differential geometries\n                    516.375 Finsler Geometry"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#file-editors-in-the-command-line",
-    "href": "slides/week02_slides_part1.html#file-editors-in-the-command-line",
-    "title": "DS105 Data for Data Science",
-    "section": "File editors in the command line",
-    "text": "File editors in the command line"
+    "objectID": "slides/week02_slides_part1.html#hierarchical-directory-structure",
+    "href": "slides/week02_slides_part1.html#hierarchical-directory-structure",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "Hierarchical directory structure",
+    "text": "Hierarchical directory structure\n\n\n\n\nThis kind of hierarchical structure is still present in all modern OSes\nA directory, or folder, is a place where many files are stored\nIn theory, it can contain infinite sub-directories and files"
   },
   {
-    "objectID": "slides/week02_slides_part1.html#html",
-    "href": "slides/week02_slides_part1.html#html",
-    "title": "DS105 Data for Data Science",
-    "section": "HTML",
-    "text": "HTML"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#json",
-    "href": "slides/week02_slides_part1.html#json",
-    "title": "DS105 Data for Data Science",
-    "section": "JSON",
-    "text": "JSON"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#txt",
-    "href": "slides/week02_slides_part1.html#txt",
-    "title": "DS105 Data for Data Science",
-    "section": "TXT",
-    "text": "TXT"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#csv",
-    "href": "slides/week02_slides_part1.html#csv",
-    "title": "DS105 Data for Data Science",
-    "section": "CSV",
-    "text": "CSV"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#scripts",
-    "href": "slides/week02_slides_part1.html#scripts",
-    "title": "DS105 Data for Data Science",
-    "section": "Scripts",
-    "text": "Scripts"
-  },
-  {
-    "objectID": "slides/week02_slides_part1.html#obfuscated-binary-files",
-    "href": "slides/week02_slides_part1.html#obfuscated-binary-files",
-    "title": "DS105 Data for Data Science",
-    "section": "Obfuscated Binary files",
-    "text": "Obfuscated Binary files"
+    "objectID": "slides/week02_slides_part1.html#unix-directory-tree",
+    "href": "slides/week02_slides_part1.html#unix-directory-tree",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
+    "section": "UNIX directory tree",
+    "text": "UNIX directory tree\n\n\n\n\n\n   \n\nroot\n\n /   \n\nbin\n\n bin   \n\nroot->bin\n\n    \n\ndev\n\n dev   \n\nroot->dev\n\n    \n\netc\n\n etc   \n\nroot->etc\n\n    \n\nhome\n\n home   \n\nroot->home\n\n    \n\nlib\n\n lib   \n\nroot->lib\n\n    \n\nmnt\n\n mnt   \n\nroot->mnt\n\n    \n\nproc\n\n proc   \n\nroot->proc\n\n    \n\nnamedroot\n\n root   \n\nroot->namedroot\n\n    \n\nsbin\n\n sbin   \n\nroot->sbin\n\n    \n\ntmp\n\n tmp   \n\nroot->tmp\n\n    \n\nusr\n\n usr   \n\nroot->usr\n\n    \n\nvar\n\n var   \n\nroot->var\n\n    \n\njonathan\n\n jonathan   \n\nhome->jonathan\n\n    \n\ndocuments\n\n Documents   \n\njonathan->documents\n\n    \n\nimages\n\n Images   \n\njonathan->images\n\n    \n\nvideos\n\n Videos   \n\njonathan->videos\n\n    \n\ndownloads\n\n Downloads   \n\njonathan->downloads\n\n    \n\nworkspace\n\n Workspace   \n\ndocuments->workspace\n\n    \n\nds105\n\n lse-ds105-course-notes   \n\nworkspace->ds105\n\n    \n\nusr_lib\n\n lib   \n\nusr->usr_lib\n\n    \n\nusr_bin\n\n bin   \n\nusr->usr_bin\n\n    \n\nusr_include\n\n include   \n\nusr->usr_include\n\n    \n\nvar_log\n\n log   \n\nvar->var_log\n\n    \n\nvar_mail\n\n mail   \n\nvar->var_mail\n\n    \n\nvar_spool\n\n spool   \n\nvar->var_spool\n\n    \n\nvar_tmp\n\n tmp   \n\nvar->var_tmp\n\n   \n\n\n\n\n\n\nCheck out this webpage for a description of what each directory represents"
   },
   {
     "objectID": "slides/week02_slides_part1.html#references",
     "href": "slides/week02_slides_part1.html#references",
-    "title": "DS105 Data for Data Science",
+    "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "References",
-    "text": "References\n\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
+    "text": "References\n\n\nComputer History Museum. n.d. “1950  Timeline of Computer History.” 1950  Timeline of Computer History. Accessed September 16, 2022. https://www.computerhistory.org/timeline/1950/.\n\n\nEbrahim, Mokhtar, and Andrew Mallett. 2018. Mastering Linux Shell Scripting: A Practical Guide to Linux Command-Line, Bash Scripting, and Shell Programming, 2nd Edition. 2nd ed. Birmingham: Packt Publishing.\n\n\nPelz, Oliver. 2018. Fundamentals of Linux: Explore the Essentials of the Linux Command Line. Birmingham: Packt Publishing Ltd.\n\n\nSilberschatz, Abraham, Peter B. Galvin, and Greg Gagne. 2005. Operating System Concepts. 7th ed. Hoboken, NJ: J. Wiley & Sons.\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
   }
 ]

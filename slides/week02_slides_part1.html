@@ -8,10 +8,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.245">
+  <meta name="generator" content="quarto-1.1.251">
 
   <meta name="author" content="Dr.&nbsp;Jon Cardoso Silva">
-  <title>LSE DS105M 2022/23 - DS105 Data for Data Science</title>
+  <meta name="dcterms.date" content="07 October 2022">
+  <title>LSE DS105M 2022/23 - 🗓️ Week 02 Operating Systems, Files &amp; The Terminal</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,6 +30,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -347,126 +412,818 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">DS105 Data for Data Science</h1>
-  <p class="subtitle">🗓️ Week 02 - Part I: Operating Systems, Files &amp; The Terminal</p>
+  <h1 class="title"><font style="font-size:1em;">🗓️ Week 02<br> Operating Systems, Files &amp; The Terminal</font></h1>
   <p class="author">Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jon Cardoso Silva</a></p>
   <p class="institute"><a href="https://twitter.com/lsedatascience">LSE Data Science Institute</a></p>
+  <p class="date">07 October 2022</p>
 </section>
 <section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">What we will cover today</h2>
 <ul>
-<li><a href="#/brief-history-of-operating-systems" id="/toc-brief-history-of-operating-systems">Brief history of Operating Systems</a></li>
+<li><a href="#/operating-systems" id="/toc-operating-systems">Operating Systems</a></li>
+<li><a href="#/history-of-operating-systems" id="/toc-history-of-operating-systems">History of Operating Systems</a></li>
+<li><a href="#/virtualization" id="/toc-virtualization">Virtualization</a></li>
 <li><a href="#/the-terminal" id="/toc-the-terminal">The Terminal</a></li>
 <li><a href="#/files-filesystems" id="/toc-files-filesystems">Files &amp; Filesystems</a></li>
-<li><a href="#/file-types" id="/toc-file-types">File types</a></li>
-<li><a href="#/example-of-file-formats" id="/toc-example-of-file-formats">Example of file formats</a></li>
-<li><a href="#/whats-after-the-break" id="/toc-whats-after-the-break">What’s after the ☕ break:</a></li>
+<li><a href="#/after-the-break" id="/toc-after-the-break">After the ☕ break:</a></li>
 </ul>
 </nav>
 </section>
 
 <section>
-<section id="brief-history-of-operating-systems" class="title-slide slide level1">
-<h1>Brief history of Operating Systems</h1>
+<section id="operating-systems" class="title-slide slide level1">
+<h1>Operating Systems</h1>
 
 </section>
-<section id="unix" class="slide level2">
-<h2>UNIX</h2>
+<section id="what-operating-systems-os-do" class="slide level2 smaller">
+<h2>What Operating Systems (OS) do</h2>
+<div class="columns">
+<div class="column" style="width:50%;font-size:0.9em;">
+<div>
+<ul>
+<li class="fragment">A computer can be divided in four parts:
+<ul>
+<li class="fragment"><mark>hardware</mark> — provides the basic computing resources for the system</li>
+<li class="fragment"><mark>application programs</mark> — define the ways in which these resources are used</li>
+<li class="fragment"><mark>operating system</mark> — controls the hardware and coordinates its use among the various application programs for the various users</li>
+<li class="fragment"><mark>user</mark> — a person or a bot (a computer script) that requests actions from the computer.</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell" data-id="1" data-fig-width="5">
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="480" height="480" viewbox="0.00 0.00 528.22 556.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 520)"> <polygon fill="white" stroke="transparent" points="-36,36 -36,-520 492.22,-520 492.22,36 -36,36"></polygon> <!-- user --> <g id="node1" class="node">
+<title>
+user
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="275.88,-484 180.35,-484 180.35,-402 275.88,-402 275.88,-484"></polygon> <text text-anchor="middle" x="228.11" y="-437" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">User</text> </g> <!-- app --> <g id="node2" class="node">
+<title>
+app
+</title>
+<polygon fill="#e8e8e8" stroke="#636363" points="456.33,-366 -0.11,-366 -0.11,-260 456.33,-260 456.33,-366"></polygon> <text text-anchor="middle" x="228.11" y="-319" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">Application Programs</text> <text text-anchor="middle" x="228.11" y="-295" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">(compilers, web browsers, development kits, etc.)</text> </g> <!-- user&#45;&gt;app --> <g id="edge1" class="edge">
+<title>
+user-&gt;app
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M228.11,-391.81C228.11,-386.82 228.11,-381.72 228.11,-376.63"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="224.61,-391.85 228.11,-401.85 231.61,-391.85 224.61,-391.85"></polygon> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="231.61,-376.23 228.11,-366.23 224.61,-376.23 231.61,-376.23"></polygon> </g> <!-- os --> <g id="node3" class="node">
+<title>
+os
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="328.98,-224 127.24,-224 127.24,-142 328.98,-142 328.98,-224"></polygon> <text text-anchor="middle" x="228.11" y="-177" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">Operating System</text> </g> <!-- app&#45;&gt;os --> <g id="edge2" class="edge">
+<title>
+app-&gt;os
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M228.11,-249.8C228.11,-244.64 228.11,-239.46 228.11,-234.41"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="224.61,-249.94 228.11,-259.94 231.61,-249.94 224.61,-249.94"></polygon> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="231.61,-234.24 228.11,-224.24 224.61,-234.24 231.61,-234.24"></polygon> </g> <!-- hardware --> <g id="node4" class="node">
+<title>
+hardware
+</title>
+<polygon fill="#e8e8e8" stroke="#636363" points="391.43,-106 64.79,-106 64.79,0 391.43,0 391.43,-106"></polygon> <text text-anchor="middle" x="228.11" y="-59" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">Computer Hardware</text> <text text-anchor="middle" x="228.11" y="-35" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#000000">(CPU, memory, I/O devices, etc.)</text> </g> <!-- os&#45;&gt;hardware --> <g id="edge3" class="edge">
+<title>
+os-&gt;hardware
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M228.11,-131.81C228.11,-126.82 228.11,-121.72 228.11,-116.63"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="224.61,-131.85 228.11,-141.85 231.61,-131.85 224.61,-131.85"></polygon> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="231.61,-116.23 228.11,-106.23 224.61,-116.23 231.61,-116.23"></polygon> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>For more details, check <span class="citation" data-cites="silberschatz_operating_2005">(<a href="#/references" role="doc-biblioref" onclick="">Silberschatz, Galvin, and Gagne 2005, chap. 1</a>)</span></p>
+</div>
 </section>
-<section id="linux" class="slide level2">
-<h2>Linux</h2>
+<section id="insight-into-operating-systems" class="slide level2 smaller">
+<h2>Insight into operating systems</h2>
+<br>
+<blockquote>
+<em>“An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an <em>environment</em> within which other programs can do userful work.”</em>
+</blockquote>
+<p align="right">
+– <span class="citation" data-cites="silberschatz_operating_2005">(<a href="#/references" role="doc-biblioref" onclick="">Silberschatz, Galvin, and Gagne 2005, chap. 1</a>)</span>
+</p>
+<p><br></p>
+<div>
+<ul>
+<li class="fragment">If this sounds a bit vague to you, it is because it is!</li>
+<li class="fragment">It is difficult to specify which programs are part of the OS and which ones are not.</li>
+<li class="fragment">Let’s try to define what an OS is anyways ⏭️</li>
+</ul>
+</div>
 </section>
-<section id="windows" class="slide level2">
-<h2>Windows</h2>
-<h3 id="linux-subsystem">Linux subsystem</h3>
+<section id="definition-of-os" class="slide level2 smaller">
+<h2>Definition of OS</h2>
+<div>
+<ul>
+<li class="fragment">“<em>The OS is the one programming running at all times on the computer</em>”
+<ul>
+<li class="fragment">This is usually also called the <mark>kernel</mark></li>
+</ul></li>
+<li class="fragment">There are also other type of programs who might be running alongside.
+<ul>
+<li class="fragment">For example, the <img data-src="../figures/icons/console-svgrepo-com.svg" class="img-fluid" style="height: 1em;vertical-align:center;"> <code>Terminal</code> (more on that in a minute)</li>
+</ul></li>
+<li class="fragment">📱 Mobile computers usually has a lot more “additional” software running alongside the kernel. We call it the <mark>middleware</mark>.
+<ul>
+<li class="fragment">These applications support things like: multimedia, graphics, internal app databases.</li>
+</ul></li>
+</ul>
+</div>
 </section>
-<section id="macos" class="slide level2">
-<h2>MacOS</h2>
-</section>
-<section id="emulators-virtual-machines" class="slide level2">
-<h2>Emulators &amp; Virtual Machines</h2>
+<section id="why-bother-with-this" class="slide level2 smaller" data-background-color="#D8DDE7">
+<h2>Why bother with this?</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div>
+<ul>
+<li class="fragment">It is improbable you will ever need to interact with the kernel directly.</li>
+<li class="fragment">But, we often need to install custom software to perform some data analysis
+<ul>
+<li class="fragment">This software might not come from Apple or Microsoft Store.</li>
+<li class="fragment">Those are things you have to install “manually”</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" style="background-color:white">
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>When that happens, you might encounter error messages that make no sense if you don’t understand a little of how everything is tied together.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<p><img data-src="../figures/dalee/dalee_gigantic_wooden_question_mark_looms_above_the_big_ben_ultra_realistic_awesome_painting.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="footer">
+<p>Image created with the <a href="https://openai.com/blog/dall-e/">DALL·E</a> algorithm using the prompt: <em>‘a gigantic wooden question mark looms above the big ben, ultra realistic awesome painting’</em> 🤓</p>
+</div>
 </section></section>
 <section>
-<section id="the-terminal" class="title-slide slide level1">
-<h1>The Terminal</h1>
+<section id="history-of-operating-systems" class="title-slide slide level1">
+<h1>History of Operating Systems</h1>
+<p><img data-src="../figures/icons/Tux.svg" class="absolute img-fluid" style="left: 70%; bottom: 10%; width: 5%; "></p>
+<p><img data-src="../figures/icons/Unofficial_fan_made_Windows_XP_logo_variant.svg" class="absolute img-fluid" style="left: 77.5%; bottom: 10%; width: 10%; "></p>
+<p><img data-src="../figures/icons/MacOS_original_logo.svg" class="absolute img-fluid" style="left: 90%; bottom: 9%; width: 9%; "></p>
+</section>
+<section id="history" class="slide level2 smaller">
+<h2>History</h2>
+<div class="columns">
+<div class="column" style="width=60%;">
+<div>
+<ul>
+<li class="fragment">In the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the <mark>open source code</mark>.</li>
+<li class="fragment">You could read precisely which instructions the computer would follow when running the software.</li>
+<li class="fragment">As the industry grew, most software companies released only the <mark>binaries</mark> — a type of file you can only execute, not read as if it was a text.
+<ul>
+<li class="fragment">This includes Operating Systems! ⏭️</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width=40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.computerhistory.org/timeline/"><img data-src="../figures/week02/timeline_computers_1950.era1101.jpg" class="img-fluid" style="width:65%;margin=0;"></a></p>
+<p></p><figcaption>A computer from the 1950s.<br><span class="citation" data-cites="computer_history_museum_1950_nodate">(<a href="#/references" role="doc-biblioref" onclick="">Computer History Museum n.d.</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="unix" class="slide level2 smaller">
+<h2>UNIX</h2>
+<div class="columns">
+<div class="column" style="width=60%;">
+<div>
+<ul>
+<li class="fragment">UNIX was the first big Operating System, developed at Bell Labs and AT&amp;T</li>
+<li class="fragment">It aimed to be simple* and easy to port to any hardware architecture</li>
+<li class="fragment">But it required a license</li>
+<li class="fragment">In the late 1980s and early 1990s, a group of hackers and activists developed free &amp; open source alternatives to UNIX.</li>
+</ul>
+</div>
+</div><div class="column" style="width=40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.wikiwand.com/en/Unix"><img data-src="../figures/week02/Simh-pdp11-unix-sysiii.png" class="img-fluid" style="width:100%;margin=0;"></a></p>
+<p></p><figcaption>How the UNIX System III looks like.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 
+<div class="footer">
+<p><span style="font-size:0.6em;">Source: <a href="https://commons.wikimedia.org/wiki/File:Simh-pdp11-unix-sysiii.png">Wikimedia Commons - Rwoodsmall</a></span></p>
+</div>
+<aside><div>
+<div style="font-size:0.65em;">
+<p>* As simple as these things get.</p>
+</div>
+</div></aside></section>
+<section id="gnulinux" class="slide level2 smaller">
+<h2>GNU/Linux</h2>
+<div class="columns">
+<div class="column" style="width=60%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>This led to the birth of one of the most influential operating systems: <mark>GNU/Linux</mark>, or simply Linux.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><img data-src="../figures/icons/Android_robot.svg" class="img-fluid" style="height:1em;"> Android, the most popular OS for phones worldwide, is based on Linux.<br>
+</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Two people were instrumental to the development of Linux
+<ul>
+<li>Richard Stallman</li>
+<li>Linu<strong>s</strong> Torvalds</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>GNU stands for “GNU is not Unix”. Yes, it is recursive.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width=40%;">
+<!-- Ghost column -->
+</div>
+</div>
+<div class="fragment" data-fragment-index="4">
+<p><img data-src="../figures/week02/Richard_Stallman_-_Fête_de_l'Humanité_2014_-_010.jpg" class="absolute img-fluid" style="top: 10%; left: 65%; width: 15%; " alt="A picture of Richard Stallman"> <img data-src="../figures/week02/1024025.jfif" class="absolute img-fluid" style="top: 10%; left: 85%; width: 15%; " alt="A picture of Linus Torvalds"></p>
+</div>
+<p><img data-src="../figures/icons/Tux.svg" class="absolute" style="bottom: 8%; right: 0%; height: 10%; "></p>
 </section>
-<section id="shell-bash" class="slide level2">
-<h2>Shell / Bash</h2>
+<section id="macos" class="slide level2">
+<h2>macOS</h2>
+<div>
+<ul>
+<li class="fragment">macOS is the Operating System of Apple computers</li>
+<li class="fragment">It is a hybrid system. It has a free open source component called <a href="https://github.com/apple/darwin-xnu">Darwin</a>, but it includes proprietary, closed-source components as well.</li>
+<li class="fragment">iOS, Apple’s mobile operating system, is also based on Darwin</li>
+<li class="fragment">Darwin itself is based on BDS UNIX, a derivative of the original UNIX system.</li>
+</ul>
+</div>
+<p><img data-src="../figures/icons/MacOS_original_logo.svg" class="absolute img-fluid" style="left: 95%; bottom: 9%; width: 9%; "></p>
 </section>
-<section id="windows-cmd-vs-powershell" class="slide level2">
+<section id="windows" class="slide level2 smaller">
+<h2>Windows</h2>
+<ul>
+<li>Windows has its own history.</li>
+<li>Its predecessor, OS/2 operating system was co-developed by Microsoft and IBM.</li>
+<li>But then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.</li>
+<li>Windows popularity can be traced to the success of the Office suite</li>
+</ul>
+<p><img data-src="../figures/week02/Microsoft_Office_logos_2013_2019.svg" class="absolute" style="left: 0%; bottom: 8%; height: 25%; "></p>
+<p><img data-src="../figures/logos/windows_logo.svg" class="absolute" style="left: 95%; bottom: 8%; height: 10%; "></p>
+<div class="footer">
+<p><span style="font-size:0.6em;">See <span class="citation" data-cites="silberschatz_operating_2005">(<a href="#/references" role="doc-biblioref" onclick="">Silberschatz, Galvin, and Gagne 2005</a>, Appendix B)</span> for more on Windows.</span></p>
+</div>
+</section></section>
+<section>
+<section id="virtualization" class="title-slide slide level1 smaller">
+<h1>Virtualization</h1>
+<div class="columns">
+<div class="column" style="width=60%;">
+<div>
+<ul>
+<li class="fragment"><mark>Virtualization</mark> is a technology that creates the <strong>illusion</strong> that you are running a separate private computer.</li>
+<li class="fragment">You decide how much of your CPU/RAM/Hard drive to share with the <mark>virtual machine</mark></li>
+</ul>
+</div>
+</div><div class="column" style="width=40%;">
+<p><img data-src="../figures/week02/svg-virtualization.svg" class="absolute img-fluid" style="top: 17.5%; right: 0%; width: 40%; "></p>
+</div>
+</div>
+</section>
+<section id="emulators-virtual-machines" class="slide level2 smaller">
+<h2>Emulators &amp; Virtual Machines</h2>
+<div class="columns">
+<div class="column" style="width=60%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>You can install an <mark>emulator</mark> to run Windows inside Mac (and vice-versa)
+<ul>
+<li>Provided you own a licence to install the other OS</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>You can share files to and from the <mark>virtual machine</mark> inside the emulator, but the internal machine will “think” it is a separate computer.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>In the 🖥️ labs on 🗓️ <a href="../weeks/week03">Week 03</a>, you will access a virtual machine that lives in the cloud</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width=40%;">
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Example of commercial virtualization softwares</li>
+</ul>
+<p><img data-src="../figures/week02/Virtualbox_logo.png" class="absolute img-fluid" style="top: 27.5%; right: 5%; width: 15%; "></p>
+<p><img data-src="../figures/week02/Vmware.svg" class="absolute img-fluid" style="top: 35%; right: 25%; width: 17.5%; "></p>
+</div>
+</div>
+</div>
+</section>
+<section id="windows-subsystem-for-linux-wsl" class="slide level2 smaller">
+<h2>Windows Subsystem for Linux (WSL)</h2>
+<div class="fragment">
+<ul>
+<li>In an attempt to entice Linux users (especially developers), Microsoft added a Linux emulator to Windows named “Windows Subsystem for Linux”</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>You install your preferred Linux distribution
+<ul>
+<li><mark style="color:#DD4713;">Ubuntu</mark> is one of the most popular</li>
+</ul></li>
+</ul>
+<p><img data-src="../figures/week02/ubuntu-logo14.png" class="absolute img-fluid" style="bottom: 57.5%; right: 0%; width: 17.5%; "></p>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="fragment">
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Our 🖥️ labs on Weeks 2 &amp; 3 will focus on Linux/UNIX-like commands.</li>
+<li>Windows users will have to install WSL on their computers.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-terminal" class="title-slide slide level1 smaller">
+<h1>The Terminal</h1>
+<ul>
+<li>A <mark>terminal</mark>, or <mark>command prompt</mark>, is a screen or a window that lets you access the Operating System’s input and output.</li>
+<li>There are no graphics (images/video) in the terminal, only text.</li>
+</ul>
+<p><img data-src="../figures/week02/Appleterminal2.png" class="absolute img-fluid" style="top: 40%; left: 25%; width: 50%; "></p>
+<div class="footer">
+<p><span style="font-size:0.6em;">Image source: <a href="https://en.wikipedia.org/wiki/User:Gortu">Gortu</a> at <a href="https://commons.wikimedia.org/wiki/File:Appleterminal2.png">English Wikipedia</a></span></p>
+</div>
+</section>
+<section id="shell" class="slide level2 smaller">
+<h2>Shell</h2>
+<div>
+<ul>
+<li class="fragment">Typically, the terminal runs a program (app) called the <mark>shell</mark>.</li>
+<li class="fragment">The shell awaits, interprets, processes, executes, and responds to commands typed in by the user.</li>
+<li class="fragment">There are many shells, each has its own features.</li>
+<li class="fragment">Popular Linux shells:
+<ul>
+<li class="fragment"><strong><code>sh</code></strong> or the <strong>Bourne shell</strong>: developed at AT&amp;T labs in the 70s by a guy named Stephen Bourne.</li>
+<li class="fragment"><strong><code>bash</code></strong> or the <strong>Bourne again shell</strong>: very popular, compatible with <code>sh</code> shell scripts.
+<ul>
+<li class="fragment">Our 🖥️ labs will focus on <code>bash</code></li>
+</ul></li>
+<li class="fragment"><strong><code>ksh</code></strong> or the <strong>Korn shell</strong>: provides enhancements over the <code>sh</code> and it is also compatible with <code>bash</code>.</li>
+<li class="fragment"><strong><code>csh</code></strong> and <strong><code>tcsh</code></strong>: shells that have a syntax similar to the programming language <code>C</code>.</li>
+</ul></li>
+</ul>
+</div>
+<div class="footer">
+<p>Want to become a pro at shell scripting? Check out <span class="citation" data-cites="ebrahim_mastering_2018">(<a href="#/references" role="doc-biblioref" onclick="">Ebrahim and Mallett 2018</a>)</span>.</p>
+</div>
+</section>
+<section id="windows-cmd-vs-powershell" class="slide level2 smaller">
 <h2>Windows CMD vs PowerShell</h2>
+<ul>
+<li>As mentioned before, Windows has its own thing.</li>
+<li>There are two main terminals/shells on Windows these days</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>CMD</p>
+</div><div class="column" style="width:45%;">
+<p>Powershell</p>
+</div>
+</div>
+<p><img data-src="../figures/week02/Windows_Command_Prompt_running_on_Windows_8.1.png" class="absolute img-fluid" style="top: 40%; left: 0%; width: 45%; "></p>
+<p><img data-src="../figures/week02/Powershell_Intellisense_example_for_the_Get-Process_cmdlet.gif" class="absolute img-fluid" style="top: 40%; right: 0%; width: 45%; "></p>
+<div class="footer">
+<p><span style="font-size:0.6em;">Original product: Microsoft. This animation: <a href="https://commons.wikimedia.org/wiki/File:Powershell_Intellisense_example_for_the_Get-Process_cmdlet.gif">Useerup</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</span></p>
+</div>
 </section></section>
 <section>
 <section id="files-filesystems" class="title-slide slide level1">
 <h1>Files &amp; Filesystems</h1>
-
+<div class="footer">
+<p>Read more on <span class="citation" data-cites="pelz_fundamentals_2018">(<a href="#/references" role="doc-biblioref" onclick="">Pelz 2018, chap. 3</a>)</span></p>
+</div>
 </section>
-<section id="what-are-files" class="slide level2">
+<section id="what-are-files" class="slide level2 smaller">
 <h2>What are files?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="../figures/dalee/dalle_robot_holding_question_mark.png" class="absolute" style="height: 80%; "></p>
+</div><div class="column" style="width:40%;">
+<div>
+<ul>
+<li class="fragment">Ultimately, everything in a computer is just a bunch of <code>0</code>s and <code>1</code>s</li>
+<li class="fragment">Files are a set of conventions that allows us to extract information from them.</li>
+<li class="fragment">Let’s see where these ideas come from ⏭️</li>
+</ul>
+</div>
+</div><div class="footer">
+<p><span style="font-size:0.6em;">Image created with the <a href="https://openai.com/blog/dall-e/">DALL·E</a> algorithm using the prompt: <em>‘35mm macro photography of a robot holding a question mark card, white background’</em></span></p>
+</div>
+</div>
 </section>
-<section id="the-hierarchical-structure-of-directories" class="slide level2">
-<h2>The hierarchical structure of directories</h2>
+<section id="structured-data-index-cards" class="slide level2">
+<h2>Structured data: Index cards</h2>
+<ul>
+<li><p>Origins in the 19th century, with botanist <a href="https://en.wikipedia.org/wiki/Carl_Linnaeus">Carl Linnaeus</a>, who needed to record species that he was studying</p></li>
+<li><p>This was a form of <em>database</em></p>
+<ul>
+<li>each piece of information about a species formed a <em>field</em></li>
+<li>each species’ entry in the system formed a <em>record</em></li>
+<li>the records were <em>indexed</em> using some reference system</li>
+</ul></li>
+</ul>
 </section>
-<section id="unix-file-structure" class="slide level2">
-<h2>UNIX file structure</h2>
+<section id="heyday-use-in-libraries-to-catalog-books" class="slide level2">
+<h2>Heyday: Use in libraries to catalog books</h2>
+<p><img data-src="../figures/week02/cardcatalog.png" title="Card catalog" class="absolute img-fluid" style="top: 25%; left: 0%; width: 45%; " alt="card catalog"> <img data-src="../figures/week02/cardcatalog3.png" title="Card catalog room" class="absolute img-fluid" style="top: 25%; right: 0%; width: 45%; " alt="card catalog room"></p>
 </section>
-<section id="windows-file-structure" class="slide level2">
-<h2>Windows file structure</h2>
-</section></section>
-<section>
-<section id="file-types" class="title-slide slide level1">
-<h1>File types</h1>
+<section id="a-record-looked-like-this" class="slide level2">
+<h2>A record looked like this</h2>
+<p><img data-src="../figures/week02/cardcatalog2.png" title="Card record" class="absolute img-fluid" style="top: 25%; left: 25%; width: 50%; "></p>
+</section>
+<section id="dewey-decimal-system" class="slide level2 smaller">
+<h2>Dewey decimal system</h2>
+<div>
+<ul>
+<li class="fragment">a proprietary library classification system first published in the United States by Melvil Dewey in 1876</li>
+<li class="fragment">scheme is made up of ten classes, each divided into ten divisions, each having ten sections</li>
+<li class="fragment">the system’s notation uses Arabic numbers, with three whole numbers making up the main classes and sub-classes and decimals creating further divisions</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>500 Natural sciences and mathematics</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    510 Mathematics</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        516 Geometry</span>
+<span id="cb1-4"><a href="#cb1-4"></a>            516.3 Analytic geometries</span>
+<span id="cb1-5"><a href="#cb1-5"></a>                516.37 Metric differential geometries</span>
+<span id="cb1-6"><a href="#cb1-6"></a>                    516.375 Finsler Geometry</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</div>
+</section>
+<section id="hierarchical-directory-structure" class="slide level2 smaller">
+<h2>Hierarchical directory structure</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div>
+<ul>
+<li class="fragment">This kind of hierarchical structure is still present in all modern OSes</li>
+<li class="fragment">A <mark>directory</mark>, or folder, is a place where many files are stored</li>
+<li class="fragment">In theory, it can contain infinite sub-directories and files</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
 
+</div>
+</div>
+<p><img data-src="../figures/week02/file_structure.png" class="absolute img-fluid" style="top: 25%; right: 0%; width: 40%; "></p>
 </section>
-<section id="binary-vs-plain-text" class="slide level2">
-<h2>Binary vs plain text</h2>
-</section>
-<section id="file-editors-in-the-command-line" class="slide level2">
-<h2>File editors in the command line</h2>
-</section></section>
-<section>
-<section id="example-of-file-formats" class="title-slide slide level1">
-<h1>Example of file formats</h1>
+<section id="unix-directory-tree" class="slide level2">
+<h2>UNIX directory tree</h2>
+<div class="cell" data-id="1" data-fig-width="10">
+<div class="cell-output-display">
+<div>
+<p>
+<svg width="960" height="480" viewbox="0.00 0.00 1736.33 744.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(36 708)"> <polygon fill="white" stroke="transparent" points="-36,36 -36,-708 1700.33,-708 1700.33,36 -36,36"></polygon> <!-- root --> <g id="node1" class="node">
+<title>
+root
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="653.34,-672 590.22,-672 590.22,-590 653.34,-590 653.34,-672"></polygon> <text text-anchor="middle" x="621.78" y="-625" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">/</text> </g> <!-- bin --> <g id="node2" class="node">
+<title>
+bin
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="83.34,-554 0.22,-554 0.22,-472 83.34,-472 83.34,-554"></polygon> <text text-anchor="middle" x="41.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">bin</text> </g> <!-- root&#45;&gt;bin --> <g id="edge1" class="edge">
+<title>
+root-&gt;bin
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M590.06,-627.6C490.24,-619.72 183.75,-592.88 92.78,-554 92.68,-553.96 92.58,-553.92 92.49,-553.87"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="94.09,-550.76 83.58,-549.38 90.93,-557.01 94.09,-550.76"></polygon> </g> <!-- dev --> <g id="node3" class="node">
+<title>
+dev
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="188.16,-554 101.4,-554 101.4,-472 188.16,-472 188.16,-554"></polygon> <text text-anchor="middle" x="144.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">dev</text> </g> <!-- root&#45;&gt;dev --> <g id="edge2" class="edge">
+<title>
+root-&gt;dev
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M590.17,-629.41C519.09,-627.05 342.22,-615.37 197.87,-553.9"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="198.98,-550.56 188.41,-549.77 196.18,-556.98 198.98,-550.56"></polygon> </g> <!-- etc --> <g id="node4" class="node">
+<title>
+etc
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="287.59,-554 205.97,-554 205.97,-472 287.59,-472 287.59,-554"></polygon> <text text-anchor="middle" x="246.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">etc</text> </g> <!-- root&#45;&gt;etc --> <g id="edge3" class="edge">
+<title>
+root-&gt;etc
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M589.76,-627.24C529.63,-621.06 396.85,-602.62 296.78,-554 296.68,-553.95 296.58,-553.91 296.49,-553.86"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="298.01,-550.7 287.57,-548.89 294.61,-556.82 298.01,-550.7"></polygon> </g> <!-- home --> <g id="node5" class="node">
+<title>
+home
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="408.21,-554 305.34,-554 305.34,-472 408.21,-472 408.21,-554"></polygon> <text text-anchor="middle" x="356.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">home</text> </g> <!-- root&#45;&gt;home --> <g id="edge4" class="edge">
+<title>
+root-&gt;home
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M589.91,-620.73C550.6,-608.75 481.97,-586.07 417.14,-553.87"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="418.53,-550.65 408.03,-549.27 415.37,-556.9 418.53,-550.65"></polygon> </g> <!-- lib --> <g id="node13" class="node">
+<title>
+lib
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="505.39,-554 426.16,-554 426.16,-472 505.39,-472 505.39,-554"></polygon> <text text-anchor="middle" x="465.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">lib</text> </g> <!-- root&#45;&gt;lib --> <g id="edge12" class="edge">
+<title>
+root-&gt;lib
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M590.1,-608.71C568.31,-593.83 538.89,-573.25 513.78,-554 513.61,-553.87 513.43,-553.74 513.26,-553.6"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="515.42,-550.85 505.39,-547.43 511.1,-556.36 515.42,-550.85"></polygon> </g> <!-- mnt --> <g id="node14" class="node">
+<title>
+mnt
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="612.39,-554 523.16,-554 523.16,-472 612.39,-472 612.39,-554"></polygon> <text text-anchor="middle" x="567.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">mnt</text> </g> <!-- root&#45;&gt;mnt --> <g id="edge13" class="edge">
+<title>
+root-&gt;mnt
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M603.04,-589.75C599.06,-581.21 594.82,-572.09 590.71,-563.25"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="593.87,-561.76 586.48,-554.17 587.53,-564.72 593.87,-561.76"></polygon> </g> <!-- proc --> <g id="node15" class="node">
+<title>
+proc
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="723.32,-554 630.24,-554 630.24,-472 723.32,-472 723.32,-554"></polygon> <text text-anchor="middle" x="676.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">proc</text> </g> <!-- root&#45;&gt;proc --> <g id="edge14" class="edge">
+<title>
+root-&gt;proc
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M640.86,-589.75C644.91,-581.21 649.24,-572.09 653.43,-563.25"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="656.61,-564.71 657.73,-554.17 650.28,-561.71 656.61,-564.71"></polygon> </g> <!-- namedroot --> <g id="node16" class="node">
+<title>
+namedroot
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="832,-554 741.56,-554 741.56,-472 832,-472 832,-554"></polygon> <text text-anchor="middle" x="786.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">root</text> </g> <!-- root&#45;&gt;namedroot --> <g id="edge15" class="edge">
+<title>
+root-&gt;namedroot
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M653.57,-608.69C675.89,-593.62 706.34,-572.83 732.78,-554 732.96,-553.87 733.13,-553.75 733.31,-553.62"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="735.42,-556.41 741.49,-547.73 731.33,-550.73 735.42,-556.41"></polygon> </g> <!-- sbin --> <g id="node17" class="node">
+<title>
+sbin
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="941.62,-554 849.94,-554 849.94,-472 941.62,-472 941.62,-554"></polygon> <text text-anchor="middle" x="895.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">sbin</text> </g> <!-- root&#45;&gt;sbin --> <g id="edge16" class="edge">
+<title>
+root-&gt;sbin
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M653.43,-622.18C697.12,-610.69 777.64,-586.98 840.78,-554 840.87,-553.95 840.97,-553.9 841.06,-553.85"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="842.93,-556.82 849.89,-548.84 839.47,-550.73 842.93,-556.82"></polygon> </g> <!-- tmp --> <g id="node18" class="node">
+<title>
+tmp
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1048.39,-554 959.16,-554 959.16,-472 1048.39,-472 1048.39,-554"></polygon> <text text-anchor="middle" x="1003.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">tmp</text> </g> <!-- root&#45;&gt;tmp --> <g id="edge17" class="edge">
+<title>
+root-&gt;tmp
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M653.59,-627.1C712.37,-620.83 841.22,-602.76 950.06,-553.8"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="951.57,-556.96 959.19,-549.6 948.65,-550.6 951.57,-556.96"></polygon> </g> <!-- usr --> <g id="node19" class="node">
+<title>
+usr
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1149.22,-554 1066.33,-554 1066.33,-472 1149.22,-472 1149.22,-554"></polygon> <text text-anchor="middle" x="1107.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">usr</text> </g> <!-- root&#45;&gt;usr --> <g id="edge18" class="edge">
+<title>
+root-&gt;usr
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M653.46,-629.79C726.05,-628.22 908.94,-618.08 1057.22,-553.57"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1058.78,-556.71 1066.49,-549.45 1055.93,-550.32 1058.78,-556.71"></polygon> </g> <!-- var --> <g id="node20" class="node">
+<title>
+var
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1433.32,-554 1350.24,-554 1350.24,-472 1433.32,-472 1433.32,-554"></polygon> <text text-anchor="middle" x="1391.78" y="-507" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">var</text> </g> <!-- root&#45;&gt;var --> <g id="edge19" class="edge">
+<title>
+root-&gt;var
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M653.54,-625.82C736.54,-614.82 966.72,-583.87 1157.78,-554 1220.56,-544.18 1292.6,-531.68 1339.97,-523.29"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1340.76,-526.71 1349.99,-521.51 1339.53,-519.81 1340.76,-526.71"></polygon> </g> <!-- jonathan --> <g id="node6" class="node">
+<title>
+jonathan
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="420.15,-436 293.41,-436 293.41,-354 420.15,-354 420.15,-436"></polygon> <text text-anchor="middle" x="356.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">jonathan</text> </g> <!-- home&#45;&gt;jonathan --> <g id="edge5" class="edge">
+<title>
+home-&gt;jonathan
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M356.78,-471.75C356.78,-463.57 356.78,-454.86 356.78,-446.37"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="360.28,-446.17 356.78,-436.17 353.28,-446.17 360.28,-446.17"></polygon> </g> <!-- documents --> <g id="node7" class="node">
+<title>
+documents
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="215.37,-318 66.18,-318 66.18,-236 215.37,-236 215.37,-318"></polygon> <text text-anchor="middle" x="140.78" y="-271" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">Documents</text> </g> <!-- jonathan&#45;&gt;documents --> <g id="edge6" class="edge">
+<title>
+jonathan-&gt;documents
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M293.14,-359.82C271.61,-348.26 247.23,-335.17 224.38,-322.9"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="225.84,-319.71 215.38,-318.06 222.53,-325.88 225.84,-319.71"></polygon> </g> <!-- images --> <g id="node10" class="node">
+<title>
+images
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="348.53,-318 233.02,-318 233.02,-236 348.53,-236 348.53,-318"></polygon> <text text-anchor="middle" x="290.78" y="-271" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">Images</text> </g> <!-- jonathan&#45;&gt;images --> <g id="edge9" class="edge">
+<title>
+jonathan-&gt;images
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M333.88,-353.75C328.97,-345.12 323.72,-335.9 318.64,-326.97"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="321.62,-325.14 313.64,-318.17 315.54,-328.6 321.62,-325.14"></polygon> </g> <!-- videos --> <g id="node11" class="node">
+<title>
+videos
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="480.94,-318 366.62,-318 366.62,-236 480.94,-236 480.94,-318"></polygon> <text text-anchor="middle" x="423.78" y="-271" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">Videos</text> </g> <!-- jonathan&#45;&gt;videos --> <g id="edge10" class="edge">
+<title>
+jonathan-&gt;videos
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M380.02,-353.75C385.01,-345.12 390.34,-335.9 395.49,-326.97"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="398.6,-328.58 400.57,-318.17 392.54,-325.08 398.6,-328.58"></polygon> </g> <!-- downloads --> <g id="node12" class="node">
+<title>
+downloads
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="648.38,-318 499.17,-318 499.17,-236 648.38,-236 648.38,-318"></polygon> <text text-anchor="middle" x="573.78" y="-271" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">Downloads</text> </g> <!-- jonathan&#45;&gt;downloads --> <g id="edge11" class="edge">
+<title>
+jonathan-&gt;downloads
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M420.42,-359.98C442.17,-348.35 466.84,-335.17 489.93,-322.82"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="491.87,-325.76 499.04,-317.95 488.57,-319.58 491.87,-325.76"></polygon> </g> <!-- workspace --> <g id="node8" class="node">
+<title>
+workspace
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="214.73,-200 66.83,-200 66.83,-118 214.73,-118 214.73,-200"></polygon> <text text-anchor="middle" x="140.78" y="-153" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">Workspace</text> </g> <!-- documents&#45;&gt;workspace --> <g id="edge7" class="edge">
+<title>
+documents-&gt;workspace
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M140.78,-235.75C140.78,-227.57 140.78,-218.86 140.78,-210.37"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="144.28,-210.17 140.78,-200.17 137.28,-210.17 144.28,-210.17"></polygon> </g> <!-- ds105 --> <g id="node9" class="node">
+<title>
+ds105
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="262.17,-82 19.38,-82 19.38,0 262.17,0 262.17,-82"></polygon> <text text-anchor="middle" x="140.78" y="-35" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">lse-ds105-course-notes</text> </g> <!-- workspace&#45;&gt;ds105 --> <g id="edge8" class="edge">
+<title>
+workspace-&gt;ds105
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M140.78,-117.75C140.78,-109.57 140.78,-100.86 140.78,-92.37"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="144.28,-92.17 140.78,-82.17 137.28,-92.17 144.28,-92.17"></polygon> </g> <!-- usr_lib --> <g id="node21" class="node">
+<title>
+usr_lib
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="989.39,-436 910.16,-436 910.16,-354 989.39,-354 989.39,-436"></polygon> <text text-anchor="middle" x="949.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">lib</text> </g> <!-- usr&#45;&gt;usr_lib --> <g id="edge21" class="edge">
+<title>
+usr-&gt;usr_lib
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1066.36,-478.18C1063.49,-476.04 1060.61,-473.97 1057.78,-472 1032.25,-454.25 1023.13,-454.01 997.78,-436 997.69,-435.94 997.61,-435.88 997.52,-435.82"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="999.6,-433 989.48,-429.87 995.44,-438.63 999.6,-433"></polygon> </g> <!-- usr_bin --> <g id="node22" class="node">
+<title>
+usr_bin
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1090.34,-436 1007.22,-436 1007.22,-354 1090.34,-354 1090.34,-436"></polygon> <text text-anchor="middle" x="1048.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">bin</text> </g> <!-- usr&#45;&gt;usr_bin --> <g id="edge20" class="edge">
+<title>
+usr-&gt;usr_bin
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1087.31,-471.75C1082.96,-463.21 1078.32,-454.09 1073.83,-445.25"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1076.87,-443.5 1069.21,-436.17 1070.63,-446.67 1076.87,-443.5"></polygon> </g> <!-- usr_include --> <g id="node23" class="node">
+<title>
+usr_include
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1225.15,-436 1108.41,-436 1108.41,-354 1225.15,-354 1225.15,-436"></polygon> <text text-anchor="middle" x="1166.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">include</text> </g> <!-- usr&#45;&gt;usr_include --> <g id="edge22" class="edge">
+<title>
+usr-&gt;usr_include
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1128.25,-471.75C1132.6,-463.21 1137.23,-454.09 1141.73,-445.25"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1144.93,-446.67 1146.34,-436.17 1138.69,-443.5 1144.93,-446.67"></polygon> </g> <!-- var_log --> <g id="node24" class="node">
+<title>
+var_log
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1326.34,-436 1243.22,-436 1243.22,-354 1326.34,-354 1326.34,-436"></polygon> <text text-anchor="middle" x="1284.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">log</text> </g> <!-- var&#45;&gt;var_log --> <g id="edge23" class="edge">
+<title>
+var-&gt;var_log
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1354.66,-471.75C1346.27,-462.67 1337.3,-452.94 1328.67,-443.58"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1331.19,-441.15 1321.84,-436.17 1326.04,-445.9 1331.19,-441.15"></polygon> </g> <!-- var_mail --> <g id="node25" class="node">
+<title>
+var_mail
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1438.33,-436 1345.23,-436 1345.23,-354 1438.33,-354 1438.33,-436"></polygon> <text text-anchor="middle" x="1391.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">mail</text> </g> <!-- var&#45;&gt;var_mail --> <g id="edge24" class="edge">
+<title>
+var-&gt;var_mail
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1391.78,-471.75C1391.78,-463.57 1391.78,-454.86 1391.78,-446.37"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1395.28,-446.17 1391.78,-436.17 1388.28,-446.17 1395.28,-446.17"></polygon> </g> <!-- var_spool --> <g id="node26" class="node">
+<title>
+var_spool
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1557.62,-436 1455.94,-436 1455.94,-354 1557.62,-354 1557.62,-436"></polygon> <text text-anchor="middle" x="1506.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">spool</text> </g> <!-- var&#45;&gt;var_spool --> <g id="edge25" class="edge">
+<title>
+var-&gt;var_spool
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1431.68,-471.75C1440.78,-462.58 1450.52,-452.74 1459.89,-443.3"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1462.4,-445.74 1466.95,-436.17 1457.42,-440.81 1462.4,-445.74"></polygon> </g> <!-- var_tmp --> <g id="node27" class="node">
+<title>
+var_tmp
+</title>
+<polygon fill="#cee8f6" stroke="#5cb4e4" points="1664.39,-436 1575.16,-436 1575.16,-354 1664.39,-354 1664.39,-436"></polygon> <text text-anchor="middle" x="1619.78" y="-389" font-family="Helvetica,Arial,sans-serif" font-size="20.00" fill="#212121">tmp</text> </g> <!-- var&#45;&gt;var_tmp --> <g id="edge26" class="edge">
+<title>
+var-&gt;var_tmp
+</title>
+<path fill="none" stroke="#212121" stroke-width="3" d="M1433.43,-497.12C1467.69,-484.18 1517.28,-463.84 1566.35,-435.91"></path> <polygon fill="#212121" stroke="#212121" stroke-width="3" points="1568.28,-438.84 1575.18,-430.8 1564.77,-432.78 1568.28,-438.84"></polygon> </g> </g>
+</svg>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><span>Check out <a href="https://www.geeksforgeeks.org/unix-file-system/">this webpage</a> for a description of what each directory represents</span></p>
+</div>
+<!-- 
+## Windows file structure
 
-</section>
-<section id="html" class="slide level2">
-<h2>HTML</h2>
-</section>
-<section id="json" class="slide level2">
-<h2>JSON</h2>
-</section>
-<section id="txt" class="slide level2">
-<h2>TXT</h2>
-</section>
-<section id="csv" class="slide level2">
-<h2>CSV</h2>
-</section>
-<section id="scripts" class="slide level2">
-<h2>Scripts</h2>
-</section>
-<section id="obfuscated-binary-files" class="slide level2">
-<h2>Obfuscated Binary files</h2>
+# File types 
+
+## Binary vs plain text
+
+## File editors in the command line
+
+# Example of file formats
+
+## HTML
+
+## JSON
+
+## TXT
+
+## CSV
+
+## Scripts
+
+## Obfuscated Binary files -->
 </section></section>
 <section>
-<section id="whats-after-the-break" class="title-slide slide level1">
-<h1>What’s after the ☕ break:</h1>
+<section id="after-the-break" class="title-slide slide level1">
+<h1>After the ☕ break:</h1>
 <ul>
 <li>Let’s open the Terminal!</li>
-<li>Basic commands
-<ul>
-<li>Understand where we are</li>
-<li>Create, move and delete files</li>
-</ul></li>
-<li>A tour around <code>vim</code></li>
+<li>Basic shell commands</li>
+<li>A tour around <code>vim</code>, a file editor</li>
+<li>Common file formats</li>
 <li>How to prepare for the lab this week</li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable" style="word-break:break-all;">
 <h2>References</h2>
-<div id="refs" class="r-fit-text" role="doc-bibliography">
-
+<div id="refs" class="r-fit-text references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-computer_history_museum_1950_nodate" class="csl-entry" role="doc-biblioentry">
+Computer History Museum. n.d. <span>“1950 <span></span> <span>Timeline</span> of <span>Computer</span> <span>History</span>.”</span> <em>1950 <span></span> Timeline of Computer History</em>. Accessed September 16, 2022. <a href="https://www.computerhistory.org/timeline/1950/">https://www.computerhistory.org/timeline/1950/</a>.
+</div>
+<div id="ref-ebrahim_mastering_2018" class="csl-entry" role="doc-biblioentry">
+Ebrahim, Mokhtar, and Andrew Mallett. 2018. <em>Mastering <span>Linux</span> <span>Shell</span> <span>Scripting</span>: A Practical Guide to <span>Linux</span> Command-Line, <span>Bash</span> Scripting, and <span>Shell</span> Programming, 2nd <span>Edition</span></em>. 2nd ed. Birmingham: Packt Publishing.
+</div>
+<div id="ref-pelz_fundamentals_2018" class="csl-entry" role="doc-biblioentry">
+Pelz, Oliver. 2018. <em>Fundamentals of <span>Linux</span>: <span>Explore</span> the <span>Essentials</span> of the <span>Linux</span> <span>Command</span> <span>Line</span></em>. Birmingham: Packt Publishing Ltd.
+</div>
+<div id="ref-silberschatz_operating_2005" class="csl-entry" role="doc-biblioentry">
+Silberschatz, Abraham, Peter B. Galvin, and Greg Gagne. 2005. <em>Operating System Concepts</em>. 7th ed. Hoboken, NJ: J. Wiley &amp; Sons.
+</div>
 </div>
 
 

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Jon Cardoso-Silva">
-<meta name="dcterms.date" content="1 September 2022">
+<meta name="dcterms.date" content="16 September 2022">
 
-<title>LSE DS105M 2022/23 - 🗓️ Week 01 - Introduction and the Data Science Toolbox</title>
+<title>LSE DS105M 2022/23 - 💻 Week 03 - Summative assessment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,27 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../weeks/week01/lecture.html" rel="next">
-<link href="../main/assessments.html" rel="prev">
-<link href="..//figures/logos/LSE Data Science Institute.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//figures/logos/LSE Data Science Institute.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../custom_style.css">
+<link rel="stylesheet" href="../../custom_style.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -77,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">LSE DS105M 2022/23</span>
     </a>
   </div>
@@ -94,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">🗓️ Week 01 - Introduction and the Data Science Toolbox</h1>
+      <h1 class="quarto-secondary-nav-title">💻 Week 03 - Summative assessment</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -109,55 +107,35 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">🏠 Home</a>
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">🏠 Home</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../main/syllabus.html" class="sidebar-item-text sidebar-link">📓 Syllabus</a>
+  <a href="../../main/syllabus.html" class="sidebar-item-text sidebar-link">📓 Syllabus</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../main/communication.html" class="sidebar-item-text sidebar-link">📟 Communication</a>
+  <a href="../../main/communication.html" class="sidebar-item-text sidebar-link">📟 Communication</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../main/assessments.html" class="sidebar-item-text sidebar-link">✍️ Assessments</a>
+  <a href="../../main/assessments.html" class="sidebar-item-text sidebar-link">✍️ Assessments</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">🗓️ Weeks</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">🗓️ Weeks</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../weeks/week01.html" class="sidebar-item-text sidebar-link active">Week 01</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week01/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week01/appendix.html" class="sidebar-item-text sidebar-link">🔖 Appendix</a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../weeks/week02.html" class="sidebar-item-text sidebar-link">Week 02</a>
+            <a href="../../weeks/week01.html" class="sidebar-item-text sidebar-link">Week 01</a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -165,29 +143,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week02/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
+  <a href="../../weeks/week01/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week02/prep.html" class="sidebar-item-text sidebar-link">📒 Prepare for the lab</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week02/lab.html" class="sidebar-item-text sidebar-link">💻 Lab roadmap</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week02/appendix.html" class="sidebar-item-text sidebar-link">🔖 Appendix</a>
+  <a href="../../weeks/week01/appendix.html" class="sidebar-item-text sidebar-link">🔖 Appendix</a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../weeks/week03.html" class="sidebar-item-text sidebar-link">Week 03</a>
+            <a href="../../weeks/week02.html" class="sidebar-item-text sidebar-link">Week 02</a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -195,12 +163,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week03/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
+  <a href="../../weeks/week02/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week03/lab.html" class="sidebar-item-text sidebar-link">💻 Lab roadmap</a>
+  <a href="../../weeks/week02/prep.html" class="sidebar-item-text sidebar-link">📒 Prepare for the lab</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week02/lab.html" class="sidebar-item-text sidebar-link">💻 Lab roadmap</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week02/appendix.html" class="sidebar-item-text sidebar-link">🔖 Appendix</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../weeks/week03.html" class="sidebar-item-text sidebar-link">Week 03</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week03/lecture.html" class="sidebar-item-text sidebar-link">👨‍🏫 Lecture Slides</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week03/lab.html" class="sidebar-item-text sidebar-link">💻 Lab roadmap</a>
   </div>
 </li>
       </ul>
@@ -212,13 +210,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="../figures/logos/LSE Data Science Institute.png" class="img-fluid"></p>
+<p><img src="../../figures/logos/LSE Data Science Institute.png" class="img-fluid"></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#links" id="toc-links" class="nav-link active" data-scroll-target="#links">Links</a></li>
+  <li><a href="#things-to-know-before-you-start" id="toc-things-to-know-before-you-start" class="nav-link active" data-scroll-target="#things-to-know-before-you-start">Things to know before you start:</a></li>
+  <li><a href="#p1-book-worms-2-points" id="toc-p1-book-worms-2-points" class="nav-link" data-scroll-target="#p1-book-worms-2-points">P1: Book worms (2 points)</a></li>
+  <li><a href="#p2-run-the-code-in-the-cloud-3-points" id="toc-p2-run-the-code-in-the-cloud-3-points" class="nav-link" data-scroll-target="#p2-run-the-code-in-the-cloud-3-points">P2: Run the code in the cloud (3 points)</a></li>
+  <li><a href="#p3-its-time-to-search-5-points" id="toc-p3-its-time-to-search-5-points" class="nav-link" data-scroll-target="#p3-its-time-to-search-5-points">P3: It’s time to search (5 points)</a></li>
+  <li><a href="#p4-submit-no-points" id="toc-p4-submit-no-points" class="nav-link" data-scroll-target="#p4-submit-no-points">P4: Submit (no points)</a></li>
   </ul>
 </nav>
     </div>
@@ -227,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">🗓️ Week 01 - Introduction and the Data Science Toolbox</h1>
+<h1 class="title d-none d-lg-block">💻 Week 03 - Summative assessment</h1>
 <p class="subtitle lead">DS105 - Data for Data Science</p>
 </div>
 
@@ -238,14 +240,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jon Cardoso-Silva</a> </p>
+             <p>Anton Boichenko </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">01 September 2022</p>
+      <p class="date">16 September 2022</p>
     </div>
   </div>
     
@@ -254,14 +256,69 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>In this first week, we will cover what you can expect to learn from this course and the course logistics: all you need to know about the structure of the lectures, classes, assessments and how we will interact throughout this course.</p>
-<p>We will also cover some of the basics: what do we mean by data science and what tools will you need to use during this course?</p>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<ul>
-<li><p>👨‍🏫 <a href="../weeks/week01/lecture.html">Lecture slides</a></p></li>
-<li><p>🔖 <a href="../weeks/week01/appendix.html">Appendix</a></p></li>
-</ul>
+<p>Welcome to your first summative assessment for this course! We hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills.</p>
+<section id="things-to-know-before-you-start" class="level3">
+<h3 class="anchored" data-anchor-id="things-to-know-before-you-start">Things to know before you start:</h3>
+<ol type="1">
+<li>You will need to upload some parts of this assignment on Moodle.</li>
+<li>The <strong>deadline</strong> for this assignment is on Moodle as well.</li>
+<li>You will be granted a maximum of 10 points for the whole assignment. You will see how much each task is right next to the tasks’ names.</li>
+<li>You will need to take screenshots, <a href="https://www.take-a-screenshot.org/">here is how you can do that</a>.</li>
+<li>Read the instructions carefully and make sure you follow them.</li>
+</ol>
+</section>
+<section id="p1-book-worms-2-points" class="level2">
+<h2 class="anchored" data-anchor-id="p1-book-worms-2-points">P1: Book worms (2 points)</h2>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li><p>Open the bash shell on your local machine.</p></li>
+<li><p>Create a .txt file called <code>my_fav_book.txt</code>.</p></li>
+<li><p>Add the title and the author of your favourite book to the file in the following way:</p>
+<pre><code>Title: Aristotle
+
+Author: Politics</code></pre></li>
+<li><p>Create a folder on your cloud machine called <code>summative_03</code> and copy that .txt file to that folder. The folder should be located in the following way: <code>/home/&lt;username&gt;/summative_03</code>.<br>
+<strong>Make sure you copy the file</strong> from your local machine to the cloud and not create an identical one straight on the cloud machine.<br>
+</p></li>
+<li><p>Connect to the cloud machine.</p></li>
+<li><p>Using the cloud bash shell, print the content and the metadata (feel free to look at our last week’s materials) of this file. Then, take a screenshot of the result of those commands running. Please, make sure that your username is visible in the screenshot.</p></li>
+</ol>
+</section>
+<section id="p2-run-the-code-in-the-cloud-3-points" class="level2">
+<h2 class="anchored" data-anchor-id="p2-run-the-code-in-the-cloud-3-points">P2: Run the code in the cloud (3 points)</h2>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Go to your cloud machine.</li>
+<li>Create a Python or an R script called <code>script.py</code> or <code>script.R</code>, respectively, <strong>in the folder</strong> called <code>summative_03</code>.</li>
+<li>The script must do the following:
+<ol type="1">
+<li>Print your AWS username (the one you were provided at the beginning of the course)</li>
+<li>Print the current time (you can search for ways to do that)</li>
+<li>Wait for 10 seconds</li>
+<li>Print the current time again</li>
+</ol></li>
+<li>Run the script and take a screenshot of the results of running it.</li>
+<li>Run the script again <strong>but this time</strong> make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an <code>ls</code> command while Python is waiting for 10 seconds in-between printing commands. Take a screenshot of the result of this code running.</li>
+<li>Print the metadata of your file and take a screenshot of it.</li>
+</ol>
+</section>
+<section id="p3-its-time-to-search-5-points" class="level2">
+<h2 class="anchored" data-anchor-id="p3-its-time-to-search-5-points">P3: It’s time to search (5 points)</h2>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Go to your cloud machine.</li>
+<li>Navigate to the <code>/home/admin/week_03</code> directory. You will see a lot of <code>.md</code> files there. One of them is yours.</li>
+<li>Find the file that was created for you.<br>
+This part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your LSE ID in it.</li>
+<li>Copy this file to the <code>summative_03</code> folder on <strong>your</strong> user within the cloud machine.</li>
+<li>Change the permissions on this file for you to be able to edit it.</li>
+<li>Edit the file and answer the questions in it.</li>
+<li>Print the content of the file and the file’s metadata. Take a screenshot of both.</li>
+</ol>
+</section>
+<section id="p4-submit-no-points" class="level2">
+<h2 class="anchored" data-anchor-id="p4-submit-no-points">P4: Submit (no points)</h2>
+<p>Upload your screenshots to Moodle togther with the infromation required.</p>
 
 
 </section>
@@ -494,18 +551,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../main/assessments.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">✍️ Assessments</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../weeks/week01/lecture.html" class="pagination-link">
-        <span class="nav-page-text">👨‍🏫 Lecture Slides</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
