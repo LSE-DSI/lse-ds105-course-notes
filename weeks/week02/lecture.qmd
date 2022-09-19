@@ -1,13 +1,12 @@
 ---
 title: "👨‍🏫 Week 02 - Slides"
-date: 1 September 2022
-date-meta: 1 September 2022
+date: 19 September 2022
+date-meta: 19 September 2022
 ---
 
 
 ## 🖥️ Part I - Operating Systems, Files & The Terminal (45-50 min)
 
-<mark class="todo"></mark>
 
 Either click on the slide area below or click [here](/slides/week02_slides_part1.qmd) to view it in fullscreen.
 Use your keypad to navigate the slides.
@@ -23,4 +22,15 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 
 ## 🖥️ Part II - Demo: Navigating the Terminal (45-50 min)
 
-<mark class="todo"></mark>
+- Let's open the Terminal!
+- I will show you around your PC using some basic shell commands
+- A tour around `vim`, a file editor
+- Let's look at a few file formats
+    - TXT
+    - HTML
+    - JSON
+    - CSV
+    - Scripts
+    - Binary files
+
+To learn more about the commands shown in the demo, read [@pelz_fundamentals_2018, chapters 2-3]

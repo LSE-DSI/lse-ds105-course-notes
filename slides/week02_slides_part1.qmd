@@ -591,28 +591,6 @@ digraph {
 ::: footer
 [Check out [this webpage](https://www.geeksforgeeks.org/unix-file-system/) for a description of what each directory represents]{}
 :::
-<!-- 
-## Windows file structure
-
-# File types 
-
-## Binary vs plain text
-
-## File editors in the command line
-
-# Example of file formats
-
-## HTML
-
-## JSON
-
-## TXT
-
-## CSV
-
-## Scripts
-
-## Obfuscated Binary files -->
 
 # After the ☕ break:
 
