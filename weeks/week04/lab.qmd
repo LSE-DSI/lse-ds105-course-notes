@@ -1,0 +1,514 @@
+---
+title: "💻 Week 04 - Lab Roadmap (90 min)"
+date: 16 September 2022
+date-meta: 16 September 2022
+author: Anton Boichenko
+---
+
+This week it is time for you to go beyond your own machine and even beyond a cloud machine and visit the Internet! In today's lab we will get familiar with web-scrapping, a notion that describes the practices of automated data acquisition from the Internet. This lab is split into three parts: classic HTML scrapping, scrapping using APIs and scrapping using Selenium. These skills are not only essential for your data collection for this course but will be exceptionally useful for you in your own research.  
+
+<details><summary>Part 1: Exploring LSE (25 min)</summary>
+## Part 1: Exploring LSE
+<p></p>
+
+Our first task is to learn a bit more about LSE. LSE has many departments. One of them is the [Department of Methodology](https://www.lse.ac.uk/methodology). The department has people with experience in various methods. Today we will create a list of all the methods the Methodology staff has. 
+
+**Main task**: create a list of all the key areas of expertise that the Department of Methodology has. 
+
+🤔 **Stop and think**. Before you start following the instructions. Can you think of a way to acquire this information using the LSE website?
+
+Let's explore one of the possible ways to do that. We do not provide you with code straight away as we assume that you will be guided during the lab. However, the code is given to you after the action points. 
+
+🎯 **ACTION POINTS**
+
+1. Go to the [Department of Methodology People page](https://www.lse.ac.uk/Methodology/People) and navigate to **Academic Staff**.
+2. Inspect the page to find the HTML element that allows you to get to the person's individual page. 
+3. Using the language of your choice create a list of the links to the individual pages of all the Academic Staff Members.
+4. Using the saved links, go through all of them and extract the Key Areas of Expertise for all the Staff Members.
+5. Create one list to store all the Areas of Expertise and delete duplicates from there. 
+
+Do you find any areas that are relevant for you?
+
+**Optional task**
+
+Think of a way to scrape and store these data in a way that would link Academic Staff Members to their Key Areas of Expertise.
+
+### Solution Code
+
+<details class="special"> <summary> ![](/figures/logos/python-logo-notext.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Python logo"} Python users </summary>
+
+```python
+# import the required libraries
+import requests
+from bs4 import BeautifulSoup
+
+# sending a request to the site
+response_html = requests.get("https://www.lse.ac.uk/Methodology/People")
+
+# parsing page"s content
+soup = BeautifulSoup(response_html.text)
+
+# empty list to store links to pages
+links_to_staff = []
+
+# subsetting only for academic staff
+all_ac_staff = soup.find_all("div", attrs={"class":"accordion__panel"})[0].find_all("a", attrs={"class":"sys_0 sys_t0"})
+
+# iterating through all of the staff saving the links
+for person in all_ac_staff:
+
+    # extracting a link
+    link = person.get("href")
+    
+    link = "https://www.lse.ac.uk" + link
+
+    links_to_staff.append(link)
+
+# empy list to store key areas of experience 
+key_exp = []
+
+# iterating through all staff members' pages
+for link in links_to_staff:
+    
+    # extracting their research interests
+    response_html = requests.get(link)
+    
+    soup = BeautifulSoup(response_html.text)
+    
+    exp = soup.find_all("div", attrs={"class":"peopleContact__address"})[-1].get_text()
+    
+    key_exp.append(exp)
+    
+# cleaning up the string to create a list of all areas
+final_list = ",".join(key_exp).replace(".", " ").replace(",", ";").replace("; ", ";").split(";")
+```
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/Rlogo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="R logo"} R users </summary>
+
+```R
+# import required packages
+library(rvest)
+library(magrittr)
+library(stringi)
+
+# read the content of the site
+url <- "https://www.lse.ac.uk/Methodology/People"
+html <- read_html(url)
+
+# extract the elements related to academic staff only
+html_nodes(html, css = ".accordion__panel")[1] %>%
+  html_nodes(css = ".sys_0 sys_t0")
+
+# extract links to individual pages
+links_to_staff <- html_nodes(html, css = ".accordion__panel")[1] %>%
+  html_nodes(css = "a") %>%
+  html_attr("href")
+
+# add the base URL to the link
+links_to_staff <- paste("https://www.lse.ac.uk", links_to_staff, sep = "")
+
+# write a function that extracts areas of experience from each page
+get_expert <- function(link) {
+  url <- link
+  html <- read_html(url)
+  
+  html_nodes(html, css = ".peopleContact__address") %>%
+    tail(1) %>%
+    html_text()
+  
+}
+
+# apply the function to all pages
+result <- sapply(links_to_staff, get_expert)
+
+# clean up the areas of expertise
+res <- paste(result, collapse = ";") %>%
+  stri_replace_all_fixed(".", " ") %>%
+  stri_replace_all_fixed(",", ";") %>%
+  stri_replace_all_fixed("; ", ";")
+
+# create a list of all areas
+final_list <- stri_split_fixed(res, ";")[[1]]
+```
+
+</details>
+
+</details>
+
+<details><summary>Part 2: Buying tickets (35 min)</summary>
+
+## Part 2: Buying tickets 
+
+After completing the last exercise you might think "Well, yeah, it is useful for my academic endeavours, but not for my day-to-day life.". Let us show you how you can solve your problems with it!
+
+It turns out that [TicketMaster](https://www.ticketmaster.com/) (one of the biggest websites that sells tickets) has its own API. It means that you can automate your ticket search if you wanted to! Let's explore this together. 
+
+*We do not provide you with code straight away, however, you will find the solutions below.*
+
+🎯 **ACTION POINTS** 
+
+1. Go to [https://developer.ticketmaster.com/](https://developer.ticketmaster.com/) and register an account. You will only need an email address. 
+2. Acquire an API token using your new account. It will be called a **Consumer Key** in your apps' information.
+3. Using the [documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2) find all the music events happening in London.    
+    How many events have you found?  
+    Do you think it's all the events happening in London?   
+    Is there a way to show more events?  
+4. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
+    What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
+5. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
+6. What about family-friendly events in London? Are there any?
+
+
+### Solution Code
+
+<details class="special"> <summary> ![](/figures/logos/python-logo-notext.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Python logo"} Python users </summary>
+
+All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
+
+**Task 3**
+
+```python
+# import the required libraries
+import requests
+
+# saving your API key
+api_key = "YOUR_API_KEY"
+
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "apikey": api_key}
+
+# sending a request to the API
+response = requests.get("https://app.ticketmaster.com/discovery/v2/events.json",
+                        params=params)
+
+# parse the response
+resp_json = response.json()
+
+# extract the events
+resp_json["_embedded"]["events"]
+```
+
+Next, we will be only providing the query parameters.
+
+**Task 3 (extending search)**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+**Task 4**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "genre_name":"Rock",
+          "startDateTime":"2022-10-15T00:00:00Z",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+This API does not have a price parameter, so you would need to filter the JSON manually. 
+
+**Task 5**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"countryCode": "GB",
+          "city": "London",
+          "keyword":"data",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+
+# or
+
+params = {"keyword":"data",
+          "size": 200, 
+          "page": 1,
+          "apikey": api_key}
+```
+
+**Task 6**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"countryCode": "GB",
+          "city": "London",
+          "includeFamily":"only",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/Rlogo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="R logo"} R users </summary>
+
+All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
+
+**Task 3**
+
+```R
+# importing required packages
+library("httr")
+library("jsonlite")
+
+# saving your API key
+api_key <- "ErOQNylYMIv9wqPLWsezUdByUjftJIa6"
+
+# setting up the base URL and parameters
+base_url <- "https://app.ticketmaster.com/discovery/v2/events.json"
+
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "apikey" = api_key))
+
+# parse the response
+json <- content(response, "parsed")
+```
+Next, we will be only providing the query parameters.
+
+**Task 3 (extending search)**
+
+```R
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "size" = 200, 
+          "page" = 1,
+          "apikey" = api_key))
+```
+
+**Task 4**
+
+```R
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "genre_name" = "Rock",
+          "startDateTime" = "2022-10-15T00:00:00Z",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+
+This API does not have a price parameter, so you would need to filter the JSON manually. 
+
+**Task 5**
+
+```R
+# sending a request
+response <- GET(base_url, query = list(
+          "countryCode" = "GB",
+          "city" = "London",
+          "keyword" = "data",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+
+# or
+
+response <- GET(base_url, query = list(
+          "keyword" = "data",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+
+**Task 6**
+
+```R
+# sending a request
+response <- GET(base_url, query = list(
+          "countryCode" = "GB",
+          "city" = "London",
+          "includeFamily" = "only",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+</details>
+
+</details>
+
+<details><summary> Part 3: Searching for Data events (25 min)</summary>
+## Part 3: Searching for Data events
+
+We have now explored one of the key methods of web scrapping. However, we haven't yet talked about the scenarios where we need to **interact** with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let's see how it works. 
+
+We haven't found a lot of events about data on TicketMaster. Maybe we can use another platform?
+
+🎯 **ACTION POINTS** 
+
+0. If you are using Python, make sure you have Google Chrome installed and [chromdriver](https://chromedriver.chromium.org/downloads) downloaded to the folder you know a path to.  
+  If you are using R, make sure you have Mozilla Firefox installed. 
+1. Using Selenium go to the [London events page on Eventbrite](https://www.eventbrite.co.uk/d/united-kingdom--london/events/).
+2. Navigate to the search box and enter "data" using Selenium.
+3. Hit enter using Selenium.
+4. Parse the number of pages of such events from below the page.
+5. Find a way to go to the next page.
+6. Write a loop that will go through the next 10 pages and print the date and time of the first event on the page. 
+
+
+
+### Solution Code
+
+<details class="special"> <summary> ![](/figures/logos/python-logo-notext.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Python logo"} Python users </summary>
+
+We will present the whole sequence of steps here in one code. 
+
+```python
+# import the required libraries
+from selenium import webdriver
+from selenium.webdriver import Chrome
+import time
+
+# here you specify the Path to chromedriver
+driver_path = "/chromedriver_PATH"
+
+# launching the browser 
+driver = Chrome(driver_path) 
+
+# saving the link
+link = "https://www.eventbrite.co.uk/d/united-kingdom--london/events/"
+
+# navigating to the page
+driver.get(link)
+
+# navigating to the search box
+search = driver.find_element("css selector", """#global-header > div 
+> div.consumer-header__content.consumer-header__desktop.eds-show-up-md 
+> div.consumer-header__search > button > div > div > div > div""")
+
+# clicking on the search box
+search.click()
+
+# navigating to the search box
+inputElement = driver.find_element("css selector", "#search-autocomplete-input")
+
+# inputting "data" into the search box
+inputElement.send_keys('data')
+
+# importing common keys
+from selenium.webdriver.common.keys import Keys
+
+# asking Selenium to hit enter
+inputElement.send_keys(Keys.ENTER)
+
+# extracting the number of pages
+n_pages_el = driver.find_element("css selector", """#root > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content 
+> div > main > div > div > section.search-base-screen__search-panel
+> footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3""")
+print(n_pages_el.text)
+
+# importing time to wait until the page loads
+import time 
+
+for i in range(10):
+    
+    # saving the path to the first date on the page
+    first_date = driver.find_element("xpath", """//*[@id="root"]/div/div[2]/div/div/div/div[1]/div/main/div/div/section[1]/
+    div[1]/div/ul/li[1]/div/div/div[1]/div/div/div/article/div[2]/div/div/div[1]/div""")
+
+    print(first_date.text)
+    
+    # saving the path to the next page button
+    next_page = driver.find_element("css selector", """#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg""")
+    
+    # clicking for next page
+    next_page.click()
+    
+    # wait for 2 seconds
+    time.sleep(2)
+
+
+# clode the driver
+driver.close()
+```
+
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/Rlogo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="R logo"} R users </summary>
+
+We will present the whole sequence of steps here in one code.
+ 
+```R
+# import selenium
+library("RSelenium")
+
+# launching the browser 
+rD<- rsDriver(browser=c("firefox"))
+driver <- rD$client
+
+# navigating to the page
+url <- "https://www.eventbrite.co.uk/d/united-kingdom--london/events/"
+driver$navigate(url)
+
+# navigating to the search box
+search <- driver$findElement(using = "css selector", value = '#global-header > div 
+> div.consumer-header__content.consumer-header__desktop.eds-show-up-md 
+> div.consumer-header__search > button > div > div > div > div')
+
+# clicking on the search box
+search$clickElement()
+
+# navigating to the search box
+search_field <- driver$findElement(using = "css selector", value = '#search-autocomplete-input')
+
+# inputting "data" into the search box
+search_field$sendKeysToElement(list("data"))
+
+# asking Selenium to hit enter
+page_body <- driver$findElement("css", "body")
+page_body$sendKeysToElement(list(key = "enter"))
+
+# extracting the number of pages
+n_pages <- driver$findElement(using = "css selector",
+                                       value = '#root > div > div.eds-structure__body > div > div > div >     
+                                       div.eds-fixed-bottom-bar-layout__content 
+                                      > div > main > div > div > section.search-base-screen__search-panel
+                                      > footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3')
+n_pages <- n_pages$getElementText()[[1]]
+print(n_pages)
+
+
+for (i in 1:10) {
+    
+  # saving the path to the first date on the page
+  first_date <- driver$findElement(using = "css selector", value = ".search-main-content__events-list > li:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)")
+
+  print(first_date$getElementText()[[1]])
+  
+  # saving the path to the next page button
+  next_page <- driver$findElement(using = "css selector", value = '#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg')
+  
+  # clicking for next page
+  next_page$clickElement()
+  
+  # wait for 2 seconds
+  Sys.sleep(2)
+  
+}
+```
+</details>
+</details>
+
