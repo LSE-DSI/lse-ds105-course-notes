@@ -93,7 +93,7 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td rowspan=4></td>
             <td rowspan=4>🗓️ <a href="">Week 04</a></td>
             <td style="font-weight:bold;">Lecture</td>
-            <td>The Internet: protocols + scrapping + APIs.</td>
+            <td>The Internet: protocols + scraping + APIs.</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Lab</td>
