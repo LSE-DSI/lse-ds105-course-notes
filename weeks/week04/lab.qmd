@@ -5,7 +5,9 @@ date-meta: 16 September 2022
 author: Anton Boichenko
 ---
 
-This week it is time for you to go beyond your own machine and even beyond a cloud machine and visit the Internet! In today's lab we will get familiar with web-scrapping, a notion that describes the practices of automated data acquisition from the Internet. This lab is split into three parts: classic HTML scrapping, scrapping using APIs and scrapping using Selenium. These skills are not only essential for your data collection for this course but will be exceptionally useful for you in your own research.  
+This week it is time for you to go beyond your own machine and even beyond a cloud machine and visit the Internet! 
+
+In today's lab we will get familiar with web-scraping, a notion that describes the practices of automated data acquisition from the Internet. This lab is split into three parts: classic HTML scraping, scraping using APIs and scraping using Selenium. These skills are not only essential for your data collection for this course but will be exceptionally useful for you in your own research.  
 
 <details><summary>Part 1: Exploring LSE (25 min)</summary>
 ## Part 1: Exploring LSE
@@ -352,7 +354,7 @@ response <- GET(base_url, query = list(
 <details><summary> Part 3: Searching for Data events (25 min)</summary>
 ## Part 3: Searching for Data events
 
-We have now explored one of the key methods of web scrapping. However, we haven't yet talked about the scenarios where we need to **interact** with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let's see how it works. 
+We have now explored one of the key methods of web scraping. However, we haven't yet talked about the scenarios where we need to **interact** with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let's see how it works. 
 
 We haven't found a lot of events about data on TicketMaster. Maybe we can use another platform?
 
