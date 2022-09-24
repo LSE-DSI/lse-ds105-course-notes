@@ -5,7 +5,7 @@ date-meta: 16 September 2022
 author: Anton Boichenko
 ---
 
-Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scrapping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 
+Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 
 
 ### Things to know before you start:  
 
@@ -35,7 +35,7 @@ The unique instructions for this task are provided in `summative_04.txt`. Go to 
 🎯 **ACTION POINTS**
 
 1. Replicate your previous task using Selenium.
-2. Additionally take the following steps **using Selenium**:
+2. Additionally, take the following steps **using Selenium**:
 
     1. Go to **Recipe collections** for whatever dish you were asked to search for in the previous task.
     2. Choose the first recipe collection, and scroll down to the button that says **Load more**.
