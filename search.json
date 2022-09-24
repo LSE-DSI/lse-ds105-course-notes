@@ -364,6 +364,55 @@
     "text": "Part 3: Searching for Data events\nWe have now explored one of the key methods of web scraping. However, we haven’t yet talked about the scenarios where we need to interact with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let’s see how it works.\nWe haven’t found a lot of events about data on TicketMaster. Maybe we can use another platform?\n🎯 ACTION POINTS\n\nIf you are using Python, make sure you have Google Chrome installed and chromdriver downloaded to the folder you know a path to.\nIf you are using R, make sure you have Mozilla Firefox installed.\nUsing Selenium go to the London events page on Eventbrite.\nNavigate to the search box and enter “data” using Selenium.\nHit enter using Selenium.\nParse the number of pages of such events from below the page.\nFind a way to go to the next page.\nWrite a loop that will go through the next 10 pages and print the date and time of the first event on the page.\n\n\nSolution Code\n\n\n Python users\n\nWe will present the whole sequence of steps here in one code.\n# import the required libraries\nfrom selenium import webdriver\nfrom selenium.webdriver import Chrome\nimport time\n\n# here you specify the Path to chromedriver\ndriver_path = \"/chromedriver_PATH\"\n\n# launching the browser \ndriver = Chrome(driver_path) \n\n# saving the link\nlink = \"https://www.eventbrite.co.uk/d/united-kingdom--london/events/\"\n\n# navigating to the page\ndriver.get(link)\n\n# navigating to the search box\nsearch = driver.find_element(\"css selector\", \"\"\"#global-header > div \n> div.consumer-header__content.consumer-header__desktop.eds-show-up-md \n> div.consumer-header__search > button > div > div > div > div\"\"\")\n\n# clicking on the search box\nsearch.click()\n\n# navigating to the search box\ninputElement = driver.find_element(\"css selector\", \"#search-autocomplete-input\")\n\n# inputting \"data\" into the search box\ninputElement.send_keys('data')\n\n# importing common keys\nfrom selenium.webdriver.common.keys import Keys\n\n# asking Selenium to hit enter\ninputElement.send_keys(Keys.ENTER)\n\n# extracting the number of pages\nn_pages_el = driver.find_element(\"css selector\", \"\"\"#root > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content \n> div > main > div > div > section.search-base-screen__search-panel\n> footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3\"\"\")\nprint(n_pages_el.text)\n\n# importing time to wait until the page loads\nimport time \n\nfor i in range(10):\n    \n    # saving the path to the first date on the page\n    first_date = driver.find_element(\"xpath\", \"\"\"//*[@id=\"root\"]/div/div[2]/div/div/div/div[1]/div/main/div/div/section[1]/\n    div[1]/div/ul/li[1]/div/div/div[1]/div/div/div/article/div[2]/div/div/div[1]/div\"\"\")\n\n    print(first_date.text)\n    \n    # saving the path to the next page button\n    next_page = driver.find_element(\"css selector\", \"\"\"#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg\"\"\")\n    \n    # clicking for next page\n    next_page.click()\n    \n    # wait for 2 seconds\n    time.sleep(2)\n\n\n# clode the driver\ndriver.close()\n\n\n\n R users\n\nWe will present the whole sequence of steps here in one code.\n# import selenium\nlibrary(\"RSelenium\")\n\n# launching the browser \nrD<- rsDriver(browser=c(\"firefox\"))\ndriver <- rD$client\n\n# navigating to the page\nurl <- \"https://www.eventbrite.co.uk/d/united-kingdom--london/events/\"\ndriver$navigate(url)\n\n# navigating to the search box\nsearch <- driver$findElement(using = \"css selector\", value = '#global-header > div \n> div.consumer-header__content.consumer-header__desktop.eds-show-up-md \n> div.consumer-header__search > button > div > div > div > div')\n\n# clicking on the search box\nsearch$clickElement()\n\n# navigating to the search box\nsearch_field <- driver$findElement(using = \"css selector\", value = '#search-autocomplete-input')\n\n# inputting \"data\" into the search box\nsearch_field$sendKeysToElement(list(\"data\"))\n\n# asking Selenium to hit enter\npage_body <- driver$findElement(\"css\", \"body\")\npage_body$sendKeysToElement(list(key = \"enter\"))\n\n# extracting the number of pages\nn_pages <- driver$findElement(using = \"css selector\",\n                                       value = '#root > div > div.eds-structure__body > div > div > div >     \n                                       div.eds-fixed-bottom-bar-layout__content \n                                      > div > main > div > div > section.search-base-screen__search-panel\n                                      > footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3')\nn_pages <- n_pages$getElementText()[[1]]\nprint(n_pages)\n\n\nfor (i in 1:10) {\n    \n  # saving the path to the first date on the page\n  first_date <- driver$findElement(using = \"css selector\", value = \".search-main-content__events-list > li:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)\")\n\n  print(first_date$getElementText()[[1]])\n  \n  # saving the path to the next page button\n  next_page <- driver$findElement(using = \"css selector\", value = '#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg')\n  \n  # clicking for next page\n  next_page$clickElement()\n  \n  # wait for 2 seconds\n  Sys.sleep(2)\n  \n}"
   },
   {
+    "objectID": "weeks/week04/summative.html",
+    "href": "weeks/week04/summative.html",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "",
+    "text": "Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p0-only-for-you",
+    "href": "weeks/week04/summative.html#p0-only-for-you",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P0: Only for you",
+    "text": "P0: Only for you\nThis assignment has individual tasks for each student. You will find them on your cloud machine profile.\n🎯 ACTION POINTS\n\nGo to your cloud machine user.\nLocate the file called summative_04.txt and download it.\n\nThis file contains your unique assignment."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p1-loving-food-3-points",
+    "href": "weeks/week04/summative.html#p1-loving-food-3-points",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P1: Loving food (3 points)",
+    "text": "P1: Loving food (3 points)\n🎯 ACTION POINTS\nThe unique instructions for this task are provided in summative_04.txt. Go to the file and follow the instructions for the first task."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p2-keep-loving-food-5-points",
+    "href": "weeks/week04/summative.html#p2-keep-loving-food-5-points",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P2: Keep loving food (5 points)",
+    "text": "P2: Keep loving food (5 points)\n🎯 ACTION POINTS\n\nReplicate your previous task using Selenium.\nAdditionally, take the following steps using Selenium:\n\nGo to Recipe collections for whatever dish you were asked to search for in the previous task.\nChoose the first recipe collection, and scroll down to the button that says Load more.\nClick this button.\nGet to the last recipe that appeared after clicking this button.\nScrape all the information about this recipe. Structure and save it in a JSON format in the file called Selenium_collections.json.\n\nMake sure all the steps are shown in your code.\nSave the code in the file called food_Selenium (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p3-getting-the-news-5-points",
+    "href": "weeks/week04/summative.html#p3-getting-the-news-5-points",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P3: Getting the news (5 points)",
+    "text": "P3: Getting the news (5 points)\n🎯 ACTION POINTS\n\nRegister for the NYT Article Search API and acquire an API key.\nExplore the documentation of the API to complete further steps.\nExtract the titles of articles, their publishing dates and links to them following the instructions in summative_04.txt. Save everything in a JSON format in the file called NYT_articles.json.\n\nPlot the average size of the articles (measured in the number of words) for each month in your period.\nSave the code in the file called NYT_API_code (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p4-simple-english-2-points",
+    "href": "weeks/week04/summative.html#p4-simple-english-2-points",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P4: Simple English (2 points)",
+    "text": "P4: Simple English (2 points)\n🎯 ACTION POINTS\n\nTake the first 20 articles that you have scrapped in the previous exercise.\nGo to this dictionary API and explore how to use it for the next tasks.\nUsing this API, create a JSON file containing the original 20 article titles and their phonetic representations. For instance, if the title is “Data Science” your JSON record should look like this:\n{\"Data Science\": \"ˈdaetə ˈsaɪəns\"}\nSave all the phonetic representations and the original titles in the file called NYT_phonetic.json."
+  },
+  {
+    "objectID": "weeks/week04/summative.html#p5-upload-your-solutions",
+    "href": "weeks/week04/summative.html#p5-upload-your-solutions",
+    "title": "💻 Week 04 - Summative assessment",
+    "section": "P5: Upload your solutions",
+    "text": "P5: Upload your solutions\n🎯 ACTION POINTS\n\nConnect to your user on the cloud machine.\nCreate a folder called summative04.\nUpload all the created files (your code and the scrapped data) to the folder."
+  },
+  {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
     "href": "slides/week01_slides_part1.html#the-data-science-institute",
     "title": "DS105 Data for Data Science",
