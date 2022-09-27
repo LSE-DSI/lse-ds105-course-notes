@@ -386,7 +386,7 @@ It is a bad practice as things get messy very quickly.
 - ![](/figures/logos/spotify-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Spotify API](https://developer.spotify.com/documentation/web-api/)
 - ![](/figures/logos/New_York_Times_T_icon.svg){style="height:1em;vertical-align:text-bottom;"} [New York Times API](https://developer.nytimes.com/)
 - ![](/figures/logos/the-guardian.svg){style="height:1em;vertical-align:text-bottom;"} [The Guardian API](https://open-platform.theguardian.com/)
-- ![](/figures/logos/New_York_Times_T_icon.svg){style="height:1em;vertical-align:text-bottom;"} [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+- ![](/figures/logos/US-NationalWeatherService-Logo.svg){style="height:1em;vertical-align:text-bottom;"} [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
 :::
 
 :::
@@ -412,9 +412,9 @@ Data is Plural run by Buzzfeed's data editor 🧑 [Jeremy Singer-Vine](https://w
 
 ::: {.incremental .r-fit-text}
 - Next week we will introduce you to **The Terminal**
-- Join our ![](/figures/logos/slack_logo_simple.svg){height="1em"} [Slack group](/main/communication.qmd) if you haven't done so yet.
+- Join our ![](/figures/logos/slack_logo_simple.svg){height="1em"} [Slack group](/main/communication.html) if you haven't done so yet.
 - Use the time before our first lab to revisit basic programming skills.
-- Head over to the 🔖 [Week 01 - Appendix](/weeks/week01/appendix.qmd) page for:
+- Head over to the 🔖 [Week 01 - Appendix](/weeks/week01/appendix.html) page for:
 	- Indicative & recommended reading
 	- Programming Resources
 :::
