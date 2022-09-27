@@ -468,6 +468,102 @@
 <strong><a href="https://www.kcl.ac.uk/people/yijun-wang">Yijun Wang</a></strong> <br> <em>Guest Teacher</em><br> PhD Student at UCL Centre for Advanced Spatial Analysis</p>
 </div>
 </div>
+</section>
+<section id="who-are-you" class="slide level2 smaller">
+<h2>Who are you</h2>
+<div class="cell" data-show="false">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Programme</th>
+<th style="text-align: right;">Freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BSc in Economics</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSc in Politics and Data Science</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSc in Politics and Economics</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">General Course</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSc in Philosophy and Economics</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSc in International Social and Public Policy with Politics</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSc in Mathematics, Statistics and Business</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSc in Philosophy, Logic and Scientific Method</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSc in Philosophy, Politics and Economics</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSc in Politics</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footer">
+<p>Source: LSE For You. Last Updated: 27 September 2022</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="degree-programme-vs-year-of-study">Degree Programme vs Year of Study</h3>
+<div class="columns">
+<div class="column" style="width:90%;">
+<div class="cell" data-show="false">
+<div class="cell-output-display">
+<p><img data-src="week01_slides_part1_files/figure-revealjs/tally_yos-1.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:10%;">
+
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="bsc-in-economics---course-selection-options">BSc in Economics - Course Selection Options</h3>
+<div class="footer">
+<p>Data extracted from the <a href="https://www.lse.ac.uk/resources/regulations/2021_UBEC.html">UBEC 2021/2022 degree regulation</a>.</p>
+</div>
+
+<img data-src="../figures/week01/UBEC_2021_22v2.png" class="img-fluid r-stretch" style="width:100.0%"><aside class="notes">
+<p><mark class="todo"> Add the overlaid graph, showing the actual paths these students took.</mark></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="learning-objectives" class="title-slide slide level1">
@@ -1087,6 +1183,48 @@ Kolawole, Emi. 2013. <span>“About Those 2005 and 2013 Photos of the Crowds in 
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
