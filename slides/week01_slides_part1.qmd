@@ -158,7 +158,92 @@ PhD Student at UCL Centre for Advanced Spatial Analysis
 
 :::
 
+## Who are you {.smaller}
 
+```{r}
+#| show: false
+#| label: tally
+
+library(knitr)
+library(tidyverse)
+
+ds105 <- readr::read_csv("../resources/ds105_enrollment.csv")
+progrs <- table(ds105$programmeName, dnn=c("Programme")) %>% sort(decreasing=TRUE)
+
+kable(progrs)
+
+```
+
+::: footer
+Source: LSE For You. Last Updated: 27 September 2022
+:::
+
+------
+
+### Degree Programme vs Year of Study
+
+::: columns
+
+::: {.column width="90%"}
+
+```{r}
+#| show: false
+#| label: tally_yos
+
+library(knitr)
+library(tidyverse)
+
+plot_df <- 
+    ds105 %>% group_by(programmeName, yearOfStudy) %>% tally()
+plot_df$programmeName <- 
+    factor(plot_df$programmeName, levels=rev(names(progrs)))
+plot_df$yearOfStudy <- factor(plot_df$yearOfStudy, levels=seq(4))
+
+g <- ggplot(plot_df, aes(x=yearOfStudy, y=programmeName, fill=n, label=n)) +
+    geom_bin2d() +
+    geom_text(aes(color=n)) +
+    
+    scale_fill_viridis_c(name="Count", option="E", guide="none") + 
+    scale_colour_gradient2(name="", low="#ffffff", mid="#fafafa", high="#212121", midpoint=4.9, guide="none") +
+    scale_x_discrete(name="Year of Study") +
+    scale_y_discrete(name="") +
+
+    theme_bw() +
+	theme(
+        legend.position = "bottom",
+        legend.text = element_text(size=16),
+        axis.title.x = element_text(size=17),
+        axis.title.y = element_text(size=17),
+        axis.text.x = element_text(size=12),
+        axis.text.y = element_text(size=12),
+        panel.grid.minor = element_blank(),
+        aspect.ratio=8/4
+        ) 
+g
+
+```
+:::
+
+::: {.column width="10%"}
+:::
+
+:::
+
+
+--------------
+
+### BSc in Economics - Course Selection Options
+
+::: footer
+Data extracted from the [UBEC 2021/2022 degree regulation](https://www.lse.ac.uk/resources/regulations/2021_UBEC.html).
+:::
+
+![](/figures/week01/UBEC_2021_22v2.png){width="100%"}
+
+
+::: notes
+<mark class="todo"> Add the overlaid graph, showing the actual paths these students took.</mark>
+:::
 
 # Learning Objectives
 
