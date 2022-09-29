@@ -201,6 +201,52 @@ It is very likely that you just head to a software store (Play Store, Apple Stor
 
     To quit, press `Esc`, then type `:q` and hit `ENTER`. Still stuck and cannot quit vim? [You are not alone](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).
 
+
+<details class="special"> <summary> ![](/figures/logos/apple_logo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Apple logo"} MacOS users </summary>
+<p></p>
+
+🎯 **ACTION POINTS** 
+
+ You can use 'Homebrew' to install software in a very similar way to `apt` command in a Linux system.
+
+ 1. First, you need to be sure if homebrew is installed on your system. You can check it with the terminal.
+
+     ```bash
+     brew
+    ```
+- If you receive an error:
+
+     ```console
+    zsh: command not found: brew
+    ```
+You should install Homebrew in your system. You can do this with the following command:
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    ```
+if you have not installed XCode before, the installation script will ask you to install it as well, please accept to continue.
+
+2. You can install vim now:
+
+    ```bash
+    brew install vim
+    ```
+
+3. You can open vim:
+
+    ```bash
+    vim
+    ```
+
+ - You can update `brew` with the command:
+
+    ```bash
+    brew update
+    ```
+
+
+</details>
 </details>
 
 <details><summary>Step 5: Creating and editing files and directories (20 min)</summary>
@@ -228,7 +274,35 @@ It is very likely that you just head to a software store (Play Store, Apple Stor
      vim README.txt
     ```
 
-4. Inside vim, write something to the file (your name, a verse, a sentence, whatever comes to mind)
+4. Inside vim, write something to the file (your name, a verse, a sentence, whatever comes to mind). 
+
+::: {.callout-note appearance="simple"}
+
+To insert text characters, you need to switch to the `Insert Mode` by pressing `i`. In the left bottom, you can see --INSERT-- and start to write. You can shift back to 'Normal Mode' by pressing `ESC`.
+
+:::    
+
+:::{.callout-note collapse="true"}
+## Important Note
+
+
+Mainly, `vim` has three modes: `Normal`, `Insert` and `Visual`. 
+
+- Vim initialises with `Normal Mode` by default in which you enter the commands but you cannot insert any character directly.  In normal mode;
+
+    You can navigate your cursor with "h, j, k, l"  
+    delete any line with "dd"  
+    delete a character with "x"  
+    insert a character after the cursor with 'a'  
+    insert the previously deleted text after the cursor with 'p'    
+
+    There are many "VIM Commands" waiting to be discovered by you.
+
+- In `Insert Mode` you basically can enter your text/characters.
+
+- You can also switch to `Visual Mode` by pressing 'v' while in normal mode, and you can manipulate text groups by cutting, copying, and deleting.
+
+:::
 
 5. Now save your changes to the file. To save a file when inside vim, press `Esc` then type `:w` and hit `ENTER`.
 
@@ -310,6 +384,7 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
 7. Take a screenshot ([how?](https://www.take-a-screenshot.org/)) of your terminal and submit to Moodle, under the field identified as P2. Make sure that both the output of `stat` and `cat` commands are visible.
 
 </details>
+
 
 <details><summary>(Bonus) 🏠 Practice at home: `vimtutor`</summary>
 ## Practice at home: `vimtutor`
