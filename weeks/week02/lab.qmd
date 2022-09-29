@@ -101,7 +101,7 @@ We will follow the instructions below step by step together while answering what
 5. Are there any hidden files?
 
     ```bash
-      ls -a
+     ls -a
     ```
 
 6. Now, let's explore what is above your current directory:
@@ -135,6 +135,20 @@ We will follow the instructions below step by step together while answering what
     Use the arrow keys in your keyboard to scroll up and down the manual. Type the character `q` when you are done browsing.
 
 10. Now, try to go back to the directory you were at the start of this tutorial. Hint: if you get stuck, try `pwd` again and compare the output you get now to the one you got the first time you used this command.
+
+
+
+
+:::{.callout-tip collapse="true"}
+## Small Hint
+
+For your future research, if you see "$" sign at the beginning of the code snippets, it means you are in a system shell and should type your commands in the shell.
+
+     $ pwd
+
+    
+:::
+
 </details>
 
 <details><summary> Step 3: Wandering away from `$HOME` (20 min)</summary>
