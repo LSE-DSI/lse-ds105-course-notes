@@ -399,7 +399,7 @@ The first time you login, you need to give a new password for your account. Type
 <ol type="1">
 <li><p>Open the terminal.</p></li>
 <li><p>Type the following command after replacing <code>&lt;username&gt;</code> with your actual username.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ssh</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Enter your password (which is at this point your username).<br>
 The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.</p></li>
 </ol>
@@ -457,16 +457,16 @@ Step 4: A bridge between the worlds (15 min)
 <h2 class="anchored" data-anchor-id="step-4-a-bridge-between-the-worlds">Step 4: A bridge between the worlds</h2>
 <p>In the first steps of this lab we have extablished a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and recieve files. In order to do that we will use the <code>scp</code> command that stands for “secure copy”. Follow the steps below to save the secrets files you created above to your computer.</p>
 <p>Generally the <code>scp</code> commands work in the following way:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> scp location_1/file location_2/file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> location_1/file location_2/file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It means that we are copying a file from <code>location_1</code> to <code>location_2</code>. Let’s see how it’s done with the cloud.</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
 <li>Exit the cloud machine using the following code:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">$</span> exit </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="bu">exit</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li><p>To copy the <code>secret_name.txt</code> file from your cloud machine use the following command. Make sure you have replaced all the <code>&lt;username&gt;</code>s with your actual username.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> scp <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/secret_name.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/secret_name.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>❗ <strong>Important</strong><br>
 We would encourage you to pay attention to several things here:</p>
 <ol type="1">
@@ -475,10 +475,10 @@ We would encourage you to pay attention to several things here:</p>
 </ol></li>
 <li><p>Make sure the file is copied to the chosen directory.</p></li>
 <li><p>But what if we wanted to copy <strong>all the files</strong> from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> scp <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/<span class="pp">*</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/<span class="pp">*</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This way we copy all the files from the <code>&lt;username&gt;_files</code> folder.</p>
 <p>Should you wish to copy the <strong>folder itself</strong>, use the path to the folder. You will also add the <code>-r</code> (for <em>recursive</em>) option in the code as shown below.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> scp <span class="at">-r</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="at">-r</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Make sure both commands worked for you.</strong></p></li>
 </ol>
 </section></details>
@@ -502,7 +502,7 @@ Solution
 </summary>
 <ol start="4" type="1">
 <li><p>Use the code below to copy your file to the cloud machine. Make sure to replace the <code>&lt;username&gt;</code>s with your actual username.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> scp secret_dish.txt <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> secret_dish.txt <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </details>
 <ol start="5" type="1">
@@ -559,9 +559,9 @@ Step 7: Getting closer to software engineering (15 min)
 <li>use <code>print()</code> function to print your age</li>
 </ul></li>
 <li><p>Use the following code to execute your script on the cloud:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> python test.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">python</span> test.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><em>or</em></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> Rscript test.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Rscript</span> test.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Does it print your age?</p></li>
 <li><p>Go ahead and experiment with using the <code>&amp;</code> operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it.</p></li>
 </ol>
