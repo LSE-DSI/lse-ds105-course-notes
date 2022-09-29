@@ -60,7 +60,7 @@ Luckily for macOS and Linux users the connection to the SSH is much simpler. You
 2. Type the following command after replacing `<username>` with your actual username.  
 
     ```bash
-    $ ssh <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com
+     ssh <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com
     ```
 3. Enter your password (which is at this point your username).    
    The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.
@@ -122,7 +122,7 @@ In the first steps of this lab we have extablished a secure connection between o
 Generally the `scp` commands work in the following way:
 
 ```bash
-$ scp location_1/file location_2/file
+ scp location_1/file location_2/file
 ```
 
 It means that we are copying a file from `location_1` to `location_2`. Let's see how it's done with the cloud. 
@@ -133,12 +133,12 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
 1. Exit the cloud machine using the following code:
 
  ```bash
-    $ exit 
+     exit 
 ```
 2.  To copy the `secret_name.txt` file from your cloud machine use the following command. Make sure you have replaced all the `<username>`s with your actual username. 
 
     ```bash
-    $ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .
+     scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .
     ```
 
     ❗ **Important**   
@@ -150,7 +150,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
 4. But what if we wanted to copy **all the files** from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:
 
     ```bash
-    $ scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .
+     scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .
     ```
 
     This way we copy all the files from the `<username>_files` folder. 
@@ -158,7 +158,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
     Should you wish to copy the **folder itself**, use the path to the folder. You will also add the `-r` (for _recursive_) option in the code as shown below.
 
     ```bash
-    $ scp -r <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .
+     scp -r <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .
     ```
 
     **Make sure both commands worked for you.**
@@ -183,7 +183,7 @@ We have just learned how to copy files **from** the cloud. The last task for us 
 4. Use the code below to copy your file to the cloud machine. Make sure to replace the `<username>`s with your actual username. 
 
     ```bash
-    $ scp secret_dish.txt <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files
+     scp secret_dish.txt <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files
     ```
 
 </details>
@@ -256,13 +256,13 @@ Let's now explore the same operations in the cloud.
 5. Use the following code to execute your script on the cloud:
 
     ```bash
-    $ python test.py
+     python test.py
     ```
 
     *or*
 
     ```bash
-    $ Rscript test.R
+     Rscript test.R
     ```
 6. Does it print your age?
 7. Go ahead and experiment with using the `&` operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it. 
