@@ -75,7 +75,7 @@ We will follow the instructions below step by step together while answering what
 2. Type `pwd` and hit ENTER:
 
     ```bash
-    $ pwd
+     pwd
     ```
 
     You should get a string of text indicating the full path of where you are inside the terminal.
@@ -83,31 +83,31 @@ We will follow the instructions below step by step together while answering what
 3. Are you currently in your `$HOME` directory? To find out where your home directory is, use the following command:
 
     ```bash
-    $ echo $HOME
+     echo $HOME
     ```
 
 4. Are there any files/sub-directories inside the directory you are currently in? Use `ls` to investigate:
 
     ```bash
-    $ ls
+     ls
     ```
 
     or
 
     ```bash
-    $ ls .
+     ls .
     ```
 
 5. Are there any hidden files?
 
     ```bash
-    $  ls -a
+      ls -a
     ```
 
 6. Now, let's explore what is above your current directory:
 
     ```bash
-    $ ls ..
+     ls ..
     ```
 
 7. Do you get what the different dots `.` and `..` mean [^1]?
@@ -115,7 +115,7 @@ We will follow the instructions below step by step together while answering what
 8. Now, more than just look at the parent directory, let's move there:
 
     ```bash
-    $ cd ..
+     cd ..
     ```
 
     then use the same `ls` commands you explored above. Did you notice anything different now? 
@@ -123,13 +123,13 @@ We will follow the instructions below step by step together while answering what
 9. Let's force `ls` to print the same information in a different format. Try the following command:
 
     ```bash
-    $ ls . -lth
+     ls . -lth
     ```
 
     What does the `-l`, `-t` and `-h` arguments mean? You can find out by looking at the `ls` manual:
 
     ```bash
-    $ man ls
+     man ls
     ```
 
     Use the arrow keys in your keyboard to scroll up and down the manual. Type the character `q` when you are done browsing.
@@ -149,7 +149,7 @@ We will go over the solutions once everyone has finished this step.
 1. Go to the root of the filesystem:
 
     ```bash
-    $ cd /
+     cd /
     ```
 2. What do you see with `ls`? What does it mean?
 3. Walk around freely up and down the directories and sub-directories you encounter along the way. Check the links on [🔖 Week 02 Appendix - Linux and the Terminal](week02_appendix.html#linux-the-terminal) page to understand where you are navigating.
@@ -170,19 +170,19 @@ It is very likely that you just head to a software store (Play Store, Apple Stor
 1. Whenever you want to download software with `apt`, you have to ensure you have the most up-to-date information from the central "store". You can do this via the following command:
 
     ```bash
-    $ sudo apt update
+     sudo apt update
     ```
 
     This command requires you to have admin rights (as root), which is why we run it with `sudo` [^2]. You might be asked to type your password.
 2. Install vim:
 
     ```bash
-    $ sudo apt install vim
+     sudo apt install vim
     ```
 3. Now you can open vim:
 
     ```bash
-    $ vim
+     vim
     ```
 
     To quit, press `Esc`, then type `:q` and hit `ENTER`. Still stuck and cannot quit vim? [You are not alone](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/).
@@ -197,21 +197,21 @@ It is very likely that you just head to a software store (Play Store, Apple Stor
 1. Go to your `$HOME` directory or a folder of your choice. Then, create and enter a directory, let's call it **DS105**:
 
     ```bash
-    $ cd $HOME
-    $ mkdir DS105
-    $ cd DS105
+     cd $HOME
+     mkdir DS105
+     cd DS105
     ```
 
 2. Create a text file and call it `README.txt`:
 
     ```bash
-    $ touch README.txt
+     touch README.txt
     ```
 
 3. Open this file with vim:
 
     ```bash
-    $ vim README.txt
+     vim README.txt
     ```
 
 4. Inside vim, write something to the file (your name, a verse, a sentence, whatever comes to mind)
@@ -223,7 +223,7 @@ It is very likely that you just head to a software store (Play Store, Apple Stor
 7. Print the content of your file with the `cat` command:
 
     ```bash
-    $ cat README.txt
+     cat README.txt
     ```
 
 </details>
@@ -241,11 +241,11 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
 1. On the terminal, type the two commands below:
 
     ```bash
-    $ whoami
+     whoami
     ```
 
     ```bash
-    $ uname -a
+     uname -a
     ```
 
 2. Take a screenshot ([how?](https://www.take-a-screenshot.org/)) of your terminal and submit to Moodle, under the field identified as P1.
@@ -255,13 +255,13 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
 1. Go to the DS105 folder you created earlier:
 
     ```bash
-    $ cd ~/DS105
+     cd ~/DS105
     ```
 
 2. Rename the `README.txt` to `README.md` (a markdown file):
 
     ```bash
-    $ mv README.txt README.md
+     mv README.txt README.md
     ```
 
 3. Edit the README.md file following the template below, replacing all occurrences of `<>` with your responses:
@@ -284,13 +284,13 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
 5. Print some metadata about your file to prove you were the one editing it:
 
     ```bash
-    $ stat README.md
+     stat README.md
     ```
 
 6. Print the contents of your file to the terminal:
 
     ```bash
-    $ cat README.md
+     cat README.md
     ```
 
 7. Take a screenshot ([how?](https://www.take-a-screenshot.org/)) of your terminal and submit to Moodle, under the field identified as P2. Make sure that both the output of `stat` and `cat` commands are visible.
@@ -305,7 +305,7 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
 1. Open the terminal and type:
 
     ```bash
-    $ vimtutor
+     vimtutor
     ```
 2. Follow the instructions on the screen and complete the tutorial (a total of 7 short lessons).
 
