@@ -21,13 +21,23 @@ Our first task is to learn a bit more about LSE. LSE has many departments. One o
 
 Let's explore one of the possible ways to do that. We do not provide you with code straight away as we assume that you will be guided during the lab. However, the code is given to you after the action points. 
 
-🎯 **ACTION POINTS**
+We will first complete a small exercise together in the class and then you will attempt the tasks yourself.
+
+🤝 **WORKING TOGETHER**
 
 1. Go to the [Department of Methodology People page](https://www.lse.ac.uk/Methodology/People) and navigate to **Academic Staff**.
-2. Inspect the page to find the HTML element that allows you to get to the person's individual page. 
-3. Using the language of your choice create a list of the links to the individual pages of all the Academic Staff Members.
-4. Using the saved links, go through all of them and extract the Key Areas of Expertise for all the Staff Members.
-5. Create one list to store all the Areas of Expertise and delete duplicates from there. 
+2. Inspect the page and find the way to the second heading. 
+3. Send a GET request to the website and get the second heading. 
+4. Print the heading using the language of your choice. 
+
+Now it is time for you to work independently and solve the task mentioned above. 
+
+🎯 **ACTION POINTS**
+
+1. Inspect the page to find the HTML element that allows you to get to the person's individual page.  
+2. Using the language of your choice create a list of the links to the individual pages of all the Academic Staff Members.
+3. Using the saved links, go through all of them and extract the Key Areas of Expertise for all the Staff Members.
+4. Create one list to store all the Areas of Expertise and delete duplicates from there. 
 
 Do you find any areas that are relevant for you?
 
@@ -149,18 +159,26 @@ It turns out that [TicketMaster](https://www.ticketmaster.com/) (one of the bigg
 
 *We do not provide you with code straight away, however, you will find the solutions below.*
 
-🎯 **ACTION POINTS** 
+In the same way as before we will first complete some tasks together to understand how APIs work and then work independently.
+
+🤝 **WORKING TOGETHER**
 
 1. Go to [https://developer.ticketmaster.com/](https://developer.ticketmaster.com/) and register an account. You will only need an email address. 
 2. Acquire an API token using your new account. It will be called a **Consumer Key** in your apps' information.
-3. Using the [documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2) find all the music events happening in London.    
+3. Make an API call to get all the venues in New York. 
+
+And now, it's time to get tickets!
+
+🎯 **ACTION POINTS** 
+
+1. Using the [documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2) find all the music events happening in London.    
     How many events have you found?  
     Do you think it's all the events happening in London?   
     Is there a way to show more events?  
-4. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
+2. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
     What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
-5. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
-6. What about family-friendly events in London? Are there any?
+3. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
+4. What about family-friendly events in London? Are there any?
 
 
 ### Solution Code
@@ -356,12 +374,19 @@ response <- GET(base_url, query = list(
 
 We have now explored one of the key methods of web scraping. However, we haven't yet talked about the scenarios where we need to **interact** with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let's see how it works. 
 
-We haven't found a lot of events about data on TicketMaster. Maybe we can use another platform?
-
-🎯 **ACTION POINTS** 
+🤝 **WORKING TOGETHER**
 
 0. If you are using Python, make sure you have Google Chrome installed and [chromdriver](https://chromedriver.chromium.org/downloads) downloaded to the folder you know a path to.  
   If you are using R, make sure you have Mozilla Firefox installed. 
+1. Go to the [LSE website](https://www.lse.ac.uk/).
+2. Copy the path to the search box. 
+3. Using Selenium type "data" into the box. 
+4. Extract the name of the first program.  
+
+Now, it's time to try things yourself. We haven't found a lot of events about data on TicketMaster. Maybe we can use another platform?
+
+🎯 **ACTION POINTS** 
+
 1. Using Selenium go to the [London events page on Eventbrite](https://www.eventbrite.co.uk/d/united-kingdom--london/events/).
 2. Navigate to the search box and enter "data" using Selenium.
 3. Hit enter using Selenium.
