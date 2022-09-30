@@ -130,30 +130,55 @@ DSI offer accessible introductions to Data Science:
 
 ::: columns
 
-::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+::: {.column style="width: 34%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
 ![](/figures/people/Anton.jpg){fig-align="left" fig-alt="Photo of Anton Boichenko" width="5em"}  
 **[Anton Boichenko](http://boychenko.pro/)** <br/>
-_Guest Teacher_<br/>
-Developer at Decoded
-<br/>
-<br/>
-<br/>
+Guest Teacher at the [DSI](https://lse.ac.uk/dsi)<br> 
+Product Developer at [Decoded](https://decoded.com/) <br> 
+MSc in Applied Social Data Science (LSE)
 :::
 
-::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+::: {.column style="width: 33.5%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
+![](/figures/people/mustafa.jfif){fig-align="left" fig-alt="Photo of Mustafa Can Ozkan" width="5em"}  
+**Mustafa Can Ozkan** <br/>
+Guest Teacher at the [DSI](https://lse.ac.uk/dsi)<br> 
+PhD cand. in the Spacetime Lab (UCL) <br> 
+MSc in Transport (Imperial/UCL)
+:::
+
+::: {.column style="width: 24%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
+![](/figures/people/stuart.jpg){fig-align="left" fig-alt="Photo of Stuart Bramwell" width="5em"}  
+**Dr. [Stuart Bramwell](https://www.lse.ac.uk/Methodology/People/Academic-Staff/Stuart-Bramwell/Stuart-Bramwell)** <br/>
+ESRC Postdoctoral Fellow <br> 
+Department of Methodology<br>
+PhD in Politics (Oxford)
+:::
+
+
+:::
+
+
+::: columns
+
+
+::: {.column style="width: 34%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
 ![](/figures/people/Xiaowei.png){fig-align="left" fig-alt="Photo of Xiaowei Gao" width="5em"}  
 **[Xiaowei Gao](https://github.com/UCLWilson)** <br/>
-_Guest Teacher_<br/>
-PhD Student at KCL in Health Informatics
-<br/>
-<br/>
+Guest Teacher at the [DSI](https://lse.ac.uk/dsi)<br> 
+PhD cand. in the Spacetime Lab (UCL) <br> 
+MSc in Data Science (KCL)
 :::
 
-::: {.column style="width: 30%;border-style: dotted;border-width: 1px;border-color: \"#fefefe\"; margin-left:0.5%;padding:1%;"}
+::: {.column style="width: 33.5%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
 ![](/figures/people/Yijun.jpg){fig-align="left" fig-alt="Photo of Yijun Wang" width="5em"}  
 **[Yijun Wang](https://www.kcl.ac.uk/people/yijun-wang)** <br/>
-_Guest Teacher_<br/>
-PhD Student at UCL Centre for Advanced Spatial Analysis
+Guest Teacher at the [DSI](https://lse.ac.uk/dsi)<br/> 
+PhD cand. in Health Informatics (KCL) <br/>
+MSc in Data Science (KCL)
+:::
+
+::: {.column style="width: 24%;font-size:0.7em;margin-left:0.5%;padding:1%;"}
+
 :::
 
 :::
