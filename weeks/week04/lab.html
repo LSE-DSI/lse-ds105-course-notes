@@ -232,7 +232,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week02/prep.html" class="sidebar-item-text sidebar-link">📒 Prepare for the lab</a>
+  <a href="../../weeks/week02/checklist.html" class="sidebar-item-text sidebar-link">✅ Checklist</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -361,10 +361,19 @@ Part 1: Exploring LSE (25 min)
 <p><strong>Main task</strong>: create a list of all the key areas of expertise that the Department of Methodology has.</p>
 <p>🤔 <strong>Stop and think</strong>. Before you start following the instructions. Can you think of a way to acquire this information using the LSE website?</p>
 <p>Let’s explore one of the possible ways to do that. We do not provide you with code straight away as we assume that you will be guided during the lab. However, the code is given to you after the action points.</p>
-<p>🎯 <strong>ACTION POINTS</strong></p>
+<p>We will first complete a small exercise together in the class and then you will attempt the tasks yourself.</p>
+<p>🤝 <strong>WORKING TOGETHER</strong></p>
 <ol type="1">
 <li>Go to the <a href="https://www.lse.ac.uk/Methodology/People">Department of Methodology People page</a> and navigate to <strong>Academic Staff</strong>.</li>
-<li>Inspect the page to find the HTML element that allows you to get to the person’s individual page.</li>
+<li>Inspect the page and find the way to the second heading.</li>
+<li>Send a GET request to the website and get the second heading.</li>
+<li>Print the heading using the language of your choice.</li>
+</ol>
+<p>Now it is time for you to work independently and solve the task mentioned above.</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Inspect the page to find the HTML element that allows you to get to the person’s individual page.<br>
+</li>
 <li>Using the language of your choice create a list of the links to the individual pages of all the Academic Staff Members.</li>
 <li>Using the saved links, go through all of them and extract the Key Areas of Expertise for all the Staff Members.</li>
 <li>Create one list to store all the Areas of Expertise and delete duplicates from there.</li>
@@ -482,10 +491,16 @@ Part 2: Buying tickets (35 min)
 <p>After completing the last exercise you might think “Well, yeah, it is useful for my academic endeavours, but not for my day-to-day life.”. Let us show you how you can solve your problems with it!</p>
 <p>It turns out that <a href="https://www.ticketmaster.com/">TicketMaster</a> (one of the biggest websites that sells tickets) has its own API. It means that you can automate your ticket search if you wanted to! Let’s explore this together.</p>
 <p><em>We do not provide you with code straight away, however, you will find the solutions below.</em></p>
-<p>🎯 <strong>ACTION POINTS</strong></p>
+<p>In the same way as before we will first complete some tasks together to understand how APIs work and then work independently.</p>
+<p>🤝 <strong>WORKING TOGETHER</strong></p>
 <ol type="1">
 <li>Go to <a href="https://developer.ticketmaster.com/">https://developer.ticketmaster.com/</a> and register an account. You will only need an email address.</li>
 <li>Acquire an API token using your new account. It will be called a <strong>Consumer Key</strong> in your apps’ information.</li>
+<li>Make an API call to get all the venues in New York.</li>
+</ol>
+<p>And now, it’s time to get tickets!</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
 <li>Using the <a href="https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2">documentation</a> find all the music events happening in London.<br>
 How many events have you found?<br>
 Do you think it’s all the events happening in London?<br>
@@ -649,11 +664,18 @@ Part 3: Searching for Data events (25 min)
 <section id="part-3-searching-for-data-events" class="level2">
 <h2 class="anchored" data-anchor-id="part-3-searching-for-data-events">Part 3: Searching for Data events</h2>
 <p>We have now explored one of the key methods of web scraping. However, we haven’t yet talked about the scenarios where we need to <strong>interact</strong> with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let’s see how it works.</p>
-<p>We haven’t found a lot of events about data on TicketMaster. Maybe we can use another platform?</p>
-<p>🎯 <strong>ACTION POINTS</strong></p>
+<p>🤝 <strong>WORKING TOGETHER</strong></p>
 <ol start="0" type="1">
 <li>If you are using Python, make sure you have Google Chrome installed and <a href="https://chromedriver.chromium.org/downloads">chromdriver</a> downloaded to the folder you know a path to.<br>
 If you are using R, make sure you have Mozilla Firefox installed.</li>
+<li>Go to the <a href="https://www.lse.ac.uk/">LSE website</a>.</li>
+<li>Copy the path to the search box.</li>
+<li>Using Selenium type “data” into the box.</li>
+<li>Extract the name of the first program.</li>
+</ol>
+<p>Now, it’s time to try things yourself. We haven’t found a lot of events about data on TicketMaster. Maybe we can use another platform?</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
 <li>Using Selenium go to the <a href="https://www.eventbrite.co.uk/d/united-kingdom--london/events/">London events page on Eventbrite</a>.</li>
 <li>Navigate to the search box and enter “data” using Selenium.</li>
 <li>Hit enter using Selenium.</li>
