@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.1.251">
 
   <meta name="author" content="Dr.&nbsp;Jon Cardoso Silva">
-  <meta name="dcterms.date" content="07 October 2022">
+  <meta name="dcterms.date" content="4 October 2022">
   <title>LSE DS105M 2022/23 - 🗓️ Week 02 Operating Systems, Files &amp; The Terminal</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -413,9 +413,10 @@
 
 <section id="title-slide">
   <h1 class="title"><font style="font-size:1em;">🗓️ Week 02<br> Operating Systems, Files &amp; The Terminal</font></h1>
+  <p class="subtitle">DS105 Data for Data Science</p>
   <p class="author">Dr.&nbsp;<a href="https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva">Jon Cardoso Silva</a></p>
   <p class="institute"><a href="https://twitter.com/lsedatascience">LSE Data Science Institute</a></p>
-  <p class="date">07 October 2022</p>
+  <p class="date">4 October 2022</p>
 </section>
 <section id="TOC">
 <nav role="doc-toc"> 
@@ -442,10 +443,10 @@
 <div class="column" style="width:50%;font-size:0.9em;">
 <div>
 <ul>
-<li class="fragment">A computer can be divided in four parts:
+<li class="fragment">A computer can be divided into four parts:
 <ul>
 <li class="fragment"><mark>hardware</mark> — provides the basic computing resources for the system</li>
-<li class="fragment"><mark>application programs</mark> — define the ways in which these resources are used</li>
+<li class="fragment"><mark>application programs</mark> — define how these resources are used</li>
 <li class="fragment"><mark>operating system</mark> — controls the hardware and coordinates its use among the various application programs for the various users</li>
 <li class="fragment"><mark>user</mark> — a person or a bot (a computer script) that requests actions from the computer.</li>
 </ul></li>
@@ -511,8 +512,8 @@ os-&gt;hardware
 <p><br></p>
 <div>
 <ul>
-<li class="fragment">If this sounds a bit vague to you, it is because it is!</li>
-<li class="fragment">It is difficult to specify which programs are part of the OS and which ones are not.</li>
+<li class="fragment">If this sounds a bit vague, it is because it is!</li>
+<li class="fragment">It is actually tricky to specify which programs are part of the OS and which ones are not.</li>
 <li class="fragment">Let’s try to define what an OS is anyways ⏭️</li>
 </ul>
 </div>
@@ -521,17 +522,17 @@ os-&gt;hardware
 <h2>Definition of OS</h2>
 <div>
 <ul>
-<li class="fragment">“<em>The OS is the one programming running at all times on the computer</em>”
+<li class="fragment">“<em>The OS is the one programming running at all times on the computer.</em>”
 <ul>
 <li class="fragment">This is usually also called the <mark>kernel</mark></li>
 </ul></li>
-<li class="fragment">There are also other type of programs who might be running alongside.
+<li class="fragment">There might be other programs running alongside the OS.
 <ul>
 <li class="fragment">For example, the <img data-src="../figures/icons/console-svgrepo-com.svg" class="img-fluid" style="height: 1em;vertical-align:center;"> <code>Terminal</code> (more on that in a minute)</li>
 </ul></li>
-<li class="fragment">📱 Mobile computers usually has a lot more “additional” software running alongside the kernel. We call it the <mark>middleware</mark>.
+<li class="fragment">📱 Mobile computers usually have more “additional” software alongside the kernel, which we call the <mark>middleware</mark>.
 <ul>
-<li class="fragment">These applications support things like: multimedia, graphics, internal app databases.</li>
+<li class="fragment">These applications support multimedia, graphics, internal app databases, etc..</li>
 </ul></li>
 </ul>
 </div>
@@ -546,7 +547,7 @@ os-&gt;hardware
 <li class="fragment">But, we often need to install custom software to perform some data analysis
 <ul>
 <li class="fragment">This software might not come from Apple or Microsoft Store.</li>
-<li class="fragment">Those are things you have to install “manually”</li>
+<li class="fragment">Those are things you have to install “manually.”</li>
 </ul></li>
 </ul>
 </div>
@@ -560,7 +561,8 @@ os-&gt;hardware
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>When that happens, you might encounter error messages that make no sense if you don’t understand a little of how everything is tied together.</p>
+<p>Let’s face it, you will always encounter puzzling error messages when programming, no matter how senior or skilled you are.</p>
+<p>Understanding a little about how everything is tied together will help you get to the core of the problem more quickly.</p>
 </div>
 </div>
 </div>
@@ -586,8 +588,8 @@ os-&gt;hardware
 <div class="column" style="width=60%;">
 <div>
 <ul>
-<li class="fragment">In the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the <mark>open source code</mark>.</li>
-<li class="fragment">You could read precisely which instructions the computer would follow when running the software.</li>
+<li class="fragment">In the early days of modern computing, when computers were not accessible to everyone, software (applications) typically came with their source code open.</li>
+<li class="fragment"><mark>Open source</mark> means you can read precisely which instructions the computer will follow when running.</li>
 <li class="fragment">As the industry grew, most software companies released only the <mark>binaries</mark> — a type of file you can only execute, not read as if it was a text.
 <ul>
 <li class="fragment">This includes Operating Systems! ⏭️</li>
@@ -612,7 +614,7 @@ os-&gt;hardware
 <ul>
 <li class="fragment">UNIX was the first big Operating System, developed at Bell Labs and AT&amp;T</li>
 <li class="fragment">It aimed to be simple* and easy to port to any hardware architecture</li>
-<li class="fragment">But it required a license</li>
+<li class="fragment">But, it required a license</li>
 <li class="fragment">In the late 1980s and early 1990s, a group of hackers and activists developed free &amp; open source alternatives to UNIX.</li>
 </ul>
 </div>
@@ -668,7 +670,7 @@ os-&gt;hardware
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>GNU stands for “GNU is not Unix”. Yes, it is recursive.</p>
+<p>GNU stands for “GNU is not Unix”. Computer nerds love a recursive joke.</p>
 </div>
 </div>
 </div>
@@ -687,9 +689,9 @@ os-&gt;hardware
 <div>
 <ul>
 <li class="fragment">macOS is the Operating System of Apple computers</li>
-<li class="fragment">It is a hybrid system. It has a free open source component called <a href="https://github.com/apple/darwin-xnu">Darwin</a>, but it includes proprietary, closed-source components as well.</li>
+<li class="fragment">It is a hybrid system. It has a free, open-source component called <a href="https://github.com/apple/darwin-xnu">Darwin</a>, but it also includes proprietary, closed-source components.</li>
 <li class="fragment">iOS, Apple’s mobile operating system, is also based on Darwin</li>
-<li class="fragment">Darwin itself is based on BDS UNIX, a derivative of the original UNIX system.</li>
+<li class="fragment">Darwin is based on BDS UNIX, a derivative of the original UNIX system.</li>
 </ul>
 </div>
 <p><img data-src="../figures/icons/MacOS_original_logo.svg" class="absolute img-fluid" style="left: 95%; bottom: 9%; width: 9%; "></p>
@@ -698,7 +700,7 @@ os-&gt;hardware
 <h2>Windows</h2>
 <ul>
 <li>Windows has its own history.</li>
-<li>Its predecessor, OS/2 operating system was co-developed by Microsoft and IBM.</li>
+<li>Microsoft and IBM co-developed its predecessor, the OS/2 operating system.</li>
 <li>But then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.</li>
 <li>Windows popularity can be traced to the success of the Office suite</li>
 </ul>

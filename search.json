@@ -655,63 +655,63 @@
     "href": "slides/week02_slides_part1.html#what-operating-systems-os-do",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "What Operating Systems (OS) do",
-    "text": "What Operating Systems (OS) do\n\n\n\n\nA computer can be divided in four parts:\n\nhardware — provides the basic computing resources for the system\napplication programs — define the ways in which these resources are used\noperating system — controls the hardware and coordinates its use among the various application programs for the various users\nuser — a person or a bot (a computer script) that requests actions from the computer.\n\n\n\n\n\n\n\n\n\n\n   \n\nuser\n\n User   \n\napp\n\n Application Programs (compilers, web browsers, development kits, etc.)   \n\nuser->app\n\n     \n\nos\n\n Operating System   \n\napp->os\n\n     \n\nhardware\n\n Computer Hardware (CPU, memory, I/O devices, etc.)   \n\nos->hardware\n\n    \n\n\n\n\n\n\n\n\n\nFor more details, check (Silberschatz, Galvin, and Gagne 2005, chap. 1)"
+    "text": "What Operating Systems (OS) do\n\n\n\n\nA computer can be divided into four parts:\n\nhardware — provides the basic computing resources for the system\napplication programs — define how these resources are used\noperating system — controls the hardware and coordinates its use among the various application programs for the various users\nuser — a person or a bot (a computer script) that requests actions from the computer.\n\n\n\n\n\n\n\n\n\n\n   \n\nuser\n\n User   \n\napp\n\n Application Programs (compilers, web browsers, development kits, etc.)   \n\nuser->app\n\n     \n\nos\n\n Operating System   \n\napp->os\n\n     \n\nhardware\n\n Computer Hardware (CPU, memory, I/O devices, etc.)   \n\nos->hardware\n\n    \n\n\n\n\n\n\n\n\n\nFor more details, check (Silberschatz, Galvin, and Gagne 2005, chap. 1)"
   },
   {
     "objectID": "slides/week02_slides_part1.html#insight-into-operating-systems",
     "href": "slides/week02_slides_part1.html#insight-into-operating-systems",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Insight into operating systems",
-    "text": "Insight into operating systems\n\n\n“An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an environment within which other programs can do userful work.”\n\n\n– (Silberschatz, Galvin, and Gagne 2005, chap. 1)\n\n\n\n\nIf this sounds a bit vague to you, it is because it is!\nIt is difficult to specify which programs are part of the OS and which ones are not.\nLet’s try to define what an OS is anyways ⏭️"
+    "text": "Insight into operating systems\n\n\n“An operating system is similar to a government. Like a government, it performs no useful function by itself. It simply provides an environment within which other programs can do userful work.”\n\n\n– (Silberschatz, Galvin, and Gagne 2005, chap. 1)\n\n\n\n\nIf this sounds a bit vague, it is because it is!\nIt is actually tricky to specify which programs are part of the OS and which ones are not.\nLet’s try to define what an OS is anyways ⏭️"
   },
   {
     "objectID": "slides/week02_slides_part1.html#definition-of-os",
     "href": "slides/week02_slides_part1.html#definition-of-os",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Definition of OS",
-    "text": "Definition of OS\n\n\n“The OS is the one programming running at all times on the computer”\n\nThis is usually also called the kernel\n\nThere are also other type of programs who might be running alongside.\n\nFor example, the  Terminal (more on that in a minute)\n\n📱 Mobile computers usually has a lot more “additional” software running alongside the kernel. We call it the middleware.\n\nThese applications support things like: multimedia, graphics, internal app databases."
+    "text": "Definition of OS\n\n\n“The OS is the one programming running at all times on the computer.”\n\nThis is usually also called the kernel\n\nThere might be other programs running alongside the OS.\n\nFor example, the  Terminal (more on that in a minute)\n\n📱 Mobile computers usually have more “additional” software alongside the kernel, which we call the middleware.\n\nThese applications support multimedia, graphics, internal app databases, etc.."
   },
   {
     "objectID": "slides/week02_slides_part1.html#why-bother-with-this",
     "href": "slides/week02_slides_part1.html#why-bother-with-this",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Why bother with this?",
-    "text": "Why bother with this?\n\n\n\n\nIt is improbable you will ever need to interact with the kernel directly.\nBut, we often need to install custom software to perform some data analysis\n\nThis software might not come from Apple or Microsoft Store.\nThose are things you have to install “manually”\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nWhen that happens, you might encounter error messages that make no sense if you don’t understand a little of how everything is tied together.\n\n\n\n\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘a gigantic wooden question mark looms above the big ben, ultra realistic awesome painting’ 🤓"
+    "text": "Why bother with this?\n\n\n\n\nIt is improbable you will ever need to interact with the kernel directly.\nBut, we often need to install custom software to perform some data analysis\n\nThis software might not come from Apple or Microsoft Store.\nThose are things you have to install “manually.”\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nLet’s face it, you will always encounter puzzling error messages when programming, no matter how senior or skilled you are.\nUnderstanding a little about how everything is tied together will help you get to the core of the problem more quickly.\n\n\n\n\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘a gigantic wooden question mark looms above the big ben, ultra realistic awesome painting’ 🤓"
   },
   {
     "objectID": "slides/week02_slides_part1.html#history",
     "href": "slides/week02_slides_part1.html#history",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "History",
-    "text": "History\n\n\n\n\nIn the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the open source code.\nYou could read precisely which instructions the computer would follow when running the software.\nAs the industry grew, most software companies released only the binaries — a type of file you can only execute, not read as if it was a text.\n\nThis includes Operating Systems! ⏭️\n\n\n\n\n\n\n\nA computer from the 1950s.(Computer History Museum n.d.)"
+    "text": "History\n\n\n\n\nIn the early days of modern computing, when computers were not accessible to everyone, software (applications) typically came with their source code open.\nOpen source means you can read precisely which instructions the computer will follow when running.\nAs the industry grew, most software companies released only the binaries — a type of file you can only execute, not read as if it was a text.\n\nThis includes Operating Systems! ⏭️\n\n\n\n\n\n\n\nA computer from the 1950s.(Computer History Museum n.d.)"
   },
   {
     "objectID": "slides/week02_slides_part1.html#unix",
     "href": "slides/week02_slides_part1.html#unix",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "UNIX",
-    "text": "UNIX\n\n\n\n\nUNIX was the first big Operating System, developed at Bell Labs and AT&T\nIt aimed to be simple* and easy to port to any hardware architecture\nBut it required a license\nIn the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.\n\n\n\n\n\n\nHow the UNIX System III looks like.\n\n\n\n\n\n\nSource: Wikimedia Commons - Rwoodsmall\n\n\n\n* As simple as these things get."
+    "text": "UNIX\n\n\n\n\nUNIX was the first big Operating System, developed at Bell Labs and AT&T\nIt aimed to be simple* and easy to port to any hardware architecture\nBut, it required a license\nIn the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.\n\n\n\n\n\n\nHow the UNIX System III looks like.\n\n\n\n\n\n\nSource: Wikimedia Commons - Rwoodsmall\n\n\n\n* As simple as these things get."
   },
   {
     "objectID": "slides/week02_slides_part1.html#gnulinux",
     "href": "slides/week02_slides_part1.html#gnulinux",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "GNU/Linux",
-    "text": "GNU/Linux\n\n\n\n\nThis led to the birth of one of the most influential operating systems: GNU/Linux, or simply Linux.\n\n\n\n\n Android, the most popular OS for phones worldwide, is based on Linux.\n\n\n\n\n\nTwo people were instrumental to the development of Linux\n\nRichard Stallman\nLinus Torvalds\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nGNU stands for “GNU is not Unix”. Yes, it is recursive."
+    "text": "GNU/Linux\n\n\n\n\nThis led to the birth of one of the most influential operating systems: GNU/Linux, or simply Linux.\n\n\n\n\n Android, the most popular OS for phones worldwide, is based on Linux.\n\n\n\n\n\nTwo people were instrumental to the development of Linux\n\nRichard Stallman\nLinus Torvalds\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nGNU stands for “GNU is not Unix”. Computer nerds love a recursive joke."
   },
   {
     "objectID": "slides/week02_slides_part1.html#macos",
     "href": "slides/week02_slides_part1.html#macos",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "macOS",
-    "text": "macOS\n\n\nmacOS is the Operating System of Apple computers\nIt is a hybrid system. It has a free open source component called Darwin, but it includes proprietary, closed-source components as well.\niOS, Apple’s mobile operating system, is also based on Darwin\nDarwin itself is based on BDS UNIX, a derivative of the original UNIX system."
+    "text": "macOS\n\n\nmacOS is the Operating System of Apple computers\nIt is a hybrid system. It has a free, open-source component called Darwin, but it also includes proprietary, closed-source components.\niOS, Apple’s mobile operating system, is also based on Darwin\nDarwin is based on BDS UNIX, a derivative of the original UNIX system."
   },
   {
     "objectID": "slides/week02_slides_part1.html#windows",
     "href": "slides/week02_slides_part1.html#windows",
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "Windows",
-    "text": "Windows\n\nWindows has its own history.\nIts predecessor, OS/2 operating system was co-developed by Microsoft and IBM.\nBut then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.\nWindows popularity can be traced to the success of the Office suite\n\n\n\n\nSee (Silberschatz, Galvin, and Gagne 2005, Appendix B) for more on Windows."
+    "text": "Windows\n\nWindows has its own history.\nMicrosoft and IBM co-developed its predecessor, the OS/2 operating system.\nBut then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.\nWindows popularity can be traced to the success of the Office suite\n\n\n\n\nSee (Silberschatz, Galvin, and Gagne 2005, Appendix B) for more on Windows."
   },
   {
     "objectID": "slides/week02_slides_part1.html#emulators-virtual-machines",
