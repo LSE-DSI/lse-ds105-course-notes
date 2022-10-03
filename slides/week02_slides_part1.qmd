@@ -1,10 +1,10 @@
 ---
-title: "DS105 Data for Data Science"
+subtitle: "DS105 Data for Data Science"
 title: "<font style='font-size:1em;'>🗓️ Week 02<br/> Operating Systems, Files & The Terminal</font>"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
-date: 07 October 2022
-date-meta: 07 October 2022
+date: 4 October 2022
+date-meta: 4 October 2022
 toc: true
 toc-depth: 1
 toc-title: "What we will cover today"
@@ -33,9 +33,9 @@ format:
 ::: {.column style="width:50%;font-size:0.9em;"}
 
 ::: {.incremental}
-- A computer can be divided in four parts:
+- A computer can be divided into four parts:
   - <mark>hardware</mark> — provides the basic computing resources for the system
-  - <mark>application programs</mark> — define the ways in which these resources are used
+  - <mark>application programs</mark> — define how these resources are used
   - <mark>operating system</mark> — controls the hardware and coordinates its use among the various application programs for the various users
   - <mark>user</mark> — a person or a bot (a computer script) that requests actions from the computer.
 
@@ -95,20 +95,20 @@ For more details, check [@silberschatz_operating_2005, chapter 1]
 <br/>
 
 ::: {.incremental}
-- If this sounds a bit vague to you, it is because it is!
-- It is difficult to specify which programs are part of the OS and which ones are not.
-- Let's try to define what an OS is anyways ⏭️ 
+- If this sounds a bit vague, it is because it is!
+- It is actually tricky to specify which programs are part of the OS and which ones are not.
+- Let's try to define what an OS is anyways ⏭️
 :::
 
 ## Definition of OS {.smaller}
 
 ::: incremental
-- "_The OS is the one programming running at all times on the computer_"
+- "_The OS is the one programming running at all times on the computer._"
   - This is usually also called the <mark>kernel</mark>
-- There are also other type of programs who might be running alongside. 
+- There might be other programs running alongside the OS. 
   - For example, the ![](/figures/icons/console-svgrepo-com.svg){style="height: 1em;vertical-align:center;"} `Terminal` (more on that in a minute)
-- 📱 Mobile computers usually has a lot more "additional" software running alongside the kernel. We call it the <mark>middleware</mark>.
-  - These applications support things like: multimedia, graphics, internal app databases.
+- 📱 Mobile computers usually have more "additional" software alongside the kernel, which we call the <mark>middleware</mark>.
+  - These applications support multimedia, graphics, internal app databases, etc..
 :::
 
 ## Why bother with this? {.smaller background-color="#D8DDE7"}
@@ -120,12 +120,14 @@ For more details, check [@silberschatz_operating_2005, chapter 1]
 - It is improbable you will ever need to interact with the kernel directly.
 - But, we often need to install custom software to perform some data analysis
 	- This software might not come from Apple or Microsoft Store.
-	- Those are things you have to install "manually"
+	- Those are things you have to install "manually."
 :::
 
 ::: {.fragment style="background-color:white"}
 ::: {.callout-tip}
-When that happens, you might encounter error messages that make no sense if you don't understand a little of how everything is tied together.
+Let's face it, you will always encounter puzzling error messages when programming, no matter how senior or skilled you are. 
+
+Understanding a little about how everything is tied together will help you get to the core of the problem more quickly.
 :::
 :::
 
@@ -157,8 +159,8 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 ::: {.column style="width=60%;"}
 
 ::: incremental
-- In the early days of modern computing, back when computers were not accessible to everyone, software (applications) generally came with the <mark>open source code</mark>.
-- You could read precisely which instructions the computer would follow when running the software.
+- In the early days of modern computing, when computers were not accessible to everyone, software (applications) typically came with their source code open.
+- <mark>Open source</mark> means you can read precisely which instructions the computer will follow when running.
 - As the industry grew, most software companies released only the <mark>binaries</mark> — a type of file you can only execute, not read as if it was a text.
   - This includes Operating Systems! ⏭️
 
@@ -181,7 +183,7 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 ::: incremental
 - UNIX was the first big Operating System, developed at Bell Labs and AT&T
 - It aimed to be simple* and easy to port to any hardware architecture
-- But it required a license
+- But, it required a license
 - In the late 1980s and early 1990s, a group of hackers and activists developed free & open source alternatives to UNIX.
 :::
 :::
@@ -225,7 +227,7 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 ::: {.fragment fragment-index=2}
 
 ::: callout-note
-GNU stands for "GNU is not Unix". Yes, it is recursive.
+GNU stands for "GNU is not Unix". Computer nerds love a recursive joke.
 :::
 
 :::
@@ -253,9 +255,9 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 
 ::: {.incremental}
 - macOS is the Operating System of Apple computers
-- It is a hybrid system. It has a free open source component called [Darwin](https://github.com/apple/darwin-xnu), but it includes proprietary, closed-source components as well.
+- It is a hybrid system. It has a free, open-source component called [Darwin](https://github.com/apple/darwin-xnu), but it also includes proprietary, closed-source components.
 - iOS, Apple's mobile operating system, is also based on Darwin
-- Darwin itself is based on BDS UNIX, a derivative of the original UNIX system.
+- Darwin is based on BDS UNIX, a derivative of the original UNIX system.
 :::
 
 ![](/figures/icons/MacOS_original_logo.svg){.absolute width="9%" bottom="9%" left="95%"}
@@ -264,7 +266,7 @@ GNU stands for "GNU is not Unix". Yes, it is recursive.
 ## Windows {.smaller}
 
 - Windows has its own history. 
-- Its predecessor, OS/2 operating system was co-developed by Microsoft and IBM.
+- Microsoft and IBM co-developed its predecessor, the OS/2 operating system.
 - But then, Microsoft took on its own path and developed its own versions of the OS: Windows NT, Windows 95, Windows 98, Windows 2000, Windows XP, Windows 7, Windows Vista*, etc.
 - Windows popularity can be traced to the success of the Office suite 
 
