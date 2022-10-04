@@ -26,7 +26,7 @@ format:
 engine: knitr
 ---
 
-# What is the cloud? {.smaller background-color="#FBF7E8"}
+# What is the cloud? {.smaller background-color="#FBF7E8" color="#00011C"}
 
 ::: columns
 
@@ -149,3 +149,30 @@ That is:
 :::
 
 ![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png){.absolute width="10%" right="0%" top="0%"}
+
+## Are you a heavy cloud user? {background-color="#111460" color:#fafafa}
+
+::: columns
+
+::: {.column width="75%"}
+
+![](/figures/week03/GettyImages-985895696.jpg)
+:::
+
+::: {.column width="25%"}
+Answer our poll on ![](/figures/logos/slack_logo_simple.svg){width="1em"} Slack.
+:::
+
+:::
+
+::: footer
+::: {style="color:#fafafa"}
+DS105 - Data for Data Science :desktop_computer: :juggling_person:
+:::
+
+:::
+
+::: notes
+- Bring back home
+- Ask students: where do you keep your files? do you use cloud services primarily?
+:::
