@@ -1,0 +1,151 @@
+---
+subtitle: "DS105 Data for Data Science :desktop_computer: :juggling_person:"
+title: "🗓️ Week 03 - Part I <br/> The Cloud"
+author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+date: 11 October 2022
+date-meta: 11 October 2022
+toc: true
+toc-depth: 1
+toc-title: "What we will cover today"
+center-title-slide: false
+from: markdown+emoji
+mermaid-format: svg
+format:
+  revealjs: 
+    fig-responsive: true
+    theme: simple
+    slide-number: true
+    mouse-wheel: false
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: /figures/logos/LSE Data Science Institute.png
+    css: /css/styles_slides.css
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
+engine: knitr
+---
+
+# What is the cloud? {.smaller background-color="#FBF7E8"}
+
+::: columns
+
+::: {.column width="50%"}
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png)
+:::
+
+
+::: {.column width="50%"}
+:::
+
+:::
+
+::: footer
+
+::: {style="font-size:0.90em;"}
+Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'futuristic computers hidden inside clouds, in the style of Studio Ghibli'* 🤓
+:::
+
+:::
+
+::: notes
+- Collect students' understanding of the cloud
+:::
+
+## Definitions {.smaller}
+
+How the three main providers define <mark>cloud computing</mark>:
+
+::: columns
+
+::: {.column width=30%}
+
+::: {.fragment fragment-index=1}
+::: {style="min-height:15vh;display:block;"}
+**Amazon Web Services**
+<br/>
+![](/figures/logos/Amazon_Web_Services_Logo.svg){width="2em"} 
+:::
+:::
+
+::: {.fragment fragment-index=2}
+::: {style="min-height:15vh;display:block;"}
+**Google Cloud**
+<br/>
+![](/figures/logos/google_cloud-icon.svg){width="2em"} 
+:::
+:::
+
+::: {.fragment fragment-index=3}
+::: {style="min-height:15vh;display:block;"}
+**Microsoft Azure**
+<br/>
+![](/figures/logos/azure-icon-svgrepo-com.svg){width="2em"} 
+:::
+:::
+
+:::
+
+::: {.column width=70%}
+
+::: {.fragment fragment-index=1}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+
+<blockquote>
+_"Cloud computing is the **on-demand** delivery of IT resources **over the Internet** with **pay-as-you-go** pricing."_ [(Source)](https://aws.amazon.com/what-is-cloud-computing/)
+
+<!-- Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services [...] on an as-needed basis [...]. -->
+</blockquote>
+
+:::
+:::
+
+::: {.fragment fragment-index=2}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+<blockquote>
+_"Cloud computing is the **on-demand** availability of computing resources as services **over the internet**."_ [(Source)](https://cloud.google.com/learn/what-is-cloud-computing)
+
+<!-- It eliminates the need for enterprises to procure, configure, or manage resources themselves, and they only pay for what they use. -->
+</blockquote>
+:::
+:::
+
+::: {.fragment fragment-index=3}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+<blockquote>
+_"Simply put, cloud computing is the delivery of computing services [...] **over the Internet** ('the cloud') to offer faster innovation, flexible resources, and economies of **scale**."_ [(Source)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing/)
+
+<!-- You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change. -->
+</blockquote>
+:::
+:::
+
+:::
+
+:::
+
+::: footer
+Quotes extracted from cloud provider websites on 4 October 2022.
+:::
+
+::: notes
+- Draw attention to the keywords
+:::
+
+## Definitions (cont.) {.smaller}
+
+That is:
+
+::: incremental
+- An organisation does not need to build and **maintain** an infrastructure of computer servers
+    - **maintain** is truly a key word here
+    - You need specialised workforce to mitigate problems and keep services up
+    - 🤔 Think about it: 
+        - what if a CPU fails? 
+        - hat if a hard drive becomes corrupted? 
+        - how often should you backup data? where should you keep it?
+- Instead, CPU processing, data storage and access is <mark>delegated</mark> to a set of computers _somewhere else_
+- Users, and organisations, only pay for what they use.
+:::
+
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png){.absolute width="10%" right="0%" top="0%"}
