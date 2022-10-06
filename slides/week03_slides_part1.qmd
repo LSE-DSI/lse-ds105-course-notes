@@ -1,0 +1,397 @@
+---
+subtitle: "DS105 Data for Data Science :desktop_computer: :juggling_person:"
+title: "🗓️ Week 03 - Part I <br/> The Cloud"
+author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+date: 11 October 2022
+date-meta: 11 October 2022
+toc: true
+toc-depth: 1
+toc-title: "What we will cover today"
+center-title-slide: false
+from: markdown+emoji
+mermaid-format: svg
+format:
+  revealjs: 
+    fig-responsive: true
+    theme: simple
+    slide-number: true
+    mouse-wheel: false
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: /figures/logos/LSE Data Science Institute.png
+    css: /css/styles_slides.css
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
+engine: knitr
+---
+
+# What is the cloud? {.smaller background-color="#FBF7E8" color="#00011C"}
+
+::: columns
+
+::: {.column width="50%"}
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png)
+:::
+
+
+::: {.column width="50%"}
+:::
+
+:::
+
+::: footer
+
+::: {style="font-size:0.90em;"}
+Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'futuristic computers hidden inside clouds, in the style of Studio Ghibli'* 🤓
+:::
+
+:::
+
+::: notes
+- Collect students' understanding of the cloud
+:::
+
+## Definitions {.smaller}
+
+How the three main providers define <mark>cloud computing</mark>:
+
+::: columns
+
+::: {.column width=30%}
+
+::: {.fragment fragment-index=1}
+::: {style="min-height:15vh;display:block;"}
+**Amazon Web Services**
+<br/>
+![](/figures/logos/Amazon_Web_Services_Logo.svg){width="2em"} 
+:::
+:::
+
+::: {.fragment fragment-index=2}
+::: {style="min-height:15vh;display:block;"}
+**Google Cloud**
+<br/>
+![](/figures/logos/google_cloud-icon.svg){width="2em"} 
+:::
+:::
+
+::: {.fragment fragment-index=3}
+::: {style="min-height:15vh;display:block;"}
+**Microsoft Azure**
+<br/>
+![](/figures/logos/azure-icon-svgrepo-com.svg){width="2em"} 
+:::
+:::
+
+:::
+
+::: {.column width=70%}
+
+::: {.fragment fragment-index=1}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+
+<blockquote>
+_"Cloud computing is the **on-demand** delivery of IT resources **over the Internet** with **pay-as-you-go** pricing."_ [(Source)](https://aws.amazon.com/what-is-cloud-computing/)
+
+<!-- Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services [...] on an as-needed basis [...]. -->
+</blockquote>
+
+:::
+:::
+
+::: {.fragment fragment-index=2}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+<blockquote>
+_"Cloud computing is the **on-demand** availability of computing resources as services **over the internet**."_ [(Source)](https://cloud.google.com/learn/what-is-cloud-computing)
+
+<!-- It eliminates the need for enterprises to procure, configure, or manage resources themselves, and they only pay for what they use. -->
+</blockquote>
+:::
+:::
+
+::: {.fragment fragment-index=3}
+::: {style="min-height:15vh;display:block;font-size:0.75em;"}
+<blockquote>
+_"Simply put, cloud computing is the delivery of computing services [...] **over the Internet** ('the cloud') to offer faster innovation, flexible resources, and economies of **scale**."_ [(Source)](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing/)
+
+<!-- You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change. -->
+</blockquote>
+:::
+:::
+
+:::
+
+:::
+
+::: footer
+Quotes extracted from cloud provider websites on 4 October 2022.
+:::
+
+::: notes
+- Draw attention to the keywords
+:::
+
+## Definitions (cont.) {.smaller}
+
+That is:
+
+::: incremental
+- An organisation does not need to build and **maintain** an infrastructure of computer servers
+    - **maintain** is truly a key word here
+    - You need specialised workforce to mitigate problems and keep services up
+    - 🤔 Think about it: 
+        - what if a CPU fails? 
+        - hat if a hard drive becomes corrupted? 
+        - how often should you backup data? where should you keep it?
+- Instead, CPU processing, data storage and access is <mark>delegated</mark> to a set of computers _somewhere else_
+- Users, and organisations, only pay for what they use.
+:::
+
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png){.absolute width="10%" right="0%" top="0%"}
+
+## Are you a cloud user? {.smaller background-color="#111460" color="#fafafa"}
+
+::: columns
+
+::: {.column width="70%"}
+
+![](/figures/week03/GettyImages-985895696.jpg)
+:::
+
+::: {.column width="30%"}
+- Time for a ![](/figures/logos/slack_logo_simple.svg){width="1em"} Slack poll. 
+- Head to `#week03` channel to interact with the live poll during the lecture.
+:::
+
+:::
+
+::: footer
+::: {style="color:#fafafa"}
+DS105 - Data for Data Science :desktop_computer: :juggling_person:
+:::
+
+:::
+
+::: notes
+- Reflect on outcomes of the poll: where do people keep their files?
+
+**Copy poll to Slack**
+
+**Poll 1 of 5: Where do you usually go to when you have to write a _formal_ text document, such as an essay?**
+
+(Check all that apply)
+
+:msoffice_word:  Microsoft Word in my computer
+:msoffice-365:  Microsoft Word online (Office 365)
+:gdocs:  Google Docs
+:notes_app:  Apple Notes
+:no_entry:  I never write text documents
+:point_down:  Other (write down below)
+
+Click on the corresponding emojis below.
+
+_Want to comment your response? Hover your mouse over this message and click on ":speech_balloon: Reply in thread" to write a comment._
+:::
+
+# What is in the cloud?
+
+
+## Google Cloud services
+
+![](/figures/week03/gcloud_services.png){width="100%"}
+
+::: {.aside}
+Let me walk you through what you can find on GCloud: [GCloud Cheat Sheet](https://googlecloudcheatsheet.withgoogle.com/) ⏭️
+:::
+
+::: notes
+- Let's see what is in Google Cloud
+- Click on each area to see what the services offer
+:::
+
+## What about AWS?
+
+![](/figures/week03/aws_services.png){width="100%"}
+
+::: {.aside}
+Let me walk you through what you can find on AWS: [AWS Cloud Products](https://aws.amazon.com/products) ⏭️
+:::
+
+::: notes
+- Let's see what is in Google Cloud
+- Click on each area to see what the services offer
+:::
+
+## Azure services
+
+![](/figures/week03/azure_services.png){width="100%"}
+
+::: {.aside}
+Here is the link to the relevant page of [Azure Services](https://azure.microsoft.com/en-us/products/).
+:::
+
+::: notes
+- You can browse by yourself
+:::
+
+## Cloud computing models
+
+We can think of these services in the following categories:
+
+- **Software as a Service** (SaaS)
+- **Infrastructure as a Service** (IaaS)
+- **Platform as a Service** (PaaS)
+
+Let's go through each one of those.
+
+# Software as a Service (SaaS)
+
+## SaaS {.smaller}
+
+
+- Software that you interact with but runs elsewhere, not in your machine.
+- To name a few examples:
+
+::: columns
+
+::: {.column width="45%"}
+::: incremental
+- **File storage:** 
+  - Dropbox
+  - Google Drive
+  - One Drive
+  - Sharepoint
+:::
+
+:::
+
+::: {.column style="width:45%margin-left:5%"}
+::: incremental
+- **Web apps:** 
+  - Google Suite
+  - Google Docs
+  - Outlook Web
+  - Office 365
+  - Moodle
+:::
+:::
+:::
+
+
+# Infrastructure as a Service (IaaS)
+
+## IaaS {.smaller}
+
+::: columns
+
+::: {.column width="50%"}
+::: incremental
+- Direct access to <mark>virtual machines</mark> and <mark>data storage</mark>.
+- Instead of buying computers for yourself/your organisation, you rent it.
+  - You do not pay, or you pay very little, when your cloud machines are off.
+- Use cases: web site hosting, Big Data analysis, run simulations.
+- Complete flexibility: you install and run whatever you want in those computers. 
+  - Terms & Conditions apply, obviously.
+:::
+:::
+
+::: {.column style="width:40%;margin-left:10%;"}
+![](/figures/week03/gcloud_crypto_mining.png){class="fragment"}
+
+::: {.fragment style="font-size:0.65em;"}
+For example, cryptomining is against the T&Cs. [(Source)](https://fastestvpn.com/blog/hackers-using-google-cloud-for-crypto-mining/)
+:::
+:::
+
+:::
+
+
+## IaaS | Examples {.smaller}
+
+
+- **AWS**
+  - EC2 (Amazon Elastic Compute Cloud)*
+  - S3  (Amazon Simple Storage Service)
+
+- **Google Cloud**
+  - Compute
+  - Storage
+
+- **Azure**
+  - Compute
+  - Storage
+  - Windows Server
+  - Linux on Azure
+
+
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png){.absolute width="10%" right="0%" top="0%"}
+
+::: footer
+\* We will use <mark>EC2</mark> in our labs this week.
+:::
+
+::: notes
+- I highlighted EC2 because that is the service we will use in our labs this week
+:::
+
+## IaaS | Examples {.smaller}
+
+
+- **AWS**
+  - <span style="color: #8a8ed3;">**EC2**</span> $\rightarrow$ Virtual Machine 
+  - <span style="color: #f2f3fa;">S3</span> 
+
+- **Google Cloud**
+  - <span style="color: #8a8ed3;">**Compute**</span> $\rightarrow$ Virtual Machine 
+  - <span style="color: #f2f3fa;">Storage</span>
+
+- **Azure**
+  - <span style="color: #8a8ed3;">**Compute**</span> $\rightarrow$ Virtual Machine 
+  - <span style="color: #f2f3fa;">Storage</span>
+  - <span style="color: #f2f3fa;">Windows Server</span>
+  - <span style="color: #f2f3fa;">Linux on Azure</span>
+
+
+![](/figures/week03/edited_dalee_futuristic_computers_hidden_inside_clouds_in_the_style_of_Studio_Ghibli.png){.absolute width="10%" right="0%" top="0%"}
+
+::: notes
+- I highlighted EC2 because that is the service we will use in our labs this week
+:::
+
+## Live Demo | Compute {.smaller}
+
+::: columns
+
+::: {.column width="50%"}
+![](/figures/week03/dalee_programmer_sitting_atop_a_cloud_writing_computer_code_in_the_style_of_studio_Ghibli.png)
+:::
+
+
+::: {.column width="50%"}
+<br/>
+
+- I will share my screen and show you how to setup an account and create a Compute <mark>instance</mark>
+:::
+
+:::
+
+::: footer
+
+::: {style="font-size:0.90em;"}
+Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'a programmer sitting atop a cloud writing computer code, in the style of studio Ghibli'* 🤓
+:::
+
+:::
+
+::: notes
+- Create Google Cloud Compute, run and access.
+- If time allows, do the same with AWS EC2
+:::
+
+# After the ☕ break:
+
+- Storage services (still IaaS)
+- Examples of PaaS
+- SaaS
+- ✅ Week 03 checklist

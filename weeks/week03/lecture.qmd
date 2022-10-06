@@ -1,7 +1,37 @@
 ---
 title: "👨‍🏫 Week 03 - Slides"
-date: 16 September 2022
-date-meta: 16 September 2022
+date: 4 October 2022
+date-meta: 4 October 2022
 ---
 
-<mark class="todo"></mark>
+## 🖥️ Part I - The Cloud (45-50 min)
+
+
+Either click on the slide area below or click [here](/slides/week03_slides_part1.qmd) to view it in fullscreen.
+Use your keypad to navigate the slides.
+
+
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week03_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Demo: Amazon and Google clouds (45-50 min)
+
+Most cloud computing providers allow you to use their services for free, as long as you don't exceed certain pre-established limits on time and amount of CPU, RAM, and other queries per month.
+
+In this demo, I will show you around the [Amazon Web Service (AWS) Console](https://aws.amazon.com/console/) and the [Google Cloud dashboard](https://console.cloud.google.com/home/dashboard), as we compare their (un-)intuitive user interfaces and how to run an app in the cloud. 
+
+💡 _If you want to replicate the live demo,you  will need to open an account in both cloud providers!_
+
+Things we will explore:
+
+- Accessing the dashboards
+- Browsing the catalog of services and documentation available
+- Finding the cloud service we want to use
+- Creating a virtual machine and accesing it using the command line
+- Creating a data storage repository
+- Sending data to/from the data storage repository
