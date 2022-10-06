@@ -200,7 +200,7 @@
     "href": "weeks/week02/checklist.html",
     "title": "✅ Week 02 - Checklist",
     "section": "",
-    "text": "💻 Bring your laptops. Tablets are not suitable for this class.\n\nIf you do not love your laptop, you can borrow a laptop from the library.\n\n🪟Students who use Windows will have to install additional software on their laptops 1. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of the Canonical tutorial before coming to class.\n📝In the lab we will practice the concepts introduced in this week’s lecture. If a concept introduced in the lecture was not clear to you, revisit the slides and bring your questions to the lab. Lecture recordings will be available a couple of days after the day of the lecture.\n👀Browse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future\n\n\n\n\n\n\nFootnotes\n\n\nTutorial: “Install Ubuntu on Wsl2 on Windows 11 with GUI Support”↩︎"
+    "text": "💻 Bring your laptops. Tablets are not suitable for this class.\n\nIf you do not love your laptop, you can borrow a laptop from the library.\n\n🪟Students who use Windows will have to install additional software on their laptops. We will dedicate some of our time in the lab to this, but if you want, you could try to follow Steps 1-4 of this tutorial before coming to class.\n📝In the lab we will practice the concepts introduced in this week’s lecture. If a concept introduced in the lecture was not clear to you, revisit the slides and bring your questions to the lab. Lecture recordings will be available a couple of days after the day of the lecture.\n👀Browse the 🔖 Week 02 Appendix page:\n\nskim through the blog posts and articles therein to reinforce concepts covered in the lecture,\nbookmark whatever you feel could be relevant to you in the future"
   },
   {
     "objectID": "weeks/week02/lab.html",
@@ -334,6 +334,27 @@
     "title": "💻 Week 03 - Lab Roadmap (90 min)",
     "section": "Step 7: Getting closer to software engineering",
     "text": "Step 7: Getting closer to software engineering\nLet’s now explore the same operations in the cloud.\n🎯 ACTION POINTS\n\nConnect to the virtual machine.\nCreat a folder called test_code.\nCreate a file called test.py or test.R depending on what language you want to use (for Python and R, respectively).\nIn the file\n\ncreate a variable called age\nassign it with your age\nmake the machine wait for 5 seconds (time.sleep(5) in Python or Sys.sleep(5) in R)\nuse print() function to print your age\n\nUse the following code to execute your script on the cloud:\n python test.py\nor\n Rscript test.R\nDoes it print your age?\nGo ahead and experiment with using the & operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it.\n\nYou can check out the tuttorial on how to run Python scripts ot R scripts to help you."
+  },
+  {
+    "objectID": "weeks/week03/lecture.html",
+    "href": "weeks/week03/lecture.html",
+    "title": "👨‍🏫 Week 03 - Slides",
+    "section": "",
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+  },
+  {
+    "objectID": "weeks/week03/lecture.html#coffee-break-10-min",
+    "href": "weeks/week03/lecture.html#coffee-break-10-min",
+    "title": "👨‍🏫 Week 03 - Slides",
+    "section": "☕ Coffee Break (10 min)",
+    "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week03/lecture.html#part-ii---demo-amazon-and-google-clouds-45-50-min",
+    "href": "weeks/week03/lecture.html#part-ii---demo-amazon-and-google-clouds-45-50-min",
+    "title": "👨‍🏫 Week 03 - Slides",
+    "section": "🖥️ Part II - Demo: Amazon and Google clouds (45-50 min)",
+    "text": "🖥️ Part II - Demo: Amazon and Google clouds (45-50 min)\nMost cloud computing providers allow you to use their services for free, as long as you don’t exceed certain pre-established limits on time and amount of CPU, RAM, and other queries per month.\nIn this demo, I will show you around the Amazon Web Service (AWS) Console and the Google Cloud dashboard, as we compare their (un-)intuitive user interfaces and how to run an app in the cloud.\n💡 If you want to replicate the live demo,you will need to open an account in both cloud providers!\nThings we will explore:\n\nAccessing the dashboards\nBrowsing the catalog of services and documentation available\nFinding the cloud service we want to use\nCreating a virtual machine and accesing it using the command line\nCreating a data storage repository\nSending data to/from the data storage repository"
   },
   {
     "objectID": "weeks/week03/summative.html",
@@ -831,5 +852,89 @@
     "title": "🗓️ Week 02 Operating Systems, Files & The Terminal",
     "section": "References",
     "text": "References\n\n\nComputer History Museum. n.d. “1950  Timeline of Computer History.” 1950  Timeline of Computer History. Accessed September 16, 2022. https://www.computerhistory.org/timeline/1950/.\n\n\nEbrahim, Mokhtar, and Andrew Mallett. 2018. Mastering Linux Shell Scripting: A Practical Guide to Linux Command-Line, Bash Scripting, and Shell Programming, 2nd Edition. 2nd ed. Birmingham: Packt Publishing.\n\n\nPelz, Oliver. 2018. Fundamentals of Linux: Explore the Essentials of the Linux Command Line. Birmingham: Packt Publishing Ltd.\n\n\nSilberschatz, Abraham, Peter B. Galvin, and Greg Gagne. 2005. Operating System Concepts. 7th ed. Hoboken, NJ: J. Wiley & Sons.\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#definitions",
+    "href": "slides/week03_slides_part1.html#definitions",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Definitions",
+    "text": "Definitions\nHow the three main providers define cloud computing:\n\n\n\n\nAmazon Web Services  \n\n\n\n\nGoogle Cloud  \n\n\n\n\nMicrosoft Azure  \n\n\n\n\n\n\n“Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.” (Source)\n\n\n\n\n\n\n\n“Cloud computing is the on-demand availability of computing resources as services over the internet.” (Source)\n\n\n\n\n\n\n\n“Simply put, cloud computing is the delivery of computing services […] over the Internet (‘the cloud’) to offer faster innovation, flexible resources, and economies of scale.” (Source)\n\n\n\n\n\n\n\nQuotes extracted from cloud provider websites on 4 October 2022.\n\n\n\nDraw attention to the keywords"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#definitions-cont.",
+    "href": "slides/week03_slides_part1.html#definitions-cont.",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Definitions (cont.)",
+    "text": "Definitions (cont.)\nThat is:\n\n\nAn organisation does not need to build and maintain an infrastructure of computer servers\n\nmaintain is truly a key word here\nYou need specialised workforce to mitigate problems and keep services up\n🤔 Think about it:\n\nwhat if a CPU fails?\nhat if a hard drive becomes corrupted?\nhow often should you backup data? where should you keep it?\n\n\nInstead, CPU processing, data storage and access is delegated to a set of computers somewhere else\nUsers, and organisations, only pay for what they use."
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#are-you-a-cloud-user",
+    "href": "slides/week03_slides_part1.html#are-you-a-cloud-user",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Are you a cloud user?",
+    "text": "Are you a cloud user?\n\n\n\n\n\nTime for a  Slack poll.\nHead to #week03 channel to interact with the live poll during the lecture.\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹\n\n\n\n\nReflect on outcomes of the poll: where do people keep their files?\n\nCopy poll to Slack\nPoll 1 of 5: Where do you usually go to when you have to write a formal text document, such as an essay?\n(Check all that apply)\n:msoffice_word: Microsoft Word in my computer :msoffice-365: Microsoft Word online (Office 365) :gdocs: Google Docs :notes_app: Apple Notes ⛔ I never write text documents 👇 Other (write down below)\nClick on the corresponding emojis below.\nWant to comment your response? Hover your mouse over this message and click on “💬 Reply in thread” to write a comment."
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#google-cloud-services",
+    "href": "slides/week03_slides_part1.html#google-cloud-services",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Google Cloud services",
+    "text": "Google Cloud services\n\n\n\n\nLet’s see what is in Google Cloud\nClick on each area to see what the services offer\n\n\n\nLet me walk you through what you can find on GCloud: GCloud Cheat Sheet ⏭️"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#what-about-aws",
+    "href": "slides/week03_slides_part1.html#what-about-aws",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "What about AWS?",
+    "text": "What about AWS?\n\n\n\n\nLet’s see what is in Google Cloud\nClick on each area to see what the services offer\n\n\n\nLet me walk you through what you can find on AWS: AWS Cloud Products ⏭️"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#azure-services",
+    "href": "slides/week03_slides_part1.html#azure-services",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Azure services",
+    "text": "Azure services\n\n\n\n\nYou can browse by yourself\n\n\n\nHere is the link to the relevant page of Azure Services."
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#cloud-computing-models",
+    "href": "slides/week03_slides_part1.html#cloud-computing-models",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Cloud computing models",
+    "text": "Cloud computing models\nWe can think of these services in the following categories:\n\nSoftware as a Service (SaaS)\nInfrastructure as a Service (IaaS)\nPlatform as a Service (PaaS)\n\nLet’s go through each one of those."
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#saas",
+    "href": "slides/week03_slides_part1.html#saas",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "SaaS",
+    "text": "SaaS\n\nSoftware that you interact with but runs elsewhere, not in your machine.\nTo name a few examples:\n\n\n\n\n\nFile storage:\n\nDropbox\nGoogle Drive\nOne Drive\nSharepoint\n\n\n\n\n\n\nWeb apps:\n\nGoogle Suite\nGoogle Docs\nOutlook Web\nOffice 365\nMoodle"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#iaas",
+    "href": "slides/week03_slides_part1.html#iaas",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "IaaS",
+    "text": "IaaS\n\n\n\n\nDirect access to virtual machines and data storage.\nInstead of buying computers for yourself/your organisation, you rent it.\n\nYou do not pay, or you pay very little, when your cloud machines are off.\n\nUse cases: web site hosting, Big Data analysis, run simulations.\nComplete flexibility: you install and run whatever you want in those computers.\n\nTerms & Conditions apply, obviously.\n\n\n\n\n\n\nFor example, cryptomining is against the T&Cs. (Source)"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#iaas-examples",
+    "href": "slides/week03_slides_part1.html#iaas-examples",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "IaaS | Examples",
+    "text": "IaaS | Examples\n\nAWS\n\nEC2 (Amazon Elastic Compute Cloud)*\nS3 (Amazon Simple Storage Service)\n\nGoogle Cloud\n\nCompute\nStorage\n\nAzure\n\nCompute\nStorage\nWindows Server\nLinux on Azure\n\n\n\n\n* We will use EC2 in our labs this week.\n\n\n\nI highlighted EC2 because that is the service we will use in our labs this week"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#iaas-examples-1",
+    "href": "slides/week03_slides_part1.html#iaas-examples-1",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "IaaS | Examples",
+    "text": "IaaS | Examples\n\nAWS\n\nEC2 \\(\\rightarrow\\) Virtual Machine\nS3\n\nGoogle Cloud\n\nCompute \\(\\rightarrow\\) Virtual Machine\nStorage\n\nAzure\n\nCompute \\(\\rightarrow\\) Virtual Machine\nStorage\nWindows Server\nLinux on Azure\n\n\n\n\n\nI highlighted EC2 because that is the service we will use in our labs this week"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#live-demo-compute",
+    "href": "slides/week03_slides_part1.html#live-demo-compute",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Live Demo | Compute",
+    "text": "Live Demo | Compute\n\n\n\n\n\n\nI will share my screen and show you how to setup an account and create a Compute instance\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘a programmer sitting atop a cloud writing computer code, in the style of studio Ghibli’ 🤓\n\n\n\n\nCreate Google Cloud Compute, run and access.\nIf time allows, do the same with AWS EC2"
   }
 ]
