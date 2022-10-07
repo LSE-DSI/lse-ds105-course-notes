@@ -11,9 +11,8 @@ As we have seen in the lectures, accesssing the cloud opens a variety of possibi
 
 <details><summary>Step 0: Acquire your credentials  (2 min)</summary>
 <p></p>
-Make sure you know your username that you will use to connect to the cloud. You should have been provided with one prior to the lab. You will use it for connecting to the virtual machine.
+Make sure you know your username that you will use to connect to the cloud. Your useername is `student_<LSE_ID>` where you replace `<LSE_ID>` with your LSE ID. For instance, if your ID is 20220000, your username will be `student_20220000`. You will use it for connecting to the virtual machine.
 
-**INSTRUCTIONS FOR USERNAMES**
 </details>
 
 <details><summary>Step 1: Connecting to the cloud (5-15 min)</summary>
@@ -33,7 +32,7 @@ There are various SSH clients that you can use for Windows. Here we explore the 
 1. Go to [this website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and download the installation file.
 2. Install PuTTY using the installation file.
 3. Launch PuTTY.
-4. Navigate to the `Host Name (or IP address)` box and enter the host address of our machine which is `ec2-18-130-96-20.eu-west-2.compute.amazonaws.com`
+4. Navigate to the `Host Name (or IP address)` box and enter the host address of our machine which is `ec2-18-170-39-14.eu-west-2.compute.amazonaws.com`
 5. Click **Open**.  
    If you see a secrutiy alert pop up, simply click **Accept**. 
 6. Enter your username and your password (which is at this point your username).    
@@ -60,7 +59,7 @@ Luckily for macOS and Linux users the connection to the SSH is much simpler. You
 2. Type the following command after replacing `<username>` with your actual username.  
 
     ```bash
-     ssh <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com
+     ssh <username>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com
     ```
 3. Enter your password (which is at this point your username).    
    The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.
@@ -138,7 +137,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
 2.  To copy the `secret_name.txt` file from your cloud machine use the following command. Make sure you have replaced all the `<username>`s with your actual username. 
 
     ```bash
-     scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .
+     scp <username>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/secret_name.txt .
     ```
 
     ❗ **Important**   
@@ -150,7 +149,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
 4. But what if we wanted to copy **all the files** from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:
 
     ```bash
-     scp <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .
+     scp <username>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files/* .
     ```
 
     This way we copy all the files from the `<username>_files` folder. 
@@ -158,7 +157,7 @@ It means that we are copying a file from `location_1` to `location_2`. Let's see
     Should you wish to copy the **folder itself**, use the path to the folder. You will also add the `-r` (for _recursive_) option in the code as shown below.
 
     ```bash
-     scp -r <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .
+     scp -r <username>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files .
     ```
 
     **Make sure both commands worked for you.**
@@ -183,7 +182,7 @@ We have just learned how to copy files **from** the cloud. The last task for us 
 4. Use the code below to copy your file to the cloud machine. Make sure to replace the `<username>`s with your actual username. 
 
     ```bash
-     scp secret_dish.txt <username>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files
+     scp secret_dish.txt <username>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<username>/<username>_files
     ```
 
 </details>
