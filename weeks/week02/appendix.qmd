@@ -1,7 +1,7 @@
 ---
 title: "🔖 Week 02 - Appendix"
-date: 1 September 2022
-date-meta: 1 September 2022
+date: 7 October 2022
+date-meta: 7 October 2022
 ---
 
 <details><summary>📖 Some simple definitions of common computer terms</summary>
@@ -48,7 +48,10 @@ Source: [@brandies_ten_2021]
 
 <details><summary>📃 Text editors</summary>
 
+
+
 ## 📃 Text editors
+
 
 - [vim and Emacs jokes :)](https://cmdlinetips.com/2014/03/vim-and-emacs-jokes-on-twitter/)
 
@@ -62,5 +65,14 @@ Source: [@brandies_ten_2021]
 
 - [A beginner's guide to text editing with Emacs](https://www.redhat.com/sysadmin/beginners-guide-emacs)
 - [Emacs complete documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+
+</details>
+
+<details><summary>🪟 Do you want to master Windows PowerShell instead?</summary>
+
+If you use Windows and for some reason could not get Linux installed or you would rather learn the shell that Windows provides, you will like the book/tutorials below:
+
+- [Power Shell 101 - the book](https://leanpub.com/powershell101)
+- [Awesome PowerShell tutorial](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.2)
 
 </details>
