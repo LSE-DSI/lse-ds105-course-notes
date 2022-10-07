@@ -11,7 +11,7 @@ As we have seen in the lectures, accesssing the cloud opens a variety of possibi
 
 <details><summary>Step 0: Acquire your credentials  (2 min)</summary>
 <p></p>
-Make sure you know your username that you will use to connect to the cloud. Your useername is `student_<LSE_ID>` where you replace `<LSE_ID>` with your LSE ID. For instance, if your ID is 20220000, your username will be `student_20220000`. You will use it for connecting to the virtual machine.
+You will need a username to connect to the cloud. It is `student_<LSE_ID>` where `<LSE_ID>` is your LSE ID. For instance, if your ID is 20220000, your username will be `student_20220000`. You will use it for connecting to the virtual machine.
 
 </details>
 
@@ -38,9 +38,7 @@ There are various SSH clients that you can use for Windows. Here we explore the 
 6. Enter your username and your password (which is at this point your username).    
    The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.
 
-Once the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your conection has been successfull, you will see the following screen.
-
-**INSERT IMAGE OF THE SCREEN**
+Once the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your conection has been successfull, you will see a message starting with "Welcome to Ubuntu". Ask your teacher to check if it is done correctly. 
 
 Viola! Now you are connected to the cloud!
 
