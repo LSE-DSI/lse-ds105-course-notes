@@ -280,6 +280,13 @@
     "text": "🖥️ Part II - Demo: Navigating the Terminal (45-50 min)\n\nLet’s open the Terminal!\nI will show you around your PC using some basic shell commands\nA tour around vim, a file editor\nLet’s look at a few file formats\n\nTXT\nHTML\nJSON\nCSV\nScripts\nBinary files\n\n\nTo learn more about the commands shown in the demo, read (Pelz 2018, chaps. 2–3)"
   },
   {
+    "objectID": "weeks/week03/checklist.html",
+    "href": "weeks/week03/checklist.html",
+    "title": "✅ Week 03 - Checklist",
+    "section": "",
+    "text": "On Tuesday I will show you how you can set up and use services in the cloud yourself (I will show you a mix of Google Cloud and AWS), and in the labs you will explore the bash shell on a virtual machine that lives in the cloud.\nFirst, a reminder:\n\n🪟If you use Windows and were not able to install Ubuntu (via WSL2) in your machine, don’t worry.\n\nAs I mentioned in my post on Slack last week, you will gain direct access to a Linux machine in the cloud (AWS) in your labs this Friday. Once there, you will be able to explore and practice the Bash shell commands in that remote machine.\nAlternatively, if you feel like it, you could take some time this week to learn more about the Windows PowerShell. We added a new section to last week’s appendix 🔖 Week 02 Appendix called “Do you want to master Windows PowerShell instead?” pointing to some useful tutorials. Although the commands will vary, the experience of using this shell will not be too different than using the bash shell we are adopting in this course, it will not be a waste of your time.\nYou will be able to access the cloud on our Friday labs even if WSL2 didn’t work in your machine.\n\n\nNow, as for what to expect from this week:\n\n🗳️ Why not nominate yourself to act as the course representative? Nominations should be made via Slack (channel #student-rep) until this Monday 10 October 2022 12 p.m.. If no one nominates themselves, well… we won’t have any students representing DS105 this term. Read more about the student representative role here.\n✍️ You have until Thursday 13 October 2022 to submit the W02/W03 formative assignment (not graded). Submit your solutions via Moodle.\n👀 The 🔖 Week 02 Appendix page is still relevant for this week. In particular, I suggest you practice editing files using the terminal (Text Editors section) during the week.\n📟 Questions about the terminal? Got any questions of the form “how could I do X in the terminal?”? Have you been exploring the terminal yourself and found something interesting? Need any technical support? Share those on #week03 of our Slack group. I (Jon) often respond questions there within a day.\n💻 Bring your laptops to the labs. Remember: you can borrow a laptop from the library.\n\nBring your laptop to the lecture too if you want to setup your own cloud service and replicate what I will be demonstrating.\n\n📝 Keep in mind that next week you will have to submit your first summative assignment.\n\nOn Friday, we will post the W03/W04 summative assignment (worth 10% of final marks) on Moodle.\nYou will have until 20 October 2022 to submit it. The format will be similar to the current formative assignment, but this time it will involve running commands in the remote virtual machine.\nThe best way to prepare for this is to practice using the terminal by yourself. Once again, 🔖 Week 02 Appendix might be useful to you."
+  },
+  {
     "objectID": "weeks/week03/lab.html",
     "href": "weeks/week03/lab.html",
     "title": "💻 Week 03 - Lab Roadmap (90 min)",
@@ -340,7 +347,7 @@
     "href": "weeks/week03/lecture.html",
     "title": "👨‍🏫 Week 03 - Slides",
     "section": "",
-    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides."
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\nWould you rather save it as a PDF? Check Moodle shortly before the lecture to obtain a copy that looks exactly like the slides below."
   },
   {
     "objectID": "weeks/week03/lecture.html#coffee-break-10-min",
