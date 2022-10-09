@@ -349,15 +349,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </header>
 
 <p>Last week we explored how to navigate your computer using the bash shell. Now, it is time to go beyond your machine and get to the cloud!</p>
-<p>As we have seen in the lectures, accesssing the cloud opens a variety of possibilities for us as data scientists. This week we will explore some of them. Feel free to explore more on your own. We have provided you with some support resources.</p>
+<p>As we have seen in the lectures, accessing the cloud opens a variety of possibilities for us as data scientists. This week we will explore some of them. Feel free to explore more on your own. We have provided you with some support resources.</p>
 <details>
 <summary>
 Step 0: Acquire your credentials (2 min)
 </summary>
 <p>
 </p>
-<p>Make sure you know your username that you will use to connect to the cloud. You should have been provided with one prior to the lab. You will use it for connecting to the virtual machine.</p>
-<strong>INSTRUCTIONS FOR USERNAMES</strong>
+<p>You will need a username to connect to the cloud. It is <code>student_&lt;LSE_ID&gt;</code> where <code>&lt;LSE_ID&gt;</code> is your LSE ID. For instance, if your ID is 20220000, your username will be <code>student_20220000</code>. You will use it for connecting to the virtual machine.</p>
 </details>
 <details>
 <summary>
@@ -380,14 +379,13 @@ Step 1: Connecting to the cloud (5-15 min)
 <li>Go to <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">this website</a> and download the installation file.</li>
 <li>Install PuTTY using the installation file.</li>
 <li>Launch PuTTY.</li>
-<li>Navigate to the <code>Host Name (or IP address)</code> box and enter the host address of our machine which is <code>ec2-18-130-96-20.eu-west-2.compute.amazonaws.com</code></li>
+<li>Navigate to the <code>Host Name (or IP address)</code> box and enter the host address of our machine which is <code>ec2-18-170-39-14.eu-west-2.compute.amazonaws.com</code></li>
 <li>Click <strong>Open</strong>.<br>
-If you see a secrutiy alert pop up, simply click <strong>Accept</strong>.</li>
+If you see a security alert pop up, simply click <strong>Accept</strong>.</li>
 <li>Enter your username and your password (which is at this point your username).<br>
-The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.</li>
+The first time you log in, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make a more complex pattern in this case. It is recommended to have at least 8 characters with a combination of letters and numbers.</li>
 </ol>
-<p>Once the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your conection has been successfull, you will see the following screen.</p>
-<p><strong>INSERT IMAGE OF THE SCREEN</strong></p>
+<p>Once the password is updated, the connection will be closed and you need to reopen a connection using PuTTY. If your connection has been successful, you will see a message starting with “Welcome to Ubuntu”. Ask your teacher to check if it is done correctly.</p>
 <p>Viola! Now you are connected to the cloud!</p>
 <blockquote class="blockquote">
 <p>If you wish to close your connection to the cloud simply write <code>exit</code> and hit enter.</p>
@@ -399,14 +397,14 @@ The first time you login, you need to give a new password for your account. Type
 </summary>
 <p>
 </p>
-<p>Luckily for macOS and Linux users the connection to the SSH is much simpler. You will see that following the steps below.</p>
+<p>Luckily for macOS and Linux users, the connection to SSH is much simpler. You will see that following the steps below.</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
 <li><p>Open the terminal.</p></li>
 <li><p>Type the following command after replacing <code>&lt;username&gt;</code> with your actual username.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ssh</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">ssh</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Enter your password (which is at this point your username).<br>
-The first time you login, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make more complex pattern in this case. It is recommended to have at least 8 characters with the combination of letters and numbers.</p></li>
+The first time you log in, you need to give a new password for your account. Type your current password and then make a new password as instructed. Note that it may fail to update the password because the password is too simple. Try to make a more complex pattern in this case. It is recommended to have at least 8 characters with a combination of letters and numbers.</p></li>
 </ol>
 <p>Viola! Now you are connected to the cloud!</p>
 <blockquote class="blockquote">
@@ -421,7 +419,7 @@ Step 2: Exploring the machine (7 min)
 
 <section id="step-2-exploring-the-machine" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-exploring-the-machine">Step 2: Exploring the machine</h2>
-<p>Now when you have connected to the cloud machine, you can explore it! Basically you are now inside a computer but it is running on a cloud server. It means that we can run the same commands as we ran locally last week.</p>
+<p>Now when you have connected to the cloud machine, you can explore it! Basically, you are now inside a computer but it is running on a cloud server. It means that we can run the same commands as we ran locally last week.</p>
 <p>If you follow the instructions below you will see that the cloud machine is very similar to your local one.</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
@@ -444,14 +442,14 @@ Step 3: File management in the cloud (7 min)
 <p>Let’s try doing it together!</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
-<li>Make sure you are in you home directory using <code>cd</code> and <code>pwd</code>.</li>
+<li>Make sure you are in your home directory using <code>cd</code> and <code>pwd</code>.</li>
 <li>Create a folder called <code>&lt;username&gt;_files</code>. Make sure to replace <code>username</code> with your actual username.</li>
 <li>Go to this folder and create a file called <code>secret_name.txt</code>.</li>
-<li>Save the name of <strong>your favorite place to eat</strong> in the file. It must be kept very secret. We don’t need this place to be too crowded, do we?</li>
+<li>Save the name of <strong>your favourite place to eat</strong> in the file. It must be kept very secret. We don’t need this place to be too crowded, do we?</li>
 <li>Create another file called <code>secret_address.txt</code>.</li>
 <li>Save the address of the same place there.</li>
 </ol>
-<p>Perfect! Now we have two (very secret) files in our system. In the next step we will explore how to send these files to your machine.</p>
+<p>Perfect! Now we have two (very secret) files in our system. In the next step, we will explore how to send these files to your machine.</p>
 </section></details>
 <details>
 <summary>
@@ -460,8 +458,8 @@ Step 4: A bridge between the worlds (15 min)
 
 <section id="step-4-a-bridge-between-the-worlds" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-a-bridge-between-the-worlds">Step 4: A bridge between the worlds</h2>
-<p>In the first steps of this lab we have extablished a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and recieve files. In order to do that we will use the <code>scp</code> command that stands for “secure copy”. Follow the steps below to save the secrets files you created above to your computer.</p>
-<p>Generally the <code>scp</code> commands work in the following way:</p>
+<p>In the first steps of this lab, we have established a secure connection between our computer and the cloud machine. Using this channel we can not only send commands but also send and receive files. To do that we will use the <code>scp</code> command which stands for “secure copy”. Follow the steps below to save the secret files you created above to your computer.</p>
+<p>Generally, the <code>scp</code> commands work in the following way:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> location_1/file location_2/file</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It means that we are copying a file from <code>location_1</code> to <code>location_2</code>. Let’s see how it’s done with the cloud.</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
@@ -471,19 +469,19 @@ Step 4: A bridge between the worlds (15 min)
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="bu">exit</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li><p>To copy the <code>secret_name.txt</code> file from your cloud machine use the following command. Make sure you have replaced all the <code>&lt;username&gt;</code>s with your actual username.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/secret_name.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/secret_name.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>❗ <strong>Important</strong><br>
 We would encourage you to pay attention to several things here:</p>
 <ol type="1">
-<li>There is a <strong>period symbol</strong> at the end of the code. This period stands for you currentl location on your local machine. You remember that the <code>scp</code> command takes two locations - the one we copy the file <strong>from</strong> and the one we copy the file <strong>to</strong>. A period here basically says “Copy it right here”.</li>
-<li>You can see that the actual path to the file on your virtual machine is specified after the hostname followed by a colon. First we specify the username, then the hostname and then the path inside of the machine.</li>
+<li>There is a <strong>period symbol</strong> at the end of the code. This period stands for your current location on your local machine. You remember that the <code>scp</code> command takes two locations - the one we copy the file <strong>from</strong> and the one we copy the file <strong>to</strong>. A period here basically says “Copy it right here”.</li>
+<li>You can see that the actual path to the file on your virtual machine is specified after the hostname followed by a colon. First, we specify the username, then the hostname and then the path inside of the machine.</li>
 </ol></li>
 <li><p>Make sure the file is copied to the chosen directory.</p></li>
 <li><p>But what if we wanted to copy <strong>all the files</strong> from the folder or the folder itself? For that we can avoid specifying the whole path to a concrete file and simply replace the name of the file with an asterisk:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/<span class="pp">*</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files/<span class="pp">*</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This way we copy all the files from the <code>&lt;username&gt;_files</code> folder.</p>
 <p>Should you wish to copy the <strong>folder itself</strong>, use the path to the folder. You will also add the <code>-r</code> (for <em>recursive</em>) option in the code as shown below.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="at">-r</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> <span class="at">-r</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Make sure both commands worked for you.</strong></p></li>
 </ol>
 </section></details>
@@ -498,8 +496,8 @@ Step 5: Sending it back (10 min)
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
 <li>Choose any directory you want on your local machine and <code>cd</code> there.</li>
-<li>Create a file called <code>secret_dish.txt</code> and save the name of your favorite dish there.</li>
-<li>🤔 Stop for a second. Do you think you can gues the way to copy this file to your cloud machine using your already acquired knowledge? We hid the solution for you to experiment.</li>
+<li>Create a file called <code>secret_dish.txt</code> and save the name of your favourite dish there.</li>
+<li>🤔 Stop for a second. Do you think you can guess the way to copy this file to your cloud machine using your already-acquired knowledge? We hid the solution for you to experiment.</li>
 </ol>
 <details>
 <summary>
@@ -507,7 +505,7 @@ Solution
 </summary>
 <ol start="4" type="1">
 <li><p>Use the code below to copy your file to the cloud machine. Make sure to replace the <code>&lt;username&gt;</code>s with your actual username.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> secret_dish.txt <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-130-96-20.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">scp</span> secret_dish.txt <span class="op">&lt;</span>username<span class="op">&gt;</span>@ec2-18-170-39-14.eu-west-2.compute.amazonaws.com:/home/<span class="op">&lt;</span>username<span class="op">&gt;</span>/<span class="op">&lt;</span>username<span class="op">&gt;</span>_files</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </details>
 <ol start="5" type="1">
@@ -522,8 +520,8 @@ Step 6: It can wait (10 min)
 
 <section id="step-6-it-can-wait" class="level2">
 <h2 class="anchored" data-anchor-id="step-6-it-can-wait">Step 6: It can wait</h2>
-<p>Great job so far! You have managed to connect to the cloud machine, navigate it and even exchange files with it. Now it’s time to get to the most exciting part! Running code on the cloud! This is what you would usually use the cloud for. Imagine you need to process millions of rows of data and you computer would take ages to do that. A cloud can help here by executing it for you without taking the resources of your computer.</p>
-<p>Let’s do it, but before that we will learn how to do a very interesting trick.</p>
+<p>Great job so far! You have managed to connect to the cloud machine, navigate it and even exchange files with it. Now it’s time to get to the most exciting part! Running code on the cloud! This is what you would usually use the cloud for. Imagine you need to process millions of rows of data and your computer would take ages to do that. A cloud can help here by executing it for you without taking the resources of your computer.</p>
+<p>Let’s do it, but before that, we will learn how to do a very interesting trick.</p>
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
 <li><p>Open a new bash shell window on your local machine.</p></li>
@@ -536,7 +534,7 @@ Step 6: It can wait (10 min)
 <p>This file launches a script that waits for 10 seconds and then prints <em>‘The waiting is complete.’</em>. You might think that it doesn’t make sense. However, let us show you something…</p></li>
 <li><p>Run this Python script in the following way:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> waiting.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>What did it do? Hopefully, exactly what was expected. It waited for 10 seconds and then printed one sentence. You might have noticed that you <strong>could not</strong> execute commands while it was running. But what if we could!</p></li>
+<p>What did it do? Hopefully, exactly what was expected. It waited for 10 seconds and then printed one sentence. You might have noticed that you <strong>could not</strong> execute commands while it was running. But what if we could?</p></li>
 <li><p>Try running the following code:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> waiting.py <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Do you see the difference? Can you now run <code>whoami</code> or <code>ls</code> while we wait for the code to run?</p></li>
@@ -554,7 +552,7 @@ Step 7: Getting closer to software engineering (15 min)
 <p>🎯 <strong>ACTION POINTS</strong></p>
 <ol type="1">
 <li><p>Connect to the virtual machine.</p></li>
-<li><p>Creat a folder called <code>test_code</code>.</p></li>
+<li><p>Create a folder called <code>test_code</code>.</p></li>
 <li><p>Create a file called <code>test.py</code> or <code>test.R</code> depending on what language you want to use (for Python and R, respectively).</p></li>
 <li><p>In the file</p>
 <ul>
@@ -568,9 +566,9 @@ Step 7: Getting closer to software engineering (15 min)
 <p><em>or</em></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a> <span class="ex">Rscript</span> test.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Does it print your age?</p></li>
-<li><p>Go ahead and experiment with using the <code>&amp;</code> operator. It really comes in handy if you want your cloud machine to contine running without you constantly monitoring it.</p></li>
+<li><p>Go ahead and experiment with using the <code>&amp;</code> operator. It really comes in handy if you want your cloud machine to continue running without you constantly monitoring it.</p></li>
 </ol>
-<p>You can check out the tuttorial on how to run <a href="https://www.freecodecamp.org/news/run-python-script-how-to-execute-python-shell-commands-in-terminal/">Python scripts</a> ot <a href="https://bookdown.org/pdr_higgins/rmrwr/cmd-line.html#what-about-r">R scripts</a> to help you.</p>
+<p>You can check out the tutorial on how to run <a href="https://www.freecodecamp.org/news/run-python-script-how-to-execute-python-shell-commands-in-terminal/">Python scripts</a> or <a href="https://bookdown.org/pdr_higgins/rmrwr/cmd-line.html#what-about-r">R scripts</a> to help you.</p>
 </section></details>
 
 
