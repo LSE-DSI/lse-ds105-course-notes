@@ -1,0 +1,43 @@
+---
+title: "✅ Week 03 - Checklist"
+date: 9 October 2022
+date-meta: 9 October 2022
+---
+
+This week we will keep exploring the command line, only this time it is on a remote computer! 
+
+On Tuesday I will show you how you can set up and use services in the cloud yourself (I will show you a mix of Google Cloud and AWS), and in the labs you will explore the bash shell on a virtual machine that lives in the cloud.
+
+
+First, a reminder:
+
+
+- 🪟If you use Windows and were not able to install Ubuntu (via WSL2) in your machine, don't worry. 
+
+    - As I mentioned in my post on Slack last week, you will gain direct access to a Linux machine in the cloud (AWS) in your labs this Friday. Once there, you will be able to explore and practice the Bash shell commands in that remote machine.
+
+    - Alternatively, if you feel like it, you could take some time this week to learn more about the **Windows PowerShell**. We added a new section to last week's appendix [🔖 Week 02 Appendix](/weeks/week02/appendix.qmd) called _"Do you want to master Windows PowerShell instead?"_ pointing to some useful tutorials. Although the commands will vary, the experience of using this shell will not be too different than using the bash shell we are adopting in this course, it will not be a waste of your time.
+
+    - You will be able to access the cloud on our [Friday labs](/weeks/week03/lab.qmd) even if WSL2 didn't work in your machine.
+
+Now, as for what to expect from this week:
+
+- 🗳️ Why not nominate yourself to act as the course representative? Nominations should be made via Slack (channel `#student-rep`) until this **Monday 10 October 2022 12 p.m..** If no one nominates themselves, well... we won't have any students representing DS105 this term. Read more about the student representative role [here](/main/courserep.qmd).
+
+- ✍️ You have until **Thursday 13 October 2022** to submit the **W02/W03 formative assignment** (not graded). Submit your solutions via Moodle.
+
+- 👀 The [🔖 Week 02 Appendix](/weeks/week02/appendix.qmd) page is still relevant for this week. In particular, I suggest you practice editing files using the terminal (_Text Editors_ section) during the week.
+
+- 📟 Questions about the terminal? Got any questions of the form _"how could I do X in the terminal?"_? Have you been exploring the terminal yourself and found something interesting? Need any technical support? Share those on `#week03` of our Slack group. I (Jon) often respond questions there within a day.
+
+- 💻 Bring your laptops to the labs. Remember: you can borrow a laptop from the library.
+
+    - Bring your laptop to the lecture too if you want to setup your own cloud service and replicate [what I will be demonstrating](/weeks/week03/lecture.qmd).
+
+- 📝 Keep in mind that next week you will have to submit your first summative assignment. 
+
+    - On Friday, we will post the **W03/W04 summative assignment** (worth 10% of final marks) on Moodle. 
+
+    - You will have until 20 October 2022 to submit it. The format will be similar to the current formative assignment, but this time it will involve running commands in the remote virtual machine.
+
+    - The best way to prepare for this is to practice using the terminal by yourself. Once again, [🔖 Week 02 Appendix](/weeks/week02/appendix.qmd) might be useful to you. 

@@ -1,7 +1,7 @@
 ---
 title: "👨‍🏫 Week 03 - Slides"
-date: 4 October 2022
-date-meta: 4 October 2022
+date: 9 October 2022
+date-meta: 9 October 2022
 ---
 
 ## 🖥️ Part I - The Cloud (45-50 min)
@@ -9,6 +9,8 @@ date-meta: 4 October 2022
 
 Either click on the slide area below or click [here](/slides/week03_slides_part1.qmd) to view it in fullscreen.
 Use your keypad to navigate the slides.
+
+Would you rather save it as a PDF? Check Moodle shortly before the lecture to obtain a copy that looks exactly like the slides below. 
 
 
 <div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
