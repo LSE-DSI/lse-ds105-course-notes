@@ -166,7 +166,7 @@ We will go over the solutions once everyone has finished this step.
      cd /
     ```
 2. What do you see with `ls`? What does it mean?
-3. Walk around freely up and down the directories and sub-directories you encounter along the way. Check the links on [🔖 Week 02 Appendix - Linux and the Terminal](/weeks/week02/appendix.qmd) page to understand where you are navigating.
+3. Walk around freely up and down the directories and sub-directories you encounter along the way. Check the links on [🔖 Week 02 Appendix - Linux and the Terminal](/weeks/week02/appendix.qmd#linux-the-terminal) page to understand where you are navigating.
 4. Which directory(ies) under `/` were you not allowed to enter? Why?
 5. What is the difference between the `/root` directory and the root filesystem `/`?
 4. Go back `$HOME`
@@ -398,7 +398,7 @@ Follow the steps below and, when asked, copy your responses to the [Moodle page 
     ```
 2. Follow the instructions on the screen and complete the tutorial (a total of 7 short lessons).
 
-Check out the [🔖 Week 02 Appendix - 📃 Text editors](/weeks/week02/appendix.qmd) section for more info on `vim`.
+Check out the [🔖 Week 02 Appendix - 📃 Text editors](/weeks/week02/appendix.qmd#text-editors) section for more info on `vim`.
 
 </details>
 
