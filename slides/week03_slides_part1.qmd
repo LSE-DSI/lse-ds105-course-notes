@@ -273,7 +273,6 @@ Let's go through each one of those.
   - Google Docs
   - Outlook Web
   - Office 365
-  - Moodle
 :::
 :::
 :::
@@ -359,6 +358,58 @@ For example, cryptomining is against the T&Cs. [(Source)](https://fastestvpn.com
 - I highlighted EC2 because that is the service we will use in our labs this week
 :::
 
+## Before I do a demonstration...
+
+<br/>
+
+I need to tell you a tiny bit about **security** and **cryptography**, as these things are important when connecting to a remote machine.
+
+## SSH {.smaller}
+
+::: incremental
+- To ensure your connection to the cloud is secure, we often need to perform <mark>authentication</mark>. 
+- <mark>SSH</mark>, which stands for **S**ecure **SH**ell Protocol is a bit of software that comes pre-installed in most UNIX-like systems (macOS and Linux).
+- SSH takes care of authenticating your connection to the server, ensuring the security and privacy of that connection.
+:::
+
+::: {.fragment}
+::: {.callout-note}
+You will use SSH to authenticate to the cloud this week!
+:::
+:::
+
+## SSH keys {.smaller}
+
+
+::: columns
+
+::: {.column width="70%"}
+
+- Central to SSH is the idea of <mark>public</mark> and <mark>private</mark> keys
+
+::: incremental
+- You might need to use SSH keys when connecting to:
+  - a virtual machine in another computer (or in the cloud) 
+  - an **API** to download data
+  - an online service like **Github**, a platform for sharing code (mostly open source)
+:::
+
+:::
+
+::: {.column width="30%"}
+
+![](/figures/week03/Public-key-crypto-1.svg)
+:::
+
+:::
+
+::: {.fragment}
+::: {.callout-important}
+We will save you the burden of using them this week but SSH keys will make an important comeback on Week 05 lab!
+:::
+:::
+
+
 ## Live Demo | Compute {.smaller}
 
 ::: columns
@@ -378,7 +429,7 @@ For example, cryptomining is against the T&Cs. [(Source)](https://fastestvpn.com
 
 ::: footer
 
-::: {style="font-size:0.90em;"}
+::: {style="font-size:0.75em;"}
 Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm using the prompt: *'a programmer sitting atop a cloud writing computer code, in the style of studio Ghibli'* 🤓
 :::
 
@@ -389,9 +440,28 @@ Image created with the [DALL·E](https://openai.com/blog/dall-e/) algorithm usin
 - If time allows, do the same with AWS EC2
 :::
 
+
+
+
 # After the ☕ break:
 
-- Storage services (still IaaS)
-- Examples of PaaS
-- SaaS
-- ✅ Week 03 checklist
+- Demos of storage services (still IaaS)
+- Demos of PaaS (AWS Athena/GCloud BigQuery)
+- Tips for the lab
+
+## IaaS | Examples {.smaller}
+
+
+- **AWS**
+  - <span style="color: #f2f3fa;">EC2</span> 
+  - <span style="color: #8a8ed3;">**S3**</span> $\rightarrow$ Data Storage 
+
+- **Google Cloud**
+  - <span style="color: #f2f3fa;">Compute</span> 
+  - <span style="color: #8a8ed3;">**Storage**</span> $\rightarrow$ Data Storage  
+
+- **Azure**
+  - <span style="color: #f2f3fa;">Compute</span> 
+  - <span style="color: #8a8ed3;">Storage</span> $\rightarrow$ Data Storage 
+  - <span style="color: #f2f3fa;">Windows Server</span>
+  - <span style="color: #f2f3fa;">Linux on Azure</span>
