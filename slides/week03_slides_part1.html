@@ -622,7 +622,6 @@
 <li class="fragment">Google Docs</li>
 <li class="fragment">Outlook Web</li>
 <li class="fragment">Office 365</li>
-<li class="fragment">Moodle</li>
 </ul></li>
 </ul>
 </div>
@@ -739,6 +738,73 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="before-i-do-a-demonstration" class="slide level2">
+<h2>Before I do a demonstration…</h2>
+<p><br></p>
+<p>I need to tell you a tiny bit about <strong>security</strong> and <strong>cryptography</strong>, as these things are important when connecting to a remote machine.</p>
+</section>
+<section id="ssh" class="slide level2 smaller">
+<h2>SSH</h2>
+<div>
+<ul>
+<li class="fragment">To ensure your connection to the cloud is secure, we often need to perform <mark>authentication</mark>.</li>
+<li class="fragment"><mark>SSH</mark>, which stands for <strong>S</strong>ecure <strong>SH</strong>ell Protocol is a bit of software that comes pre-installed in most UNIX-like systems (macOS and Linux).</li>
+<li class="fragment">SSH takes care of authenticating your connection to the server, ensuring the security and privacy of that connection.</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>You will use SSH to authenticate to the cloud this week!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ssh-keys" class="slide level2 smaller">
+<h2>SSH keys</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>Central to SSH is the idea of <mark>public</mark> and <mark>private</mark> keys</li>
+</ul>
+<div>
+<ul>
+<li class="fragment">You might need to use SSH keys when connecting to:
+<ul>
+<li class="fragment">a virtual machine in another computer (or in the cloud)</li>
+<li class="fragment">an <strong>API</strong> to download data</li>
+<li class="fragment">an online service like <strong>Github</strong>, a platform for sharing code (mostly open source)</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:30%;">
+<p><img data-src="../figures/week03/Public-key-crypto-1.svg" class="img-fluid"></p>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>We will save you the burden of using them this week but SSH keys will make an important comeback on Week 05 lab!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="live-demo-compute" class="slide level2 smaller">
 <h2>Live Demo | Compute</h2>
 <div class="columns">
@@ -752,7 +818,7 @@
 </div>
 </div>
 <div class="footer">
-<div style="font-size:0.90em;">
+<div style="font-size:0.75em;">
 <p>Image created with the <a href="https://openai.com/blog/dall-e/">DALL·E</a> algorithm using the prompt: <em>‘a programmer sitting atop a cloud writing computer code, in the style of studio Ghibli’</em> 🤓</p>
 </div>
 </div>
@@ -773,20 +839,42 @@
           display:block!important;
       }</style></aside>
 </section></section>
+<section>
 <section id="after-the-break" class="title-slide slide level1">
 <h1>After the ☕ break:</h1>
 <ul>
-<li>Storage services (still IaaS)</li>
-<li>Examples of PaaS</li>
-<li>SaaS</li>
-<li>✅ Week 03 checklist</li>
+<li>Demos of storage services (still IaaS)</li>
+<li>Demos of PaaS (AWS Athena/GCloud BigQuery)</li>
+<li>Tips for the lab</li>
+</ul>
+</section>
+<section id="iaas-examples-2" class="slide level2 smaller">
+<h2>IaaS | Examples</h2>
+<ul>
+<li><strong>AWS</strong>
+<ul>
+<li><span style="color: #f2f3fa;">EC2</span></li>
+<li><span style="color: #8a8ed3;"><strong>S3</strong></span> <span class="math inline">\(\rightarrow\)</span> Data Storage</li>
+</ul></li>
+<li><strong>Google Cloud</strong>
+<ul>
+<li><span style="color: #f2f3fa;">Compute</span></li>
+<li><span style="color: #8a8ed3;"><strong>Storage</strong></span> <span class="math inline">\(\rightarrow\)</span> Data Storage</li>
+</ul></li>
+<li><strong>Azure</strong>
+<ul>
+<li><span style="color: #f2f3fa;">Compute</span></li>
+<li><span style="color: #8a8ed3;">Storage</span> <span class="math inline">\(\rightarrow\)</span> Data Storage</li>
+<li><span style="color: #f2f3fa;">Windows Server</span></li>
+<li><span style="color: #f2f3fa;">Linux on Azure</span></li>
+</ul></li>
 </ul>
 
 
 <img src="../figures/logos/LSE Data Science Institute.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>DS105 - Data for Data Science <span class="emoji" data-emoji="desktop_computer">🖥️</span> <span class="emoji" data-emoji="juggling_person">🤹</span></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

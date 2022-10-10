@@ -151,7 +151,7 @@
     "href": "weeks/week01/appendix.html#recommended-resources",
     "title": "🔖 Week 01 - Appendix",
     "section": "🔖 Recommended Resources",
-    "text": "🔖 Recommended Resources\n\nLSE Digital Skills Lab\nLSE Digital Skills Lab offers R and python workshops during Term time and they will also give DSI students access to self-paced programming courses via Dataquest.\nFollow the links below to take the pre-sessional self-paced courses:\n\nR for Data Science Pre-sessional Course 22/23\nPython for Data Science Pre-sessional Course 22/23\n\nAlso, keep an eye on the following pages for news of the in-person workshops:\n\nR workshops\nPython workshops\n\n\n\nOther resources\n\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain open to LSE students until the end of the year.\n\n\n\nReady to develop the key skills employers are looking for in 2022?Join this summer's LSE Careers Skills Accelerator programme to expand your skillset!⭐Apply on CareerHub by 11.59pm, Wed 15 June for your chance to join the programme⭐https://t.co/J5sI1NRaMA\n\n— LSE Careers ((LSECareers?)) June 9, 2022"
+    "text": "🔖 Recommended Resources\n\nLSE Digital Skills Lab\nLSE Digital Skills Lab offers R and python workshops during Term time and they will also give DSI students access to self-paced programming courses via Dataquest.\nFollow the links below to take the pre-sessional self-paced courses:\n\nR for Data Science Pre-sessional Course 22/23\nPython for Data Science Pre-sessional Course 22/23\n\nAlso, keep an eye on the following pages for news of the in-person workshops:\n\nR workshops\nPython workshops\n\n\n\nOther resources\n\nCheckout this summer’s LSE Careers Skill Accelerator programme. Some of the self-paced courses will remain open to LSE students until the end of the year.\n\n\n\nReady to develop the key skills employers are looking for in 2022?Join this summer's LSE Careers Skills Accelerator programme to expand your skillset!⭐Apply on CareerHub by 11.59pm, Wed 15 June for your chance to join the programme⭐https://t.co/J5sI1NRaMA\n\n— LSE Careers June 9, 2022"
   },
   {
     "objectID": "weeks/week01/lecture.html",
@@ -914,7 +914,7 @@
     "href": "slides/week03_slides_part1.html#saas",
     "title": "🗓️ Week 03 - Part I  The Cloud",
     "section": "SaaS",
-    "text": "SaaS\n\nSoftware that you interact with but runs elsewhere, not in your machine.\nTo name a few examples:\n\n\n\n\n\nFile storage:\n\nDropbox\nGoogle Drive\nOne Drive\nSharepoint\n\n\n\n\n\n\nWeb apps:\n\nGoogle Suite\nGoogle Docs\nOutlook Web\nOffice 365\nMoodle"
+    "text": "SaaS\n\nSoftware that you interact with but runs elsewhere, not in your machine.\nTo name a few examples:\n\n\n\n\n\nFile storage:\n\nDropbox\nGoogle Drive\nOne Drive\nSharepoint\n\n\n\n\n\n\nWeb apps:\n\nGoogle Suite\nGoogle Docs\nOutlook Web\nOffice 365"
   },
   {
     "objectID": "slides/week03_slides_part1.html#iaas",
@@ -938,10 +938,38 @@
     "text": "IaaS | Examples\n\nAWS\n\nEC2 \\(\\rightarrow\\) Virtual Machine\nS3\n\nGoogle Cloud\n\nCompute \\(\\rightarrow\\) Virtual Machine\nStorage\n\nAzure\n\nCompute \\(\\rightarrow\\) Virtual Machine\nStorage\nWindows Server\nLinux on Azure\n\n\n\n\n\nI highlighted EC2 because that is the service we will use in our labs this week"
   },
   {
+    "objectID": "slides/week03_slides_part1.html#before-i-do-a-demonstration",
+    "href": "slides/week03_slides_part1.html#before-i-do-a-demonstration",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "Before I do a demonstration…",
+    "text": "Before I do a demonstration…\n\nI need to tell you a tiny bit about security and cryptography, as these things are important when connecting to a remote machine."
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#ssh",
+    "href": "slides/week03_slides_part1.html#ssh",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "SSH",
+    "text": "SSH\n\n\nTo ensure your connection to the cloud is secure, we often need to perform authentication.\nSSH, which stands for Secure SHell Protocol is a bit of software that comes pre-installed in most UNIX-like systems (macOS and Linux).\nSSH takes care of authenticating your connection to the server, ensuring the security and privacy of that connection.\n\n\n\n\n\n\n\n\n\nNote\n\n\nYou will use SSH to authenticate to the cloud this week!"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#ssh-keys",
+    "href": "slides/week03_slides_part1.html#ssh-keys",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "SSH keys",
+    "text": "SSH keys\n\n\n\nCentral to SSH is the idea of public and private keys\n\n\n\nYou might need to use SSH keys when connecting to:\n\na virtual machine in another computer (or in the cloud)\nan API to download data\nan online service like Github, a platform for sharing code (mostly open source)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nWe will save you the burden of using them this week but SSH keys will make an important comeback on Week 05 lab!"
+  },
+  {
     "objectID": "slides/week03_slides_part1.html#live-demo-compute",
     "href": "slides/week03_slides_part1.html#live-demo-compute",
     "title": "🗓️ Week 03 - Part I  The Cloud",
     "section": "Live Demo | Compute",
     "text": "Live Demo | Compute\n\n\n\n\n\n\nI will share my screen and show you how to setup an account and create a Compute instance\n\n\n\n\n\nImage created with the DALL·E algorithm using the prompt: ‘a programmer sitting atop a cloud writing computer code, in the style of studio Ghibli’ 🤓\n\n\n\n\nCreate Google Cloud Compute, run and access.\nIf time allows, do the same with AWS EC2"
+  },
+  {
+    "objectID": "slides/week03_slides_part1.html#iaas-examples-2",
+    "href": "slides/week03_slides_part1.html#iaas-examples-2",
+    "title": "🗓️ Week 03 - Part I  The Cloud",
+    "section": "IaaS | Examples",
+    "text": "IaaS | Examples\n\nAWS\n\nEC2\nS3 \\(\\rightarrow\\) Data Storage\n\nGoogle Cloud\n\nCompute\nStorage \\(\\rightarrow\\) Data Storage\n\nAzure\n\nCompute\nStorage \\(\\rightarrow\\) Data Storage\nWindows Server\nLinux on Azure\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
   }
 ]
