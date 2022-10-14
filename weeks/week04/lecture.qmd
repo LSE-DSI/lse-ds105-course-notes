@@ -4,4 +4,28 @@ date: 23 September 2022
 date-meta: 23 September 2022
 ---
 
-<mark class="todo"></mark>
+
+## 🖥️ Part I - The Internet: protocols + scraping + APIs (45-50 min)
+
+
+Either click on the slide area below or click [here](/slides/week02_slides_part1.qmd) to view it in fullscreen.
+Use your keypad to navigate the slides.
+
+
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week04_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Demo: Interacting with the Internet (45-50 min)
+
+- Let's open Jupyter Notebooks!
+- In this demo we will cover:
+    - Getting a response from a web page
+    - Parsing the response
+    - Navigating the HTML code
+    - Extracting and saving information automatically
+    - Interacting with an API
