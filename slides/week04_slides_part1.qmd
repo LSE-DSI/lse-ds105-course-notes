@@ -1,0 +1,363 @@
+---
+title: "DS105 Data for Data Science"
+title: "<font style='font-size:1em;'>🗓️ Week 04<br/> The Internet: protocols + scraping + APIs</font>"
+author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva) & Anton Boichenko
+institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
+date: 18 October 2022
+date-meta: 18 October 2022
+toc: true
+toc-depth: 1
+toc-title: "What we will cover today"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs: 
+    fig-responsive: true
+    theme: simple
+    slide-number: true
+    mouse-wheel: false
+    chalkboard: 
+      buttons: true
+    preview-links: true
+    logo: /figures/logos/LSE Data Science Institute.png
+    css: /css/styles_slides.css
+    footer: 'DS105 - Data for Data Science :desktop_computer: :juggling_person:'
+---
+
+# The Internet and how it works
+
+## We are surrounded by hosts {.smaller}
+
+::: columns
+
+::: {.column style="width:60%;font-size:0.9em;"}
+
+::: {.incremental}
+- Hosts are <mark>devices</mark> that can <mark>send</mark> or <mark>receive</mark> traffic
+- Host can be anything: 
+  - laptops
+  - smartphones
+  - PCs
+  - supercomputers
+  - etc.
+
+
+:::
+
+:::
+
+::: {.column width=40%}
+
+![](/figures/week04/cell-phone.png){.absolute width="100" right="10%" top="15%"}
+
+![](/figures/week04/computer.png){.absolute width="100" right="30%" top="15%"}
+
+![](/figures/week04/laptop.png){.absolute width="100" right="30%" top="35%"}
+
+![](/figures/week04/servers.png){.absolute width="100" right="10%" top="35%"}
+
+
+:::
+
+:::
+
+
+## Client-Server model {.smaller}
+
+::: {.incremental}
+- Host interacts and exchanges "messages".
+- Those hosts that send requests are called <mark>clients</mark>
+- Those that respond to them with content (web-pages, data, emails, etc.) are called <mark>servers</mark>
+:::
+
+::: {.fragment}
+Such a request-respond system is called a <mark>client-server model<mark>
+
+![](/figures/week04/client-server.png){.absolute width="60%" left="20%" bottom="5%"}
+
+:::
+
+## IP addresses {.smaller}
+
+::: {.incremental}
+- Each host needs a unique name to <mark>communicate with others </mark>
+- In networking this name is called an <mark>IP-address</mark>
+- An IP-address weighs 32 bits and hence convey 32 1-s and 0-s
+- We split those in 4 chunks and get an address of the following format: 
+:::
+
+::: {.fragment}
+![](/figures/week04/IP-address.png){height="350" fig-align="center"}
+:::
+
+
+## The hierarchy {.smaller}
+
+::: columns
+
+::: {.column width=50%}
+::: {.incremental}
+- IP addresses are assigned hierarchichally
+- Each new part of the IP address represent a certain part of the network
+:::
+:::
+
+::: {.column width=50%}
+::: {.incremental}
+```{dot}
+//| data-id: 1
+//| fig-width: 5
+//| fig-height: 6
+
+digraph {
+  pad=0;
+  margin=0;
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif", fontcolor="]212121", fontsize="50", style=filled, fillcolor="#cee8f6", color="#5cb4e4", shape=box, margin=0.4]
+	edge [fontname="Helvetica,Arial,sans-serif", penwidth=3, color="#212121";]
+	
+	rankdir=TB;
+	
+	
+	UK          [label="UK"];
+	first_layer           [label="44.XX.XX.XX", fillcolor="#e8e8e8", color="#636363"];
+	LSE            [label="LSE"];
+	second_layer      [label="44.20.XX.XX", fillcolor="#e8e8e8", color="#636363"];
+  DSI            [label="DSI"];
+  third_layer      [label="44.20.140.XX", fillcolor="#e8e8e8", color="#636363"];
+	
+  UK -> first_layer   ;
+  first_layer -> LSE  ;
+  LSE -> second_layer ;
+  second_layer -> DSI ;
+  DSI -> third_layer ;
+
+}
+```
+:::
+:::
+:::
+
+## Networks {.smaller}
+
+::: {.incremental}
+- A collection of interconnected hosts that exchange traffic can be called a <mark>network</mark>
+- The examples of networks can be:
+  - your house (laptop + printer + smartphone)
+  - LSE (many PCs + laptops + supercomputer)
+  - an office (laptops + printers + projectors)
+:::
+
+::: {.fragment}
+- If you unite all of the networks <br/> + add rules of their connectivity <br/> called **protocols** you will get <mark>the Internet</mark>
+
+![](/figures/week04/internet.png){.absolute right="30" bottom="140" height="250"}
+:::
+
+# Protocols
+
+## Why do we need protocols? {.smaller}
+
+::: {.incremental}
+
+- Before around 1973 computers didn't have a unified system of rules to interact
+- In 1973 the development of the so-called <mark>TCP/IP</mark> (Transmission Control Protocol + Internet Protocol) has started
+- "that allowed any system to connect to any other system, using any network topology" [@hall2000internet]
+:::
+
+## TCP/IP {.smaller}
+
+::: {.incremental}
+- TCP/IP implies a family of different protocols
+- Each of these protocls serve a cerain purpose
+
+::: {.fragment}
+The mostly widely used protocols include:
+:::
+
+- Address Resolution Protocol (ARP)
+- Domain Name System (DNS)
+- File Transfer Protocol (FTP)
+- Internet Message Access Protocol (IMAP)
+- HyperText Transfer Protocol (HTTP)
+
+::: 
+## HTTP example {.smaller}
+
+::: {.incremental}
+
+::: {.fragment}
+![](/figures/week04/HTTPS_example.png){height="350" fig-align="center"}
+:::
+
+- A user sends a request to the server and gets back a web-page.
+- Usually HTTP protocol is in the form of HTTPS, where S stands for <mark>secure</mark>. 
+
+::: {.fragment}
+For example: `https://lse.co.uk`
+:::
+
+::: 
+
+# Web pages
+
+<br/>
+Once the HTTP request is sent and accepted, we might get a web page
+
+## Tools for creating web-pages {.smaller}
+
+::: {.columns}
+
+::: {.column style="width=50%;"}
+::: {.incremental}
+
+::: {.fragment}
+
+There are 3 key web programming languages:
+:::
+
+- <mark>HTML</mark> (HyperText Markup Language) - used to create the "skeleton" of the page
+- <mark>CSS</mark> (Cascading Style Sheets) - used for advanced styling
+- <mark>Java Script</mark> - used for interactivity 
+
+::: {.fragment}
+During the course you will mostly be working with HTML.
+:::
+:::
+:::
+
+
+::: {.column style="width=40%;"}
+
+::: {.incremental}
+::: {.fragment}
+``` {.html}
+<!DOCTYPE html>
+<html>
+  <body>
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+
+  </body>
+</html>
+```
+:::
+:::
+:::
+
+::: 
+
+
+## Our course {.smaller}
+
+::: {.incremental}
+::: {.fragment}
+<br>
+``` {.html}
+<section id="course-brief" class="level1">
+  <h1>📑 Course Brief</h1>
+    <p><strong>Focus:</strong> learn how to collect and handle so-called “real data”</p>
+    <p><strong>How:</strong> hands-on coding exercises and a group project</p>
+</section>
+```
+:::
+
+::: {.fragment}
+<br>
+![](/figures/week04/DS105-HTML.png){height="300" fig-align="center"}
+
+:::
+
+::: 
+
+# API 
+
+::: {.incremental}
+
+- Application
+- Programming 
+- Interface 
+:::
+
+## What is an API? {.smaller}
+
+::: {.incremental}
+
+::: {.fragment}
+<blockquote> _"APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols. "_ </blockquote> 
+
+<p align="right">
+
+--  [Amazon Web Services](https://aws.amazon.com/what-is/api/)
+</p>
+
+:::
+
+::: {.fragment}
+**Example:**
+
+![](/figures/week04/Uber_API.png){height="300" fig-align="center"}
+:::
+:::
+
+## API endpoints {.smaller}
+
+::: {.incremental}
+
+::: {.columns}
+
+::: {.column style="width=30%;font-size:0.85em;"}
+::: {.fragment}
+Sends a request with:
+
+- Request parameters
+- (usually) API key 
+
+::: {.fragment}
+Request:
+
+GET api.uber.com/get_trip <br/>
+?**key**=<mark>BQND7361120</mark> <br/>
+&**lat**=<mark>40.83008</mark> <br/>
+&**long**=<mark>-39.38419</mark>
+
+:::
+:::
+:::
+
+::: {.column style="width=30% text-align=right;font-size:0.85em;"}
+::: {.fragment}
+Sends back a response that can be:
+
+- data in a JSON, txt, XML or other formats
+- etc. 
+
+::: {.fragment}
+Response: 
+
+``` json
+{"price":"12.4 pounds",
+"length": "22 minutes"}
+```
+:::
+:::
+:::
+:::
+:::
+
+![](/figures/week04/Uber_API.png){.absolute height="120" right="0%" bottom="5%"}
+
+
+# After the ☕ break:
+
+- Exploring the web pages and HTML code
+- Sending different requests to web pages
+- API endpoints
+
+------------------------------------------------------------------------
+
+## References {style="word-break:break-all;"}
+
+::: {#refs .r-fit-text}
+::: 
