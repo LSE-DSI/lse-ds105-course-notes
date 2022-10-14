@@ -971,5 +971,96 @@
     "title": "🗓️ Week 03 - Part I  The Cloud",
     "section": "IaaS | Examples",
     "text": "IaaS | Examples\n\nAWS\n\nEC2\nS3 \\(\\rightarrow\\) Data Storage\n\nGoogle Cloud\n\nCompute\nStorage \\(\\rightarrow\\) Data Storage\n\nAzure\n\nCompute\nStorage \\(\\rightarrow\\) Data Storage\nWindows Server\nLinux on Azure\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#we-are-surrounded-by-hosts",
+    "href": "slides/week04_slides_part1.html#we-are-surrounded-by-hosts",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "We are surrounded by hosts",
+    "text": "We are surrounded by hosts\n\n\n\n\nHosts are devices that can send or receive traffic\nHost can be anything:\n\nlaptops\nsmartphones\nPCs\nsupercomputers\netc."
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#client-server-model",
+    "href": "slides/week04_slides_part1.html#client-server-model",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "Client-Server model",
+    "text": "Client-Server model\n\n\nHost interacts and exchanges “messages”.\nThose hosts that send requests are called clients\nThose that respond to them with content (web-pages, data, emails, etc.) are called servers\n\n\n\nSuch a request-respond system is called a client-server model"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#ip-addresses",
+    "href": "slides/week04_slides_part1.html#ip-addresses",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "IP addresses",
+    "text": "IP addresses\n\n\nEach host needs a unique name to communicate with others \nIn networking this name is called an IP-address\nAn IP-address weighs 32 bits and hence convey 32 1-s and 0-s\nWe split those in 4 chunks and get an address of the following format:"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#the-hierarchy",
+    "href": "slides/week04_slides_part1.html#the-hierarchy",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "The hierarchy",
+    "text": "The hierarchy\n\n\n\n\nIP addresses are assigned hierarchichally\nEach new part of the IP address represent a certain part of the network\n\n\n\n\n\n\n\n\n\n   \n\nUK\n\n UK   \n\nfirst_layer\n\n 44.XX.XX.XX   \n\nUK->first_layer\n\n    \n\nLSE\n\n LSE   \n\nfirst_layer->LSE\n\n    \n\nsecond_layer\n\n 44.20.XX.XX   \n\nLSE->second_layer\n\n    \n\nDSI\n\n DSI   \n\nsecond_layer->DSI\n\n    \n\nthird_layer\n\n 44.20.140.XX   \n\nDSI->third_layer"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#networks",
+    "href": "slides/week04_slides_part1.html#networks",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "Networks",
+    "text": "Networks\n\n\nA collection of interconnected hosts that exchange traffic can be called a network\nThe examples of networks can be:\n\nyour house (laptop + printer + smartphone)\nLSE (many PCs + laptops + supercomputer)\nan office (laptops + printers + projectors)\n\n\n\n\n\nIf you unite all of the networks  + add rules of their connectivity  called protocols you will get the Internet"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#why-do-we-need-protocols",
+    "href": "slides/week04_slides_part1.html#why-do-we-need-protocols",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "Why do we need protocols?",
+    "text": "Why do we need protocols?\n\n\nBefore around 1973 computers didn’t have a unified system of rules to interact\nIn 1973 the development of the so-called TCP/IP (Transmission Control Protocol + Internet Protocol) has started\n“that allowed any system to connect to any other system, using any network topology” (Hall 2000)"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#tcpip",
+    "href": "slides/week04_slides_part1.html#tcpip",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "TCP/IP",
+    "text": "TCP/IP\n\n\nTCP/IP implies a family of different protocols\nEach of these protocls serve a cerain purpose\n\n\nThe mostly widely used protocols include:\n\n\nAddress Resolution Protocol (ARP)\nDomain Name System (DNS)\nFile Transfer Protocol (FTP)\nInternet Message Access Protocol (IMAP)\nHyperText Transfer Protocol (HTTP)"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#http-example",
+    "href": "slides/week04_slides_part1.html#http-example",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "HTTP example",
+    "text": "HTTP example\n\n\n\n\n\n\n\n\n\nA user sends a request to the server and gets back a web-page.\nUsually HTTP protocol is in the form of HTTPS, where S stands for secure.\n\n\nFor example: https://lse.co.uk"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#tools-for-creating-web-pages",
+    "href": "slides/week04_slides_part1.html#tools-for-creating-web-pages",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "Tools for creating web-pages",
+    "text": "Tools for creating web-pages\n\n\n\n\nThere are 3 key web programming languages:\n\n\nHTML (HyperText Markup Language) - used to create the “skeleton” of the page\nCSS (Cascading Style Sheets) - used for advanced styling\nJava Script - used for interactivity\n\n\nDuring the course you will mostly be working with HTML.\n\n\n\n\n\n<!DOCTYPE html>\n<html>\n  <body>\n\n  <h1>My First Heading</h1>\n  <p>My first paragraph.</p>\n\n  </body>\n</html>"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#our-course",
+    "href": "slides/week04_slides_part1.html#our-course",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "Our course",
+    "text": "Our course\n\n\n\n<section id=\"course-brief\" class=\"level1\">\n  <h1>📑 Course Brief</h1>\n    <p><strong>Focus:</strong> learn how to collect and handle so-called “real data”</p>\n    <p><strong>How:</strong> hands-on coding exercises and a group project</p>\n</section>"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#what-is-an-api",
+    "href": "slides/week04_slides_part1.html#what-is-an-api",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "What is an API?",
+    "text": "What is an API?\n\n\n\n“APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols.”\n\n\n– Amazon Web Services\n\n\n\nExample:"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#api-endpoints",
+    "href": "slides/week04_slides_part1.html#api-endpoints",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "API endpoints",
+    "text": "API endpoints\n\n\n\n\nSends a request with:\n\nRequest parameters\n(usually) API key\n\n\nRequest:\nGET api.uber.com/get_trip  ?key=BQND7361120  &lat=40.83008  &long=-39.38419\n\n\n\n\nSends back a response that can be:\n\ndata in a JSON, txt, XML or other formats\netc.\n\n\nResponse:\n{\"price\":\"12.4 pounds\",\n\"length\": \"22 minutes\"}"
+  },
+  {
+    "objectID": "slides/week04_slides_part1.html#references",
+    "href": "slides/week04_slides_part1.html#references",
+    "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
+    "section": "References",
+    "text": "References\n\n\nHall, Eric. 2000. Internet Core Protocols: The Definitive Guide: Help for Network Administrators. \" O’Reilly Media, Inc.\".\n\n\n\n\n\nDS105 - Data for Data Science 🖥️ 🤹"
   }
 ]
