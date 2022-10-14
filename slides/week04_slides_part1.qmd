@@ -30,10 +30,10 @@ format:
 
 ::: columns
 
-::: {.column style="width:50%;font-size:0.9em;"}
+::: {.column style="width:60%;font-size:0.9em;"}
 
 ::: {.incremental}
-- Hosts are <mark>devices</mark> that can <mark>send</mark> or <mark>recieve</mark> traffic
+- Hosts are <mark>devices</mark> that can <mark>send</mark> or <mark>receive</mark> traffic
 - Host can be anything: 
   - laptops
   - smartphones
@@ -46,15 +46,15 @@ format:
 
 :::
 
-::: {.column width=50%}
+::: {.column width=40%}
 
-![](/figures/week04/cell-phone.png){.absolute width="150" right="200" top="150"}
+![](/figures/week04/cell-phone.png){.absolute width="100" right="10%" top="15%"}
 
-![](/figures/week04/computer.png){.absolute width="150" right="400" top="150"}
+![](/figures/week04/computer.png){.absolute width="100" right="30%" top="15%"}
 
-![](/figures/week04/laptop.png){.absolute width="150" bottom="150" right="400"}
+![](/figures/week04/laptop.png){.absolute width="100" right="30%" top="35%"}
 
-![](/figures/week04/servers.png){.absolute width="150" bottom="150" right="200"}
+![](/figures/week04/servers.png){.absolute width="100" right="10%" top="35%"}
 
 
 :::
@@ -65,7 +65,7 @@ format:
 ## Client-Server model {.smaller}
 
 ::: {.incremental}
-- Host interact and exchange "messages".
+- Host interacts and exchanges "messages".
 - Those hosts that send requests are called <mark>clients</mark>
 - Those that respond to them with content (web-pages, data, emails, etc.) are called <mark>servers</mark>
 :::
@@ -73,7 +73,7 @@ format:
 ::: {.fragment}
 Such a request-respond system is called a <mark>client-server model<mark>
 
-![](/figures/week04/client-server.png){fig-align="center" height="400"}
+![](/figures/week04/client-server.png){.absolute width="60%" left="20%" bottom="5%"}
 
 :::
 
@@ -91,7 +91,7 @@ Such a request-respond system is called a <mark>client-server model<mark>
 :::
 
 
-## The hierarchy 
+## The hierarchy {.smaller}
 
 ::: columns
 
@@ -107,12 +107,13 @@ Such a request-respond system is called a <mark>client-server model<mark>
 ```{dot}
 //| data-id: 1
 //| fig-width: 5
+//| fig-height: 6
 
 digraph {
-  pad=0.5;
+  pad=0;
   margin=0;
 	fontname="Helvetica,Arial,sans-serif";
-	node [fontname="Helvetica,Arial,sans-serif", fontcolor="]212121", fontsize="40", style=filled, fillcolor="#cee8f6", color="#5cb4e4", shape=box, margin=0.4]
+	node [fontname="Helvetica,Arial,sans-serif", fontcolor="]212121", fontsize="50", style=filled, fillcolor="#cee8f6", color="#5cb4e4", shape=box, margin=0.4]
 	edge [fontname="Helvetica,Arial,sans-serif", penwidth=3, color="#212121";]
 	
 	rankdir=TB;
@@ -155,7 +156,7 @@ digraph {
 
 # Protocols
 
-## Why do we need protocols?
+## Why do we need protocols? {.smaller}
 
 ::: {.incremental}
 
@@ -215,7 +216,7 @@ Once the HTTP request is sent and accepted, we might get a web page
 There are 3 key web programming languages:
 :::
 
-- <mark>HTML</mark> (HyperText Markup Language) - used to create the "sceleton" of the page
+- <mark>HTML</mark> (HyperText Markup Language) - used to create the "skeleton" of the page
 - <mark>CSS</mark> (Cascading Style Sheets) - used for advanced styling
 - <mark>Java Script</mark> - used for interactivity 
 
@@ -279,7 +280,7 @@ During the course you will mostly be working with HTML.
 - Interface 
 :::
 
-## What is an API?
+## What is an API? {.smaller}
 
 ::: {.incremental}
 
@@ -303,14 +304,10 @@ During the course you will mostly be working with HTML.
 ## API endpoints {.smaller}
 
 ::: {.incremental}
-::: {.fragment}
 
-![](/figures/week04/Uber_API.png){height="300" fig-align="center"}
-
-:::
 ::: {.columns}
 
-::: {.column style="width=30%;"}
+::: {.column style="width=30%;font-size:0.85em;"}
 ::: {.fragment}
 Sends a request with:
 
@@ -324,11 +321,12 @@ GET api.uber.com/get_trip <br/>
 ?**key**=<mark>BQND7361120</mark> <br/>
 &**lat**=<mark>40.83008</mark> <br/>
 &**long**=<mark>-39.38419</mark>
+
 :::
 :::
 :::
 
-::: {.column style="width=30% text-align=right;"}
+::: {.column style="width=30% text-align=right;font-size:0.85em;"}
 ::: {.fragment}
 Sends back a response that can be:
 
@@ -338,13 +336,18 @@ Sends back a response that can be:
 ::: {.fragment}
 Response: 
 
-`{"price":"12.4 pounds",`
-`"length": "22 minutes"}`
+``` json
+{"price":"12.4 pounds",
+"length": "22 minutes"}
+```
 :::
 :::
 :::
 :::
 :::
+
+![](/figures/week04/Uber_API.png){.absolute height="120" right="0%" bottom="5%"}
+
 
 # After the ☕ break:
 
