@@ -1,10 +1,10 @@
 ---
 title: "DS105 Data for Data Science"
 title: "<font style='font-size:1em;'>🗓️ Week 04<br/> The Internet: protocols + scraping + APIs</font>"
-author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva)
+author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva) & Anton Boichenko
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
-date: 14 October 2022
-date-meta: 14 October 2022
+date: 18 October 2022
+date-meta: 18 October 2022
 toc: true
 toc-depth: 1
 toc-title: "What we will cover today"
@@ -48,13 +48,13 @@ format:
 
 ::: {.column width=50%}
 
-![](/figures/week03/cell-phone.png){.absolute width="150" right="200" top="150"}
+![](/figures/week04/cell-phone.png){.absolute width="150" right="200" top="150"}
 
-![](/figures/week03/computer.png){.absolute width="150" right="400" top="150"}
+![](/figures/week04/computer.png){.absolute width="150" right="400" top="150"}
 
-![](/figures/week03/laptop.png){.absolute width="150" bottom="150" right="400"}
+![](/figures/week04/laptop.png){.absolute width="150" bottom="150" right="400"}
 
-![](/figures/week03/servers.png){.absolute width="150" bottom="150" right="200"}
+![](/figures/week04/servers.png){.absolute width="150" bottom="150" right="200"}
 
 
 :::
@@ -73,7 +73,7 @@ format:
 ::: {.fragment}
 Such a request-respond system is called a <mark>client-server model<mark>
 
-![](/figures/week03/client-server.png){fig-align="center" height="400"}
+![](/figures/week04/client-server.png){fig-align="center" height="400"}
 
 :::
 
@@ -87,7 +87,7 @@ Such a request-respond system is called a <mark>client-server model<mark>
 :::
 
 ::: {.fragment}
-![](/figures/week03/IP-address.png){height="350" fig-align="center"}
+![](/figures/week04/IP-address.png){height="350" fig-align="center"}
 :::
 
 
@@ -150,7 +150,7 @@ digraph {
 ::: {.fragment}
 - If you unite all of the networks <br/> + add rules of their connectivity <br/> called **protocols** you will get <mark>the Internet</mark>
 
-![](/figures/week03/internet.png){.absolute right="30" bottom="140" height="250"}
+![](/figures/week04/internet.png){.absolute right="30" bottom="140" height="250"}
 :::
 
 # Protocols
@@ -186,7 +186,7 @@ The mostly widely used protocols include:
 ::: {.incremental}
 
 ::: {.fragment}
-![](/figures/week03/HTTPS_example.png){height="350" fig-align="center"}
+![](/figures/week04/HTTPS_example.png){height="350" fig-align="center"}
 :::
 
 - A user sends a request to the server and gets back a web-page.
@@ -264,7 +264,7 @@ During the course you will mostly be working with HTML.
 
 ::: {.fragment}
 <br>
-![](/figures/week03/DS105-HTML.png){height="300" fig-align="center"}
+![](/figures/week04/DS105-HTML.png){height="300" fig-align="center"}
 
 :::
 
@@ -296,7 +296,7 @@ During the course you will mostly be working with HTML.
 ::: {.fragment}
 **Example:**
 
-![](/figures/week03/Uber_API.png){height="300" fig-align="center"}
+![](/figures/week04/Uber_API.png){height="300" fig-align="center"}
 :::
 :::
 
@@ -305,7 +305,7 @@ During the course you will mostly be working with HTML.
 ::: {.incremental}
 ::: {.fragment}
 
-![](/figures/week03/Uber_API.png){height="300" fig-align="center"}
+![](/figures/week04/Uber_API.png){height="300" fig-align="center"}
 
 :::
 ::: {.columns}
