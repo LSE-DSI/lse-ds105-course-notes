@@ -133,6 +133,20 @@
     "text": "Links\n\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
   },
   {
+    "objectID": "weeks/week04.html",
+    "href": "weeks/week04.html",
+    "title": "🗓️ Week 04 - The Internet: protocols + scraping + APIs.",
+    "section": "",
+    "text": "This is the last week of the theme Behind the scenes, where we will explore the topic of The Internet: protocols + scraping + APIs. This is the week you learn how to download data; after this, we will focus on how to transform data to obtain and communicate insights.\nI will show you how Web documents look like, the most common file formats and how to download data from websites and APIs. This is a very important week, as I will demonstrate how you will download data for your projects — try not to miss the lecture!\nAnd bring your laptops to follow along if you can. Later, on Friday, you will write your own scripts to perform web scraping and API queries. After this week, you will be ready to start thinking of which websites/APIs you will want to suggest to your other colleagues when forming groups."
+  },
+  {
+    "objectID": "weeks/week04.html#links",
+    "href": "weeks/week04.html#links",
+    "title": "🗓️ Week 04 - The Internet: protocols + scraping + APIs.",
+    "section": "Links",
+    "text": "Links\n\n✅ Week 04 Checklist\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
+  },
+  {
     "objectID": "weeks/week01/appendix.html",
     "href": "weeks/week01/appendix.html",
     "title": "🔖 Week 01 - Appendix",
@@ -432,6 +446,27 @@
     "title": "💻 Week 04 - Lab Roadmap (90 min)",
     "section": "Part 3: Searching for Data events",
     "text": "Part 3: Searching for Data events\nWe have now explored one of the key methods of web scraping. However, we haven’t yet talked about the scenarios where we need to interact with a website to acquire information. This can be done with Selenium. Selenium can automatically interact with websites. Let’s see how it works.\n🤝 WORKING TOGETHER\n\nIf you are using Python, make sure you have Google Chrome installed and chromdriver downloaded to the folder you know a path to.\nIf you are using R, make sure you have Mozilla Firefox installed.\nGo to the LSE website.\nCopy the path to the search box.\nUsing Selenium type “data” into the box.\nExtract the name of the first program.\n\nNow, it’s time to try things yourself. We haven’t found a lot of events about data on TicketMaster. Maybe we can use another platform?\n🎯 ACTION POINTS\n\nUsing Selenium go to the London events page on Eventbrite.\nNavigate to the search box and enter “data” using Selenium.\nHit enter using Selenium.\nParse the number of pages of such events from below the page.\nFind a way to go to the next page.\nWrite a loop that will go through the next 10 pages and print the date and time of the first event on the page.\n\n\nSolution Code\n\n\n Python users\n\nWe will present the whole sequence of steps here in one code.\n# import the required libraries\nfrom selenium import webdriver\nfrom selenium.webdriver import Chrome\nimport time\n\n# here you specify the Path to chromedriver\ndriver_path = \"/chromedriver_PATH\"\n\n# launching the browser \ndriver = Chrome(driver_path) \n\n# saving the link\nlink = \"https://www.eventbrite.co.uk/d/united-kingdom--london/events/\"\n\n# navigating to the page\ndriver.get(link)\n\n# navigating to the search box\nsearch = driver.find_element(\"css selector\", \"\"\"#global-header > div \n> div.consumer-header__content.consumer-header__desktop.eds-show-up-md \n> div.consumer-header__search > button > div > div > div > div\"\"\")\n\n# clicking on the search box\nsearch.click()\n\n# navigating to the search box\ninputElement = driver.find_element(\"css selector\", \"#search-autocomplete-input\")\n\n# inputting \"data\" into the search box\ninputElement.send_keys('data')\n\n# importing common keys\nfrom selenium.webdriver.common.keys import Keys\n\n# asking Selenium to hit enter\ninputElement.send_keys(Keys.ENTER)\n\n# extracting the number of pages\nn_pages_el = driver.find_element(\"css selector\", \"\"\"#root > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content \n> div > main > div > div > section.search-base-screen__search-panel\n> footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3\"\"\")\nprint(n_pages_el.text)\n\n# importing time to wait until the page loads\nimport time \n\nfor i in range(10):\n    \n    # saving the path to the first date on the page\n    first_date = driver.find_element(\"xpath\", \"\"\"//*[@id=\"root\"]/div/div[2]/div/div/div/div[1]/div/main/div/div/section[1]/\n    div[1]/div/ul/li[1]/div/div/div[1]/div/div/div/article/div[2]/div/div/div[1]/div\"\"\")\n\n    print(first_date.text)\n    \n    # saving the path to the next page button\n    next_page = driver.find_element(\"css selector\", \"\"\"#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg\"\"\")\n    \n    # clicking for next page\n    next_page.click()\n    \n    # wait for 2 seconds\n    time.sleep(2)\n\n\n# clode the driver\ndriver.close()\n\n\n\n R users\n\nWe will present the whole sequence of steps here in one code.\n# import selenium\nlibrary(\"RSelenium\")\n\n# launching the browser \nrD<- rsDriver(browser=c(\"firefox\"))\ndriver <- rD$client\n\n# navigating to the page\nurl <- \"https://www.eventbrite.co.uk/d/united-kingdom--london/events/\"\ndriver$navigate(url)\n\n# navigating to the search box\nsearch <- driver$findElement(using = \"css selector\", value = '#global-header > div \n> div.consumer-header__content.consumer-header__desktop.eds-show-up-md \n> div.consumer-header__search > button > div > div > div > div')\n\n# clicking on the search box\nsearch$clickElement()\n\n# navigating to the search box\nsearch_field <- driver$findElement(using = \"css selector\", value = '#search-autocomplete-input')\n\n# inputting \"data\" into the search box\nsearch_field$sendKeysToElement(list(\"data\"))\n\n# asking Selenium to hit enter\npage_body <- driver$findElement(\"css\", \"body\")\npage_body$sendKeysToElement(list(key = \"enter\"))\n\n# extracting the number of pages\nn_pages <- driver$findElement(using = \"css selector\",\n                                       value = '#root > div > div.eds-structure__body > div > div > div >     \n                                       div.eds-fixed-bottom-bar-layout__content \n                                      > div > main > div > div > section.search-base-screen__search-panel\n                                      > footer > div > div > ul > li.eds-pagination__navigation-minimal.eds-l-mar-hor-3')\nn_pages <- n_pages$getElementText()[[1]]\nprint(n_pages)\n\n\nfor (i in 1:10) {\n    \n  # saving the path to the first date on the page\n  first_date <- driver$findElement(using = \"css selector\", value = \".search-main-content__events-list > li:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)\")\n\n  print(first_date$getElementText()[[1]])\n  \n  # saving the path to the next page button\n  next_page <- driver$findElement(using = \"css selector\", value = '#chevron-right-chunky_svg__eds-icon--chevron-right-chunky_svg')\n  \n  # clicking for next page\n  next_page$clickElement()\n  \n  # wait for 2 seconds\n  Sys.sleep(2)\n  \n}"
+  },
+  {
+    "objectID": "weeks/week04/lecture.html",
+    "href": "weeks/week04/lecture.html",
+    "title": "👨‍🏫 Week 04 - Slides",
+    "section": "",
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\nWould you rather save it as a PDF? Check Moodle shortly before the lecture to obtain a copy that looks exactly like the slides below."
+  },
+  {
+    "objectID": "weeks/week04/lecture.html#coffee-break-10-min",
+    "href": "weeks/week04/lecture.html#coffee-break-10-min",
+    "title": "👨‍🏫 Week 04 - Slides",
+    "section": "☕ Coffee Break (10 min)",
+    "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week04/lecture.html#part-ii---demo-web-scraping-apis-45-50-min",
+    "href": "weeks/week04/lecture.html#part-ii---demo-web-scraping-apis-45-50-min",
+    "title": "👨‍🏫 Week 04 - Slides",
+    "section": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)",
+    "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\nShortly before the lecture, check here or go to Moodle to download the Jupyter Notebook I will be using for this demo."
   },
   {
     "objectID": "weeks/week04/summative.html",
