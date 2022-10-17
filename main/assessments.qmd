@@ -12,8 +12,8 @@ This course is assessed by a mix of problem sets, group presentation and a final
 -   A mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs
 -   Students have until the day before the following class to submit their response to problem sets
 -   Summative problem sets will be released on: 
-    - **Week 03** - worth 10% of final mark
-    - **Week 04** - worth 15% of final mark
+    - **Week 04** - worth 10% of final mark
+    - **Week 05** - worth 15% of final mark
 
 ## 🗣️ Group Presentation (35%)
 

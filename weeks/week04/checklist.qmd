@@ -1,0 +1,34 @@
+---
+title: "✅ Week 04 - Checklist"
+date: 17 October 2022
+date-meta: 17 October 2022
+---
+
+::: {.callout-tip collapse="true"}
+## What happens in the lecture and the labs this week?
+This is the last week of the theme **Behind the scenes**, where we will explore the topic of **The Internet: protocols + scraping + APIs**. This is the week you learn how to download data; after this, we will focus on how to _transform_ data to obtain and communicate insights.
+
+I will show you how Web documents look like, the most common file formats and how to download data from websites and APIs. This is a very important week, as I will demonstrate how you will download data for your projects — try not to miss the lecture! And bring your laptops to follow along if you can. Later, on Friday, you will write your own scripts to perform web scraping and API queries. After this week, you will be ready to start thinking of which websites/APIs you will want to suggest to your other colleagues when forming groups. 
+:::
+
+Here is a suggestion of how to program your week in relation to this course:
+
+- 🥇 **Ready for a challenge?** Before the lecture, why not take your knowledge of the Linux shell to the next level? Create an account on [Hacker Rank](https://www.hackerrank.com) and try to solve the Difficulty:Medium [Linux shell challenges](https://www.hackerrank.com/domains/shell).
+
+- 🧑‍💻 **Keep on practicing Python/R:** If you are happy with your knowledge of the _terminal_, try completing the pre-sessional course or challenge yourself to [Python challenges on HackerRank](https://www.hackerrank.com/domains/python). 
+
+- 🧑‍🏫 **Attend the lecture:** This is an important week. It is when you will start putting your knowledge of programming to use. 
+
+    - Reserve some time before the labs on Friday to replicate the web scraping and API demos I showed in the lecture. Or even better, reuse it to gather and collect data from other websites of your interest. 
+
+    - I will focus the demo on Python but we will show you how to adapt the same things to R.
+
+- ✍️ **Solve:** The First Summative Problem Set will be released on 18 October 2022 on [Moodle](https://moodle.lse.ac.uk/course/view.php?id=7736). Reserve some time during the week to solve it before the lab on Friday.
+
+- 🧑‍💻 **Attend the labs:** If you have practiced with the code I introduced in the lecture, the labs will be much easier. Bring your technical questions with you!
+
+- 📝 **Topics of interest:** Do you already have an idea of which websites you want to scrape, or which public APIs you want to use? Use the '#dataset-ideas-and-team-formation' channel on Slack
+
+    - At the end of the week, I will add a page to our website that will include a 📜 list of suggested APIs and websites suitable for web scraping. This will only be suggestions; when you form your teams you can choose to use other websites/APIs, as long as it meets the required criteria of the final project.
+
+    - This page will also explain what will be expected of you in the final project: the minimum volume of data you will need to obtain, what will be required in terms of data pre-processing (W05 and beyond), visualisations, the code you will need to provide, etc.

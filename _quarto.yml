@@ -69,6 +69,8 @@ website:
                text: 👨‍🏫 Lecture Slides
              - href: weeks/week04/lab.qmd
                text: 💻 Lab roadmap
+             - href: weeks/week04/checklist.qmd
+               text: ✅ Checklist
   navbar:
     background: primary
   page-footer:
