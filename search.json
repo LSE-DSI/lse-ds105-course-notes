@@ -18,7 +18,7 @@
     "href": "main/assessments.html#problem-sets-25",
     "title": "Assessments",
     "section": "📝 Problem Sets (25%)",
-    "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 03 - worth 10% of final mark\nWeek 04 - worth 15% of final mark"
+    "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 04 - worth 10% of final mark\nWeek 05 - worth 15% of final mark"
   },
   {
     "objectID": "main/assessments.html#group-presentation-35",
@@ -397,6 +397,13 @@
     "title": "💻 Week 03 - Summative assessment",
     "section": "P4: Submit (no points)",
     "text": "P4: Submit (no points)\nUpload your screenshots to Moodle togther with the infromation required."
+  },
+  {
+    "objectID": "weeks/week04/checklist.html",
+    "href": "weeks/week04/checklist.html",
+    "title": "✅ Week 04 - Checklist",
+    "section": "",
+    "text": "Here is a suggestion of how to program your week in relation to this course:\n\n🥇 Ready for a challenge? Before the lecture, why not take your knowledge of the Linux shell to the next level? Create an account on Hacker Rank and try to solve the Difficulty:Medium Linux shell challenges.\n🧑‍💻 Keep on practicing Python/R: If you are happy with your knowledge of the terminal, try completing the pre-sessional course or challenge yourself to Python challenges on HackerRank.\n🧑‍🏫 Attend the lecture: This is an important week. It is when you will start putting your knowledge of programming to use.\n\nReserve some time before the labs on Friday to replicate the web scraping and API demos I showed in the lecture. Or even better, reuse it to gather and collect data from other websites of your interest.\nI will focus the demo on Python but we will show you how to adapt the same things to R.\n\n✍️ Solve: The First Summative Problem Set will be released on 18 October 2022 on Moodle. Reserve some time during the week to solve it before the lab on Friday.\n🧑‍💻 Attend the labs: If you have practiced with the code I introduced in the lecture, the labs will be much easier. Bring your technical questions with you!\n📝 Topics of interest: Do you already have an idea of which websites you want to scrape, or which public APIs you want to use? Use the ‘#dataset-ideas-and-team-formation’ channel on Slack\n\nAt the end of the week, I will add a page to our website that will include a 📜 list of suggested APIs and websites suitable for web scraping. This will only be suggestions; when you form your teams you can choose to use other websites/APIs, as long as it meets the required criteria of the final project.\nThis page will also explain what will be expected of you in the final project: the minimum volume of data you will need to obtain, what will be required in terms of data pre-processing (W05 and beyond), visualisations, the code you will need to provide, etc."
   },
   {
     "objectID": "weeks/week04/lab.html",
