@@ -5,6 +5,14 @@ date: 05 September 2022
 date-meta: 05 September 2022
 ---
 
+::: {.callout-important}
+## ⚠️ Important Update 17/10/2022
+
+We have updated the syllabus below to reflect the new deadlines of sumative assessments.
+
+:::
+
+
 # 📓 Syllabus
 
 A list of what will happen every week. 
@@ -66,8 +74,8 @@ These skills are **cumulative**, so practice what you learned each week and make
     <tbody>
         
         <tr class="even">
-            <td rowspan=3></td>
-            <td rowspan=3>🗓️ <a href="/weeks/week03.qmd">Week 03</a></td>
+            <td rowspan=4></td>
+            <td rowspan=4>🗓️ <a href="/weeks/week03.qmd">Week 03</a></td>
             <td style="font-weight:bold;">Lecture</td>
             <td>The Cloud: accessing and getting data in and out.</td>
         </tr>
@@ -76,12 +84,13 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td>Connecting to the cloud via the command line</td>
         </tr>
         <tr class="even">
-            <td style="font-weight:bold;">Summative</td>
+            <td style="font-weight:bold;">Formative</td>
             <td>
                 <ul>
-                    <li>Worth: 10% of final marks</li>
-                    <li>Problem set involving the upload of data to the cloud.</li>
-                    <li>Deadline: day before next week's lab</li>
+                    <li>Worth: knowledge!</li>
+                    <li>Problem set involving the terminal.</li>
+                    <li>**Release date:** 7 October 2022</li>
+                    <li>**Deadline:** 13 October 2022</li>
                 </ul>
             </td>
         </tr>
@@ -103,9 +112,10 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td style="font-weight:bold;">Summative</td>
             <td>
                 <ul>
-                    <li>Worth: 15% of final marks</li>
-                    <li>Problem set involving web scraping.</li>
-                    <li>Deadline: day before next week's lab</li>
+                    <li>Worth: 10% of final marks</li>
+                    <li>Problem set involving the upload of data to the cloud.</li>
+                    <li>**Release date:** 18 October 2022</li>
+                    <li>**Deadline:** 24 October 2022</li>
                 </ul>
             </td>
         </tr>
@@ -128,8 +138,8 @@ These skills are **cumulative**, so practice what you learned each week and make
     <tbody>
         
          <tr class="even">
-            <td rowspan=3></td>
-            <td rowspan=3>🗓️ <a href="">Week 05</a></td>
+            <td rowspan=4></td>
+            <td rowspan=4>🗓️ <a href="">Week 05</a></td>
             <td style="font-weight:bold;">Lecture</td>
             <td>(Re)shaping data.</td>
         </tr>
@@ -138,11 +148,24 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td>Github & Markdown</td>
         </tr>
         <tr class="even">
+            <td style="font-weight:bold;">Summative</td>
+            <td>
+                <ul>
+                    <li>Worth: 15% of final marks</li>
+                    <li>Problem set involving web scraping.</li>
+                    <li>**Release date**: 25 October 2022</li>
+                    <li>**Deadline:** 7 November 2022</li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="even">
             <td style="font-weight:bold;">Group project</td>
             <td>
                 <ul>
                     <li>students form groups of 3</li>
                     <li>students must submit a team contract to Moodle (not graded)</li>
+                    <li>**Release date**: 25 October 2022</li>
+                    <li>**Deadline:** 7 November 2022</li>
                 </ul>
             </td>
         </tr>
