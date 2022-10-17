@@ -1,7 +1,26 @@
 ---
 title: "👨‍🏫 Week 04 - Slides"
-date: 23 September 2022
-date-meta: 23 September 2022
+date: 17 October 2022
+date-meta: 17 October 2022
 ---
 
-<mark class="todo"></mark>
+## 🖥️ Part I - The Internet: protocols + scraping + API (45-50 min)
+
+
+Either click on the slide area below or click [here](/slides/week04_slides_part1.qmd) to view it in fullscreen.
+Use your keypad to navigate the slides.
+
+Would you rather save it as a PDF? Check Moodle shortly before the lecture to obtain a copy that looks exactly like the slides below. 
+
+
+<div class="container" style="position: relative;overflow: hidden;width: 100%;min-height:600px;">
+<iframe src="/slides/week04_slides_part1.html" style="position=absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;min-height:600px;"></iframe>
+</div>
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Demo: Web scraping + APIs (45-50 min)
+
+Shortly before the lecture, check here or go to Moodle to download the Jupyter Notebook I will be using for this demo.

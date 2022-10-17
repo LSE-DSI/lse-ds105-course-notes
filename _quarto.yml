@@ -63,7 +63,7 @@ website:
              - href: weeks/week03/lab.qmd
                text: 💻 Lab roadmap
          - href: weeks/week04.qmd
-           text: Week 04
+           text: "Week 04 (🆕)"
            contents:
              - href: weeks/week04/lecture.qmd
                text: 👨‍🏫 Lecture Slides

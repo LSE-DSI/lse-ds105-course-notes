@@ -1,7 +1,19 @@
 ---
 title: "🗓️ Week 04 - The Internet: protocols + scraping + APIs."
-date: 23 September 2022
-date-meta: 23 September 2022
+date: 17 October 2022
+date-meta: 17 October 2022
 ---
 
-<mark class="todo"></mark>
+This is the last week of the theme **Behind the scenes**, where we will explore the topic of **The Internet: protocols + scraping + APIs**. This is the week you learn how to download data; after this, we will focus on how to transform data to obtain and communicate insights.
+
+I will show you how Web documents look like, the most common file formats and how to download data from websites and APIs. This is a very important week, as I will demonstrate how you will download data for your projects — try not to miss the lecture! 
+
+And bring your laptops to follow along if you can. Later, on Friday, you will write your own scripts to perform web scraping and API queries. After this week, you will be ready to start thinking of which websites/APIs you will want to suggest to your other colleagues when forming groups.
+
+## Links
+
+- ✅ [Week 04 Checklist](/weeks/week04/checklist.qmd)
+
+- 👨‍🏫 [Lecture slides](/weeks/week04/lecture.qmd)
+
+- 💻 [Lab roadmap](/weeks/week04/lab.qmd)
