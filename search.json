@@ -487,7 +487,7 @@
     "href": "weeks/week04/lecture.html",
     "title": "👨‍🏫 Week 04 - Slides",
     "section": "",
-    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\nWould you rather save it as a PDF? Check Moodle shortly before the lecture to obtain a copy that looks exactly like the slides below."
+    "text": "Either click on the slide area below or click here to view it in fullscreen. Use your keypad to navigate the slides.\nWould you rather save it as a PDF? Click here to download a copy (requires Moodle authentication)."
   },
   {
     "objectID": "weeks/week04/lecture.html#coffee-break-10-min",
@@ -501,7 +501,7 @@
     "href": "weeks/week04/lecture.html#part-ii---demo-web-scraping-apis-45-50-min",
     "title": "👨‍🏫 Week 04 - Slides",
     "section": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)",
-    "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\nShortly before the lecture, check here or go to Moodle to download the Jupyter Notebook I will be using for this demo."
+    "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\n\nClick here to download the Jupyter Notebook I will be using during the lecture to run the code demonstrations.\nOpen Google Colab and sign in with your Google account\nClick on File then Upload notebook to upload the notebook you download\nFollow the tutorial"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
