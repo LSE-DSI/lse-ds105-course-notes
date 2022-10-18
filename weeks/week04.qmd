@@ -14,6 +14,8 @@ And bring your laptops to follow along if you can. Later, on Friday, you will wr
 
 - ✅ [Week 04 Checklist](/weeks/week04/checklist.qmd)
 
+- ✍️ [First Summative W04-W05](/assessments/summative1.qmd) 🆕 
+
 - 👨‍🏫 [Lecture slides](/weeks/week04/lecture.qmd)
 
 - 💻 [Lab roadmap](/weeks/week04/lab.qmd)

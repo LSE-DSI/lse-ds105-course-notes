@@ -1,8 +1,8 @@
 ---
-title: "💻 Week 04 - Summative assessment"
-date: 16 September 2022
-date-meta: 16 September 2022
-author: Anton Boichenko
+title: "✍️ Summative W05-W07"
+date: 18 October 2022
+date-meta: 18 October 2022
+author: Anton Boichenko & Dr. Jon Cardoso-Silva
 ---
 
 Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 

@@ -5,6 +5,7 @@ project:
   render:
     - "index.qmd"
     - "main/*.qmd"
+    - "assessments/*.qmd"
     - "weeks/*.qmd"
     - "weeks/week01/*.qmd"
     - "weeks/week02/*.qmd"
@@ -28,11 +29,16 @@ website:
       - href: index.qmd
         text: "🏠 Home"
       - href:  main/syllabus.qmd
-        text: "📓 Syllabus (🆕)"
+        text: "📓 Syllabus"
       - href: main/communication.qmd
         text: "📟 Communication"
       - href: main/assessments.qmd
-        text: "✍️ Assessments"
+        text: "✍️ Assessments (🆕)"
+        contents:
+          - href: assessments/formative1.qmd
+            text: "✍️ Formative W02/W03"
+          - href: assessments/summative1.qmd
+            text: "✍️ Summative W04/W05"
       - href: main/courserep.qmd
         text: "🗳️ Course Rep"
       - section: "🗓️ Weeks"
@@ -63,7 +69,7 @@ website:
              - href: weeks/week03/lab.qmd
                text: 💻 Lab roadmap
          - href: weeks/week04.qmd
-           text: "Week 04 (🆕)"
+           text: "Week 04"
            contents:
              - href: weeks/week04/lecture.qmd
                text: 👨‍🏫 Lecture Slides

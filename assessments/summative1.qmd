@@ -1,0 +1,115 @@
+---
+title: "✍️ Summative W04-W05"
+date: 18 October 2022
+date-meta: 18 October 2022
+author: Anton Boichenko & Dr. Jon Cardoso-Silva
+---
+
+Welcome to your first summative assessment for this course! 
+
+We hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills. 
+
+### Things to know before you start:  
+1. You will need to upload some parts of this assignment on Moodle ([link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1127337)).
+2. The **deadline** for this assignment is set to 24 October 2022
+3. You will be granted a maximum of 100 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
+4. This assessment is worth 10% of your final grade.
+5. You will need to take screenshots, [here is how you can do that](https://www.take-a-screenshot.org/). 
+6. Read the instructions carefully and make sure you follow them.
+
+
+
+## P1: Book worms (20 points)
+
+🎯 **ACTION POINTS**
+
+1. Open the bash shell on your local machine.
+2. Create a .txt file called `my_fav_book.txt`.
+3. Add the title and the author of your favourite book to the file in the following way:
+
+    ```
+    Title: Aristotle
+
+    Author: Politics
+    ```
+
+3. Create a folder on your cloud machine called `summative_03` and copy that .txt file to that folder. The folder should be located in your home folder, that is: `/home/<username>/summative_03`.  
+
+::: {.callout-important}
+## ⚠️ Important
+
+**Make sure you copy the file** from your local machine to the cloud and not create an identical one straight on the cloud machine.  
+:::
+
+4. Using the cloud bash shell, print the content and the metadata of this file (refer to [W02 lab](/weeks/week02/lab.qmd) and [W03 lab](/weeks/week03/lab.qmd) for help). 
+
+5. Finally, take a screenshot of the result of those commands running.
+
+6. Save it as `DS105M_2022_<replace_by_your_candidate_number>_S1_P1.png`
+
+Please, make sure that your username is visible in the screenshot. 
+
+
+## P2: Run the code in the cloud (30 points)
+
+🎯 **ACTION POINTS**
+
+1. Go to your cloud machine.
+
+2. Create a Python or an R script called `script.py` or `script.R`, respectively, **in the folder** you created earlier, called `summative_03`. 
+
+3. The script must do the following:
+    a. Print your AWS username (the one you were provided at the beginning of the course)
+    b. Print the current time (it is easy to search the web for ways to do that using R or Python)
+    c. Wait for 10 seconds (it is easy to search the web for ways to do that using R or Python)
+    d. Print the current time again
+
+4. Run the script and take a screenshot of the results of running it. 
+
+5. Run the script again **but this time** make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an `ls` command while Python is waiting for 10 seconds in-between printing commands. 
+    Take a screenshot of the result of this code running. 
+
+6. Print the metadata of your file and take a screenshot of it. 
+
+7. Save it as `DS105M_2022_<replace_by_your_candidate_number>_S1_P2.png`
+
+
+## P3: It's time to search (50 points)
+
+🎯 **ACTION POINTS**
+
+1. Go to your cloud machine.
+
+2. Navigate to the `/home/admin/week_03` directory. You will see a lot of `.md` files there. One of them is yours.
+
+3. Find the file that was created for you.  
+
+::: {.callout-tip}
+## 💡 Tip
+
+This part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your `LSE ID` in it.
+
+If you have checked ALL files and still can't find your LSE ID in any of them, let us know. Post a message to the `#week04` channel (don't post your LSE ID there) to inform us and we will confirm whether your LSE ID is there.
+:::
+
+4. Copy this file to the `summative_03` folder on **your** user within the cloud machine. 
+
+5. Change the permissions on this file for you to be able to edit it.
+
+6. Edit the file and answer the questions in it.
+
+7. Print the content of the file and the file's metadata. Take a screenshot of both. 
+
+8. Save it as `DS105M_2022_<replace_by_your_candidate_number>_S1_P3.png`
+
+_We will also inspect the files in the cloud to ensure you actually saved the files and if it was done by yourself._
+
+## P4: Submit (no points)
+
+Upload your screenshots to Moodle togther with the infromation required. 
+
+::: {.callout-tip}
+## 💡 Tip
+
+If any of these instructions are unclear, let us know by posting a message on `#week04`.
+:::

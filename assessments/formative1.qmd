@@ -1,0 +1,74 @@
+---
+title: "✍️ Formative W02-W03"
+date: 16 September 2022
+date-meta: 16 September 2022
+author: Anton Boichenko
+---
+
+## Formative assignment
+
+This problem set is not graded but you will get written feedback if you submit. 
+
+Check out the [🔖 Week 02 Appendix - 📃 Text editors](/weeks/week02/appendix.qmd#text-editors) section for more info on `vim`.
+
+Follow the steps below and, when asked, copy your responses to the [Moodle page of this assignment](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1123148&forceview=1). 
+
+### P1: Identify yourself
+
+1. On the terminal, type the two commands below:
+
+    ```bash
+     whoami
+    ```
+
+    ```bash
+     uname -a
+    ```
+
+2. Take a screenshot ([how?](https://www.take-a-screenshot.org/)) of your terminal and submit to Moodle, under the field identified as P1.
+
+### P2: Edit a file
+
+1. Go to the DS105 folder you created earlier during [W02 lab](/weeks/week02/lab.qmd):
+
+    ```bash
+     cd ~/DS105
+    ```
+
+2. Rename the `README.txt` to `README.md` (a markdown file):
+
+    ```bash
+     mv README.txt README.md
+    ```
+
+3. Edit the README.md file following the template below, replacing all occurrences of `<>` with your responses:
+
+    ```markdown
+    # DS105
+
+    Name: <>
+    Date: <>
+    Candidate Number: <>
+    Degree Program: <>
+
+    ## Notes
+
+    - I want to learn data science because <>
+    ```
+
+4. Save and quit vim.
+
+5. Print some metadata about your file to prove you were the one editing it:
+
+    ```bash
+     stat README.md
+    ```
+
+6. Print the contents of your file to the terminal:
+
+    ```bash
+     cat README.md
+    ```
+
+7. Take a screenshot ([how?](https://www.take-a-screenshot.org/)) of your terminal and submit to Moodle, under the field identified as P2. Make sure that both the output of `stat` and `cat` commands are visible.
+
