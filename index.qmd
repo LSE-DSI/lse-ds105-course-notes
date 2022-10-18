@@ -76,6 +76,13 @@ Guest Teacher at the [LSE Data Science Institute](https://lse.ac.uk/dsi)<br/>
 PhD candidate in Health Informatics (KCL) <br/>
 MSc in Data Science (KCL)
 
+## Students
+
+![](/figures/people/Amara.png){fig-align="left" fig-alt="Photo of Amara Otero Salgado" width="5em"}  
+**Amara Otero Salgado** <br/>
+BSc in Politics Data Science <br/>
+Course Representative for DS105M
+
 ## Administrative Support
 
 
@@ -93,6 +100,10 @@ Tel: +44 (0) 20 7955 7759<br/>
 Email: [DSI.Admin@lse.ac.uk](mailto:DSI.Admin@lse.ac.uk)
 
 :::
+
+# 📍 Lecture
+
+Tuesdays 4pm-6pm at PAR.LG.03 ([🗺️ campus map](https://www.lse.ac.uk/lse-information/assets/documents/21-0099-Campus-Map-update-241121-V6.pdf)), except Week 06 (Reading Week)
 
 # Class Groups
 
