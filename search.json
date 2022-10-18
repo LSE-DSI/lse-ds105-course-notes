@@ -1047,7 +1047,7 @@
     "href": "slides/week04_slides_part1.html#tcpip",
     "title": "🗓️ Week 04 The Internet: protocols + scraping + APIs",
     "section": "TCP/IP",
-    "text": "TCP/IP\n\n\nTCP/IP implies a family of different protocols\nEach of these protocls serve a cerain purpose\n\n\nThe mostly widely used protocols include:\n\n\nAddress Resolution Protocol (ARP)\nDomain Name System (DNS)\nFile Transfer Protocol (FTP)\nInternet Message Access Protocol (IMAP)\nHyperText Transfer Protocol (HTTP)"
+    "text": "TCP/IP\n\n\nTCP/IP implies a family of different protocols\nEach of these protocols serve a certain purpose\n\n\nThe mostly widely used protocols include:\n\n\nAddress Resolution Protocol (ARP)\nDomain Name System (DNS)\nFile Transfer Protocol (FTP)\nInternet Message Access Protocol (IMAP)\nHyperText Transfer Protocol (HTTP)"
   },
   {
     "objectID": "slides/week04_slides_part1.html#http-example",
