@@ -169,7 +169,7 @@ digraph {
 
 ::: {.incremental}
 - TCP/IP implies a family of different protocols
-- Each of these protocls serve a cerain purpose
+- Each of these protocols serve a certain purpose
 
 ::: {.fragment}
 The mostly widely used protocols include:
