@@ -11,28 +11,7 @@
     "href": "main/assessments.html",
     "title": "Assessments",
     "section": "",
-    "text": "This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:"
-  },
-  {
-    "objectID": "main/assessments.html#problem-sets-25",
-    "href": "main/assessments.html#problem-sets-25",
-    "title": "Assessments",
-    "section": "📝 Problem Sets (25%)",
-    "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 04 - worth 10% of final mark\nWeek 05 - worth 15% of final mark"
-  },
-  {
-    "objectID": "main/assessments.html#group-presentation-35",
-    "href": "main/assessments.html#group-presentation-35",
-    "title": "Assessments",
-    "section": "🗣️ Group Presentation (35%)",
-    "text": "🗣️ Group Presentation (35%)\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark"
-  },
-  {
-    "objectID": "main/assessments.html#final-project-40",
-    "href": "main/assessments.html#final-project-40",
-    "title": "Assessments",
-    "section": "🎇 Final Project (40%)",
-    "text": "🎇 Final Project (40%)\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
+    "text": "Click on the assignments below to go to the Moodle page and submit your responses:\n\n✍️ Formative   Problem Set (01) | W02-W03: Moodle link & associated webpage with instructions.\n✍️ Summative Problem Set (01) | W04-W05: Moodle link & associated webpage with instructions.\n\nThis course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:\n\n\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 04 - worth 10% of final mark\nWeek 05 - worth 15% of final mark\n\n\n\n\n\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark\n\n\n\n\n\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
   },
   {
     "objectID": "main/communication.html",
@@ -91,6 +70,97 @@
     "text": "📓 Syllabus\nA list of what will happen every week.\nClick on each Week’s link for more information (slides, lab instructions, recommended resources, etc.).\nNote about formative assessment: besides the in-person lab exercises, we might give take-home assignments on certain weeks. Even though we do not grade these problem sets, you will get written feedback on these formative assignments.\nThis course will help you become familiarised with the most fundamental practical tools needed to gather (Weeks 02-04) and pre-process data (Weeks 05-09) and will give you some inspiration for some fundamental analysis (Weeks 10-11) to perform in your selected datasets.\nThese skills are cumulative, so practice what you learned each week and make the most of lectures, labs and our Slack group. We believe these points of contact and integration will create a fertile environment of ideas for your project.\n💡 Remember: collaboration is key to the success of a data science project!\n\n\n\n\n\n\nIntro\n\n\n\n\n\n\n\n\n🗓️ Week 01\n\n\nLecture\n\n\nIntroduction and the Data Science Toolbox 🧰\n\n\n\n\nLab\n\n\nNo class this week. (Use this time to revisit basic R or python programming)\n\n\n\n\n\nTheme: Behind the scenes\n\n\n\n\n\n\n\n\n🗓️ Week 02\n\n\nLecture\n\n\nOperating Systems, Files & The Terminal\n\n\n\n\nLab\n\n\nNavigating the command line in your own computer\n\n\n\n\n\n\n\n\n\n🗓️ Week 03\n\n\nLecture\n\n\nThe Cloud: accessing and getting data in and out.\n\n\n\n\nLab\n\n\nConnecting to the cloud via the command line\n\n\n\n\nFormative\n\n\n\n\nWorth: knowledge!\n\n\nProblem set involving the terminal.\n\n\nRelease date: 7 October 2022\n\n\nDeadline: 13 October 2022\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 04\n\n\nLecture\n\n\nThe Internet: protocols + scraping + APIs.\n\n\n\n\nLab\n\n\nWeb scraping exercise\n\n\n\n\nSummative\n\n\n\n\nWorth: 10% of final marks\n\n\nProblem set involving the upload of data to the cloud.\n\n\nRelease date: 18 October 2022\n\n\nDeadline: 24 October 2022\n\n\n\n\n\n\nGroup project\n\n\n\n\nafter class, students pitch their ideas of preferred APIs/datasets\n\n\nthere will be a designated channel on our Slack for this\n\n\n\n\n\n\n\nTheme: Working with data\n\n\n\n\n\n\n\n\n🗓️ Week 05\n\n\nLecture\n\n\n(Re)shaping data.\n\n\n\n\nLab\n\n\nGithub & Markdown\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\nProblem set involving web scraping.\n\n\nRelease date: 25 October 2022\n\n\nDeadline: 7 November 2022\n\n\n\n\n\n\nGroup project\n\n\n\n\nstudents form groups of 3\n\n\nstudents must submit a team contract to Moodle (not graded)\n\n\nRelease date: 25 October 2022\n\n\nDeadline: 7 November 2022\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 06\n\n\nReading Week\n\n\n\n\n\n\n\n\n\n🗓️ Week 07\n\n\nLecture\n\n\nDataframes, databases & data normalisation.\n\n\n\n\nLab\n\n\nComputational Notebooks and DataFrames\n\n\n\n\n\n\n\n\n\n🗓️ Week 08\n\n\nLecture\n\n\nUnstructured data (text, audio & image).\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week.\n\n\n\n\nSummative\n\n\n\n\nWorth: 15% of final marks\n\n\neach group will present about their selected data.\n\n\nsee instructions for marking criteria\n\n\n\n\n\n\n\n\n\n\n\n🗓️ Week 09\n\n\nLecture\n\n\nManaging your data science workflow.\n\n\n\n\nLab\n\n\nSetting up Github for your group project & GitFlow\n\n\n\n\n\nTheme: Applications\n\n\n\n\n\n\n\n\n🗓️ Week 10\n\n\nLecture\n\n\nData viz with the grammar of graphics\n\n\n\n\nLab\n\n\n🦸 Super tech-support (get help with your project)\n\n\n\n\n\n\n\n\n\n🗓️ Week 11\n\n\nLecture\n\n\nSentiment analysis, topic modelling and social networks\n\n\n\n\nLab\n\n\nWe will have group presentations instead of a structured class this week\n\n\n\n\nSummative\n\n\n\n\nWorth: 20% of final marks\n\n\neach group will present about their selected data\n\n\nsee instructions for marking criteria"
   },
   {
+    "objectID": "assessments/formative1.html",
+    "href": "assessments/formative1.html",
+    "title": "✍️ Formative W02-W03",
+    "section": "",
+    "text": "This problem set is not graded but you will get written feedback if you submit.\nCheck out the 🔖 Week 02 Appendix - 📃 Text editors section for more info on vim.\nFollow the steps below and, when asked, copy your responses to the Moodle page of this assignment.\n\n\n\nOn the terminal, type the two commands below:\n whoami\n uname -a\nTake a screenshot (how?) of your terminal and submit to Moodle, under the field identified as P1.\n\n\n\n\n\nGo to the DS105 folder you created earlier during W02 lab:\n cd ~/DS105\nRename the README.txt to README.md (a markdown file):\n mv README.txt README.md\nEdit the README.md file following the template below, replacing all occurrences of <> with your responses:\n# DS105\n\nName: <>\nDate: <>\nCandidate Number: <>\nDegree Program: <>\n\n## Notes\n\n- I want to learn data science because <>\nSave and quit vim.\nPrint some metadata about your file to prove you were the one editing it:\n stat README.md\nPrint the contents of your file to the terminal:\n cat README.md\nTake a screenshot (how?) of your terminal and submit to Moodle, under the field identified as P2. Make sure that both the output of stat and cat commands are visible."
+  },
+  {
+    "objectID": "assessments/summative1.html",
+    "href": "assessments/summative1.html",
+    "title": "✍️ Summative W04-W05",
+    "section": "",
+    "text": "Welcome to your first summative assessment for this course!\nWe hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills."
+  },
+  {
+    "objectID": "assessments/summative1.html#p1-book-worms-20-points",
+    "href": "assessments/summative1.html#p1-book-worms-20-points",
+    "title": "✍️ Summative W04-W05",
+    "section": "P1: Book worms (20 points)",
+    "text": "P1: Book worms (20 points)\n🎯 ACTION POINTS\n\nOpen the bash shell on your local machine.\nCreate a .txt file called my_fav_book.txt.\nAdd the title and the author of your favourite book to the file in the following way:\nTitle: Aristotle\n\nAuthor: Politics\nCreate a folder on your cloud machine called summative_03 and copy that .txt file to that folder. The folder should be located in your home folder, that is: /home/<username>/summative_03.\n\n\n\n\n\n\n\n⚠️ Important\n\n\n\nMake sure you copy the file from your local machine to the cloud and not create an identical one straight on the cloud machine.\n\n\n\nUsing the cloud bash shell, print the content and the metadata of this file (refer to W02 lab and W03 lab for help).\nFinally, take a screenshot of the result of those commands running.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P1.png\n\nPlease, make sure that your username is visible in the screenshot."
+  },
+  {
+    "objectID": "assessments/summative1.html#p2-run-the-code-in-the-cloud-30-points",
+    "href": "assessments/summative1.html#p2-run-the-code-in-the-cloud-30-points",
+    "title": "✍️ Summative W04-W05",
+    "section": "P2: Run the code in the cloud (30 points)",
+    "text": "P2: Run the code in the cloud (30 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nCreate a Python or an R script called script.py or script.R, respectively, in the folder you created earlier, called summative_03.\nThe script must do the following:\n\nPrint your AWS username (the one you were provided at the beginning of the course)\nPrint the current time (it is easy to search the web for ways to do that using R or Python)\nWait for 10 seconds (it is easy to search the web for ways to do that using R or Python)\nPrint the current time again\n\nRun the script and take a screenshot of the results of running it.\nRun the script again but this time make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an ls command while Python is waiting for 10 seconds in-between printing commands. Take a screenshot of the result of this code running.\nPrint the metadata of your file and take a screenshot of it.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P2.png"
+  },
+  {
+    "objectID": "assessments/summative1.html#p3-its-time-to-search-50-points",
+    "href": "assessments/summative1.html#p3-its-time-to-search-50-points",
+    "title": "✍️ Summative W04-W05",
+    "section": "P3: It’s time to search (50 points)",
+    "text": "P3: It’s time to search (50 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nNavigate to the /home/admin/week_03 directory. You will see a lot of .md files there. One of them is yours.\nFind the file that was created for you.\n\n\n\n\n\n\n\n💡 Tip\n\n\n\nThis part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your LSE ID in it.\nIf you have checked ALL files and still can’t find your LSE ID in any of them, let us know. Post a message to the #week04 channel (don’t post your LSE ID there) to inform us and we will confirm whether your LSE ID is there.\n\n\n\nCopy this file to the summative_03 folder on your user within the cloud machine.\nChange the permissions on this file for you to be able to edit it.\nEdit the file and answer the questions in it.\nPrint the content of the file and the file’s metadata. Take a screenshot of both.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P3.png\n\nWe will also inspect the files in the cloud to ensure you actually saved the files and if it was done by yourself."
+  },
+  {
+    "objectID": "assessments/summative1.html#p4-submit-no-points",
+    "href": "assessments/summative1.html#p4-submit-no-points",
+    "title": "✍️ Summative W04-W05",
+    "section": "P4: Submit (no points)",
+    "text": "P4: Submit (no points)\nUpload your screenshots to Moodle togther with the infromation required.\n\n\n\n\n\n\n💡 Tip\n\n\n\nIf any of these instructions are unclear, let us know by posting a message on #week04."
+  },
+  {
+    "objectID": "assessments/summative2.html",
+    "href": "assessments/summative2.html",
+    "title": "✍️ Summative W05-W07",
+    "section": "",
+    "text": "Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible."
+  },
+  {
+    "objectID": "assessments/summative2.html#p0-only-for-you",
+    "href": "assessments/summative2.html#p0-only-for-you",
+    "title": "✍️ Summative W05-W07",
+    "section": "P0: Only for you",
+    "text": "P0: Only for you\nThis assignment has individual tasks for each student. You will find them on your cloud machine profile.\n🎯 ACTION POINTS\n\nGo to your cloud machine user.\nLocate the file called summative_04.txt and download it.\n\nThis file contains your unique assignment."
+  },
+  {
+    "objectID": "assessments/summative2.html#p1-loving-food-3-points",
+    "href": "assessments/summative2.html#p1-loving-food-3-points",
+    "title": "✍️ Summative W05-W07",
+    "section": "P1: Loving food (3 points)",
+    "text": "P1: Loving food (3 points)\n🎯 ACTION POINTS\nThe unique instructions for this task are provided in summative_04.txt. Go to the file and follow the instructions for the first task."
+  },
+  {
+    "objectID": "assessments/summative2.html#p2-keep-loving-food-5-points",
+    "href": "assessments/summative2.html#p2-keep-loving-food-5-points",
+    "title": "✍️ Summative W05-W07",
+    "section": "P2: Keep loving food (5 points)",
+    "text": "P2: Keep loving food (5 points)\n🎯 ACTION POINTS\n\nReplicate your previous task using Selenium.\nAdditionally, take the following steps using Selenium:\n\nGo to Recipe collections for whatever dish you were asked to search for in the previous task.\nChoose the first recipe collection, and scroll down to the button that says Load more.\nClick this button.\nGet to the last recipe that appeared after clicking this button.\nScrape all the information about this recipe. Structure and save it in a JSON format in the file called Selenium_collections.json.\n\nMake sure all the steps are shown in your code.\nSave the code in the file called food_Selenium (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
+  },
+  {
+    "objectID": "assessments/summative2.html#p3-getting-the-news-5-points",
+    "href": "assessments/summative2.html#p3-getting-the-news-5-points",
+    "title": "✍️ Summative W05-W07",
+    "section": "P3: Getting the news (5 points)",
+    "text": "P3: Getting the news (5 points)\n🎯 ACTION POINTS\n\nRegister for the NYT Article Search API and acquire an API key.\nExplore the documentation of the API to complete further steps.\nExtract the titles of articles, their publishing dates and links to them following the instructions in summative_04.txt. Save everything in a JSON format in the file called NYT_articles.json.\n\nPlot the average size of the articles (measured in the number of words) for each month in your period.\nSave the code in the file called NYT_API_code (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
+  },
+  {
+    "objectID": "assessments/summative2.html#p4-simple-english-2-points",
+    "href": "assessments/summative2.html#p4-simple-english-2-points",
+    "title": "✍️ Summative W05-W07",
+    "section": "P4: Simple English (2 points)",
+    "text": "P4: Simple English (2 points)\n🎯 ACTION POINTS\n\nTake the first 20 articles that you have scrapped in the previous exercise.\nGo to this dictionary API and explore how to use it for the next tasks.\nUsing this API, create a JSON file containing the original 20 article titles and their phonetic representations. For instance, if the title is “Data Science” your JSON record should look like this:\n{\"Data Science\": \"ˈdaetə ˈsaɪəns\"}\nSave all the phonetic representations and the original titles in the file called NYT_phonetic.json."
+  },
+  {
+    "objectID": "assessments/summative2.html#p5-upload-your-solutions",
+    "href": "assessments/summative2.html#p5-upload-your-solutions",
+    "title": "✍️ Summative W05-W07",
+    "section": "P5: Upload your solutions",
+    "text": "P5: Upload your solutions\n🎯 ACTION POINTS\n\nConnect to your user on the cloud machine.\nCreate a folder called summative04.\nUpload all the created files (your code and the scrapped data) to the folder."
+  },
+  {
     "objectID": "weeks/week01.html",
     "href": "weeks/week01.html",
     "title": "🗓️ Week 01 - Introduction and the Data Science Toolbox",
@@ -144,7 +214,7 @@
     "href": "weeks/week04.html#links",
     "title": "🗓️ Week 04 - The Internet: protocols + scraping + APIs.",
     "section": "Links",
-    "text": "Links\n\n✅ Week 04 Checklist\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
+    "text": "Links\n\n✅ Week 04 Checklist\n✍️ First Summative W04-W05 🆕\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
   },
   {
     "objectID": "weeks/week01/appendix.html",
@@ -378,41 +448,6 @@
     "text": "🖥️ Part II - Demo: Amazon and Google clouds (45-50 min)\nMost cloud computing providers allow you to use their services for free, as long as you don’t exceed certain pre-established limits on time and amount of CPU, RAM, and other queries per month.\nIn this demo, I will show you around the Amazon Web Service (AWS) Console and the Google Cloud dashboard, as we compare their (un-)intuitive user interfaces and how to run an app in the cloud.\n💡 If you want to replicate the live demo,you will need to open an account in both cloud providers!\nThings we will explore:\n\nAccessing the dashboards\nBrowsing the catalog of services and documentation available\nFinding the cloud service we want to use\nCreating a virtual machine and accesing it using the command line\nCreating a data storage repository\nSending data to/from the data storage repository"
   },
   {
-    "objectID": "weeks/week03/summative.html",
-    "href": "weeks/week03/summative.html",
-    "title": "💻 Week 03 - Summative assessment",
-    "section": "",
-    "text": "Welcome to your first summative assessment for this course! We hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills."
-  },
-  {
-    "objectID": "weeks/week03/summative.html#p1-book-worms-2-points",
-    "href": "weeks/week03/summative.html#p1-book-worms-2-points",
-    "title": "💻 Week 03 - Summative assessment",
-    "section": "P1: Book worms (2 points)",
-    "text": "P1: Book worms (2 points)\n🎯 ACTION POINTS\n\nOpen the bash shell on your local machine.\nCreate a .txt file called my_fav_book.txt.\nAdd the title and the author of your favourite book to the file in the following way:\nTitle: Aristotle\n\nAuthor: Politics\nCreate a folder on your cloud machine called summative_03 and copy that .txt file to that folder. The folder should be located in the following way: /home/<username>/summative_03.\nMake sure you copy the file from your local machine to the cloud and not create an identical one straight on the cloud machine.\n\nConnect to the cloud machine.\nUsing the cloud bash shell, print the content and the metadata (feel free to look at our last week’s materials) of this file. Then, take a screenshot of the result of those commands running. Please, make sure that your username is visible in the screenshot."
-  },
-  {
-    "objectID": "weeks/week03/summative.html#p2-run-the-code-in-the-cloud-3-points",
-    "href": "weeks/week03/summative.html#p2-run-the-code-in-the-cloud-3-points",
-    "title": "💻 Week 03 - Summative assessment",
-    "section": "P2: Run the code in the cloud (3 points)",
-    "text": "P2: Run the code in the cloud (3 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nCreate a Python or an R script called script.py or script.R, respectively, in the folder called summative_03.\nThe script must do the following:\n\nPrint your AWS username (the one you were provided at the beginning of the course)\nPrint the current time (you can search for ways to do that)\nWait for 10 seconds\nPrint the current time again\n\nRun the script and take a screenshot of the results of running it.\nRun the script again but this time make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an ls command while Python is waiting for 10 seconds in-between printing commands. Take a screenshot of the result of this code running.\nPrint the metadata of your file and take a screenshot of it."
-  },
-  {
-    "objectID": "weeks/week03/summative.html#p3-its-time-to-search-5-points",
-    "href": "weeks/week03/summative.html#p3-its-time-to-search-5-points",
-    "title": "💻 Week 03 - Summative assessment",
-    "section": "P3: It’s time to search (5 points)",
-    "text": "P3: It’s time to search (5 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nNavigate to the /home/admin/week_03 directory. You will see a lot of .md files there. One of them is yours.\nFind the file that was created for you.\nThis part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your LSE ID in it.\nCopy this file to the summative_03 folder on your user within the cloud machine.\nChange the permissions on this file for you to be able to edit it.\nEdit the file and answer the questions in it.\nPrint the content of the file and the file’s metadata. Take a screenshot of both."
-  },
-  {
-    "objectID": "weeks/week03/summative.html#p4-submit-no-points",
-    "href": "weeks/week03/summative.html#p4-submit-no-points",
-    "title": "💻 Week 03 - Summative assessment",
-    "section": "P4: Submit (no points)",
-    "text": "P4: Submit (no points)\nUpload your screenshots to Moodle togther with the infromation required."
-  },
-  {
     "objectID": "weeks/week04/checklist.html",
     "href": "weeks/week04/checklist.html",
     "title": "✅ Week 04 - Checklist",
@@ -467,55 +502,6 @@
     "title": "👨‍🏫 Week 04 - Slides",
     "section": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)",
     "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\nShortly before the lecture, check here or go to Moodle to download the Jupyter Notebook I will be using for this demo."
-  },
-  {
-    "objectID": "weeks/week04/summative.html",
-    "href": "weeks/week04/summative.html",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "",
-    "text": "Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p0-only-for-you",
-    "href": "weeks/week04/summative.html#p0-only-for-you",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P0: Only for you",
-    "text": "P0: Only for you\nThis assignment has individual tasks for each student. You will find them on your cloud machine profile.\n🎯 ACTION POINTS\n\nGo to your cloud machine user.\nLocate the file called summative_04.txt and download it.\n\nThis file contains your unique assignment."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p1-loving-food-3-points",
-    "href": "weeks/week04/summative.html#p1-loving-food-3-points",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P1: Loving food (3 points)",
-    "text": "P1: Loving food (3 points)\n🎯 ACTION POINTS\nThe unique instructions for this task are provided in summative_04.txt. Go to the file and follow the instructions for the first task."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p2-keep-loving-food-5-points",
-    "href": "weeks/week04/summative.html#p2-keep-loving-food-5-points",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P2: Keep loving food (5 points)",
-    "text": "P2: Keep loving food (5 points)\n🎯 ACTION POINTS\n\nReplicate your previous task using Selenium.\nAdditionally, take the following steps using Selenium:\n\nGo to Recipe collections for whatever dish you were asked to search for in the previous task.\nChoose the first recipe collection, and scroll down to the button that says Load more.\nClick this button.\nGet to the last recipe that appeared after clicking this button.\nScrape all the information about this recipe. Structure and save it in a JSON format in the file called Selenium_collections.json.\n\nMake sure all the steps are shown in your code.\nSave the code in the file called food_Selenium (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p3-getting-the-news-5-points",
-    "href": "weeks/week04/summative.html#p3-getting-the-news-5-points",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P3: Getting the news (5 points)",
-    "text": "P3: Getting the news (5 points)\n🎯 ACTION POINTS\n\nRegister for the NYT Article Search API and acquire an API key.\nExplore the documentation of the API to complete further steps.\nExtract the titles of articles, their publishing dates and links to them following the instructions in summative_04.txt. Save everything in a JSON format in the file called NYT_articles.json.\n\nPlot the average size of the articles (measured in the number of words) for each month in your period.\nSave the code in the file called NYT_API_code (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p4-simple-english-2-points",
-    "href": "weeks/week04/summative.html#p4-simple-english-2-points",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P4: Simple English (2 points)",
-    "text": "P4: Simple English (2 points)\n🎯 ACTION POINTS\n\nTake the first 20 articles that you have scrapped in the previous exercise.\nGo to this dictionary API and explore how to use it for the next tasks.\nUsing this API, create a JSON file containing the original 20 article titles and their phonetic representations. For instance, if the title is “Data Science” your JSON record should look like this:\n{\"Data Science\": \"ˈdaetə ˈsaɪəns\"}\nSave all the phonetic representations and the original titles in the file called NYT_phonetic.json."
-  },
-  {
-    "objectID": "weeks/week04/summative.html#p5-upload-your-solutions",
-    "href": "weeks/week04/summative.html#p5-upload-your-solutions",
-    "title": "💻 Week 04 - Summative assessment",
-    "section": "P5: Upload your solutions",
-    "text": "P5: Upload your solutions\n🎯 ACTION POINTS\n\nConnect to your user on the cloud machine.\nCreate a folder called summative04.\nUpload all the created files (your code and the scrapped data) to the folder."
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
