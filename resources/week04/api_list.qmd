@@ -1,0 +1,70 @@
+---
+title: "✅ Week 04 - SUGGESTED API LIST"
+date: 20 October 2022
+date-meta: 20 October 2022
+---
+
+
+We recommend you to play with some of the APIs in the list for preparing your assesment. You can track real-time trian locations in Switzerland, have information about historical or current air pollution anywhere in the world or see the crimes committed in Chicago. You may need to create accounts to have and explore the dataset with these APIs.
+
+
+- 🌏 **Environment**
+
+    🌫 [Historical and Real-Time Air pollution](https://openweathermap.org/api/air-pollution#:~:text=Air%20Pollution%20API%20concept,-Air%20Pollution%20API&text=Besides%20basic%20Air%20Quality%20Index,PM2.5%20and%20PM10)
+
+    ☔️ Weather information
+
+    Option 1 : [Weather.gov in USA](https://www.weather.gov/documentation/services-web-api#)
+
+    Option 2 : [OpenWeatherMap](https://openweathermap.org/api)
+
+
+
+- 🚦 **Transport**
+
+    🚇 [TFL: Traffic accidents and other information about transport for London](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/AccidentStats/AccidentStats_Get)
+
+    🚌 [Real time bus track in Chicago](https://www.transitchicago.com/developers/bustracker)
+
+    🚅 [Real time train locations in Switzerland](https://www.trafiklab.se/api/trafiklab-apis/oxyfi/)
+
+    🚖 [Shared Mobility with REST api](https://github.com/SFOE/sharedmobility/blob/main/Sharedmobility.ch-API.md)
+
+    <https://github.com/SFOE/sharedmobility>
+
+
+- 🌁 Cities
+
+    🏠[USA Census Data](https://www.census.gov/data/developers/data-sets.html)
+
+
+    👮🏼‍♂️ [Crime](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2)
+
+- 💶 Economy
+
+    🪙 [Currency conversion](https://upcdatabase.org/api-currency-history)
+
+    🏀[Sports](https://api-sports.io/documentation/formula-1/v1#section/Sample-Scripts/Python)
+
+
+
+- 💻 Web Scrapting:
+
+    You can use beatiful soup, http.client and requests to collect the data from the websites:
+
+    You can track cryptocurrencies and stocks with Yahoo Finance
+
+    <https://finance.yahoo.com/cryptocurrencies>
+
+    Track covid data situation:
+
+    It is a HTTP API:
+
+    <https://coronavirus.m.pipedream.net/>
+
+    <https://pipedream.com/@pravin/http-api-for-latest-wuhan-coronavirus-data-2019-ncov-p_G6CLVM/readme>
+
+
+
+
+
