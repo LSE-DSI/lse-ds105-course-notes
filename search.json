@@ -7,6 +7,62 @@
     "text": "🎯 Learning Objectives\n\nUnderstand the basic structure of data types and common data formats\nShow familiarity with international standards for common data types\nManage a typical data acquisition, cleaning, structuring, and analysis workflow using practical examples\nClean data, and diagnose common problems involved in data corruption and how to fix them\nUnderstand the concept and fundamentals of databases\nLink data from different sources\nUse the collaboration and version control system GitHub, based on the git version control system.\nMarkup Language (XML), and the Markdown format for formatting documents and web pages.\nCreate and maintain simple websites using HTML and CSS\nUse APIs to send and retrieve data from Internet sources\n\n\n\n🧑🏻‍🏫 Our Team\n\nTeacher ResponsibleTeaching StaffStudentsAdministrative Support\n\n\n\nDr. Jonathan Cardoso-Silva  Assistant Professorial Lecturer  LSE Data Science Institute 📧 J.Cardoso-Silva at lse dot ac dot uk\nOffice Hours:\n\n15-min slots, on Wednesdays 13:00 – 15:00 during Term Time\nRoom: PEL 9.01c (check out the 🗺️ campus map)\nBook via Student Hub up to 12 hours in advance\n\n\n\n\nAnton Boichenko  Guest Teacher at the LSE Data Science Institute Product Developer at Decoded  MSc in Applied Social Data Science (LSE)\n\nDr. Stuart Bramwell  ESRC Postdoctoral Fellow  Department of Methodology PhD in Politics (Oxford)\n\nMustafa Can Ozkan  Guest Teacher at the LSE Data Science Institute PhD candidate in the Spacetime Lab (UCL)  MSc in Transport (Imperial/UCL)\n\nXiaowei Gao  Guest Teacher at the LSE Data Science Institute PhD candidate in the Spacetime Lab (UCL)  MSc in Data Science (KCL)\n\nYijun Wang  Guest Teacher at the LSE Data Science Institute PhD candidate in Health Informatics (KCL)  MSc in Data Science (KCL)\n\n\n\nAmara Otero Salgado  BSc in Politics Data Science  Course Representative for DS105M\n\n\n\nNathaniel Ocquaye  Teaching Support and Events Officer Office: PEL 9.01 Email: DSI.UG at lse dot ac dot uk\n\nJill Beattie  Institute Coordinator Office: PEL 9.01E Tel: +44 (0) 20 7955 7759 Email: DSI.Admin at lse dot ac dot uk\n\n\n\n\n\n📍 Lecture\nTuesdays 4pm-6pm at PAR.LG.03 (🗺️ campus map), except Week 06 (Reading Week)\n\n\nClass Groups\n\nGroup 01\n\n📆 Fridays\n⌚ 9:00 - 10:30am\n📍 32L.G.06\n🧑‍🏫 Anton\n\n\n\nGroup 02\n\n📆 Fridays\n⌚ 12:00 - 1:30pm\n📍 NAB.LG.03\n🧑‍🏫 Anton\n\n\n\nGroup 03\n\n📆 Fridays\n⌚ 16:00 - 17:30\n📍 KSW.1.02\n🧑‍🏫 Anton"
   },
   {
+    "objectID": "main/api_list.html",
+    "href": "main/api_list.html",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "",
+    "text": "We have gathered a list of APIs to inspire your search for data sources.\nThis is truly just a list of APIs we have seen or have explored before. Do not feel obliged to choose your data source from here. Feel free, for example, to choose “fun” data sources too — say, things related to entertainment, games, music, video, etc.. It is up to you and your group!\nWe recommend you to play with some of the APIs in the list for preparing your assesment."
+  },
+  {
+    "objectID": "main/api_list.html#social-media",
+    "href": "main/api_list.html#social-media",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "🤼 Social Media",
+    "text": "🤼 Social Media\n\n YouTube API 1\n Twitter API\n Reddit API\n Tiktok API\n Instagram API"
+  },
+  {
+    "objectID": "main/api_list.html#news",
+    "href": "main/api_list.html#news",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "📰 News",
+    "text": "📰 News\n\n New York Times API\n The Guardian API"
+  },
+  {
+    "objectID": "main/api_list.html#environment",
+    "href": "main/api_list.html#environment",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "🌏 Environment",
+    "text": "🌏 Environment\n\n🌫 Historical and Real-Time Air pollution\n☔️ Weather information\n\nOption 1 : Weather.gov in USA\nOption 2 : OpenWeatherMap"
+  },
+  {
+    "objectID": "main/api_list.html#transport",
+    "href": "main/api_list.html#transport",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "🚦 Transport",
+    "text": "🚦 Transport\n\n🚇 TFL: Traffic accidents and other information about transport for London\n🚌 Real time bus track in Chicago\n🚅 Real time train locations in Switzerland\n🚖 Shared Mobility with REST api"
+  },
+  {
+    "objectID": "main/api_list.html#cities",
+    "href": "main/api_list.html#cities",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "🌁 Cities",
+    "text": "🌁 Cities\n\n🏠USA Census Data\n👮🏼‍♂️ Crime"
+  },
+  {
+    "objectID": "main/api_list.html#economy",
+    "href": "main/api_list.html#economy",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "💶 Economy",
+    "text": "💶 Economy\n\n🪙 Currency conversion\n🏀Sports"
+  },
+  {
+    "objectID": "main/api_list.html#others",
+    "href": "main/api_list.html#others",
+    "title": "📃 Non-exhaustive list of APIs",
+    "section": "Others",
+    "text": "Others\n\n Spotify API\nCOVID-19 data"
+  },
+  {
     "objectID": "main/assessments.html",
     "href": "main/assessments.html",
     "title": "Assessments",
