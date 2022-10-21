@@ -1,0 +1,94 @@
+---
+title: "📃 Non-exhaustive list of APIs"
+date: 21 October 2022
+date-meta: 21 October 2022
+author: DS105M Teaching Team
+---
+
+We have gathered a list of APIs to inspire your search for data sources. 
+
+This is truly just a list of APIs we have seen or have explored before. Do not feel obliged to choose your data source from here. Feel free, for example, to choose "fun" data sources too — say, things related to entertainment, games, music, video, etc.. It is up to you and your group!
+
+We recommend you to play with some of the APIs in the list for preparing your assesment. 
+
+:::{.callout-tip collapse="true"}
+## Tip: Ideas for Web Scraping
+
+Data is Plural run by Buzzfeed's data editor 🧑 [Jeremy Singer-Vine](https://www.jsvine.com/). People send him interesting/funny/odd datasets and he shares them in a weekly newsletter. [Here's the link](https://www.data-is-plural.com/) to the website. The google doc list of datasets is linked [here](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0).
+
+Just to keep in mind that static datasets — those you can get from downloading a single CSV file — are not allowed as the main data source in this course. You can use these kind of sources to _complement_ your analysis, just not as the **main** data source.
+
+
+:::
+
+# APIs
+
+Here you will find APIs to track real-time train locations in Switzerland, to gather historical or current air pollution anywhere in the world, or even, see the crimes committed in Chicago. We recommend you explore with different APIs before committing to one for your project.
+
+_Some of these APIs might require that you register and create account with them before granting you actual access to data._
+
+## 🤼 **Social Media**
+
+- ![](/figures/logos/youtube-youtube-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [YouTube API](https://developers.google.com/youtube/v3) [^1]
+
+- ![](/figures/logos/Twitter-logo.svg){style="height:1em;vertical-align:text-bottom;"} [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
+
+- ![](/figures/logos/Reddit-logo.svg){style="height:1em;vertical-align:text-bottom;"} [Reddit API](https://www.reddit.com/dev/api)
+
+- ![](/figures/logos/logo-tiktok-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Tiktok API](https://developers.tiktok.com/)
+
+- ![](/figures/logos/instagram-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Instagram API](https://developers.tiktok.com/)
+
+[^1]: YouTube should be good fun to explore in a project!
+
+## 📰 **News**
+
+- ![](/figures/logos/New_York_Times_T_icon.svg){style="height:1em;vertical-align:text-bottom;"} [New York Times API](https://developer.nytimes.com/)
+
+- ![](/figures/logos/the-guardian.svg){style="height:1em;vertical-align:text-bottom;"} [The Guardian API](https://open-platform.theguardian.com/)
+
+## 🌏 **Environment**
+
+- 🌫 [Historical and Real-Time Air pollution](https://openweathermap.org/api/air-pollution#:~:text=Air%20Pollution%20API%20concept,-Air%20Pollution%20API&text=Besides%20basic%20Air%20Quality%20Index,PM2.5%20and%20PM10)
+
+-  ☔️ Weather information
+
+    - Option 1 : [Weather.gov in USA](https://www.weather.gov/documentation/services-web-api#)
+
+    - Option 2 : [OpenWeatherMap](https://openweathermap.org/api)
+
+
+## 🚦 **Transport**
+
+- 🚇 [TFL: Traffic accidents and other information about transport for London](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/AccidentStats/AccidentStats_Get)
+
+- 🚌 [Real time bus track in Chicago](https://www.transitchicago.com/developers/bustracker)
+
+- 🚅 [Real time train locations in Switzerland](https://www.trafiklab.se/api/trafiklab-apis/oxyfi/)
+
+- 🚖 [Shared Mobility with REST api](https://github.com/SFOE/sharedmobility)
+
+
+## 🌁 Cities
+
+- 🏠[USA Census Data](https://www.census.gov/data/developers/data-sets.html)
+
+- 👮🏼‍♂️ [Crime](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2)
+
+## 💶 Economy
+
+- 🪙 [Currency conversion](https://upcdatabase.org/api-currency-history)
+
+- 🏀[Sports](https://api-sports.io/documentation/formula-1/v1#section/Sample-Scripts/Python)
+
+## Others
+
+- ![](/figures/logos/spotify-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Spotify API](https://developer.spotify.com/documentation/web-api/)
+- [COVID-19 data](https://pipedream.com/@pravin/http-api-for-latest-wuhan-coronavirus-data-2019-ncov-p_G6CLVM/readme)
+
+
+
+
+
+
+
