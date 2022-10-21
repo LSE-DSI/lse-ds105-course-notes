@@ -35,7 +35,7 @@ website:
       - href: main/api_list.qmd
         text: "📃 List of APIs (🆕)"
       - href: main/assessments.qmd
-        text: "✍️ Assessments"
+        text: "✍️ Assessments (🆕)"
         contents:
           - href: assessments/formative1.qmd
             text: "✍️ Formative W02/W03"

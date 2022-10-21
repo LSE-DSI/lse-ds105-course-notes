@@ -1,9 +1,16 @@
 ---
 title: "Assessments"
 subtitle: "Data for Data Science"
-date: 05 September 2022
-date-meta: 05 September 2022
+date: 21 October 2022
+date-meta: 21 October 2022
 ---
+
+::: {.callout-important collapse="false"}
+
+Updates (21 October 2022) :
+
+- Added [marking criteria](#projects-marking-criteria) for the final project
+:::
 
 # Submissions (🆕)
 
@@ -40,3 +47,22 @@ This course is assessed by a mix of problem sets, group presentation and a final
 - Submission deadline: Lent Term
     - Exact date to be confirmed
     - (end of Jan/2023 - beginning of Feb/2023)
+
+### Project's Marking Criteria
+
+While the final project is worth 40% of your final grade, you will be marked on a 0-100 scale.
+
+When you submit your final project, make sure your webpage address the questions/requirements below:
+
+| **Source** | **Criteria** | **Description** | **Marks** |
+| --- | --- | --- | --- | 
+| Webpage | Motivation | Does the webpage explain what made you curious about this kind of data in the first place? | 5 |
+| Webpage | Data | Does the webpage tell the story of how you gathered the data (big picture)? Make sure you tell of the challenges you faced. | 5 |
+| Webpage | Exploratory Data Analysis (EDA) | What is in the data? How does it look like in general ? How big are your datasets? What is the range and distribution of the most relevant variables? |  10 |
+| Webpage | Visualisation | Do have nice plots (labels are clear and visible, variables are clearly marked)? Do your plots and tables paint a vivid picture of how the data look like? Did you use [ggplot](https://ggplot2.tidyverse.org/)/[plotnine](https://plotnine.readthedocs.io/) to generate your plots? | 15 |
+| Webpage | Storytelling | Find a balance: is your text engaging and clear? Were you able to describe the relevant technical steps of your project without _too many_ details? Did you write a nice conclusion?  | 15  |
+|  |  |  |  |
+| Source code | Organisation | Is your source code avaliable in a group's Github repository? Is your source code _replicable_ ? Did you create a good structure of files and directories?  | 10 |
+| Source code | Collaboration | Did you list everyone's contribution to the project somewhere in the webpage and/or README file of your project? Did you contribute to your group's Github repository with at least one commit? <br/><br/> _Note: you are not expected to do the same thing, each person could have a different contribution. For example, one person could focus more on data collection while another takes care of the visualisations and the other member could focus more on documentation._  | 10 |
+| Source code | Data cleaning | Did you use [pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide) and/or [tidyverse](https://r4ds.had.co.nz/) to clean up ... | 15 |
+| Source code | Data wrangling | Did you use [pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide) and/or [tidyverse](https://r4ds.had.co.nz/) to filter, merge, reshape and pivot your data as needed for your analysis? | 15 | 

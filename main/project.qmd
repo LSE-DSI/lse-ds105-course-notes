@@ -1,0 +1,19 @@
+---
+title: "📝 Project Requirements"
+date: 21 October 2022
+date-meta: 21 October 2022
+---
+
+| Criteria | Met criteria? | Marks awarded | Feedback |
+| --- | --- | --- | --- |
+| Motivation | 🟩 Yes | 5/5 | The motivation was clear and well argued. |
+| Justification | 🟩 Yes | 10/10 | The justification was clear and engaging. |
+| Aims | 🟩 Yes | 5/5 | Your aims were clearly stated.  |
+| Data | 🟨 There were a few minor issues | 7/10 | The data sources were well described and it was very good that you provide summary statistics for selected variables. The screenshot of the Listing.csv file was not very accessible. You could have explored different ways to illustrate the dataset; for example, showing just one single sample as a vertical table.  |
+| Methodology | 🟩 Yes | 15/15 | The discussion about the skewness of the data, and the outliers, was responsible and thorough. As a reader, it is clear how each selected variable was pre-processed and the rationale behind each transformation/filter. |
+| Results | 🟧 There were a few issues | 10/15 | You have done an incredible job. Your results captured the nuances present in this dataset and you articulated your opinions and interpretation of the discoveries you made throughout this project. There was just one issue: even though “variable importance” is central to several analyses discussed in your project, the text does not explain what this importance stands for.  |
+| Conclusion | 🟩 Yes | 10/10 | Very good, with ideas for future steps should one continue to explore this dataset |
+|  |  |  |  |
+| Plots | 🟨 There were a few minor issues | 10/15 | Overall, you have very good plots. Most charts are clear, the legends are readable and, since variable have good names, it is easy to understand what is going on. There were, however, a few problematic ones, such as the “overall feature importance”/ |
+| Storytelling | 🟩 Yes | 15/15 | A very good and compelling narrative of the analysis and the evolution of the project.  |
+|  |  |  |  |
