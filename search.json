@@ -65,9 +65,30 @@
   {
     "objectID": "main/assessments.html",
     "href": "main/assessments.html",
-    "title": "Assessments",
+    "title": "✍️ Assessments",
     "section": "",
-    "text": "Click on the assignments below to go to the Moodle page and submit your responses:\n\n✍️ Formative   Problem Set (01) | W02-W03: Moodle link & associated webpage with instructions.\n✍️ Summative Problem Set (01) | W04-W05: Moodle link & associated webpage with instructions.\n\nThis course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:\n\n\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 04 - worth 10% of final mark\nWeek 05 - worth 15% of final mark\n\n\n\n\n\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark\n\n\n\n\n\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)"
+    "text": "Important\n\n\n\n\n\nUpdates (21 October 2022) :\n\nAdded marking criteria for the final project"
+  },
+  {
+    "objectID": "main/assessments.html#problem-sets-25",
+    "href": "main/assessments.html#problem-sets-25",
+    "title": "✍️ Assessments",
+    "section": "📝 Problem Sets (25%)",
+    "text": "📝 Problem Sets (25%)\n\nA mix of coding tasks and elements of self-assessment, similar to problem sets we solve in the weekly labs\nStudents have until the day before the following class to submit their response to problem sets\nSummative problem sets will be released on:\n\nWeek 04 - worth 10% of final mark\nWeek 05 - worth 15% of final mark"
+  },
+  {
+    "objectID": "main/assessments.html#group-presentation-35",
+    "href": "main/assessments.html#group-presentation-35",
+    "title": "✍️ Assessments",
+    "section": "🗣️ Group Presentation (35%)",
+    "text": "🗣️ Group Presentation (35%)\n\nStudents will form groups prior to Reading Week (Week 06)\n\nPitch your ideas of API/datasets on Week 04\nForm the groups on Week 05\n\nGroup presentations:\n\nWeek 08 - worth 15% of final mark\nWeek 11 - worth 20% of final mark"
+  },
+  {
+    "objectID": "main/assessments.html#final-project-40",
+    "href": "main/assessments.html#final-project-40",
+    "title": "✍️ Assessments",
+    "section": "🎇 Final Project (40%)",
+    "text": "🎇 Final Project (40%)\n\nEach group will have to produce a webpage of their project, using Github Markdown\nDescription of data, research questions, challenges, statistics and simple plots\nThink of it as a portfolio project!\nSubmission deadline: Lent Term\n\nExact date to be confirmed\n(end of Jan/2023 - beginning of Feb/2023)\n\n\n\nProject’s Marking Criteria\nWhile the final project is worth 40% of your final grade, you will be marked on a 0-100 scale.\nWhen you submit your final project, make sure your webpage addresses the questions/requirements below:\n\n\n\nSource\nCriteria\nDescription\nMarks\n\n\n\n\nWebpage\nMotivation\nDoes the webpage explain what made you curious about this kind of data in the first place?\n5\n\n\nWebpage\nData\nDoes the webpage tell the story of how you gathered the data (big picture)? Make sure you tell of the challenges you faced.\n5\n\n\nWebpage\nExploratory Data Analysis (EDA)\nWhat is in the data? What does it look like in general? How big are your datasets? What is the range and distribution of the most relevant variables?\n10\n\n\nWebpage\nVisualisation\nDo you have nice plots? Are the labels clear and visible, and are variables clearly identified? Do your plots and tables paint a vivid picture of what the data looks like? Did you use ggplot (R) or plotnine (python) to generate your plots?\n15\n\n\nWebpage\nStorytelling\nFind a balance: is your text engaging and clear? Were you able to describe the relevant technical steps of your project without too many details? Did you write a nice conclusion?\n15\n\n\n\n\n\n\n\n\nSource code\nOrganisation\nIs your source code available in a group’s GitHub repository? Is your source code replicable? Did you create a good structure of files and directories?\n10\n\n\nSource code\nCollaboration\nDid you list everyone’s contribution to the project somewhere in your project’s webpage or README file? Did you contribute to your group’s Github repository with at least one commit?  Note: we do not expect all group members to do the same thing; each person could have a different contribution. For example, one person could focus more on data collection while another takes care of the visualisations, and the other member could focus more on documentation.\n10\n\n\nSource code\nData cleaning\nDid you use pandas (python) or tidyverse (R) to clean up your data? Do the data types of the variables make sense? Have you taken care of the missing values, deleted them or conducted imputation? Have you ensured the variables’ values are consistent and follow the same format?\n15\n\n\nSource code\nData wrangling\nDid you use pandas and/or tidyverse to filter, merge, reshape and pivot your data as needed for your analysis?\n15"
   },
   {
     "objectID": "main/communication.html",
@@ -110,6 +131,13 @@
     "title": "Course Representative",
     "section": "2. Voting",
     "text": "2. Voting\n\nWe will set up an (anonymous) poll on the #student-rep channel using the app Polly\nNo one will be able to see who is winning/losing. Only when the poll closes will we know the results.\nAll students will be able to cast their votes anonymously on their favourite candidates from Tuesday 11 October – Thursday 13 October (end of Week 03).\nResults will be announced on the #student-rep channel."
+  },
+  {
+    "objectID": "main/project.html",
+    "href": "main/project.html",
+    "title": "📝 Project Requirements",
+    "section": "",
+    "text": "Criteria\nMet criteria?\nMarks awarded\nFeedback\n\n\n\n\nMotivation\n🟩 Yes\n5/5\nThe motivation was clear and well argued.\n\n\nJustification\n🟩 Yes\n10/10\nThe justification was clear and engaging.\n\n\nAims\n🟩 Yes\n5/5\nYour aims were clearly stated.\n\n\nData\n🟨 There were a few minor issues\n7/10\nThe data sources were well described and it was very good that you provide summary statistics for selected variables. The screenshot of the Listing.csv file was not very accessible. You could have explored different ways to illustrate the dataset; for example, showing just one single sample as a vertical table.\n\n\nMethodology\n🟩 Yes\n15/15\nThe discussion about the skewness of the data, and the outliers, was responsible and thorough. As a reader, it is clear how each selected variable was pre-processed and the rationale behind each transformation/filter.\n\n\nResults\n🟧 There were a few issues\n10/15\nYou have done an incredible job. Your results captured the nuances present in this dataset and you articulated your opinions and interpretation of the discoveries you made throughout this project. There was just one issue: even though “variable importance” is central to several analyses discussed in your project, the text does not explain what this importance stands for.\n\n\nConclusion\n🟩 Yes\n10/10\nVery good, with ideas for future steps should one continue to explore this dataset\n\n\n\n\n\n\n\n\nPlots\n🟨 There were a few minor issues\n10/15\nOverall, you have very good plots. Most charts are clear, the legends are readable and, since variable have good names, it is easy to understand what is going on. There were, however, a few problematic ones, such as the “overall feature importance”/\n\n\nStorytelling\n🟩 Yes\n15/15\nA very good and compelling narrative of the analysis and the evolution of the project."
   },
   {
     "objectID": "main/regulation.html",
