@@ -301,6 +301,20 @@
     "text": "Links\n\n✅ Week 04 Checklist\n✍️ First Summative W04-W05 🆕\n👨‍🏫 Lecture slides\n💻 Lab roadmap"
   },
   {
+    "objectID": "weeks/week05.html",
+    "href": "weeks/week05.html",
+    "title": "🗓️ Week 05 - Data types & data frames.",
+    "section": "",
+    "text": "We understand many of you are just learning how to program, so I will add a recap of basic programming concepts to my lecture this week.\nIn the first part of the lecture, I will show the basic data types (numbers, strings, vectors, matrices, lists, etc.) and a bit about functions. Then, on the second part, I will tell you about data frames — the ubiquitous data structure that permeates everything in data science regardless of the programming language.\nIn the labs, Anton will help you get data out of APIs and he will show you how data frames can be used to represent the data you received from your requests to an API."
+  },
+  {
+    "objectID": "weeks/week05.html#links",
+    "href": "weeks/week05.html#links",
+    "title": "🗓️ Week 05 - Data types & data frames.",
+    "section": "Links",
+    "text": "Links\n\n✅ Week 05 Checklist\n✍️ Second Summative W05-W07 🔜\n👨‍🏫 Lecture\n💻 Lab roadmap"
+  },
+  {
     "objectID": "weeks/week01/appendix.html",
     "href": "weeks/week01/appendix.html",
     "title": "🔖 Week 01 - Appendix",
@@ -586,6 +600,41 @@
     "title": "👨‍🏫 Week 04 - Slides",
     "section": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)",
     "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\n\nClick here to download the Jupyter Notebook I will be using during the lecture to run the code demonstrations.\nOpen Google Colab and sign in with your Google account\nClick on File then Upload notebook to upload the notebook you download\nFollow the tutorial"
+  },
+  {
+    "objectID": "weeks/week05/checklist.html",
+    "href": "weeks/week05/checklist.html",
+    "title": "✅ Week 05 - Checklist",
+    "section": "",
+    "text": "✍️ Solve: If you haven’t done so yet, today (24 October 2022) is the last day to submit your first problem set via Moodle. This assessment is worth 10% of your final grade.\n🧑‍💻 Keep on practicing Python/R: take time during the week to practice programming.\n\nEnsure you have completed the pre-sessional programming course. You can skip the part about the Git/Github to focus more on getting more fluent with programming, we will introduce you to Git and Github later in this course.\nIf you have completed it, great! Now, try to go over last week’s lab roadmap once again by yourself. Take note of the things that don’t make much sense to you, and bring these questions to the lecture.\nAnother way to practice is by completing Python challenges on HackerRank, you can start from the Easy ones and progress later.\nWhatever you do, just keep on practicing!\nIf you struggle with any technical questions, ask them on #week05 on Slack or check out the in-person workshops at LSE Digital Skills Lab.\n\n🧑‍🏫 Bring your programming questions to the lecture.\n\nIf you want to get the most out of this session, download and install Python and Jupyter Lab in your computer before coming to the lecture. Or, if you are learning R, ensure you have R and the RStudio IDE installed.\nI will show both Python and R code.\n\n📝 Pitch your ideas of datasets: we expect all students to pitch their ideas of APIs or web scraping on the #dataset-ideas-and-team-formation channel on Slack before attending the lab.\n\nYou don’t have to commit to anything just yet for your final project, you will have until the first presentation, on Week 08, to show us your initial work with real data.\nIf you haven’t seen it, check out the List of suggested APIs we compiled on our website.\nCheck also the marking criteria for the final project you will have to submit by Lent Term. This might help you get a better idea of what you will need to learn until then.\n\n🧑‍💻 Attend the labs: you will practice sending API requests and manipulating the responses as a data frame.\n📟 Struggling with something? Share your questions on the #week05 channel in our Slack.\n👂Want to talk to someone else about this course? Try reaching out to your course representative, @Amara Otero Salgado on Slack."
+  },
+  {
+    "objectID": "weeks/week05/lecture.html",
+    "href": "weeks/week05/lecture.html",
+    "title": "👨‍🏫 Week 05 - Lecture",
+    "section": "",
+    "text": "This week, I won’t use slides. Instead, I will demonstrate the concepts using Jupyter Notebook. If you want to get the most out of this session, install Python and Jupyter Lab in your computer before coming to the lecture."
+  },
+  {
+    "objectID": "weeks/week05/lecture.html#part-i---programming-recap-data-types-45-50-min",
+    "href": "weeks/week05/lecture.html#part-i---programming-recap-data-types-45-50-min",
+    "title": "👨‍🏫 Week 05 - Lecture",
+    "section": "🖥️ Part I - Programming recap & data types (45-50 min)",
+    "text": "🖥️ Part I - Programming recap & data types (45-50 min)\nI will take some time to show some the basic data types (numbers, strings, vectors, matrices, lists, etc.) and a bit about functions. And I will reserve time to answer questions you might have about programming.\n\nBring your programming-related questions (Python or R).\n\nWhat did you find most difficult to follow during the lab last week?\nWhat are the programming concepts you learned about in the pre-sessional courses that you still don’t understand?"
+  },
+  {
+    "objectID": "weeks/week05/lecture.html#coffee-break-10-min",
+    "href": "weeks/week05/lecture.html#coffee-break-10-min",
+    "title": "👨‍🏫 Week 05 - Lecture",
+    "section": "☕ Coffee Break (10 min)",
+    "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
+  },
+  {
+    "objectID": "weeks/week05/lecture.html#part-ii---dataframes-45-50-min",
+    "href": "weeks/week05/lecture.html#part-ii---dataframes-45-50-min",
+    "title": "👨‍🏫 Week 05 - Lecture",
+    "section": "🖥️ Part II - Dataframes (45-50 min)",
+    "text": "🖥️ Part II - Dataframes (45-50 min)\nCome back later to download the Jupyter Notebook I will be using during the lecture."
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
