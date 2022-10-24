@@ -38,7 +38,7 @@ Here is a suggestion of how to plan your week:
     - Check also the marking criteria for the final project you will have to submit by Lent Term. This might help you get a better idea of what you will need to learn until then.
 
 
-- 🧑‍💻 **Attend the labs**: you will practice sending API requests and manipulating the responses as a data frame.
+- 🧑‍💻 **Attend the labs**: you will practice sending API requests and manipulating the responses as a data frame. Once you form the teams, you will have until W07 to fill out a short team contract document.
 
 - 📟 **Struggling with something?** Share your questions on the `#week05` channel in our Slack.
 
