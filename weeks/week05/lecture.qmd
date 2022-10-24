@@ -1,0 +1,24 @@
+---
+title: "👨‍🏫 Week 05 - Lecture"
+date: 24 October 2022
+date-meta: 24 October 2022
+---
+
+This week, I won't use slides. Instead, I will demonstrate the concepts using Jupyter Notebook. If you want to get the most out of this session, install [Python](https://www.python.org/downloads/) and [Jupyter Lab](https://jupyter.org/install) in your computer before coming to the lecture.
+
+
+## 🖥️ Part I - Programming recap & data types (45-50 min)
+
+I will take some time to show some the basic data types (numbers, strings, vectors, matrices, lists, etc.) and a bit about functions. And I will reserve time to answer questions you might have about programming.
+
+- Bring your programming-related questions (Python or R).
+    - What did you find most difficult to follow during the lab last week?
+    - What are the programming concepts you learned about in the pre-sessional courses that you still don't understand? 
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Dataframes  (45-50 min)
+
+Come back later to download the Jupyter Notebook I will be using during the lecture.

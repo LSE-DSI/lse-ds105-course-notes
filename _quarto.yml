@@ -11,6 +11,7 @@ project:
     - "weeks/week02/*.qmd"
     - "weeks/week03/*.qmd"
     - "weeks/week04/*.qmd"
+    - "weeks/week05/*.qmd"
     - "slides/*.qmd"
 
 bibliography: references/references.bib
@@ -33,9 +34,9 @@ website:
       - href: main/communication.qmd
         text: "📟 Communication"
       - href: main/api_list.qmd
-        text: "📃 List of APIs (🆕)"
+        text: "📃 List of APIs"
       - href: main/assessments.qmd
-        text: "✍️ Assessments (🆕)"
+        text: "✍️ Assessments"
         contents:
           - href: assessments/formative1.qmd
             text: "✍️ Formative W02/W03"
@@ -78,6 +79,15 @@ website:
              - href: weeks/week04/lab.qmd
                text: 💻 Lab roadmap
              - href: weeks/week04/checklist.qmd
+               text: ✅ Checklist
+         - href: weeks/week05.qmd
+           text: "Week 05"
+           contents:
+             - href: weeks/week05/lecture.qmd
+               text: 👨‍🏫 Lecture
+             - href: weeks/week05/lab.qmd
+               text: 💻 Lab roadmap
+             - href: weeks/week05/checklist.qmd
                text: ✅ Checklist
   navbar:
     background: primary
