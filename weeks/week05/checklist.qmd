@@ -4,6 +4,11 @@ date: 24 October 2022
 date-meta: 24 October 2022
 ---
 
+
+::: {.callout-important collapse="false"}
+Keep in mind that after the lecture this week, on Tuesday 25 October 2022, we will release the **Summative Problem Set 02**. This is the second summative assessment of this course and it is worth **15% of your final grade**. You will have until **7 November 2022** — Monday of Week 07 — to submit your solutions via Moodle.
+:::
+
 Here is a suggestion of how to plan your week:
 
 - ✍️ **Solve**: If you haven't done so yet, today (24 October 2022) is the last day to submit your first problem set via Moodle. This assessment is worth 10% of your final grade.
@@ -28,8 +33,7 @@ Here is a suggestion of how to plan your week:
     - I will show both Python and R code.
 
 
-- 📝 **Pitch your ideas of datasets**: we expect all students to pitch their ideas of APIs or web scraping on the #dataset-ideas-and-team-formation channel on Slack before attending the lab. 
-
+- 📝 **Pitch your ideas of datasets**: we expect all students to pitch their ideas of APIs or web scraping on the `#dataset-ideas-and-team-formation` channel on Slack before attending the lab. 
 
     - You don't have to commit to anything just yet for your final project, you will have until the first presentation, on Week 08, to show us your initial work with real data.
 
@@ -38,7 +42,7 @@ Here is a suggestion of how to plan your week:
     - Check also the marking criteria for the final project you will have to submit by Lent Term. This might help you get a better idea of what you will need to learn until then.
 
 
-- 🧑‍💻 **Attend the labs**: you will practice sending API requests and manipulating the responses as a data frame. Once you form the teams, you will have until W07 to fill out a short team contract document.
+- 🧑‍💻 **Attend the labs**: you will practice sending API requests and manipulating the responses as a data frame. We will also dedicate some time to help you form teams. Once you form the teams, you will have until W07 to fill out a short team contract document.
 
 - 📟 **Struggling with something?** Share your questions on the `#week05` channel in our Slack.
 
