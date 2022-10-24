@@ -613,7 +613,7 @@
     "href": "weeks/week05/lecture.html",
     "title": "👨‍🏫 Week 05 - Lecture",
     "section": "",
-    "text": "This week, I won’t use slides. Instead, I will demonstrate the concepts using Jupyter Notebook. If you want to get the most out of this session, install Python and Jupyter Lab in your computer before coming to the lecture."
+    "text": "This week, I won’t use slides. Instead, I will demonstrate the concepts using Jupyter Notebook. If you want to get the most out of this session, install Python and Jupyter Lab in your computer before coming to the lecture. Or, if you are learning R, ensure you have R and the RStudio IDE installed."
   },
   {
     "objectID": "weeks/week05/lecture.html#part-i---programming-recap-data-types-45-50-min",
