@@ -1,5 +1,268 @@
 ---
 title: "💻 Week 05 - Lab Roadmap (90 min)"
+date: 16 September 2022
+date-meta: 16 September 2022
+author: Anton Boichenko
 ---
 
-<mark class="todo"></mark>
+Last week we have introduced the basic web-scrapping tools. Now, it's time to explore web-scrapping with APIs. API stands for Application Programming Interface and allows different parts of an application to send requests and responses from and to each other. Today we will see how some websites use APIs to send data. 
+
+In the first part of the lab, we will acquire data from a Ticketmaster API. After that, we will convert the response into a dataframe and save it. 
+
+<details><summary>Part 1: Buying tickets (45 min)</summary>
+
+## Part 1: Buying tickets 
+
+After last week you might think "Well, yeah, it is useful for my academic endeavours, but not for my day-to-day life.". Let us show you how you can solve your problems with it!
+
+It turns out that [TicketMaster](https://www.ticketmaster.com/) (one of the biggest websites that sells tickets) has its own API. It means that you can automate your ticket search if you wanted to! Let's explore this together. 
+
+*We do not provide you with code straight away, however, you will find the solutions below.*
+
+In the same way as before we will first complete some tasks together to understand how APIs work and then work independently.
+
+🤝 **WORKING TOGETHER**
+
+1. Go to [https://developer.ticketmaster.com/](https://developer.ticketmaster.com/) and register an account. You will only need an email address. 
+2. Acquire an API token using your new account. It will be called a **Consumer Key** in your apps' information.
+3. Make an API call to get all the venues in New York. 
+
+And now, it's time to get tickets!
+
+🎯 **ACTION POINTS** 
+
+1. Using the [documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2) find all the music events happening in London.    
+    How many events have you found?  
+    Do you think it's all the events happening in London?   
+    Is there a way to show more events?  
+2. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
+    What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
+3. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
+4. What about family-friendly events in London? Are there any?
+
+
+### Solution Code
+
+<details class="special"> <summary> ![](/figures/logos/python-logo-notext.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="Python logo"} Python users </summary>
+
+All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
+
+**Task 3**
+
+```python
+# import the required libraries
+import requests
+
+# saving your API key
+api_key = "YOUR_API_KEY"
+
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "apikey": api_key}
+
+# sending a request to the API
+response = requests.get("https://app.ticketmaster.com/discovery/v2/events.json",
+                        params=params)
+
+# parse the response
+resp_json = response.json()
+
+# extract the events
+resp_json["_embedded"]["events"]
+```
+
+Next, we will be only providing the query parameters.
+
+**Task 3 (extending search)**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+**Task 4**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"classificationName": "music",
+          "countryCode": "GB",
+          "city": "London",
+          "genre_name":"Rock",
+          "startDateTime":"2022-10-15T00:00:00Z",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+This API does not have a price parameter, so you would need to filter the JSON manually. 
+
+**Task 5**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"countryCode": "GB",
+          "city": "London",
+          "keyword":"data",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+
+# or
+
+params = {"keyword":"data",
+          "size": 200, 
+          "page": 1,
+          "apikey": api_key}
+```
+
+**Task 6**
+
+```python
+# setting up the API query parameters (they will be changing)
+params = {"countryCode": "GB",
+          "city": "London",
+          "includeFamily":"only",
+          "size": 200, # feel free to change this number
+          "page": 1, # we add pages here to show that you can get more results if needed
+          "apikey": api_key}
+```
+
+</details>
+
+<details class="special"> <summary> ![](/figures/logos/Rlogo.svg){height="1em" fig-align="left" vertical-align="middle" fig-alt="R logo"} R users </summary>
+
+All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
+
+**Task 3**
+
+```R
+# importing required packages
+library("httr")
+library("jsonlite")
+
+# saving your API key
+api_key <- "ErOQNylYMIv9wqPLWsezUdByUjftJIa6"
+
+# setting up the base URL and parameters
+base_url <- "https://app.ticketmaster.com/discovery/v2/events.json"
+
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "apikey" = api_key))
+
+# parse the response
+json <- content(response, "parsed")
+```
+Next, we will be only providing the query parameters.
+
+**Task 3 (extending search)**
+
+```R
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "size" = 200, 
+          "page" = 1,
+          "apikey" = api_key))
+```
+
+**Task 4**
+
+```R
+# sending a request
+response <- GET(base_url, query = list("classificationName" = "music",
+          "countryCode" = "GB",
+          "city" = "London",
+          "genre_name" = "Rock",
+          "startDateTime" = "2022-10-15T00:00:00Z",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+
+This API does not have a price parameter, so you would need to filter the JSON manually. 
+
+**Task 5**
+
+```R
+# sending a request
+response <- GET(base_url, query = list(
+          "countryCode" = "GB",
+          "city" = "London",
+          "keyword" = "data",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+
+# or
+
+response <- GET(base_url, query = list(
+          "keyword" = "data",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+
+**Task 6**
+
+```R
+# sending a request
+response <- GET(base_url, query = list(
+          "countryCode" = "GB",
+          "city" = "London",
+          "includeFamily" = "only",
+          "size" = 200, # feel free to change this number
+          "page" = 1, # we add pages here to show that you can get more results if needed
+          "apikey" = api_key))
+```
+</details>
+
+</details>
+
+<details><summary> Part 2: Let's make it a table (25 min)</summary>
+## Part 2: Let's make it a table
+
+Using an API usually implies working with JSON responses. However, sometimes it becomes a bit tricky to use JSON formats. We are very used to tables, so let's convert this response to one. 
+
+🤝 **WORKING TOGETHER**
+
+1. Get an API response for all music events in London. 
+2. Apply the `pd.DataFrame()` and the `pd.json_normalize()` functions to the final response and examine the difference. 
+3. Print the first rows of the DataFrame. 
+4. Examine the column names of the DataFrame.
+5. Search how to delete columns.
+6. Delete a column called `test`. 
+
+Now, it's time for you to work independently. We haven't taught you the majority of the things you will be doing now. You will have to **search for the solutions online**. We do it to help you get the gist of what data scientists and programmers usually do best - googling.  
+
+🎯 **ACTION POINTS** 
+
+
+1. Change the name of the column `sales.public.startDateTime` to `sales_start`. 
+2. Select only the column called `sales_start`. 
+3. Select two columns: `sales_start` and `name`.
+4. Print the 5th name from the column called `name`. 
+5. Print the 5th observation from the 3rd column.
+6. Check what data types are present in the dataframe.
+7. Check if there are any missing data. If so, what columns contain them?
+8. Save the DataFrame to an Excel file.  
+
+
+</details>
+
+<details><summary> Part 3: Avengers, assemble (15 min)</summary>
+## Part 3: Avengers, assemble
+
+This course implies working on a group project. You will be working in groups of 2-3 people. During this time we allocate some time for you to find your groupmates. Feel free to do it now! 
+
+</details>
