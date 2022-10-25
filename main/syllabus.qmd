@@ -11,7 +11,7 @@ date-meta: 05 September 2022
 We re-ordered the topics from Weeks 05 onwards. See a list of what has changed:
 
 - Topic of Week 05 lecture is now "Notebooks + data frames"
-- The lecture "(Re)shaping data." was moved from Week 05 to Week 08 (before transforming data, we need to see how data looks like!)
+- The lecture "(Re)shaping data." was moved from Week 05 to Week 08 (before transforming data, we need to see what data looks like!)
 - Week 05 lab is now "APIs & Data Frames" to allow for a smoother transition into programming
 - The lab "Github & Markdown" was moved from Week 05 to Week 07
 - The lecture "Data viz with the grammar of graphics" was moved from Week 10 to Week 07 (to help you include plots in your projects sooner)
