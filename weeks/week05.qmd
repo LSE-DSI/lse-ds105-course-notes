@@ -16,6 +16,8 @@ In the <strong>labs</strong>, Anton will help you get data out of APIs and he wi
 
 - ✍️ [Second Summative W05-W07](#) 🔜 
 
+- ✍️ [Formative Team Contract | W05-W07](/assessments/formative2.qmd) 🆕
+
 - 👨‍🏫 [Lecture](/weeks/week05/lecture.qmd)
 
 - 💻 [Lab roadmap](/weeks/week05/lab.qmd)

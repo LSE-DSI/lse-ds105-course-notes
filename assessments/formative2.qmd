@@ -1,0 +1,33 @@
+---
+title: "✍️ Formative Team Contract | W05-W07"
+date: 25 October 2022
+date-meta: 25 October 2022
+---
+
+## Context
+
+Up until now,you have been working alone, learning how to interact with the tools and programming languages you will need for your project later on. There is still one final individual summative work to be submitted (Summative Problem Set 02), but when we come back from Reading Week on Week 07, you will be working in teams.
+
+The second part of this course relies almost entirely on teamwork, and this formative assessment forms the basis of your group project. You will fill out a document outlining the different roles you are all going to take within the group work and how you plan to collaborate and mediate conflict. 
+
+This document will also help us judge your progress in the next assessments. On Week 08, your group will present the initial explorations with your dataset of choice, then there will be a second presentation on Week 11 where we expect to see further exploratory data analysis (plots and data summarisation), and by Lent Term, you will have to submit a final webpage of your project later.
+
+## What you need to do
+
+- Before coming to the lab this Friday (28 October), go to `#dataset-ideas-and-team-formation` on Slack and pitch your idea of data source (either API or web scraping) for the final project. This will help you identify other people with similar interests. Take a look at [📃 List of APIs](/main/api_list.html) if you need suggestions.
+
+- If you identify an idea that you like, reach out to the person who posted and try to form teams.
+
+- Teams should have three members [^2]
+
+- If you could not form or join a team before Friday, we will reserve some time during the lab for this. Have a look at [Part 3 of W05 lab roadmap](/weeks/week05/lab.html#part-3-avengers-assemble) for more tips.
+
+
+- After you form your teams, download the [{DS105M} ✍️ Formative Team Contract | W05-W07](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307).
+
+- Have a look at what you will need to discuss as a group to fill out the team contract, decide when you want to talk about it.
+
+- The team contract must be submitted by **7 November 2022 23:59 UK time** via Moodle by one team member. 
+
+
+[^2]: If necessary, we will try to be flexible and accommodate groups of 2, or 4 people. But ideally, all groups should have 3 members and there shouldn't be more than 4 teams per class group. Otherwise, you will not have much feedback time during presentations (Weeks 08 & 11).

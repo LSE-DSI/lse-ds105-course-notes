@@ -36,12 +36,7 @@ website:
       - href: main/api_list.qmd
         text: "📃 List of APIs"
       - href: main/assessments.qmd
-        text: "✍️ Assessments"
-        contents:
-          - href: assessments/formative1.qmd
-            text: "✍️ Formative W02/W03"
-          - href: assessments/summative1.qmd
-            text: "✍️ Summative W04/W05"
+        text: "✍️ Assessments (🆕)"
       - href: main/courserep.qmd
         text: "🗳️ Course Rep"
       - section: "🗓️ Weeks"

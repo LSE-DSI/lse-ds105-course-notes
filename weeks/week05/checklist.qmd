@@ -28,7 +28,7 @@ Here is a suggestion of how to plan your week:
     - I will show both Python and R code.
 
 
-- 📝 **Pitch your ideas of datasets**: we expect all students to pitch their ideas of APIs or web scraping on the #dataset-ideas-and-team-formation channel on Slack before attending the lab. 
+- 📝 **Pitch your ideas of datasets**: we expect all students to pitch their ideas of APIs or web scraping on the `#dataset-ideas-and-team-formation` channel on Slack before attending the lab. 
 
 
     - You don't have to commit to anything just yet for your final project, you will have until the first presentation, on Week 08, to show us your initial work with real data.
