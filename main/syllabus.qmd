@@ -6,9 +6,17 @@ date-meta: 05 September 2022
 ---
 
 ::: {.callout-important}
-## ⚠️ Important Update 17/10/2022
+## ⚠️ Important Update 25/10/2022
 
-We have updated the syllabus below to reflect the new deadlines of sumative assessments.
+We re-ordered the topics from Weeks 05 onwards. See a list of what has changed:
+
+- Topic of Week 05 lecture is now "Notebooks + data frames"
+- The lecture "(Re)shaping data." was moved from Week 05 to Week 08 (before transforming data, we need to see how data looks like!)
+- Week 05 lab is now "APIs & Data Frames" to allow for a smoother transition into programming
+- The lab "Github & Markdown" was moved from Week 05 to Week 07
+- The lecture "Data viz with the grammar of graphics" was moved from Week 10 to Week 07 (to help you include plots in your projects sooner)
+- The lecture "Unstructured data (text, audio & image)" was moved to Week 10
+- Weeks 09 & 11 were left untouched
 
 :::
 
@@ -141,11 +149,11 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td rowspan=4></td>
             <td rowspan=4>🗓️ <a href="">Week 05</a></td>
             <td style="font-weight:bold;">Lecture</td>
-            <td>(Re)shaping data.</td>
+            <td>Computational notebooks + data frames</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Lab</td>
-            <td>Github & Markdown</td>
+            <td>APIs & Data Frames</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Summative</td>
@@ -153,8 +161,8 @@ These skills are **cumulative**, so practice what you learned each week and make
                 <ul>
                     <li>Worth: 15% of final marks</li>
                     <li>Problem set involving web scraping.</li>
-                    <li>**Release date**: 25 October 2022</li>
-                    <li>**Deadline:** 7 November 2022</li>
+                    <li>**Release date**: 26 October 2022</li>
+                    <li>**Deadline:** 9 November 2022</li>
                 </ul>
             </td>
         </tr>
@@ -165,7 +173,7 @@ These skills are **cumulative**, so practice what you learned each week and make
                     <li>students form groups of 3</li>
                     <li>students must submit a team contract to Moodle (not graded)</li>
                     <li>**Release date**: 25 October 2022</li>
-                    <li>**Deadline:** 7 November 2022</li>
+                    <li>**Deadline:** 9 November 2022</li>
                 </ul>
             </td>
         </tr>
@@ -187,11 +195,11 @@ These skills are **cumulative**, so practice what you learned each week and make
            <td rowspan=2></td>
            <td rowspan=2>🗓️ <a href="">Week 07</a></td>
            <td style="font-weight:bold;">Lecture</td>
-           <td>Dataframes, databases & data normalisation.</td>
+           <td>Data viz with the grammar of graphics</td>
        </tr>
        <tr class="even">
            <td style="font-weight:bold;">Lab</td>
-           <td>Computational Notebooks and DataFrames</td>
+           <td>Github & Markdown</td>
        </tr>
    </tbody>
 
@@ -202,7 +210,7 @@ These skills are **cumulative**, so practice what you learned each week and make
             <td rowspan=3></td>
             <td rowspan=3>🗓️ <a href="">Week 08</a></td>
             <td style="font-weight:bold;">Lecture</td>
-            <td>Unstructured data (text, audio & image).</td>
+            <td>(Re-)shaping data, data normalisation & databases</td>
         </tr>
         <tr class="even">
             <td style="font-weight:bold;">Lab</td>
@@ -246,7 +254,7 @@ These skills are **cumulative**, so practice what you learned each week and make
            <td rowspan=3></td>
            <td rowspan=3>🗓️ <a href="">Week 10</a></td>
            <td style="font-weight:bold;">Lecture</td>
-           <td>Data viz with the grammar of graphics</td>
+           <td>Unstructured data (text, audio & image)</td>
        </tr>
        <tr class="even">
            <td style="font-weight:bold;">Lab</td>
