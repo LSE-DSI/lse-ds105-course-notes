@@ -30,7 +30,7 @@ website:
       - href: index.qmd
         text: "🏠 Home"
       - href:  main/syllabus.qmd
-        text: "📓 Syllabus"
+        text: "📓 Syllabus (⚠️)"
       - href: main/communication.qmd
         text: "📟 Communication"
       - href: main/api_list.qmd
