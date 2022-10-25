@@ -151,89 +151,89 @@
     "href": "assessments/formative2.html#what-you-need-to-do",
     "title": "✍️ Formative Team Contract | W05-W07",
     "section": "What you need to do",
-    "text": "What you need to do\n\nBefore coming to the lab this Friday (28 October), go to #dataset-ideas-and-team-formation on Slack and pitch your idea of data source (either API or web scraping) for the final project. This will help you identify other people with similar interests. Take a look at 📃 List of APIs if you need suggestions.\nIf you identify an idea that you like, reach out to the person who posted and try to form teams.\nTeams should have three members 1\nIf you could not form or join a team before Friday, we will reserve some time during the lab for this. Have a look at Part 3 of W05 lab roadmap for more tips.\nAfter you form your teams, download the {DS105M} ✍️ Formative Team Contract | W05-W07.\nHave a look at what you will need to discuss as a group to fill out the team contract, decide when you want to talk about it.\nThe team contract must be submitted by 7 November 2022 23:59 UK time via Moodle by one team member."
+    "text": "What you need to do\n\nBefore coming to the lab this Friday (28 October), go to #dataset-ideas-and-team-formation on Slack and pitch your idea of data source (either API or web scraping) for the final project. This will help you identify other people with similar interests. Take a look at 📃 List of APIs if you need suggestions.\nIf you identify an idea that you like, reach out to the person who posted and try to form teams.\nTeams should have three members 1\nIf you could not form or join a team before Friday, we will reserve some time during the lab for this. Have a look at Part 3 of W05 lab roadmap for more tips.\nAfter you form your teams, download the {DS105M} ✍️ Formative Team Contract | W05-W07.\nHave a look at what you will need to discuss as a group to fill out the team contract, decide when you want to talk about it.\nThe team contract must be submitted by 9 November 2022 23:59 UK time via Moodle by one team member."
   },
   {
     "objectID": "assessments/summative1.html",
     "href": "assessments/summative1.html",
-    "title": "✍️ Summative W04-W05",
+    "title": "✍️ Summative Problem Set 01 | W04-W05",
     "section": "",
     "text": "Welcome to your first summative assessment for this course!\nWe hope you have enjoyed interacting with the cloud and are ready to put your skills to use. This summative will consist of 4 parts and will cover several areas of your cloud-related skills."
   },
   {
     "objectID": "assessments/summative1.html#p1-book-worms-20-points",
     "href": "assessments/summative1.html#p1-book-worms-20-points",
-    "title": "✍️ Summative W04-W05",
+    "title": "✍️ Summative Problem Set 01 | W04-W05",
     "section": "P1: Book worms (20 points)",
     "text": "P1: Book worms (20 points)\n🎯 ACTION POINTS\n\nOpen the bash shell on your local machine.\nCreate a .txt file called my_fav_book.txt.\nAdd the title and the author of your favourite book to the file in the following way:\nTitle: Aristotle\n\nAuthor: Politics\nCreate a folder on your cloud machine called summative_03 and copy that .txt file to that folder. The folder should be located in your home folder, that is: /home/<username>/summative_03.\n\n\n\n\n\n\n\n⚠️ Important\n\n\n\nMake sure you copy the file from your local machine to the cloud and not create an identical one straight on the cloud machine.\n\n\n\nUsing the cloud bash shell, print the content and the metadata of this file (refer to W02 lab and W03 lab for help).\nFinally, take a screenshot of the result of those commands running.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P1.png\n\nPlease, make sure that your username is visible in the screenshot."
   },
   {
     "objectID": "assessments/summative1.html#p2-run-the-code-in-the-cloud-30-points",
     "href": "assessments/summative1.html#p2-run-the-code-in-the-cloud-30-points",
-    "title": "✍️ Summative W04-W05",
+    "title": "✍️ Summative Problem Set 01 | W04-W05",
     "section": "P2: Run the code in the cloud (30 points)",
     "text": "P2: Run the code in the cloud (30 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nCreate a Python or an R script called script.py or script.R, respectively, in the folder you created earlier, called summative_03.\nThe script must do the following:\n\nPrint your AWS username (the one you were provided at the beginning of the course)\nPrint the current time (it is easy to search the web for ways to do that using R or Python)\nWait for 10 seconds (it is easy to search the web for ways to do that using R or Python)\nPrint the current time again\n\nRun the script and take a screenshot of the results of running it.\nRun the script again but this time make a tweak to your bash command that we discussed last week. The tweak should allow you to interact with your bash shell even while Python is running. To prove that it has worked, call an ls command while Python is waiting for 10 seconds in-between printing commands. Take a screenshot of the result of this code running.\nPrint the metadata of your file and take a screenshot of it.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P2.png"
   },
   {
     "objectID": "assessments/summative1.html#p3-its-time-to-search-50-points",
     "href": "assessments/summative1.html#p3-its-time-to-search-50-points",
-    "title": "✍️ Summative W04-W05",
+    "title": "✍️ Summative Problem Set 01 | W04-W05",
     "section": "P3: It’s time to search (50 points)",
     "text": "P3: It’s time to search (50 points)\n🎯 ACTION POINTS\n\nGo to your cloud machine.\nNavigate to the /home/admin/week_03 directory. You will see a lot of .md files there. One of them is yours.\nFind the file that was created for you.\n\n\n\n\n\n\n\n💡 Tip\n\n\n\nThis part is a bit tricky. What you need to do is to go through these files one by one and find the one that has your LSE ID in it.\nIf you have checked ALL files and still can’t find your LSE ID in any of them, let us know. Post a message to the #week04 channel (don’t post your LSE ID there) to inform us and we will confirm whether your LSE ID is there.\n\n\n\nCopy this file to the summative_03 folder on your user within the cloud machine.\nChange the permissions on this file for you to be able to edit it.\nEdit the file and answer the questions in it.\nPrint the content of the file and the file’s metadata. Take a screenshot of both.\nSave it as DS105M_2022_<replace_by_your_candidate_number>_S1_P3.png\n\nWe will also inspect the files in the cloud to ensure you actually saved the files and if it was done by yourself."
   },
   {
     "objectID": "assessments/summative1.html#p4-submit-no-points",
     "href": "assessments/summative1.html#p4-submit-no-points",
-    "title": "✍️ Summative W04-W05",
+    "title": "✍️ Summative Problem Set 01 | W04-W05",
     "section": "P4: Submit (no points)",
     "text": "P4: Submit (no points)\nUpload your screenshots to Moodle togther with the infromation required.\n\n\n\n\n\n\n💡 Tip\n\n\n\nIf any of these instructions are unclear, let us know by posting a message on #week04."
   },
   {
     "objectID": "assessments/summative2.html",
     "href": "assessments/summative2.html",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "",
-    "text": "Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible."
+    "text": "Welcome to the second summative assessment of this course!\nThis time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible."
   },
   {
     "objectID": "assessments/summative2.html#p0-only-for-you",
     "href": "assessments/summative2.html#p0-only-for-you",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P0: Only for you",
     "text": "P0: Only for you\nThis assignment has individual tasks for each student. You will find them on your cloud machine profile.\n🎯 ACTION POINTS\n\nGo to your cloud machine user.\nLocate the file called summative_04.txt and download it.\n\nThis file contains your unique assignment."
   },
   {
     "objectID": "assessments/summative2.html#p1-loving-food-3-points",
     "href": "assessments/summative2.html#p1-loving-food-3-points",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P1: Loving food (3 points)",
     "text": "P1: Loving food (3 points)\n🎯 ACTION POINTS\nThe unique instructions for this task are provided in summative_04.txt. Go to the file and follow the instructions for the first task."
   },
   {
     "objectID": "assessments/summative2.html#p2-keep-loving-food-5-points",
     "href": "assessments/summative2.html#p2-keep-loving-food-5-points",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P2: Keep loving food (5 points)",
     "text": "P2: Keep loving food (5 points)\n🎯 ACTION POINTS\n\nReplicate your previous task using Selenium.\nAdditionally, take the following steps using Selenium:\n\nGo to Recipe collections for whatever dish you were asked to search for in the previous task.\nChoose the first recipe collection, and scroll down to the button that says Load more.\nClick this button.\nGet to the last recipe that appeared after clicking this button.\nScrape all the information about this recipe. Structure and save it in a JSON format in the file called Selenium_collections.json.\n\nMake sure all the steps are shown in your code.\nSave the code in the file called food_Selenium (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
   },
   {
     "objectID": "assessments/summative2.html#p3-getting-the-news-5-points",
     "href": "assessments/summative2.html#p3-getting-the-news-5-points",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P3: Getting the news (5 points)",
     "text": "P3: Getting the news (5 points)\n🎯 ACTION POINTS\n\nRegister for the NYT Article Search API and acquire an API key.\nExplore the documentation of the API to complete further steps.\nExtract the titles of articles, their publishing dates and links to them following the instructions in summative_04.txt. Save everything in a JSON format in the file called NYT_articles.json.\n\nPlot the average size of the articles (measured in the number of words) for each month in your period.\nSave the code in the file called NYT_API_code (the extension of the file will depend on the language you use). Make sure you provide your code with comments."
   },
   {
     "objectID": "assessments/summative2.html#p4-simple-english-2-points",
     "href": "assessments/summative2.html#p4-simple-english-2-points",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P4: Simple English (2 points)",
     "text": "P4: Simple English (2 points)\n🎯 ACTION POINTS\n\nTake the first 20 articles that you have scrapped in the previous exercise.\nGo to this dictionary API and explore how to use it for the next tasks.\nUsing this API, create a JSON file containing the original 20 article titles and their phonetic representations. For instance, if the title is “Data Science” your JSON record should look like this:\n{\"Data Science\": \"ˈdaetə ˈsaɪəns\"}\nSave all the phonetic representations and the original titles in the file called NYT_phonetic.json."
   },
   {
     "objectID": "assessments/summative2.html#p5-upload-your-solutions",
     "href": "assessments/summative2.html#p5-upload-your-solutions",
-    "title": "✍️ Summative W05-W07",
+    "title": "✍️ Summative Problem Set 02 | W05-W07",
     "section": "P5: Upload your solutions",
     "text": "P5: Upload your solutions\n🎯 ACTION POINTS\n\nConnect to your user on the cloud machine.\nCreate a folder called summative04.\nUpload all the created files (your code and the scrapped data) to the folder."
   },
