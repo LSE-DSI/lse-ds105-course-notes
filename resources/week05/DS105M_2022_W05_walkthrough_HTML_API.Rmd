@@ -73,14 +73,13 @@ The rest of this notebook will be created in real time with your help. I want to
 
 We can cover things like:
 
-- **Basic data types:** integers, numbers, lists, vectors, arrays, packages
-- **Flow control:** if/else, while, for loops 
-- **Functions:** how do they work?
+-   **Basic data types:** integers, numbers, lists, vectors, arrays, packages
+-   **Flow control:** if/else, while, for loops
+-   **Functions:** how do they work?
 
 ## 🎯 ACTION POINT 03: Write some code
 
 Try to use the space in this notebook to revisit some code you wrote last week, or some other code piece you came across during your pre-sessional programming course. Since this is an interactive session, it is a great place to ask "How could I do X in python"? type of questions.
-
 
 ```{r}
 
