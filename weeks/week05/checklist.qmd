@@ -35,6 +35,7 @@ Here is a suggestion of how to plan your week:
 
 - 📝 **Pitch your ideas of datasets**: we expect all students to pitch their ideas of APIs or web scraping on the `#dataset-ideas-and-team-formation` channel on Slack before attending the lab. 
 
+
     - You don't have to commit to anything just yet for your final project, you will have until the first presentation, on Week 08, to show us your initial work with real data.
 
     - If you haven't seen it, check out the List of suggested APIs we compiled on our website. 
