@@ -76,7 +76,7 @@ website:
              - href: weeks/week04/checklist.qmd
                text: ✅ Checklist
          - href: weeks/week05.qmd
-           text: "Week 05"
+           text: "Week 05 (🆕)"
            contents:
              - href: weeks/week05/lecture.qmd
                text: 👨‍🏫 Lecture
