@@ -1,21 +1,24 @@
 ---
-title: "✍️ Summative W05-W07"
-date: 18 October 2022
-date-meta: 18 October 2022
+title: "✍️ Summative Problem Set 02 | W05-W07"
+date: 25 October 2022
+date-meta: 25 October 2022
 author: Anton Boichenko & Dr. Jon Cardoso-Silva
 ---
 
-Welcome to the second summative assessment of this course! This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 
+Welcome to the second summative assessment of this course! 
+
+This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 
 
 ### Things to know before you start:  
 
-1. You can find the **deadline** for this assignment on Moodle.
-2. You will be granted a maximum of 15 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
+1. **Deadline**: you have until **9 November 2022 23:59 UK time** to submit your solutions via  Moodle.
+2. You will be granted a maximum of 100 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
+3. This assessment is worth **15%** of your final grade.
 3. Read the instructions carefully and make sure you follow them.
 
 ## P0: Only for you 
 
-This assignment has individual tasks for each student. You will find them on your cloud machine profile. 
+This assignment has individual tasks for each student. You will find them on your cloud machine profile.
 
 🎯 **ACTION POINTS**
 
