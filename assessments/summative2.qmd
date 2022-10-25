@@ -10,7 +10,7 @@ Welcome to the second summative assessment of this course! This time you will co
 ### Things to know before you start:  
 
 1. You can find the **deadline** for this assignment on Moodle.
-2. You will be granted a maximum of 15 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
+2. You will be granted a maximum of 100 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
 3. Read the instructions carefully and make sure you follow them.
 
 ## P0: Only for you 
@@ -24,40 +24,28 @@ This assignment has individual tasks for each student. You will find them on you
 
 This file contains your unique assignment. 
 
-## P1: Loving food (3 points)
+## P1: Loving food (30 points)
+
+In this part you will be collecting data from the [BBC Good Food website](https://www.bbcgoodfood.com/). You will be collecting recipes of various dishes. 
 
 🎯 **ACTION POINTS**
 
-The unique instructions for this task are provided in `summative_04.txt`. Go to the file and follow the instructions for the first task. 
+1. Write the code that executes what is asked for in Task 1 in `summative_04.txt`. 
+2. Save the code in the file called `BBC_food_scrapping` (the extension of the file will depend on the language you use). Make sure you **provide your code with comments**.  
 
-## P2: Keep loving food (5 points)
+The instructions on how to submit your code and data are provided in **P4: Upload your solutions** below. 
 
-🎯 **ACTION POINTS**
-
-1. Replicate your previous task using Selenium.
-2. Additionally, take the following steps **using Selenium**:
-
-    1. Go to **Recipe collections** for whatever dish you were asked to search for in the previous task.
-    2. Choose the first recipe collection, and scroll down to the button that says **Load more**.
-    3. Click this button.
-    4. Get to the last recipe that appeared after clicking this button. 
-    5. Scrape all the information about this recipe. Structure and save it in a JSON format in the file called `Selenium_collections.json`. 
-
-    Make sure all the steps are shown in your code. 
-
-3. Save the code in the file called `food_Selenium` (the extension of the file will depend on the language you use). Make sure you provide your code with comments. 
-
-## P3: Getting the news (5 points)
+## P2: Getting the news (50 points)
 
 🎯 **ACTION POINTS**
 
 1. Register for the [NYT Article Search API](https://developer.nytimes.com/docs/articlesearch-product/1/overview) and acquire an API key.
 2. Explore the documentation of the API to complete further steps.
-3. Extract the **titles** of articles, their **publishing dates** and **links** to them following the instructions in `summative_04.txt`. Save everything in a JSON format in the file called `NYT_articles.json`.  
+3. Extract the **titles** of articles, their **publishing dates** and **links** to them following the instructions in `summative_04.txt`.   
 4. Plot the average size of the articles (measured in the number of words) for each month in your period. 
-5. Save the code in the file called `NYT_API_code` (the extension of the file will depend on the language you use). Make sure you provide your code with comments. 
+5. Save the code in the file called `NYT_API_collection` (the extension of the file will depend on the language you use). Make sure you provide your code with comments. 
 
-## P4: Simple English (2 points)
+## P3: Simple English (20 points)
 
 🎯 **ACTION POINTS**
 
@@ -71,10 +59,10 @@ The unique instructions for this task are provided in `summative_04.txt`. Go to 
 
 4. Save all the phonetic representations and the original titles in the file called `NYT_phonetic.json`.
 
-## P5: Upload your solutions 
+## P4: Upload your solutions 
 
 🎯 **ACTION POINTS**
 
 1. Connect to your user on the cloud machine.
-2. Create a folder called `summative04`.
-3. Upload all the created files (your code and the scrapped data) to the folder.
+2. Create a folder called `summative04` **on your user**.
+3. Upload all the created files (**both** ayour code and the scrapped data) to the folder.
