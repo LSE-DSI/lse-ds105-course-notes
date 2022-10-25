@@ -84,3 +84,283 @@ Try to use the space in this notebook to revisit some code you wrote last week, 
 ```{r}
 
 ```
+
+------------------------------------------------------------------------
+
+# Data Frames
+
+You will find data frames in every major programming language associated with data science: python, R, Julia.
+
+A data frame is a **rectangular data format** and it looks like what you see on *a single tab* of a spreadsheet. The reason data scientists use data frames and not spreadsheets is because it is more efficient to conduct and automate analysis by working with dataframes than by clicking on a graphical user interface (MS Excel is not the easiest!).
+
+## 🎯 ACTION POINT 04: Installing packages
+
+**R**
+
+Base R, on the other hand, already supports dataframe. You don't need to install anything to use it BUT it's typically a good idea to work with [tidyverse](https://www.tidyverse.org/), a set of packages that **enhances** the power of regular R dataframes.
+
+To install tidyverse, open the R console and type:
+
+```{r}
+install.packages("tidyverse")
+```
+
+**Python**
+
+Python does not have built-in support for dataframes, we need to install a package called `pandas` to work with this datatype.
+
+To install it, you can open a new terminal (`File -> New Terminal`) and use `pip`:
+
+``` shell
+pip install pandas
+```
+
+Pro-tip: create a new code cell below and type `!pip install pandas` directly on this notebook!
+
+## Load package
+
+**R version**
+
+You don't need to do anything at this moment, because data.frame is already part of base R.
+
+If you want to learn how to use `tidyverse`, then you need to import it:
+
+```{r}
+library(tidyverse)
+```
+
+**Python version**
+
+After installing the package, you still have to **import it** before you can use it.
+
+In python, we normally import pandas like this:
+
+``` python
+import pandas as pd
+```
+
+> *⚠️ If you didn't have pandas installed, you will probably have to restart your python session (the kernel) before being able to import pandas. Raise your hand in class if you cannot get pandas to work. If after reloading, it still does not work, then it's likely that pandas wasn't installed correctly.*
+
+## The shape of a dataframe
+
+Let me show you what a dataframe looks like. Don't pay too much attention to the code below, the point here is just to observe the **format** of the data:
+
+```{r}
+df <- data.frame(column_one=c(1.0, 2.0, 3.0, 4.0),
+                 column_two=c(2, 4, 6, 8),
+                 column_three=c("first name", "second name", "third name", "fourth name"),
+                 row.names=c("a", "b", "c", "d"))
+df
+```
+
+**Python version**
+
+If using python, you can create a new code cell and type:
+
+``` python
+df = pd.DataFrame({"column_one"  : [1.0, 2.0, 3.0, 4.0],
+                   "column_two"  : [2, 4, 6, 8],
+                   "column_three": ["first name", "second name", "third name", "fourth name"]},
+                  index=["a", "b", "c", "d"])
+
+df
+```
+
+to see:
+
+``` python
+    column_one  column_two  column_three
+a   1.0 2   first name
+b   2.0 4   second name
+c   3.0 6   third name
+d   4.0 8   fourth name
+```
+
+## Data types
+
+What are the types of each column?
+
+```{r}
+str(df)
+```
+
+**Python version**
+
+Type:
+
+```python
+df.dtypes
+```
+
+to see the output:
+
+```python
+column_one      float64
+column_two        int64
+column_three     object
+dtype: object
+```
+
+## 🎯 ACTION POINT 05: A little challenge to yourself
+
+Try to use the code above and create a new data frame with the same content as the one before, only this time add a new column called `column_four` of the type `boolean` (`logical`). This column should be equals to `True` if the content of `column_one` **and** `column_two` represent even numbers.
+
+# How to access the values in a column by its name
+
+```{r}
+df$column_one
+```
+
+**Python version**
+
+There are multiple ways:
+
+```python
+df.column_one
+```
+
+or 
+
+```python
+df["column_one"]
+```
+
+
+# How to access the n-th column?
+
+**R version**
+
+- ⚠️ Pay attention to the comma (`,`)
+- ⚠️ The empty space before the comma has the same meaning as the colon in python, it means "return all rows" in this case
+- ⚠️ Different to Python, indices in R start with number `1`. The first element in a vector `a` is accessed with `a[1]`.
+    - If you use `a[2]`, you will get the second element.
+    
+```{r}
+df[, 2]
+```
+
+
+**Python version**
+
+You will have to use the `iloc` (integer-based indexing).
+
+- ⚠️ Pay attention to the comma (`,`)
+- ⚠️ Yes, you need that colon (`:`), it just means "return all rows" in this case
+- ⚠️ Remember that Python is zero-indexed. The first element in a vector `a` is accessed with `a[0]`. 
+    - If you use `a[1]`, you will get the second element. This applies to all indices in python
+    
+```python
+df.iloc[:,1] # to get the second column
+```
+
+and you should see:
+
+```python
+a    2
+b    4
+c    6
+d    8
+Name: column_two, dtype: int64
+```
+
+Read more about iloc [here](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html) 
+
+
+# How to access the n-th row?
+
+
+**R version**
+
+Almost the same syntax. The only change is that we pass the index before the comma.
+
+- ⚠️ Pay attention to the comma (`,`)
+- ⚠️ The empty space **after** the comma has the same meaning as the colon in python, it means "return all columns" in this case
+- ⚠️ Different to Python, indices in R start with number `1`. The first element in a vector `a` is accessed with `a[1]`.
+    - If you use `a[2]`, you will get the second element.
+
+```{r}
+df[2, ]
+```
+
+(prettier/more organised than Python I think!)
+
+**Python version**
+
+Almost the same syntax, using `iloc`. The only change is that we pass the index before the comma.
+
+- ⚠️ Pay attention to the comma (`,`)
+- ⚠️ Yes, you need that colon (`:`), it just means "return all columns" in this case
+- ⚠️ Remember that Python is zero-indexed. The first element in a vector `a` is accessed with `a[0]`. 
+    - If you use `a[1]`, you will get the second element. This applies to all indices in python
+    
+    
+The command:
+
+```python
+df.iloc[1,:] # to get the second row
+```
+
+will produce:
+
+
+```python
+column_one              2.0
+column_two                4
+column_three    second name
+Name: b, dtype: object
+```
+
+# How many rows and columns are there in my dataframe?
+
+**R version**
+
+```{r}
+dim(df)
+```
+
+**Python version**
+
+```python
+df.shape
+```
+
+will produce:
+
+```python
+(4, 3)
+```
+
+# Now let's load some real data
+
+You can try to replicate this later at home.
+
+I went to the [On Street Crime In Camden dataset](https://opendata.camden.gov.uk/Crime-and-Criminal-Justice/On-Street-Crime-In-Camden-Map/893b-tp33) and downloaded it as a CSV file (menu Export) and saved it in my local current directory.
+
+## Read the data
+
+```{r}
+df_street_crime <- read.csv("./On_Street_Crime_In_Camden_Map.csv")
+```
+
+**Python version**
+
+```python
+df_street_crime = pd.read_csv("./On_Street_Crime_In_Camden_Map.csv")
+```
+
+## Explore dimensions and column names
+
+```{r}
+dim(df_street_crime)
+```
+
+
+```{r}
+colnames(df_street_crime)
+```
+
+## Explore data types
+
+```{r}
+str(df_street_crime)
+```
