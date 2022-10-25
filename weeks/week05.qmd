@@ -1,7 +1,7 @@
 ---
 title: "🗓️ Week 05 - Notebooks + data frames"
-date: 24 October 2022
-date-meta: 24 October 2022
+date: 25 October 2022
+date-meta: 25 October 2022
 ---
 
 We understand many of you are just learning how to program, so I will add a recap of basic programming concepts to my lecture this week. 
