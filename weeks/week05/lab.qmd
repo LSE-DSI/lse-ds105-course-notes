@@ -1,7 +1,7 @@
 ---
 title: "💻 Week 05 - Lab Roadmap (90 min)"
-date: 16 September 2022
-date-meta: 16 September 2022
+date: 28 October 2022
+date-meta: 28 October 2022
 author: Anton Boichenko
 ---
 
@@ -13,7 +13,7 @@ In the first part of the lab, we will acquire data from a Ticketmaster API. Afte
 
 ## Part 1: Buying tickets 
 
-After last week you might think "Well, yeah, it is useful for my academic endeavours, but not for my day-to-day life.". Let us show you how you can solve your problems with it!
+After last week you might think "Well, yeah, this is useful for my academic endeavours, but not for my day-to-day life..." Let us show you how you can use these skills to solve your problems!
 
 It turns out that [TicketMaster](https://www.ticketmaster.com/) (one of the biggest websites that sells tickets) has its own API. It means that you can automate your ticket search if you wanted to! Let's explore this together. 
 
@@ -24,22 +24,24 @@ In the same way as before we will first complete some tasks together to understa
 🤝 **WORKING TOGETHER**
 
 1. Go to [https://developer.ticketmaster.com/](https://developer.ticketmaster.com/) and register an account. You will only need an email address. 
-2. Acquire an API token using your new account. It will be called a **Consumer Key** in your apps' information.
+2. Acquire an API token using your new account. It will be called a **Consumer Key** [^1] in your apps' information.
 3. Make an API call to get all the venues in New York. 
+
+[^1]: This is related to the concepts of SSH keys we talked about in [Week 03](/slides/week03_slides_part1.html#/ssh).
 
 And now, it's time to get tickets!
 
 🎯 **ACTION POINTS** 
 
 1. Using the [documentation](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#search-events-v2) find all the music events happening in London.    
-    How many events have you found?  
-    Do you think it's all the events happening in London?   
-    Is there a way to show more events?  
+    - How many events have you found?  
+    - Do you think you got all the events happening in London?   
+    - Is there a way to show more events?  
 2. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
 
 🏆 **OPTIONAL TASKS**
 
-3. What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
+3. What if you wanted an event that you can get to for less than £30? Can you find one for yourself?
 4. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
 5. What about family-friendly events in London? Are there any?
 
@@ -235,7 +237,7 @@ response <- GET(base_url, query = list(
 <details><summary> Part 2: Let's make it a table (25 min)</summary>
 ## Part 2: Let's make it a table
 
-Using an API usually implies working with JSON responses. However, sometimes it becomes a bit tricky to use JSON formats. We are very used to tables, so let's convert this response to one. 
+Using an API usually implies working with **JSON responses**. However, sometimes it becomes a bit tricky to use JSON formats. We are very used to tables, so let's convert this response to one. 
 
 🤝 **WORKING TOGETHER**
 
@@ -266,6 +268,32 @@ Now, it's time for you to work independently. We haven't taught you the majority
 <details><summary> Part 3: Avengers, assemble (15 min)</summary>
 ## Part 3: Avengers, assemble
 
-This course implies working on a group project. You will be working in groups of 2-3 people. During this time we allocate some time for you to find your groupmates. Feel free to do it now! 
+This course implies working on a group project. You will be working in groups of 3 people [^2]. During this time we allocate some time for you to find your groupmates. Let's do this now! 
+
+🎯 **ACTION POINTS** 
+
+
+<details><summary>I have already formed a team</summary>
+<br/>
+
+- Great! You can start thinking of the next steps
+- Go to Moodle and download the [{DS105M} ✍️ Formative Team Contract | W05-W07](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307). This forms the basis of your project, and we will refer to it on the first group presentation on Week 08.
+- Have a look at what you will need to discuss as a group to fill out the team contract, decide when you want to talk about it or, if you already have the answers, start filling out the contract.
+- The team contract must be submitted by **7 November 2022 23:59 UK time** via Moodle by one team member. 
+
+</details> 
+
+<details><summary>I have not formed a team</summary>
+<br/>
+
+- Take a look at the ideas others from the class group as you have posted on the `#dataset-ideas-and-team-formation` channel on Slack. Do you spot any ideas that sound like a good match to your interests? Reach out to the people who posted it and try to form a team.
+- If you are unable to form a group, ask your class teacher for help. He might ask you to pitch your ideas to other peers who also do not have a group. 
+- Go to Moodle and download the [{DS105M} ✍️ Formative Team Contract | W05-W07](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307). This forms the basis of your project, and we will refer to it on the first group presentation on Week 08.
+- Have a look at what you will need to discuss as a group to fill out the team contract, decide when you want to talk about it.
+- The team contract must be submitted by **7 November 2022 23:59 UK time** via Moodle by one team member. 
+
+</details> 
 
 </details>
+
+[^2]: If necessary, we will try to be flexible and accommodate groups of 2, or 4 people. But ideally, all groups should have 3 members and there shouldn't be more than 4 teams per class group. Otherwise, you will not have much feedback time during presentations (Weeks 08 & 11).
