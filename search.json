@@ -296,14 +296,14 @@
   {
     "objectID": "weeks/week05.html",
     "href": "weeks/week05.html",
-    "title": "🗓️ Week 05 - Data types & data frames.",
+    "title": "🗓️ Week 05 - Notebooks + data frames",
     "section": "",
-    "text": "We understand many of you are just learning how to program, so I will add a recap of basic programming concepts to my lecture this week.\nIn the first part of the lecture, I will show the basic data types (numbers, strings, vectors, matrices, lists, etc.) and a bit about functions. Then, on the second part, I will tell you about data frames — the ubiquitous data structure that permeates everything in data science regardless of the programming language.\nIn the labs, Anton will help you get data out of APIs and he will show you how data frames can be used to represent the data you received from your requests to an API."
+    "text": "We understand many of you are just learning how to program, so I will add a recap of basic programming concepts to my lecture this week.\nIn the first part of the lecture, I will show you how to setup and create a computional notebook, and we will use notebooks to recap basic concepts of programming, such as data types (numbers, strings, vectors, matrices, lists, etc.), a bit about functions, flow control and whatever other questions you might have.\nThen, on the second part, I will tell you about data frames — the ubiquitous data structure that permeates everything in data science regardless of the programming language.\nIn the labs, Anton will help you get data out of APIs and he will show you how data frames can be used to represent the data you received from your requests to an API."
   },
   {
     "objectID": "weeks/week05.html#links",
     "href": "weeks/week05.html#links",
-    "title": "🗓️ Week 05 - Data types & data frames.",
+    "title": "🗓️ Week 05 - Notebooks + data frames",
     "section": "Links",
     "text": "Links\n\n✅ Week 05 Checklist\n✍️ Second Summative W05-W07 🔜 (come back later today for more information)\n✍️ Formative Team Contract | W05-W07 🆕\n👨‍🏫 Lecture\n💻 Lab roadmap"
   },
