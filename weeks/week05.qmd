@@ -1,12 +1,21 @@
 ---
-title: "🗓️ Week 05 - Data types & data frames."
+title: "🗓️ Week 05 - Notebooks + data frames"
 date: 24 October 2022
 date-meta: 24 October 2022
 ---
 
 We understand many of you are just learning how to program, so I will add a recap of basic programming concepts to my lecture this week. 
 
-In the first part of the lecture, I will show the basic data types (numbers, strings, vectors, matrices, lists, etc.) and a bit about functions. Then, on the second part, I will tell you about **data frames** — the ubiquitous data structure that permeates everything in data science regardless of the programming language.
+In the first part of the lecture, I will show you how to setup and create a **computional notebook**, and we will use notebooks to recap basic concepts of programming, such as data types (numbers, strings, vectors, matrices, lists, etc.), a bit about functions, flow control and whatever other questions you might have. 
+
+::: {.callout-tip collapse="false"}
+## How to come prepared
+
+- If you are a python user, try to have [Python](https://www.python.org/downloads/) and [JupyterLab](https://jupyter.org/install) installed in your computer before the lecture today (If you are a Windows user, you can choose to install these via Windows or in the Ubuntu Terminal)
+- If you are an R user, try to have [R](https://www.r-project.org/) and [RStudio IDE](https://www.rstudio.com/products/rstudio/download/) installed in your computer before the lecture today.
+:::
+
+Then, on the second part, I will tell you about **data frames** — the ubiquitous data structure that permeates everything in data science regardless of the programming language.
 
 In the <strong>labs</strong>, Anton will help you get data out of APIs and he will show you how data frames can be used to represent the data you received from your requests to an API.
 

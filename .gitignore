@@ -19,3 +19,4 @@ _book
 /_output/
 /_site/
 /site_libs/
+.Rproj.user

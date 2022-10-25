@@ -15,6 +15,9 @@ I will take some time to show some the basic data types (numbers, strings, vecto
     - What did you find most difficult to follow during the lab last week?
     - What are the programming concepts you learned about in the pre-sessional courses that you still don't understand? 
 
+
+
+
 ## ☕ Coffee Break (10 min)
 
 Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.

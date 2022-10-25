@@ -1,0 +1,86 @@
+---
+title: "[DS105M](https://lse-dsi.github.io/lse-ds105-course-notes/) | **Week 05: Data types & data frames**"
+subtitle: "**LSE DATA SCIENCE INSTITUTE**"
+output: html_notebook
+---
+
+------------------------------------------------------------------------
+
+🎯 **OBJECTIVE:** Recap of essential concepts of programming & Introduction of the data frame
+
+👨‍💻 **AUTHOR:** [\@jonjoncardoso](https://github.com/jonjoncardoso)
+
+📅 **LAST UPDATED:** 25 October 2022
+
+------------------------------------------------------------------------
+
+📚 Useful (?) resources:
+
+-   Search for emojis on [emojipedia](https://emojipedia.org/)
+-   Take a look at this [markdown guide](https://www.markdownguide.org/)
+-   **Python user?** Take some time later in the week to follow this [Pandas tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
+-   **R user?** Have a look at [this RMarkdown tutorial](https://r4ds.had.co.nz/r-markdown.html), also check [this tutorial](https://r4ds.had.co.nz/workflow-basics.html) of the same book
+
+------------------------------------------------------------------------
+
+# Setup
+
+If you want to get the most out of this session: install [Python](https://www.python.org/downloads/) and [Jupyter Lab](https://jupyter.org/install) in your computer before coming to the lecture.
+
+Or, if you are learning R, ensure you have [R](https://www.r-project.org/) and the [RStudio IDE](https://www.rstudio.com/products/rstudio/download/) installed. The main content is on Jupyter but I will switch to RStudio here and there to show you how to do the same things.
+
+Last week, I demonstrated how to do web scraping and API requests using a **notebook**. I opened it on Google Collab website, and some of you were able to follow along. But let's understand what is a computational notebook.
+
+# What is a Computational Notebook?
+
+A computational notebook is a mix of **Markdown** (text) and **code** that lets you interact, document and share your analysis with others.
+
+Why don't you give it a try?
+
+## 🎯 ACTION POINT1 01: Setup (15-20 min)
+
+-   **Python users:** Let's open [Jupyter Lab](https://jupyter.org/install) together and learn how to create a new notebook
+
+    -   Launch your favorite terminal and install Jupyter Lab with `pip install jupyterlab`
+
+    -   Create a new directory in your computer and call it something like `DS105M/week05`
+
+    -   `cd` to this directory and launch Jupyter with the command: `jupyter lab .`
+
+    -   Create a new notebook by clicking on `File -> New -> Notebook`
+
+-   **R users:** Let's open [RStudio IDE](https://www.rstudio.com/products/rstudio/download/) together and learn how to create a new R Notebook (or R Markdown file)
+
+    -   Launch RStudio
+
+    -   Go to `File -> New project -> New directory` and create a new project called something like `DS105M/week05`
+
+    -   Create a new notebook by clicking on `File -> New File -> R Notebook`
+
+## 🎯 ACTION POINT 02: Write Markdown and Code (10 min)
+
+Create a new code cell. Follow the instructions by your lecturer.
+
+In R, this will look like this:
+
+```{r}
+1 + 2
+```
+
+# Programming Recap
+
+The rest of this notebook will be created in real time with your help. I want to know what are your main struggles with programming.
+
+We can cover things like:
+
+-   **Basic data types:** integers, numbers, lists, vectors, arrays, packages
+-   **Flow control:** if/else, while, for loops
+-   **Functions:** how do they work?
+
+## 🎯 ACTION POINT 03: Write some code
+
+Try to use the space in this notebook to revisit some code you wrote last week, or some other code piece you came across during your pre-sessional programming course. Since this is an interactive session, it is a great place to ask "How could I do X in python"? type of questions.
+
+```{r}
+
+```
