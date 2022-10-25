@@ -36,9 +36,12 @@ And now, it's time to get tickets!
     Do you think it's all the events happening in London?   
     Is there a way to show more events?  
 2. Let's make our search a bit more narrow. Let's imagine you are coming back from holidays on the 15th of October. Can you find Rock music events in London that are happening after that date? 
-    What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
-3. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
-4. What about family-friendly events in London? Are there any?
+
+🏆 **OPTIONAL TASKS**
+
+3. What if you wanted an event that you can get to for less than 30 pounds? Can you find one for yourself?
+4. Go ahead and try to find London events related to data and data science. Are there any? Extend your search and try again.
+5. What about family-friendly events in London? Are there any?
 
 
 ### Solution Code
@@ -47,7 +50,7 @@ And now, it's time to get tickets!
 
 All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
 
-**Task 3**
+**Task 1**
 
 ```python
 # import the required libraries
@@ -75,7 +78,7 @@ resp_json["_embedded"]["events"]
 
 Next, we will be only providing the query parameters.
 
-**Task 3 (extending search)**
+**Task 1 (extending search)**
 
 ```python
 # setting up the API query parameters (they will be changing)
@@ -87,7 +90,7 @@ params = {"classificationName": "music",
           "apikey": api_key}
 ```
 
-**Task 4**
+**Task 2 and 3**
 
 ```python
 # setting up the API query parameters (they will be changing)
@@ -103,7 +106,7 @@ params = {"classificationName": "music",
 
 This API does not have a price parameter, so you would need to filter the JSON manually. 
 
-**Task 5**
+**Task 4**
 
 ```python
 # setting up the API query parameters (they will be changing)
@@ -122,7 +125,7 @@ params = {"keyword":"data",
           "apikey": api_key}
 ```
 
-**Task 6**
+**Task 5**
 
 ```python
 # setting up the API query parameters (they will be changing)
@@ -140,7 +143,7 @@ params = {"countryCode": "GB",
 
 All the tasks above are solved with the same API URL. Here we will show the base code and mainly the parameters that yield the desired results. 
 
-**Task 3**
+**Task 1**
 
 ```R
 # importing required packages
@@ -164,7 +167,7 @@ json <- content(response, "parsed")
 ```
 Next, we will be only providing the query parameters.
 
-**Task 3 (extending search)**
+**Task 1 (extending search)**
 
 ```R
 # sending a request
@@ -176,7 +179,7 @@ response <- GET(base_url, query = list("classificationName" = "music",
           "apikey" = api_key))
 ```
 
-**Task 4**
+**Task 2 and 3**
 
 ```R
 # sending a request
@@ -192,7 +195,7 @@ response <- GET(base_url, query = list("classificationName" = "music",
 
 This API does not have a price parameter, so you would need to filter the JSON manually. 
 
-**Task 5**
+**Task 4**
 
 ```R
 # sending a request
@@ -213,7 +216,7 @@ response <- GET(base_url, query = list(
           "apikey" = api_key))
 ```
 
-**Task 6**
+**Task 5**
 
 ```R
 # sending a request
