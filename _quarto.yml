@@ -25,12 +25,11 @@ website:
   favicon: "/figures/logos/LSE Data Science Institute.png"
   sidebar:
     style: "docked"
-    collapse-level: 1
     contents:
       - href: index.qmd
         text: "🏠 Home"
       - href:  main/syllabus.qmd
-        text: "📓 Syllabus (⚠️)"
+        text: "📓 Syllabus"
       - href: main/communication.qmd
         text: "📟 Communication"
       - href: main/api_list.qmd

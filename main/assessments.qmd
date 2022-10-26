@@ -12,7 +12,7 @@ Click on the assignments below to go to the Moodle page and submit your response
 - **✍️ Formative &nbsp;&nbsp;Problem Set (01) | W02-W03**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1123148&forceview=1) & associated [webpage](/assessments/formative1.qmd) with  instructions.
 - **✍️ Summative Problem Set (01) | W04-W05**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1127337) & associated [webpage](/assessments/summative1.qmd) with instructions.
 - **✍️ Formative Team Contract 🆕 | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307) & associated [webpage](/assessments/formative2.qmd) with instructions.
-- **✍️ Summative Problem Set (02) | W05-W07**: 🔜 (come back later today for more information)
+- **✍️ Summative Problem Set (02) 🆕 | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993) & associated [webpage](/assessments/summative2.qmd) with instructions.
 
 
 This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:

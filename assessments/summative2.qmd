@@ -11,7 +11,7 @@ This time you will continue exploring the world of web-scraping. We hope you wil
 
 ### Things to know before you start:  
 
-1. **Deadline**: you have until **9 November 2022, 23:59 UK time** to submit your solutions via  Moodle.
+1. **Deadline**: you have until **9 November 2022, 23:59 UK time** to complete your solutions and share the single screenshot [via Moodle](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993).
 2. You will be granted a maximum of 100 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
 3. This assessment is worth **15%** of your final grade.
 3. Read the instructions carefully and make sure you follow them.
@@ -26,6 +26,18 @@ This assignment has individual tasks for each student. You will find them on you
 2. Locate the file called `summative_04.txt` and download it.
 
 This file contains your unique assignment. 
+
+::: {.callout-tip collapse="false"}
+
+- You do not need to write or test your scripts on the cloud. 
+
+- In fact, we recommend you access the cloud only to get your custom assignment and to submit your responses later. It will make your life easier.
+
+- Try prototyping your solutions by using a [computational notebook](/weeks/week05/lecture.qmd) such as Jupyter Notebook, R Notebooks or Google Colab. It is easier to work with code that way, and you can add pieces of text to remind _yourself_ what each part of your code does.
+
+- Take a look at [🔖 Week 05 - Appendix](/weeks/week05/appendix.html) for util links
+
+:::
 
 ## P1: Loving food (30 points)
 
@@ -69,3 +81,26 @@ The instructions on submitting your code and data are provided in **P4: Upload y
 1. Connect to your user on the cloud machine.
 2. Create a folder called `summative04` **on your user**.
 3. Upload all the created files (**both** your code and the scrapped data) to the folder.
+4. On the terminal, go to `summative04` and type `ls -lth`. Take a screenshot of the terminal and post it to Moodle. <br/> **If you do not complete this stage, we will not mark your assessment.**
+
+::: {.callout-important collapse="false"}
+## How to get help?
+
+- It is okay to team up with your group/class colleagues to work on the problems together.
+- It is ok to use Slack to share links to useful content
+    - Share things like "Tip: I had to convert a JSON file to a dataframe and I used [this code](https://stackoverflow.com/a/74199232/843365)"
+- It is also ok to ask generic programming-related questions publicly on Slack. For example, you can ask questions like:
+    - "How do I write a loop to convert a list of text to numbers? (R)" or 
+    - "Does anyone know how to take just the first 20 items on a list ? (Python)" or 
+    - "How do I do ... in Jupyter Notebooks?"
+    - "Can I do ... in Python without installing any other package?"
+    - "I am having trouble authenticating with the API. When I write 
+
+        ```this small piece of code```
+        
+        it doesn't return anything. 
+        Anyone else had the same problem?"
+- What we cannot accept:
+    - sharing your entire script with others — but it is ok to share small pieces of code to ask for help, like the type of code people share on [Stackoverflow](https://stackoverflow.com/questions/tagged/python?tab=Frequent)
+    - asking others to do your work for you ([LSE regulations on plagiarism](https://www.lse.ac.uk/health-policy/student-life/plagiarism))
+:::
