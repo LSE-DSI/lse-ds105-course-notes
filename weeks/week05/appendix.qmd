@@ -1,0 +1,28 @@
+---
+title: "🔖 Week 05 - Appendix"
+date: 26 October 2022
+date-meta: 26 October 2022
+---
+
+
+# Follow-up from this week's session (w/ lots of tips an links):
+
+
+There's never enough time to do a proper recap! But I hope today's tips helped to elucidate some of the elusive concepts you encounter when reading/writing code. Let me know what you would like me to bring in the next lecture session. If you give me questions, there's room to tailor things in the lecture to help you with your projects. I will cover things like time series and data summaries (`mean`, `sums`, `median`) in Weeks 07 and 08.
+
+
+A few links and pointers:
+- **What data do you want to use for your projects?** Pitch your ideas on the `#dataset-ideas-and-team-formation` Slack channel before the labs on Friday
+- **How will we form teams for the final project?** Have a look at [this dedicated page on our website](https://lse-dsi.github.io/lse-ds105-course-notes/assessments/formative2.html). If anything is unclear, ask your questions on Slack.
+- **What will I need to produce for the final project?** I listed the detailed marking criteria [on our website](https://lse-dsi.github.io/lse-ds105-course-notes/main/assessments.html#projects-marking-criteria).
+- **Computers are always playing pranks on us:** if you couldn't get Jupyter up and running, write to this channel and I'll try to help you diagnose the problem. Some people got everything working only after installing [Anaconda](https://www.anaconda.com/products/distribution). Give it a go if you are getting the weirdest of errors.
+- **Data types:** here is a link to read more about [Python data types](https://www.geeksforgeeks.org/python-data-types/) & of [R data types](https://www.geeksforgeeks.org/datatypes-in-r-language/).
+- **Notebooks:** Use some quiet time to read the text I left in the notebook!
+- **Markdown:** notebooks are a mix of markdown (text) and code. Take a look at some formatting tips for text: [[1](https://lse-dsi-ds105.slack.com/archives/C042U1NL17S/p1666712879658199)] [[2](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)] [[3](https://bookdown.org/yihui/rmarkdown-cookbook/)]
+- **Data frames:** Python users can follow this [10-minutes pandas tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html) & R users can read [Chapter 5 of R for Data Science](https://r4ds.had.co.nz/workflow-basics.html)
+- **Keep on practicing!** No, honestly, I mean it, keep on writing code. Most of these things will only start making sense when you interact with data yourself. Now is a good time to explore data. How, you ask?
+    - Find a way to get some data and explore it. At this stage, it could be a simple CSV or Excel file
+    - OR, you could try to work with the crime data listed at the bottom of the notebook we used today (link to it [here](https://moodle.lse.ac.uk/mod/folder/view.php?id=1130555)). I will use this dataset again in other sessions, for continuity.
+- **Next Summative Problem Set** we will probably only release the new problem set (worth 15% of your final grade) tomorrow. Deadline is 9 Nov.
+
+I will come back with new tips and long lists again at the end of the week.

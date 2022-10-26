@@ -84,6 +84,8 @@ website:
                text: 💻 Lab roadmap
              - href: weeks/week05/checklist.qmd
                text: ✅ Checklist
+             - href: weeks/week05/appendix.qmd
+               text: 🔖 Appendix
   navbar:
     background: primary
   page-footer:
