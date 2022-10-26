@@ -305,7 +305,7 @@
     "href": "weeks/week05.html#links",
     "title": "🗓️ Week 05 - Notebooks + data frames",
     "section": "Links",
-    "text": "Links\n\n✅ Week 05 Checklist\n✍️ Second Summative W05-W07 🔜 (come back later today for more information)\n✍️ Formative Team Contract | W05-W07 🆕\n👨‍🏫 Lecture\n💻 Lab roadmap"
+    "text": "Links\n\n✅ Week 05 Checklist\n✍️ Second Summative W05-W07 🔜 (come back later today for more information)\n✍️ Formative Team Contract | W05-W07 🆕\n👨‍🏫 Lecture\n💻 Lab roadmap\n🔖 Week 05 - Appendix"
   },
   {
     "objectID": "weeks/week01/appendix.html",
@@ -593,6 +593,13 @@
     "title": "👨‍🏫 Week 04 - Slides",
     "section": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)",
     "text": "🖥️ Part II - Demo: Web scraping + APIs (45-50 min)\n\nClick here to download the Jupyter Notebook I will be using during the lecture to run the code demonstrations.\nOpen Google Colab and sign in with your Google account\nClick on File then Upload notebook to upload the notebook you download\nFollow the tutorial"
+  },
+  {
+    "objectID": "weeks/week05/appendix.html",
+    "href": "weeks/week05/appendix.html",
+    "title": "🔖 Week 05 - Appendix",
+    "section": "",
+    "text": "There’s never enough time to do a proper recap! But I hope today’s tips helped to elucidate some of the elusive concepts you encounter when reading/writing code. Let me know what you would like me to bring in the next lecture session. If you give me questions, there’s room to tailor things in the lecture to help you with your projects. I will cover things like time series and data summaries (mean, sums, median) in Weeks 07 and 08.\nA few links and pointers: - What data do you want to use for your projects? Pitch your ideas on the #dataset-ideas-and-team-formation Slack channel before the labs on Friday - How will we form teams for the final project? Have a look at this dedicated page on our website. If anything is unclear, ask your questions on Slack. - What will I need to produce for the final project? I listed the detailed marking criteria on our website. - Computers are always playing pranks on us: if you couldn’t get Jupyter up and running, write to this channel and I’ll try to help you diagnose the problem. Some people got everything working only after installing Anaconda. Give it a go if you are getting the weirdest of errors. - Data types: here is a link to read more about Python data types & of R data types. - Notebooks: Use some quiet time to read the text I left in the notebook! - Markdown: notebooks are a mix of markdown (text) and code. Take a look at some formatting tips for text: [1] [2] [3] - Data frames: Python users can follow this 10-minutes pandas tutorial & R users can read Chapter 5 of R for Data Science - Keep on practicing! No, honestly, I mean it, keep on writing code. Most of these things will only start making sense when you interact with data yourself. Now is a good time to explore data. How, you ask? - Find a way to get some data and explore it. At this stage, it could be a simple CSV or Excel file - OR, you could try to work with the crime data listed at the bottom of the notebook we used today (link to it here). I will use this dataset again in other sessions, for continuity. - Next Summative Problem Set we will probably only release the new problem set (worth 15% of your final grade) tomorrow. Deadline is 9 Nov.\nI will come back with new tips and long lists again at the end of the week."
   },
   {
     "objectID": "weeks/week05/checklist.html",
