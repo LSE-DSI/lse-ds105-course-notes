@@ -37,7 +37,7 @@ _Some of these APIs might require that you register and create account with them
 
 - ![](/figures/logos/logo-tiktok-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Tiktok API](https://developers.tiktok.com/)
 
-- ![](/figures/logos/instagram-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Instagram API](https://developers.tiktok.com/)
+- ![](/figures/logos/instagram-svgrepo-com.svg){style="height:1em;vertical-align:text-bottom;"} [Instagram API](https://developers.facebook.com/docs/instagram-api/)
 
 [^1]: YouTube should be good fun to explore in a project!
 
