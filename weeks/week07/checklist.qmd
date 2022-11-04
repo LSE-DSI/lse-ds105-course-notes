@@ -1,0 +1,12 @@
+---
+title: "✅ Week 07 - Checklist"
+date: 02 November 2022
+date-meta: 02 November 2022
+---
+
+
+In order for us not to loose time during the labs we would ask you to do several things before you attend the seminars:
+
+- **Register on Github**. We will be exploring GitHub this week. It is one of the most important colaboraiton tools for developers and data scientists. Go [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) and create an account. 
+
+- **Install Visual Studio Code**. Visual Studio Code (or VS Code) is a widely used tool for working with code of all sorts (from C++ to HTML). We will need it to edit some files. Go [here](https://code.visualstudio.com/Download), download and install it. 

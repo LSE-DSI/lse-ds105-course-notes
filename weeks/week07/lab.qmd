@@ -1,0 +1,83 @@
+---
+title: "💻 Week 07 - Lab Roadmap (90 min)"
+date: 02 November 2022
+date-meta: 02 November 2022
+author: Anton Boichenko
+---
+
+During the last weeks, you have been exploring your computer and the Internet. You know now how to extract data from web pages and conduct robust data collection. Now, it's time to learn how to format your data science projects. 
+
+For projects to run smoothly they must be clear to the members of your team. Today we will be exploring tools that help us achieve that:
+
+1. GitHub 
+2. Markdown language 
+  
+In this lab, we will recreate a small project that would allow you to understand both of these tools. 
+
+<details><summary>Part 1: Welcome to GitHub (45 min)</summary>
+
+## Part 1: Welcome to GitHub
+<p></p>
+
+The first thing we will do is explore GitHub. GitHub is a collaborative tool for developers with an estimated number of users of [83 million](https://github.com/about). It allows developers to track changes in their code and collaborate in a straightforward and sustainable way. 
+
+When applying to jobs related to data science, you will most likely be asked about your GitHub skills. It is because they are crucial for data science teams. 
+
+Let's get ourselves to GitHub. 
+
+🤝 **WORKING TOGETHER**
+
+1. Register on [GitHub](https://github.com/) if you haven't done so yet. 
+2. Create your first repository (repo for short) and call it `DS-105-playground`. Make sure to make it **private** and add a `README` file. 
+3. Generate your personal token using [this instruction](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+4. Using `git clone` command in the prompt clone the whole repository folder to your Desktop. 
+    It will ask for your username and your password. Provide it with your username and your **token instead of your password**. 
+
+Now we have a copy of the GitHub repo on our machine. What we can do now is go ahead and change it. 
+
+🎯 **ACTION POINTS** 
+
+1. Use the prompt and navigate to the folder you have just cloned.
+2. Using `vim` or `nano` change the `README` file to have your name and the name of your program. 
+
+Let's add those changes to the file on GitHub. 
+
+🤝 **WORKING TOGETHER**
+
+1. `cd` to the folder of your GitHub repo on your local machine.
+2. Use `git add *` to add all the changes to the commit.
+3. Use `git commit -m "message"` to make a commit. Replace "message" with text that describes what you did in that repo.
+4. Use `git push` to push the changes to the GitHub repo. 
+5. Go to your GitHub repo page and check if the changes took place. 
+
+</details>
+
+
+<details><summary>Part 2: Let's make it prettier (45 min)</summary>
+
+## Part 2: Let's make it prettier
+
+We have added some information to the README file. However, we would usually want it to tell us quite a bit about the project we are doing. It should look pretty. For instance, [this](https://github.com/openai/whisper) repository by a big coding team contains a lot of information. 
+
+Let's try and make our `README` file as beautiful. `README` files on GitHub are written using Markdown language. It is a very simple language that you can implement straight away. Follow the steps to make your `README` beautiful. 
+
+🎯 **ACTION POINTS** 
+
+1. Download a code editor such as [VScode](https://code.visualstudio.com/download).
+2. Open the `README` file using the editor. 
+3. Explore the [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/). 
+4. Create the following in your `README` file:
+    - the first-level heading that says "Week 5 Lab"
+    - your name in **bold** and the name of your programme in *italics*
+    - the second level heading that says "A little about me"
+
+Now it's time to go even further!
+
+5. Create a folder in your `DS-105-playground` folder called `img`.
+6. Add your picture to this folder. 
+7. Go back to your `README` file and add that picture after the second heading. Use the cheatsheet to understand how. 
+8. Add some information about yourself and format it in any way you want.
+9. Commit and push the changes to GitHub and check if your changes have taken place. Don't forget to commit it with a descriptive message. 
+
+</details>
+
