@@ -12,6 +12,7 @@ project:
     - "weeks/week03/*.qmd"
     - "weeks/week04/*.qmd"
     - "weeks/week05/*.qmd"
+    - "weeks/week07/*.qmd"
     - "slides/*.qmd"
 
 bibliography: references/references.bib
@@ -35,7 +36,7 @@ website:
       - href: main/api_list.qmd
         text: "📃 List of APIs"
       - href: main/assessments.qmd
-        text: "✍️ Assessments (🆕)"
+        text: "✍️ Assessments"
       - href: main/courserep.qmd
         text: "🗳️ Course Rep"
       - section: "🗓️ Weeks"
@@ -75,7 +76,7 @@ website:
              - href: weeks/week04/checklist.qmd
                text: ✅ Checklist
          - href: weeks/week05.qmd
-           text: "Week 05 (🆕)"
+           text: "Week 05"
            contents:
              - href: weeks/week05/lecture.qmd
                text: 👨‍🏫 Lecture
@@ -85,6 +86,15 @@ website:
                text: ✅ Checklist
              - href: weeks/week05/appendix.qmd
                text: 🔖 Appendix
+         - href: weeks/week07.qmd
+           text: "Week 07"
+           contents:
+             - href: weeks/week07/lecture.qmd
+               text: 👨‍🏫 Lecture
+             - href: weeks/week07/lab.qmd
+               text: 💻 Lab roadmap
+             - href: weeks/week07/checklist.qmd
+               text: ✅ Checklist
   navbar:
     background: primary
   page-footer:

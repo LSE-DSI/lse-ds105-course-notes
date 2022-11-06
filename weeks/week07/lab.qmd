@@ -81,3 +81,21 @@ Now it's time to go even further!
 
 </details>
 
+<details><summary>🏠 Take-home exercise</summary>
+
+## 🏠 Take-home exercise
+
+The following exercises will help you prepare for your 20-minutes group presentation next week (18 November 2022).
+
+Next week, when you start collecting data for your group project, try to use all the different tools you have learned about in this course so far:
+
+- Inside the `DS-105-playground`, create either a Jupyter Notebook (if using Python) or an R Markdown file (if using R)
+- Write your web scraping or API code to collect the data
+- Convert the data you collected to a data frame
+- Compute summary statistics of your data: how many rows did you get? how many columns?
+- Add pieces of markdown here and there so you can understand your own code later.
+- Can you take it to the next level? Try to produce a couple of plots!
+- Now, save your notebook and go to the terminal to **commit** and **push** your notebook to your Github repository.
+    - Open your github repository on your browser and navigate to the notebook you just uploaded via git. You should be able to see the markdown, code and even plots rendered in your browser.
+
+</details>
