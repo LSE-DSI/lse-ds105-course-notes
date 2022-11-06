@@ -1,0 +1,17 @@
+---
+title: "👨‍🏫 Week 07 - Lecture"
+date: 6 November 2022
+date-meta: 6 November 2022
+---
+
+## 🖥️ Part I - Programming questions (45-50 min)
+
+We will use the first part of this lecture to focus on the programming questions you sent prior to the lecture. Sent questions to the public channels on Slack or to your course representative (`@Amara Otero Salgado` on Slack). 
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Intro to Grammar of Graphics  (45-50 min)
+
+Come back later to download the R/Python Notebook I will be using during the lecture.

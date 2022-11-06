@@ -1,12 +1,58 @@
 ---
 title: "✅ Week 07 - Checklist"
-date: 02 November 2022
-date-meta: 02 November 2022
+date: 6 November 2022
+date-meta: 6 November 2022
 ---
 
+Your weekly time management tips in relation to this course [^1]:
 
-In order for us not to loose time during the labs we would ask you to do several things before you attend the seminars:
+- ✍️ **Solve**: start the week by working on your [summative problem set](/assessments/summative2.qmd), worth 15% of your final grade.
 
-- **Register on Github**. We will be exploring GitHub this week. It is one of the most important colaboraiton tools for developers and data scientists. Go [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) and create an account. 
+    - Struggling to complete the tasks? Reach out to your team and class mates. Amara has created a Whatsapp chat group just for students, [check it out](https://lse-dsi-ds105.slack.com/archives/C040ZF8SHT8/p1667745158077799). 
 
-- **Install Visual Studio Code**. Visual Studio Code (or VS Code) is a widely used tool for working with code of all sorts (from C++ to HTML). We will need it to edit some files. Go [here](https://code.visualstudio.com/Download), download and install it. 
+    - Check out the video tutorials Anton has recorded. They are available to view/download on Moodle, under "🗓️ Week 06 - (Reading Week)" section. Direct links below:
+
+        - [📹 Web scraping video tutorials](https://moodle.lse.ac.uk/mod/page/view.php?id=1134361)
+        - [📹 Selenium video tutorials](https://moodle.lse.ac.uk/mod/page/view.php?id=1134366)
+
+- 🧑‍🏫 **Bring your programming questions to the lecture** (Tuesday)
+
+    - We can use the first half of the lecture to focus on solving practical problems you are facing, either with your summative problem sets or with the data collection for your group project.
+
+    - You can submit your main questions [via Slack](https://lse-dsi-ds105.slack.com/archives/C041XMW5B46/p1667577094314539) before the lecture.
+
+- 🧑‍🏫 **Attend the lecture!** (Tuesday)
+
+    - After helping you with your most pressing programming questions, I will show you how to plot data that is stored in data frames.
+
+- 📤 **Upload your solutions to the summative 02** (Wednesday/Thursday)
+
+    - In an ideal world, you would submit your solutions to the [second summative problem set](/assessments/summative2.qmd) by Wednesday or Thursday the latest.
+
+    - Why? This will give you the head space to come to the lab ready to learn new things (Git & Github) and to start thinking more seriously about your group project.
+
+    - Of course, everyone has a different rhythm. Reach out for help if you can't complete the problem sets by this time. The deadline has been extended to 14 November 2022.
+
+- ✍️ **Team contract** (Thursday/Friday): Have you and group discussed initial ideas of data sources already? Meet up and fill out the team contract together.
+
+    - Download the template from the [team contract webpage](/assessments/formative2.qmd)
+
+    - The deadline has been extended to 14 November 2022.
+
+    - This is probably also a good time to decide who will do what at the start of the project. Your first group presentation (20-min) will take place on the Friday of Week 08, check the marking criteria on the [Assessments Page](/main/assessments.html#week-08-presentation---marking-criteria).
+
+- 🧑‍💻 **Prepare for the lab** (Thursday/Friday):  In order for us not to lose time during the labs we would ask you to do several things before you attend the seminars:
+
+    - **Register on Github**. We will be exploring GitHub this week. It is one of the most important colaboraiton tools for developers and data scientists. Go [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) and create an account. 
+
+    - **Install Visual Studio Code**. Visual Studio Code (or VS Code) is a widely used tool for working with code of all sorts (from C++ to HTML). We will need it to edit some files. Go [here](https://code.visualstudio.com/Download), download and install it. 
+
+- 🧑‍💻 **Attend the lab!** (Friday)
+
+------------
+
+- 📟 **Struggling with something?** Share your questions on the `#week07` channel in our Slack.
+
+- 👂**Want to talk to someone else about this course?** Try reaching out to your course representative, `@Amara Otero Salgado` on Slack.
+
+[^1]: Needless to say, this is just a _suggestion_ of how to plan your week. Ultimately, you are the best judge of your time!

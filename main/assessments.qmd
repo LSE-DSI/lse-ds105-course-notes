@@ -11,8 +11,8 @@ Click on the assignments below to go to the Moodle page and submit your response
 
 - **✍️ Formative &nbsp;&nbsp;Problem Set (01) | W02-W03**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1123148&forceview=1) & associated [webpage](/assessments/formative1.qmd) with  instructions.
 - **✍️ Summative Problem Set (01) | W04-W05**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1127337) & associated [webpage](/assessments/summative1.qmd) with instructions.
-- **✍️ Formative Team Contract 🆕 | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307) & associated [webpage](/assessments/formative2.qmd) with instructions.
-- **✍️ Summative Problem Set (02) 🆕 | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993) & associated [webpage](/assessments/summative2.qmd) with instructions.
+- **✍️ Formative Team Contract | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130307) & associated [webpage](/assessments/formative2.qmd) with instructions.
+- **✍️ Summative Problem Set (02) | W05-W07**: [Moodle link](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993) & associated [webpage](/assessments/summative2.qmd) with instructions.
 
 
 This course is assessed by a mix of problem sets, group presentation and a final project. You can find the details below:
@@ -42,6 +42,29 @@ This course is assessed by a mix of problem sets, group presentation and a final
 - Submission deadline: Lent Term
     - Exact date to be confirmed
     - (end of Jan/2023 - beginning of Feb/2023)
+
+## 🖋️ Marking Criteria
+
+### Week 08 presentation - Marking Criteria
+
+This presentation is worth 15% of your final grade. You will be marked as a group, but we might reward or penalize individuals for aspects of their individual presentation in accordance with the marking criteria outlined below.
+
+What you must do:
+
+- You are asked to prepare a group presentation of 20 minutes to be presented during your lab sessions. 
+- Share your .ppt or .pdf file on Slack `#week08` before the start of your lab session.
+
+**Marking criteria**
+
+You will be marked on a 0-100 points scale.
+
+| **Criteria**        | **Description**                               | **Marks** |
+|:------------------- |:----------------------------------------------| --------- | 
+| 01: Initial Goals   | - Tell us about the data source your group has selected <br/>&nbsp;&nbsp;&nbsp;(it's okay if you decide to change data source later)<br/> - Tell us what makes you curious about this data. | 20 |
+| 02: Data Collection | - Show us a preliminary data collection. You don't need to have a lot of data, a few samples will do. <br/> - Show us a snippet of the code you are using to collect your data. | 20 |
+| 03: Data Types      | - What does the data look like? <br/> - What are the types of data? | 20 |
+| 04: Next steps | - What barriers have you spotted so far in the data collection process? <br/> - If the data collection is straightforward, say your data comes from a very clean API, what do you plan to do with the data?<br/> - What kind of analysis do you want to present by Week 11? | 20 |
+| 05: Group organisation and time management |- The group used the 20 minutes well<br/> - All members of the group presented <br/> - The presentation had a nice "flow", it was not repetitive and there was a storyline. | 20 | 
 
 ### Project's Marking Criteria
 

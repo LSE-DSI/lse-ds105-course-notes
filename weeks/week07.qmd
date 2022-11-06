@@ -1,0 +1,37 @@
+---
+title: "🗓️ Week 07 - Intro to the Grammar of Graphics"
+date: 6 November 2022
+date-meta: 6 November 2022
+---
+
+This week I will tell you how to plot data using a concept called the grammar of graphics. There are several packages in both R and Python to create plots, but we will focus on the [ggplot2](https://r4ds.had.co.nz/data-visualisation.html) (R) and [plotnine](https://plotnine.readthedocs.io/en/stable/) (python's version of ggplot2). You will have to use one of these packages in your final project (see [final project marking criteria](https://lse-dsi.github.io/lse-ds105-course-notes/main/assessments.html#projects-marking-criteria)).
+
+This time, I will use R to demonstrate the code. It will make it easier to point out how the original ggplotwas adapted into python. Curious to see what kind of plots you can create? Check out the [R Graph Gallery](https://r-graph-gallery.com/) website.
+
+::: {.callout-tip collapse="false"}
+## How to come prepared
+
+- If you are a python user, install the latest version of [Anaconda](https://www.anaconda.com/products/distribution). Install the `plotnine` package.
+- If you are an R user, try to have [R](https://www.r-project.org/) and [RStudio IDE](https://www.rstudio.com/products/rstudio/download/) installed in your computer before the lecture today. Install the `tidyverse` package.
+:::
+
+Starting this week, lectures will take a place at **OLD.4.10**. Join us next Tuesday, 8 November 2022 from 4 pm to 6 pm.
+
+
+## Links
+
+- ✅ [Week 07 Checklist](/weeks/week07/checklist.qmd)
+
+- 👨‍🏫 [Lecture](/weeks/week07/lecture.qmd)
+
+- 💻 [Lab roadmap](/weeks/week07/lab.qmd)
+
+
+## Assessments
+
+Deadlines extended to 14 November 2022:
+
+- ✍️ [Second Summative W05-W07](/assessments/summative2.qmd)
+
+- ✍️ [Formative Team Contract | W05-W07](/assessments/formative2.qmd) 
+

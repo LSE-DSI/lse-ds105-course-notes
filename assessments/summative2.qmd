@@ -5,13 +5,20 @@ date-meta: 26 October 2022
 author: Anton Boichenko & Dr. Jon Cardoso-Silva
 ---
 
+::: {.callout-important}
+## Update 6 November 2022
+
+The deadline has been extended to 14 November 2022.
+
+:::
+
 Welcome to the second summative assessment of this course! 
 
 This time you will continue exploring the world of web-scraping. We hope you will have fun completing this one, as we tried to make it as entertaining for you as possible. 
 
 ### Things to know before you start:  
 
-1. **Deadline**: you have until **9 November 2022, 23:59 UK time** to complete your solutions and share the single screenshot [via Moodle](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993).
+1. **Deadline**: you have until **14 November 2022, 23:59 UK time** to complete your solutions and share the single screenshot [via Moodle](https://moodle.lse.ac.uk/mod/coursework/view.php?id=1130993).
 2. You will be granted a maximum of 100 points for the whole assignment. You will see how much each task is right next to the tasks' names. 
 3. This assessment is worth **15%** of your final grade.
 3. Read the instructions carefully and make sure you follow them.
