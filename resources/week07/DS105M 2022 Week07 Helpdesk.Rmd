@@ -1,0 +1,45 @@
+---
+title: "DS105M - W07 - Helpdesk"
+author: "Jon"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+Import required libraries:
+
+```{r, message=FALSE, warning=FALSE}
+library("httr")
+library("jsonlite")
+```
+
+## Key
+
+```{r}
+# saving your API key
+api_key <- "sROtzp89HIqkAAy1g5Vai9mGX6afqA1i"
+```
+
+```{r}
+base_url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key="
+```
+
+```{r}
+# sending a request
+response <- GET(base_url, query = list("q" = "election", "api-key" = api_key))
+```
+
+```{r}
+# parse the response
+json <- content(response, "parsed")
+#json
+```
+
+```{r}
+json$response$docs[[2]/]
+```

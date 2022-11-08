@@ -14,4 +14,4 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 
 ## 🖥️ Part II - Intro to Grammar of Graphics  (45-50 min)
 
-Come back later to download the R/Python Notebook I will be using during the lecture.
+Download the required files from [W07 Lecture Files on Moodle](https://moodle.lse.ac.uk/mod/folder/view.php?id=1135324).

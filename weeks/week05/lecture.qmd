@@ -24,4 +24,4 @@ Use this time to chat, stretch, drink some coffee or just relax for a bit by you
 
 ## 🖥️ Part II - Dataframes  (45-50 min)
 
-Come back later to download the Jupyter Notebook I will be using during the lecture.
+Download the required files from [W05 Lecture Files on Moodle](https://moodle.lse.ac.uk/mod/folder/view.php?id=1130555)
