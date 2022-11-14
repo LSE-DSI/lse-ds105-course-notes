@@ -17,9 +17,8 @@ library(tidyverse)
 
 -   Click [here](https://opendata.camden.gov.uk/api/views/893b-tp33/rows.csv?accessType=DOWNLOAD&bom=true&format=true) to download the On_Street_Crime_In_Camden_Map.csv file we will use in this tutorial.
 
-```{=html}
 <!-- -->
-```
+
 -   If that does not work for some reason, go to the [On Street Crime In Camden Map dashboard](https://opendata.camden.gov.uk/Crime-and-Criminal-Justice/On-Street-Crime-In-Camden-Map/893b-tp33), click on **Export** (right-hand side menu) and download the "CSV for Excel" version of the data.
 
 -   Save the CSV file on the same directory where you are running this notebook
@@ -54,6 +53,12 @@ str(df)
 # Using dmy from the lubridate package (part of tidyverse)
 
 df$`Outcome Date` <- lubridate::dmy(df$`Outcome Date`)
+
+
+```
+
+```{r}
+#str(df)
 ```
 
 **I am curious about the column `Category`, what are the most common categories?**
@@ -75,7 +80,7 @@ Recommended reading: [📚 A Layered Grammar of Graphics - Hadley Wickham](https
 
 ## What are the components of a plot?
 
-[![**Common Layers of a graph**](fig1.png){fig-alt="Layers of a graph"}](https://vita.had.co.nz/papers/layered-grammar.pdf)
+[![Common Layers of a graph](fig1.png){fig-alt="Layers of a graph"}](https://vita.had.co.nz/papers/layered-grammar.pdf)
 
 ## Some named components:
 
@@ -88,7 +93,8 @@ Recommended reading: [📚 A Layered Grammar of Graphics - Hadley Wickham](https
 The code creates a bar plot:
 
 ```{r}
-g <- ggplot(df, aes(x=Category)) + geom_bar()
+g <- ggplot(df, aes(x=Category)) + geom_bar() + coord_flip() 
+  #theme(axis.text.x = element_text(angle=90))
 g
 ```
 
@@ -103,7 +109,22 @@ g
 -   Let's work on it together, how should we improve the bar plot?
 
 ```{r}
+plot_df <- df %>% group_by(Category) %>% summarise(n=n())
+plot_df
+```
 
+```{r}
+plot_df$Category <- factor(plot_df$Category, levels=plot_df$Category)
+```
+
+```{r}
+plot_df$Category
+```
+
+```{r}
+g <- ggplot(plot_df, aes(x=Category, y=n, fill=n)) + 
+  geom_col() #+ scale_x_discrete(breaks=plot_df$Category)
+g
 ```
 
 ## An area bar
@@ -121,6 +142,7 @@ knitr::kable(plot_df)
 
 ```{r}
 g <- ggplot(plot_df, aes(x=`Outcome Date`,y=n)) + geom_area()
+g
 ```
 
 ## The `fill` aesthetic
@@ -133,7 +155,11 @@ knitr::kable(plot_df)
 ```
 
 ```{r}
-g <- ggplot(plot_df, aes(x=`Outcome Date`, y=n, fill=Category)) + geom_area()
+g <- ggplot(plot_df, aes(x=`Outcome Date`, y=n, fill=Category)) + 
+  geom_area() + scale_fill_discrete(guide="none") +
+  
+  theme_bw()
+g
 ```
 
 **🎯ACTION POINT: CUSTOMIZING THE PLOT**
@@ -164,6 +190,7 @@ knitr::kable(plot_df)
 ```{r}
 g <- ggplot(plot_df, aes(x=`Outcome Date`, y=n, fill=Category)) + 
   geom_area() + facet_wrap(Service ~ .)
+g
 ```
 
 ### Facet grid:
@@ -171,6 +198,8 @@ g <- ggplot(plot_df, aes(x=`Outcome Date`, y=n, fill=Category)) +
 ```{r}
 g <- ggplot(plot_df, aes(x=`Outcome Date`, y=n, fill=Category)) + 
   geom_area() + facet_grid(Service ~ .)
+
+g
 ```
 
 **🎯ACTION POINT: CUSTOMIZING THE PLOT**
