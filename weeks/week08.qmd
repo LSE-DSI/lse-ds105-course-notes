@@ -1,0 +1,22 @@
+---
+title: "🗓️ Week 08 - (Re-)shaping data, data normalisation & databases"
+date: 15 November 2022
+date-meta: 15 November 2022
+---
+
+Welcome to Week 08!
+
+See the Python/R code on 👨‍🏫 [Lecture](/weeks/week08/lecture.qmd) page.
+
+In the lecture, I will cover some data transformations you can do with pandas (Python). R users will find that you can do the same things with tidyverse; there will be an R Markdown file for you. 
+
+I will bring solutions to previous questions you asked in previous sessions: how to work with time series, order elements in plots (ordered Categoricals/ordered factors), followed by some medium to advanced-level data transformations you can do with pandas/tidyverse (group-by's, merges and joins), as well as the parallels of all of these data transformations to SQL, the programming language used to query databases. 
+
+**💻 Labs on Friday: Group Presentations**
+
+In the labs on Friday, you are the main event. We are excited to hear about your group projects and what you have managed to explore so far. 
+
+You can structure your presentations however you want, as long as you:
+
+- Share your .ppt or .pdf file on Slack `#week08` before the start of your lab session.
+- Address the five main points listed on the [Week 08 presentation - Marking Criteria](/main/assessments.html#week-08-presentation---marking-criteria) page.
