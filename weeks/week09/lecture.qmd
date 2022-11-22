@@ -17,6 +17,17 @@ And in the labs, you will practice how to share these environments via Github an
 
 :::
 
+<details><summary>**Open to see lecture notes**</summary>
+
+## Lecture steps
+
+This is an interactive lecture. I will teach you about [`conda` environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and we will compare how everyone's conda and python settings are different.
+
+
+
+</details>
+
+
 ## ☕ Coffee Break (10 min)
 
 Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.

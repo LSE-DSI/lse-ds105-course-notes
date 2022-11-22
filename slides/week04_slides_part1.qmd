@@ -1,5 +1,5 @@
 ---
-title: "DS105 Data for Data Science"
+subtitle: "DS105 Data for Data Science"
 title: "<font style='font-size:1em;'>🗓️ Week 04<br/> The Internet: protocols + scraping + APIs</font>"
 author: Dr. [Jon Cardoso Silva](https://www.lse.ac.uk/DSI/People/Jonathan-Cardoso-Silva) & Anton Boichenko
 institute: '[LSE Data Science Institute](https://twitter.com/lsedatascience)'
