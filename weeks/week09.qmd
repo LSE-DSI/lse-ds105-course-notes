@@ -1,0 +1,22 @@
+---
+title: "🗓️ Week 09 - Managing your Data Science Workflow"
+date: 22 November 2022
+date-meta: 22 November 2022
+---
+
+What are the best practices when it comes to sharing our code, data, and analysis with others? What if I need to replicate your code? What do I need to have installed in my machine? This is what we are going to explore this week, both in the lecture and in the labs. 
+
+::: {.callout-important collapse="false"}
+💡You will be assessed on knowledge of these best practices as part of your final project. Check the [Project Marking Criteria](/main/assessments.html#projects-marking-criteria): Source Code | Organisation and  Source Code | Collaboration.
+
+:::
+
+Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 22 November 2022 from 4 pm to 6 pm.
+
+
+## Links
+
+- 👨‍🏫 [Lecture](/weeks/week09/lecture.qmd)
+
+- 💻 [Lab roadmap](#)
+

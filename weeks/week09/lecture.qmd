@@ -1,0 +1,31 @@
+---
+title: "💻 Week 09 - Lab Roadmap (90 min)"
+date: 22 November 2022
+date-meta: 22 November 2022
+from: markdown+emoji
+author: Dr. Jon Cardoso-Silva
+---
+
+## 🖥️ Part I - Conda environments (45-50 min)
+
+In the first part of the lecture, we will explore [`conda` environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) together (bring your 💻laptops, and perhaps also coffee!). 
+
+And in the labs, you will practice how to share these environments via Github and also how to use Github more effectively as a team. You will learn about the process of [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for teams.
+
+::: {.callout-important collapse="false"}
+💡You will be assessed on knowledge of these best practices as part of your final project. Check the [Project Marking Criteria](/main/assessments.html#projects-marking-criteria): Source Code | Organisation and  Source Code | Collaboration.
+
+:::
+
+## ☕ Coffee Break (10 min)
+
+Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.
+
+## 🖥️ Part II - Tech Support (45-50 min)
+
+Based on what I have been hearing from you, this is what I will cover on the second part of the lecture today:
+
+- **Databases**: what is it? what is SQL? And how to connect to a database directly through pandas. Initially, this content will come on _🗓️ Week 08_ but we didn't have the time for that.
+- **Some Natural Language Processing** (if time allows): a small introduction to [spaCy](https://spacy.io/usage/spacy-101#annotations-token), a package in Python that handles text as data. 
+    - I will focus on tokenization which is the process of breaking sentences into words and counting/describing them (without any `for` loops!)
+    - If we don't have time for that, we will return to topic of text data next week and on Week 11 when Prof. [Ken Benoit](https://kenbenoit.net/) will come and deliver a talk about text mining. 

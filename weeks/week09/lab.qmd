@@ -1,0 +1,9 @@
+---
+title: "💻 Week 09 - Lab Roadmap (90 min)"
+date: 22 November 2022
+date-meta: 22 November 2022
+from: markdown+emoji
+author: Anton Boichenko
+---
+
+<mark class="todo"></mark>
