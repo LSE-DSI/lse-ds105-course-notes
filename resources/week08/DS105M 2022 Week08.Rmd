@@ -1,0 +1,539 @@
+---
+title: "DS105M 2022 Week08"
+output: html_notebook
+---
+
+------------------------------------------------------------------------
+
+**DS105M 2022 Week08**
+
+**Topic:** (Re-)shaping data, data normalisation & databases
+
+**Author:** [\@jonjoncardoso](github.com/jonjoncardoso)
+
+**Date:** 15 November 2022
+
+------------------------------------------------------------------------
+
+# Setup
+
+You might need to `install.packages()` if you do not have the libraries below.
+
+**💡 Tip:** Switch to the "Visual" Mode instead of "Source" at the top of this screen.
+
+# Import Libraries
+
+```{r}
+library(tidyverse) #rvest is part of tidyverse
+```
+
+# Data Collection
+
+**Web Scraping:** [Frequent 'R' Questions](https://stackoverflow.com/questions/tagged/R)
+
+```{r}
+# read the content of the site
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+```
+
+The `response_html` object returned by the `rvest::read_html` function is not as easy to explore as the one we get with the Python's BeautifulSoup version of this tutorial. But they encode the same info.
+
+You can get a sense for it by printing the object:
+
+```{r}
+print(response_html)
+```
+
+Keep a tab with the documentation of rvest to consult how to do things: [rvest documentation](https://rvest.tidyverse.org/).
+
+```{r}
+phonetic_word <- if(...){
+  "-"
+}else{
+  getting_phonetic_json$phonetics
+}
+```
+
+## What will we extract?
+
+Here we care about extracting all the posts:
+
+-   Title
+-   Date
+-   Summary statistics (number of votes, answers and views)
+
+Let's explore how to do that step-by-step.
+
+# Step-by-Step is the way to go
+
+💡 Here's the key takeaway of this session: don't write code to collect all the questions. Write code to collect **ONLY ONE** question first.
+
+## Extracting the right `div`s
+
+After exploring the HTML, I found out I want all the `<div class="s-post-summary">` inside the main `<div id="questions">`:
+
+```{r}
+all_posts <-  
+  html_element(response_html, css="div#questions") %>% 
+  html_elements(css="div.s-post-summary")
+
+cat(paste0("We found ", length(all_posts) , " posts")) # cat is another way to `print()` stuff
+```
+
+## What is inside each `div`?
+
+```{r}
+current_post <- all_posts[[1]] # Select just the first one
+current_post %>% xml2::html_structure()
+```
+
+Another way to explore this data more visually is to save it and open it on a code editor such as [VScode](https://code.visualstudio.com/download) (We used it in the [💻 Week 07 - Lab Roadmap](https://lse-dsi.github.io/lse-ds105-course-notes/weeks/week07/lab.html))
+
+## Let's break it all down to get the summary statistics
+
+```{r}
+current_post %>% html_elements(css="div.s-post-summary--stats-item")
+```
+
+There are two ways to get the info I want:
+
+-   I could extract the element `title` inside of the `<div>`
+-   I could extract the text inside the `<span>` elements.
+
+**⁉️ Still puzzled about what some HTML element tags represent? The book *Duckett, Jon. HTML and CSS: Design and Build Websites. New York: Wiley, 2011.* is a great resource.**
+
+Let's do it the hard way, extract from `<span>`. I will show how to approach this with a `for` loop first, since this is probably how you learned how to do things with programming.
+
+If I just want to print stuff, I could just navigate the tree:
+
+```{r}
+current_div_summary <- current_post %>% html_elements(css="div.s-post-summary--stats-item")
+current_div_summary <- current_div_summary[[1]]
+current_div_summary
+```
+
+Let's get the info we want:
+
+```{r}
+current_div_summary %>% html_element("span.s-post-summary--stats-item-unit") %>% html_text()
+```
+
+Let's get the info we want:
+
+```{r}
+current_div_summary %>% html_element("span.s-post-summary--stats-item-number") %>% html_text()
+```
+
+This would be better if we saved it in a **named list**:
+
+```{r}
+one_summary_dict <- 
+  data.frame(unit=current_div_summary %>% html_element("span.s-post-summary--stats-item-unit") %>% html_text(),
+      number=current_div_summary %>% html_element("span.s-post-summary--stats-item-number") %>% html_text()    
+)
+one_summary_dict
+```
+
+## Putting the pieces of the puzzle together: gathering summary statistics for a single post
+
+However, the part people struggle the most is figuring out how to **pre-process and store the data** correctly.
+
+If you follow the strategy above, it will be much easier to think about that. Let's explore together how we would gather **all statistics** from a `current_div_summary`:
+
+```{r}
+all_stats = data.frame() # an empty dataframe that will be filled with multiple named lists (do you see why? ask your lecturer if not)
+
+all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+for(j  in 1:length(all_div_summaries)){
+  
+  current_div_summary <- all_div_summaries[[j]]
+  
+  one_summary_dict <- 
+    data.frame(unit=current_div_summary %>% 
+              html_element("span.s-post-summary--stats-item-unit") %>% 
+              html_text(),
+        number=current_div_summary %>% 
+               html_element("span.s-post-summary--stats-item-number") %>% 
+               html_text()    
+        )
+  
+  all_stats <- bind_rows(all_stats, one_summary_dict)
+}
+
+# What is in `all_stats` now?
+all_stats
+```
+
+**🎯 ACTION POINT**: Would you organise this dataframe differently?
+
+> your text here
+
+## Going one step up: gathering summary statistics for ALL posts
+
+How would we gather the summary for **ALL posts**?
+
+-   Time to learn about `bind_rows`
+
+```{r}
+
+all_stats = data.frame() # an empty dataframe that will be filled with multiple named lists (do you see why? ask your lecturer if not)
+
+for(i in 1:length(all_posts)){
+
+  current_post <- all_posts[[i]]
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+  for(i  in 1:length(all_div_summaries)){
+    
+    current_div_summary <- all_div_summaries[[i]]
+    
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    
+    all_stats <- bind_rows(all_stats, one_summary_dict)
+  }
+}
+
+all_stats
+```
+
+**🤔 Q: What is the problem with the data frame above?**
+
+A: Well, I have the statistics about all the 15 posts but I don't know which one is which!
+
+Let's fix that:
+
+-   Time to learn about [str_trim](https://stringr.tidyverse.org/reference/str_trim.html) (also a tidyverse function)
+
+```{r}
+
+all_stats = data.frame() 
+
+for(i in 1:length(all_posts)){
+
+  current_post <- all_posts[[i]]
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  
+  # Notice anything different in the html_element here? 
+  # Raise your hand and call your lecture if you don't see any difference.
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+  for(i  in 1:length(all_div_summaries)){
+    
+    current_div_summary <- all_div_summaries[[i]]
+    
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text() ,
+          post_title=post_title,
+          post_time=post_time
+          )
+    
+    all_stats <- bind_rows(all_stats, one_summary_dict)
+  }
+}
+
+all_stats
+```
+
+# Functions
+
+Don't underestimate the power of functions!
+
+In fact, you might find it easier to work with them than with `for` loops.
+
+## A function just to parse the `current_div_summary`
+
+Check [roxygen2 convention](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html) for documenting functions
+
+```{r}
+#' 
+#' Let's write documentation together
+#'
+parse_div_summary <- function(current_div_summary){
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    one_summary_dict
+}
+
+```
+
+```{r}
+parse_div_summary(current_div_summary)
+```
+
+## A function to parse all summaries from a `current_post`
+
+Time to learn about `lapply`
+
+```{r}
+parse_all_summaries <- function(current_post){
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+  
+  all_summaries <- lapply(all_div_summaries, parse_div_summary)
+  all_summaries <- bind_rows(all_summaries) # R's equivalent to python's pd.concat
+  all_summaries 
+}
+
+```
+
+```{r}
+parse_all_summaries(current_post)
+```
+
+## A function to parse other info about a `current_post`
+
+```{r}
+parse_post_div <- function(current_post){
+    
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+    
+  df_summary <- parse_all_summaries(current_post)
+  
+  # We can reuse the dataframe that returned from `parse_all_summaries`
+  df_summary$post_title <- post_title
+  df_summary$post_time <- post_time
+  
+  df_summary 
+  
+}
+
+```
+
+```{r}
+parse_post_div(current_post)
+```
+
+## A function to parse ALL posts
+
+Instead of growing a list using `for` loops, let's use list comprehension and use `pd.concat()`
+
+Time to learn about `reset_index()` and `inplace=True`
+
+```{r}
+parse_all_posts <- function(response_html){
+    
+  all_posts <-  
+    html_element(response_html, css="div#questions") %>% 
+    html_elements(css="div.s-post-summary")
+  
+  df_results <- bind_rows(lapply(all_posts, parse_post_div))
+    
+  # Optional: If you are also annoyed at the zero indices
+  # df_results.reset_index(drop=True, inplace=True)
+  df_results 
+  
+}
+
+```
+
+```{r}
+parse_all_posts(response_html)
+```
+
+## Putting it all together
+
+-   Use RMarkdown for prototyping, but not for reusing code
+-   Store your functions in a separate file
+
+```{r}
+parse_div_summary <- function(current_div_summary){
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    one_summary_dict
+}
+
+parse_all_summaries <- function(current_post){
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+  
+  all_summaries <- lapply(all_div_summaries, parse_div_summary)
+  all_summaries <- bind_rows(all_summaries) # R's equivalent to python's pd.concat
+  all_summaries 
+}
+
+parse_post_div <- function(current_post){
+    
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+    
+  df_summary <- parse_all_summaries(current_post)
+  
+  # We can reuse the dataframe that returned from `parse_all_summaries`
+  df_summary$post_title <- post_title
+  df_summary$post_time <- post_time
+  
+  df_summary 
+  
+}
+
+parse_all_posts <- function(response_html){
+    
+  all_posts <-  
+    html_element(response_html, css="div#questions") %>% 
+    html_elements(css="div.s-post-summary")
+  
+  df_results <- bind_rows(lapply(all_posts, parse_post_div))
+    
+  # Optional: If you are also annoyed at the zero indices
+  # df_results.reset_index(drop=True, inplace=True)
+  df_results 
+  
+}
+```
+
+**🎯 ACTION POINT**:
+
+-   Clear the environment:
+
+```{r}
+rm(list=ls())
+```
+
+Read more about the `rm` function like [here](https://stackoverflow.com/a/43673112/843365)
+
+-   In the same folder as this notebook, create a new file `stackparser_questions.R`
+
+The code below should return the same `df` as we have been creating:
+
+```{r}
+source("stackparser_questions.R")
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+head(df)
+```
+
+### Resulting DataFrame
+
+```{r}
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+dim(df)
+```
+
+```{r}
+df %>% str
+```
+
+What does the above mean?
+
+**🎯 ACTION POINT**: Would you organise this data frame differently?
+
+> your text here
+
+# Pre-processing the data
+
+## Convert column `time` to a proper datetime type
+
+-   Using the [lubridate package](https://lubridate.tidyverse.org/)
+
+```{r}
+library(lubridate)
+```
+
+```{r}
+# Luckily the column `post_time` is already well formatted:
+df %>% mutate(post_time_formatted=ymd_hms(post_time))
+```
+
+If we want to store this new column, we need to re-assign the dataframe `df`
+
+```{r}
+df <- df %>% mutate(post_time_formatted=ymd_hms(post_time))
+```
+
+```{r}
+df %>% str
+```
+
+## Let's create three columns: `votes`, `answers`, `views`
+
+-   That is a task for tidyr [pivot_wider](https://tidyr.tidyverse.org/reference/pivot_wider.html) (part of tidyverse)
+
+```{r}
+df %>% pivot_wider(id_cols=c(post_title, post_time_formatted),
+                   names_from=unit,
+                   values_from=number)
+```
+
+What can we improve about the DF above?
+
+**🤝 WORKING TOGETHER**
+
+-   Modify the functions we created in the `stackparser_questions.R` file so that:
+    -   `answer` is renamed to `answers`
+    -   `vote` is renamed to `votes`
+-   Recreate the data frame (code below) and see the difference!
+-   Your final data frame should have:
+    -   No Missing Data
+    -   The following columns:
+        -   post_title
+        -   post_time_formatted
+        -   votes
+        -   answers
+        -   views
+
+```{r}
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+
+df_formatted <- 
+  df %>% 
+  mutate(post_time_formatted=ymd_hms(post_time)) %>% 
+  pivot_wider(id_cols=c(post_title, post_time_formatted),
+              names_from=unit,
+              values_from=number)
+
+print(paste("Column names: ", paste(names(df_formatted), collapse=", ")))
+
+df_formatted # or View(df_formatted)
+```

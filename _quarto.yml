@@ -102,7 +102,7 @@ website:
            contents:
              - href: weeks/week08/lecture.qmd
                text: 👨‍🏫 Lecture
-         - href: weeks/week07.qmd
+         - href: weeks/week09.qmd
            text: "Week 09"
            contents:
              - href: weeks/week09/lecture.qmd
