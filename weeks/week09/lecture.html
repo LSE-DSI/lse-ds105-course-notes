@@ -9,7 +9,7 @@
 <meta name="author" content="Dr.&nbsp;Jon Cardoso-Silva">
 <meta name="dcterms.date" content="22 November 2022">
 
-<title>LSE DS105M 2022/23 - 💻 Week 09 - Lab Roadmap (90 min)</title>
+<title>LSE DS105M 2022/23 - 👨‍🏫 Week 09 - Managing your data science workflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -94,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">💻 Week 09 - Lab Roadmap (90 min)</h1>
+      <h1 class="quarto-secondary-nav-title">👨‍🏫 Week 09 - Managing your data science workflow</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -343,10 +406,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-i---conda-environments-45-50-min" id="toc-part-i---conda-environments-45-50-min" class="nav-link active" data-scroll-target="#part-i---conda-environments-45-50-min">🖥️ Part I - Conda environments (45-50 min)</a></li>
-  <li><a href="#lecture-steps" id="toc-lecture-steps" class="nav-link" data-scroll-target="#lecture-steps">Lecture steps</a></li>
+  <li><a href="#part-i---conda-environments-45-50-min" id="toc-part-i---conda-environments-45-50-min" class="nav-link active" data-scroll-target="#part-i---conda-environments-45-50-min">🖥️ Part I - Conda environments (45-50 min)</a>
+  <ul class="collapse">
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a>
+  <ul class="collapse">
+  <li><a href="#what-is-in-my-conda" id="toc-what-is-in-my-conda" class="nav-link" data-scroll-target="#what-is-in-my-conda">🤔 What is in my <code>conda</code>?</a></li>
+  <li><a href="#how-do-we-fix-everyones-environment" id="toc-how-do-we-fix-everyones-environment" class="nav-link" data-scroll-target="#how-do-we-fix-everyones-environment">⚙️ How do we “fix” everyone’s environment?</a></li>
+  <li><a href="#step-12." id="toc-step-12." class="nav-link" data-scroll-target="#step-12.">Step 12.</a></li>
+  </ul></li>
   <li><a href="#coffee-break-10-min" id="toc-coffee-break-10-min" class="nav-link" data-scroll-target="#coffee-break-10-min">☕ Coffee Break (10 min)</a></li>
-  <li><a href="#part-ii---tech-support-45-50-min" id="toc-part-ii---tech-support-45-50-min" class="nav-link" data-scroll-target="#part-ii---tech-support-45-50-min">🖥️ Part II - Tech Support (45-50 min)</a></li>
+  <li><a href="#part-ii---databases-45-50-min" id="toc-part-ii---databases-45-50-min" class="nav-link" data-scroll-target="#part-ii---databases-45-50-min">🖥️ Part II - Databases (45-50 min)</a>
+  <ul class="collapse">
+  <li><a href="#useful-links" id="toc-useful-links" class="nav-link" data-scroll-target="#useful-links">Useful links</a></li>
+  <li><a href="#follow-the-steps" id="toc-follow-the-steps" class="nav-link" data-scroll-target="#follow-the-steps">Follow the steps</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -355,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">💻 Week 09 - Lab Roadmap (90 min)</h1>
+<h1 class="title d-none d-lg-block">👨‍🏫 Week 09 - Managing your data science workflow</h1>
 <p class="subtitle lead">DS105 - Data for Data Science</p>
 </div>
 
@@ -383,21 +457,39 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="part-i---conda-environments-45-50-min" class="level2">
-<h2 class="anchored" data-anchor-id="part-i---conda-environments-45-50-min">🖥️ Part I - Conda environments (45-50 min)</h2>
-<p>In the first part of the lecture, we will explore <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html"><code>conda</code> environments</a> together (bring your 💻laptops, and perhaps also coffee!).</p>
-<p>And in the labs, you will practice how to share these environments via Github and also how to use Github more effectively as a team. You will learn about the process of <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Requests</a> for teams.</p>
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Important
+What about Natural Language Processing (NLP)?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>I had planned a small introduction to <a href="https://spacy.io/usage/spacy-101#annotations-token">spaCy</a>, a package in Python that handles text as data, but we will not have the time to talk about NLP today!</p>
+<p><strong>Unstructured data (text, audio &amp; image)</strong> was always planned to be taught next week anyways. So join on Week 10 for an intro to text pre-processing, when I will then focus on tokenization — the process of breaking sentences into words and counting/describing them (without any <code>for</code> loops!)</p>
+<p>We will continue to explore the topic of text data on Week 11 when Prof.&nbsp;<a href="https://kenbenoit.net/">Ken Benoit</a> will come and deliver a talk about text mining applications.</p>
+</div>
+</div>
+</div>
+<section id="part-i---conda-environments-45-50-min" class="level1">
+<h1>🖥️ Part I - Conda environments (45-50 min)</h1>
+<p>In the first part of the lecture, we will explore <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html"><code>conda</code> environments</a> together (bring your 💻laptops, and perhaps also coffee!).</p>
+<p>And in the labs, you will practice how to share these environments via Github and also how to use Github more effectively as a team. You will learn about the process of <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Requests</a> for teams.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>💡You will be assessed on knowledge of these best practices as part of your final project. Check the <a href="../../main/assessments.html#projects-marking-criteria">Project Marking Criteria</a>: Source Code | Organisation and Source Code | Collaboration.</p>
 </div>
@@ -407,30 +499,167 @@ Important
 <summary>
 <strong>Open to see lecture notes</strong>
 </summary>
-</details></section>
-<section id="lecture-steps" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-steps">Lecture steps</h2>
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h2>
 <p>This is an interactive lecture. I will teach you about <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html"><code>conda</code> environments</a> and we will compare how everyone’s conda and python settings are different.</p>
-
+<section id="what-is-in-my-conda" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-in-my-conda">🤔 What is in my <code>conda</code>?</h3>
+<section id="step-1." class="level4">
+<h4 class="anchored" data-anchor-id="step-1.">Step 1.</h4>
+<p><strong>Which version of python do you have?</strong> Open your terminal and type:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>python <span class="op">--</span>version</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Compare your version to those of your colleagues.</p>
 </section>
+<section id="step-2." class="level4">
+<h4 class="anchored" data-anchor-id="step-2.">Step 2.</h4>
+<p><strong>Which version of <code>conda</code> do you have?</strong> Open your terminal and type:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>conda <span class="bu">list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should see a list of all packages you have installed, or came installed by default, in your <code>conda</code> default environment.</p>
+<p>What version of <code>jupyterlab</code> do you have installed? What about <code>pandas</code>? Compare the version of your packages to those of your colleagues. Are there any differences?</p>
+</section>
+<section id="step-3." class="level4">
+<h4 class="anchored" data-anchor-id="step-3.">Step 3.</h4>
+<p><strong>Let’s generate some data!</strong> Run the command below in the terminal to save the content of <code>conda list</code> to a text file. Replace my username for yours:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>conda <span class="bu">list</span> <span class="op">&gt;&gt;</span> conda_list_jonjoncardoso.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-4." class="level4">
+<h4 class="anchored" data-anchor-id="step-4.">Step 4.</h4>
+<p><strong>I will ask you to upload the file you created to Slack</strong></p>
+</section>
+<section id="step-5." class="level4">
+<h4 class="anchored" data-anchor-id="step-5.">Step 5.</h4>
+<p>I will then combine all of our data and we will explore the discrepancies in the versions of packages we are all likely to use.</p>
+</section>
+</section>
+<section id="how-do-we-fix-everyones-environment" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-fix-everyones-environment">⚙️ How do we “fix” everyone’s environment?</h3>
+<section id="step-6." class="level4">
+<h4 class="anchored" data-anchor-id="step-6.">Step 6.</h4>
+<p>In the terminal, <code>cd</code> to the directory where you keep all the files of your project.</p>
+</section>
+<section id="step-7." class="level4">
+<h4 class="anchored" data-anchor-id="step-7.">Step 7.</h4>
+<p><strong>Create a conda environment</strong></p>
+<p>💡 Useful link: <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Managing <code>conda</code> environments`</a></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>conda create <span class="op">--</span>prefix .\venv python<span class="op">=</span><span class="fl">3.10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-8." class="level4">
+<h4 class="anchored" data-anchor-id="step-8.">Step 8.</h4>
+<p><strong>Activate the environment:</strong></p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">macOS/Unix Users</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>source activate .\venv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>activate .\venv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-9." class="level4">
+<h4 class="anchored" data-anchor-id="step-9.">Step 9.</h4>
+<p><strong>What’s different about this conda environment?</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>conda <span class="bu">list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-10." class="level4">
+<h4 class="anchored" data-anchor-id="step-10.">Step 10.</h4>
+<p><strong>Create a new file called <code>requirements.txt</code></strong> and paste the following there:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>matplotlib<span class="op">==</span><span class="fl">3.5.3</span> <span class="co"># version required for plotnine</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plotnine<span class="op">==</span><span class="fl">0.10.1</span> <span class="co"># Python version of ggplot2</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>numpy<span class="op">&gt;=</span><span class="fl">1.22</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>pandas<span class="op">==</span><span class="fl">1.4.2</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>scikit<span class="op">-</span>learn<span class="op">==</span><span class="fl">1.1.3</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">### UTILS</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>jupyterlab<span class="op">==</span><span class="fl">3.4.2</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>tqdm<span class="op">==</span><span class="fl">4.62.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-11." class="level4">
+<h4 class="anchored" data-anchor-id="step-11.">Step 11.</h4>
+<p><strong>Try to install it with <code>conda</code></strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>conda install <span class="op">--</span><span class="bu">file</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Why can’t we install all packages?</p>
+</section>
+</section>
+<section id="step-12." class="level3">
+<h3 class="anchored" data-anchor-id="step-12.">Step 12.</h3>
+<p>Install it with <code>pip</code>:</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">macOS/Unix Users</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>conda install pip</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>which pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>conda install pip</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>where.exe pip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>Then:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>pip install <span class="op">-</span>r requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="step-12.-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-12.-1">Step 12.</h4>
+<p><strong>How does the conda environment look like now?</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>conda <span class="bu">list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section></section></details>
+</section>
+
+
 <section id="coffee-break-10-min" class="level2">
 <h2 class="anchored" data-anchor-id="coffee-break-10-min">☕ Coffee Break (10 min)</h2>
 <p>Use this time to chat, stretch, drink some coffee or just relax for a bit by yourself.</p>
 </section>
-<section id="part-ii---tech-support-45-50-min" class="level2">
-<h2 class="anchored" data-anchor-id="part-ii---tech-support-45-50-min">🖥️ Part II - Tech Support (45-50 min)</h2>
-<p>Based on what I have been hearing from you, this is what I will cover on the second part of the lecture today:</p>
+<section id="part-ii---databases-45-50-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-ii---databases-45-50-min">🖥️ Part II - Databases (45-50 min)</h2>
+<p><strong>Databases</strong>: what is it? what is SQL? And how to connect to a database directly through pandas. Initially, this content will come on <em>🗓️ Week 08</em> but we didn’t have the time for that.</p>
+<details>
+<summary>
+<strong>Open to see lecture notes</strong>
+</summary>
+<section id="useful-links" class="level3">
+<h3 class="anchored" data-anchor-id="useful-links">Useful links</h3>
 <ul>
-<li><strong>Databases</strong>: what is it? what is SQL? And how to connect to a database directly through pandas. Initially, this content will come on <em>🗓️ Week 08</em> but we didn’t have the time for that.</li>
-<li><strong>Some Natural Language Processing</strong> (if time allows): a small introduction to <a href="https://spacy.io/usage/spacy-101#annotations-token">spaCy</a>, a package in Python that handles text as data.
+<li><strong>Relational Database Management System (RDBMS)</strong>
 <ul>
-<li>I will focus on tokenization which is the process of breaking sentences into words and counting/describing them (without any <code>for</code> loops!)</li>
-<li>If we don’t have time for that, we will return to topic of text data next week and on Week 11 when Prof.&nbsp;<a href="https://kenbenoit.net/">Ken Benoit</a> will come and deliver a talk about text mining.</li>
+<li><a href="https://www.oracle.com/uk/database/what-is-a-relational-database/">Oracle: What is a Relational Database?</a></li>
+<li><a href="https://cloud.google.com/learn/what-is-a-relational-database">Google: What is a Relational Database?</a></li>
+</ul></li>
+<li><strong>Famous <a href="../../slides/week02_slides_part1.html#/history">Open-source</a> RDBMS:</strong>
+<ul>
+<li><a href="https://www.mysqltutorial.org/">MySQL</a></li>
+<li><a href="https://www.postgresql.org/docs/15/index.html">PostgreSQL</a></li>
+</ul></li>
+<li><strong>SQL</strong>:
+<ul>
+<li>Good step-by-step <a href="https://www.w3schools.com/sql/sql_intro.asp">SQL Tutorial</a></li>
 </ul></li>
 </ul>
+</section>
+<section id="follow-the-steps" class="level3">
+<h3 class="anchored" data-anchor-id="follow-the-steps">Follow the steps</h3>
+<section id="step-13." class="level4">
+<h4 class="anchored" data-anchor-id="step-13.">Step 13.</h4>
+<p><strong>Download and Install</strong> <a href="https://sqlitebrowser.org/">DBrowser for SQLite</a></p>
+</section>
+<section id="step-14." class="level4">
+<h4 class="anchored" data-anchor-id="step-14.">Step 14.</h4>
+<p><strong>Download</strong> this sample data called <a href="https://github.com/lerocha/chinook-database/blob/master/ChinookDatabase/DataSources/Chinook_Sqlite.sql">ChinookDatabase</a></p>
+</section>
+<section id="step-15." class="level4">
+<h4 class="anchored" data-anchor-id="step-15.">Step 15.</h4>
+<p>Import Chinook Database to the database using DBrowser</p>
+</section></section></details>
 
 
 </section>
+
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

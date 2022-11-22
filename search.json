@@ -863,30 +863,30 @@
   {
     "objectID": "weeks/week09/lecture.html",
     "href": "weeks/week09/lecture.html",
-    "title": "💻 Week 09 - Lab Roadmap (90 min)",
+    "title": "👨‍🏫 Week 09 - Managing your data science workflow",
     "section": "",
-    "text": "In the first part of the lecture, we will explore conda environments together (bring your 💻laptops, and perhaps also coffee!).\nAnd in the labs, you will practice how to share these environments via Github and also how to use Github more effectively as a team. You will learn about the process of Pull Requests for teams.\n\n\n\n\n\n\nImportant\n\n\n\n\n\n💡You will be assessed on knowledge of these best practices as part of your final project. Check the Project Marking Criteria: Source Code | Organisation and Source Code | Collaboration.\n\n\n\n\n\nOpen to see lecture notes"
+    "text": "What about Natural Language Processing (NLP)?\n\n\n\n\n\nI had planned a small introduction to spaCy, a package in Python that handles text as data, but we will not have the time to talk about NLP today!\nUnstructured data (text, audio & image) was always planned to be taught next week anyways. So join on Week 10 for an intro to text pre-processing, when I will then focus on tokenization — the process of breaking sentences into words and counting/describing them (without any for loops!)\nWe will continue to explore the topic of text data on Week 11 when Prof. Ken Benoit will come and deliver a talk about text mining applications."
   },
   {
-    "objectID": "weeks/week09/lecture.html#lecture-steps",
-    "href": "weeks/week09/lecture.html#lecture-steps",
-    "title": "💻 Week 09 - Lab Roadmap (90 min)",
-    "section": "Lecture steps",
-    "text": "Lecture steps\nThis is an interactive lecture. I will teach you about conda environments and we will compare how everyone’s conda and python settings are different."
+    "objectID": "weeks/week09/lecture.html#lecture-notes",
+    "href": "weeks/week09/lecture.html#lecture-notes",
+    "title": "👨‍🏫 Week 09 - Managing your data science workflow",
+    "section": "Lecture Notes",
+    "text": "Lecture Notes\nThis is an interactive lecture. I will teach you about conda environments and we will compare how everyone’s conda and python settings are different.\n\n🤔 What is in my conda?\n\nStep 1.\nWhich version of python do you have? Open your terminal and type:\npython --version\nCompare your version to those of your colleagues.\n\n\nStep 2.\nWhich version of conda do you have? Open your terminal and type:\nconda list\nYou should see a list of all packages you have installed, or came installed by default, in your conda default environment.\nWhat version of jupyterlab do you have installed? What about pandas? Compare the version of your packages to those of your colleagues. Are there any differences?\n\n\nStep 3.\nLet’s generate some data! Run the command below in the terminal to save the content of conda list to a text file. Replace my username for yours:\nconda list >> conda_list_jonjoncardoso.txt\n\n\nStep 4.\nI will ask you to upload the file you created to Slack\n\n\nStep 5.\nI will then combine all of our data and we will explore the discrepancies in the versions of packages we are all likely to use.\n\n\n\n⚙️ How do we “fix” everyone’s environment?\n\nStep 6.\nIn the terminal, cd to the directory where you keep all the files of your project.\n\n\nStep 7.\nCreate a conda environment\n💡 Useful link: Managing conda environments`\nconda create --prefix .\\venv python=3.10\n\n\nStep 8.\nActivate the environment:\n\nmacOS/Unix UsersWindows\n\n\nsource activate .\\venv\n\n\nactivate .\\venv\n\n\n\n\n\nStep 9.\nWhat’s different about this conda environment?\nconda list\n\n\nStep 10.\nCreate a new file called requirements.txt and paste the following there:\nmatplotlib==3.5.3 # version required for plotnine\nplotnine==0.10.1 # Python version of ggplot2\n\nnumpy>=1.22\npandas==1.4.2\nscikit-learn==1.1.3\n\n### UTILS\njupyterlab==3.4.2\ntqdm==4.62.0\n\n\nStep 11.\nTry to install it with conda:\nconda install --file requirements.txt\nWhy can’t we install all packages?\n\n\n\nStep 12.\nInstall it with pip:\n\nmacOS/Unix UsersWindows\n\n\nconda install pip\nwhich pip\n\n\nconda install pip\nwhere.exe pip\n\n\n\nThen:\npip install -r requirements.txt\n\nStep 12.\nHow does the conda environment look like now?\nconda list"
   },
   {
     "objectID": "weeks/week09/lecture.html#coffee-break-10-min",
     "href": "weeks/week09/lecture.html#coffee-break-10-min",
-    "title": "💻 Week 09 - Lab Roadmap (90 min)",
+    "title": "👨‍🏫 Week 09 - Managing your data science workflow",
     "section": "☕ Coffee Break (10 min)",
     "text": "☕ Coffee Break (10 min)\nUse this time to chat, stretch, drink some coffee or just relax for a bit by yourself."
   },
   {
-    "objectID": "weeks/week09/lecture.html#part-ii---tech-support-45-50-min",
-    "href": "weeks/week09/lecture.html#part-ii---tech-support-45-50-min",
-    "title": "💻 Week 09 - Lab Roadmap (90 min)",
-    "section": "🖥️ Part II - Tech Support (45-50 min)",
-    "text": "🖥️ Part II - Tech Support (45-50 min)\nBased on what I have been hearing from you, this is what I will cover on the second part of the lecture today:\n\nDatabases: what is it? what is SQL? And how to connect to a database directly through pandas. Initially, this content will come on 🗓️ Week 08 but we didn’t have the time for that.\nSome Natural Language Processing (if time allows): a small introduction to spaCy, a package in Python that handles text as data.\n\nI will focus on tokenization which is the process of breaking sentences into words and counting/describing them (without any for loops!)\nIf we don’t have time for that, we will return to topic of text data next week and on Week 11 when Prof. Ken Benoit will come and deliver a talk about text mining."
+    "objectID": "weeks/week09/lecture.html#part-ii---databases-45-50-min",
+    "href": "weeks/week09/lecture.html#part-ii---databases-45-50-min",
+    "title": "👨‍🏫 Week 09 - Managing your data science workflow",
+    "section": "🖥️ Part II - Databases (45-50 min)",
+    "text": "🖥️ Part II - Databases (45-50 min)\nDatabases: what is it? what is SQL? And how to connect to a database directly through pandas. Initially, this content will come on 🗓️ Week 08 but we didn’t have the time for that.\n\n\nOpen to see lecture notes\n\n\nUseful links\n\nRelational Database Management System (RDBMS)\n\nOracle: What is a Relational Database?\nGoogle: What is a Relational Database?\n\nFamous Open-source RDBMS:\n\nMySQL\nPostgreSQL\n\nSQL:\n\nGood step-by-step SQL Tutorial\n\n\n\n\nFollow the steps\n\nStep 13.\nDownload and Install DBrowser for SQLite\n\n\nStep 14.\nDownload this sample data called ChinookDatabase\n\n\nStep 15.\nImport Chinook Database to the database using DBrowser"
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
