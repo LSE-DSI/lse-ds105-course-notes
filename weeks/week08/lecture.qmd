@@ -1,0 +1,1090 @@
+---
+title: "👨‍🏫 Week 08 - (Re-)shaping data, data normalisation ~~and databases~~"
+date: 15 November 2022
+date-meta: 15 November 2022
+---
+
+
+# Setup
+
+You might need to open the **terminal** to install packages if an `import` does not work.
+
+**💡 Tip:** Enable"Toogle Auto-Numbering" on the left-side corner of Jupyter Lab user interface.
+
+# Import packages
+
+::: {.panel-tabset}
+## Python
+
+```python
+import numpy as np
+import pandas as pd
+
+# import the required libraries
+import requests
+from bs4 import BeautifulSoup
+
+# Importing plotnine like this will make your life easier
+from plotnine import *
+```
+## R
+
+```r
+library(tidyverse) #rvest is part of tidyverse
+```
+
+:::
+
+
+
+# Data Collection
+
+**Web Scraping:** [Frequent 'python' Questions](https://stackoverflow.com/questions/tagged/python)
+
+::: {.panel-tabset}
+## Python
+
+```python
+# sending a request to the site
+base_url = "https://stackoverflow.com/questions/tagged/python"
+response_html = requests.get(base_url)
+```
+## R
+
+```r
+# read the content of the site
+base_url <- "https://stackoverflow.com/questions/tagged/R"
+response_html <- read_html(base_url)
+```
+
+The `response_html` object returned by the `rvest::read_html` function is not as easy to explore as the one we get with the Python's BeautifulSoup version of this tutorial. But they encode the same info.
+
+:::
+
+How many lines does this page has?
+
+::: {.panel-tabset}
+## Python
+
+```python
+len(response_html.text)
+```
+
+## R
+
+```r
+print(response_html)
+```
+
+Keep a tab with the documentation of rvest to consult how to do things: [rvest documentation](https://rvest.tidyverse.org/).
+
+:::
+
+
+## What will we extract?
+
+Let's extract the questions and related statistics. Let's explore how you would do that:
+
+
+# Step-by-Step is the way to go
+
+💡Here's the key takeaway of this session: don't write code to collect all the questions. Write code to collect **ONLY ONE** question first.
+
+## Extracting the right `div`s
+
+After exploring the HTML, I found out I want all the `<div class="s-post-summary">` inside the main `<div id="questions">`:
+
+::: {.panel-tabset}
+## Python
+
+
+```python
+# parsing page"s content
+soup = BeautifulSoup(response_html.text)
+
+all_posts = soup.find("div", id="questions").find_all("div", class_="s-post-summary")
+
+print(f"We found {len(all_posts)} posts")
+```
+
+## R
+
+```r
+all_posts <-  
+  html_element(response_html, css="div#questions") %>% 
+  html_elements(css="div.s-post-summary")
+
+cat(paste0("We found ", length(all_posts) , " posts")) # cat is another way to `print()` stuff
+```
+
+:::
+
+💡 Reinforcing the point above: even though we have 50 posts, let's collect **ONLY ONE** first.
+
+## What is inside each `div`?
+
+::: {.panel-tabset}
+## Python
+
+```python
+current_post = all_posts[0] # Select just the first one
+current_post
+```
+
+💡 **Here's a trick, you can use IPython.display to visualise the HTML snippet:**
+
+```python
+from IPython.display import display, HTML
+HTML(str(current_post))
+```
+
+## R
+
+```r
+current_post <- all_posts[[1]] # Select just the first one
+current_post %>% xml2::html_structure()
+```
+
+:::
+
+
+Another way to explore this data more visually is to save it and open it on a code editor such as [VScode](https://code.visualstudio.com/download) (We used it in the [💻 Week 07 - Lab Roadmap](https://lse-dsi.github.io/lse-ds105-course-notes/weeks/week07/lab.html))
+
+## Let's break it all down to get the summary statistics
+
+::: {.panel-tabset}
+## Python
+
+
+```python
+current_post.find_all("div", class_="s-post-summary--stats-item")[0]
+```
+
+## R
+
+```r
+current_post %>% html_elements(css="div.s-post-summary--stats-item")
+```
+
+:::
+
+There are two ways to get the info I want: 
+
+- I could extract the element `title` inside of the `<div>`
+- I could extract the text inside the `<span>` elements.
+
+**⁉️ Still puzzled about what some HTML element tags represent? The book *Duckett, Jon. HTML and CSS: Design and Build Websites. New York: Wiley, 2011.* is a great resource.**
+
+Let's do it the hard way, extract from `<span>`. I will show how to approach this with a `for` loop first, since this is probably how you learned how to do things with programming.
+
+If I just want to print stuff, I could just navigate the tree:
+
+::: {.panel-tabset}
+## Python
+
+```python
+current_div_summary = current_post.find_all("div", class_="s-post-summary--stats-item")[0]
+current_div_summary
+```
+## R
+
+```r
+current_div_summary <- current_post %>% html_elements(css="div.s-post-summary--stats-item")
+current_div_summary <- current_div_summary[[1]]
+current_div_summary
+```
+:::
+
+Let's get the info we want:
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+current_div_summary.find("span",class_="s-post-summary--stats-item-unit").get_text()
+```
+
+```python
+current_div_summary.find("span", class_="s-post-summary--stats-item-number").get_text()
+```
+
+This would be better if we saved it in a **pandas Series**:
+
+```python
+item_unit_css = "span.s-post-summary--stats-item-unit"
+item_num_css  = "span.s-post-summary--stats-item-number"
+
+one_summary_dict = {"unit": current_div_summary.find("span", class_=item_unit_css).get_text(),
+                    "number": current_div_summary.find("span", class_=item_num_css).get_text()}
+one_summary_dict
+```
+
+```python
+pd.Series(one_summary_dict)
+```
+
+Or a **pandas DataFrame**
+
+```python
+pd.DataFrame(one_summary_dict, index=[0]) # do you know why we need the `index=[0]` bit here?
+```
+
+## R
+
+```r
+current_div_summary %>% html_element("span.s-post-summary--stats-item-unit") %>% html_text()
+```
+
+
+```r
+current_div_summary %>% html_element("span.s-post-summary--stats-item-number") %>% html_text()
+
+```
+
+This would be better if we saved it in a **named list**:
+
+```r
+item_unit_css <- "span.s-post-summary--stats-item-unit"
+item_num_css <- "span.s-post-summary--stats-item-number"
+
+one_summary_dict <- 
+  data.frame(unit=current_div_summary %>% html_element(item_unit_css) %>% html_text(),
+             number=current_div_summary %>% html_element(item_num_css) %>% html_text()    
+)
+one_summary_dict
+```
+
+:::
+
+
+
+## Putting the pieces of the puzzle together: gathering summary statistics for a single post
+
+However, the part people struggle the most is figuring out how to **pre-process and store the data** correctly. 
+
+If you follow the strategy above, it will be much easier to think about that. Let's explore together how we would gather **all statistics** from a `current_div_summary`:
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+# an empty list that will be filled with multiple dictionaries 
+# (do you see why? ask your lecturer if not)
+all_stats = [] 
+
+for current_div_summary  in current_post.find_all("div", class_="s-post-summary--stats-item"):
+    one_summary_dict = {"unit": current_div_summary.find("span",class_=item_unit_css).get_text(),
+                        "number": current_div_summary.find("span", class_=item_num_css).get_text()}
+    all_stats.append(one_summary_dict)
+
+# What is in `all_stats` now?
+all_stats
+```
+
+What happens if we try to convert it to a Series?
+
+```python
+pd.Series(all_stats)
+```
+
+What happens if we try to convert it to a DataFrame?
+
+```python
+pd.DataFrame(all_stats)
+```
+
+## R
+
+```r
+# an empty dataframe that will be filled with multiple named lists 
+# (do you see why? ask your lecturer if not)
+all_stats = data.frame() 
+
+all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+for(j  in 1:length(all_div_summaries)){
+  
+  current_div_summary <- all_div_summaries[[j]]
+  
+  one_summary_dict <- 
+    data.frame(unit=current_div_summary %>% 
+              html_element("span.s-post-summary--stats-item-unit") %>% 
+              html_text(),
+        number=current_div_summary %>% 
+               html_element("span.s-post-summary--stats-item-number") %>% 
+               html_text()    
+        )
+  
+  all_stats <- bind_rows(all_stats, one_summary_dict)
+}
+
+# What is in `all_stats` now?
+all_stats
+```
+
+:::
+
+**🎯 ACTION POINT**: Would you organise this dataframe differently?
+
+## Going one step up: gathering summary statistics for ALL posts
+
+How would we gather the summary for **ALL posts**?
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+all_stats = []
+for current_post in all_posts:
+    for current_div_summary  in current_post.find_all("div", class_="s-post-summary--stats-item"):
+        one_summary_dict = {"unit": current_div_summary.find("span",class_=item_unit_css).get_text(),
+                            "number": current_div_summary.find("span", class_=item_num_css).get_text()}
+        all_stats.append(one_summary_dict)
+
+# What is in `all_stats` now?
+all_stats
+```
+
+## R
+
+-   Time to learn about `bind_rows`
+
+```r
+
+all_stats = data.frame()
+
+for(i in 1:length(all_posts)){
+
+  current_post <- all_posts[[i]]
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+  for(i  in 1:length(all_div_summaries)){
+    
+    current_div_summary <- all_div_summaries[[i]]
+    
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    
+    all_stats <- bind_rows(all_stats, one_summary_dict)
+  }
+}
+
+all_stats
+```
+
+:::
+
+**🤔 Q: What is the problem with the dictionary above?**
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+pd.DataFrame(all_stats)
+```
+
+A: Well, I have the statistics about all the 50 posts but I don't know which one is which!
+
+Let's fix that:
+
+```python
+
+all_stats = []
+for current_post in all_posts:
+    post_title = current_post.find("h3", class_="s-post-summary--content-title").get_text().strip()
+    post_time  = current_post.find("time").span["title"]
+    
+    for current_div_summary  in current_post.find_all("div", class_="s-post-summary--stats-item"):
+        one_summary_dict = {"post_title" : post_title,
+                            "post_time"  : post_time, 
+                            "unit"       : current_div_summary.find("span",class_=item_unit_css).get_text(),
+                            "number"     : current_div_summary.find("span", class_=item_num_css).get_text()}
+        all_stats.append(one_summary_dict)
+
+# What is in `all_stats` now?
+all_stats
+```
+
+```python
+pd.DataFrame(all_stats)
+```
+
+## R
+
+-   Time to learn about [str_trim](https://stringr.tidyverse.org/reference/str_trim.html) (also a tidyverse function)
+
+```r
+
+all_stats = data.frame() 
+
+for(i in 1:length(all_posts)){
+
+  current_post <- all_posts[[i]]
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  
+  # Notice anything different in the html_element here? 
+  # Raise your hand and call your lecture if you don't see any difference.
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+
+  for(i  in 1:length(all_div_summaries)){
+    
+    current_div_summary <- all_div_summaries[[i]]
+    
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text() ,
+          post_title=post_title,
+          post_time=post_time
+          )
+    
+    all_stats <- bind_rows(all_stats, one_summary_dict)
+  }
+}
+
+all_stats
+```
+
+:::
+
+
+**(Detour) Plotting distribution of these statistics we collected**
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+plot_df = pd.DataFrame(all_stats)
+plot_df["number"] = plot_df["number"].astype(int)
+
+g = (
+ ggplot(plot_df, aes(x="unit", y="number", group="unit", fill="unit"))
+   + geom_boxplot()
+)
+
+g
+```
+
+## R
+
+```r
+plot_df <- all_stats
+plot_df$number <- as.integer(plot_df$number)
+
+g = (
+ ggplot(plot_df, aes(x=unit, y=number, group=unit, fill=unit))
+   + geom_boxplot()
+)
+
+g
+```
+
+:::
+
+**What if I want to change the order of the X axis?**
+
+For this, you'll need to convert `unit` (what we are mapping to the X-axis) to a Categorical (or factor in R).
+
+::: {.panel-tabset}
+
+## Python
+
+```python
+plot_df = pd.DataFrame(all_stats)
+plot_df["number"] = plot_df["number"].astype(int)
+plot_df["unit"] = pd.Categorical(plot_df["unit"], categories=["views", "vote", "votes", "answer", "answers"], ordered=True)
+
+g = (
+ ggplot(plot_df, aes(x="unit", y="number", group="unit", fill="unit"))
+   + geom_boxplot()
+)
+
+g
+
+```
+
+## R
+```r
+plot_df <- all_stats
+plot_df$number <- as.integer(plot_df$number)
+plot_df$unit <- factor(plot_df$unit, levels=c("views", "vote", "votes", "answer", "answers"), ordered=True)
+
+
+g = (
+ ggplot(plot_df, aes(x=unit, y=number, group=unit, fill=unit))
+   + geom_boxplot()
+)
+
+g
+```
+:::
+
+# Functions
+
+Don't underestimate the power of functions!
+
+In fact, you might find it easier to work with them than with `for` loops.
+
+## A function just to parse the `current_div_summary`
+
+::: {.panel-tabset}
+
+## Python
+
+Check [numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html) for documenting functions.
+
+```python
+def parse_div_summary(current_div_summary):
+    """
+    # Let's write documentation together
+    """
+    item_unit_css <- "span.s-post-summary--stats-item-unit"
+    item_num_css <- "span.s-post-summary--stats-item-number"
+
+    one_summary_dict = pd.DataFrame({"unit"   : current_div_summary.find("span",class_=item_unit_css).get_text(),
+                                     "number" : current_div_summary.find("span", class_=item_num_css).get_text()}, index=[0])
+    return one_summary_dict
+```
+
+```python
+parse_div_summary(current_div_summary)
+```
+
+## R
+
+Check [roxygen2 convention](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html) for documenting functions
+
+```r
+#' 
+#' Let's write documentation together
+#'
+parse_div_summary <- function(current_div_summary){
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    one_summary_dict
+}
+
+```
+
+```r
+parse_div_summary(current_div_summary)
+```
+
+:::
+
+## A function to parse all summaries from a `current_post`
+
+Time to learn about `pd.concat()`. And to revisit Python's [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp) feature.
+
+::: {.panel-tabset}
+
+## Python
+
+
+```python
+def parse_all_summaries(current_post):
+    all_summaries = pd.concat([parse_div_summary(div_summary) 
+                               for div_summary in 
+                               current_post.find_all("div", class_="s-post-summary--stats-item")])
+    return all_summaries
+```
+
+```python
+parse_all_summaries(current_post)
+```
+
+## R
+
+Time to learn about `lapply`
+
+```r
+parse_all_summaries <- function(current_post){
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+  
+  all_summaries <- lapply(all_div_summaries, parse_div_summary)
+  all_summaries <- bind_rows(all_summaries) # R's equivalent to python's pd.concat
+  all_summaries 
+}
+
+```
+
+```r
+parse_all_summaries(current_post)
+```
+
+:::
+
+## A function to parse other info about a `current_post`
+
+
+::: {.panel-tabset}
+
+## Python
+
+Time to learn how to expand a dataframe.
+
+```python
+def parse_post_div(current_post):
+    post_title = current_post.find("h3", class_="s-post-summary--content-title").get_text().strip()
+    post_time  = current_post.find("time").span["title"]
+    
+    df_summary = parse_all_summaries(current_post)
+    # We can reuse the dataframe that returned from `parse_all_summaries`
+    df_summary["post_title"] = post_title
+    df_summary["post_time"]  = post_time
+    return df_summary
+```
+
+```python
+parse_post_div(current_post)
+```
+
+## R
+
+```r
+parse_post_div <- function(current_post){
+    
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+    
+  df_summary <- parse_all_summaries(current_post)
+  
+  # We can reuse the dataframe that returned from `parse_all_summaries`
+  df_summary$post_title <- post_title
+  df_summary$post_time <- post_time
+  
+  df_summary 
+  
+}
+
+```
+
+```r
+parse_post_div(current_post)
+```
+
+:::
+
+## A function to parse ALL posts
+
+
+::: {.panel-tabset}
+
+## Python
+
+Instead of growing a list using `for` loops, let's use list comprehension and use `pd.concat()`
+
+Time to learn about `reset_index()` and `inplace=True`.
+
+```python
+def parse_all_posts(soup):
+    all_posts = soup.find("div", id="questions").find_all("div", class_="s-post-summary")
+    df_results = pd.concat([parse_post_div(current_post) for current_post in all_posts])
+    
+    # Optional: If you are also annoyed at the zero indices
+    # df_results.reset_index(drop=True, inplace=True)
+    return df_results
+```
+
+```python
+parse_all_posts(soup)
+```
+
+## R
+
+```r
+parse_all_posts <- function(response_html){
+    
+  all_posts <-  
+    html_element(response_html, css="div#questions") %>% 
+    html_elements(css="div.s-post-summary")
+  
+  df_results <- bind_rows(lapply(all_posts, parse_post_div))
+    
+  # Optional: If you are also annoyed at the zero indices
+  # df_results.reset_index(drop=True, inplace=True)
+  df_results 
+  
+}
+
+```
+
+```r
+parse_all_posts(response_html)
+```
+
+:::
+
+## Putting it all together
+
+- Use Jupyter Notebook/Google Colab for prototyping, but not for reusing code
+- Store your functions in a separate file
+
+This is all the code we created:
+
+::: {.panel-tabset}
+## Python
+
+```python
+import pandas as pd
+from bs4 import BeautifulSoup
+
+def parse_div_summary(current_div_summary):
+    """
+    # Let's write documentation together
+    """
+    
+    one_summary_dict = pd.DataFrame({"unit"   : current_div_summary.find("span",class_=item_unit_css).get_text(),
+                                     "number" : current_div_summary.find("span", class_=item_num_css).get_text()}, index=[0])
+    return one_summary_dict
+
+def parse_all_summaries(current_post):
+    all_summaries = pd.concat([parse_div_summary(div_summary) 
+                                for div_summary in 
+                                current_post.find_all("div",class_="s-post-summary--stats-item")])
+    return all_summaries
+
+def parse_post_div(current_post):
+    post_title = current_post.find("h3", class_="s-post-summary--content-title").get_text().strip()
+    post_time  = current_post.find("time").span["title"]
+    
+    df_summary = parse_all_summaries(current_post)
+    # We can reuse the dataframe that returned from `parse_all_summaries`
+    df_summary["post_title"] = post_title
+    df_summary["post_time"]  = post_time
+    return df_summary
+
+def parse_all_posts(soup):
+    all_posts = soup.find("div", id="questions").find_all("div", class_="s-post-summary")
+    df_results = pd.concat([parse_post_div(current_post) for current_post in all_posts])
+    
+    # Optional: If you are also annoyed at the zero indices
+    # df_results.reset_index(drop=True, inplace=True)
+    return df_results
+```
+
+## R
+
+```{r}
+parse_div_summary <- function(current_div_summary){
+    one_summary_dict <- 
+      data.frame(unit=current_div_summary %>% 
+                html_element("span.s-post-summary--stats-item-unit") %>% 
+                html_text(),
+          number=current_div_summary %>% 
+                 html_element("span.s-post-summary--stats-item-number") %>% 
+                 html_text()    
+          )
+    one_summary_dict
+}
+
+parse_all_summaries <- function(current_post){
+  
+  all_div_summaries <- current_post %>% html_elements("div.s-post-summary--stats-item")
+  
+  all_summaries <- lapply(all_div_summaries, parse_div_summary)
+  all_summaries <- bind_rows(all_summaries) # R's equivalent to python's pd.concat
+  all_summaries 
+}
+
+parse_post_div <- function(current_post){
+    
+  post_title <- 
+      current_post %>% 
+      html_element("h3.s-post-summary--content-title") %>%  
+      html_text() %>% 
+      str_trim()
+  post_time  <- 
+        current_post %>% 
+      html_element("time span") %>%  
+      html_attr("title")
+    
+  df_summary <- parse_all_summaries(current_post)
+  
+  # We can reuse the dataframe that returned from `parse_all_summaries`
+  df_summary$post_title <- post_title
+  df_summary$post_time <- post_time
+  
+  df_summary 
+  
+}
+
+parse_all_posts <- function(response_html){
+    
+  all_posts <-  
+    html_element(response_html, css="div#questions") %>% 
+    html_elements(css="div.s-post-summary")
+  
+  df_results <- bind_rows(lapply(all_posts, parse_post_div))
+    
+  # Optional: If you are also annoyed at the zero indices
+  # df_results.reset_index(drop=True, inplace=True)
+  df_results 
+  
+}
+```
+
+:::
+
+::: {.panel-tabset}
+
+## Python
+
+**🎯 ACTION POINT**: 
+
+- In the same folder as this notebook, create a new folder and call it `stackparser`
+- Create an **empty file** at `stackparser/__init__.py` (it has to be named exactly like that)
+- Move the code above to a `stackparser/questions.py` file
+- Restart the Python session
+
+## R
+
+**🎯 ACTION POINT**:
+
+-   Clear the environment:
+
+```r
+rm(list=ls())
+```
+
+Read more about the `rm` function like [here](https://stackoverflow.com/a/43673112/843365)
+
+-   In the same folder as this notebook, create a new file `stackparser_questions.R`
+
+:::
+
+The code below should return the same `df` as we have been creating:
+
+::: {.panel-tabset}
+## Python
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+import pandas as pd
+import stackparser           # NOTE THIS LINE
+import stackparser.questions # NOTE THIS LINE
+
+response_html = requests.get("https://stackoverflow.com/questions/tagged/python")
+soup = BeautifulSoup(response_html.text)
+
+df = stackparser.questions.parse_all_posts(soup)
+df
+```
+
+## R
+```r
+
+source("stackparser_questions.R")
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+head(df)
+```
+
+:::
+
+### Resulting DataFrame
+
+We don't need to run and re-run code anymore. All we need to do is invoke the function `parse_all_posts` from our `stackparser` package:
+
+::: {.panel-tabset}
+## Python
+
+```python
+df = stackparser.questions.parse_all_posts(soup)
+df
+```
+
+## R
+
+```r
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+dim(df)
+```
+
+```r
+df %>% str
+```
+:::
+
+What does the above mean?
+
+# Pre-processing the data
+
+## Convert column `time` to a proper datetime type
+
+::: {.panel-tabset}
+## Python
+
+
+- Using pandas [time series capabilities](https://pandas.pydata.org/docs/user_guide/timeseries.html)
+- Using pandas [`assign` function](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.assign.html)
+- Read more about python [lambda functions](https://www.w3schools.com/python/python_lambda.asp)
+
+```python
+# Luckily the column `time` is already well formatted:
+pd.to_datetime(df["post_time"])
+```
+
+We can use `assign` to add a column to a dataframe:
+
+```python
+df.assign(post_time_formatted=lambda x: pd.to_datetime(x["post_time"]))
+```
+
+If we want to store this new column, we need to re-assign the dataframe `df`:
+
+```
+df = df.assign(post_time_formatted=lambda x: pd.to_datetime(x["post_time"]))
+df.dtypes
+```
+
+## R
+
+-   Using the [lubridate package](https://lubridate.tidyverse.org/)
+
+```r
+library(lubridate)
+```
+
+```r
+# Luckily the column `post_time` is already well formatted:
+df %>% mutate(post_time_formatted=ymd_hms(post_time))
+```
+
+If we want to store this new column, we need to re-assign the dataframe `df`
+
+```r
+df <- df %>% mutate(post_time_formatted=ymd_hms(post_time))
+```
+
+```r
+df %>% str
+```
+
+:::
+
+## Let's create three columns: `votes`, `answers`, `views`
+
+::: {.panel-tabset}
+## Python
+
+- That is a task for pandas [pivot_table](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)
+
+```python
+df.pivot_table(values="number", columns="unit", index=["post_title", "post_time_formatted"])
+```
+
+## R
+
+-   That is a task for tidyr [pivot_wider](https://tidyr.tidyverse.org/reference/pivot_wider.html) (part of tidyverse)
+
+```r
+df %>% pivot_wider(id_cols=c(post_title, post_time_formatted),
+                   names_from=unit,
+                   values_from=number)
+```
+
+:::
+
+What can we improve about the DF above?
+
+**🤝 WORKING TOGETHER**
+
+- Modify the functions we created in the `stackparser/questions.py` file so that:
+    - `answer` is renamed to `answers`
+    - `vote` is renamed to `votes`
+- Recreate the Dataframe (code below) and see the difference!
+
+Sadly, Jupyter will not recognise your changes unless you restart and re-run the Python session. You can do that, or, alternatively, add a chunk of code to the top of your notebook and add the two lines below to ["reload"](https://stackoverflow.com/a/44977335/843365) functions.
+
+::: {.panel-tabset}
+## Python
+
+```python
+%load_ext autoreload
+%autoreload 2
+```
+
+```python
+import requests
+import pandas as pd
+
+from bs4 import BeautifulSoup
+
+import stackparser
+from stackparser.questions import parse_all_posts
+
+response_html = requests.get("https://stackoverflow.com/questions/tagged/python")
+soup = BeautifulSoup(response_html.text)
+
+# Note that we piped the output of `parse_all_posts()` to the `assign` function. 
+# That is very common to do with Pandas
+df = (
+    parse_all_posts(soup)
+    .assign(post_time_formatted=lambda x: pd.to_datetime(x["post_time"]))
+    .pivot_table(values="number", columns="unit", index=["post_title", "post_time_formatted"])
+)
+
+df
+```
+
+## R
+
+```r
+response_html <- read_html("https://stackoverflow.com/questions/tagged/R")
+df <- parse_all_posts(response_html)
+
+df_formatted <- 
+  df %>% 
+  mutate(post_time_formatted=ymd_hms(post_time)) %>% 
+  pivot_wider(id_cols=c(post_title, post_time_formatted),
+              names_from=unit,
+              values_from=number)
+
+print(paste("Column names: ", paste(names(df_formatted), collapse=", ")))
+
+df_formatted # or View(df_formatted)
+```
+
+:::
