@@ -2,190 +2,206 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/index.html</loc>
-    <lastmod>2022-11-22T15:37:03.886Z</lastmod>
+    <lastmod>2022-11-29T12:05:43.724Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/api_list.html</loc>
-    <lastmod>2022-11-22T15:37:07.146Z</lastmod>
+    <lastmod>2022-11-29T12:05:45.976Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/assessments.html</loc>
-    <lastmod>2022-11-22T15:37:07.682Z</lastmod>
+    <lastmod>2022-11-29T12:05:46.552Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/communication.html</loc>
-    <lastmod>2022-11-22T15:37:08.110Z</lastmod>
+    <lastmod>2022-11-29T12:05:47.060Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/courserep.html</loc>
-    <lastmod>2022-11-22T15:37:08.574Z</lastmod>
+    <lastmod>2022-11-29T12:05:47.708Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/project.html</loc>
-    <lastmod>2022-11-22T15:37:08.986Z</lastmod>
+    <lastmod>2022-11-29T12:05:48.276Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/regulation.html</loc>
-    <lastmod>2022-11-22T15:37:09.410Z</lastmod>
+    <lastmod>2022-11-29T12:05:48.692Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/main/syllabus.html</loc>
-    <lastmod>2022-11-22T15:37:09.974Z</lastmod>
+    <lastmod>2022-11-29T12:05:49.288Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/assessments/formative1.html</loc>
-    <lastmod>2022-11-22T15:37:10.398Z</lastmod>
+    <lastmod>2022-11-29T12:05:49.744Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/assessments/formative2.html</loc>
-    <lastmod>2022-11-22T15:37:10.842Z</lastmod>
+    <lastmod>2022-11-29T12:05:50.216Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/assessments/summative1.html</loc>
-    <lastmod>2022-11-22T15:37:11.330Z</lastmod>
+    <lastmod>2022-11-29T12:05:50.728Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/assessments/summative2.html</loc>
-    <lastmod>2022-11-22T15:37:11.810Z</lastmod>
+    <lastmod>2022-11-29T12:05:51.232Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week01.html</loc>
-    <lastmod>2022-11-22T15:37:12.214Z</lastmod>
+    <lastmod>2022-11-29T12:05:51.676Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02.html</loc>
-    <lastmod>2022-11-22T15:37:12.642Z</lastmod>
+    <lastmod>2022-11-29T12:05:52.136Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week03.html</loc>
-    <lastmod>2022-11-22T15:37:13.070Z</lastmod>
+    <lastmod>2022-11-29T12:05:52.576Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week04.html</loc>
-    <lastmod>2022-11-22T15:37:13.498Z</lastmod>
+    <lastmod>2022-11-29T12:05:53.036Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week05.html</loc>
-    <lastmod>2022-11-22T15:37:13.942Z</lastmod>
+    <lastmod>2022-11-29T12:05:53.512Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week07.html</loc>
-    <lastmod>2022-11-22T15:37:14.390Z</lastmod>
+    <lastmod>2022-11-29T12:05:53.964Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week08.html</loc>
-    <lastmod>2022-11-22T15:37:14.790Z</lastmod>
+    <lastmod>2022-11-29T12:05:54.432Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week09.html</loc>
-    <lastmod>2022-11-22T15:37:15.186Z</lastmod>
+    <lastmod>2022-11-29T12:05:54.864Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week10.html</loc>
+    <lastmod>2022-11-29T12:05:55.304Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week01/appendix.html</loc>
-    <lastmod>2022-11-22T15:37:15.610Z</lastmod>
+    <lastmod>2022-11-29T12:05:55.752Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week01/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:16.030Z</lastmod>
+    <lastmod>2022-11-29T12:05:56.188Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02/appendix.html</loc>
-    <lastmod>2022-11-22T15:37:16.490Z</lastmod>
+    <lastmod>2022-11-29T12:05:56.704Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02/checklist.html</loc>
-    <lastmod>2022-11-22T15:37:16.902Z</lastmod>
+    <lastmod>2022-11-29T12:05:57.128Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02/lab.html</loc>
-    <lastmod>2022-11-22T15:37:17.830Z</lastmod>
+    <lastmod>2022-11-29T12:05:58.004Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week02/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:18.418Z</lastmod>
+    <lastmod>2022-11-29T12:05:58.468Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week03/checklist.html</loc>
-    <lastmod>2022-11-22T15:37:18.858Z</lastmod>
+    <lastmod>2022-11-29T12:05:58.932Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week03/lab.html</loc>
-    <lastmod>2022-11-22T15:37:19.470Z</lastmod>
+    <lastmod>2022-11-29T12:05:59.584Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week03/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:19.886Z</lastmod>
+    <lastmod>2022-11-29T12:06:00.028Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week04/checklist.html</loc>
-    <lastmod>2022-11-22T15:37:20.314Z</lastmod>
+    <lastmod>2022-11-29T12:06:00.512Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week04/lab.html</loc>
-    <lastmod>2022-11-22T15:37:21.170Z</lastmod>
+    <lastmod>2022-11-29T12:06:01.388Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week04/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:21.578Z</lastmod>
+    <lastmod>2022-11-29T12:06:01.836Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week05/appendix.html</loc>
-    <lastmod>2022-11-22T15:37:22.034Z</lastmod>
+    <lastmod>2022-11-29T12:06:02.312Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week05/checklist.html</loc>
-    <lastmod>2022-11-22T15:37:22.462Z</lastmod>
+    <lastmod>2022-11-29T12:06:02.764Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week05/lab.html</loc>
-    <lastmod>2022-11-22T15:37:23.198Z</lastmod>
+    <lastmod>2022-11-29T12:06:03.556Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week05/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:23.594Z</lastmod>
+    <lastmod>2022-11-29T12:06:03.976Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week07/checklist.html</loc>
-    <lastmod>2022-11-22T15:37:24.058Z</lastmod>
+    <lastmod>2022-11-29T12:06:04.468Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week07/lab.html</loc>
-    <lastmod>2022-11-22T15:37:24.518Z</lastmod>
+    <lastmod>2022-11-29T12:06:04.956Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week07/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:24.894Z</lastmod>
+    <lastmod>2022-11-29T12:06:05.364Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week08/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:27.302Z</lastmod>
+    <lastmod>2022-11-29T12:06:07.856Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week09/lab.html</loc>
-    <lastmod>2022-11-22T15:37:27.690Z</lastmod>
+    <lastmod>2022-11-29T12:06:08.272Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week09/lecture.html</loc>
-    <lastmod>2022-11-22T15:37:28.186Z</lastmod>
+    <lastmod>2022-11-29T12:06:08.800Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week10/checklist.html</loc>
+    <lastmod>2022-11-29T12:06:09.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week10/lab.html</loc>
+    <lastmod>2022-11-29T12:06:09.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/weeks/week10/lecture.html</loc>
+    <lastmod>2022-11-29T12:06:10.100Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week01_slides_part1.html</loc>
-    <lastmod>2022-11-22T15:37:31.802Z</lastmod>
+    <lastmod>2022-11-29T12:06:13.960Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week01_slides_part2.html</loc>
-    <lastmod>2022-11-22T15:37:32.694Z</lastmod>
+    <lastmod>2022-11-29T12:06:15.916Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week02_slides_part1.html</loc>
-    <lastmod>2022-11-22T15:37:33.782Z</lastmod>
+    <lastmod>2022-11-29T12:06:17.088Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week03_slides_part1.html</loc>
-    <lastmod>2022-11-22T15:37:35.070Z</lastmod>
+    <lastmod>2022-11-29T12:06:18.476Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/LSE-DSI/lse-ds105-course-notes/slides/week04_slides_part1.html</loc>
-    <lastmod>2022-11-22T15:37:35.574Z</lastmod>
+    <lastmod>2022-11-29T12:06:19.012Z</lastmod>
   </url>
 </urlset>
