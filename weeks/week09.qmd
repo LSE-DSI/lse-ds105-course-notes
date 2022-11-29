@@ -18,5 +18,4 @@ Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 22 November 2022 f
 
 - 👨‍🏫 [Lecture](/weeks/week09/lecture.qmd)
 
-- 💻 [Lab roadmap](#)
-
+- ~~💻 [Lab roadmap](#)~~ (We didn't have lab sessions on W09 due to [UCU Industrial Strike Action](https://www.canva.com/design/DAFSAUPVw6M/0GwGi_L4Zl_rG2oe404okg/view#4))

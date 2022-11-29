@@ -1,0 +1,9 @@
+---
+title: "👨‍🏫 Week 10 - Unstructured Data"
+date: 22 November 2022
+date-meta: 22 November 2022
+from: markdown+emoji
+author: Dr. Jon Cardoso-Silva
+---
+
+I will update this page later in the week to contain what we have explored in the lecture, similar to [Week 08 - lecture](/weeks/week08/lecture.qmd). Revisit this page later.

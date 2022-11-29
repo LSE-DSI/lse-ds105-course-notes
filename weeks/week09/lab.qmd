@@ -6,4 +6,4 @@ from: markdown+emoji
 author: Anton Boichenko
 ---
 
-<mark class="todo"></mark>
+CANCELLED due to [UCU Industrial Strike Action](https://www.canva.com/design/DAFSAUPVw6M/0GwGi_L4Zl_rG2oe404okg/view#4).

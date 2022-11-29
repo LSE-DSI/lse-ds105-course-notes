@@ -1,12 +1,18 @@
 ---
 title: "LSE DS105M"
 subtitle: "Data for Data Science"
-date: 05 September 2022
-date-meta: 05 September 2022
+date: 29 November 2022
+date-meta: 29 November 2022
 ---
 
 ::: {.callout-important}
-## ⚠️ Important Update 25/10/2022
+## ⚠️ Important Update 29/11/2022
+
+- The syllabus was updated to reflect the impact of the [UCU Industrial Strike Action](https://www.canva.com/design/DAFSAUPVw6M/0GwGi_L4Zl_rG2oe404okg/view#4).
+
+<details><summary>Older Updates</summary> 
+
+**(25/10/2022)**
 
 We re-ordered the topics from Weeks 05 onwards. See a list of what has changed:
 
@@ -18,6 +24,7 @@ We re-ordered the topics from Weeks 05 onwards. See a list of what has changed:
 - The lecture "Unstructured data (text, audio & image)" was moved to Week 10
 - Weeks 09 & 11 were left untouched
 
+</details>
 :::
 
 
@@ -239,7 +246,7 @@ These skills are **cumulative**, so practice what you learned each week and make
        </tr>
        <tr class="even">
            <td style="font-weight:bold;">Lab</td>
-           <td>Setting up Github for your group project & GitFlow</td>
+           <td>~~CANCELLED~~ <br/> (We didn't have lab sessions on W09 due to [UCU Industrial Strike Action](https://www.canva.com/design/DAFSAUPVw6M/0GwGi_L4Zl_rG2oe404okg/view#4))</td>
        </tr>
    </tbody>
 
@@ -258,7 +265,7 @@ These skills are **cumulative**, so practice what you learned each week and make
        </tr>
        <tr class="even">
            <td style="font-weight:bold;">Lab</td>
-           <td>🦸 Super tech-support (get help with your project)</td>
+           <td>~~🦸 Super tech-support (get help with your project)~~ <br/> Setting up Github for your group project & GitFlow </td>
        </tr>
    </tbody>
 

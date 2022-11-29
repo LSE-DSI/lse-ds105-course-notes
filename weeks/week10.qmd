@@ -1,0 +1,32 @@
+---
+title: "🗓️ Week 10 - Unstructured Data (Text, Audio, Video)"
+date: 29 November 2022
+date-meta: 29 November 2022
+---
+
+Here's what to expect from this week's lecture (and the week).
+
+- The first part will be about extracting more useful information from text data. I will be using some `spaCy` tutorials (the equivalent in R is `quanteda`).  
+    - The goal is to help you get rid of for loops in your codes as much as possible.
+- The second part of the lecture today will be dedicated to support you with your projects. Use this time to work on your projects, I will go around providing help and assistance or helping you find the right tools for what you want to produce.
+
+**Bring your questions and challenges. At this stage of the course, we can adapt to the needs of your projects.**
+
+Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 29 November 2022 from 4 pm to 6 pm.
+
+
+## Links
+
+- 👨‍🏫 [Lecture](/weeks/week10/lecture.qmd)
+
+- ✅ [Week 10 Checklist](/weeks/week10/checklist.qmd)
+
+- 💻 [Lab roadmap](#) 🔜
+
+- 🖋️ [Week 11 presentation - Marking Criteria](#) 🔜
+
+## Older links that are relevant to your projects
+
+- 🔖 [Week 05 - Appendix](/weeks/week05/appendix.qmd)
+
+- [👨‍🏫 Week 08 lecture](/weeks/week08/lecture.qmd)

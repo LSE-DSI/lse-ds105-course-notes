@@ -1,0 +1,41 @@
+---
+title: "✅ Week 10 - Checklist"
+date: 29 November 2022
+date-meta: 29 November 2022
+---
+
+Your weekly time management tips in relation to this course [^1]:
+
+- ✍️ **Practice!**:  (Monday - Wednesday) 
+    - Revisit the reasoning process I demonstrated on [👨‍🏫 Week 08 lecture](/weeks/week08/lecture.qmd). Make sure you understand why I opted for functions instead of for loops.
+
+    - This content is key to your progress. If you see yourself having to write lots of `if-else` and `for` loops, try to switch to functions and vectorised operations whenever possible.
+
+    - While it is fine to use these basic features when you are learning how to program, in data science it is best to use  _vectorized_ operations whenever possible.
+
+    - To put it another way: have you mastered pandas (Python), or tidyverse (R) already? :) 
+
+    - Check the links in the 🔖 [Week 05 - Appendix](/weeks/week05/appendix.qmd) to be redirected to the documentation and tutorials of the main packages we have been exploring.
+
+- 🧑‍🏫 **Attend the lecture!** (Tuesday)
+
+    - The second half of the lecture will be just to support you with your projects. If you are struggling to get rid of unnecessary `if-else` and `for loops`, this is a good place to ask questions and get assistance.
+
+
+- 🧑‍💻 **Prepare for the lab** (Thursday/Friday):  In order for us not to lose time during the labs we would ask you to do several things before you attend the seminars:
+
+    - **Create a dedicated Github repository for your project**. Give this repository a meaningful name and add your team members as collaborators.
+
+- 🧑‍💻 **Attend the lab!** (Friday)
+
+- ✋ **Attend the drop-in session** (Early next week)
+
+    - I will be hosting a drop-in session next Monday 5 December 2022 from 1.30pm-3.30pm at 32L.LG.04. Come along!
+
+------------
+
+- 📟 **Struggling with something?** Share your questions on the `#week10` channel in our Slack.
+
+- 👂**Want to talk to someone else about this course?** Try reaching out to your course representative, `@Amara Otero Salgado` on Slack.
+
+[^1]: Needless to say, this is just a _suggestion_ of how to plan your week. Ultimately, you are the best judge of your time!

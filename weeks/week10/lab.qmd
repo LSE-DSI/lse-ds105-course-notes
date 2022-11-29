@@ -1,0 +1,15 @@
+---
+title: "💻 Week 10 - Lab Roadmap (90 min)"
+date: 2 December 2022
+date-meta: 2 December 2022
+from: markdown+emoji
+author: Anton Boichenko
+---
+
+In order for us not to lose time during the labs we would ask you to do several things before you attend the seminars:
+
+- **Create a dedicated Github repository for your project**. Give this repository a meaningful name and add your team members as collaborators.
+
+## Lab Roadmap 
+
+<mark class="todo"></mark>
