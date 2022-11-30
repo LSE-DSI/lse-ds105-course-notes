@@ -928,14 +928,14 @@
     "href": "weeks/week10/lab.html",
     "title": "💻 Week 10 - Lab Roadmap (90 min)",
     "section": "",
-    "text": "In order for us not to lose time during the labs we would ask you to do several things before you attend the seminars:"
+    "text": "If you want to gain time, try to do the following before you attend the lab on Friday:"
   },
   {
     "objectID": "weeks/week10/lab.html#lab-roadmap",
     "href": "weeks/week10/lab.html#lab-roadmap",
     "title": "💻 Week 10 - Lab Roadmap (90 min)",
     "section": "Lab Roadmap",
-    "text": "Lab Roadmap"
+    "text": "Lab Roadmap\nBy the time of this lab you have (hopefully) already decided on the topic of your group project and (most likely) are eager to start writing code. Yay! We knew that!\nFor you to collaborate efficiently on your project you will need to understand the basics of GitFlow and generally managing projects on GitHub.\nToday we will go through some steps that will help you better understand how data science projects work.\n\n\nPart 1: Setting up a GitHub repo (10 min)\n\n\nPart 1: Setting up a GitHub repo\n\n\nThe first thing that you should do (if you haven’t done so yet) is to create a repo for your project on GitHub. You will store your code there.\n🎯 ACTION POINTS\n\nMove around and sit together with the members of your group.\n\nYou might have taken the next steps already. But make sure you have done it.\n\n(IF YOU HAVEN’T DONE SO YET) One of your group members creates a private repo on GitHub with the name of your project. Make sure to add a README file.\nGo to your repo -> Settings -> Collaborators -> Add people. Add all the members of the project to the repo.\nClone the repo to your Desktop.\n\nNow you have the repo with all the members having access to it.\n\n\n\nPart 2: Let’s grow a tree (40 min)"
   },
   {
     "objectID": "weeks/week10/lecture.html",

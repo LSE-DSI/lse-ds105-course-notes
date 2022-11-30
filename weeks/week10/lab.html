@@ -368,7 +368,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-roadmap" id="toc-lab-roadmap" class="nav-link active" data-scroll-target="#lab-roadmap">Lab Roadmap</a></li>
+  <li><a href="#lab-roadmap" id="toc-lab-roadmap" class="nav-link active" data-scroll-target="#lab-roadmap">Lab Roadmap</a>
+  <ul class="collapse">
+  <li><a href="#part-1-setting-up-a-github-repo" id="toc-part-1-setting-up-a-github-repo" class="nav-link" data-scroll-target="#part-1-setting-up-a-github-repo">Part 1: Setting up a GitHub repo</a></li>
+  <li><a href="#part-2-lets-grow-a-tree" id="toc-part-2-lets-grow-a-tree" class="nav-link" data-scroll-target="#part-2-lets-grow-a-tree">Part 2: Let’s grow a tree</a></li>
+  <li><a href="#part-3-you-shall-not-pass" id="toc-part-3-you-shall-not-pass" class="nav-link" data-scroll-target="#part-3-you-shall-not-pass">Part 3: You shall not pass</a></li>
+  <li><a href="#part-4-if-i-ignore-it-it-will-go-away" id="toc-part-4-if-i-ignore-it-it-will-go-away" class="nav-link" data-scroll-target="#part-4-if-i-ignore-it-it-will-go-away">Part 4: If I ignore it, it will go away</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -405,16 +411,111 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>In order for us not to lose time during the labs we would ask you to do several things before you attend the seminars:</p>
+<p>If you want to gain time, try to do the following before you attend the lab on Friday:</p>
 <ul>
 <li><strong>Create a dedicated Github repository for your project</strong>. Give this repository a meaningful name and add your team members as collaborators.</li>
 </ul>
 <section id="lab-roadmap" class="level2">
 <h2 class="anchored" data-anchor-id="lab-roadmap">Lab Roadmap</h2>
-<p><mark class="todo"></mark></p>
+<p>By the time of this lab you have (hopefully) already decided on the topic of your group project and (most likely) are eager to start writing code. Yay! We knew that!</p>
+<p>For you to collaborate efficiently on your project you will need to understand the basics of <strong>GitFlow</strong> and generally managing projects on GitHub.</p>
+<p>Today we will go through some steps that will help you better understand how data science projects work.</p>
+<details>
+<summary>
+Part 1: Setting up a GitHub repo (10 min)
+</summary>
+<section id="part-1-setting-up-a-github-repo" class="level3">
+<h3 class="anchored" data-anchor-id="part-1-setting-up-a-github-repo">Part 1: Setting up a GitHub repo</h3>
+<p>
+</p>
+<p>The first thing that you should do (if you haven’t done so yet) is to create a repo for your project on GitHub. You will store your code there.</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Move around and sit together with the members of your group.</li>
+</ol>
+<p>You might have taken the next steps already. But make sure you have done it.</p>
+<ol start="2" type="1">
+<li>(IF YOU HAVEN’T DONE SO YET) One of your group members creates a <strong>private</strong> repo on GitHub with the name of your project. Make sure to add a README file.</li>
+<li>Go to your repo -&gt; Settings -&gt; Collaborators -&gt; <strong>Add people</strong>. Add all the members of the project to the repo.</li>
+<li>Clone the repo to your Desktop.</li>
+</ol>
+<p>Now you have the repo with all the members having access to it.</p>
+</section></details>
+<details>
+<summary>
+Part 2: Let’s grow a tree (40 min)
+</summary>
+</details></section>
+<section id="part-2-lets-grow-a-tree" class="level3">
+<h3 class="anchored" data-anchor-id="part-2-lets-grow-a-tree">Part 2: Let’s grow a tree</h3>
+<p>One of the key principles of GitFlow is creating branches. Branches are used to separately work on a certain feature or fix a problem.</p>
+<p>Let’s create some branches and make sure we understand how to work on them.</p>
+<p>🤝 <strong>WORKING TOGETHER</strong></p>
+<ol type="1">
+<li>Each group member creates an <strong>issue</strong> to create a file with their information there. Name each issue according to the name of the person whose information we need there. For instance, if Anton’s information is needed it will be <code>Add Anton's info</code>.</li>
+<li>Once the issue is created it will be assigned a number.</li>
+<li>Each of the group members creates a new branch and calls it in the following format <code>issue#N-username-description</code>, where:
+<ul>
+<li>N is the number of the issue</li>
+<li>username is the person’s GitHub username</li>
+<li>description is a <strong>very</strong> short description of what’s done in this branch</li>
+</ul>
+In the end, you should have something like <code>issue#1-antongithub-add-info</code></li>
+</ol>
+<p>Once the branch is created each of you can work inside of those branches without changing the main repo.</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Switch to your branch.</li>
+<li>On your branch create a file called <code>username.txt</code> where <code>username</code> is your GitHub username.</li>
+<li>Add some information about yourself to the file.</li>
+<li>Commit and push the file to your branch.</li>
+</ol>
+
+<details>
+<summary>
+Part 3: You shall not pass (10 min)
+</summary>
+</details></section>
+<section id="part-3-you-shall-not-pass" class="level3">
+<h3 class="anchored" data-anchor-id="part-3-you-shall-not-pass">Part 3: You shall not pass</h3>
+<p>Once you have pushed some changes to your branch you can send them to the main repo. It will thus become a part of your project.</p>
+<p>This is managed using such things as <strong>pull reqests</strong>. Let’s take a look at how they work.</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Go to GitHub (the website).</li>
+<li>Open the <strong>Branches</strong> tab.</li>
+<li>Find the branch you have been working on and click <strong>New Pull Request</strong>.</li>
+<li>Describe what you are adding to the project.</li>
+<li>Assign your group mates as reviewers.</li>
+<li>Create the pull request.</li>
+<li>Ask <strong>another</strong> team member to merge the pull request.</li>
+</ol>
+<p>Voila! You have the files on your main branch!</p>
+
+<details>
+<summary>
+Part 4: If I ignore it, it will go away (15 min)
+</summary>
+</details></section>
+<section id="part-4-if-i-ignore-it-it-will-go-away" class="level3">
+<h3 class="anchored" data-anchor-id="part-4-if-i-ignore-it-it-will-go-away">Part 4: If I ignore it, it will go away</h3>
+<p>When it comes to sending files to GitHub you would want to upload various types of files there. For instance, you would avoid uploading your data because it’s too big and GitHub limits your space. Or, you would avoid sending some sensitive or private information to your repo such as private keys and/or passwords.</p>
+<p>To accommodate that while also keeping those files locally we use <code>.gitignore</code>. They stop your machine from sending files to GitHub. Let’s explore how it works.</p>
+<p>🎯 <strong>ACTION POINTS</strong></p>
+<ol type="1">
+<li>Create a folder in your repo called <code>data</code> and store 5 random files there.</li>
+<li>Using VS Code create a file called <code>.gitignore</code> in your repo.</li>
+<li>Add the name of the folder to your <code>.gitignore</code> file.</li>
+<li>Try to push everything to your repo. Has your repo changed?</li>
+<li>Create a file called <code>VERY_SECRET_KEY.txt</code> and save some random numbers and letters there.</li>
+<li>Add the name of the file to <code>.gitignore</code>.</li>
+<li>Try to push everything to your repo. Has your repo changed?</li>
+</ol>
+
 
 
 </section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
