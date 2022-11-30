@@ -6,4 +6,105 @@ from: markdown+emoji
 author: Anton Boichenko
 ---
 
-<mark class="todo"></mark>
+By the time of this lab you have (hopefully) already decided on the topic of your group project and (most likely) are eager to start writing code. Yay! We knew that!
+
+For you to collaborate efficiently on your project you will need to understand the basics of GitFlow and generally managing projects on GitHub. 
+
+Today we will go through some steps that will help you better understand how data science projects work. 
+
+<details><summary>Part 1: Setting up a GitHub repo (10 min)</summary>
+
+## Part 1: Setting up a GitHub repo
+<p></p>
+
+The first thing that you should do (if you haven't done so yet) is to create a repo for your project on GitHub. You will store your code there. 
+
+🎯 **ACTION POINTS** 
+
+1. Move around and sit together with the members of your group. 
+
+You might have taken the next steps already. But make sure you have done it. 
+
+2. (IF YOU HAVEN'T DONE SO YET) One of your group members creates a **private** repo on GitHub with the name of your project. Make sure to add a README file. 
+3. Go to your repo -> Settings -> Collaborators -> **Add people**. Add all the members of the project to the repo. 
+4. Clone the repo to your Desktop. 
+
+Now you have the repo with all the members having access to it. 
+
+</details>
+
+
+<details><summary>Part 2: Let's grow a tree (40 min)</summary>
+
+## Part 2: Let's grow a tree
+
+One of the key principles of GitFlow is creating branches. Branches are used to separately work on a certain feature or fix a problem. 
+
+Let's create some branches and make sure we understand how to work on them. 
+
+🤝 **WORKING TOGETHER**
+
+1. Each group member creates an **issue** to create a file with their information there. Name each issue according to the name of the person whose information we need there. For instance, if Anton's information is needed it will be `Add Anton's info`. 
+2. Once the issue is created it will be assigned a number.
+3. Each of the group members creates a new branch and calls it in the following format `issue#N-username-description`, where:
+    - N is the number of the issue
+    - username is the person's GitHub username
+    - description is a **very** short description of what's done in this branch
+
+    In the end, you should have something like `issue#1-antongithub-add-info`
+
+Once the branch is created each of you can work inside of those branches without changing the main repo. 
+
+🎯 **ACTION POINTS** 
+
+1. Switch to your branch.
+2. On your branch create a file called `username.txt` where `username` is your GitHub username. 
+3. Add some information about yourself to the file. 
+4. Commit and push the file to your branch. 
+
+
+</details>
+
+<details><summary>Part 3: You shall not pass (10 min)</summary>
+
+## Part 3: You shall not pass
+
+Once you have pushed some changes to your branch you can send them to the main repo. It will thus become a part of your project. 
+
+This is managed using such things as **pull reqests**. Let's take a look at how they work. 
+
+🎯 **ACTION POINTS** 
+
+1. Go to GitHub (the website).
+2. Open the **Branches** tab. 
+3. Find the branch you have been working on and click **New Pull Request**. 
+4. Describe what you are adding to the project. 
+5. Assign your group mates as reviewers.
+6. Create the pull request. 
+7. Ask **another** team member to merge the pull request. 
+
+Voila! You have the files on your main branch! 
+ 
+</details>
+
+<details><summary>Part 4: If I ignore it, it will go away (15 min)</summary>
+
+## Part 4: If I ignore it, it will go away
+
+When it comes to sending files to GitHub you would want to upload various types of files there. For instance, you would avoid uploading your data because it's too big and GitHub limits your space. Or, you would avoid sending some sensitive or private information to your repo such as private keys and/or passwords. 
+
+To accommodate that while also keeping those files locally we use `.gitignore`. They stop your machine from sending files to GitHub. Let's explore how it works. 
+
+🎯 **ACTION POINTS** 
+
+1. Create a folder in your repo called `data` and store 5 random files there. 
+2. Using VS Code create a file called `.gitignore` in your repo.
+3. Add the name of the folder to your `.gitignore` file.
+4. Try to push everything to your repo. Has your repo changed? 
+5. Create a file called `VERY_SECRET_KEY.txt` and save some random numbers and letters there.
+6. Add the name of the file to `.gitignore`.
+7. Try to push everything to your repo. Has your repo changed? 
+ 
+</details>
+
+
