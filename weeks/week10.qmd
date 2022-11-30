@@ -21,7 +21,7 @@ Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 29 November 2022 f
 
 - ✅ [Week 10 Checklist](/weeks/week10/checklist.qmd)
 
-- 💻 [Lab roadmap](#) 🔜
+- 💻 [Lab roadmap](/weeks/week10/lab.qmd)
 
 - 🖋️ [Week 11 presentation - Marking Criteria](#) 🔜
 
