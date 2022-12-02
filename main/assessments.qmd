@@ -66,6 +66,26 @@ You will be marked on a 0-100 points scale.
 | 04: Next steps | - What barriers have you spotted so far in the data collection process? <br/> - If the data collection is straightforward, say your data comes from a very clean API, what do you plan to do with the data?<br/> - What kind of analysis do you want to present by Week 11? | 20 |
 | 05: Group organisation and time management |- The group used the 20 minutes well<br/> - All members of the group presented <br/> - The presentation had a nice "flow", it was not repetitive and there was a storyline. | 20 | 
 
+### Week 11 presentation - Marking Criteria
+
+This presentation is worth 20% of your final grade. You will be marked as a group, but we might reward or penalize individuals for aspects of their individual presentation in accordance with the marking criteria outlined below.
+
+What you must do:
+
+- You are asked to prepare a group presentation of 15 minutes to be presented during your lab sessions. 
+- Share your .ppt or .pdf file on Slack `#week11` before the start of your lab session.
+
+**Marking criteria**
+
+You will be marked on a 0-100 points scale.
+
+| **Criteria**        | **Description**                               | **Marks** |
+|:------------------- |:----------------------------------------------| --------- | 
+| 01: Dataset   | **Show us that you have collected enough data to conduct preliminary analysis** <br/> - Tell us how much data you have managed to collect <br/> - Enumerate the sources of your data <br/> - Explain the choice of the variables that you have selected and how they will help you achieve your goals | 20 |
+| 02: Data wrangling | **Tell us how you worked with your data** <br/> - What tools are you using to make your data suitable for analysis? <br/> - How did you use pandas/tidyverse to work with your data? <br/> - How are you dealing with missing data?  <br/> - Did you have to pivot/melt/mutate your data? How did you do that? <br/> - If you are joining several datasets, how did you do it?  | 40 |
+| 03: Describing data | **Describe your data** <br/> - Calculate the key descriptive statistics <br/> - Provide us with statistics and visualisations describing the first insights from your data | 20 |
+| 05: Group organisation and time management | **Present the results** <br/> - The group used the 20 minutes well<br/> - All members of the group presented <br/> - The presentation had a nice "flow", it was not repetitive and there was a storyline. | 20 | 
+
 ### Project's Marking Criteria
 
 While the final project is worth 40% of your final grade, you will be marked on a 0-100 scale.
