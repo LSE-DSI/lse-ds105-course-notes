@@ -361,12 +361,33 @@
     "href": "weeks/week10.html#links",
     "title": "🗓️ Week 10 - Unstructured Data (Text, Audio, Video)",
     "section": "Links",
-    "text": "Links\n\n👨‍🏫 Lecture\n✅ Week 10 Checklist\n💻 Lab roadmap\n🖋️ Week 11 presentation - Marking Criteria 🔜"
+    "text": "Links\n\n👨‍🏫 Lecture\n✅ Week 10 Checklist\n💻 Lab roadmap\n🖋️ Week 11 presentation - Marking Criteria"
   },
   {
     "objectID": "weeks/week10.html#older-links-that-are-relevant-to-your-projects",
     "href": "weeks/week10.html#older-links-that-are-relevant-to-your-projects",
     "title": "🗓️ Week 10 - Unstructured Data (Text, Audio, Video)",
+    "section": "Older links that are relevant to your projects",
+    "text": "Older links that are relevant to your projects\n\n🔖 Week 05 - Appendix\n👨‍🏫 Week 08 lecture"
+  },
+  {
+    "objectID": "weeks/week11.html",
+    "href": "weeks/week11.html",
+    "title": "🗓️ Week 11 - Sentiment analysis, topic modelling and social networks",
+    "section": "",
+    "text": "We have come to the final week of the Term!\nHere’s what to expect from this week’s lecture (and the week):\nLectures will take a place at PAR.LG.03. Join us Tuesday, 6 December 2022 from 4 pm to 6 pm."
+  },
+  {
+    "objectID": "weeks/week11.html#links",
+    "href": "weeks/week11.html#links",
+    "title": "🗓️ Week 11 - Sentiment analysis, topic modelling and social networks",
+    "section": "Links",
+    "text": "Links\n\n👨‍🏫 Lecture\n✅ Week 11 Checklist\n🖋️ Week 11 presentation - Marking Criteria"
+  },
+  {
+    "objectID": "weeks/week11.html#older-links-that-are-relevant-to-your-projects",
+    "href": "weeks/week11.html#older-links-that-are-relevant-to-your-projects",
+    "title": "🗓️ Week 11 - Sentiment analysis, topic modelling and social networks",
     "section": "Older links that are relevant to your projects",
     "text": "Older links that are relevant to your projects\n\n🔖 Week 05 - Appendix\n👨‍🏫 Week 08 lecture"
   },
@@ -942,7 +963,21 @@
     "href": "weeks/week10/lecture.html",
     "title": "👨‍🏫 Week 10 - Unstructured Data",
     "section": "",
-    "text": "I will update this page later in the week to contain what we have explored in the lecture, similar to Week 08 - lecture. Revisit this page later."
+    "text": "This week’s lecture notes are available as a Github repository: https://github.com/jonjoncardoso/tweepy-spacy\nUse it to practice what you have been learning in this course:\n\nGit clone\nCreate and activate your conda environment\nLaunch Jupyter Lab from your conda environment\nRun the code!"
+  },
+  {
+    "objectID": "weeks/week11/checklist.html",
+    "href": "weeks/week11/checklist.html",
+    "title": "✅ Week 11 - Checklist",
+    "section": "",
+    "text": "Your weekly time management tips in relation to this course:\n\n✋ If you can, attend the drop-in session (Monday)\n\nI will be hosting a drop-in session next Monday 5 December 2022 from 1.30pm-3.30pm at 32L.LG.04. Come along!\n\n🧑‍🏫 Attend the lecture! (Tuesday)\n\nWe will be demonstrating a full data pre-processing pipeline, plus some potentially useful tutorials.\n\n🧑‍💻 Work on your projects/presentations!: (Monday - Thursday)\n\nIn terms of code, check the tips I shared last week on the ✅ Week 10 - Checklist.\nIn terms of the presentation, check what is expected from you by reading the 🖋️ Week 11 presentation - Marking Criteria.\n\n🌟 Shine! (Friday)\n\nWOW us with your incredible data pipelines and awesome charts on Friday. No pressure! ;)\n\n\n\n\n📟 Struggling with something? Share your questions on the #week11 channel in our Slack.\n👂Want to talk to someone else about this course? Try reaching out to your course representative, @Amara Otero Salgado on Slack."
+  },
+  {
+    "objectID": "weeks/week11/lecture.html",
+    "href": "weeks/week11/lecture.html",
+    "title": "👨‍🏫 Week 11 - Unstructured Data",
+    "section": "",
+    "text": "Here’s what to expect from this week’s lecture (and the week):\n\nOn the first hour of the lecture, Prof. Ken Benoit will demonstrate how to implement a data pre-processing pipeline, using his study of Brexit Tweets as a case study.\n\nThis will feature: data acquisition, cleaning, tokenisation, and feature selection\nBut he will also show the outputs from topic models, sentiment analysis, and networks of hashtags and topics.\n\nOn the second hour of the lecture, I will show you how to work further with network data. This will include a tutorial of the igraph library.\n\nCome back later to view links to slides/code we have used in the lecture."
   },
   {
     "objectID": "slides/week01_slides_part1.html#the-data-science-institute",
