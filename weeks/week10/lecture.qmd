@@ -6,4 +6,12 @@ from: markdown+emoji
 author: Dr. Jon Cardoso-Silva
 ---
 
-I will update this page later in the week to contain what we have explored in the lecture, similar to [Week 08 - lecture](/weeks/week08/lecture.qmd). Revisit this page later.
+
+This week's lecture notes are available as a Github repository: https://github.com/jonjoncardoso/tweepy-spacy
+
+Use it to practice what you have been learning in this course:
+
+- Git clone
+- Create and activate your conda environment
+- Launch Jupyter Lab from your conda environment
+- Run the code!

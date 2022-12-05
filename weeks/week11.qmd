@@ -1,0 +1,35 @@
+---
+title: "🗓️ Week 11 - Sentiment analysis, topic modelling and social networks"
+author: Dr. Jon Cardoso-Silva
+date: 6 December 2022
+date-meta: 6 December 2022
+---
+
+We have come to the final week of the Term!
+
+Here's what to expect from this week's lecture (and the week):
+
+- On the first hour of the lecture, Prof. [Ken Benoit](https://kenbenoit.net/) will demonstrate how to implement a data pre-processing pipeline, using his study of Brexit Tweets as a case study. 
+    - This will feature: data acquisition, cleaning, tokenisation, and feature selection
+    - But he will also show the outputs from topic models, sentiment analysis, and networks of hashtags and topics.
+- On the second hour of the lecture, I will show you how to work further with network data. This will include a tutorial of the [igraph](https://igraph.org/) library.
+
+- On Friday, we will hear from you as you present how you are progressing with your projects. 
+    - Check 🖋️ [Week 11 presentation - Marking Criteria](/main/assessments.html#week-11-presentation---marking-criteria) for more information on what we expect from you.
+
+Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 6 December 2022 from 4 pm to 6 pm.
+
+
+## Links
+
+- 👨‍🏫 [Lecture](/weeks/week11/lecture.qmd)
+
+- ✅ [Week 11 Checklist](/weeks/week11/checklist.qmd)
+
+- 🖋️ [Week 11 presentation - Marking Criteria](/main/assessments.html#week-11-presentation---marking-criteria) 
+
+## Older links that are relevant to your projects
+
+- 🔖 [Week 05 - Appendix](/weeks/week05/appendix.qmd)
+
+- [👨‍🏫 Week 08 lecture](/weeks/week08/lecture.qmd)

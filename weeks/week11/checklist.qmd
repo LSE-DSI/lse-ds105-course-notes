@@ -1,0 +1,31 @@
+---
+title: "✅ Week 11 - Checklist"
+date: 5 December 2022
+date-meta: 5 December 2022
+---
+
+Your weekly time management tips in relation to this course:
+
+- ✋ **If you can, attend the drop-in session** (Monday)
+
+    - I will be hosting a drop-in session next Monday 5 December 2022 from 1.30pm-3.30pm at 32L.LG.04. Come along!
+
+- 🧑‍🏫 **Attend the lecture!** (Tuesday)
+
+    - We will be demonstrating a full data pre-processing pipeline, plus some potentially useful tutorials.
+
+- 🧑‍💻 **Work on your projects/presentations!**:  (Monday - Thursday) 
+
+    - In terms of code, check the tips I shared last week on the ✅ [Week 10 - Checklist](/weeks/week10/checklist.qmd).
+
+    - In terms of the presentation, check what is expected from you by reading the 🖋️ [Week 11 presentation - Marking Criteria](/main/assessments.html#week-11-presentation---marking-criteria).
+
+- 🌟 **Shine!** (Friday)
+
+    - WOW us with your incredible data pipelines and awesome charts on Friday. No pressure! ;)
+
+------------
+
+- 📟 **Struggling with something?** Share your questions on the `#week11` channel in our Slack.
+
+- 👂**Want to talk to someone else about this course?** Try reaching out to your course representative, `@Amara Otero Salgado` on Slack.

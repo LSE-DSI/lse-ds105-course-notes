@@ -23,7 +23,7 @@ Lectures will take a place at **PAR.LG.03**. Join us Tuesday, 29 November 2022 f
 
 - 💻 [Lab roadmap](/weeks/week10/lab.qmd)
 
-- 🖋️ [Week 11 presentation - Marking Criteria](#) 🔜
+- 🖋️ [Week 11 presentation - Marking Criteria](/main/assessments.html#week-11-presentation---marking-criteria) 
 
 ## Older links that are relevant to your projects
 

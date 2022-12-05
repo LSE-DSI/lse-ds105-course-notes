@@ -1,0 +1,16 @@
+---
+title: "👨‍🏫 Week 11 - Unstructured Data"
+date: 5 December 2022
+date-meta: 5 December 2022
+from: markdown+emoji
+author: Dr. Jon Cardoso-Silva
+---
+
+Here's what to expect from this week's lecture (and the week):
+
+- On the first hour of the lecture, Prof. [Ken Benoit](https://kenbenoit.net/) will demonstrate how to implement a data pre-processing pipeline, using his study of Brexit Tweets as a case study. 
+    - This will feature: data acquisition, cleaning, tokenisation, and feature selection
+    - But he will also show the outputs from topic models, sentiment analysis, and networks of hashtags and topics.
+- On the second hour of the lecture, I will show you how to work further with network data. This will include a tutorial of the [igraph](https://igraph.org/) library.
+
+**Come back later to view links to slides/code we have used in the lecture.**
