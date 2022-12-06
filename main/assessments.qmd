@@ -79,12 +79,29 @@ What you must do:
 
 You will be marked on a 0-100 points scale.
 
+<details><summary>**Marking rubric**</summary>
+
+Some clarification about how we are going to assess these presentations, in line with LSE's grade distribution expectations.
+
+In general terms, you should expect:
+
+- **100/100**: if, not only your presentation addresses all the questions highlighted in the marking criteria, you went an extra mile and did some incredible analysis + you showed us a complex/impressive data pre-processing pipeline. Your usage of pandas/tidyverse/plots are truly fantastic, the slides and your delivery/communication skills have WOWed us.
+
+- **~70/100**: if your work ticks all the boxes of what is detailed in the marking criteria. It's good!
+
+- **~50/100**: if you didn't address all the points listed in the marking criteria or the communication was vague/imprecise. It could be much improved
+
+- **~30/100**: you showed up to the presentation but you didn't show us enough. Either your analysis were poor, or it wasn't clear at all what you're trying to do.
+
+</details>
+
 | **Criteria**        | **Description**                               | **Marks** |
 |:------------------- |:----------------------------------------------| --------- | 
 | 01: Dataset   | **Show us that you have collected enough data to conduct preliminary analysis** <br/> - Tell us how much data you have managed to collect <br/> - Enumerate the sources of your data <br/> - Explain the choice of the variables that you have selected and how they will help you achieve your goals | 20 |
 | 02: Data wrangling | **Tell us how you worked with your data** <br/> - What tools are you using to make your data suitable for analysis? <br/> - How did you use pandas/tidyverse to work with your data? <br/> - How are you dealing with missing data?  <br/> - Did you have to pivot/melt/mutate your data? How did you do that? <br/> - If you are joining several datasets, how did you do it?  | 40 |
 | 03: Describing data | **Describe your data** <br/> - Calculate the key descriptive statistics <br/> - Provide us with statistics and visualisations describing the first insights from your data | 20 |
 | 05: Group organisation and time management | **Present the results** <br/> - The group used the 20 minutes well<br/> - All members of the group presented <br/> - The presentation had a nice "flow", it was not repetitive and there was a storyline. | 20 | 
+
 
 ### Project's Marking Criteria
 
