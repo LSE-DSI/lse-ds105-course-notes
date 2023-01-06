@@ -235,3 +235,4 @@ cython_debug/
 
 
 data/*
+resources/week10/config.py

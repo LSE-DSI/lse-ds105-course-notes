@@ -2,11 +2,15 @@
 matplotlib==3.5.3 # version required for plotnine
 plotnine==0.10.1 # Python version of ggplot2
 plotly==5.11.0
+pycairo==1.23.0
 
 ## DATA SCIENCE AND ML PACKAGES
 numpy>=1.22
 pandas==1.4.2
 scikit-learn==1.1.3
+
+## NETWORK ANALYSIS
+python-igraph==0.10.2
 
 ## UTILS
 jupyterlab==3.4.2
